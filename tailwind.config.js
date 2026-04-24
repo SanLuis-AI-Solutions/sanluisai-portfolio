@@ -13,10 +13,14 @@ module.exports = {
         dim: 'rgba(212,158,44,0.15)',
         glow: 'rgba(212,158,44,0.08)',
       },
+      'navy-brand': '#1B3C72',
+      navy: '#2D527E',
       bg: '#0A0A0A',
-      surface: '#0A0A0A',
+      surface: '#141414',
       muted: '#888888',
       white: '#FFFFFF',
+      red: { 400: '#f87171' },
+      transparent: 'transparent',
     },
     extend: {
       fontFamily: {

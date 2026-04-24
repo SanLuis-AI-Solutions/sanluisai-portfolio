@@ -50,28 +50,16 @@ export default function CTA() {
         </p>
 
         {/* CTA */}
-        <div className="space-y-3 pt-2">
-          <div>
-            <Link
-              href="https://cal.com/sanluisai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold inline-flex items-center gap-2 px-8 py-4 bg-gold text-bg font-grotesk font-bold text-base rounded-lg shadow-xl shadow-gold/20"
-            >
-              <StarSpark className="w-3.5 h-3.5" />
-              Book Your Discovery Session
-            </Link>
-          </div>
-
-          <p className="text-muted text-sm">
-            or start with the{' '}
-            <a
-              href="#lead-magnet"
-              className="text-gold/70 hover:text-gold transition-colors"
-            >
-              free AI audit →
-            </a>
-          </p>
+        <div className="pt-2">
+          <Link
+            href="https://cal.com/sanluisai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold inline-flex items-center gap-2 px-8 py-4 bg-gold text-bg font-grotesk font-bold text-base rounded-lg shadow-xl shadow-gold/20"
+          >
+            <StarSpark className="w-3.5 h-3.5" />
+            Book Your Discovery Session
+          </Link>
         </div>
       </div>
     </section>

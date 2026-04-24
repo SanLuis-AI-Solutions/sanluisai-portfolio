@@ -21,12 +21,12 @@ export default function Hero() {
   return (
     <section
       className="grain-overlay relative min-h-screen flex items-center overflow-hidden pt-16"
-      style={{ background: 'linear-gradient(135deg, #060E1C 0%, #0B1828 50%, #0A0A0A 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #0D1828 0%, #1B3C72 45%, #0F2444 100%)' }}
     >
       {/* Navy + gold radial glows */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse 60% 70% at 20% 50%, rgba(45,82,126,0.18) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(ellipse 60% 70% at 20% 50%, rgba(27,60,114,0.30) 0%, transparent 65%)' }}
       />
       <div
         className="absolute inset-0 pointer-events-none"
