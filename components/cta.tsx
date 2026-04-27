@@ -11,7 +11,7 @@ function StarSpark({ className = '' }: { className?: string }) {
 export default function CTA() {
   return (
     <section className="grain-overlay relative py-28 px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0" style={{background: 'linear-gradient(135deg, #0D1E35 0%, #172D4A 50%, #0D1E35 100%)'}} />
+      <div className="absolute inset-0" style={{background: 'linear-gradient(135deg, #0D1828 0%, #1B3C72 45%, #0F2444 100%)'}} />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(45,82,126,0.25) 0%, transparent 70%)' }}
