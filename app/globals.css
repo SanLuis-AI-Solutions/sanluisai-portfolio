@@ -2,26 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Brand Core */
+  --sl-navy-950: #0B1A33;
+  --sl-navy-900: #112447;
+  --sl-navy-800: #1A3160;
+  --sl-navy-700: #244478;
+  --sl-navy-600: #335799;
+  --sl-navy-500: #4F75B8;
+  --sl-navy-400: #7E9CCB;
+  --sl-navy-300: #B3C4DE;
+  --sl-navy-200: #D6DFEC;
+  --sl-navy-100: #ECF0F7;
+
+  --sl-gold-900: #8A6418;
+  --sl-gold-800: #A77A1F;
+  --sl-gold-700: #C49328;
+  --sl-gold-600: #D9A434;
+  --sl-gold-500: #E5B656;
+  --sl-gold-400: #ECC679;
+  --sl-gold-300: #F2D9A1;
+  --sl-gold-200: #F8E9C7;
+  --sl-gold-100: #FBF4E2;
+
+  --sl-bone-50: #FAF7F1;
+  --sl-bone-100: #F4EFE5;
+  --sl-bone-200: #EDE6D6;
+  --sl-bone-300: #E0D6BF;
+
+  --sl-ink-950: #0A0E14;
+  --sl-ink-900: #14181F;
+  --sl-ink-800: #232932;
+  --sl-ink-700: #353D49;
+  --sl-ink-600: #4D5663;
+  --sl-ink-500: #6B7585;
+  --sl-ink-400: #8E97A6;
+  --sl-ink-300: #B4BBC7;
+  --sl-ink-200: #D5D9E0;
+  --sl-ink-100: #EAECF0;
+  --sl-ink-50: #F6F7F9;
+
+  /* Semantic Surfaces (Light) */
+  --bg-canvas: var(--sl-bone-50);
+  --bg-surface: #FFFFFF;
+  --bg-raised: #FFFFFF;
+  --bg-sunken: var(--sl-bone-100);
+  --bg-inverse: var(--sl-navy-900);
+
+  --fg-1: var(--sl-navy-900);
+  --fg-2: var(--sl-ink-700);
+  --fg-3: var(--sl-ink-500);
+  --fg-4: var(--sl-ink-400);
+  --fg-on-dark: var(--sl-bone-50);
+  --fg-on-dark-2: var(--sl-navy-300);
+  --fg-accent: var(--sl-gold-700);
+  --fg-link: var(--sl-navy-700);
+
+  --border-1: rgba(17, 36, 71, 0.10);
+  --border-2: rgba(17, 36, 71, 0.16);
+  --border-strong: var(--sl-navy-900);
+  --border-gold: var(--sl-gold-600);
+
+  /* Shadows */
+  --shadow-1: 0 1px 2px rgba(11, 26, 51, 0.06), 0 1px 1px rgba(11, 26, 51, 0.04);
+  --shadow-2: 0 4px 8px -2px rgba(11, 26, 51, 0.08), 0 2px 4px -2px rgba(11, 26, 51, 0.06);
+  --shadow-3: 0 12px 24px -8px rgba(11, 26, 51, 0.14), 0 4px 8px -4px rgba(11, 26, 51, 0.08);
+  --shadow-4: 0 24px 48px -12px rgba(11, 26, 51, 0.22), 0 8px 16px -8px rgba(11, 26, 51, 0.10);
+  --shadow-gold-glow: 0 0 0 1px rgba(217, 164, 52, 0.4), 0 6px 20px -6px rgba(217, 164, 52, 0.45);
+}
+
 @layer base {
   body {
-    @apply bg-dark text-white font-body;
+    font-family: var(--font-inter), system-ui, sans-serif;
+    color: var(--fg-2);
+    background: var(--bg-canvas);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-@layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold to-white;
+@layer components {
+  /* Semantic type classes */
+  .sl-display-2xl,
+  .sl-display-xl,
+  .sl-display-lg,
+  .sl-display-md,
+  .sl-display-sm,
+  .sl-h1,
+  .sl-h2,
+  .sl-h3,
+  .sl-h4 {
+    font-family: var(--font-cormorant), Georgia, serif;
+    color: var(--fg-1);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
   }
-  .grain {
-    position: relative;
+
+  .sl-display-2xl { font-size: 96px; }
+  .sl-display-xl  { font-size: 72px; }
+  .sl-display-lg  { font-size: 56px; }
+  .sl-display-md  { font-size: 44px; }
+  .sl-display-sm  { font-size: 36px; }
+
+  .sl-h1 { font-size: 40px; line-height: 1.15; }
+  .sl-h2 { font-size: 32px; line-height: 1.15; }
+  .sl-h3 { font-size: 24px; line-height: 1.15; letter-spacing: -0.015em; }
+  .sl-h4 { font-size: 20px; line-height: 1.15; letter-spacing: -0.015em; font-weight: 600; }
+
+  .sl-h5 { font-family: var(--font-inter), system-ui, sans-serif; font-size: 17px; font-weight: 600; color: var(--fg-1); letter-spacing: -0.015em; }
+  .sl-h6 { font-family: var(--font-inter), system-ui, sans-serif; font-size: 14px; font-weight: 600; color: var(--fg-1); letter-spacing: -0.015em; }
+
+  .sl-body-lg { font-size: 18px; line-height: 1.6; color: var(--fg-2); }
+  .sl-body    { font-size: 16px; line-height: 1.6; color: var(--fg-2); }
+  .sl-body-sm { font-size: 14px; line-height: 1.6; color: var(--fg-2); }
+  .sl-caption { font-size: 12px; line-height: 1.4; color: var(--fg-3); }
+
+  .sl-eyebrow {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--fg-accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
   }
-  .grain::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-    opacity: 0.025;
-    z-index: 9999;
+
+  .sl-lede {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--fg-1);
+    letter-spacing: -0.005em;
+  }
+
+  .sl-mono {
+    font-family: var(--font-jetbrains), monospace;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: var(--fg-2);
   }
 }

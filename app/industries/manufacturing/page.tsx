@@ -1,0 +1,42 @@
+import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'AI for Manufacturing. — SanLuis AI Solutions',
+  description: 'Production bottlenecks, unplanned downtime, and quality control gaps cost manufacturers millions. We build custom AI to eliminate them.',
+}
+
+export default function Page() {
+  return (
+    <>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-navy-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+          <Link href="/" className="font-display text-2xl text-navy-800 tracking-tight">SanLuis AI</Link>
+          <Link href="/booking" className="font-sans text-sm font-semibold px-4 py-2 bg-navy-900 text-white rounded hover:bg-navy-800 transition-colors">Book a Discovery Session.</Link>
+        </div>
+      </nav>
+      <main className="pt-16 bg-bgCanvas min-h-screen">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+          <span className="sl-eyebrow mb-4">Industry</span>
+          <h1 className="sl-display-lg text-navy-800 mb-6">AI for Manufacturing.</h1>
+          <p className="sl-body-lg max-w-prose mb-8">Production bottlenecks, unplanned downtime, and quality control gaps cost manufacturers millions. We build custom AI to eliminate them.</p>
+          <p className="sl-body max-w-prose mb-4">Manufacturing runs on precision. But most operations still rely on manual scheduling, reactive maintenance, and lagging quality indicators. The result: lost production time, scrap waste, and margin erosion that compounds daily.</p>
+          <p className="sl-body max-w-prose mb-4">We build AI systems that predict equipment failure before it happens, optimize production schedules in real time, and catch quality defects at the point of origin. One deployment. One bottleneck removed.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8"><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Unplanned Downtime</div><div className="font-sans text-sm text-fg2 mt-2">Predictive models that flag failures 72 hours in advance.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Quality Control</div><div className="font-sans text-sm text-fg2 mt-2">Computer vision systems that catch defects at line speed.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Supply Chain</div><div className="font-sans text-sm text-fg2 mt-2">AI-driven demand forecasting and inventory optimization.</div></div></div>
+          <div className="mt-12">
+            <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
+              Book a Discovery Session.
+            </Link>
+          </div>
+        </div>
+      </main>
+      <footer className="bg-navy-950 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="font-display text-xl text-white mb-2">SanLuis AI</p>
+          <p className="font-sans text-sm text-navy-300 mb-4">contact@sanluisai.com &middot; @SanLuisAiClientbot</p>
+          <p className="font-sans text-xs text-navy-400">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
+        </div>
+      </footer>
+    </>
+  )
+}

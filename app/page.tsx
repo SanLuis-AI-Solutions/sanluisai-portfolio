@@ -4,13 +4,13 @@ import Problem from '@/components/Problem'
 import Solution from '@/components/Solution'
 import SocialProof from '@/components/SocialProof'
 import CaseStudies from '@/components/CaseStudies'
-import Process from '@/components/Process'
 import Services from '@/components/Services'
+import Process from '@/components/Process'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
       <Nav />
@@ -19,8 +19,8 @@ export default function Home() {
       <Solution />
       <SocialProof />
       <CaseStudies />
-      <Process />
       <Services />
+      <Process />
       <FAQ />
       <CTA />
       <Footer />
