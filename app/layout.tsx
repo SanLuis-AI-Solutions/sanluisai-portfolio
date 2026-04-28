@@ -4,44 +4,53 @@ import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
   variable: '--font-space-grotesk',
   display: 'swap',
 })
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  style: ['normal', 'italic'],
   variable: '--font-inter',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'SanLuis AI Solutions | Houston AI Consulting',
-  description: 'We help Houston businesses automate what slows them down — without replacing the people who make them great. Your team, amplified.',
-  keywords: ['AI consulting Houston', 'business automation Houston', 'AI workflow automation', 'Houston AI agency', 'bilingual AI consulting'],
-  authors: [{ name: 'Daniel San Luis' }],
-  openGraph: {
-    title: 'SanLuis AI Solutions | Houston AI Consulting',
-    description: 'AI that works with your team. Not instead of them.',
-    url: 'https://sanluisai.com',
-    siteName: 'SanLuis AI Solutions',
-    locale: 'en_US',
-    type: 'website',
+  title: 'SanLuis AI Solutions — Universal Problem-Solving Studio',
+  description: 'Custom AI systems for business. We eliminate bottlenecks with surgical precision.',
+  other: {
+    'script:ld+json': JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      name: 'SanLuis AI Solutions',
+      url: 'https://sanluisai.com',
+      sameAs: ['https://t.me/SanLuisAiClientbot'],
+      description: 'Custom AI systems for business',
+    }),
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SanLuis AI Solutions | Houston AI Consulting',
-    description: 'AI that works with your team. Not instead of them.',
-  },
-  robots: { index: true, follow: true },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
-      <body className="bg-bg text-white antialiased">{children}</body>
+      <head>
+        {/* Google Analytics placeholder */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX');
+            `,
+          }}
+        />
+      </head>
+      <body className="grain">{children}</body>
     </html>
   )
 }

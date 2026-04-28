@@ -6,34 +6,39 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      black: '#0A0A0A',
-      gold: {
-        DEFAULT: '#D49E2C',
-        dim: 'rgba(212,158,44,0.15)',
-        glow: 'rgba(212,158,44,0.08)',
-      },
-      'navy-brand': '#1B3C72',
-      navy: '#2D527E',
-      bg: '#0A0A0A',
-      surface: '#141414',
-      muted: '#888888',
-      white: '#FFFFFF',
-      red: { 400: '#f87171' },
-      transparent: 'transparent',
-    },
     extend: {
+      colors: {
+        gold: '#D49E2C',
+        goldDim: 'rgba(212,158,44,0.15)',
+        goldGlow: 'rgba(212,158,44,0.08)',
+        navy: '#1B3C72',
+        navyPrimary: '#2D527E',
+        dark: '#0A0A0A',
+        surface: '#141414',
+        textMuted: '#888888',
+        white: '#FFFFFF',
+        transparent: 'transparent',
+      },
       fontFamily: {
-        grotesk: ['var(--font-space-grotesk)', 'sans-serif'],
-        inter: ['var(--font-inter)', 'sans-serif'],
+        heading: ['var(--font-space-grotesk)', 'sans-serif'],
+        body: ['var(--font-inter)', 'sans-serif'],
       },
-      letterSpacing: {
-        tighter: '-0.04em',
-        tight: '-0.02em',
-        wide: '0.12em',
+      animation: {
+        grain: 'grain 8s steps(4) infinite',
       },
-      backgroundImage: {
-        'gold-radial': 'radial-gradient(ellipse at center, rgba(212,158,44,0.12) 0%, transparent 70%)',
+      keyframes: {
+        grain: {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '10%': { transform: 'translate(-5%, -5%)' },
+          '20%': { transform: 'translate(-10%, 5%)' },
+          '30%': { transform: 'translate(5%, -10%)' },
+          '40%': { transform: 'translate(-5%, 15%)' },
+          '50%': { transform: 'translate(-10%, 5%)' },
+          '60%': { transform: 'translate(15%, 0)' },
+          '70%': { transform: 'translate(0, 10%)' },
+          '80%': { transform: 'translate(-15%, 0)' },
+          '90%': { transform: 'translate(10%, 5%)' },
+        },
       },
     },
   },
