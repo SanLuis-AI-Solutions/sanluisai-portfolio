@@ -1,55 +1,52 @@
+'use client'
+import { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
+
+function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true, margin: '-40px' })
+  return (<motion.div ref={ref} initial={{ opacity: 0, y: 16 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>)
+}
+
+function GoldThread({ delay = 0 }: { delay?: number }) {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true })
+  return (<div ref={ref} className="h-px bg-gold-600 overflow-hidden"><motion.div className="h-full bg-gold-600" initial={{ width: 0 }} animate={inView ? { width: '100%' } : {}} transition={{ duration: 1.2, delay, ease: [0.2, 0.7, 0.2, 1] }} /></div>)
+}
+
 const steps = [
-  {
-    number: '01',
-    title: 'Diagnose',
-    detail: '$300, 60 min',
-    description: 'We analyze your operations, identify the single highest-impact bottleneck, and deliver a precise scope of work.',
-  },
-  {
-    number: '02',
-    title: 'Build',
-    detail: '2-4 weeks',
-    description: 'We engineer a custom AI system targeting that bottleneck. No bloat. No unnecessary features.',
-  },
-  {
-    number: '03',
-    title: 'Eliminate',
-    detail: 'Ongoing',
-    description: 'Your bottleneck is removed. We monitor, refine, and ensure the system stays sharp.',
-  },
+  { num: '01', title: 'Discovery Session', stat: '60 min', desc: 'A paid audit. We map your workflow, identify the bottleneck, and deliver a written action plan. If we cannot name the bottleneck specifically, your $300 is returned.' },
+  { num: '02', title: 'Custom Build', stat: '2-4 wk', desc: 'We build the infrastructure from first principles. Full source ownership upon delivery. No black boxes, no platform dependencies, no ongoing license fees.' },
+  { num: '03', title: 'Measured Result', stat: 'Verified', desc: 'We track the outcome against the baseline. Margin recovery, time compression, throughput improvement — you get the number that proves it worked.' },
 ]
 
 export default function Solution() {
   return (
-    <section id="services" className="bg-bgCanvas py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <span className="sl-eyebrow">No. 02 — The Method</span>
-          <h2 className="sl-h2 text-navy-900 mt-4">Surgical AI. Not Software.</h2>
-        </div>
-
-        {/* Step Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {steps.map((step) => (
-            <div
-              key={step.number}
-              className="bg-white border border-navy-200 rounded p-8"
-            >
-              <span className="block font-display text-5xl font-medium text-gold-600 mb-4 sl-display-sm">
-                {step.number}
-              </span>
-              <h3 className="font-display text-2xl font-medium text-navy-900 mb-1 sl-h3">
-                {step.title}
-              </h3>
-              <p className="font-sans text-sm text-gold-600 font-semibold mb-4 uppercase tracking-wider">
-                {step.detail}
-              </p>
-              <p className="font-sans text-base text-fg2 sl-body">
-                {step.description}
-              </p>
-            </div>
-          ))}
+    <section id="solution" className="py-32 md:py-40 bg-bgCanvas">
+      <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
+        <FadeIn delay={0}><span className="sl-eyebrow mb-8">The Method</span></FadeIn>
+        <div className="grid lg:grid-cols-[1fr_1.6fr] gap-16 lg:gap-24 mb-20">
+          <div>
+            <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Diagnose. Build. Eliminate.</h2></FadeIn>
+            <FadeIn delay={0.2}><p className="sl-lede mb-8 max-w-[48ch]">Three words. One engagement. One measured result.</p></FadeIn>
+            <FadeIn delay={0.3}><GoldThread delay={0.3} /></FadeIn>
+          </div>
+          <div className="space-y-4">
+            {steps.map((s, i) => (
+              <FadeIn key={s.num} delay={0.2 + i * 0.1}>
+                <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 bg-white border border-navy-200 rounded p-6 md:p-8 hover:border-navy-900 transition-all duration-220 group">
+                  <div className="flex md:flex-col items-center md:items-start gap-3 md:gap-1 md:w-24 flex-shrink-0">
+                    <span className="font-display text-xl text-gold-600 leading-none">{s.num}</span>
+                    <span className="font-mono text-xs text-fg4 tracking-[0.08em] uppercase">{s.stat}</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-display text-xl text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">{s.title}</h3>
+                    <p className="sl-body-sm">{s.desc}</p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </div>
     </section>
