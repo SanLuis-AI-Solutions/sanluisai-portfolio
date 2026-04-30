@@ -50,7 +50,7 @@ export default function Hero() {
             <AnimatedSection delay={0.55}>
               <div className="flex flex-col sm:flex-row gap-4 mb-20">
                 <a href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded">Book a Discovery Session.</a>
-                <a href="/case-studies" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 border border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white transition-all duration-220 rounded">See Our Work.</a>
+                <a href="/assessment" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 border border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white transition-all duration-220 rounded">AI Readiness Assessment.</a>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.7}>

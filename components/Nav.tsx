@@ -6,6 +6,7 @@ const links = [
   { label: 'Services', href: '/#services' },
   { label: 'Industries', href: '/#industries' },
   { label: 'Case Studies', href: '/#case-studies' },
+  { label: 'Assessment', href: '/assessment' },
   { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
 ]
