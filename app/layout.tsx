@@ -27,6 +27,13 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'SanLuis AI Solutions — Surgical AI Implementations',
   description: 'Precise, time-bounded AI implementations for operators serious about leverage.',
+  openGraph: {
+    title: 'SanLuis AI Solutions',
+    description: 'Precise, time-bounded AI implementations for operators serious about leverage.',
+    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    type: 'website',
+    locale: 'en_US',
+  },
   other: {
     'script:ld+json': JSON.stringify({
       '@context': 'https://schema.org',

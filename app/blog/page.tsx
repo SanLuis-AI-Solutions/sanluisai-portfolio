@@ -43,9 +43,12 @@ export default function Page() {
           <p className="sl-body-lg max-w-prose mb-12">We write when we have something to say. No content calendars. No filler. Just real insights from real builds.</p>
           <div className="space-y-10">
             {posts.map((post) => (
-              <article key={post.slug} className="border-b border-navy-200 pb-10">
+              <article key={post.slug} className="border-b border-navy-200 pb-10 relative">
                 <time className="font-sans text-xs text-fg3 uppercase tracking-wider">{post.date}</time>
-                <h2 className="font-display text-2xl text-navy-800 mt-2 mb-3">{post.title}</h2>
+                <div className="flex items-center gap-3 mt-2 mb-3">
+                  <h2 className="font-display text-2xl text-navy-800">{post.title}</h2>
+                  <span className="inline-block px-2 py-0.5 text-xs font-semibold uppercase tracking-wider bg-gold-400 text-navy-900 rounded">Coming soon</span>
+                </div>
                 <p className="sl-body mb-4">{post.excerpt}</p>
               </article>
             ))}

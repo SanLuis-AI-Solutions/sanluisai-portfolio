@@ -23,9 +23,9 @@ function GoldThread({ delay = 0 }: { delay?: number }) {
 export default function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex items-center bg-bgCanvas overflow-hidden">
-      {/* Background image — low opacity, architectural warmth */}
-      <div className="absolute inset-0 opacity-[0.06]">
-        <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
+      {/* Background image — generated via ComfyUI SDXL, SanLuis brand identity */}
+      <div className="absolute inset-0 opacity-[0.07]">
+        <Image src="/generated/sanluis_hero_00001_.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
       </div>
 
       <div className="max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-32">

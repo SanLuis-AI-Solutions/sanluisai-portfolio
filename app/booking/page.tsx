@@ -1,9 +1,16 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Book a Discovery Session — SanLuis AI Solutions',
-  description: 'Schedule a free discovery session with SanLuis AI. We will map out a custom AI solution tailored to your specific business needs and timeline.',
+  title: 'Book a $300 Discovery Session — SanLuis AI Solutions',
+  description: 'Book a $300 Discovery Session with SanLuis AI — 60 minutes, written action plan, money-back guarantee.',
+}
+
+// Explicitly set accessible viewport (no maximum-scale or user-scalable=no)
+// to prevent Cal.com from injecting WCAG-violating viewport restrictions
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function BookingPage() {
@@ -47,6 +54,54 @@ export default function BookingPage() {
           <p className="font-sans text-sm text-navy-300">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
         </div>
       </footer>
+
+      {/*
+        QUICK WIN 3: Override Cal.com's inaccessible viewport meta.
+        Cal.com embed sets maximum-scale=1 and user-scalable=no, which violates
+        WCAG 2.1 Success Criterion 1.4.4 (Resize Text). This script overrides
+        the viewport meta after the iframe loads to restore pinch-to-zoom.
+      */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+(function() {
+  function fixViewport() {
+    var vp = document.querySelector('meta[name="viewport"]');
+    if (vp) {
+      vp.setAttribute('content', 'width=device-width, initial-scale=1');
+    } else {
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, initial-scale=1';
+      document.head.appendChild(meta);
+    }
+  }
+  // Run on load and after a short delay to catch Cal.com's late viewport changes
+  window.addEventListener('load', function() {
+    fixViewport();
+    setTimeout(fixViewport, 2000);
+  });
+  // Also observe for any future changes to the viewport meta
+  if (typeof MutationObserver !== 'undefined') {
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.type === 'attributes' && m.attributeName === 'content') {
+          var target = m.target;
+          if (target.name === 'viewport') {
+            var content = target.getAttribute('content') || '';
+            if (content.includes('maximum-scale') || content.includes('user-scalable=no')) {
+              fixViewport();
+            }
+          }
+        }
+      });
+    });
+    observer.observe(document.head, { attributes: true, subtree: true, attributeFilter: ['content'] });
+  }
+})();
+          `,
+        }}
+      />
     </>
   )
 }

@@ -21,7 +21,7 @@ export default function AutomationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <h1 className="sl-display-lg text-navy-800 mb-6">AI Automation</h1>
           <p className="sl-body-lg max-w-prose mb-6">
-            Workflow automation eliminates manual busywork. Your team spends hours on repetitive tasks that follow predictable rules &mdash; data entry, invoice processing, report generation, email triage. Every minute spent on these tasks is a minute stolen from high-value work.
+            Workflow automation eliminates manual busywork. Your team spends hours on repetitive tasks that follow predictable rules &mdash; data entry, invoice processing, report generation, email triage. Every minute spent there is a minute stolen from work that actually needs your brain.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
             We build intelligent automation pipelines that handle these workflows end to end. Our systems read, write, route, and act across your tools so your people can focus on decisions, not data.
