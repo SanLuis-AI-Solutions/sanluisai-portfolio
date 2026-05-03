@@ -9,6 +9,8 @@ const industries = [
   { label: 'Healthcare', href: '/industries/healthcare' },
   { label: 'Real Estate', href: '/industries/real-estate' },
   { label: 'Professional Services', href: '/industries/professional-services' },
+  { label: 'Retail', href: '/industries/retail' },
+  { label: 'Logistics', href: '/industries/logistics' },
 ]
 
 export default function Footer() {

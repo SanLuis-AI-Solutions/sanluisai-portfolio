@@ -120,8 +120,8 @@ export default function AssessmentPage() {
           <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16 md:h-20">
             <a href="/" className="font-display text-xl md:text-2xl font-bold text-navy-800 tracking-tight">SanLuis AI</a>
             <div className="hidden md:flex items-center gap-10">
-              {['Services','Industries','Case Studies','About','Blog'].map(l => (
-                <a key={l} href={`/${l.toLowerCase().replace(' ','-').replace('case-studies','case-studies')}`} className="font-sans text-sm text-fg2 hover:text-navy-800 transition-colors duration-200">{l}</a>
+              {['Services','Work','Case Studies','About','Blog'].map(l => (
+                <a key={l} href={`/${l.toLowerCase().replace(' ','-')}`} className="font-sans text-sm text-fg2 hover:text-navy-800 transition-colors duration-200">{l}</a>
               ))}
               <a href="/booking" className="font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded">Book Discovery</a>
             </div>
