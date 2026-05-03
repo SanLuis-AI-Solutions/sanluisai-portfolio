@@ -9,18 +9,18 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const faqs = [
-  { q: 'What does a Discovery Session produce?', a: 'A written diagnostic that names the bottleneck, quantifies the cost to your business, and recommends a specific build. If we cannot identify the bottleneck, your $300 is returned.' },
-  { q: 'How long does a typical engagement take?', a: '2-4 weeks from contract to deploy. We scope tightly. One bottleneck per engagement. No feature creep, no pilot purgatory.' },
-  { q: 'Do you build on existing platforms or from scratch?', a: 'Depends on the bottleneck. We default to custom infrastructure when the problem is unique to your operation. We integrate with your stack when the bottleneck is workflow-level, not tool-level.' },
-  { q: 'What does it cost?', a: 'Discovery Session: $300. Builds start at $5,000 for tightly-scoped automations and scale to $50,000+ for full infrastructure. Every engagement is outcome-priced — you know the cost before work begins.' },
-  { q: 'Who owns the code?', a: 'You do. Full source ownership upon final payment. No licensing fees. No vendor lock-in. No ongoing platform tax. We leave you with the asset.' },
+  { q: 'What is a Discovery Session?', a: 'A focused 60-minute working session where we map your current operations, identify your highest-leverage AI opportunity, and build a clear action plan. You leave with a written roadmap — whether you hire us or not. $300.' },
+  { q: 'How long does it take to build an AI system?', a: 'Most projects ship in 2-6 weeks depending on complexity. A workflow automation is typically 1-2 weeks. An AI agent system is 3-6 weeks. We set a clear timeline during the Discovery Session before any work begins.' },
+  { q: 'What does it cost?', a: 'Discovery Session: $300. Workflow automation starts at $1,200. AI agent systems start at $5,000. Full applications are scoped individually. Every project is fixed-price — you know the cost before work begins.' },
+  { q: 'Will AI replace my team?', a: 'No — and that\'s the whole point. Every system we build is designed to handle the repetitive work so your people can focus on judgment, relationships, and strategy. AI handles the inputs. Your team handles the outcomes.' },
+  { q: 'Who owns the code and data?', a: 'You do. Full source ownership upon final payment. No licensing fees. No vendor lock-in. No ongoing platform tax. Your data stays yours.' },
 ]
 
 export default function FAQ() {
   return (
     <section id="faq" className="py-32 md:py-40 bg-bone-100">
       <div className="max-w-4xl mx-auto px-8 md:px-16 lg:px-24">
-        <FadeIn delay={0}><span className="sl-eyebrow mb-8">Questions Operators Ask</span></FadeIn>
+        <FadeIn delay={0}><span className="sl-eyebrow mb-8">Common Questions</span></FadeIn>
         <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-16">Frequently asked questions.</h2></FadeIn>
         <div className="divide-y divide-navy-200">
           {faqs.map((f, i) => (

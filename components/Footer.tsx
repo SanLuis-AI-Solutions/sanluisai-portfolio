@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="font-display text-2xl font-bold text-white mb-3">SanLuis AI</div>
-            <p className="font-sans text-sm text-navy-300 leading-relaxed">Custom AI systems that eliminate business bottlenecks with surgical precision.</p>
+            <p className="font-sans text-sm text-navy-300 leading-relaxed">Custom AI solutions for small and mid-size businesses. No-code development. Bilingual EN/ES. Houston.</p>
           </div>
           <div>
             <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Services</h4>

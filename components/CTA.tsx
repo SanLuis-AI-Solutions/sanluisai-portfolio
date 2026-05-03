@@ -32,14 +32,14 @@ export default function CTA() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-8">
-                Your bottleneck has a name.
+                Ready to build something that actually works?
                 <br />
-                <span className="text-gold-600">We find it in 60 minutes.</span>
+                <span className="text-gold-600">$300. 60 minutes. Clear roadmap.</span>
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-12">
-                The Discovery Session is a paid audit — $300, one hour, one written action plan. If we cannot identify the bottleneck with specificity, your money is returned in full.
+                The Discovery Session is a focused working session where we map your operations, identify your highest-leverage AI opportunity, and deliver a written roadmap — whether you hire us or not.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>

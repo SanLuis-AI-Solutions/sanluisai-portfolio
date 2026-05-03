@@ -69,6 +69,10 @@ export default function AssessmentPage() {
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number>>({})
   const [email, setEmail] = useState('')
+  const [submitting, setSubmitting] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState('')
+  const [name, setName] = useState('')
   const router = useRouter()
 
   const handleAnswer = (score: number) => {
@@ -248,29 +252,73 @@ export default function AssessmentPage() {
           </a>
         </div>
 
-        {/* Email Capture */}
+        {/* Email Capture — Now sends to backend API */}
         <div className="border border-navy-200 bg-white rounded p-6 md:p-8 shadow-2">
           <h3 className="font-display text-lg font-bold text-navy-900 mb-2">Save Your Results</h3>
           <p className="font-sans text-sm text-fg2 mb-4">Get your AI Readiness Report sent to your inbox, plus our guide to the 5 most common AI implementation failures.</p>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault()
-              window.location.href = `mailto:contact@sanluisai.com?subject=AI Readiness Score: ${percentScore}&body=Score: ${percentScore}%0A%0ABreakdown:%0A${categories.map(c => `${c.label}: ${answers[c.key] || 0}/100`).join('%0A')}%0A%0AEmail: ${email}`
-            }}
-            className="flex flex-col sm:flex-row gap-3"
-          >
-            <input
-              type="email"
-              required
-              placeholder="your@email.com"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              className="flex-1 font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
-            />
-            <button type="submit" className="font-sans text-sm font-semibold px-6 py-3 bg-gold-600 text-white hover:bg-gold-700 transition-all duration-200 rounded whitespace-nowrap">
-              Send My Report
-            </button>
-          </form>
+          {submitted ? (
+            <div className="font-sans text-sm text-emerald-600 p-4 bg-emerald-50 rounded border border-emerald-200">
+              ✅ Report sent! Check your inbox.
+            </div>
+          ) : (
+            <form
+              onSubmit={async (e) => {
+                e.preventDefault()
+                setSubmitting(true)
+                setSubmitError('')
+                try {
+                  const res = await fetch('/api/assessment', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                      name: name || email.split('@')[0] || '',
+                      email,
+                      scores: answers,
+                    }),
+                  })
+                  const data = await res.json()
+                  if (data.success) {
+                    setSubmitted(true)
+                  } else {
+                    setSubmitError('Something went wrong. Please try again.')
+                  }
+                } catch {
+                  setSubmitError('Network error. Please try again.')
+                } finally {
+                  setSubmitting(false)
+                }
+              }}
+              className="flex flex-col gap-3"
+            >
+              <input
+                type="text"
+                placeholder="Your name (optional)"
+                value={name}
+                onChange={e => setName(e.target.value)}
+                className="font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
+              />
+              <div className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="email"
+                  required
+                  placeholder="your@email.com"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  className="flex-1 font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
+                />
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="font-sans text-sm font-semibold px-6 py-3 bg-gold-600 text-white hover:bg-gold-700 disabled:bg-gold-400 disabled:cursor-not-allowed transition-all duration-200 rounded whitespace-nowrap"
+                >
+                  {submitting ? 'Sending...' : 'Send My Report'}
+                </button>
+              </div>
+              {submitError && (
+                <p className="font-sans text-xs text-red-500">{submitError}</p>
+              )}
+            </form>
+          )}
         </div>
       </section>
     </main>

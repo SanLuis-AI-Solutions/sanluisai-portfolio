@@ -20,9 +20,9 @@ export default function Problem() {
     <section id="problem" className="py-32 md:py-40 bg-bone-100">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <div className="max-w-4xl">
-          <FadeIn delay={0}><span className="sl-eyebrow mb-8">The Diagnosis</span></FadeIn>
-          <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Every industry has a bottleneck.</h2></FadeIn>
-          <FadeIn delay={0.2}><p className="sl-lede mb-16 max-w-[56ch]">We find the one costing you the most — and remove it with surgical precision.</p></FadeIn>
+          <FadeIn delay={0}><span className="sl-eyebrow mb-8">The Challenges We Solve</span></FadeIn>
+          <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Every industry has processes that slow it down.</h2></FadeIn>
+          <FadeIn delay={0.2}><p className="sl-lede mb-16 max-w-[56ch]">We find the one costing you the most — and eliminate it with AI.</p></FadeIn>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-navy-200 rounded overflow-hidden">
           {problems.map((p, i) => (

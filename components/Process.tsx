@@ -9,10 +9,10 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const steps = [
-  { num: '1', title: 'Discovery Session', desc: '60-minute audit. $300. We find the bottleneck with specificity — or your money is returned.', time: '1 hour' },
-  { num: '2', title: 'Solution Design', desc: '2-3 days. Detailed plan: architecture, timeline, deliverables, fixed price.', time: '2-3 days' },
-  { num: '3', title: 'Custom Build', desc: 'We build the infrastructure from first principles, integrated with your existing systems.', time: '2-4 weeks' },
-  { num: '4', title: 'Deploy & Verify', desc: 'Deploy to production. Measure against baseline. Document the result.', time: 'Ongoing' },
+  { num: '1', title: 'Discovery', desc: 'Paid $300 session. We map your operations, identify your highest-leverage AI opportunity, and deliver a written roadmap with clear next steps.', time: '60 min' },
+  { num: '2', title: 'Build', desc: 'We design and build the system using AI-native tools. No traditional dev team. No six-month timeline. Full source ownership.', time: '2-4 weeks' },
+  { num: '3', title: 'Ship', desc: 'Deployed, tested, and in your team\'s hands. We document, train, and support until your team is confident and the system is stable.', time: 'Deployed' },
+  { num: '4', title: 'Maintain', desc: 'Ongoing support, monitoring, and optimization. Monthly check-ins, priority response, and continuous improvement as your business evolves.', time: 'Monthly' },
 ]
 
 export default function Process() {
@@ -20,8 +20,8 @@ export default function Process() {
     <section className="py-32 md:py-40 bg-bgCanvas">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <FadeIn delay={0}><span className="sl-eyebrow mb-8">How We Work</span></FadeIn>
-        <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Four steps. No theatre.</h2></FadeIn>
-        <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">Every engagement follows the same precision cadence.</p></FadeIn>
+        <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Discover. Build. Ship. Maintain.</h2></FadeIn>
+        <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From first conversation to production — and beyond.</p></FadeIn>
         <div className="grid md:grid-cols-4 gap-4">
           {steps.map((s, i) => (
             <FadeIn key={s.num} delay={0.2 + i * 0.1}>

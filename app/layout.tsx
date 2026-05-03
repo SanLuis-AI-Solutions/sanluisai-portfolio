@@ -25,11 +25,11 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'SanLuis AI Solutions — Surgical AI Implementations',
-  description: 'Precise, time-bounded AI implementations for operators serious about leverage.',
+  title: 'Custom AI Solutions | SanLuis AI Solutions — Houston',
+  description: 'No-code AI systems, automations, and applications for small and mid-size businesses. Built for Houston. Bilingual EN/ES.',
   openGraph: {
-    title: 'SanLuis AI Solutions',
-    description: 'Precise, time-bounded AI implementations for operators serious about leverage.',
+    title: 'Custom AI Solutions | SanLuis AI Solutions',
+    description: 'No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps.',
     images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
     type: 'website',
     locale: 'en_US',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       name: 'SanLuis AI Solutions',
       url: 'https://sanluisai.com',
       sameAs: ['https://t.me/SanLuisAiClientbot'],
-      description: 'Custom AI systems for business.',
+      description: 'Custom AI solutions for small and mid-size businesses. No-code AI development, workflow automation, and AI agent systems.',
     }),
   },
 }

@@ -32,20 +32,20 @@ export default function Hero() {
         <div className="grid lg:grid-cols-[1fr_0.3fr] gap-16 items-center">
           <div className="max-w-[68ch]">
             <AnimatedSection delay={0}>
-              <span className="sl-eyebrow mb-8">No. 01 — The Studio</span>
+              <span className="sl-eyebrow mb-8">SanLuis AI Solutions — Houston</span>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(3rem,7vw,6rem)] text-navy-800 font-medium leading-[0.96] tracking-[-0.03em] mb-8">
-                We don&apos;t sell software.<br /><span className="text-gold-600">We perform surgery.</span>
+                Custom AI Solutions.
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg md:text-xl text-fg2 leading-relaxed max-w-[54ch] mb-10">
-                Precise, time-bounded AI implementations for operators serious about leverage. One engagement. One bottleneck. Removed.
+                No-code AI for real problems. Built for Houston.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
-              <p className="sl-lede mb-12 text-fg1 max-w-[48ch]">Most AI consulting is theatre. Slide decks, pilot purgatory, six-month discovery phases. We ship working systems in weeks.</p>
+              <p className="sl-lede mb-12 text-fg1 max-w-[48ch]">Custom AI systems, automations, and applications built for small and mid-size businesses. No-code development that ships in weeks, not months.</p>
             </AnimatedSection>
             <AnimatedSection delay={0.55}>
               <div className="flex flex-col sm:flex-row gap-4 mb-20">
@@ -56,7 +56,7 @@ export default function Hero() {
             <AnimatedSection delay={0.7}>
               <GoldThread delay={0.7} />
               <div className="flex flex-wrap items-center gap-x-8 gap-y-2 mt-6 text-xs font-medium text-fg3 tracking-[0.08em] uppercase">
-                <span>50+ Bottlenecks Eliminated</span><span className="text-gold-600">◆</span><span>4 Industries</span><span className="text-gold-600">◆</span><span>0 Templates</span>
+                <span>6 Projects Delivered</span><span className="text-gold-600">◆</span><span>5 Clients Served</span><span className="text-gold-600">◆</span><span>3 AI Apps in Production</span><span className="text-gold-600">◆</span><span>0 Jobs Replaced</span>
               </div>
             </AnimatedSection>
           </div>
