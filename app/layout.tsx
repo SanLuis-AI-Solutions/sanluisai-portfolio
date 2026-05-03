@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -55,7 +57,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7FHSSCP8" />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BE7FHSSCP8');` }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

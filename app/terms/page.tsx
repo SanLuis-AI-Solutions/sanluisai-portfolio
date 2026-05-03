@@ -18,11 +18,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-navy-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-          <Link href="/" className="font-display text-2xl text-navy-800 tracking-tight">SanLuis AI</Link>
-        </div>
-      </nav>
       <main className="pt-16 bg-bgCanvas min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <h1 className="sl-display-lg text-navy-800 mb-8">Terms of Service.</h1>
@@ -39,9 +34,6 @@ export default function Page() {
           <p className="sl-body mb-4">For terms-related questions: contact@sanluisai.com</p>
         </div>
       </main>
-      <footer className="bg-navy-950 py-12 text-center">
-        <p className="font-sans text-xs text-navy-400">&copy; {new Date().getFullYear()} SanLuis AI Solutions.</p>
-      </footer>
     </>
   )
 }

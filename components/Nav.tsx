@@ -16,6 +16,10 @@ export default function Nav() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
+    // On sub-pages, start in scrolled (light) state immediately
+    if (window.location.pathname !== '/') {
+      setScrolled(true)
+    }
     const h = () => setScrolled(window.scrollY > 60)
     window.addEventListener('scroll', h, { passive: true })
     return () => window.removeEventListener('scroll', h)

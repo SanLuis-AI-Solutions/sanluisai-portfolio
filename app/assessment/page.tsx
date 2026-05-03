@@ -114,19 +114,7 @@ export default function AssessmentPage() {
 
   if (step === 'intro') {
     return (
-      <main className="min-h-screen bg-bone-50 text-fg1">
-        {/* Inline Nav */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-bone-50/85 backdrop-blur-md border-b border-navy-200 shadow-1">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16 md:h-20">
-            <a href="/" className="font-display text-xl md:text-2xl font-bold text-navy-800 tracking-tight">SanLuis AI</a>
-            <div className="hidden md:flex items-center gap-10">
-              {['Services','Work','Case Studies','About','Blog'].map(l => (
-                <a key={l} href={`/${l.toLowerCase().replace(' ','-')}`} className="font-sans text-sm text-fg2 hover:text-navy-800 transition-colors duration-200">{l}</a>
-              ))}
-              <a href="/booking" className="font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded">Book Discovery</a>
-            </div>
-          </div>
-        </nav>
+      <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
 
         <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
           <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-6">AI Readiness Assessment</p>
@@ -153,13 +141,7 @@ export default function AssessmentPage() {
     const q = questions[current]
     const answered = answers[q.category] !== undefined
     return (
-      <main className="min-h-screen bg-bone-50 text-fg1">
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-bone-50/85 backdrop-blur-md border-b border-navy-200 shadow-1">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16 md:h-20">
-            <a href="/" className="font-display text-xl md:text-2xl font-bold text-navy-800 tracking-tight">SanLuis AI</a>
-            <span className="font-sans text-sm text-fg3">Question {current + 1} of {questions.length}</span>
-          </div>
-        </nav>
+      <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
 
         <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-2xl mx-auto">
           {/* Progress bar */}
@@ -197,13 +179,7 @@ export default function AssessmentPage() {
   }
 
   return (
-    <main className="min-h-screen bg-bone-50 text-fg1">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-bone-50/85 backdrop-blur-md border-b border-navy-200 shadow-1">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16 md:h-20">
-          <a href="/" className="font-display text-xl md:text-2xl font-bold text-navy-800 tracking-tight">SanLuis AI</a>
-          <a href="/booking" className="font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded">Book Discovery</a>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
 
       <section className="pt-28 md:pt-36 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
         <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-4">Your Results</p>

@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import type { Metadata, Viewport } from 'next'
 
 export const metadata: Metadata = {
@@ -16,16 +15,6 @@ export const viewport: Viewport = {
 export default function BookingPage() {
   return (
     <>
-      {/* Simple nav bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-navy-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-          <Link href="/" className="font-display text-2xl text-navy-800">SanLuis AI</Link>
-          <Link href="/booking" className="font-sans text-sm font-semibold px-4 py-2 bg-navy-900 text-white rounded hover:bg-navy-800 transition-colors">
-            Book a Discovery Session.
-          </Link>
-        </div>
-      </nav>
-
       {/* Page content */}
       <main className="pt-16 bg-bgCanvas min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -46,14 +35,6 @@ export default function BookingPage() {
           </div>
         </div>
       </main>
-
-      {/* Simple footer */}
-      <footer className="bg-navy-950 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="font-display text-xl text-white mb-2">SanLuis AI</p>
-          <p className="font-sans text-sm text-navy-300">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
-        </div>
-      </footer>
 
       {/*
         QUICK WIN 3: Override Cal.com's inaccessible viewport meta.

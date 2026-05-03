@@ -61,8 +61,8 @@ export default function Hero() {
           {/* Right side: brand environment image */}
           <div className="hidden lg:flex flex-col items-center gap-8">
             <AnimatedSection delay={0.4}>
-              <div className="relative w-44 h-[360px] rounded overflow-hidden shadow-3 border border-bone-300/10">
-                <Image src="/brand-lobby.png" alt="SanLuis AI brand environment" fill className="object-cover" sizes="176px" />
+              <div className="relative w-72 h-48 rounded overflow-hidden shadow-3 border border-bone-300/10">
+                <Image src="/brand-lobby.png" alt="SanLuis AI brand environment" fill className="object-contain" sizes="288px" />
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.5}>
