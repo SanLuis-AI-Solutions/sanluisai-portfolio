@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variant 2 — Bone Canvas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      color: #1A3160;
+      background: #FAF7F1;
+      line-height: 1.5;
+    }
+    .hero {
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      background: #FAF7F1;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%;
+      height: 100%;
+      background: #FAF7F1;
+      border-left: 1px solid #D0D9E8;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 80px 48px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .text-col { position: relative; }
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #7A8296;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 0.92;
+      letter-spacing: -0.03em;
+      color: #1A3160;
+      margin-bottom: 16px;
+    }
+    h1 .gold-line-inline {
+      display: inline-block;
+      width: 48px;
+      height: 2px;
+      background: #D9A434;
+      vertical-align: middle;
+      margin-left: 16px;
+    }
+    .subhead {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #4A5578;
+      max-width: 42ch;
+      margin-bottom: 8px;
+    }
+    .lede {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #7A8296;
+      max-width: 48ch;
+      margin-bottom: 40px;
+    }
+    .ctas {
+      display: flex;
+      gap: 16px;
+    }
+    .cta-primary {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 16px 32px;
+      background: #1A3160;
+      color: #FAF7F1;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cta-primary:hover { background: #152850; box-shadow: 0 4px 16px rgba(217,164,52,0.2); }
+    .cta-outline {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 16px 32px;
+      background: transparent;
+      color: #1A3160;
+      border: 1px solid #1A3160;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cta-outline:hover { background: #1A3160; color: #FAF7F1; }
+    .stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid #D0D9E8;
+    }
+    .stat-item { }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #D9A434;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 11px;
+      font-weight: 400;
+      color: #7A8296;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .visual-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .frame {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: #F0EBE0;
+      box-shadow: 0 0 0 1px rgba(26,49,96,0.08), 0 4px 12px rgba(26,49,96,0.06);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7A8296;
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+    }
+    .tagline {
+      font-size: 11px;
+      color: #A0A6B5;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+      h1 { font-size: 48px; }
+      .hero::before { display: none; }
+      .visual-col { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="text-col">
+        <div class="eyebrow">SanLuis AI Solutions — Houston</div>
+        <h1>Custom AI <span class="gold-line-inline"></span><br>Solutions.</h1>
+        <p class="subhead">No-code AI for real problems. Built for Houston.</p>
+        <p class="lede">Custom AI systems, automations, and applications built for small and mid-size businesses. No-code development that ships in weeks, not months.</p>
+        <div class="ctas">
+          <button class="cta-primary">Book a Discovery Session.</button>
+          <button class="cta-outline">AI Readiness Assessment.</button>
+        </div>
+        <div class="stats">
+          <div><div class="stat-num">6</div><div class="stat-label">Projects</div></div>
+          <div><div class="stat-num">5</div><div class="stat-label">Clients</div></div>
+          <div><div class="stat-num">3</div><div class="stat-label">AI Apps</div></div>
+          <div><div class="stat-num">0</div><div class="stat-label">Jobs Lost</div></div>
+        </div>
+      </div>
+      <div class="visual-col">
+        <div class="frame">Brand Environment Image</div>
+        <div class="tagline">Founded 2025 · Houston · Bilingual EN/ES</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variant 3 — Split Frame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      color: #FAF7F1;
+      background: #FAF7F1;
+      line-height: 1.5;
+    }
+    .hero {
+      min-height: 100dvh;
+      display: flex;
+      width: 100%;
+    }
+    .panel-left {
+      width: 55%;
+      background: #FAF7F1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 80px 48px 80px 80px;
+    }
+    .panel-left-inner {
+      max-width: 520px;
+    }
+    .panel-right {
+      width: 45%;
+      background: #1A3160;
+      display: flex;
+      align-items: center;
+      padding: 80px 80px 80px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .panel-right::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -30%;
+      width: 80%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(217,164,52,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .panel-right-inner {
+      max-width: 380px;
+      position: relative;
+      z-index: 1;
+    }
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #7A8296;
+      margin-bottom: 24px;
+    }
+    .eyebrow-dark {
+      color: rgba(250,247,241,0.5);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 0.92;
+      letter-spacing: -0.03em;
+      color: #1A3160;
+      margin-bottom: 24px;
+    }
+    .subhead {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #4A5578;
+      max-width: 40ch;
+      margin-bottom: 40px;
+    }
+    .ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .cta-primary {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 16px 32px;
+      background: #1A3160;
+      color: #FAF7F1;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cta-primary:hover { box-shadow: 0 4px 16px rgba(217,164,52,0.2); }
+    .cta-outline {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 16px 32px;
+      background: transparent;
+      color: #1A3160;
+      border: 1px solid #1A3160;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cta-outline:hover { background: #1A3160; color: #FAF7F1; }
+    .right-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.15;
+      color: #FAF7F1;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+    .right-sub {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: rgba(250,247,241,0.6);
+      margin-bottom: 32px;
+    }
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: #D9A434;
+      margin-bottom: 24px;
+    }
+    .right-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .stat-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: #D9A434;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(250,247,241,0.5);
+      letter-spacing: 0.06em;
+    }
+    .right-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: rgba(250,247,241,0.3);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(250,247,241,0.1);
+    }
+    @media (max-width: 900px) {
+      .hero { flex-direction: column; }
+      .panel-left, .panel-right { width: 100%; padding: 60px 32px; }
+      .panel-left { justify-content: center; }
+      .panel-left-inner { max-width: 100%; }
+      .panel-right-inner { max-width: 100%; }
+      h1 { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="panel-left">
+      <div class="panel-left-inner">
+        <div class="eyebrow">SanLuis AI Solutions — Houston</div>
+        <h1>Custom AI<br>Solutions.</h1>
+        <p class="subhead">No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps — shipped in weeks, not months.</p>
+        <div class="ctas">
+          <button class="cta-primary">Book a Session.</button>
+          <button class="cta-outline">Readiness Assessment.</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-right">
+      <div class="panel-right-inner">
+        <div class="eyebrow-dark">By the Numbers</div>
+        <div class="right-headline">A studio built for results.</div>
+        <div class="divider"></div>
+        <p class="right-sub">Houston-based. Bilingual. Every engagement is hands-on, direct, and verified — no slide decks, no six-month discovery phases.</p>
+        <div class="right-stats">
+          <div class="stat-row">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Clients Served</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-num">3</span>
+            <span class="stat-label">AI Apps in Production</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-num">0</span>
+            <span class="stat-label">Jobs Replaced</span>
+          </div>
+        </div>
+        <div class="right-tag">Founded 2025 · Houston · Bilingual EN/ES</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

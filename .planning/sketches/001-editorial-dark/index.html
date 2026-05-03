@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variant 1 — Editorial Dark</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      color: #1A3160;
+      background: #1A3160;
+      line-height: 1.5;
+    }
+    .hero {
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1A3160;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 80px 48px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .text-col { position: relative; }
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #D9A434;
+      margin-bottom: 24px;
+    }
+    .gold-line {
+      width: 40px;
+      height: 1px;
+      background: #D9A434;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 0.92;
+      letter-spacing: -0.03em;
+      color: #FAF7F1;
+      margin-bottom: 24px;
+    }
+    h1 .accent {
+      color: #D9A434;
+      font-style: italic;
+    }
+    .subhead {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: rgba(250,247,241,0.65);
+      max-width: 42ch;
+      margin-bottom: 40px;
+    }
+    .ctas {
+      display: flex;
+      gap: 16px;
+    }
+    .cta-primary {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 16px 32px;
+      background: #FAF7F1;
+      color: #1A3160;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cta-primary:hover { background: #D9A434; color: #1A3160; }
+    .cta-outline {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 16px 32px;
+      background: transparent;
+      color: #FAF7F1;
+      border: 1px solid rgba(250,247,241,0.3);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cta-outline:hover { border-color: #D9A434; color: #D9A434; }
+    .stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(250,247,241,0.1);
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #D9A434;
+    }
+    .stat-label {
+      font-size: 11px;
+      font-weight: 400;
+      color: rgba(250,247,241,0.5);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .visual-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .frame {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: rgba(250,247,241,0.05);
+      border: 1px solid rgba(250,247,241,0.1);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(250,247,241,0.3);
+      font-size: 14px;
+    }
+    .tagline {
+      font-size: 11px;
+      color: rgba(250,247,241,0.4);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-family: 'Inter', sans-serif;
+    }
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+      h1 { font-size: 48px; }
+      .visual-col { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="text-col">
+        <div class="eyebrow">SanLuis AI Solutions — Houston</div>
+        <div class="gold-line"></div>
+        <h1>Custom AI <span class="accent">Solutions.</span></h1>
+        <p class="subhead">No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps — shipped in weeks, not months.</p>
+        <div class="ctas">
+          <button class="cta-primary">Book a Discovery Session.</button>
+          <button class="cta-outline">AI Readiness Assessment.</button>
+        </div>
+        <div class="stats">
+          <div><div class="stat-num">6</div><div class="stat-label">Projects</div></div>
+          <div><div class="stat-num">5</div><div class="stat-label">Clients</div></div>
+          <div><div class="stat-num">3</div><div class="stat-label">AI Apps</div></div>
+          <div><div class="stat-num">0</div><div class="stat-label">Jobs Lost</div></div>
+        </div>
+      </div>
+      <div class="visual-col">
+        <div class="frame">Brand Environment Image</div>
+        <div class="tagline">Founded 2025 · Bilingual EN/ES</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
