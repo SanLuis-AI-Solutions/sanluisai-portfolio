@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Garza International — Case Study | SanLuis AI Solutions',
-  description: 'How SanLuis AI eliminated manual quoting bottlenecks at Garza International, reducing bid turnaround by 60%.',
+  description: 'How SanLuis AI automated manual quoting at Garza International, reducing bid turnaround by 60%.',
 }
 
 export default function Page() {
@@ -25,7 +25,7 @@ export default function Page() {
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div><div className="font-display text-2xl text-gold-600">60% faster</div></div>
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Owner</div><div className="font-display text-xl text-navy-800">Full code</div></div>
           </div>
-          <h2 className="font-display text-2xl text-navy-800 mb-4">The Bottleneck</h2>
+          <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>
           <p className="sl-body mb-6">Garza International's estimators spent hours manually pulling material costs, labor rates, and historical bid data for each new construction quote. The process was error-prone, slow, and couldn't scale as the business grew.</p>
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
           <p className="sl-body mb-4">A custom AI quoting engine that:</p>
@@ -35,7 +35,7 @@ export default function Page() {
             <li>Auto-generates formatted proposal documents</li>
             <li>Flags high-risk bids for estimator review</li>
           </ul>
-          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">"SanLuis AI didn't just build software — they eliminated the single biggest bottleneck in our sales process. We're bidding faster and winning more." — Garza International</blockquote>
+          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">"SanLuis AI didn't just build software — they solved the single biggest problem in our sales process. We're bidding faster and winning more." — Garza International</blockquote>
         </div>
       </main>
       <footer className="bg-navy-950 py-12 text-center">

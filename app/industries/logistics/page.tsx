@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'AI for Logistics. — SanLuis AI Solutions',
-  description: 'Route inefficiency, warehouse bottlenecks, and supply chain disruptions cost logistics operators daily. We build AI to eliminate the waste.',
+  description: 'Route inefficiency, warehouse slowdowns, and supply chain disruptions cost logistics operators daily. We build AI to eliminate the waste.',
 }
 
 export default function Page() {
@@ -23,7 +23,7 @@ export default function Page() {
           </div>
           <span className="sl-eyebrow mb-4">Industry</span>
           <h1 className="sl-display-lg text-navy-800 mb-6">AI for Logistics.</h1>
-          <p className="sl-body-lg max-w-prose mb-8">Route inefficiency, warehouse bottlenecks, and supply chain disruptions cost logistics operators daily. We build AI to eliminate the waste.</p>
+          <p className="sl-body-lg max-w-prose mb-8">Route inefficiency, warehouse slowdowns, and supply chain disruptions cost logistics operators daily. We build AI to eliminate the waste.</p>
           <p className="sl-body max-w-prose mb-4">Logistics margins are razor-thin. A 5% improvement in route efficiency or warehouse throughput can mean the difference between profit and loss. Yet most operations still rely on manual dispatch and static route planning.</p>
           <p className="sl-body max-w-prose mb-4">We build AI systems that optimize routes in real time, automate warehouse sorting and inventory tracking, and predict supply chain disruptions before they happen.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8"><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Route Optimization</div><div className="font-sans text-sm text-fg2 mt-2">Dynamic routing that adapts to traffic, weather, and demand.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Warehouse Ops</div><div className="font-sans text-sm text-fg2 mt-2">AI-powered sorting, inventory tracking, and pick-path optimization.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Supply Chain</div><div className="font-sans text-sm text-fg2 mt-2">Predictive models that flag disruptions 2 weeks in advance.</div></div></div>

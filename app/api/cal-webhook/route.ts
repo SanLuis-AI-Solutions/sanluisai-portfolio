@@ -47,7 +47,7 @@ function buildEmailHtml(name: string, company: string, calLink: string): string 
   </p>
   
   <ul style="font-size: 16px; line-height: 1.8; padding-left: 20px;">
-    <li>Name your single most expensive bottleneck</li>
+    <li>Identify your single most expensive problem</li>
     <li>Map exactly what it costs you</li>
     <li>Outline the build that removes it</li>
   </ul>

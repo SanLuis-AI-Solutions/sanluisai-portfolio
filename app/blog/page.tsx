@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog — SanLuis AI Solutions',
-  description: 'Insights on custom AI systems, business automation, and eliminating bottlenecks with surgical precision.',
+  description: 'Insights on custom AI systems, business automation, and solving real problems with targeted precision.',
 }
 
 const posts = [
@@ -11,19 +11,19 @@ const posts = [
     title: 'Why Most AI Consulting Fails (And How We Avoid It)',
     date: '2026-04-28',
     slug: 'why-ai-consulting-fails',
-    excerpt: 'Six-month discovery phases. Slide decks with no code. Pilot purgatory. Here is how the traditional AI consulting model wastes your time — and how surgical, time-bounded builds produce real results in weeks.',
+    excerpt: 'Six-month discovery phases. Slide decks with no code. Pilot purgatory. Here is how the traditional AI consulting model wastes your time — and how targeted, time-bounded builds produce real results in weeks.',
   },
   {
     title: 'The $300 Discovery Session: What Happens in That Hour',
     date: '2026-04-28',
     slug: 'discovery-session-breakdown',
-    excerpt: 'You pay $300 for a 60-minute audit. What do you actually get? A breakdown of the diagnostic process — from bottleneck identification to a written action plan you can execute.',
+    excerpt: 'You pay $300 for a 60-minute audit. What do you actually get? A breakdown of the diagnostic process — from problem identification to a written action plan you can execute.',
   },
   {
-    title: '5 Signs Your Business Has An AI-Ready Bottleneck',
+    title: '5 Signs Your Business Has An AI-Ready Problem',
     date: '2026-04-28',
     slug: 'ai-ready-bottleneck-signs',
-    excerpt: 'Not every problem needs AI. Here are five signals that your bottleneck is ripe for a surgical AI solution — and when a spreadsheet or checklist is the better answer.',
+    excerpt: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution — and when a spreadsheet or checklist is the better answer.',
   },
 ]
 

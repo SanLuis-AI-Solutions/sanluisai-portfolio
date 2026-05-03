@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Custom AI Systems — SanLuis AI Solutions',
-  description: 'Built from scratch to solve your exact operational bottleneck. No bloated features. No compromises. Purpose-built AI systems that fit your existing stack.',
+  description: 'Built from scratch to solve your exact operational problem. No bloated features. No compromises. Purpose-built AI systems that fit your existing stack.',
 }
 
 export default function CustomAIPage() {
@@ -24,7 +24,7 @@ export default function CustomAIPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <h1 className="sl-display-lg text-navy-800 mb-6">Custom AI Systems</h1>
           <p className="sl-body-lg max-w-prose mb-8">
-            Built from scratch to solve your exact operational bottleneck. No bloated features. No compromises.
+            Built from scratch to solve your exact operational problem. No bloated features. No compromises.
           </p>
           <ul className="space-y-4 mb-10 max-w-prose">
             <li className="sl-body flex items-start gap-3">
@@ -33,7 +33,7 @@ export default function CustomAIPage() {
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">Surgical precision</strong> &mdash; We target your single biggest bottleneck and eliminate it completely before moving on.</span>
+              <span><strong className="text-navy-800">Custom-built precision</strong> &mdash; We target your single biggest problem and fix it completely before moving on.</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>

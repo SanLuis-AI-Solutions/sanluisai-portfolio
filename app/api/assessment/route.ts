@@ -56,7 +56,7 @@ function buildReportEmailHtml(
   </table>
 
   <p style="font-size: 16px; line-height: 1.6;">
-    The next step is a 60-minute Discovery Session where we diagnose your specific bottlenecks and build a custom AI Action Plan.
+    The next step is a 60-minute Discovery Session where we identify your specific challenges and build a custom AI Action Plan.
   </p>
 
   <div style="text-align: center; margin: 32px 0;">

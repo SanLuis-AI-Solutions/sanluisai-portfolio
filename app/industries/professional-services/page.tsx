@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'AI for Professional Services. — SanLuis AI Solutions',
-  description: 'Billable hours leakage, document review bottlenecks, and client onboarding drag erode margins. We build AI to eliminate the waste.',
+  description: 'Billable hours leakage, document review delays, and client onboarding drag erode margins. We build AI to eliminate the waste.',
 }
 
 export default function Page() {
@@ -23,7 +23,7 @@ export default function Page() {
           </div>
           <span className="sl-eyebrow mb-4">Industry</span>
           <h1 className="sl-display-lg text-navy-800 mb-6">AI for Professional Services.</h1>
-          <p className="sl-body-lg max-w-prose mb-8">Billable hours leakage, document review bottlenecks, and client onboarding drag erode margins. We build AI to eliminate the waste.</p>
+          <p className="sl-body-lg max-w-prose mb-8">Billable hours leakage, document review delays, and client onboarding drag erode margins. We build AI to eliminate the waste.</p>
           <p className="sl-body max-w-prose mb-4">Professional service firms sell time. But time leaks everywhere -- manual document review, redundant data entry, inconsistent client onboarding. Every hour spent on admin is an hour not billed.</p>
           <p className="sl-body max-w-prose mb-4">We build AI systems that automate document review, streamline client intake, and capture billable time automatically. The result: higher utilization, faster engagements, better margins.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8"><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Document Review</div><div className="font-sans text-sm text-fg2 mt-2">AI that reviews contracts and filings in minutes, not days.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Time Capture</div><div className="font-sans text-sm text-fg2 mt-2">Automatic time tracking that captures every billable minute.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Client Onboarding</div><div className="font-sans text-sm text-fg2 mt-2">Automated intake, KYC, and engagement letter generation.</div></div></div>
