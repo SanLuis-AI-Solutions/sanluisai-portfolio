@@ -4,6 +4,15 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Case Studies — SanLuis AI Solutions',
   description: 'Real results from real deployments. Garza International, Susie\'s Jewelry Repair, and LoveFlow.',
+  openGraph: {
+    title: 'Case Studies — SanLuis AI Solutions',
+    description: 'Real results from real AI deployments: Garza International (60% faster quoting), Susie\'s Jewelry Repair (3x leads), LoveFlow (40% better matches).',
+    url: 'https://sanluisai-portfolio.vercel.app/case-studies',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 const cases = [

@@ -4,6 +4,15 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'AI Development Services | Custom AI, Automation, Agents & Consulting | SanLuis AI Solutions',
   description: 'Workflow automation from $1,200. AI agent systems from $5,000. Custom AI apps and $300 Discovery Sessions. No-code AI development for small and mid-size businesses. Houston TX. Bilingual EN/ES.',
+  openGraph: {
+    title: 'AI Services | Custom AI, Automation, Agents & Consulting | SanLuis AI Solutions',
+    description: 'Custom AI systems from $5,000, workflow automation from $1,200, AI agents, and $300 consulting sessions. No-code development for small and mid-size businesses.',
+    url: 'https://sanluisai-portfolio.vercel.app/services',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 const services = [

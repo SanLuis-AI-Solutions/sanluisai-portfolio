@@ -9,7 +9,7 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const problems = [
-  { name: 'Manufacturing', desc: 'Production bottlenecks slowing throughput. Unplanned downtime reducing output. Quality gaps driving waste.' },
+  { name: 'Manufacturing', desc: 'Production delays slowing throughput. Unplanned downtime reducing output. Quality gaps driving waste.' },
   { name: 'Healthcare', desc: 'Administrative overhead consuming clinical hours. Prior authorization delays. Patient intake backlogs.' },
   { name: 'Real Estate', desc: 'Lead response gaps losing deals. Property management tasks cascading. Market analysis cycles too slow.' },
   { name: 'Professional Services', desc: 'Billable hours drowning in admin. Document review backlogs. Client onboarding stretching to weeks.' },

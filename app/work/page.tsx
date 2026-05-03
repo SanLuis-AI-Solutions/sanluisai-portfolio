@@ -4,6 +4,15 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Our Work — AI Projects & Case Studies | SanLuis AI Solutions',
   description: 'Six client projects built with Google AI Studio, Claude, Gemini, and Supabase. Real estate dashboards, business operating systems, and AI apps — all shipped to production.',
+  openGraph: {
+    title: 'Our Work — AI Projects & Case Studies | SanLuis AI Solutions',
+    description: 'Six client projects: real estate dashboards, automated lead capture, AI matching engines. Built with Google AI Studio, Claude, and Gemini.',
+    url: 'https://sanluisai-portfolio.vercel.app/work',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 const projects = [

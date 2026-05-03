@@ -80,7 +80,7 @@ export default function Services() {
             </AnimatedSection>
             <AnimatedSection delay={0.25}>
               <p className="sl-body-lg max-w-[52ch] mb-8">
-                Four categories of work. No two engagements are the same. We scope one bottleneck per build — and we do not stop until it is removed.
+                Four categories of work. No two engagements are the same. We scope one problem per build — and we do not stop until it is removed.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.35}>

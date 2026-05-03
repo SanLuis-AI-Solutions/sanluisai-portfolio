@@ -2,8 +2,17 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — SanLuis AI Solutions',
-  description: 'Terms of service for SanLuis AI Solutions — engagement terms, IP ownership, and service agreements.',
+  title: 'Terms of Service | SanLuis AI Solutions',
+  description: 'SanLuis AI Solutions terms of service — engagement model, IP ownership, payment terms, and liability.',
+  openGraph: {
+    title: 'Terms of Service | SanLuis AI Solutions',
+    description: 'SanLuis AI Solutions terms of service — engagement model, IP ownership, payment terms, and liability.',
+    url: 'https://sanluisai-portfolio.vercel.app/terms',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

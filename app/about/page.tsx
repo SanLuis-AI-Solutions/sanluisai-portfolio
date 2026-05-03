@@ -4,6 +4,15 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About — SanLuis AI Solutions | No-Code AI Developer Houston',
   description: 'SanLuis AI Solutions is a one-person AI studio in Houston, TX. Custom AI systems, workflow automation, and AI agents for small and mid-size businesses. Bilingual EN/ES.',
+  openGraph: {
+    title: 'About — SanLuis AI Solutions | No-Code AI Developer Houston',
+    description: 'SanLuis AI Solutions is a one-person AI studio in Houston, TX. Custom AI systems, workflow automation, and AI agents for small and mid-size businesses.',
+    url: 'https://sanluisai-portfolio.vercel.app/about',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

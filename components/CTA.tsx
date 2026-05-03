@@ -63,7 +63,7 @@ export default function CTA() {
                 <div>
                   <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Discovery Session</div>
                   <div className="font-display text-5xl text-white font-medium">$300</div>
-                  <div className="font-sans text-sm text-navy-400 mt-1">Refunded if no bottleneck found.</div>
+                  <div className="font-sans text-sm text-navy-400 mt-1">Refunded if no problem found.</div>
                 </div>
                 <div>
                   <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Delivery Window</div>

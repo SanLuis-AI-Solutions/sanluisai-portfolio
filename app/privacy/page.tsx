@@ -2,8 +2,17 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — SanLuis AI Solutions',
-  description: 'Privacy policy for SanLuis AI Solutions — how we collect, use, and protect your data.',
+  title: 'Privacy Policy | SanLuis AI Solutions',
+  description: 'SanLuis AI Solutions privacy policy — how we collect, use, and protect your data.',
+  openGraph: {
+    title: 'Privacy Policy | SanLuis AI Solutions',
+    description: 'SanLuis AI Solutions privacy policy — how we collect, use, and protect your data.',
+    url: 'https://sanluisai-portfolio.vercel.app/privacy',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {
