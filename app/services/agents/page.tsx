@@ -13,19 +13,19 @@ export default function AgentsPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Agents."
-        description="Autonomous agents that operate independently within defined guardrails — observing, reasoning, and executing multi-step tasks without hand-holding."
+        description="Agents that operate within guardrails you set — observing, deciding, and executing multi-step tasks without hand-holding."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            Autonomous agents that operate independently within defined guardrails. They observe, reason, and execute multi-step tasks without someone holding their hand at every turn.
+            AI agents that do real work: handle customer inquiries, qualify leads, monitor systems, trigger escalation workflows. Each agent is trained on your data, bound by your policies, and every step is logged.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
-            We architect agents that handle customer inquiries, qualify leads, monitor systems, and trigger escalation workflows. Each agent is trained on your data, bound by your policies, and every step is auditable.
+            Set the boundaries. Define the rules. The agent operates inside them without someone watching every move.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            Deploy a 24/7 digital workforce that scales with demand and never drops a task.
+            Available 24/7. Scales with demand. Never drops a task.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

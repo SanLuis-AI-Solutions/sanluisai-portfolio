@@ -13,7 +13,7 @@ export default function CustomAIPage() {
       <PageHeader
         eyebrow="Service"
         title="Custom AI Systems."
-        description="Built from scratch to solve your exact operational problem. No bloated features. No compromises."
+        description="Built from scratch for your exact operational problem. No bloat. No compromises. Just the system you actually need."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
@@ -21,23 +21,23 @@ export default function CustomAIPage() {
           <ul className="space-y-4 mb-10 max-w-prose">
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">Tailored to your stack</strong> &mdash; Integrates seamlessly with your existing tools and workflows. No forced migrations.</span>
+              <span><strong className="text-navy-800">Built on your stack</strong> &mdash; Works with the tools and workflows you already have. No forced migrations.</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">Custom-built precision</strong> &mdash; We target your single biggest problem and fix it completely before moving on.</span>
+              <span><strong className="text-navy-800">One problem at a time</strong> &mdash; We target your single biggest issue and fix it completely before moving on.</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">Weeks, not months</strong> &mdash; From concept to production in under 30 days. You describe the outcome, we engineer the system.</span>
+              <span><strong className="text-navy-800">Weeks, not months</strong> &mdash; From concept to production in under 30 days. Tell us the outcome, we engineer the system.</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">No bloat</strong> &mdash; Zero unused features. No subscription tiers. You pay for exactly what moves your business forward.</span>
+              <span><strong className="text-navy-800">What you need, nothing else</strong> &mdash; Zero unused features. No subscription tiers. You pay for exactly what moves your business forward.</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">Own your system</strong> &mdash; Full code ownership. No vendor lock-in. Your IP stays yours.</span>
+              <span><strong className="text-navy-800">You own it</strong> &mdash; Full code ownership on delivery. No lock-in. Your IP stays yours.</span>
             </li>
           </ul>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">

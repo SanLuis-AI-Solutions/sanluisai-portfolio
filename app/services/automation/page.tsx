@@ -13,19 +13,19 @@ export default function AutomationPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Automation."
-        description="Eliminate manual busywork with intelligent workflow automation that recovers 20–40 hours per week per department."
+        description="Automation that recovers 20 to 40 hours per week per department — without breaking your existing tools."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            Workflow automation eliminates manual busywork. Your team spends hours on repetitive tasks that follow predictable rules &mdash; data entry, invoice processing, report generation, email triage. Every minute spent there is a minute stolen from work that actually needs your brain.
+            Your team spends hours on work that follows predictable rules: data entry, invoice processing, report generation, email triage. Every minute there is a minute stolen from work that actually needs a human brain.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
-            We build intelligent automation pipelines that handle these workflows end to end. Our systems read, write, route, and act across your tools so your people can focus on decisions, not data.
+            We build automation pipelines that read, write, route, and act across your tools. Your people focus on decisions, not data entry.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            Typical automation projects recover 20 to 40 hours per week per department.
+            Typical projects recover 20 to 40 hours per week. Per department.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

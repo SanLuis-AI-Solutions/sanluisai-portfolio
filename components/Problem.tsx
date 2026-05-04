@@ -9,10 +9,10 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const problems = [
-  { name: 'Manufacturing', desc: 'Production delays slowing throughput. Unplanned downtime reducing output. Quality gaps driving waste.' },
-  { name: 'Healthcare', desc: 'Administrative overhead consuming clinical hours. Prior authorization delays. Patient intake backlogs.' },
-  { name: 'Real Estate', desc: 'Lead response gaps losing deals. Property management tasks cascading. Market analysis cycles too slow.' },
-  { name: 'Professional Services', desc: 'Billable hours drowning in admin. Document review backlogs. Client onboarding stretching to weeks.' },
+  { name: 'Manufacturing', desc: 'Production delays, unplanned downtime, quality gaps that eat your margins.' },
+  { name: 'Healthcare', desc: 'Admin work eating clinical hours. Prior auth backlogs. Patient intake falling through the cracks.' },
+  { name: 'Real Estate', desc: 'Leads going cold while you are in another showing. Property tasks piling up. Market analysis moving too slow.' },
+  { name: 'Professional Services', desc: 'Billable hours drowning in paperwork. Document review backlogs. Onboarding that takes weeks, not days.' },
 ]
 
 export default function Problem() {

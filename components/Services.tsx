@@ -37,29 +37,29 @@ const services = [
   {
     num: '01',
     name: 'Custom AI Systems',
-    desc: 'Built from scratch for your exact problem. No templates, no compromises, no feature bloat.',
-    detail: 'From $5,000. Architecture from first principles. Full source ownership. Your stack, your data, your model.',
+    desc: 'Built from scratch for your exact problem. No templates. No bloat. No compromises.',
+    detail: 'From $5,000. Built on your stack, with your data, for your specific problem. You own everything.',
     href: '/services/custom-ai',
   },
   {
     num: '02',
     name: 'AI Automation',
-    desc: 'Workflow automation that eliminates the manual busywork consuming your highest-paid hours.',
-    detail: 'From $1,200. Integrates with your existing tools. We map the process, build the engine, measure the margin recovery.',
+    desc: 'Workflow automation that eats the busywork your highest-paid people shouldn\'t be doing.',
+    detail: 'From $1,200. Works with the tools you already use. We map it, build it, and show you the margin you recovered.',
     href: '/services/automation',
   },
   {
     num: '03',
     name: 'AI Agents',
-    desc: 'Autonomous agents that research, decide, and execute — handling complex tasks without human oversight.',
-    detail: 'From $5,000. Purpose-built for a single domain. Not a chatbot. Not a generic AI tool. A custom system for one job.',
+    desc: 'Autonomous agents that research, decide, and act — handling complex tasks start to finish without hand-holding.',
+    detail: 'From $5,000. Purpose-built for one job. Not a chatbot. Not a generic wrapper. A custom system that does exactly one thing well.',
     href: '/services/agents',
   },
   {
     num: '04',
     name: 'AI Consulting',
-    desc: 'Strategic guidance on where AI compresses cost without compromising output.',
-    detail: '$300 Discovery Session. For owners who know they need AI but aren\'t sure where to begin. We find the three highest-leverage opportunities.',
+    desc: 'Strategic guidance on where AI actually saves you money without wasting yours on things that won\'t.',
+    detail: '$300. You know you need AI but aren\'t sure where to start. We find the opportunities that actually move the needle — and deprioritize the rest.',
     href: '/services/consulting',
   },
 ]
@@ -80,13 +80,13 @@ export default function Services() {
             </AnimatedSection>
             <AnimatedSection delay={0.25}>
               <p className="sl-body-lg max-w-[52ch] mb-8">
-                Four categories of work. No two engagements are the same. We scope one problem per build — and we do not stop until it is removed.
+                Four categories, all custom. We scope one problem per build and fix it completely before moving on.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <GoldThread delay={0.35} />
               <p className="mt-6 text-xs font-medium text-fg3 tracking-[0.08em] uppercase">
-                Time-bounded &middot; Outcome-priced &middot; Source-owned
+                Fixed price &middot; You own the code &middot; No license fees, ever
               </p>
             </AnimatedSection>
           </div>

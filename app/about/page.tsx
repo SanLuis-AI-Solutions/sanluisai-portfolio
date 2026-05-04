@@ -30,9 +30,9 @@ export default function Page() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="bg-white border border-navy-200 rounded p-8 mb-10">
             <h2 className="font-display text-xl text-navy-800 mb-3">Daniel San Luis — Founder</h2>
-            <p className="sl-body mb-4">Daniel is a bilingual (EN/ES) systems builder who designs and deploys custom AI infrastructure for businesses. Every engagement is hands-on, direct, and verified — no slide decks, no six-month discovery phases. We ship working systems in weeks.</p>
-            <p className="sl-body mb-4">Based in Houston, Daniel runs the entire AI stack: from architecture and model routing to deployment and continuous optimization. He does not subcontract. When you hire SanLuis AI, you get Daniel San Luis.</p>
-            <p className="sl-body">He's shipped 3 production AI applications and is available for both client projects and full-time AI product and solutions engineering roles.</p>
+            <p className="sl-body mb-4">Daniel is a bilingual (EN/ES) systems builder. He builds custom AI infrastructure for businesses — hands-on, direct, no slide decks, no six-month discovery phases. Just working systems shipped in weeks.</p>
+            <p className="sl-body mb-4">Based in Houston, Daniel runs the whole stack: architecture, model routing, deployment, optimization. He does not subcontract. When you hire SanLuis AI, you get Daniel San Luis.</p>
+            <p className="sl-body">Three production AI applications shipped. Available for client projects and full-time AI engineering roles.</p>
           </div>
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">How We Work</h2>

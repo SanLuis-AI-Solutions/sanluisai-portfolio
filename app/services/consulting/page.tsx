@@ -13,19 +13,19 @@ export default function ConsultingPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Consulting."
-        description="Not every problem needs a custom build. Sometimes you need a clear-eyed assessment of where AI can actually move the needle."
+        description="Not every problem needs a custom build. Sometimes you need someone honest about where AI actually helps and where it is just expensive overhead."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            Not every problem needs a custom build. Sometimes you need a clear-eyed assessment of where AI can actually move the needle and where it would just be expensive overhead.
+            We audit your operations, find the automation opportunities that actually matter, and give you a concrete roadmap. No buzzwords. No hype. You get cost estimates, timeline projections, and a risk assessment for each initiative.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
-            We audit your operations, identify high-impact automation opportunities, and deliver a concrete roadmap. No buzzwords, no hype, no overpromising. You get cost estimates, timeline projections, and a risk assessment for each initiative.
+            If something does not make sense for AI, we will tell you. That is the point of the exercise.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            Walk away with a prioritised action plan aligned to your budget and business goals.
+            Walk away with a prioritised action plan aligned to your budget and your actual business goals.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

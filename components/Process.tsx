@@ -9,10 +9,10 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const steps = [
-  { num: '1', title: 'Discovery', desc: 'Paid $300 session. We map your operations, identify your highest-leverage AI opportunity, and deliver a written roadmap with clear next steps.', time: '60 min' },
-  { num: '2', title: 'Build', desc: 'We design and build the system using AI-native tools. No traditional dev team. No six-month timeline. Full source ownership.', time: '2-4 weeks' },
-  { num: '3', title: 'Ship', desc: 'Deployed, tested, and in your team\'s hands. We document, train, and support until your team is confident and the system is stable.', time: 'Deployed' },
-  { num: '4', title: 'Maintain', desc: 'Ongoing support, monitoring, and optimization. Monthly check-ins, priority response, and continuous improvement as your business evolves.', time: 'Monthly' },
+  { num: '1', title: 'Discovery', desc: '$300. We map your operations, find your best AI opportunity, and give you a written roadmap.', time: '60 min' },
+  { num: '2', title: 'Build', desc: 'We design and build the system using AI-native tools. No traditional dev team. No six-month timeline. You own everything.', time: '2-4 weeks' },
+  { num: '3', title: 'Ship', desc: "Deployed. Tested. In your team's hands. We train, document, and support until you are confident.", time: 'Deployed' },
+  { num: '4', title: 'Maintain', desc: 'We stay on. Monthly check-ins, priority support, and continuous improvement as your business grows.', time: 'Monthly' },
 ]
 
 export default function Process() {
@@ -21,7 +21,7 @@ export default function Process() {
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <FadeIn delay={0}><span className="sl-eyebrow mb-8">How We Work</span></FadeIn>
         <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Discover. Build. Ship. Maintain.</h2></FadeIn>
-        <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From first conversation to production — and beyond.</p></FadeIn>
+        <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From first conversation to production. And after.</p></FadeIn>
         <div className="grid md:grid-cols-4 gap-4">
           {steps.map((s, i) => (
             <FadeIn key={s.num} delay={0.2 + i * 0.1}>
