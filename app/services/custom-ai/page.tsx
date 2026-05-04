@@ -46,6 +46,13 @@ export default function CustomAIPage() {
         </div>
       </section>
 
+      {/* Case study reference */}
+      <div className="border border-navy-200 rounded-xl p-6 md:p-8 mt-12 max-w-prose mx-auto bg-white">
+        <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
+        <p className="sl-body-sm mb-3">See how we built a custom matching engine for LoveFlow — 40% better matches in 6 weeks.</p>
+        <Link href="/case-studies/loveflow" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the case study →</Link>
+      </div>
+
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

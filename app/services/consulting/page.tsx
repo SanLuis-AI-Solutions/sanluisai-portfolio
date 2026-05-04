@@ -33,6 +33,13 @@ export default function ConsultingPage() {
         </div>
       </section>
 
+      {/* Case study reference */}
+      <div className="border border-navy-200 rounded-xl p-6 md:p-8 mt-12 max-w-prose mx-auto bg-white">
+        <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
+        <p className="sl-body-sm mb-3">See how our consulting engagement helped Garza International achieve 60% faster quoting in a 3-week engagement.</p>
+        <Link href="/case-studies/garza-international" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the case study →</Link>
+      </div>
+
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

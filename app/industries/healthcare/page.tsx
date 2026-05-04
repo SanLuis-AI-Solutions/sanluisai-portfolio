@@ -29,6 +29,12 @@ export default function Page() {
 
           <p className="sl-body max-w-prose mb-4">Our approach is compliance-first. Systems are designed with HIPAA considerations built in from day one. Data stays encrypted, access is logged, and we never train models on patient data.</p>
 
+          <div className="bg-gold-50 border border-gold-300 rounded-lg p-6 mb-8">
+            <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
+            <p className="sl-body-sm mb-3">We build custom AI systems for healthcare providers that are HIPAA-compliant by design. Our solutions automate prior authorization workflows, streamline patient intake with conversational AI, and generate clinical documentation in real time — all within your existing EHR ecosystem. Data stays encrypted end-to-end, access is fully audited, and models never train on patient data.</p>
+            <p className="sl-body-sm">Our work spans healthcare-adjacent industries too — see how we helped <Link href="/case-studies/susies-jewelry-repair" className="text-gold-600 underline hover:text-gold-700">Susie&apos;s Jewelry Repair</Link> automate customer service workflows with similar compliance-conscious design patterns.</p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8">
             <div className="bg-white border border-navy-900 rounded p-6">
               <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Prior Authorization</div>
@@ -49,6 +55,30 @@ export default function Page() {
 
           <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
             <p className="sl-body-sm italic">Not sure if AI makes sense for your practice? Start with a $300 Discovery Session. We will map your current operations, identify the highest-impact automation opportunity, and give you a written roadmap — whether you hire us or not.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="font-display text-2xl text-navy-800 mb-6">Related Case Studies</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <span className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600">Customer Service Automation</span>
+              <h4 className="font-display text-lg text-navy-800 mt-2 mb-2">Susie&apos;s Jewelry Repair</h4>
+              <p className="font-sans text-sm text-fg2 mb-4">How we built a HIPAA-adjacent, compliance-first customer service automation system for a retail jewelry business — demonstrating our methodology for handling sensitive customer data.</p>
+              <Link href="/case-studies/susies-jewelry-repair" className="font-sans text-sm font-semibold text-gold-600 hover:text-gold-700 underline">
+                Read case study →
+              </Link>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <span className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600">Process Automation</span>
+              <h4 className="font-display text-lg text-navy-800 mt-2 mb-2">LoveFlow</h4>
+              <p className="font-sans text-sm text-fg2 mb-4">An AI-powered consumer app demonstrating pattern matching and workflow automation techniques directly applicable to healthcare intake and documentation.</p>
+              <Link href="/case-studies/loveflow" className="font-sans text-sm font-semibold text-gold-600 hover:text-gold-700 underline">
+                Read case study →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
