@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
-  title: 'AI for Real Estate. — SanLuis AI Solutions',
-  description: 'Slow lead response, property management overhead, and market analysis delays cost deals. We build AI to eliminate the friction.',
+  title: 'AI for Real Estate — SanLuis AI Solutions',
+  description: 'Investment analysis, lead qualification, and portfolio intelligence — AI systems purpose-built for real estate professionals.',
 }
 
 export default function Page() {
@@ -14,18 +14,34 @@ export default function Page() {
       <PageHeader
         eyebrow="Industry"
         title="AI for Real Estate."
-        description="Slow lead response, property management overhead, and market analysis delays cost deals. We build AI to eliminate the friction."
+        description="Investment analysis, lead qualification, and portfolio intelligence — purpose-built for real estate professionals."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
-            <Image src="/generated/ind_realestate_00001_.png" alt="Modern residential development" fill className="object-cover" sizes="100vw" />
+            <Image src="/generated/ind_realestate_00001_.png" alt="Modern real estate development" fill className="object-cover" sizes="100vw" />
           </div>
-          <p className="sl-body max-w-prose mb-4">In real estate, speed is everything. The first agent to respond wins the listing. The firm with the best market data wins the negotiation. Yet most operations still rely on manual lead tracking, spreadsheets, and intuition.</p>
-          <p className="sl-body max-w-prose mb-4">We build AI systems that respond to leads in seconds, automate property management workflows, and deliver real-time market analysis. Not dashboards. Decisions.</p>
-          <p className="sl-body max-w-prose mb-4">Our lead response system qualifies and contacts every new lead within 60 seconds — and routes high-intent buyers directly to your phone. Property management workflows handle maintenance tickets, rent reminders, and tenant communications automatically. Market analysis runs 24/7, pulling comps and flagging pricing opportunities before your competitors spot them.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8"><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Lead Response</div><div className="font-sans text-sm text-fg2 mt-2">AI that qualifies and responds to every lead within 60 seconds.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Property Management</div><div className="font-sans text-sm text-fg2 mt-2">Automated maintenance ticketing, rent collection, and tenant comms.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div><div className="font-display text-lg text-navy-800">Market Analysis</div><div className="font-sans text-sm text-fg2 mt-2">Real-time comps, trend detection, and pricing recommendations.</div></div></div>
+          <p className="sl-body max-w-prose mb-4">Real estate runs on analysis and speed. Every deal evaluation, every investor presentation, every lead follow-up is a race against time. Yet most firms rely on manual spreadsheets for deal analysis, fragmented communication for investor updates, and gut instinct for market timing.</p>
+          <p className="sl-body max-w-prose mb-4">We build AI systems that analyze deals in seconds instead of hours, qualify leads automatically against your investment criteria, and deliver portfolio intelligence that would otherwise require a full-time analyst.</p>
+          <p className="sl-body max-w-prose mb-4">Our investment analysis engine ingests property pro-formas and returns LTC loans, ROI, profit margin, and risk scores as inputs change — live. Lead scoring pipelines automatically rank inbound prospects against your acquisition criteria. Portfolio dashboards surface occupancy trends, refinance windows, and market movements in a single view.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8">
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div>
+              <div className="font-display text-lg text-navy-800">Deal Analysis</div>
+              <div className="font-sans text-sm text-fg2 mt-2">AI-powered underwriting that evaluates deals in real time — LTC, ROI, profit margin, risk scoring.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div>
+              <div className="font-display text-lg text-navy-800">Lead Qualification</div>
+              <div className="font-sans text-sm text-fg2 mt-2">Automated pipeline that scores and routes prospects against your investment criteria.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Problem</div>
+              <div className="font-display text-lg text-navy-800">Portfolio Intel</div>
+              <div className="font-sans text-sm text-fg2 mt-2">Unified dashboard tracking occupancy, refinance windows, and market movements.</div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -80,6 +80,9 @@ export default function WorkPage() {
                     <span className="font-display text-3xl text-gold-600">{p.resultMetric}</span>
                     <span className="sl-body-sm">{p.resultLabel}</span>
                   </div>
+                  <div className="text-gold-600 font-sans text-xs font-semibold tracking-[0.08em] uppercase mb-4 group-hover:translate-x-1 transition-transform duration-200">
+                    View Case Study →
+                  </div>
                   <div className="flex flex-wrap gap-2">
                     {p.tags.map((tag) => (
                       <span key={tag} className="font-sans text-xs px-2 py-1 bg-bone-100 text-navy-600 rounded">{tag}</span>

@@ -41,6 +41,7 @@ export default function Page() {
                 <div className="flex items-center gap-3 mt-2 mb-3">
                   <h2 className="font-display text-2xl text-navy-800">{post.title}</h2>
                 </div>
+                <div className="font-sans text-xs text-navy-400 mb-3">By Daniel San Luis · 4 min read</div>
                 <p className="sl-body mb-4">{post.excerpt} <span className="text-gold-600">&mdash; Coming soon</span></p>
               </article>
             ))}

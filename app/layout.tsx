@@ -37,14 +37,43 @@ export const metadata: Metadata = {
     locale: 'en_US',
   },
   other: {
-    'script:ld+json': JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      name: 'SanLuis AI Solutions',
-      url: 'https://sanluisai.com',
-      sameAs: ['https://t.me/SanLuisAiClientbot'],
-      description: 'Custom AI solutions for small and mid-size businesses. No-code AI development, workflow automation, and AI agent systems.',
-    }),
+    'script:ld+json': JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        '@id': 'https://sanluisai.com/#organization',
+        name: 'SanLuis AI Solutions',
+        url: 'https://sanluisai.com',
+        description: 'Custom AI solutions for small and mid-size businesses. No-code AI development, workflow automation, and AI agent systems.',
+        foundingDate: '2025',
+        founder: { '@type': 'Person', name: 'Daniel San Luis' },
+        address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
+        telephone: '+1-832-779-0033',
+        sameAs: ['https://t.me/SanLuisAiClientbot'],
+        knowsLanguage: ['en', 'es'],
+        priceRange: '$$',
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': 'https://sanluisai.com/#discovery-session',
+        name: 'AI Discovery Session',
+        description: '60-minute diagnostic audit identifying your highest-value AI automation opportunities. Includes written action plan.',
+        provider: { '@id': 'https://sanluisai.com/#organization' },
+        serviceType: 'AI Consulting',
+        offers: { '@type': 'Offer', price: '300', priceCurrency: 'USD' },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': 'https://sanluisai.com/#build',
+        name: 'Custom AI Build',
+        description: 'End-to-end development of custom AI systems — agents, automations, and applications tailored to your business.',
+        provider: { '@id': 'https://sanluisai.com/#organization' },
+        serviceType: 'AI Development',
+        offers: { '@type': 'Offer', price: '15000', priceCurrency: 'USD', priceRange: '15000-50000' },
+      },
+    ]),
   },
 }
 
@@ -61,6 +90,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         {children}
         <Footer />
+
+        {/* Sticky mobile CTA */}
+        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+          <a
+            href="/booking"
+            className="flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-gold-500 text-navy-900 hover:bg-gold-400 transition-colors duration-200"
+          >
+            Book a Discovery Session → $300
+          </a>
+        </div>
       </body>
     </html>
   )
