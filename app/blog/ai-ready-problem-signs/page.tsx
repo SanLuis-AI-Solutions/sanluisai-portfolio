@@ -1,0 +1,70 @@
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import PageHeader from '@/components/PageHeader'
+
+export const metadata: Metadata = {
+  title: '5 Signs Your Business Has An AI-Ready Problem — SanLuis AI Solutions',
+  description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution — and when a spreadsheet or checklist is the better answer.',
+}
+
+export default function Page() {
+  return (
+    <>
+      <PageHeader
+        eyebrow="Insights"
+        title="5 Signs Your Business Has An AI-Ready Problem"
+        description="Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution."
+      />
+
+      <article className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="max-w-3xl mx-auto">
+          <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-6">
+            April 28, 2026 · By Daniel San Luis · 4 min read
+          </div>
+
+          <div className="prose prose-navy max-w-none">
+            <p className="lead text-lg text-navy-700 mb-8">AI is not a hammer. Not every business problem is a nail. But there are clear patterns that separate problems AI can solve from problems AI will make worse.</p>
+
+            <h2>Sign #1: You Have Data But No Decisions</h2>
+            <p>You collect customer data, sales data, or operational data — but you don't have the time to analyze it. Your spreadsheet has 10,000 rows and you're still making decisions based on intuition.</p>
+            <p><strong>AI-ready if:</strong> The data exists in a structured format (CSV, database, or CRM) and the decision pattern is repeatable. AI can analyze your data and surface actionable insights in seconds.</p>
+
+            <h2>Sign #2: Someone Is Copy-Pasting for Hours</h2>
+            <p>An employee spends 10+ hours per week moving data from one system to another. Emails to spreadsheets. PDFs to CRMs. Website forms to follow-up sequences.</p>
+            <p><strong>AI-ready if:</strong> The process has clear rules and doesn't require creative judgment. Workflow automation can handle this in minutes, not hours.</p>
+
+            <h2>Sign #3: Your Response Time Is Losing You Business</h2>
+            <p>A lead comes in at 8 PM. You respond at 10 AM the next day. By then, they've booked with a competitor. This is the most expensive delay in small business — and the most preventable.</p>
+            <p><strong>AI-ready if:</strong> You can define what a "qualified lead" looks like. An AI intake system can respond instantly, ask qualifying questions, and book a meeting without human involvement.</p>
+
+            <h2>Sign #4: You Have Experts Doing Admin Work</h2>
+            <p>Your best people — the ones whose time is most valuable — are spending it on scheduling, reporting, data entry, and follow-up emails. Their expertise is wasted on tasks that don't require it.</p>
+            <p><strong>AI-ready if:</strong> The admin work follows a pattern. AI agent systems can handle intake, routing, research, and reporting — freeing your experts for actual decisions.</p>
+
+            <h2>Sign #5: You Can Describe the Problem in One Sentence</h2>
+            <p>"I need to qualify leads faster." "I need to automate invoice follow-ups." "I need to analyze project bids consistently." If you can state the problem clearly, AI can probably solve it clearly.</p>
+            <p><strong>Not AI-ready if:</strong> You can't describe the problem without jargon, buzzwords, or a diagram. Vague problems produce expensive failures.</p>
+
+            <h2>When NOT to Use AI</h2>
+            <p>If the problem is infrequent (once a quarter), low-impact (costs less than $500/year), or requires human judgment and empathy, AI is probably the wrong answer. A checklist, a better process, or an intern is a better investment.</p>
+
+            <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">
+              "The best AI projects aren't about technology. They're about finding the problem that costs you the most and fixing it with the simplest possible solution."
+            </blockquote>
+
+            <p>Not sure if your problem qualifies? Start with a $300 Discovery Session. One hour. A clear answer.</p>
+          </div>
+
+          <div className="mt-12 pt-8 border-t border-navy-200">
+            <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-800 text-bone-50 hover:bg-navy-900 transition-all duration-220 rounded">
+              Book a Discovery Session →
+            </Link>
+            <Link href="/blog" className="ml-4 inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white transition-all duration-220 rounded">
+              ← Back to Blog
+            </Link>
+          </div>
+        </div>
+      </article>
+    </>
+  )
+}

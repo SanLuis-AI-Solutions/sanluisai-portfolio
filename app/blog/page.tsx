@@ -39,10 +39,15 @@ export default function Page() {
               <article key={post.slug} className="border-b border-navy-200 pb-10 relative">
                 <time className="font-sans text-xs text-fg3 uppercase tracking-wider">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
                 <div className="flex items-center gap-3 mt-2 mb-3">
-                  <h2 className="font-display text-2xl text-navy-800">{post.title}</h2>
+                  <Link href={`/blog/${post.slug}`} className="hover:text-gold-600 transition-colors duration-200">
+                    <h2 className="font-display text-2xl text-navy-800">{post.title}</h2>
+                  </Link>
                 </div>
                 <div className="font-sans text-xs text-navy-400 mb-3">By Daniel San Luis · 4 min read</div>
-                <p className="sl-body mb-4">{post.excerpt} <span className="text-gold-600">&mdash; Coming soon</span></p>
+                <p className="sl-body mb-4">{post.excerpt}</p>
+                <Link href={`/blog/${post.slug}`} className="text-gold-600 font-sans text-xs font-semibold tracking-[0.08em] uppercase hover:translate-x-1 transition-transform duration-200 inline-block">
+                  Read more →
+                </Link>
               </article>
             ))}
           </div>
