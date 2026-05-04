@@ -4,6 +4,9 @@ const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY || ''
 const AIRTABLE_BASE = 'app6ogTLP23Fy37bR'
 const AIRTABLE_TABLE = 'tblGveYdPHYv8BKlI'
 
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+
 const SMTP_HOST = 'smtp.gmail.com'
 const SMTP_PORT = 465
 const SMTP_USER = 'contact@sanluisai.com'
@@ -105,6 +108,59 @@ async function sendEmail(
   }
 }
 
+async function writeToSupabase(
+  email: string,
+  name: string,
+  percentScore: number,
+  verdict: string,
+  scores: Record<string, number>,
+  breakdown: { key: string; label: string; score: number; max: number }[]
+): Promise<boolean> {
+  if (!SUPABASE_SERVICE_ROLE_KEY || !SUPABASE_URL) return false
+  try {
+    const leadScore = Math.min(Math.round(percentScore / 2) + 30, 70)
+
+    const lines = breakdown.map((c) => `${c.label}: ${c.score}/${c.max}`)
+    const description = [
+      `Source: Assessment Quiz`,
+      `Score: ${percentScore}/100 — ${verdict}`,
+      '',
+      ...lines,
+    ].join('\n')
+
+    const body = {
+      first_name: name,
+      email,
+      source: 'Assessment Quiz',
+      stage: 'new',
+      lead_score: leadScore,
+      description,
+      metadata: scores,
+    }
+
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
+      method: 'POST',
+      headers: {
+        apikey: SUPABASE_SERVICE_ROLE_KEY,
+        Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+        'Content-Type': 'application/json',
+        Prefer: 'resolution=merge-duplicates',
+      },
+      body: JSON.stringify(body),
+    })
+
+    if (!res.ok) {
+      const errText = await res.text()
+      console.error('[assessment] Supabase write failed:', res.status, errText)
+    }
+
+    return res.ok
+  } catch (err) {
+    console.error('[assessment] Supabase write error:', err)
+    return false
+  }
+}
+
 const ALL_CATEGORIES = [
   { key: 'clarity', label: 'Clarity', max: 100 },
   { key: 'data', label: 'Data', max: 100 },
@@ -202,12 +258,16 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    // Write to Supabase (primary — upsert by email via merge-duplicates)
+    const supabaseWritten = await writeToSupabase(email, displayName, percentScore, verdict, scores, breakdown)
+
     // Send report email
     const emailSent = await sendEmail(email, displayName, percentScore, verdict, breakdown)
 
     return NextResponse.json({
       success: true,
       airtable: airtableId ? { id: airtableId } : null,
+      supabase: supabaseWritten,
       email_sent: emailSent,
       score: percentScore,
       verdict,

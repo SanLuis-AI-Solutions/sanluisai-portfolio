@@ -4,6 +4,10 @@ const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY || ''
 const AIRTABLE_BASE = 'app6ogTLP23Fy37bR'
 const AIRTABLE_TABLE = 'tblGveYdPHYv8BKlI'
 
+// Supabase config
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+
 // SMTP config from env or inline
 const SMTP_HOST = 'smtp.gmail.com'
 const SMTP_PORT = 465
@@ -72,6 +76,66 @@ function buildEmailHtml(name: string, company: string, calLink: string): string 
     <p>SanLuis AI Solutions · Houston, TX</p>
   </div>
 </div>`
+}
+
+async function writeToSupabase(params: {
+  bookerName: string
+  bookerEmail: string
+  companyWebsite: string
+  company: string
+  biggestPain: string
+  aiExperience: string
+  budget: string
+  languagePref: string
+  leadScore: number
+  metadata: Record<string, unknown>
+}): Promise<boolean> {
+  if (!SUPABASE_URL || !SUPABASE_SERVICE_KEY) return false
+  const { bookerName, bookerEmail, companyWebsite, company, biggestPain, aiExperience, budget, languagePref, leadScore, metadata } = params
+
+  // Split name into first/last
+  const nameParts = bookerName.trim().split(' ')
+  const firstName = nameParts[0] || bookerName
+  const lastName = nameParts.slice(1).join(' ') || ''
+
+  const payload: Record<string, unknown> = {
+    first_name: firstName,
+    last_name: lastName,
+    email: bookerEmail,
+    company_name: company || undefined,
+    pain_points: biggestPain || undefined,
+    ai_experience: aiExperience || undefined,
+    budget_range: budget || undefined,
+    language: languagePref || undefined,
+    source: 'cal_booking',
+    stage: 'new',
+    lead_score: leadScore,
+    metadata,
+  }
+  if (companyWebsite) payload.company_website = companyWebsite
+
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
+      method: 'POST',
+      headers: {
+        apikey: SUPABASE_SERVICE_KEY,
+        Authorization: `Bearer ${SUPABASE_SERVICE_KEY}`,
+        'Content-Type': 'application/json',
+        Prefer: 'resolution=merge-duplicates',
+      },
+      body: JSON.stringify(payload),
+    })
+    if (!res.ok) {
+      const text = await res.text()
+      console.error(`[cal-webhook] Supabase write failed (${res.status}): ${text}`)
+      return false
+    }
+    console.log(`[cal-webhook] Supabase lead upserted for ${bookerEmail}`)
+    return true
+  } catch (err) {
+    console.error(`[cal-webhook] Supabase write error:`, err)
+    return false
+  }
 }
 
 async function sendEmail(to: string, name: string, company: string): Promise<boolean> {
@@ -189,6 +253,34 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    // Write to Supabase (primary - upsert by email)
+    const leadScore = companyWebsite || budget ? 60 : 50
+    const supabaseOk = await writeToSupabase({
+      bookerName,
+      bookerEmail,
+      companyWebsite,
+      company,
+      biggestPain,
+      aiExperience,
+      budget,
+      languagePref,
+      leadScore,
+      metadata: {
+        company_website: companyWebsite,
+        business_overview: businessOverview,
+        biggest_pain: biggestPain,
+        current_tools: currentTools,
+        ai_experience: aiExperience,
+        budget: budget,
+        language_preference: languagePref,
+        business_type: businessType,
+        why_exploring: whyExploring,
+        event_title: eventTitle,
+        event_id: eventId,
+        start_time: startTime,
+      },
+    })
+
     // Send email confirmation
     let emailSent = false
     if (bookerEmail) {
@@ -198,6 +290,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       airtable: airtableId ? { id: airtableId } : null,
+      supabase: supabaseOk,
       email_sent: emailSent,
     })
   } catch (error) {
