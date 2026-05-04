@@ -84,7 +84,7 @@ export default function ServicesPage() {
                     </ul>
                   </div>
                   <div className="flex flex-col items-start md:items-end gap-2 md:min-w-[140px]">
-                    <div className="font-display text-2xl text-gold-600">{s.pricing}</div>
+                    <span className="inline-block font-sans text-xs font-semibold tracking-[0.08em] uppercase px-3 py-1 bg-gold-100 text-gold-700 rounded-full mb-1">{s.pricing}</span>
                     <div className="font-mono text-xs text-fg4 tracking-[0.08em] uppercase">{s.timeline}</div>
                     <Link href={s.href} className="mt-3 font-sans text-sm font-semibold px-5 py-2 border border-navy-800 text-navy-800 rounded hover:bg-navy-800 hover:text-white transition-all duration-220">
                       Learn more &rarr;

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 }
 
 const cases = [
-  { industry: 'Construction', company: 'Garza International', problem: 'Manual quoting process taking 6+ hours per bid', result: '60% faster quoting', slug: 'garza-international' },
-  { industry: 'Retail', company: "Susie's Jewelry Repair", problem: 'Inconsistent lead capture and follow-up', result: '3x leads', slug: 'susies-jewelry-repair' },
-  { industry: 'Tech', company: 'LoveFlow', problem: 'Matching algorithm underperforming on retention', result: '40% better matches', slug: 'loveflow' },
+  { industry: 'Construction', company: 'Garza International', problem: 'Manual quoting process taking 6+ hours per bid', result: '60% faster quoting', quote: '"SanLuis AI solved the single biggest problem in our sales process. We\'re bidding faster and winning more."', slug: 'garza-international' },
+  { industry: 'Retail', company: "Susie's Jewelry Repair", problem: 'Inconsistent lead capture and follow-up', result: '3x leads', quote: '"I went from losing leads to having a system that works even when I\'m not in the shop."', slug: 'susies-jewelry-repair' },
+  { industry: 'Tech', company: 'LoveFlow', problem: 'Matching algorithm underperforming on retention', result: '40% better matches', quote: '"SanLuis AI didn\'t just fix our algorithm — they gave us a competitive moat."', slug: 'loveflow' },
 ]
 
 export default function Page() {
@@ -45,6 +45,9 @@ export default function Page() {
                 <div>
                   <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div>
                   <div className="font-display text-2xl text-gold-600">{c.result}</div>
+                </div>
+                <div className="mt-4 pt-4 border-t border-navy-100">
+                  <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
                 </div>
               </Link>
             ))}

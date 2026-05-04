@@ -37,7 +37,7 @@ export default function Page() {
           <div className="space-y-10">
             {posts.map((post) => (
               <article key={post.slug} className="border-b border-navy-200 pb-10 relative">
-                <time className="font-sans text-xs text-fg3 uppercase tracking-wider">{post.date}</time>
+                <time className="font-sans text-xs text-fg3 uppercase tracking-wider">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
                 <div className="flex items-center gap-3 mt-2 mb-3">
                   <h2 className="font-display text-2xl text-navy-800">{post.title}</h2>
                 </div>
