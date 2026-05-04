@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'About — SanLuis AI Solutions | No-Code AI Developer Houston',
@@ -18,12 +19,15 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <main className="pt-16 bg-bgCanvas min-h-screen">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <span className="sl-eyebrow mb-4">The Studio</span>
-          <h1 className="sl-display-lg text-navy-800 mb-6">About the studio.</h1>
-          <p className="sl-lede mb-8">SanLuis AI Solutions is a one-person AI studio based in Houston, TX. We build what used to require a full dev team — in weeks, at a fraction of the cost. Every system is designed to make your team more powerful, not smaller.</p>
+      <PageHeader
+        eyebrow="The Studio"
+        title="About the studio."
+        description="SanLuis AI Solutions is a one-person AI studio based in Houston, TX. We build what used to require a full dev team — in weeks, at a fraction of the cost. Every system is designed to make your team more powerful, not smaller."
+      />
 
+      {/* Light content section */}
+      <main className="bg-bone-50 min-h-screen">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="bg-white border border-navy-200 rounded p-8 mb-10">
             <h2 className="font-display text-xl text-navy-800 mb-3">Daniel San Luis — Founder</h2>
             <p className="sl-body mb-4">Daniel is a bilingual (EN/ES) systems builder who designs and deploys custom AI infrastructure for businesses. Every engagement is hands-on, direct, and verified — no slide decks, no six-month discovery phases. We ship working systems in weeks.</p>
@@ -71,18 +75,24 @@ export default function Page() {
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Stack</h2>
           <p className="sl-body mb-6">Design: Google Stitch. Development: Google AI Studio, Gemini, Claude. Frontend: React, Next.js, Tailwind CSS. Backend: Supabase. Deployment: Vercel, GitHub. Automation: n8n. Languages: English &middot; Spanish.</p>
+        </div>
+      </main>
 
-          <div className="flex gap-4">
-            <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
+      {/* Dark CTA section */}
+      <section className="bg-navy-900 py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build your project?</h2>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
               Book a Discovery Session.
             </Link>
-            <a href="mailto:contact@sanluisai.com" className="inline-block font-sans text-sm font-semibold px-6 py-3 border border-navy-900 text-navy-900 rounded hover:bg-navy-50 transition-colors">
+            <a href="mailto:contact@sanluisai.com" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">
               contact@sanluisai.com
             </a>
           </div>
         </div>
-      </main>
-
+      </section>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'Our Work — AI Projects & Case Studies | SanLuis AI Solutions',
@@ -59,14 +60,14 @@ const earlierWork = [
 export default function WorkPage() {
   return (
     <>
-      <main className="pt-16 bg-bgCanvas min-h-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <span className="sl-eyebrow mb-4">The Work</span>
-          <h1 className="sl-display-lg text-navy-800 mb-4">Six clients. Six projects. Built with AI, shipped to production.</h1>
-          <p className="sl-body-lg max-w-prose mb-16">
-            Every project started with a conversation about a specific problem. Every one ended with a deployed system that solved it.
-          </p>
+      <PageHeader
+        eyebrow="The Work"
+        title="Six clients. Six projects. Built with AI, shipped to production."
+        description="Every project started with a conversation about a specific problem. Every one ended with a deployed system that solved it."
+      />
 
+      <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto py-24">
           <h2 className="font-display text-2xl text-navy-800 mb-6">AI-Powered Development (2025–2026)</h2>
           <div className="grid md:grid-cols-3 gap-6 mb-20">
             {projects.map((p) => (
@@ -100,19 +101,24 @@ export default function WorkPage() {
               </a>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* CTA */}
-          <div className="border-t border-navy-200 pt-12 text-center">
-            <h2 className="font-display text-2xl text-navy-800 mb-4">Ready to build your project?</h2>
-            <p className="sl-body-lg mb-6">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
-            <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-8 py-4 bg-navy-900 text-white rounded hover:bg-navy-800 transition-colors">
+      {/* Dark CTA section */}
+      <section className="bg-navy-900 py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build your project?</h2>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
               Book a Discovery Session.
             </Link>
+            <a href="mailto:contact@sanluisai.com" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">
+              contact@sanluisai.com
+            </a>
           </div>
         </div>
-      </main>
-
-      
+      </section>
     </>
   )
 }

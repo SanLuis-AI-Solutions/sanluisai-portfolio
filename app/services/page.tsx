@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'AI Development Services | Custom AI, Automation, Agents & Consulting | SanLuis AI Solutions',
@@ -28,7 +29,7 @@ const services = [
   {
     num: '02',
     name: 'Workflow Automation',
-    desc: 'Eliminate the manual busywork consuming your team\'s highest-value hours.',
+    desc: "Eliminate the manual busywork consuming your team's highest-value hours.",
     items: ['Map your process once, then let automation run it', 'Integrates with your existing tools (CRM, email, Slack, etc.)', '30-day post-launch support included', 'Examples: lead intake, invoice generation, report delivery'],
     pricing: 'From $1,200',
     timeline: '1-2 weeks',
@@ -57,16 +58,14 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <main className="pt-16 bg-bgCanvas min-h-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <span className="sl-eyebrow mb-4">What We Build</span>
-          <h1 className="sl-display-lg text-navy-800 mb-4">Custom AI solutions for real business problems.</h1>
-          <p className="sl-body-lg max-w-prose mb-16">
-            Most businesses are losing hours every week to processes that AI could run automatically.
-            The problem isn&apos;t the technology — it&apos;s knowing what to build, in what order, and whether it will actually work for your specific operation.
-            That&apos;s what we do. We start by understanding your business, then build exactly what it needs.
-          </p>
+      <PageHeader
+        eyebrow="What We Build"
+        title="Custom AI solutions for real business problems."
+        description="Most businesses are losing hours every week to processes that AI could run automatically. The problem isn't the technology — it's knowing what to build, in what order, and whether it will actually work for your specific operation. That's what we do. We start by understanding your business, then build exactly what it needs."
+      />
 
+      <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-7xl mx-auto">
           <div className="space-y-8 mb-20">
             {services.map((s) => (
               <div key={s.num} className="bg-white border border-navy-200 rounded-xl p-8 md:p-10 hover:border-navy-900 transition-all duration-220">
@@ -119,9 +118,23 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
-      
+      {/* Dark CTA section */}
+      <section className="bg-navy-900 py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build your project?</h2>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
+              Book a Discovery Session.
+            </Link>
+            <a href="mailto:contact@sanluisai.com" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">
+              contact@sanluisai.com
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

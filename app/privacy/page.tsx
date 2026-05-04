@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | SanLuis AI Solutions',
@@ -18,9 +19,13 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <main className="pt-16 bg-bgCanvas min-h-screen">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <h1 className="sl-display-lg text-navy-800 mb-8">Privacy Policy.</h1>
+      <PageHeader
+        eyebrow="Legal"
+        title="Privacy Policy."
+      />
+
+      <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-3xl mx-auto">
           <p className="sl-body mb-4"><strong>Effective Date:</strong> April 28, 2026</p>
           <h2 className="font-display text-xl text-navy-800 mt-8 mb-3">1. Information We Collect</h2>
           <p className="sl-body mb-4">We collect only the information you voluntarily provide: name, email address, company name, and project details when you book a Discovery Session or contact us directly. We do not use tracking cookies, analytics pixels beyond standard GA4, or third-party advertising networks.</p>
@@ -33,7 +38,7 @@ export default function Page() {
           <h2 className="font-display text-xl text-navy-800 mt-8 mb-3">5. Contact</h2>
           <p className="sl-body mb-4">For privacy-related questions: contact@sanluisai.com</p>
         </div>
-      </main>
+      </section>
     </>
   )
 }

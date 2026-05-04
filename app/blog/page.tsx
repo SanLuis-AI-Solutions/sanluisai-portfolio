@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageHeader from '@/components/PageHeader'
 import SubscribeForm from '@/components/SubscribeForm'
 
 const posts = [
@@ -25,11 +26,14 @@ const posts = [
 export default function Page() {
   return (
     <>
-      <main className="pt-16 bg-bgCanvas min-h-screen">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <span className="sl-eyebrow mb-4">Insights</span>
-          <h1 className="sl-display-lg text-navy-800 mb-6">Blog.</h1>
-          <p className="sl-body-lg max-w-prose mb-12">We write when we have something to say. No content calendars. No filler. Just real insights from real builds.</p>
+      <PageHeader
+        eyebrow="Insights"
+        title="Blog."
+        description="We write when we have something to say. No content calendars. No filler. Just real insights from real builds."
+      />
+
+      <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-3xl mx-auto">
           <div className="space-y-10">
             {posts.map((post) => (
               <article key={post.slug} className="border-b border-navy-200 pb-10 relative">
@@ -42,15 +46,16 @@ export default function Page() {
             ))}
           </div>
         </div>
-      </main>
-      <section className="bg-bone-100 border-y border-navy-200 py-16">
+      </section>
+
+      {/* Dark CTA section */}
+      <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="font-display text-2xl text-navy-800 mb-3">Get notified when we publish.</h3>
-          <p className="sl-body-sm mb-6 max-w-lg mx-auto">No spam. No content calendar filler. Just real insights from real AI builds — when we have something worth saying.</p>
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Get notified when we publish.</h2>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">No spam. No content calendar filler. Just real insights from real AI builds — when we have something worth saying.</p>
           <SubscribeForm />
         </div>
       </section>
-      
     </>
   )
 }

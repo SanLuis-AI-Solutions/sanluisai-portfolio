@@ -1,12 +1,12 @@
+import Link from 'next/link'
 import type { Metadata, Viewport } from 'next'
+import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'Book a $300 Discovery Session — SanLuis AI Solutions',
   description: 'Book a $300 Discovery Session with SanLuis AI — 60 minutes, written action plan, money-back guarantee.',
 }
 
-// Explicitly set accessible viewport (no maximum-scale or user-scalable=no)
-// to prevent Cal.com from injecting WCAG-violating viewport restrictions
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -15,15 +15,14 @@ export const viewport: Viewport = {
 export default function BookingPage() {
   return (
     <>
-      {/* Page content */}
-      <main className="pt-16 bg-bgCanvas min-h-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center mb-12">
-            <h1 className="sl-display-lg text-navy-800 mb-4">Book a Discovery Session</h1>
-            <p className="sl-body-lg max-w-2xl mx-auto">
-              Tell us about your business challenge. We will map out a custom AI solution tailored to your specific needs and timeline.
-            </p>
-          </div>
+      <PageHeader
+        eyebrow="Get Started"
+        title="Book a Discovery Session."
+        description="Tell us about your business challenge. We will map out a custom AI solution tailored to your specific needs and timeline."
+      />
+
+      <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-7xl mx-auto">
           <div className="bg-surface border border-navy-200 w-full overflow-hidden rounded" style={{ minHeight: '700px' }}>
             <iframe
               src="https://cal.com/sanluisai/discovery-session"
@@ -34,13 +33,10 @@ export default function BookingPage() {
             />
           </div>
         </div>
-      </main>
+      </section>
 
       {/*
         QUICK WIN 3: Override Cal.com's inaccessible viewport meta.
-        Cal.com embed sets maximum-scale=1 and user-scalable=no, which violates
-        WCAG 2.1 Success Criterion 1.4.4 (Resize Text). This script overrides
-        the viewport meta after the iframe loads to restore pinch-to-zoom.
       */}
       <script
         dangerouslySetInnerHTML={{
@@ -57,12 +53,10 @@ export default function BookingPage() {
       document.head.appendChild(meta);
     }
   }
-  // Run on load and after a short delay to catch Cal.com's late viewport changes
   window.addEventListener('load', function() {
     fixViewport();
     setTimeout(fixViewport, 2000);
   });
-  // Also observe for any future changes to the viewport meta
   if (typeof MutationObserver !== 'undefined') {
     var observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(m) {
