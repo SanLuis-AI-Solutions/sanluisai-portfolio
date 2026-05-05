@@ -19,28 +19,52 @@ export default function Page() {
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
-        <AnimatedSection delay={0}>
         <div className="max-w-7xl mx-auto">
+          <AnimatedSection delay={0}>
           <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
             <Image src="/generated/ind_manufacturing_00001_.png" alt="AI-powered manufacturing facility" fill className="object-cover" sizes="100vw" />
           </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
           <p className="sl-body max-w-prose mb-4">Manufacturing runs on precision. But most operations still rely on manual scheduling, reactive maintenance, and lagging quality indicators. The result: lost production time, scrap waste, and margin erosion that compounds daily.</p>
           <p className="sl-body max-w-prose mb-4">We build AI systems that predict equipment failure before it happens, optimize production schedules in real time, and catch quality defects at the point of origin. One deployment. One problem solved.</p>
+          </AnimatedSection>
 
+          <AnimatedSection delay={0.2}>
           <div className="bg-gold-50 border border-gold-300 rounded-lg p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
             <p className="sl-body-sm mb-3">We build predictive maintenance systems that analyze sensor data to flag equipment failure 72 hours before it happens, computer vision pipelines that catch quality defects at line speed, and AI-driven demand forecasting that optimizes inventory levels across your supply chain. Each solution is custom-built around your existing PLCs, sensors, and ERP systems — no rip-and-replace required.</p>
             <p className="sl-body-sm">See how our approach to AI-powered scheduling and resource tracking helped <Link href="/case-studies/garza-international" className="text-gold-600 underline hover:text-gold-700">Garza International</Link> reduce downtime and optimize resource allocation on a major construction project.</p>
           </div>
+          </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8"><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Unplanned Downtime</div><div className="font-sans text-sm text-fg2 mt-2">Predictive models that flag failures 72 hours in advance.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Quality Control</div><div className="font-sans text-sm text-fg2 mt-2">Computer vision systems that catch defects at line speed.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Supply Chain</div><div className="font-sans text-sm text-fg2 mt-2">AI-driven demand forecasting and inventory optimization.</div></div></div>
-          <div className="mt-12">
-            <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
-              Book a Discovery Session.
-            </Link>
+          <AnimatedSection delay={0.3}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8">
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Predictive Maintenance</div>
+              <div className="font-display text-lg text-navy-800 mb-2">72-hour advance warning</div>
+              <div className="font-sans text-sm text-fg2">Predictive models that flag equipment failure 72 hours before it happens.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Quality Control</div>
+              <div className="font-display text-lg text-navy-800 mb-2">Defect detection at line speed</div>
+              <div className="font-sans text-sm text-fg2">Computer vision systems that catch quality defects at the point of origin.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Demand Forecasting</div>
+              <div className="font-display text-lg text-navy-800 mb-2">Inventory optimization</div>
+              <div className="font-sans text-sm text-fg2">AI-driven demand forecasting that optimizes inventory across your supply chain.</div>
+            </div>
           </div>
-        </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.4}>
+          <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
+            <p className="sl-body-sm italic">Not sure if AI makes sense for your facility? Start with a $300 Discovery Session. We will audit your production data, identify the highest-impact automation opportunity, and give you a written roadmap — whether you hire us or not.</p>
+          </div>
         </AnimatedSection>
+        </div>
       </section>
 
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">
@@ -59,7 +83,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to transform your manufacturing?</h2>

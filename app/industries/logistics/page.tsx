@@ -19,29 +19,53 @@ export default function Page() {
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
-        <AnimatedSection delay={0}>
         <div className="max-w-7xl mx-auto">
+          <AnimatedSection delay={0}>
           <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
             <Image src="/generated/ind_logistics_00001_.png" alt="Automated logistics warehouse" fill className="object-cover" sizes="100vw" />
           </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
           <p className="sl-body max-w-prose mb-4">Logistics margins are razor-thin. A 5% improvement in route efficiency or warehouse throughput can mean the difference between profit and loss. Yet most operations still rely on manual dispatch and static route planning.</p>
           <p className="sl-body max-w-prose mb-4">We build AI systems that optimize routes in real time, automate warehouse sorting and inventory tracking, and predict supply chain disruptions before they happen.</p>
           <p className="sl-body max-w-prose mb-4">Our route optimization engine ingests traffic, weather, and order data to produce dynamic dispatch schedules — reducing fuel consumption by 12-18% on average. Warehouse automation systems use computer vision to track every pallet, case, and SKU in real time, eliminating inventory discrepancies. Supply chain models run predictive simulations that flag disruption risk factors from supplier performance to geopolitical events, giving you 2 weeks of lead time instead of 2 hours.</p>
+          </AnimatedSection>
 
+          <AnimatedSection delay={0.2}>
           <div className="bg-gold-50 border border-gold-300 rounded-lg p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
             <p className="sl-body-sm mb-3">We design and deploy custom AI automation for logistics operators — focusing on real-time route optimization, warehouse computer vision, and predictive supply chain analytics. Every solution is built around your existing infrastructure: we integrate with your TMS, WMS, and ERP systems rather than replacing them. Our automation-first approach means dispatchers spend time on exceptions, not routine planning.</p>
             <p className="sl-body-sm">Learn how our automation methodology helped <Link href="/case-studies/garza-international" className="text-gold-600 underline hover:text-gold-700">Garza International</Link> streamline construction logistics with AI-powered scheduling and resource tracking.</p>
           </div>
+          </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8"><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Route Optimization</div><div className="font-sans text-sm text-fg2 mt-2">Dynamic routing that adapts to traffic, weather, and demand — reducing fuel costs by 12-18%.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Warehouse Ops</div><div className="font-sans text-sm text-fg2 mt-2">AI-powered sorting, computer vision inventory tracking, and optimized pick paths.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Supply Chain Risk</div><div className="font-sans text-sm text-fg2 mt-2">Predictive models that flag disruptions 2 weeks in advance — not 2 hours.</div></div></div>
-          <div className="mt-12">
-            <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
-              Book a Discovery Session.
-            </Link>
+          <AnimatedSection delay={0.3}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8">
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Route Optimization</div>
+              <div className="font-display text-lg text-navy-800 mb-2">Dynamic routing</div>
+              <div className="font-sans text-sm text-fg2">Adaptive routing that responds to traffic, weather, and demand — reducing fuel costs by 12-18%.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Warehouse Ops</div>
+              <div className="font-display text-lg text-navy-800 mb-2">Computer vision tracking</div>
+              <div className="font-sans text-sm text-fg2">AI-powered sorting, computer vision inventory tracking, and optimized pick paths.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Supply Chain Risk</div>
+              <div className="font-display text-lg text-navy-800 mb-2">2 weeks advance notice</div>
+              <div className="font-sans text-sm text-fg2">Predictive models that flag disruptions 2 weeks in advance — not 2 hours.</div>
+            </div>
           </div>
-        </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.4}>
+          <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
+            <p className="sl-body-sm italic">Not sure if AI makes sense for your logistics operation? Start with a $300 Discovery Session. We will map your current workflows, identify the highest-impact automation opportunity, and give you a written roadmap — whether you hire us or not.</p>
+          </div>
         </AnimatedSection>
+        </div>
       </section>
 
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">
@@ -60,7 +84,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to optimize your logistics?</h2>

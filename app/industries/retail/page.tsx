@@ -19,24 +19,53 @@ export default function Page() {
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
-        <AnimatedSection delay={0}>
         <div className="max-w-7xl mx-auto">
+          <AnimatedSection delay={0}>
           <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
             <Image src="/generated/ind_retail_00001_.png" alt="Modern retail storefront" fill className="object-cover" sizes="100vw" />
           </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
           <p className="sl-body max-w-prose mb-4">Retail runs on inventory turns and customer experience. But most retailers still use spreadsheets for demand planning, manual processes for customer follow-up, and intuition for pricing decisions.</p>
           <p className="sl-body max-w-prose mb-4">We build AI systems that forecast demand with precision, automate customer service without sacrificing quality, and optimize pricing in real time.</p>
           <p className="sl-body max-w-prose mb-4">Our demand forecasting engine plugs into your POS data and predicts stock requirements 4 weeks out — reducing stockouts and overstock simultaneously. Customer service automation handles 80% of inquiries without human escalation, freeing your team for the complex cases. Dynamic pricing adjusts margins in real time based on demand, competitor pricing, and inventory position.</p>
+          </AnimatedSection>
 
+          <AnimatedSection delay={0.2}>
           <div className="bg-gold-50 border border-gold-300 rounded-lg p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
             <p className="sl-body-sm mb-3">We build custom AI systems for retailers — demand forecasting engines that plug into your POS to predict stock requirements 4 weeks out, customer service automation that handles 80% of inquiries without escalation, and dynamic pricing that adjusts margins in real time. Our solutions integrate with your existing POS, ecommerce, and inventory systems without disruptive changes.</p>
             <p className="sl-body-sm">See how we built a complete customer service automation system for <Link href="/case-studies/susies-jewelry-repair" className="text-gold-600 underline hover:text-gold-700">Susie&apos;s Jewelry Repair</Link>, a retail business that needed AI-powered customer service, pricing guidance, and operational workflow automation.</p>
           </div>
+          </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8"><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Inventory</div><div className="font-sans text-sm text-fg2 mt-2">AI demand forecasting that reduces stockouts and overstocks.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Customer Service</div><div className="font-sans text-sm text-fg2 mt-2">Automated support that resolves 80% of inquiries without escalation.</div></div><div className="bg-white border border-navy-900 rounded p-6"><div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Solution</div><div className="font-display text-lg text-navy-800">Pricing</div><div className="font-sans text-sm text-fg2 mt-2">Dynamic pricing engine that maximizes margin in real time.</div></div></div>
-        </div>
+          <AnimatedSection delay={0.3}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 mb-8">
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Inventory</div>
+              <div className="font-display text-lg text-navy-800 mb-2">4-week forecasting</div>
+              <div className="font-sans text-sm text-fg2">AI demand forecasting that reduces stockouts and overstocks simultaneously.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Customer Service</div>
+              <div className="font-display text-lg text-navy-800 mb-2">80% auto-resolved</div>
+              <div className="font-sans text-sm text-fg2">Automated support that resolves 80% of inquiries without escalation.</div>
+            </div>
+            <div className="bg-white border border-navy-900 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Pricing</div>
+              <div className="font-display text-lg text-navy-800 mb-2">Real-time margin</div>
+              <div className="font-sans text-sm text-fg2">Dynamic pricing engine that maximizes margin based on demand and competition.</div>
+            </div>
+          </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.4}>
+          <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
+            <p className="sl-body-sm italic">Not sure if AI makes sense for your retail business? Start with a $300 Discovery Session. We will map your current operations, identify the highest-impact automation opportunity, and give you a written roadmap — whether you hire us or not.</p>
+          </div>
         </AnimatedSection>
+        </div>
       </section>
 
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">
