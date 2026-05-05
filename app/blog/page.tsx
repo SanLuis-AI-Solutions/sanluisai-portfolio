@@ -5,6 +5,12 @@ import FlameMark from '@/components/FlameMark'
 
 const posts = [
   {
+    title: '5 Automation Mistakes That Cost Houston Businesses Real Money',
+    date: '2026-05-01',
+    slug: 'automation-mistakes-guide',
+    excerpt: 'Most automation projects fail — but not for the reasons you think. From over-engineering to measuring the wrong thing, here are the five patterns we see most often and how to avoid them.',
+  },
+  {
     title: 'Why Most AI Consulting Fails (And How We Avoid It)',
     date: '2026-04-28',
     slug: 'why-ai-consulting-fails',
@@ -21,6 +27,18 @@ const posts = [
     date: '2026-04-28',
     slug: 'ai-ready-problem-signs',
     excerpt: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution — and when a spreadsheet or checklist is the better answer.',
+  },
+  {
+    title: 'Houston AI Market in 2026: What Small Businesses Need to Know',
+    date: '2026-04-22',
+    slug: 'houston-ai-market-2026',
+    excerpt: 'AI adoption in Texas doubled in the last year, but most Houston small businesses are stuck between free tools and enterprise systems. Here is the practical market landscape for 2026.',
+  },
+  {
+    title: 'How Garza International Cut Bid Turnaround by 60% With Custom AI',
+    date: '2026-04-15',
+    slug: 'garza-international-roi-breakdown',
+    excerpt: 'A Houston construction firm was losing bids because manual quoting took 6+ hours per response. Here is the exact ROI breakdown of a 3-week custom AI build.',
   },
 ]
 
