@@ -81,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable} ${jetbrains.variable}`}>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="/assets/flame-mark.svg" />
         <link rel="alternate icon" href="/favicon.ico" />
         <meta name="build-version" content="v1.0.0-20260505" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7FHSSCP8" />

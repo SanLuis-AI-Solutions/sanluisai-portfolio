@@ -36,8 +36,12 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16 md:h-20">
-        <a href="/" className={`font-display text-xl md:text-2xl font-bold tracking-tight transition-colors duration-300 ${scrolled ? 'text-navy-800' : 'text-bone-50'}`}>
-          SanLuis AI
+        <a href="/" className="flex-shrink-0">
+          <img
+            src="/assets/logo-primary.jpg"
+            alt="SanLuis AI Solutions"
+            className="h-10 md:h-12 w-auto"
+          />
         </a>
         <div className="hidden md:flex items-center gap-10">
           {links.map(l => (

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import OrnamentDivider from '@/components/OrnamentDivider'
 
 export const metadata: Metadata = {
   title: "Susie's Jewelry Repair — Case Study | SanLuis AI Solutions",
@@ -23,6 +24,7 @@ export default function Page() {
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div><div className="font-display text-2xl text-gold-600">3x leads</div></div>
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Owner</div><div className="font-display text-xl text-navy-800">Full code</div></div>
           </div>
+          <OrnamentDivider className="!py-8" />
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>
           <p className="sl-body mb-6">Leads came in through website forms, phone calls, and walk-ins — but with no system to track, prioritize, or follow up, over half fell through the cracks. The owner was doing everything manually.</p>
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>

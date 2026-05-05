@@ -18,8 +18,10 @@ export default function Page() {
 
       <article className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-3xl mx-auto">
-          <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-6">
-            April 28, 2026 · 5 min read
+          <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-6 flex items-center gap-2">
+            April 28, 2026
+            <span className="inline-block w-3 h-3 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" className="w-full h-full"><path d="M16 6 L24 16 L16 26 L8 16 Z" fill="#D9A434"/></svg></span>
+            5 min read
           </div>
 
           <div className="prose prose-navy max-w-none">

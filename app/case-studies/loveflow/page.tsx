@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import OrnamentDivider from '@/components/OrnamentDivider'
 
 export const metadata: Metadata = {
   title: 'LoveFlow — Case Study | SanLuis AI Solutions',
@@ -23,6 +24,7 @@ export default function Page() {
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div><div className="font-display text-2xl text-gold-600">40% better</div></div>
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Owner</div><div className="font-display text-xl text-navy-800">Full code</div></div>
           </div>
+          <OrnamentDivider className="!py-8" />
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>
           <p className="sl-body mb-6">LoveFlow's initial matching algorithm relied on surface-level preferences. Users were getting poor matches, retention was dropping fast, and the team didn't have the AI expertise in-house to fix it.</p>
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import OrnamentDivider from '@/components/OrnamentDivider'
 
 export const metadata: Metadata = {
   title: 'About Daniel San Luis and SanLuis AI Solutions | Houston AI',
@@ -57,6 +58,8 @@ export default function Page() {
               </p>
             </div>
           </div>
+
+          <OrnamentDivider className="!py-8" />
 
           {/* Our Approach section */}
           <h2 className="font-display text-2xl text-navy-800 mb-6">Our Approach</h2>

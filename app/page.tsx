@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import Problem from '@/components/Problem'
 import Services from '@/components/Services'
 import SceneDivider from '@/components/SceneDivider'
+import OrnamentDivider from '@/components/OrnamentDivider'
 import CaseStudies from '@/components/CaseStudies'
 import SocialProof from '@/components/SocialProof'
 import Process from '@/components/Process'
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Services />
       <SceneDivider />
       <CaseStudies />
+      <OrnamentDivider />
       <SocialProof />
       <Process />
       <SceneDivider />
