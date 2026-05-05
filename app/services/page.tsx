@@ -101,7 +101,7 @@ export default function ServicesPage() {
             <div className="space-y-8">
               <div>
                 <h3 className="font-display text-lg text-navy-800 mb-2">What does a no-code AI developer do?</h3>
-                <p className="sl-body-sm">We use frontier AI models like Gemini 2.5 Pro, Claude Opus 4.7, and Codex GPT-5.5 to design and build production-grade web applications and automation systems — without writing traditional code. The result is indistinguishable from developer-built software: live, deployed, and fully functional.</p>
+                <p className="sl-body-sm">We use frontier AI models like Gemini, Claude, Codex, Grok to design and build production-grade web applications and automation systems — without writing traditional code. The result is indistinguishable from developer-built software: live, deployed, and fully functional.</p>
               </div>
               <div>
                 <h3 className="font-display text-lg text-navy-800 mb-2">How long does a project take?</h3>

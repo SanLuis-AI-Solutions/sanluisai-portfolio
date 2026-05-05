@@ -37,7 +37,7 @@ export default function Page() {
             </div>
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We build with frontier AI, not templates.</h3>
-              <p className="sl-body">Gemini 2.5 Pro, Claude Opus 4.7, Codex GPT-5.5 — we route every problem to the model that solves it best. It's how we ship in weeks what agencies quote in months.</p>
+              <p className="sl-body">Gemini, Claude, Codex, Grok — we route every problem to the model that solves it best. It's how we ship in weeks what agencies quote in months.</p>
             </div>
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, document, and support.</h3>
@@ -73,7 +73,7 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="bg-white border border-navy-200 rounded p-6">
               <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Models</div>
-              <div className="sl-body-sm">Gemini 2.5 Pro, Claude Opus 4.7, Codex GPT-5.5</div>
+              <div className="sl-body-sm">Gemini, Claude, Codex, Grok</div>
             </div>
             <div className="bg-white border border-navy-200 rounded p-6">
               <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Tooling</div>
