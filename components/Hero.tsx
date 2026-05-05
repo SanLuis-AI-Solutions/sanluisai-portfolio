@@ -27,18 +27,18 @@ export default function Hero() {
           <div className="max-w-[62ch]">
             <AnimatedSection delay={0}>
               <div className="flex items-center gap-4 mb-8">
-                <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500">The Real Question</span>
+                <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500">SanLuis AI Solutions — Houston</span>
                 <div className="h-px w-8 bg-gold-600/60" />
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(3rem,7vw,5.5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] mb-6">
-                What can AI actually do for <span className="text-gold-500 italic">your</span> business?
+                Custom AI <span className="text-gold-500 italic">Solutions.</span>
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg md:text-xl font-light text-bone-300/70 leading-relaxed max-w-[48ch] mb-10">
-                You see competitors moving faster. You know AI matters, but every headline contradicts the last — <span className="text-bone-200">and nobody tells you where to start.</span> The truth is simpler than the noise suggests. AI takes your most repetitive workflows — lead follow-ups, data entry, reporting — and does them in seconds instead of hours. That is it. And when you apply it to the right problem, the results are predictable. <span className="text-bone-200">We build exactly that system for your business. In weeks, not months.</span> The relief of finally having a clear path forward — that is what SanLuis AI delivers.
+                No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps — shipped in weeks, not months.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
@@ -48,23 +48,13 @@ export default function Hero() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.6}>
-              <div className="h-px w-12 bg-gold-600/60 mb-8" />
-              {/* Stat cards — evidence that answers "what can AI actually do" */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="border border-gold-600/30 bg-gold-600/5 rounded px-5 py-4">
-                  <div className="font-display text-2xl text-gold-500 font-semibold leading-tight">91%</div>
-                  <div className="font-sans text-xs text-bone-300/60 leading-relaxed mt-1">of businesses using AI report revenue increases*</div>
-                </div>
-                <div className="border border-gold-600/30 bg-gold-600/5 rounded px-5 py-4">
-                  <div className="font-display text-2xl text-gold-500 font-semibold leading-tight">58%</div>
-                  <div className="font-sans text-xs text-bone-300/60 leading-relaxed mt-1">save 20+ hours every month with AI automation*</div>
-                </div>
-                <div className="border border-gold-600/30 bg-gold-600/5 rounded px-5 py-4">
-                  <div className="font-display text-2xl text-gold-500 font-semibold leading-tight">3.5×</div>
-                  <div className="font-sans text-xs text-bone-300/60 leading-relaxed mt-1">average ROI for fully implemented AI systems*</div>
-                </div>
+              <div className="h-px w-12 bg-gold-600/60 mb-6" />
+              <div className="flex flex-wrap items-center gap-x-10 gap-y-2">
+                <div><span className="font-display text-2xl text-gold-500 font-semibold">6</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Projects</span></div>
+                <div><span className="font-display text-2xl text-gold-500 font-semibold">5</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Clients</span></div>
+                <div><span className="font-display text-2xl text-gold-500 font-semibold">3</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">AI Apps</span></div>
+                <div><span className="font-display text-2xl text-gold-500 font-semibold">0</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Jobs Lost</span></div>
               </div>
-              <div className="font-sans text-[10px] text-bone-300/30 tracking-[0.05em] mt-3">* Salesforce / McKinsey / Capsule CRM, 2025–2026</div>
             </AnimatedSection>
           </div>
 
