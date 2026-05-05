@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'AI Development Services | Custom AI, Automation, Agents & Consulting | SanLuis AI Solutions',
@@ -66,58 +67,62 @@ export default function ServicesPage() {
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
-          <div className="space-y-8 mb-20">
-            {services.map((s) => (
-              <div key={s.num} className="bg-white border border-navy-200 rounded-xl p-8 md:p-10 hover:border-navy-900 transition-all duration-220">
-                <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start">
-                  <div className="font-display text-3xl text-gold-600 leading-none">{s.num}</div>
-                  <div>
-                    <h2 className="font-display text-2xl text-navy-800 mb-2">{s.name}</h2>
-                    <p className="sl-body-sm mb-4">{s.desc}</p>
-                    <ul className="space-y-2">
-                      {s.items.map((item, i) => (
-                        <li key={i} className="sl-body-sm flex items-start gap-2">
-                          <span className="text-gold-600 mt-1">&bull;</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="flex flex-col items-start md:items-end gap-2 md:min-w-[140px]">
-                    <span className="inline-block font-sans text-xs font-semibold tracking-[0.08em] uppercase px-3 py-1 bg-gold-100 text-gold-700 rounded-full mb-1">{s.pricing}</span>
-                    <div className="font-mono text-xs text-fg4 tracking-[0.08em] uppercase">{s.timeline}</div>
-                    <Link href={s.href} className="mt-3 font-sans text-sm font-semibold px-5 py-2 border border-navy-800 text-navy-800 rounded hover:bg-navy-800 hover:text-white transition-all duration-220">
-                      Learn more &rarr;
-                    </Link>
+          <AnimatedSection delay={0}>
+            <div className="space-y-8 mb-20">
+              {services.map((s) => (
+                <div key={s.num} className="bg-white border border-navy-200 rounded-xl p-8 md:p-10 hover:border-navy-900 transition-all duration-220">
+                  <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start">
+                    <div className="font-display text-3xl text-gold-600 leading-none">{s.num}</div>
+                    <div>
+                      <h2 className="font-display text-2xl text-navy-800 mb-2">{s.name}</h2>
+                      <p className="sl-body-sm mb-4">{s.desc}</p>
+                      <ul className="space-y-2">
+                        {s.items.map((item, i) => (
+                          <li key={i} className="sl-body-sm flex items-start gap-2">
+                            <span className="text-gold-600 mt-1">&bull;</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex flex-col items-start md:items-end gap-2 md:min-w-[140px]">
+                      <span className="inline-block font-sans text-xs font-semibold tracking-[0.08em] uppercase px-3 py-1 bg-gold-100 text-gold-700 rounded-full mb-1">{s.pricing}</span>
+                      <div className="font-mono text-xs text-fg4 tracking-[0.08em] uppercase">{s.timeline}</div>
+                      <Link href={s.href} className="mt-3 font-sans text-sm font-semibold px-5 py-2 border border-navy-800 text-navy-800 rounded hover:bg-navy-800 hover:text-white transition-all duration-220">
+                        Learn more &rarr;
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </AnimatedSection>
 
           {/* FAQ Section */}
-          <div className="max-w-3xl border-t border-navy-200 pt-16">
-            <h2 className="font-display text-2xl text-navy-800 mb-8">Common questions about our services.</h2>
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-display text-lg text-navy-800 mb-2">What does a no-code AI developer do?</h3>
-                <p className="sl-body-sm">We use frontier AI models like Gemini, Claude, Codex, Grok to design and build production-grade web applications and automation systems — without writing traditional code. The result is indistinguishable from developer-built software: live, deployed, and fully functional.</p>
-              </div>
-              <div>
-                <h3 className="font-display text-lg text-navy-800 mb-2">How long does a project take?</h3>
-                <p className="sl-body-sm">Workflow automations typically take 1-2 weeks. AI agent systems take 3-6 weeks. Full applications take 4-10 weeks. Every project starts with a Discovery Session where we set the timeline before any work begins.</p>
-              </div>
-              <div>
-                <h3 className="font-display text-lg text-navy-800 mb-2">Can you build for Spanish-speaking businesses?</h3>
-                <p className="sl-body-sm">Yes. All services are available in English and Spanish. Our team is fully bilingual.</p>
-              </div>
-              <div className="pt-4 border-t border-navy-200">
-                <Link href="/faq" className="inline-flex items-center font-sans text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors duration-220">
-                  See all FAQs &rarr;
-                </Link>
+          <AnimatedSection delay={0.15}>
+            <div className="max-w-3xl border-t border-navy-200 pt-16">
+              <h2 className="font-display text-2xl text-navy-800 mb-8">Common questions about our services.</h2>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">What does a no-code AI developer do?</h3>
+                  <p className="sl-body-sm">We use frontier AI models like Gemini, Claude, Codex, Grok to design and build production-grade web applications and automation systems — without writing traditional code. The result is indistinguishable from developer-built software: live, deployed, and fully functional.</p>
+                </div>
+                <div>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">How long does a project take?</h3>
+                  <p className="sl-body-sm">Workflow automations typically take 1-2 weeks. AI agent systems take 3-6 weeks. Full applications take 4-10 weeks. Every project starts with a Discovery Session where we set the timeline before any work begins.</p>
+                </div>
+                <div>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">Can you build for Spanish-speaking businesses?</h3>
+                  <p className="sl-body-sm">Yes. All services are available in English and Spanish. Our team is fully bilingual.</p>
+                </div>
+                <div className="pt-4 border-t border-navy-200">
+                  <Link href="/faq" className="inline-flex items-center font-sans text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors duration-220">
+                    See all FAQs &rarr;
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </section>
 

@@ -3,11 +3,11 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
-  title: 'How It Works | 3-Step Process: Discovery, Build, Support | SanLuis AI Solutions',
-  description: 'From first conversation to working system in three clear stages. Discovery Session ($300), Build & Deploy (from $1,200), Support & Grow. You always know what comes next.',
+  title: 'How It Works | 4-Step AI Development Process | SanLuis AI Solutions',
+  description: 'From first conversation to working system in four clear stages. Discovery Session ($300), Build ($15K-$50K), Ship (deploy + train), Maintain (monthly). You always know what comes next.',
   openGraph: {
-    title: 'How It Works — 3-Step Process | SanLuis AI Solutions',
-    description: 'Discovery Session ($300) → Build & Deploy (from $1,200) → Support & Grow. Transparent pricing, full source ownership, no lock-in.',
+    title: 'How It Works — 4-Step Process | SanLuis AI Solutions',
+    description: 'Discovery ($300) → Build ($15K-$50K) → Ship (deploy + train) → Maintain (monthly retainer). Transparent pricing, full source ownership, no lock-in.',
     url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
@@ -22,30 +22,40 @@ const steps = [
     title: 'Discovery Session',
     tagline: 'Start with clarity.',
     duration: '60 minutes',
-    what: "We map your current operations, identify bottlenecks, and pinpoint the single highest-impact AI opportunity for your business.",
+    what: "We map your current operations, find the friction points, and pinpoint the single highest-impact AI opportunity for your business.",
     deliverable: 'Written action plan within 24 hours with cost estimates, timeline, and expected ROI.',
     cost: '$300',
     costNote: 'credited toward build if you proceed',
   },
   {
     num: '02',
-    title: 'Build & Deploy',
+    title: 'Build',
     tagline: 'From plan to production.',
-    duration: '1-6 weeks depending on scope',
-    what: "We build, test, and deploy your system using Gemini, Claude, Codex, and Grok — the same frontier models powering the biggest AI platforms.",
-    deliverable: 'A working system integrated with your existing tools. Full source code ownership. Training session for your team.',
-    cost: 'Fixed price agreed before work begins',
-    costNote: 'from $1,200 for automation · from $5,000 for custom builds',
+    duration: 'Custom scope and timeline',
+    what: "We design and build your system using the frontier AI models that fit your problem — Gemini, Claude, Codex, Grok. No templates, no feature bloat, no scope creep.",
+    deliverable: 'Working system integrated with your existing tools. Full source code ownership. Transparent milestone tracking throughout.',
+    cost: '$15,000 – $50,000',
+    costNote: 'fixed price agreed before work begins',
   },
   {
     num: '03',
-    title: 'Support & Grow',
+    title: 'Ship',
+    tagline: 'Deployed, documented, trained.',
+    duration: '1-2 weeks for deployment',
+    what: "Deployment isn't the finish line. We configure your environment, migrate data, run production testing, and train your team until the system is stable and your people are confident.",
+    deliverable: 'Live production deployment. Team training session. Runbooks and documentation. 30-day post-launch support included.',
+    cost: 'Included in Build',
+    costNote: 'no additional cost',
+  },
+  {
+    num: '04',
+    title: 'Maintain',
     tagline: 'Built to last, built to scale.',
     duration: 'Ongoing',
-    what: "30 days post-launch support included with every build. Monthly maintenance retainers available for ongoing optimization.",
-    deliverable: 'System monitoring, performance reporting, and a prioritized enhancement roadmap.',
+    what: "Systems need to evolve as your business does. We offer monthly maintenance retainers that include monitoring, performance reporting, and a prioritized enhancement roadmap.",
+    deliverable: 'System monitoring and uptime tracking. Quarterly optimization reviews. Priority access for new features.',
     cost: 'Monthly retainer',
-    costNote: 'optional, scoped to your needs',
+    costNote: 'scoped to your needs',
   },
 ]
 
@@ -63,7 +73,7 @@ const benefits = [
     icon: '02',
   },
   {
-    title: 'You can scale when you\'re ready.',
+    title: 'You can scale when you\u2019re ready.',
     description:
       'Add capabilities per-quarter with a prioritized enhancement roadmap. Start with one automation and grow into agent systems, dashboards, and custom apps as your needs evolve.',
     icon: '03',
@@ -76,7 +86,7 @@ export default function HowItWorksPage() {
       <PageHeader
         eyebrow="The Process"
         title="How It Works."
-        description="Three clear stages from first conversation to working system. You always know what comes next."
+        description="Four clear stages from first conversation to working system. You always know what comes next."
       />
 
       {/* Timeline Steps */}

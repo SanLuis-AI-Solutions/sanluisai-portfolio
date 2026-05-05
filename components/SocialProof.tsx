@@ -1,11 +1,12 @@
 'use client'
 import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView, useReducedMotion } from 'framer-motion'
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-40px' })
-  return (<motion.div ref={ref} initial={{ opacity: 0, y: 16 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>)
+  const shouldReduceMotion = useReducedMotion()
+  return (<motion.div ref={ref} initial={shouldReduceMotion ? {} : { opacity: 0, y: 16 }} animate={inView && !shouldReduceMotion ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>)
 }
 
 const testimonials = [

@@ -42,13 +42,13 @@ export default function Page() {
             <p>We start with a single $300 Discovery Session.</p>
             <p>Not a month-long audit. One 60-minute video call where we identify the specific problem, map the current cost, and outline the build. You get a written action plan at the end — not a proposal for more consulting.</p>
             <p>If the problem is real and the build makes economic sense, we quote a fixed price and a specific timeline. Workflow automations ship in 1-2 weeks. AI agent systems in 3-6 weeks. Full applications in 4-10 weeks.</p>
-            <p>There is no six-month discovery because the discovery happens in one session. There are no slide deck deliverables because we ship running software. There is no pilot trap because every build starts on a real problem with real data.</p>
+            <p>No six-month discovery — the session replaces it. No slide decks — we ship working software. No pilot trap — every build starts on a real problem with real data.</p>
 
             <h2>The Economics</h2>
             <p>Workflow automation from $1,200. AI agent systems from $5,000. Custom AI applications from $5,000. If the problem can be solved for less, we'll tell you — because the Discovery Session is designed to filter out bad investments, not generate consulting hours.</p>
 
             <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">
-              "We don't sell software. We build what solves the problem."
+              We build what solves the problem. Full stop.
             </blockquote>
 
             <p>If you're tired of slide decks and want to see what a focused, time-bounded AI build looks like, book a Discovery Session. One hour. A clear answer.</p>

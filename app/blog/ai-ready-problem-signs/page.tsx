@@ -23,11 +23,11 @@ export default function Page() {
           </div>
 
           <div className="prose prose-navy max-w-none">
-            <p className="lead text-lg text-navy-700 mb-8">AI is not a hammer. Not every business problem is a nail. But there are clear patterns that separate problems AI can solve from problems AI will make worse.</p>
+            <p className="lead text-lg text-navy-700 mb-8">AI solves specific types of problems. The trick is knowing which ones — and which ones will only get more expensive with AI bolted on.</p>
 
             <h2>Sign #1: You Have Data But No Decisions</h2>
             <p>You collect customer data, sales data, or operational data — but you don't have the time to analyze it. Your spreadsheet has 10,000 rows and you're still making decisions based on intuition.</p>
-            <p><strong>AI-ready if:</strong> The data exists in a structured format (CSV, database, or CRM) and the decision pattern is repeatable. AI can analyze your data and surface actionable insights in seconds.</p>
+            <p><strong>AI-ready if:</strong> The data exists in a structured format (CSV, database, or CRM) and the decision pattern is repeatable. AI can analyze your data and give you answers in seconds.</p>
 
             <h2>Sign #2: Someone Is Copy-Pasting for Hours</h2>
             <p>An employee spends 10+ hours per week moving data from one system to another. Emails to spreadsheets. PDFs to CRMs. Website forms to follow-up sequences.</p>

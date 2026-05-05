@@ -1,13 +1,14 @@
 'use client'
 
 import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView, useReducedMotion } from 'framer-motion'
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+  const shouldReduceMotion = useReducedMotion()
   return (
-    <motion.div ref={ref} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>
+    <motion.div ref={ref} initial={shouldReduceMotion ? {} : { opacity: 0, y: 20 }} animate={inView && !shouldReduceMotion ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>
   )
 }
 

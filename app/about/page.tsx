@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 
@@ -20,28 +21,57 @@ export default function Page() {
   return (
     <>
       <PageHeader
-        eyebrow="The System"
-        title="Our System & Stack."
+        eyebrow="Who We Are"
+        title="Built by operators, for operators."
         description="We are builders, operators, and AI engineers. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure."
       />
 
       {/* Light content section */}
       <main className="bg-bone-50 min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+
+          {/* Founder section */}
+          <div className="flex flex-col md:flex-row gap-8 mb-16">
+            <div className="flex-shrink-0">
+              <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-xl overflow-hidden bg-navy-100 border border-navy-200">
+                <Image
+                  src="/generated/sanluis_hero_00001_.png"
+                  alt="Daniel San Luis — Founder, SanLuis AI Solutions"
+                  fill
+                  className="object-cover"
+                  sizes="192px"
+                />
+              </div>
+            </div>
+            <div>
+              <h2 className="font-display text-2xl text-navy-800 mb-2">Daniel San Luis</h2>
+              <p className="font-sans text-sm font-semibold tracking-[0.08em] uppercase text-gold-600 mb-4">Founder & CEO</p>
+              <p className="sl-body mb-3">
+                I built SanLuis AI because I saw too many businesses get sold on AI hype and handed a slide deck. Real results come from working systems deployed in weeks, not strategy documents delivered in months.
+              </p>
+              <p className="sl-body mb-3">
+                Before starting this practice, I spent years building across the full AI stack — from model routing and multi-agent orchestration to production infrastructure and DevOps. Every system we ship reflects that hands-on experience.
+              </p>
+              <p className="sl-body">
+                Based in Houston. Bilingual EN/ES. We turn down most projects because we only take the ones where we know we can deliver.
+              </p>
+            </div>
+          </div>
+
           {/* Our Approach section */}
           <h2 className="font-display text-2xl text-navy-800 mb-6">Our Approach</h2>
           <div className="space-y-6 mb-12">
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We start with your problem, not a technology.</h3>
-              <p className="sl-body">Before writing a single line of logic, we map what your team actually does — where the time goes, where mistakes happen, where the real opportunity is.</p>
+              <p className="sl-body">Before writing a single line of logic, we map what your team actually does — where the time goes, where mistakes happen, where the real opportunity is. Then we decide if AI is even the right answer.</p>
             </div>
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We build with frontier AI, not templates.</h3>
-              <p className="sl-body">Gemini, Claude, Codex, Grok — we route every problem to the model that solves it best. It's how we ship in weeks what agencies quote in months.</p>
+              <p className="sl-body">Gemini, Claude, Codex, Grok — we route every problem to the model that solves it best. No cookie-cutter solutions. Every system is architected from first principles for your specific operation.</p>
             </div>
             <div>
-              <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, document, and support.</h3>
-              <p className="sl-body">Deployment isn't the finish line. We document, train, and support until your team is confident and the system is stable.</p>
+              <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, train, and move forward.</h3>
+              <p className="sl-body">Deployment isn't the finish line. We document, train, and support until your team is confident and the system is stable. Then we hand you the keys.</p>
             </div>
           </div>
 
