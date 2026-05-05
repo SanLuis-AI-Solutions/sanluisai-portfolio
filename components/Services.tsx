@@ -71,7 +71,7 @@ export default function Services() {
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-16 lg:gap-24">
           <div>
             <AnimatedSection delay={0}>
-              <span className="sl-eyebrow mb-8">No. 02 — What We Build</span>
+              <span className="sl-eyebrow mb-8">What We Build</span>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">

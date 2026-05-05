@@ -21,7 +21,7 @@ export default function CaseStudies() {
       {/* Subtle gold glow — top-right */}
       <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-[radial-gradient(ellipse_at_top_right,rgba(217,164,52,0.04),transparent_60%)] pointer-events-none" />
       <div className="relative max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
-        <FadeIn delay={0}><span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500 mb-8 flex items-center gap-4">No. 03 — The Evidence <span className="h-px w-8 bg-gold-600/40" /></span></FadeIn>
+        <FadeIn delay={0}><span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500 mb-8 flex items-center gap-4">The Evidence <span className="h-px w-8 bg-gold-600/40" /></span></FadeIn>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
           <div>
             <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-bone-50 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Measurable outcomes.</h2></FadeIn>
