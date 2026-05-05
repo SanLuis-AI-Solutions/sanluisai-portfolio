@@ -52,7 +52,7 @@ export default function SocialProof() {
                   <div className="relative pl-6 border-l-2 border-gold-500/40 mb-4">
                     <p className="font-display text-base md:text-lg text-navy-700 italic leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
                   </div>
-                  <p className="font-sans text-xs text-navy-500">\u2014 {t.attribution}</p>
+                  <p className="font-sans text-xs text-navy-500">&mdash; {t.attribution}</p>
                 </div>
               </div>
             </FadeIn>
