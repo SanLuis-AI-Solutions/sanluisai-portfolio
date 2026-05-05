@@ -4,7 +4,7 @@ import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'AI Agents — SanLuis AI Solutions',
-  description: 'Deploy autonomous AI agents that observe, reason, and execute multi-step tasks independently. Available 24/7, they scale with demand and never drop a task.',
+  description: "Customer inquiries pile up overnight. Lead qualification happens during business hours or not at all. Deploy an AI agent that operates within the rules you set — 24/7, every step logged.",
 }
 
 export default function AgentsPage() {
@@ -13,19 +13,19 @@ export default function AgentsPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Agents."
-        description="Agents that operate within guardrails you set — observing, deciding, and executing multi-step tasks without hand-holding."
+        description="Customer inquiries pile up overnight. Lead qualification happens during business hours — or not at all. You're losing opportunities because there aren't enough hours in the day."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            AI agents that do real work: handle customer inquiries, qualify leads, monitor systems, trigger escalation workflows. Each agent is trained on your data, bound by your policies, and every step is logged.
+            An AI agent that operates within the rules <em>you</em> set. It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows — all without waking anyone up.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
-            Set the boundaries. Define the rules. The agent operates inside them without someone watching every move.
+            Every agent is trained on your data and bound by your policies. Every step is logged. You approve outcomes, not every decision. Set the boundaries, define the rules, and the agent operates inside them without someone watching every move.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            Available 24/7. Scales with demand. Never drops a task.
+            <strong className="text-navy-800">The relief of clarity:</strong> Available 24/7. Scales with demand. Never drops a task. You wake up to qualified leads, resolved tickets, and a clean dashboard — not an overflowing inbox.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

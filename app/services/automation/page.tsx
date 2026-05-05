@@ -4,7 +4,7 @@ import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'AI Automation — SanLuis AI Solutions',
-  description: 'Eliminate manual busywork with intelligent workflow automation. Recover 20-40 hours per week per department with custom AI automation pipelines.',
+  description: "Your team spends hours on work that follows predictable rules. We automate the repetitive, not the strategic — giving your people time back for work that needs human judgment.",
 }
 
 export default function AutomationPage() {
@@ -13,19 +13,19 @@ export default function AutomationPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Automation."
-        description="Automation that recovers 20 to 40 hours per week per department — without breaking your existing tools."
+        description="Your team spends hours every week on work that follows predictable rules. Work that needs to happen — but doesn't need your best people doing it."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            Your team spends hours on work that follows predictable rules: data entry, invoice processing, report generation, email triage. Every minute there is a minute stolen from work that actually needs a human brain.
+            Data entry, invoice matching, report generation, email triage. Work that follows predictable rules — and absolutely needs to happen, but absolutely does not need your best people doing it.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
-            We build automation pipelines that read, write, route, and act across your tools. Your people focus on decisions, not data entry.
+            <strong className="text-navy-800">We automate the repetitive, not the strategic.</strong> We build pipelines that read, write, route, and act across your existing tools. Your people focus on decisions, not data entry. The work gets done faster, with fewer errors, and no one burns out on Friday afternoon.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            Typical projects recover 20 to 40 hours per week. Per department.
+            <strong className="text-navy-800">The relief of clarity:</strong> Typical projects recover 20 to 40 hours per week per department. Your team gets their time back for the work that actually needs human judgment.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

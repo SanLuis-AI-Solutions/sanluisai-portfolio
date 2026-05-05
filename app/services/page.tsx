@@ -111,9 +111,10 @@ export default function ServicesPage() {
                 <h3 className="font-display text-lg text-navy-800 mb-2">Can you build for Spanish-speaking businesses?</h3>
                 <p className="sl-body-sm">Yes. All services are available in English and Spanish. Our team is fully bilingual.</p>
               </div>
-              <div>
-                <h3 className="font-display text-lg text-navy-800 mb-2">Do I need technical knowledge to work with you?</h3>
-                <p className="sl-body-sm">No. You know your business — we handle the technical side entirely. Most clients have never worked with a developer before.</p>
+              <div className="pt-4 border-t border-navy-200">
+                <Link href="/faq" className="inline-flex items-center font-sans text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors duration-220">
+                  See all FAQs &rarr;
+                </Link>
               </div>
             </div>
           </div>

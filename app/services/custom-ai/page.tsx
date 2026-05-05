@@ -4,7 +4,7 @@ import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'Custom AI Systems — SanLuis AI Solutions',
-  description: 'Built from scratch to solve your exact operational problem. No bloated features. No compromises. Purpose-built AI systems that fit your existing stack.',
+  description: "You've outgrown off-the-shelf software. Every template misses the mark. We build on your data, your workflow — no license fees, no bloat, and you own the code.",
 }
 
 export default function CustomAIPage() {
@@ -13,7 +13,7 @@ export default function CustomAIPage() {
       <PageHeader
         eyebrow="Service"
         title="Custom AI Systems."
-        description="Built from scratch for your exact operational problem. No bloat. No compromises. Just the system you actually need."
+        description="You've outgrown off-the-shelf software. Every template misses the mark. Your workflow is unique — but nobody builds for that. Until now."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
@@ -21,23 +21,19 @@ export default function CustomAIPage() {
           <ul className="space-y-4 mb-10 max-w-prose">
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">Built on your stack</strong> &mdash; Works with the tools and workflows you already have. No forced migrations.</span>
+              <span>Every SaaS template you try feels like it was designed for someone else&rsquo;s business. You work around it — exporting spreadsheets, copy-pasting between systems, building fragile Google Sheet workarounds. It works, but it costs you time every single day.</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">One problem at a time</strong> &mdash; We target your single biggest issue and fix it completely before moving on.</span>
+              <span><strong className="text-navy-800">A different approach:</strong> A custom system built on your data, your workflow, your terminology. No features you don&rsquo;t need. No license fees. No vendor lock-in. You own the code — end to end.</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">Weeks, not months</strong> &mdash; From concept to production in under 30 days. Tell us the outcome, we engineer the system.</span>
+              <span>We target your single biggest operational problem and solve it completely — in weeks, not months. Then we move to the next. One at a time. No scope creep, no &ldquo;let&rsquo;s put everything in MVP.&rdquo;</span>
             </li>
             <li className="sl-body flex items-start gap-3">
               <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">What you need, nothing else</strong> &mdash; Zero unused features. No subscription tiers. You pay for exactly what moves your business forward.</span>
-            </li>
-            <li className="sl-body flex items-start gap-3">
-              <span className="text-gold-600 mt-1">&#9679;</span>
-              <span><strong className="text-navy-800">You own it</strong> &mdash; Full code ownership on delivery. No lock-in. Your IP stays yours.</span>
+              <span><strong className="text-navy-800">The relief of clarity:</strong> No more guessing what you&rsquo;ll build next quarter. No more subscription stack anxiety. You know exactly what your system does, what it costs, and how long it takes.</span>
             </li>
           </ul>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
