@@ -29,7 +29,7 @@ export default function Page() {
           <p className="sl-body mb-6">LoveFlow's initial matching algorithm relied on surface-level preferences. Users were getting poor matches, retention was dropping fast, and the team didn't have the AI expertise in-house to fix it.</p>
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
           <p className="sl-body mb-4">A redesigned matching engine:</p>
-          <ul className="list-disc pl-6 mb-6 space-y-2 sl-body">
+          <ul className="list-diamond mb-6 space-y-2 sl-body">
             <li>Behavioral signal extraction from user interaction patterns</li>
             <li>Multi-dimensional compatibility scoring beyond stated preferences</li>
             <li>Real-time learning loop that improved with every swipe</li>

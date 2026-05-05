@@ -21,7 +21,7 @@ export default function Page() {
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0}>
-          <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
+          <div className="relative w-full h-48 md:h-72 rounded overflow-hidden mb-8 bg-navy-100">
             <Image src="/generated/ind_proservices_00001_.png" alt="Modern professional services office" fill className="object-cover" sizes="100vw" />
           </div>
           </AnimatedSection>
@@ -33,7 +33,7 @@ export default function Page() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-          <div className="bg-gold-50 border border-gold-300 rounded-lg p-6 mb-8">
+          <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
             <p className="sl-body-sm mb-3">We build custom AI systems for professional services firms — law, consulting, accounting — that automate document review, capture billable time automatically, and streamline client onboarding from weeks to hours. Our solutions integrate with your existing practice management tools and document systems, requiring no major infrastructure changes. The focus is always on one thing: getting your professionals back to billable work.</p>
             <p className="sl-body-sm">See how we applied similar pattern-matching and analysis automation for <Link href="/case-studies/loveflow" className="text-gold-600 underline hover:text-gold-700">LoveFlow</Link>, an AI-powered consumer app that demonstrates our approach to intelligent matching and workflow automation.</p>

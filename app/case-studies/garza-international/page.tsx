@@ -29,7 +29,7 @@ export default function Page() {
           <p className="sl-body mb-6">Garza International's estimators spent hours manually pulling material costs, labor rates, and historical bid data for each new construction quote. The process was error-prone, slow, and couldn't scale as the business grew.</p>
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
           <p className="sl-body mb-4">A custom AI quoting engine that:</p>
-          <ul className="list-disc pl-6 mb-6 space-y-2 sl-body">
+          <ul className="list-diamond mb-6 space-y-2 sl-body">
             <li>Pulls real-time material pricing from supplier APIs</li>
             <li>Analyzes historical bid win/loss data for optimal pricing</li>
             <li>Auto-generates formatted proposal documents</li>

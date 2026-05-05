@@ -109,7 +109,7 @@ export default function HowItWorksPage() {
                 </div>
 
                 {/* Card */}
-                <div className="flex-1 bg-white border border-navy-200 rounded-xl p-6 md:p-8 hover:border-navy-900 transition-all duration-220">
+                <div className="flex-1 bg-white border border-navy-200 rounded p-6 md:p-8 hover:border-navy-900 transition-all duration-220">
                   {/* Tagline */}
                   <div className="font-sans text-xs font-semibold tracking-[0.12em] uppercase text-gold-600 mb-1">
                     {step.tagline}
@@ -158,7 +158,7 @@ export default function HowItWorksPage() {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {benefits.map((b) => (
-              <div key={b.icon} className="bg-bone-50 border border-navy-200 rounded-xl p-6 md:p-8">
+              <div key={b.icon} className="bg-bone-50 border border-navy-200 rounded p-6 md:p-8">
                 <div className="font-display text-2xl text-gold-600 mb-3">{b.icon}</div>
                 <h3 className="font-display text-lg text-navy-800 mb-3">{b.title}</h3>
                 <p className="sl-body-sm">{b.description}</p>

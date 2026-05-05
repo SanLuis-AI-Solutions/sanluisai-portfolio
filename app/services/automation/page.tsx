@@ -34,7 +34,7 @@ export default function AutomationPage() {
       </section>
 
       {/* Case study reference */}
-      <div className="border border-navy-200 rounded-xl p-6 md:p-8 mt-12 max-w-prose mx-auto bg-white">
+      <div className="border border-navy-200 rounded p-6 md:p-8 mt-12 max-w-prose mx-auto bg-white">
         <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
         <p className="sl-body-sm mb-3">See how we automated lead capture for Susie's Jewelry Repair — 3x leads in 2 weeks.</p>
         <Link href="/case-studies/susies-jewelry-repair" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the case study →</Link>

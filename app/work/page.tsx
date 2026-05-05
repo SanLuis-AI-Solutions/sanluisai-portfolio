@@ -76,7 +76,7 @@ export default function WorkPage() {
           <h2 className="font-display text-2xl text-navy-800 mb-6">AI-Powered Development (2025–2026)</h2>
           <div className="grid md:grid-cols-3 gap-6 mb-20">
             {projects.map((p) => (
-              <Link key={p.slug} href={`/case-studies/${p.slug}`} className="group block bg-white border border-navy-200 rounded-xl hover:border-navy-900 transition-all duration-220 overflow-hidden">
+              <Link key={p.slug} href={`/case-studies/${p.slug}`} className="group block bg-white border border-navy-200 rounded hover:border-navy-900 transition-all duration-220 overflow-hidden">
                 <div className="p-6 md:p-8">
                   <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-3">{p.industry}</div>
                   <h3 className="font-display text-xl text-navy-800 mb-3 group-hover:text-navy-600 transition-colors duration-200">{p.company}</h3>
@@ -109,7 +109,7 @@ export default function WorkPage() {
           <p className="sl-body-sm mb-8 text-navy-500">Projects built before our AI development practice, using WordPress. Still live and serving their clients.</p>
           <div className="grid md:grid-cols-3 gap-4 mb-20">
             {earlierWork.map((w) => (
-              <a key={w.company} href={w.url} target="_blank" rel="noopener noreferrer" className="group block bg-white/70 border border-navy-200/60 rounded-lg p-5 hover:border-navy-900/40 hover:bg-white transition-all duration-220">
+              <a key={w.company} href={w.url} target="_blank" rel="noopener noreferrer" className="group block bg-white/70 border border-navy-200/60 rounded p-5 hover:border-navy-900/40 hover:bg-white transition-all duration-220">
                 <div className="font-sans text-xs font-semibold text-gold-600/70 tracking-[0.12em] uppercase mb-2">{w.category}</div>
                 <h3 className="font-display text-base text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">{w.company}</h3>
                 <p className="font-sans text-sm text-navy-500 leading-relaxed">{w.description}</p>

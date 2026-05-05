@@ -189,7 +189,7 @@ export default function FaqPage() {
                   {category.label}
                 </span>
               </h2>
-              <div className="space-y-6 bg-white border border-navy-200 rounded-xl p-8 md:p-10">
+              <div className="space-y-6 bg-white border border-navy-200 rounded p-8 md:p-10">
                 {category.questions.map((item, i) => (
                   <FaqEntry
                     key={i}
@@ -203,7 +203,7 @@ export default function FaqPage() {
           ))}
 
           {/* Still have questions */}
-          <div className="bg-bone-100 border border-navy-200 rounded-xl p-8 md:p-10 text-center">
+          <div className="bg-bone-100 border border-navy-200 rounded p-8 md:p-10 text-center">
             <h2 className="font-display text-xl text-navy-800 mb-3">Still have questions?</h2>
             <p className="sl-body-sm mb-6 max-w-lg mx-auto">
               We&apos;re happy to answer anything not covered here. Send us an email and we&apos;ll get back to you within one business day.

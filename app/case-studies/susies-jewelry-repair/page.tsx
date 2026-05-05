@@ -29,7 +29,7 @@ export default function Page() {
           <p className="sl-body mb-6">Leads came in through website forms, phone calls, and walk-ins — but with no system to track, prioritize, or follow up, over half fell through the cracks. The owner was doing everything manually.</p>
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
           <p className="sl-body mb-4">A complete lead management system:</p>
-          <ul className="list-disc pl-6 mb-6 space-y-2 sl-body">
+          <ul className="list-diamond mb-6 space-y-2 sl-body">
             <li>Automated lead capture from website, phone, and walk-in channels</li>
             <li>Smart follow-up sequences via SMS and email with timing triggers</li>
             <li>Pipeline dashboard showing every lead's status in real time</li>

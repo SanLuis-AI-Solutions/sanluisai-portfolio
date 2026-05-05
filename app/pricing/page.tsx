@@ -45,7 +45,7 @@ function PricingCard({
   primary: boolean
 }) {
   return (
-    <div className="bg-white border border-navy-200 rounded-xl p-8 md:p-10 flex flex-col h-full">
+    <div className="bg-white border border-navy-200 rounded p-8 md:p-10 flex flex-col h-full">
       {/* Price */}
       <p className="font-display text-4xl text-gold-600 mb-1">{price}</p>
       <p className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-fg3 mb-4">{subtitle}</p>
@@ -142,7 +142,7 @@ export default function PricingPage() {
 
           {/* What's Not Included — transparency section */}
           <div className="mt-16 max-w-2xl mx-auto text-center">
-            <div className="bg-bone-100 border border-navy-100 rounded-xl px-6 py-5">
+            <div className="bg-bone-100 border border-navy-100 rounded px-6 py-5">
               <p className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-fg3 mb-2">What&apos;s Not Included</p>
               <p className="sl-body-sm text-fg3/80">
                 Monthly maintenance retainers available after launch. Complex integrations with legacy systems may require additional scoping. Enterprise-scale deployments billed at $15K–$50K+ depending on scope.

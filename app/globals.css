@@ -105,4 +105,44 @@
   .sl-eyebrow { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--fg-accent); }
   .sl-eyebrow::before { content: ''; width: 16px; height: 1px; background: var(--sl-gold-600); }
   .sl-lede { font-family: var(--font-cormorant), Georgia, serif; font-style: italic; font-weight: 400; font-size: 22px; line-height: 1.5; color: var(--fg-1); letter-spacing: -0.005em; }
+
+  /* Diamond list bullets */
+  .list-diamond {
+    list-style: none;
+    padding-left: 0;
+  }
+  .list-diamond li {
+    padding-left: 1.75rem;
+    position: relative;
+  }
+  .list-diamond li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 12px;
+    height: 12px;
+    background: url('/assets/diamond.svg') no-repeat center / contain;
+    flex-shrink: 0;
+  }
+
+  /* Prose override for blog diamond bullets */
+  .prose ul:not(.list-diamond) {
+    list-style: none;
+    padding-left: 0;
+  }
+  .prose ul:not(.list-diamond) li {
+    padding-left: 1.75rem;
+    position: relative;
+  }
+  .prose ul:not(.list-diamond) li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 12px;
+    height: 12px;
+    background: url('/assets/diamond.svg') no-repeat center / contain;
+    flex-shrink: 0;
+  }
 }

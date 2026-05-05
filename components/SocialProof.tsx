@@ -45,7 +45,7 @@ export default function SocialProof() {
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <FadeIn key={i} delay={0.15 + i * 0.1}>
-              <div className="bg-white border border-navy-200 rounded-xl p-8 md:p-10 h-full flex flex-col hover:border-navy-900 transition-all duration-220">
+              <div className="bg-white border border-navy-200 rounded p-8 md:p-10 h-full flex flex-col hover:border-navy-900 transition-all duration-220">
                 <div className="mb-6">
                   <div className="font-display text-2xl text-navy-800 mb-1">{t.company}</div>
                   <div className="font-sans text-xs font-semibold tracking-[0.12em] uppercase text-gold-600">{t.role}</div>

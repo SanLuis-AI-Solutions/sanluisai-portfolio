@@ -21,7 +21,7 @@ export default function Page() {
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0}>
-          <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
+          <div className="relative w-full h-48 md:h-72 rounded overflow-hidden mb-8 bg-navy-100">
             <Image src="/generated/ind_retail_00001_.png" alt="Modern retail storefront" fill className="object-cover" sizes="100vw" />
           </div>
           </AnimatedSection>
@@ -33,7 +33,7 @@ export default function Page() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-          <div className="bg-gold-50 border border-gold-300 rounded-lg p-6 mb-8">
+          <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
             <p className="sl-body-sm mb-3">We build custom AI systems for retailers — demand forecasting engines that plug into your POS to predict stock requirements 4 weeks out, customer service automation that handles 80% of inquiries without escalation, and dynamic pricing that adjusts margins in real time. Our solutions integrate with your existing POS, ecommerce, and inventory systems without disruptive changes.</p>
             <p className="sl-body-sm">See how we built a complete customer service automation system for <Link href="/case-studies/susies-jewelry-repair" className="text-gold-600 underline hover:text-gold-700">Susie&apos;s Jewelry Repair</Link>, a retail business that needed AI-powered customer service, pricing guidance, and operational workflow automation.</p>

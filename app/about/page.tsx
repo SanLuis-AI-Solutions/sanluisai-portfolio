@@ -39,7 +39,7 @@ export default function Page() {
           {/* Founder section */}
           <div className="flex flex-col md:flex-row gap-8 mb-16">
             <div className="flex-shrink-0">
-              <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-xl overflow-hidden bg-navy-100 border border-navy-200">
+              <div className="relative w-40 h-40 md:w-48 md:h-48 rounded overflow-hidden bg-navy-100 border border-navy-200">
                 <Image
                   src="/daniel-headshot.jpg"
                   alt="Daniel San Luis — Founder, SanLuis AI Solutions"

@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
 import Image from 'next/image'
 import FlameMark from '@/components/FlameMark'
+import GoldThread from '@/components/GoldThread'
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -17,6 +18,7 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
 export default function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex items-center bg-navy-800 overflow-hidden">
+      <GoldThread />
       {/* Background image — subtle overlay */}
       <div className="absolute inset-0 opacity-[0.04]">
         <Image src="/generated/sanluis_hero_00001_.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />

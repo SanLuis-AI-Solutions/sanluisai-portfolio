@@ -21,7 +21,7 @@ export default function Page() {
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0}>
-          <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
+          <div className="relative w-full h-48 md:h-72 rounded overflow-hidden mb-8 bg-navy-100">
             <Image src="/generated/ind_realestate_00001_.png" alt="Modern real estate development" fill className="object-cover" sizes="100vw" />
           </div>
           </AnimatedSection>
@@ -33,7 +33,7 @@ export default function Page() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-          <div className="bg-gold-50 border border-gold-300 rounded-lg p-6 mb-8">
+          <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
             <p className="sl-body-sm mb-3">We build AI systems purpose-built for real estate professionals — deal analysis engines that underwrite properties in real time, lead qualification pipelines that score prospects against your investment criteria, and portfolio intelligence dashboards that surface every key metric in one place. Our solutions integrate with your existing CRM, property management software, and financial models — no rip-and-replace required.</p>
             <p className="sl-body-sm">See how we built a similar AI-powered solution for <Link href="/case-studies/garza-international" className="text-gold-600 underline hover:text-gold-700">Garza International</Link>, a real estate construction firm, to automate project scheduling, resource tracking, and operational reporting.</p>
