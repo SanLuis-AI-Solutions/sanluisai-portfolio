@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Case Studies — SanLuis AI Solutions',
@@ -32,27 +33,29 @@ export default function Page() {
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cases.map((c) => (
-              <Link key={c.slug} href={`/case-studies/${c.slug}`} className="block bg-white border border-navy-900 rounded p-6 hover:shadow-2 transition-shadow group">
-                <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">{c.industry}</div>
-                <div className="font-display text-xl text-navy-800 mb-4 group-hover:text-navy-600 transition-colors">{c.company}</div>
-                <div className="mb-4">
-                  <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Problem</div>
-                  <div className="font-sans text-sm text-fg2">{c.problem}</div>
-                </div>
-                <div>
-                  <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div>
-                  <div className="font-display text-2xl text-gold-600">{c.result}</div>
-                </div>
-                <div className="mt-4 pt-4 border-t border-navy-100">
-                  <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
-                </div>
-              </Link>
-            ))}
+        <AnimatedSection delay={0}>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {cases.map((c) => (
+                <Link key={c.slug} href={`/case-studies/${c.slug}`} className="block bg-white border border-navy-900 rounded p-6 hover:shadow-2 transition-shadow group">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">{c.industry}</div>
+                  <div className="font-display text-xl text-navy-800 mb-4 group-hover:text-navy-600 transition-colors">{c.company}</div>
+                  <div className="mb-4">
+                    <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Problem</div>
+                    <div className="font-sans text-sm text-fg2">{c.problem}</div>
+                  </div>
+                  <div>
+                    <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div>
+                    <div className="font-display text-2xl text-gold-600">{c.result}</div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-navy-100">
+                    <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Dark CTA section */}

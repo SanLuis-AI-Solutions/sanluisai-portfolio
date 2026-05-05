@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'AI for Healthcare. — SanLuis AI Solutions',
@@ -18,6 +19,7 @@ export default function Page() {
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
+        <AnimatedSection delay={0}>
         <div className="max-w-7xl mx-auto">
           <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden mb-8 bg-navy-100">
             <Image src="/generated/ind_healthcare_00001_.png" alt="Modern AI-enhanced healthcare facility" fill className="object-cover" sizes="100vw" />
@@ -57,6 +59,7 @@ export default function Page() {
             <p className="sl-body-sm italic">Not sure if AI makes sense for your practice? Start with a $300 Discovery Session. We will map your current operations, identify the highest-impact automation opportunity, and give you a written roadmap — whether you hire us or not.</p>
           </div>
         </div>
+        </AnimatedSection>
       </section>
 
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">

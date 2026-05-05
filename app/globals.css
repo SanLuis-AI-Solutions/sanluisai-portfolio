@@ -84,6 +84,13 @@
     background: var(--bg-canvas);
     -webkit-font-smoothing: antialiased;
   }
+
+  /* Focus visible — consistent gold ring on all interactive elements */
+  *:focus-visible {
+    outline: 2px solid var(--sl-gold-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
 }
 
 @layer components {
