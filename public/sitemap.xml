@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sanluisai.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://sanluisai.com/services</loc><priority>0.9</priority></url>
+  <url><loc>https://sanluisai.com/services/custom-ai</loc><priority>0.8</priority></url>
+  <url><loc>https://sanluisai.com/services/automation</loc><priority>0.8</priority></url>
+  <url><loc>https://sanluisai.com/services/agents</loc><priority>0.8</priority></url>
+  <url><loc>https://sanluisai.com/services/consulting</loc><priority>0.8</priority></url>
+  <url><loc>https://sanluisai.com/case-studies</loc><priority>0.8</priority></url>
+  <url><loc>https://sanluisai.com/case-studies/garza-international</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/case-studies/loveflow</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/case-studies/susies-jewelry-repair</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/industries/healthcare</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/industries/logistics</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/industries/manufacturing</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/industries/professional-services</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/industries/real-estate</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/industries/retail</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/about</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/blog</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/blog/why-ai-consulting-fails</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/blog/discovery-session-breakdown</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/blog/ai-ready-problem-signs</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/faq</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/pricing</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/how-it-works</loc><priority>0.7</priority></url>
+  <url><loc>https://sanluisai.com/booking</loc><priority>0.8</priority></url>
+  <url><loc>https://sanluisai.com/assessment</loc><priority>0.6</priority></url>
+  <url><loc>https://sanluisai.com/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://sanluisai.com/terms</loc><priority>0.3</priority></url>
+</urlset>

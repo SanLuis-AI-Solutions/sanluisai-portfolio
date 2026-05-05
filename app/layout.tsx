@@ -27,6 +27,7 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://sanluisai.com'),
   title: 'What Can AI Actually Do for Your Business? | SanLuis AI Solutions',
   description: 'No-code AI systems, automations, and applications for small and mid-size businesses. Built for Houston. Bilingual EN/ES.',
   openGraph: {
