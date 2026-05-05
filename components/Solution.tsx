@@ -15,20 +15,20 @@ function GoldThread({ delay = 0 }: { delay?: number }) {
 }
 
 const steps = [
-  { num: '01', title: 'Discovery Session', stat: '60 min', desc: 'Paid session. We map your workflow, find the opportunity, and deliver a written action plan within 24 hours — regardless of whether you hire us.' },
-  { num: '02', title: 'Custom Build', stat: '2-4 wk', desc: 'We build the system using AI-native tools. No black boxes. No ongoing license fees. Full source ownership on delivery.' },
-  { num: '03', title: 'Measured Result', stat: 'Verified', desc: 'We track the outcome against the baseline. Margin recovered, time compressed, throughput improved — the number that proves it worked.' },
+  { num: '01', title: 'We Find Your Leverage Point', stat: '60 min', desc: 'A paid working session. Not a pitch. We map your operations, identify the single process costing you the most, and show you exactly what AI would do to fix it — in writing, within 24 hours.' },
+  { num: '02', title: 'We Build What You Actually Need', stat: '2-4 wk', desc: 'Your process becomes a custom AI system. No off-the-shelf. No ongoing license fees. You own every line of code. We handle deployment, training, and documentation.' },
+  { num: '03', title: 'You See The Number That Matters', stat: 'Verified', desc: 'We measure against your baseline — hours saved, margin recovered, throughput improved. 91% of AI-using SMBs report revenue increases. We prove yours is one of them.' },
 ]
 
 export default function Solution() {
   return (
     <section id="solution" className="py-32 md:py-40 bg-bgCanvas">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
-        <FadeIn delay={0}><span className="sl-eyebrow mb-8">How We Deliver</span></FadeIn>
+        <FadeIn delay={0}><span className="sl-eyebrow mb-8">How It Works</span></FadeIn>
         <div className="grid lg:grid-cols-[1fr_1.6fr] gap-16 lg:gap-24 mb-20">
           <div>
-            <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Discover. Build. Ship. Maintain.</h2></FadeIn>
-            <FadeIn delay={0.2}><p className="sl-lede mb-8 max-w-[48ch]">One engagement, one clear result. No theatre.</p></FadeIn>
+            <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">You don't need a team of engineers. You need one clear process.</h2></FadeIn>
+            <FadeIn delay={0.2}><p className="sl-lede mb-8 max-w-[48ch]">Three steps from discovery to deployment. No jargon. No six-month timelines. Just a system that does the work you're tired of doing.</p></FadeIn>
             <FadeIn delay={0.3}><GoldThread delay={0.3} /></FadeIn>
           </div>
           <div className="space-y-4">

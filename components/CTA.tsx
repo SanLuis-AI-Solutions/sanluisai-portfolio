@@ -28,18 +28,18 @@ export default function CTA() {
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
           <div>
             <AnimatedSection delay={0}>
-              <span className="sl-eyebrow mb-8 text-bone-300">No. 06 — Next</span>
+              <span className="sl-eyebrow mb-8 text-bone-300">No. 06 — Start Here</span>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-8">
-                Ready to build something that actually works?
+                You know your business has a process that wastes time.
                 <br />
-                <span className="text-gold-600">$300. 60 minutes. Clear roadmap.</span>
+                <span className="text-gold-600">$300 gets you the proof and the plan.</span>
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-12">
-                The Discovery Session is a focused working session where we map your operations, identify your highest-leverage AI opportunity, and deliver a written roadmap — whether you hire us or not.
+                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers. Whether you move forward with us or not.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>
@@ -47,7 +47,7 @@ export default function CTA() {
                 href="/booking"
                 className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow transition-all duration-220 rounded"
               >
-                Book a Discovery Session.
+                Book Your Discovery Session.
               </a>
             </AnimatedSection>
           </div>

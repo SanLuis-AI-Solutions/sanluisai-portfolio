@@ -9,10 +9,10 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const problems = [
-  { name: 'Manufacturing', desc: 'Production delays, unplanned downtime, quality gaps that eat your margins.' },
-  { name: 'Healthcare', desc: 'Admin work eating clinical hours. Prior auth backlogs. Patient intake falling through the cracks.' },
-  { name: 'Real Estate', desc: 'Leads going cold while you are in another showing. Property tasks piling up. Market analysis moving too slow.' },
-  { name: 'Professional Services', desc: 'Billable hours drowning in paperwork. Document review backlogs. Onboarding that takes weeks, not days.' },
+  { name: 'Manufacturing', desc: '$50B lost to unplanned downtime every year. At $260K per hour of outage, you can\'t afford to wait until something breaks.' },
+  { name: 'Healthcare', desc: '$21B in administrative waste still on the table. Your staff spends days on what AI can finish in hours.' },
+  { name: 'Real Estate', desc: 'Every hour you wait to respond, your conversion odds drop 60×. AI users respond in 28 seconds — you\'re averaging 42 minutes.' },
+  { name: 'Professional Services', desc: '60–80% of your onboarding overhead is manual. Two-thirds of corporate clients expect you to use AI.' },
 ]
 
 export default function Problem() {
@@ -20,9 +20,9 @@ export default function Problem() {
     <section id="problem" className="py-32 md:py-40 bg-bone-100">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <div className="max-w-4xl">
-          <FadeIn delay={0}><span className="sl-eyebrow mb-8">The Challenges We Solve</span></FadeIn>
-          <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Every industry has processes that slow it down.</h2></FadeIn>
-          <FadeIn delay={0.2}><p className="sl-lede mb-16 max-w-[56ch]">We find the one costing you the most — and eliminate it with AI.</p></FadeIn>
+          <FadeIn delay={0}><span className="sl-eyebrow mb-8">The Problem</span></FadeIn>
+          <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Your team is burning hours on work AI could do in seconds.</h2></FadeIn>
+          <FadeIn delay={0.2}><p className="sl-lede mb-16 max-w-[56ch]">You don't need to understand how AI works. You need to know what it can actually save you — in dollars, hours, and missed opportunities.</p></FadeIn>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-navy-200 rounded overflow-hidden">
           {problems.map((p, i) => (

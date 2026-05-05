@@ -37,29 +37,29 @@ const services = [
   {
     num: '01',
     name: 'Custom AI Systems',
-    desc: 'Built from scratch for your exact problem. No templates. No bloat. No compromises.',
-    detail: 'From $5,000. Built on your stack, with your data, for your specific problem. You own everything.',
+    desc: 'A purpose-built system for a single, high-impact problem. Designed around your data, your workflow, your outcomes.',
+    detail: 'From $5,000. You own everything. No license fees. No vendor lock-in. Built for the problem that costs you the most right now.',
     href: '/services/custom-ai',
   },
   {
     num: '02',
     name: 'AI Automation',
-    desc: 'Workflow automation that eats the busywork your highest-paid people shouldn\'t be doing.',
-    detail: 'From $1,200. Works with the tools you already use. We map it, build it, and show you the margin you recovered.',
+    desc: 'The busywork your best people shouldn\'t touch. Data entry, reconciliation, scheduling, reporting — automated end to end.',
+    detail: 'From $1,200. Connects to the tools you already use. We measure the hours recovered and show you exactly what you saved.',
     href: '/services/automation',
   },
   {
     num: '03',
     name: 'AI Agents',
-    desc: 'Autonomous agents that research, decide, and act — handling complex tasks start to finish without hand-holding.',
-    detail: 'From $5,000. Purpose-built for one job. Not a chatbot. Not a generic wrapper. A custom system that does exactly one thing well.',
+    desc: 'Not a chatbot. An autonomous system that researches, decides, and acts on multi-step tasks without hand-holding.',
+    detail: 'From $5,000. Built for one specific job. Handles complex, multi-stage workflows start to finish. You approve the output, not every step.',
     href: '/services/agents',
   },
   {
     num: '04',
     name: 'AI Consulting',
-    desc: 'Strategic guidance on where AI actually saves you money without wasting yours on things that won\'t.',
-    detail: '$300. You know you need AI but aren\'t sure where to start. We find the opportunities that actually move the needle — and deprioritize the rest.',
+    desc: 'You know AI matters but you\'re not sure where it applies. We audit your operations and give you a prioritized roadmap.',
+    detail: '$300. We identify the opportunities that actually move the needle — and tell you which ones to ignore. No jargon. No upsell.',
     href: '/services/consulting',
   },
 ]
@@ -71,22 +71,22 @@ export default function Services() {
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-16 lg:gap-24">
           <div>
             <AnimatedSection delay={0}>
-              <span className="sl-eyebrow mb-8">No. 02 — Capabilities</span>
+              <span className="sl-eyebrow mb-8">No. 02 — What We Build</span>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">
-                What we build.
+                Four ways to solve your most expensive problem.
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={0.25}>
               <p className="sl-body-lg max-w-[52ch] mb-8">
-                Four categories, all custom. We scope one problem per build and fix it completely before moving on.
+                One problem per engagement. Fixed price. You own everything. No subscriptions, no black boxes, no one-size-fits-all.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <GoldThread delay={0.35} />
               <p className="mt-6 text-xs font-medium text-fg3 tracking-[0.08em] uppercase">
-                Fixed price &middot; You own the code &middot; No license fees, ever
+                Fixed price &middot; You own the code &middot; No recurring fees, ever
               </p>
             </AnimatedSection>
           </div>
