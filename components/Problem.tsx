@@ -1,6 +1,7 @@
 'use client'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import FlameMark from '@/components/FlameMark'
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -20,7 +21,12 @@ export default function Problem() {
     <section id="problem" className="py-32 md:py-40 bg-bone-100">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <div className="max-w-4xl">
-          <FadeIn delay={0}><span className="sl-eyebrow mb-8">The Problem</span></FadeIn>
+          <FadeIn delay={0}>
+            <div className="flex items-center gap-2 mb-8">
+              <FlameMark size="sm" />
+              <span className="sl-eyebrow">The Problem</span>
+            </div>
+          </FadeIn>
           <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Your team is burning hours on work AI could do in seconds.</h2></FadeIn>
           <FadeIn delay={0.2}><p className="sl-lede mb-16 max-w-[56ch]">You don't need to understand how AI works. You need to know what it can actually save you — in dollars, hours, and missed opportunities.</p></FadeIn>
         </div>

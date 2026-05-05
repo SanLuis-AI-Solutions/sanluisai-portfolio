@@ -1,6 +1,7 @@
 'use client'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import FlameMark from '@/components/FlameMark'
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -19,7 +20,12 @@ export default function Process() {
   return (
     <section className="py-32 md:py-40 bg-bgCanvas">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
-        <FadeIn delay={0}><span className="sl-eyebrow mb-8">Our Process</span></FadeIn>
+        <FadeIn delay={0}>
+          <div className="flex items-center gap-2 mb-8">
+            <FlameMark size="sm" />
+            <span className="sl-eyebrow">Our Process</span>
+          </div>
+        </FadeIn>
         <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Audit. Build. Deploy. Grow.</h2></FadeIn>
         <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From "what's wasting my money" to "it's running itself" — in weeks, not quarters.</p></FadeIn>
         <div className="grid md:grid-cols-4 gap-4">

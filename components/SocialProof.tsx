@@ -1,6 +1,7 @@
 'use client'
 import { useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
+import FlameMark from '@/components/FlameMark'
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -35,8 +36,9 @@ export default function SocialProof() {
     <section className="py-32 md:py-40 bg-bone-200">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <FadeIn delay={0}>
-          <div className="text-center mb-16">
-            <span className="sl-eyebrow mb-4">Trusted by Operators</span>
+          <div className="flex items-center justify-center gap-2 mb-16">
+            <FlameMark size="sm" />
+            <span className="sl-eyebrow text-center">Trusted by Operators</span>
           </div>
         </FadeIn>
 

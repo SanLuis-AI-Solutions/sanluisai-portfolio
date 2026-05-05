@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
 import Image from 'next/image'
+import FlameMark from '@/components/FlameMark'
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -27,7 +28,8 @@ export default function Hero() {
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
           <div className="max-w-[62ch]">
             <AnimatedSection delay={0}>
-              <div className="flex items-center gap-4 mb-8">
+              <div className="flex items-center gap-3 mb-8">
+                <FlameMark size="sm" className="opacity-80" />
                 <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500">SanLuis AI Solutions — Houston</span>
                 <div className="h-px w-8 bg-gold-600/60" />
               </div>
@@ -38,8 +40,13 @@ export default function Hero() {
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
-              <p className="font-sans text-lg md:text-xl font-light text-bone-300/70 leading-relaxed max-w-[48ch] mb-10">
+              <p className="font-sans text-lg md:text-xl font-light text-bone-300/70 leading-relaxed max-w-[48ch] mb-3">
                 No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps — shipped in weeks, not months.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection delay={0.35}>
+              <p className="font-display text-lg md:text-xl text-gold-500 italic font-medium tracking-[-0.01em] mb-10">
+                Your business, running on AI.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>

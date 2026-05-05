@@ -1,3 +1,5 @@
+import FlameMark from '@/components/FlameMark'
+
 const links = [
   { label: 'Custom AI Systems', href: '/services/custom-ai' },
   { label: 'AI Automation', href: '/services/automation' },
@@ -44,7 +46,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="font-display text-2xl font-bold text-white mb-3">SanLuis AI</div>
+            <div className="flex items-center gap-2 mb-3">
+              <FlameMark size="sm" />
+              <span className="font-display text-2xl font-bold text-white">SanLuis AI</span>
+            </div>
             <p className="font-sans text-sm text-navy-300 leading-relaxed">Custom AI solutions for small and mid-size businesses. No-code development. Bilingual EN/ES. Houston.</p>
           </div>
           <div>

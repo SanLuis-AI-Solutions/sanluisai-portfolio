@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
+import FlameMark from '@/components/FlameMark'
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -29,7 +30,10 @@ export default function CTA() {
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
           <div>
             <AnimatedSection delay={0}>
-              <span className="sl-eyebrow mb-8 text-bone-300">No. 06 — Start Here</span>
+              <div className="flex items-center gap-2 mb-8">
+                <FlameMark size="sm" className="opacity-80" />
+                <span className="sl-eyebrow text-bone-300">Start Here</span>
+              </div>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-8">
