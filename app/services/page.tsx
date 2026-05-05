@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import FlameMark from '@/components/FlameMark'
 
 export const metadata: Metadata = {
   title: 'AI Development Services | Custom AI, Automation, Agents & Consulting | SanLuis AI Solutions',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   },
 }
 
-const services = [
+const servicesList = [
   {
     num: '01',
     name: 'Custom AI Systems',
@@ -67,9 +68,14 @@ export default function ServicesPage() {
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
+          {/* Flame mark */}
+          <div className="flex items-center justify-center mb-16">
+            <FlameMark size="md" />
+          </div>
+
           <AnimatedSection delay={0}>
             <div className="space-y-8 mb-20">
-              {services.map((s) => (
+              {servicesList.map((s) => (
                 <div key={s.num} className="bg-white border border-navy-200 rounded-xl p-8 md:p-10 hover:border-navy-900 transition-all duration-220">
                   <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start">
                     <div className="font-display text-3xl text-gold-600 leading-none">{s.num}</div>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import FlameMark from '@/components/FlameMark'
 
 export const metadata: Metadata = {
   title: 'Pricing — SanLuis AI Solutions',
@@ -96,6 +97,11 @@ export default function PricingPage() {
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl mx-auto">
+          {/* Flame mark */}
+          <div className="flex items-center justify-center mb-14">
+            <FlameMark size="md" />
+          </div>
+
           {/* Two-column pricing grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {/* Discovery Session */}

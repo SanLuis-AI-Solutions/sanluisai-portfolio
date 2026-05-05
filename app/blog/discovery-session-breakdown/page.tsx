@@ -7,9 +7,35 @@ export const metadata: Metadata = {
   description: 'You pay $300 for a 60-minute audit. What do you actually get? A breakdown of the diagnostic process — from problem identification to a written action plan you can execute.',
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The $300 Discovery Session: What Happens in That Hour',
+  description: 'You pay $300 for a 60-minute audit. What do you actually get? A breakdown of the diagnostic process — from problem identification to a written action plan you can execute.',
+  author: {
+    '@type': 'Person',
+    name: 'Daniel San Luis',
+    url: 'https://www.linkedin.com/in/danielsanluis',
+  },
+  datePublished: '2026-04-28',
+  publisher: {
+    '@type': 'Organization',
+    name: 'SanLuis AI Solutions',
+    url: 'https://sanluisai-portfolio.vercel.app',
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://sanluisai-portfolio.vercel.app/blog/discovery-session-breakdown',
+  },
+}
+
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PageHeader
         eyebrow="Insights"
         title="The $300 Discovery Session: What Happens in That Hour"

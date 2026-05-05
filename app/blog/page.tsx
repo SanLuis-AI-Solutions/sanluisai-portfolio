@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageHeader from '@/components/PageHeader'
 import SubscribeForm from '@/components/SubscribeForm'
+import FlameMark from '@/components/FlameMark'
 
 const posts = [
   {
@@ -34,19 +35,27 @@ export default function Page() {
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl mx-auto">
-          <div className="space-y-10">
+          <div className="flex items-center gap-2 mb-12">
+            <FlameMark size="sm" />
+          </div>
+          <div className="space-y-12">
             {posts.map((post) => (
-              <article key={post.slug} className="border-b border-navy-200 pb-10 relative">
-                <time className="font-sans text-xs text-fg3 uppercase tracking-wider">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-                <div className="flex items-center gap-3 mt-2 mb-3">
-                  <Link href={`/blog/${post.slug}`} className="hover:text-gold-600 transition-colors duration-200">
-                    <h2 className="font-display text-2xl text-navy-800">{post.title}</h2>
-                  </Link>
+              <article key={post.slug} className="border-b border-navy-200 pb-12 relative group">
+                {/* Prominent date badge */}
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="font-sans text-sm font-semibold text-gold-600 tracking-[0.06em] uppercase">
+                    {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                  </span>
+                  <span className="font-sans text-xs text-navy-400">· 5 min read</span>
                 </div>
-                <div className="font-sans text-xs text-navy-400 mb-3">4 min read</div>
-                <p className="sl-body mb-4">{post.excerpt}</p>
-                <Link href={`/blog/${post.slug}`} className="text-gold-600 font-sans text-xs font-semibold tracking-[0.08em] uppercase hover:translate-x-1 transition-transform duration-200 inline-block">
-                  Read more →
+                <Link href={`/blog/${post.slug}`} className="block">
+                  <h2 className="font-display text-2xl text-navy-800 mb-3 group-hover:text-gold-600 transition-colors duration-200">
+                    {post.title}
+                  </h2>
+                </Link>
+                <p className="sl-body text-fg2 mb-4 leading-relaxed">{post.excerpt}</p>
+                <Link href={`/blog/${post.slug}`} className="text-gold-600 font-sans text-sm font-semibold tracking-[0.04em] hover:translate-x-1 transition-transform duration-200 inline-flex items-center gap-1">
+                  Read more <span aria-hidden="true">→</span>
                 </Link>
               </article>
             ))}

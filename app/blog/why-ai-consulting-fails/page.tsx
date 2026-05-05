@@ -7,9 +7,35 @@ export const metadata: Metadata = {
   description: 'Six-month discovery phases. Slide decks with no code. Pilot purgatory. Here is how the traditional AI consulting model wastes your time — and how targeted, time-bounded builds produce real results in weeks.',
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Why Most AI Consulting Fails (And How We Avoid It)',
+  description: 'Six-month discovery phases. Slide decks with no code. Pilot purgatory. Here is how the traditional AI consulting model wastes your time — and how targeted, time-bounded builds produce real results in weeks.',
+  author: {
+    '@type': 'Person',
+    name: 'Daniel San Luis',
+    url: 'https://www.linkedin.com/in/danielsanluis',
+  },
+  datePublished: '2026-04-28',
+  publisher: {
+    '@type': 'Organization',
+    name: 'SanLuis AI Solutions',
+    url: 'https://sanluisai-portfolio.vercel.app',
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://sanluisai-portfolio.vercel.app/blog/why-ai-consulting-fails',
+  },
+}
+
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PageHeader
         eyebrow="Insights"
         title="Why Most AI Consulting Fails (And How We Avoid It)"

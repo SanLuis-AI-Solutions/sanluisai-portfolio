@@ -7,9 +7,35 @@ export const metadata: Metadata = {
   description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution — and when a spreadsheet or checklist is the better answer.',
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '5 Signs Your Business Has An AI-Ready Problem',
+  description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution — and when a spreadsheet or checklist is the better answer.',
+  author: {
+    '@type': 'Person',
+    name: 'Daniel San Luis',
+    url: 'https://www.linkedin.com/in/danielsanluis',
+  },
+  datePublished: '2026-04-28',
+  publisher: {
+    '@type': 'Organization',
+    name: 'SanLuis AI Solutions',
+    url: 'https://sanluisai-portfolio.vercel.app',
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://sanluisai-portfolio.vercel.app/blog/ai-ready-problem-signs',
+  },
+}
+
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PageHeader
         eyebrow="Insights"
         title="5 Signs Your Business Has An AI-Ready Problem"

@@ -40,6 +40,23 @@ function EmailIcon() {
   )
 }
 
+function PhoneIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+  )
+}
+
+function LocationIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  )
+}
+
 export default function Footer() {
   return (
     <footer className="bg-navy-950 py-16">
@@ -62,7 +79,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Connect</h4>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 mb-4">
               <a href="mailto:contact@sanluisai.com" className="w-10 h-10 flex items-center justify-center rounded-full bg-navy-800 text-navy-300 hover:bg-gold-600 hover:text-navy-900 transition-all duration-220" aria-label="Email SanLuis AI">
                 <EmailIcon />
               </a>
@@ -73,7 +90,17 @@ export default function Footer() {
                 <XIcon />
               </a>
             </div>
-            <p className="font-sans text-xs text-navy-500 mt-4">contact@sanluisai.com</p>
+            <div className="space-y-1.5">
+              <a href="tel:+18327790033" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200">
+                <PhoneIcon /><span>+1 (832) 779-0033</span>
+              </a>
+              <div className="flex items-center gap-2 font-sans text-xs text-navy-400">
+                <LocationIcon /><span>Houston, Texas</span>
+              </div>
+              <a href="mailto:contact@sanluisai.com" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200 mt-1">
+                contact@sanluisai.com
+              </a>
+            </div>
           </div>
         </div>
         <div className="border-t border-navy-800 pt-8 text-center">

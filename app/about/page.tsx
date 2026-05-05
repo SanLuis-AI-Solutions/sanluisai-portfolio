@@ -3,6 +3,7 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import OrnamentDivider from '@/components/OrnamentDivider'
+import FlameMark from '@/components/FlameMark'
 
 export const metadata: Metadata = {
   title: 'About Daniel San Luis and SanLuis AI Solutions | Houston AI',
@@ -30,6 +31,10 @@ export default function Page() {
       {/* Light content section */}
       <main className="bg-bone-50 min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+          {/* Flame mark above founder */}
+          <div className="flex items-center justify-center mb-16">
+            <FlameMark size="md" />
+          </div>
 
           {/* Founder section */}
           <div className="flex flex-col md:flex-row gap-8 mb-16">
