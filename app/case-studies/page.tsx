@@ -33,32 +33,37 @@ export default function Page() {
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
-        <AnimatedSection delay={0}>
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {cases.map((c) => (
-                <Link key={c.slug} href={`/case-studies/${c.slug}`} className="block bg-white border border-navy-900 rounded p-6 hover:shadow-2 transition-shadow group">
-                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">{c.industry}</div>
-                  <div className="font-display text-xl text-navy-800 mb-4 group-hover:text-navy-600 transition-colors">{c.company}</div>
-                  <div className="mb-4">
-                    <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Problem</div>
-                    <div className="font-sans text-sm text-fg2">{c.problem}</div>
-                  </div>
-                  <div>
-                    <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div>
-                    <div className="font-display text-2xl text-gold-600">{c.result}</div>
-                  </div>
-                  <div className="mt-4 pt-4 border-t border-navy-100">
-                    <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
+        <div className="max-w-7xl mx-auto">
+          <AnimatedSection delay={0}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            {cases.map((c) => (
+              <Link key={c.slug} href={`/case-studies/${c.slug}`} className="block bg-white border border-navy-900 rounded p-6 hover:shadow-2 transition-shadow group">
+                <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">{c.industry}</div>
+                <div className="font-display text-xl text-navy-800 mb-4 group-hover:text-navy-600 transition-colors">{c.company}</div>
+                <div className="mb-4">
+                  <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Problem</div>
+                  <div className="font-sans text-sm text-fg2">{c.problem}</div>
+                </div>
+                <div>
+                  <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div>
+                  <div className="font-display text-2xl text-gold-600">{c.result}</div>
+                </div>
+                <div className="mt-4 pt-4 border-t border-navy-100">
+                  <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
+                </div>
+              </Link>
+            ))}
           </div>
-        </AnimatedSection>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+          <div className="bg-bone-100 border border-navy-200 rounded p-6">
+            <p className="sl-body-sm italic">Not sure which solution fits your problem? Start with a $300 Discovery Session. We will audit your operations, identify the highest-impact opportunity, and give you a written roadmap — whether you hire us or not.</p>
+          </div>
+          </AnimatedSection>
+        </div>
       </section>
 
-      {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Want results like these?</h2>

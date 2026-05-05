@@ -71,54 +71,61 @@ export default function WorkPage() {
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8">
-        <AnimatedSection delay={0}>
-          <div className="max-w-7xl mx-auto py-24">
-            <h2 className="font-display text-2xl text-navy-800 mb-6">AI-Powered Development (2025\u20132026)</h2>
-            <div className="grid md:grid-cols-3 gap-6 mb-20">
-              {projects.map((p) => (
-                <Link key={p.slug} href={`/case-studies/${p.slug}`} className="group block bg-white border border-navy-200 rounded-xl hover:border-navy-900 transition-all duration-220 overflow-hidden">
-                  <div className="p-6 md:p-8">
-                    <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-3">{p.industry}</div>
-                    <h3 className="font-display text-xl text-navy-800 mb-3 group-hover:text-navy-600 transition-colors duration-200">{p.company}</h3>
-                    <p className="sl-body-sm mb-4 line-clamp-3">{p.problem}</p>
-                    <div className="flex items-baseline gap-2 mb-3">
-                      <span className="font-display text-3xl text-gold-600">{p.resultMetric}</span>
-                      <span className="sl-body-sm">{p.resultLabel}</span>
-                    </div>
-                    {p.quote && (
-                      <div className="border-l-2 border-gold-400 pl-3 mb-4">
-                        <p className="font-sans text-sm italic text-navy-600 leading-relaxed">&ldquo;{p.quote}&rdquo;</p>
-                      </div>
-                    )}
-                    <div className="text-gold-600 font-sans text-xs font-semibold tracking-[0.08em] uppercase mb-4 group-hover:translate-x-1 transition-transform duration-200">
-                      View Case Study \u2192
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {p.tags.map((tag) => (
-                        <span key={tag} className="font-sans text-xs px-2 py-1 bg-bone-100 text-navy-600 rounded">{tag}</span>
-                      ))}
-                    </div>
+        <div className="max-w-7xl mx-auto py-24">
+          <AnimatedSection delay={0}>
+          <h2 className="font-display text-2xl text-navy-800 mb-6">AI-Powered Development (2025–2026)</h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-20">
+            {projects.map((p) => (
+              <Link key={p.slug} href={`/case-studies/${p.slug}`} className="group block bg-white border border-navy-200 rounded-xl hover:border-navy-900 transition-all duration-220 overflow-hidden">
+                <div className="p-6 md:p-8">
+                  <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-3">{p.industry}</div>
+                  <h3 className="font-display text-xl text-navy-800 mb-3 group-hover:text-navy-600 transition-colors duration-200">{p.company}</h3>
+                  <p className="sl-body-sm mb-4 line-clamp-3">{p.problem}</p>
+                  <div className="flex items-baseline gap-2 mb-3">
+                    <span className="font-display text-3xl text-gold-600">{p.resultMetric}</span>
+                    <span className="sl-body-sm">{p.resultLabel}</span>
                   </div>
-                </Link>
-              ))}
-            </div>
-
-            <h2 className="font-display text-2xl text-navy-800 mb-4">Earlier Client Work</h2>
-            <p className="sl-body-sm mb-8 text-navy-500">Projects built before our AI development practice, using WordPress. Still live and serving their clients.</p>
-            <div className="grid md:grid-cols-3 gap-4 mb-20">
-              {earlierWork.map((w) => (
-                <a key={w.company} href={w.url} target="_blank" rel="noopener noreferrer" className="group block bg-white/70 border border-navy-200/60 rounded-lg p-5 hover:border-navy-900/40 hover:bg-white transition-all duration-220">
-                  <div className="font-sans text-xs font-semibold text-gold-600/70 tracking-[0.12em] uppercase mb-2">{w.category}</div>
-                  <h3 className="font-display text-base text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">{w.company}</h3>
-                  <p className="font-sans text-sm text-navy-500 leading-relaxed">{w.description}</p>
-                </a>
-              ))}
-            </div>
+                  {p.quote && (
+                    <div className="border-l-2 border-gold-400 pl-3 mb-4">
+                      <p className="font-sans text-sm italic text-navy-600 leading-relaxed">&ldquo;{p.quote}&rdquo;</p>
+                    </div>
+                  )}
+                  <div className="text-gold-600 font-sans text-xs font-semibold tracking-[0.08em] uppercase mb-4 group-hover:translate-x-1 transition-transform duration-200">
+                    View Case Study →
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {p.tags.map((tag) => (
+                      <span key={tag} className="font-sans text-xs px-2 py-1 bg-bone-100 text-navy-600 rounded">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
-        </AnimatedSection>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+          <h2 className="font-display text-2xl text-navy-800 mb-4">Earlier Client Work</h2>
+          <p className="sl-body-sm mb-8 text-navy-500">Projects built before our AI development practice, using WordPress. Still live and serving their clients.</p>
+          <div className="grid md:grid-cols-3 gap-4 mb-20">
+            {earlierWork.map((w) => (
+              <a key={w.company} href={w.url} target="_blank" rel="noopener noreferrer" className="group block bg-white/70 border border-navy-200/60 rounded-lg p-5 hover:border-navy-900/40 hover:bg-white transition-all duration-220">
+                <div className="font-sans text-xs font-semibold text-gold-600/70 tracking-[0.12em] uppercase mb-2">{w.category}</div>
+                <h3 className="font-display text-base text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">{w.company}</h3>
+                <p className="font-sans text-sm text-navy-500 leading-relaxed">{w.description}</p>
+              </a>
+            ))}
+          </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.3}>
+          <div className="bg-bone-100 border border-navy-200 rounded p-6">
+            <p className="sl-body-sm italic">Not sure which approach fits your business? Start with a $300 Discovery Session. We will audit your operations, identify the highest-impact opportunity, and give you a written roadmap — whether you hire us or not.</p>
+          </div>
+          </AnimatedSection>
+        </div>
       </section>
 
-      {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build your project?</h2>
