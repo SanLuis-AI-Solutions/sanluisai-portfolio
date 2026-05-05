@@ -33,7 +33,10 @@ export default function Page() {
             <li>Auto-generates formatted proposal documents</li>
             <li>Flags high-risk bids for estimator review</li>
           </ul>
-          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">"SanLuis AI didn't just build software — they solved the single biggest problem in our sales process. We're bidding faster and winning more." — Garza International</blockquote>
+          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
+  <p className="italic mb-2">"SanLuis AI didn't just build software — they solved the single biggest problem in our sales process. We're bidding faster and winning more."</p>
+  <footer className="text-gold-600/80 not-italic text-base">— Director of Operations, Garza International</footer>
+</blockquote>
         </div>
       </section>
 

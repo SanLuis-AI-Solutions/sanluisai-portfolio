@@ -33,7 +33,10 @@ export default function Page() {
             <li>Pipeline dashboard showing every lead's status in real time</li>
             <li>Integration with Google Calendar for automatic booking confirmations</li>
           </ul>
-          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">&ldquo;I went from losing leads to having a system that works even when I&apos;m not in the shop. SanLuis AI transformed how we run our business.&rdquo; — Susie&apos;s Jewelry Repair</blockquote>
+          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
+  <p className="italic mb-2">&ldquo;I went from losing leads to having a system that works even when I&apos;m not in the shop. SanLuis AI transformed how we run our business.&rdquo;</p>
+  <footer className="text-gold-600/80 not-italic text-base">— Owner, Susie&apos;s Jewelry Repair</footer>
+</blockquote>
         </div>
       </section>
 

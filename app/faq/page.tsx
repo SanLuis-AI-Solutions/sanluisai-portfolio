@@ -2,6 +2,26 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 
+const faqSchemaQuestions = [
+  { question: 'How much does a custom AI system cost?', answer: 'Custom AI systems start at $5,000 and workflow automations start at $1,200. Pricing depends on scope, integrations, and complexity — but we give you a firm quote before any work begins.' },
+  { question: 'What is included in the $300 Discovery Session?', answer: 'The Discovery Session is a focused 60-minute working session where we map your top 3 highest-leverage AI opportunities, identify what data and tools are needed, and deliver a written roadmap with pricing estimates.' },
+  { question: 'Do you require long-term contracts?', answer: 'All our projects are scoped, quoted, and billed per project — no monthly retainers, no annual commitments. If you need ongoing support after launch, we offer simple month-to-month maintenance at a flat rate.' },
+  { question: 'What if the project does not work?', answer: 'We work in iterative milestones so you see, test, and approve each stage before we move to the next. If at any point the solution is not meeting expectations, we stop, reassess, and adjust.' },
+  { question: 'How long does it take from start to deployment?', answer: 'Workflow automations deploy in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks.' },
+  { question: 'What happens during the Discovery Session?', answer: 'In our 60-minute session, we walk through your actual operations and identify the three highest-impact opportunities. You leave with a written roadmap, a prioritized build order, and a pricing estimate.' },
+  { question: 'How do you decide what to build first?', answer: 'We prioritize based on three factors: speed of implementation, business value, and data readiness. The roadmap you receive is already prioritized this way.' },
+  { question: 'What if I do not know exactly what I need?', answer: 'You do not need to know — that is our job. Most clients come to us with a vague sense that something could be faster or easier. The Discovery Session is designed exactly for this scenario.' },
+  { question: 'How do AI agents differ from chatbots?', answer: 'A chatbot simply answers questions. An AI agent takes action — it can intake a lead, check inventory, research a prospect, draft a proposal, and update a CRM. Agents are autonomous workers, not conversation tools.' },
+  { question: 'What data do you need from me?', answer: 'We can work with whatever data you have — spreadsheets, emails, PDFs, CRM exports, or even handwritten notes. We handle the cleaning, structuring, and integration.' },
+  { question: 'Can AI integrate with my existing tools?', answer: 'Every system we build integrates with your existing stack: CRMs (HubSpot, Salesforce, Pipedrive), communication tools (Slack, email, WhatsApp), and databases (Google Sheets, Airtable, SQL).' },
+  { question: 'Who owns the code and data?', answer: 'You own 100% of the code, data, and intellectual property we build for you. There are no platform fees, no licensing costs, no ongoing dependency on us to keep your system running.' },
+  { question: 'How do I know my business is ready for AI?', answer: 'Your business is ready if you have repetitive tasks that consume your team\'s time, data that could inform better decisions, or customer-facing processes that could be faster.' },
+  { question: 'Will AI replace my employees?', answer: 'We build systems that handle the repetitive, time-consuming tasks your team does not enjoy. Your team focuses on higher-value work — client relationships, creative problem-solving, strategic decisions.' },
+  { question: 'What industries do you work with?', answer: 'We work across retail, healthcare, professional services, logistics, manufacturing, and real estate. If your business has processes, AI can improve them.' },
+  { question: 'Do you work with Spanish-speaking businesses?', answer: 'All our services, interfaces, and systems are available fully in English and Spanish. Our team is bilingual, and we regularly build systems that operate seamlessly in both languages.' },
+  { question: 'Is there a minimum project size?', answer: 'Our minimum project is the $300 Discovery Session — after that, if there is a clear opportunity, we can build a workflow automation for as little as $1,200. No minimum commitment required upfront.' },
+]
+
 export const metadata: Metadata = {
   title: 'FAQ — Frequently Asked Questions | SanLuis AI Solutions',
   description: 'Answers to common questions about pricing, process, technical requirements, and business readiness for custom AI systems, workflow automation, and AI agents. $300 Discovery Session. No long-term contracts.',
@@ -13,6 +33,17 @@ export const metadata: Metadata = {
     images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
+  },
+  other: {
+    'script:ld+json': JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqSchemaQuestions.map(q => ({
+        '@type': 'Question',
+        name: q.question,
+        acceptedAnswer: { '@type': 'Answer', text: q.answer },
+      })),
+    }),
   },
 }
 

@@ -4,11 +4,11 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
-  title: 'About — SanLuis AI Solutions | AI Systems & Stack',
-  description: 'We are builders, operators, and AI engineers. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure.',
+  title: 'About Daniel San Luis and SanLuis AI Solutions | Houston AI',
+  description: 'Founded by Daniel San Luis. We are builders, operators, and AI engineers based in Houston. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure.',
   openGraph: {
-    title: 'About — SanLuis AI Solutions | AI Systems & Stack',
-    description: 'We are builders, operators, and AI engineers. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure.',
+    title: 'About Daniel San Luis and SanLuis AI Solutions | Houston AI',
+    description: 'Founded by Daniel San Luis. We are builders, operators, and AI engineers based in Houston. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure.',
     url: 'https://sanluisai-portfolio.vercel.app/about',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
@@ -72,29 +72,6 @@ export default function Page() {
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, train, and move forward.</h3>
               <p className="sl-body">Deployment isn't the finish line. We document, train, and support until your team is confident and the system is stable. Then we hand you the keys.</p>
-            </div>
-          </div>
-
-          {/* The Numbers section */}
-          <div className="bg-bone-100 border border-navy-200 rounded p-8 mb-10">
-            <h2 className="font-display text-xl text-navy-800 mb-3">The Numbers</h2>
-            <div className="grid grid-cols-4 gap-4 text-center">
-              <div>
-                <div className="font-display text-3xl text-gold-600">6</div>
-                <div className="font-sans text-xs text-fg3 uppercase tracking-wider">Projects Delivered</div>
-              </div>
-              <div>
-                <div className="font-display text-3xl text-gold-600">5</div>
-                <div className="font-sans text-xs text-fg3 uppercase tracking-wider">Clients Served</div>
-              </div>
-              <div>
-                <div className="font-display text-3xl text-gold-600">3</div>
-                <div className="font-sans text-xs text-fg3 uppercase tracking-wider">AI Apps in Production</div>
-              </div>
-              <div>
-                <div className="font-display text-3xl text-gold-600">0</div>
-                <div className="font-sans text-xs text-fg3 uppercase tracking-wider">Jobs Replaced</div>
-              </div>
             </div>
           </div>
 

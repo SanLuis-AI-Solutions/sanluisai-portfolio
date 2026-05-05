@@ -33,7 +33,10 @@ export default function Page() {
             <li>Real-time learning loop that improved with every swipe</li>
             <li>A/B testing framework for continuous match quality optimization</li>
           </ul>
-          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">&ldquo;Our retention numbers turned around within a month. SanLuis AI didn&apos;t just fix our algorithm — they gave us a competitive moat.&rdquo; — LoveFlow</blockquote>
+          <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
+  <p className="italic mb-2">&ldquo;Our retention numbers turned around within a month. SanLuis AI didn&apos;t just fix our algorithm — they gave us a competitive moat.&rdquo;</p>
+  <footer className="text-gold-600/80 not-italic text-base">— CEO, LoveFlow</footer>
+</blockquote>
         </div>
       </section>
 
