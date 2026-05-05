@@ -36,15 +36,15 @@ function GoldThread({ delay = 0 }: { delay?: number }) {
 const services = [
   {
     num: '01',
-    name: 'Custom AI Systems',
-    desc: 'A purpose-built system for a single, high-impact problem. Designed around your data, your workflow, your outcomes.',
-    detail: 'From $5,000. You own everything. No license fees. No vendor lock-in. Built for the problem that costs you the most right now.',
-    href: '/services/custom-ai',
+    name: 'AI Consulting — Discovery Session',
+    desc: 'You know AI matters but you\u2019re not sure where it applies. We audit your operations and give you a prioritized roadmap.',
+    detail: '$300. We identify the opportunities that actually move the needle \u2014 and tell you which ones to ignore. No jargon. No upsell.',
+    href: '/services/consulting',
   },
   {
     num: '02',
     name: 'AI Automation',
-    desc: 'The busywork your best people shouldn\'t touch. Data entry, reconciliation, scheduling, reporting — automated end to end.',
+    desc: 'The busywork your best people shouldn\u2019t touch. Data entry, reconciliation, scheduling, reporting \u2014 automated end to end.',
     detail: 'From $1,200. Connects to the tools you already use. We measure the hours recovered and show you exactly what you saved.',
     href: '/services/automation',
   },
@@ -57,10 +57,10 @@ const services = [
   },
   {
     num: '04',
-    name: 'AI Consulting',
-    desc: 'You know AI matters but you\'re not sure where it applies. We audit your operations and give you a prioritized roadmap.',
-    detail: '$300. We identify the opportunities that actually move the needle — and tell you which ones to ignore. No jargon. No upsell.',
-    href: '/services/consulting',
+    name: 'Custom AI Systems',
+    desc: 'A purpose-built system for a single, high-impact problem. Designed around your data, your workflow, your outcomes.',
+    detail: 'From $5,000. You own everything. No license fees. No vendor lock-in. Built for the problem that costs you the most right now.',
+    href: '/services/custom-ai',
   },
 ]
 
@@ -115,6 +115,12 @@ export default function Services() {
                 </a>
               </AnimatedSection>
             ))}
+            {/* We build more than what's listed here */}
+            <AnimatedSection delay={0.15 + services.length * 0.12}>
+              <p className="font-sans text-xs text-navy-400 text-center pt-2">
+                These are examples, not a catalog. We build whatever moves your business forward &mdash; big or small.
+              </p>
+            </AnimatedSection>
           </div>
         </div>
       </div>

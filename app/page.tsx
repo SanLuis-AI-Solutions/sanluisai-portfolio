@@ -1,6 +1,5 @@
 import Hero from '@/components/Hero'
 import Problem from '@/components/Problem'
-import Solution from '@/components/Solution'
 import Services from '@/components/Services'
 import SceneDivider from '@/components/SceneDivider'
 import CaseStudies from '@/components/CaseStudies'
@@ -14,7 +13,6 @@ export default function HomePage() {
     <main>
       <Hero />
       <Problem />
-      <Solution />
       <Services />
       <SceneDivider />
       <CaseStudies />

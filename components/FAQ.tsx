@@ -26,9 +26,9 @@ export default function FAQ() {
         <div className="divide-y divide-bone-300/10">
           {faqs.map((f, i) => (
             <FadeIn key={i} delay={0.2 + i * 0.08}>
-              <div className="py-10 first:pt-0 last:pb-0">
-                <h3 className="font-display text-xl md:text-2xl text-bone-50 mb-4">{f.q}</h3>
-                <p className="font-sans text-base text-bone-300/65 leading-relaxed max-w-[56ch]">{f.a}</p>
+              <div className="py-12 first:pt-0 last:pb-0">
+                <h3 className="font-display text-xl md:text-2xl text-bone-50 mb-5">{f.q}</h3>
+                <p className="font-sans text-base md:text-lg text-bone-300/65 leading-relaxed max-w-[60ch]">{f.a}</p>
               </div>
             </FadeIn>
           ))}
