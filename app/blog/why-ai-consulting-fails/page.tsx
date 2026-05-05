@@ -19,7 +19,7 @@ export default function Page() {
       <article className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-3xl mx-auto">
           <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-6">
-            April 28, 2026 · By Daniel San Luis · 5 min read
+            April 28, 2026 · 5 min read
           </div>
 
           <div className="prose prose-navy max-w-none">

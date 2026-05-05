@@ -46,7 +46,6 @@ export const metadata: Metadata = {
         url: 'https://sanluisai.com',
         description: 'Custom AI solutions for small and mid-size businesses. No-code AI development, workflow automation, and AI agent systems.',
         foundingDate: '2025',
-        founder: { '@type': 'Person', name: 'Daniel San Luis' },
         address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
         telephone: '+1-832-779-0033',
         sameAs: ['https://t.me/SanLuisAiClientbot'],

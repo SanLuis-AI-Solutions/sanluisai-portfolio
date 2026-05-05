@@ -3,11 +3,11 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
-  title: 'About — SanLuis AI Solutions | No-Code AI Developer Houston',
-  description: 'SanLuis AI Solutions is a one-person AI studio in Houston, TX. Custom AI systems, workflow automation, and AI agents for small and mid-size businesses. Bilingual EN/ES.',
+  title: 'About — SanLuis AI Solutions | AI Systems & Stack',
+  description: 'We are builders, operators, and AI engineers. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure.',
   openGraph: {
-    title: 'About — SanLuis AI Solutions | No-Code AI Developer Houston',
-    description: 'SanLuis AI Solutions is a one-person AI studio in Houston, TX. Custom AI systems, workflow automation, and AI agents for small and mid-size businesses.',
+    title: 'About — SanLuis AI Solutions | AI Systems & Stack',
+    description: 'We are builders, operators, and AI engineers. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure.',
     url: 'https://sanluisai-portfolio.vercel.app/about',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
@@ -20,37 +20,32 @@ export default function Page() {
   return (
     <>
       <PageHeader
-        eyebrow="The Studio"
-        title="About the studio."
-        description="SanLuis AI Solutions is a one-person AI studio based in Houston, TX. We build what used to require a full dev team — in weeks, at a fraction of the cost. Every system is designed to make your team more powerful, not smaller."
+        eyebrow="The System"
+        title="Our System & Stack."
+        description="We are builders, operators, and AI engineers. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure."
       />
 
       {/* Light content section */}
       <main className="bg-bone-50 min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="bg-white border border-navy-200 rounded p-8 mb-10">
-            <h2 className="font-display text-xl text-navy-800 mb-3">Daniel San Luis — Founder</h2>
-            <p className="sl-body mb-4">Daniel is a bilingual (EN/ES) systems builder. He builds custom AI infrastructure for businesses — hands-on, direct, no slide decks, no six-month discovery phases. Just working systems shipped in weeks.</p>
-            <p className="sl-body mb-4">Based in Houston, Daniel runs the whole stack: architecture, model routing, deployment, optimization. He does not subcontract. When you hire SanLuis AI, you get Daniel San Luis.</p>
-            <p className="sl-body">Three production AI applications shipped. Available for client projects and full-time AI engineering roles.</p>
-          </div>
-
-          <h2 className="font-display text-2xl text-navy-800 mb-4">How We Work</h2>
-          <div className="space-y-6 mb-10">
+          {/* Our Approach section */}
+          <h2 className="font-display text-2xl text-navy-800 mb-6">Our Approach</h2>
+          <div className="space-y-6 mb-12">
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We start with your problem, not a technology.</h3>
               <p className="sl-body">Before writing a single line of logic, we map what your team actually does — where the time goes, where mistakes happen, where the real opportunity is.</p>
             </div>
             <div>
-              <h3 className="font-display text-lg text-navy-800 mb-2">We build with AI, not around it.</h3>
-              <p className="sl-body">Google AI Studio, Gemini, Claude, n8n — these aren't add-ons. They're the build environment. It's how we ship in weeks what agencies quote in months.</p>
+              <h3 className="font-display text-lg text-navy-800 mb-2">We build with frontier AI, not templates.</h3>
+              <p className="sl-body">Gemini 2.5 Pro, Claude Opus 4.7, Codex GPT-5.5 — we route every problem to the model that solves it best. It's how we ship in weeks what agencies quote in months.</p>
             </div>
             <div>
-              <h3 className="font-display text-lg text-navy-800 mb-2">We stay until it's working.</h3>
+              <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, document, and support.</h3>
               <p className="sl-body">Deployment isn't the finish line. We document, train, and support until your team is confident and the system is stable.</p>
             </div>
           </div>
 
+          {/* The Numbers section */}
           <div className="bg-bone-100 border border-navy-200 rounded p-8 mb-10">
             <h2 className="font-display text-xl text-navy-800 mb-3">The Numbers</h2>
             <div className="grid grid-cols-4 gap-4 text-center">
@@ -73,8 +68,34 @@ export default function Page() {
             </div>
           </div>
 
-          <h2 className="font-display text-2xl text-navy-800 mb-4">The Stack</h2>
-          <p className="sl-body mb-6">Design: Google Stitch. Development: Google AI Studio, Gemini, Claude. Frontend: React, Next.js, Tailwind CSS. Backend: Supabase. Deployment: Vercel, GitHub. Automation: n8n. Languages: English &middot; Spanish.</p>
+          {/* The Stack section */}
+          <h2 className="font-display text-2xl text-navy-800 mb-6">The Stack</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Models</div>
+              <div className="sl-body-sm">Gemini 2.5 Pro, Claude Opus 4.7, Codex GPT-5.5</div>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Tooling</div>
+              <div className="sl-body-sm">Google AI Studio, Anthropic Console, OpenAI Platform</div>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Frontend</div>
+              <div className="sl-body-sm">Next.js (App Router), React 19, TypeScript, Tailwind CSS, Framer Motion</div>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Backend / Data</div>
+              <div className="sl-body-sm">Supabase (PostgreSQL), Supabase Edge Functions</div>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Infrastructure</div>
+              <div className="sl-body-sm">Vercel (frontend + serverless/edge), GitHub</div>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Languages</div>
+              <div className="sl-body-sm">English · Spanish (fully bilingual team)</div>
+            </div>
+          </div>
         </div>
       </main>
 

@@ -4,10 +4,10 @@ import PageHeader from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'Our Work — AI Projects & Case Studies | SanLuis AI Solutions',
-  description: 'Six client projects built with Google AI Studio, Claude, Gemini, and Supabase. Real estate dashboards, business operating systems, and AI apps — all shipped to production.',
+  description: 'Six client projects built with Gemini 2.5 Pro, Claude Opus 4.7, and Codex GPT-5.5. Real estate dashboards, business operating systems, and AI apps — all shipped to production.',
   openGraph: {
     title: 'Our Work — AI Projects & Case Studies | SanLuis AI Solutions',
-    description: 'Six client projects: real estate dashboards, automated lead capture, AI matching engines. Built with Google AI Studio, Claude, and Gemini.',
+    description: 'Six client projects: real estate dashboards, automated lead capture, AI matching engines. Built with Gemini 2.5 Pro, Claude Opus 4.7, and Codex GPT-5.5.',
     url: 'https://sanluisai-portfolio.vercel.app/work',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
@@ -27,7 +27,7 @@ const projects = [
     quote: 'We\'re bidding faster and winning more.',
     slug: 'garza-international',
     tags: ['AI Analytics', 'Dashboard'],
-    stack: ['Google AI Studio', 'Gemini', 'Claude', 'React', 'Supabase', 'Vercel'],
+    stack: ['Gemini 2.5 Pro', 'Claude Opus 4.7', 'Codex GPT-5.5', 'React', 'Supabase', 'Vercel'],
   },
   {
     industry: 'Small Business',
@@ -39,7 +39,7 @@ const projects = [
     quote: 'It transformed how we run our business.',
     slug: 'susies-jewelry-repair',
     tags: ['Website', 'Business OS'],
-    stack: ['Google AI Studio', 'Claude', 'React', 'Next.js', 'Supabase', 'Vercel'],
+    stack: ['Gemini 2.5 Pro', 'Claude Opus 4.7', 'Codex GPT-5.5', 'React', 'Next.js', 'Supabase', 'Vercel'],
   },
   {
     industry: 'Consumer App',
@@ -51,7 +51,7 @@ const projects = [
     quote: 'The matching engine gave us a genuine competitive advantage.',
     slug: 'loveflow',
     tags: ['Consumer App', 'Behavioral AI'],
-    stack: ['Google AI Studio', 'Gemini', 'Claude', 'React', 'Next.js', 'Supabase'],
+    stack: ['Gemini 2.5 Pro', 'Claude Opus 4.7', 'Codex GPT-5.5', 'React', 'Next.js', 'Supabase'],
   },
 ]
 

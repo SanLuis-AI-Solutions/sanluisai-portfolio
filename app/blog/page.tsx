@@ -43,7 +43,7 @@ export default function Page() {
                     <h2 className="font-display text-2xl text-navy-800">{post.title}</h2>
                   </Link>
                 </div>
-                <div className="font-sans text-xs text-navy-400 mb-3">By Daniel San Luis · 4 min read</div>
+                <div className="font-sans text-xs text-navy-400 mb-3">4 min read</div>
                 <p className="sl-body mb-4">{post.excerpt}</p>
                 <Link href={`/blog/${post.slug}`} className="text-gold-600 font-sans text-xs font-semibold tracking-[0.08em] uppercase hover:translate-x-1 transition-transform duration-200 inline-block">
                   Read more →
