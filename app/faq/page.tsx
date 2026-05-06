@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import FaqEntry from '@/components/FaqEntry'
 
 const faqSchemaQuestions = [
   { question: 'How much does a custom AI system cost?', answer: 'Custom AI systems start at $5,000 and workflow automations start at $1,200. Pricing depends on scope, integrations, and complexity — but we give you a firm quote before any work begins.' },
@@ -141,22 +142,6 @@ const faqCategories = [
     ],
   },
 ]
-
-function FaqEntry({ question, answer, index }: { question: string; answer: string; index: number }) {
-  return (
-    <div className="border-b border-navy-100 pb-6">
-      <div className="flex items-start gap-4">
-        <span className="font-sans text-xs font-semibold text-gold-600 mt-1 min-w-[2rem] tabular-nums">
-          {String(index + 1).padStart(2, '0')}
-        </span>
-        <div>
-          <h3 className="font-display text-lg text-navy-800 mb-2">{question}</h3>
-          <p className="sl-body-sm text-fg3">{answer}</p>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 export default function FaqPage() {
   return (
