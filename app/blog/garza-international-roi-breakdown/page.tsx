@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'How Garza International Cut Bid Turnaround by 60% With Custom AI — SanLuis AI Solutions',
@@ -84,16 +85,9 @@ export default function Page() {
             <p>Not every AI project fits this model. But most workflow automation problems do. If you can explain the problem in one sentence and the data is already structured, a fixed-price build is probably the right answer.</p>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-navy-200">
-            <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-800 text-bone-50 hover:bg-navy-900 transition-all duration-220 rounded">
-              Book a Discovery Session →
-            </Link>
-            <Link href="/blog" className="ml-4 inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white transition-all duration-220 rounded">
-              ← Back to Blog
-            </Link>
-          </div>
         </div>
       </article>
+      <CTA />
     </>
   )
 }
