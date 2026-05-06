@@ -47,7 +47,7 @@ export default function Page() {
           </ul>
           <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
   <p className="italic mb-2">&ldquo;I went from losing leads to having a system that works even when I&apos;m not in the shop. SanLuis AI transformed how we run our business.&rdquo;</p>
-  <footer className="text-gold-600/80 not-italic text-base">— Owner, Susie&apos;s Jewelry Repair</footer>
+  <footer className="text-gold-600/80 not-italic text-base">— Susie Castellano, Owner</footer>
 </blockquote>
         </div>
       </section>
