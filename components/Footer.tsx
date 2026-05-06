@@ -71,11 +71,11 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Services</h4>
-            <ul className="space-y-2">{links.map(l => (<li key={l.label}><a href={l.href} className="font-sans text-sm text-navy-300 hover:text-white transition-colors duration-200">{l.label}</a></li>))}</ul>
+            <ul className="space-y-1">{links.map(l => (<li key={l.label}><a href={l.href} className="font-sans text-sm text-navy-300 hover:text-white transition-colors duration-200 min-h-[44px] flex items-center">{l.label}</a></li>))}</ul>
           </div>
           <div>
             <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Industries</h4>
-            <ul className="space-y-2">{industries.map(l => (<li key={l.label}><a href={l.href} className="font-sans text-sm text-navy-300 hover:text-white transition-colors duration-200">{l.label}</a></li>))}</ul>
+            <ul className="space-y-1">{industries.map(l => (<li key={l.label}><a href={l.href} className="font-sans text-sm text-navy-300 hover:text-white transition-colors duration-200 min-h-[44px] flex items-center">{l.label}</a></li>))}</ul>
           </div>
           <div>
             <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Connect</h4>
