@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export default function Page() {
         title="Terms of Service."
       />
 
-      <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
+      <AnimatedSection delay={0}><section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl mx-auto">
           <p className="sl-body mb-4"><strong>Effective Date:</strong> April 28, 2026</p>
           <h2 className="font-display text-xl text-navy-800 mt-8 mb-3">1. Engagement Model</h2>
