@@ -32,7 +32,7 @@ export default function CaseStudies() {
         <div className="grid md:grid-cols-3 gap-5">
           {cases.map((c, i) => (
             <FadeIn key={c.slug} delay={0.2 + i * 0.1}>
-              <a href={`/case-studies/${c.slug}`} className="block bg-navy-800 border border-bone-300/10 hover:border-gold-600/40 rounded overflow-hidden transition-all duration-220 hover:shadow-3 group cursor-pointer h-full flex flex-col">
+              <a href={`/case-studies/${c.slug}`} className="block bg-navy-800 border border-bone-300/10 hover:border-gold-600/40 rounded overflow-hidden transition-all duration-220 hover:shadow-3 hover:scale-[1.01] group cursor-pointer h-full flex flex-col">
                 <div className="relative w-full h-48 bg-navy-700 overflow-hidden border-b border-bone-300/10">
                   <Image
                     src={c.img}

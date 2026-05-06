@@ -98,7 +98,7 @@ export default function Services() {
                   href={s.href}
                   className="block group cursor-pointer"
                 >
-                  <div className="grid grid-cols-[auto_1fr] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2">
+                  <div className="grid grid-cols-[auto_1fr] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2 hover:scale-[1.01]">
                     <div className="font-display text-2xl text-gold-600 leading-none pt-1">
                       {s.num}
                     </div>
