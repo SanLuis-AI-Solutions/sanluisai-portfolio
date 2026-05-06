@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import AnimatedCounter from '@/components/AnimatedCounter'
 import OrnamentDivider from '@/components/OrnamentDivider'
 
 export const metadata: Metadata = {
@@ -23,8 +24,15 @@ export default function Page() {
         <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-3 gap-6 mb-12 p-6 bg-white border border-navy-900 rounded">
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Engagement</div><div className="font-display text-xl text-navy-800">2 weeks</div></div>
-            <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div><div className="font-display text-2xl text-gold-600">3x leads</div></div>
+            <div><AnimatedCounter value={3} suffix="x" label="Lead conversion" /></div>
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Owner</div><div className="font-display text-xl text-navy-800">Full code</div></div>
+          </div>
+
+          {/* Impact counters */}
+          <div className="grid grid-cols-3 gap-6 mb-12">
+            <AnimatedCounter value={0} suffix=" hrs" label="Manual lead entry" />
+            <AnimatedCounter value={94} suffix="%" label="Follow-up rate" />
+            <AnimatedCounter value={30} suffix=" min" label="Setup time" />
           </div>
           <OrnamentDivider className="!py-8" />
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>

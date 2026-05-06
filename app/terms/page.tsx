@@ -40,7 +40,7 @@ export default function Page() {
           <h2 className="font-display text-xl text-navy-800 mt-8 mb-3">5. Contact</h2>
           <p className="sl-body mb-4">For terms-related questions: contact@sanluisai.com</p>
         </div>
-      </section>
+      </section></AnimatedSection>
       <CTA />
     </>
   )

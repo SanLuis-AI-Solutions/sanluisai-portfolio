@@ -1,0 +1,146 @@
+/* ===== Print Stylesheet — SanLuis AI Solutions =====
+   Purpose: Clean, professional output for proposals, contracts, and case studies.
+   Applied: @media print only. Zero impact on screen rendering. */
+
+@media print {
+  /* Strip chrome */
+  nav,
+  footer,
+  .no-print,
+  [role="banner"],
+  [role="contentinfo"],
+  iframe,
+  .fixed,
+  .sticky {
+    display: none !important;
+  }
+
+  /* Full-width body */
+  body {
+    margin: 0;
+    padding: 0;
+    background: white !important;
+    color: #1A1A1A;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: #1A3160;
+    page-break-after: avoid;
+    margin-top: 0.75em;
+  }
+
+  h1 { font-size: 22pt; margin-bottom: 0.3em; }
+  h2 { font-size: 16pt; margin-bottom: 0.4em; border-bottom: 1px solid #D9A434; padding-bottom: 0.2em; }
+  h3 { font-size: 13pt; margin-bottom: 0.3em; }
+
+  /* Content containers */
+  section, article, .max-w-3xl, .max-w-4xl {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    background: white !important;
+    box-shadow: none !important;
+  }
+
+  /* Gold accent preserved */
+  .text-gold-600, .text-gold-700, [class*="text-gold"] {
+    color: #D9A434 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Navy text preserved */
+  .text-navy-800, .text-navy-900, [class*="text-navy"] {
+    color: #1A3160 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Links — show URL in print */
+  a[href]::after {
+    content: none;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* Internal links and email — no URL */
+  a[href^="/"]::after,
+  a[href^="mailto:"]::after,
+  a[href^="#"]::after,
+  .no-url::after {
+    content: none;
+  }
+
+  /* Blockquotes — gold border preserved */
+  blockquote {
+    border-left: 3pt solid #D9A434;
+    padding-left: 1em;
+    margin: 1em 0;
+    page-break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Lists */
+  ul, ol {
+    padding-left: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  /* Diamond bullets — replace with solid discs in print */
+  .list-diamond {
+    list-style-type: disc;
+  }
+
+  .list-diamond li::marker {
+    color: #D9A434;
+  }
+
+  /* Page breaks */
+  h2 { page-break-before: auto; }
+  h2:not(:first-child) { page-break-before: always; }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.4em 0.6em;
+    text-align: left;
+  }
+
+  th {
+    background: #1A3160;
+    color: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 1.8cm 0.9cm;
+    size: letter;
+  }
+
+  @page :first {
+    margin-top: 1.2cm;
+  }
+
+  /* Orphans / widows */
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+}

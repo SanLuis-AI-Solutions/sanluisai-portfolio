@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import './globals.css'
+import './print.css'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -82,7 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" type="image/svg+xml" href="/assets/flame-mark.svg" />
         <link rel="alternate icon" href="/favicon.ico" />
-        <meta name="build-version" content="v1.0.0-20260505-4" />
+        <meta name="build-version" content="v1.0.0-20260506-1" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7FHSSCP8" />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BE7FHSSCP8');` }} />
         <script
