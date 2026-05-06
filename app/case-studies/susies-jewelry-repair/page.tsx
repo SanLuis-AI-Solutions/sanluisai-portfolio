@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 import OrnamentDivider from '@/components/OrnamentDivider'
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function Page() {
         description="A Houston jewelry repair shop losing leads through inconsistent follow-up. We built an automated capture and nurture system that tripled inbound conversions."
       />
 
+      <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-3 gap-6 mb-12 p-6 bg-white border border-navy-900 rounded">
@@ -41,6 +43,7 @@ export default function Page() {
 </blockquote>
         </div>
       </section>
+      </AnimatedSection>
 
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

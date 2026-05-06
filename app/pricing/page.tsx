@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 import FlameMark from '@/components/FlameMark'
 
 export const metadata: Metadata = {
@@ -95,6 +96,7 @@ export default function PricingPage() {
         description="Fixed-price engagements for every type of AI project. You know the cost before we write a single line of code."
       />
 
+      <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl mx-auto">
           {/* Flame mark */}
@@ -151,6 +153,7 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
+      </AnimatedSection>
 
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">

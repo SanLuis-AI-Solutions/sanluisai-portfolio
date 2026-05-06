@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata, Viewport } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Book a $300 Discovery Session — SanLuis AI Solutions',
@@ -21,6 +22,7 @@ export default function BookingPage() {
         description="Tell us about your business challenge. We will map out a custom AI solution tailored to your specific needs and timeline."
       />
 
+      <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <div className="bg-surface border border-navy-200 w-full overflow-hidden rounded" style={{ minHeight: '700px' }}>
@@ -34,6 +36,7 @@ export default function BookingPage() {
           </div>
         </div>
       </section>
+      </AnimatedSection>
 
       {/*
         QUICK WIN 3: Override Cal.com's inaccessible viewport meta.

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function CustomAIPage() {
         description="You've outgrown off-the-shelf software. Every template misses the mark. Your workflow is unique — but nobody builds for that. Until now."
       />
 
+      <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <ul className="space-y-4 mb-10 max-w-prose list-diamond">
@@ -30,6 +32,7 @@ export default function CustomAIPage() {
           </Link>
         </div>
       </section>
+      </AnimatedSection>
 
       {/* Case study reference */}
       <div className="border border-navy-200 rounded p-6 md:p-8 mt-12 max-w-prose mx-auto bg-white">

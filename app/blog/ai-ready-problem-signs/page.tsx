@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function Page() {
         description="Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution."
       />
 
+      <AnimatedSection delay={0}>
       <article className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-3xl mx-auto">
           <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-6 flex items-center gap-2">
@@ -88,6 +90,7 @@ export default function Page() {
 
         </div>
       </article>
+      </AnimatedSection>
       <CTA />
     </>
   )

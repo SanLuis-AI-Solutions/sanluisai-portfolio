@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 import SubscribeForm from '@/components/SubscribeForm'
 import FlameMark from '@/components/FlameMark'
 
@@ -51,6 +52,7 @@ export default function Page() {
         description="We write when we have something to say. No content calendars. No filler. Just real insights from real builds."
       />
 
+      <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-2 mb-12">
@@ -89,6 +91,7 @@ export default function Page() {
           <SubscribeForm />
         </div>
       </section>
+      </AnimatedSection>
     </>
   )
 }

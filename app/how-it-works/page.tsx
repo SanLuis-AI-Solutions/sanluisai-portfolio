@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'How It Works | 4-Step AI Development Process | SanLuis AI Solutions',
@@ -90,6 +91,7 @@ export default function HowItWorksPage() {
       />
 
       {/* Timeline Steps */}
+      <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl mx-auto">
           <div className="relative space-y-16 md:space-y-24">
@@ -167,6 +169,7 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
+      </AnimatedSection>
 
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">

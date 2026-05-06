@@ -32,6 +32,7 @@ export default function Page() {
         description="Measurable outcomes from real deployments. Every engagement is time-bounded, custom-built, and results-guaranteed."
       />
 
+      <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0}>
@@ -63,7 +64,9 @@ export default function Page() {
           </AnimatedSection>
         </div>
       </section>
+      </AnimatedSection>
 
+      {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Want results like these?</h2>
