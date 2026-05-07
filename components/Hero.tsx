@@ -40,17 +40,17 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(3rem,7vw,5.5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] mb-6">
-                Custom AI <span className="text-gold-500 italic">Solutions.</span>
+                Your business, <span className="text-gold-500 italic">running on AI.</span>
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg md:text-xl font-light text-bone-300/70 leading-relaxed max-w-[48ch] mb-3">
-                No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps — shipped in weeks, not months.
+                We don't sell chatbots. We sell what happens after: faster quotes, automated busywork, and clients who can't believe how quick you respond.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <p className="font-display text-lg md:text-xl text-gold-500 italic font-medium tracking-[-0.01em] mb-10">
-                Your business, running on AI.
+                Custom AI for real problems. Built for Houston. Shipped in weeks, not months.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>

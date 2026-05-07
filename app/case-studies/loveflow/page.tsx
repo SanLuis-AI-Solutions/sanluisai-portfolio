@@ -45,6 +45,31 @@ export default function Page() {
             <li>Real-time learning loop that improved with every swipe</li>
             <li>A/B testing framework for continuous match quality optimization</li>
           </ul>
+
+          {/* ROI Snapshot — Billable Bleed */}
+          <div className="bg-navy-900 text-bone-50 border border-gold-600/40 rounded p-6 mb-8">
+            <h3 className="font-display text-xl text-gold-500 mb-4">ROI Snapshot — The Billable Bleed</h3>
+            <div className="grid sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">Before — Churn Cost</div>
+                <div className="font-mono text-sm text-bone-300/80">15% monthly churn · 10K users</div>
+                <div className="font-display text-2xl text-red-400 mt-1">1,500 users/mo</div>
+                <div className="font-sans text-xs text-bone-300/40 mt-1">Lost to poor matching</div>
+              </div>
+              <div>
+                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">After — Retention Gain</div>
+                <div className="font-mono text-sm text-bone-300/80">40% better matches · 2x retention</div>
+                <div className="font-display text-2xl text-green-400 mt-1">+750 users/mo</div>
+                <div className="font-sans text-xs text-bone-300/40 mt-1">Retained at ~$9/user LTV</div>
+              </div>
+            </div>
+            <div className="border-t border-bone-300/10 pt-4 flex items-baseline justify-between">
+              <span className="font-sans text-xs text-bone-300/50">AI System Investment</span>
+              <span className="font-display text-lg text-gold-500">$5,000–10,000</span>
+            </div>
+            <div className="font-sans text-xs text-gold-500/80 mt-3 font-medium">Annual Retention Value: ~$81,000 in saved churn</div>
+          </div>
+
           <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
   <p className="italic mb-2">&ldquo;Our retention numbers turned around within a month. SanLuis AI didn&apos;t just fix our algorithm — they gave us a competitive moat.&rdquo;</p>
   <footer className="text-gold-600/80 not-italic text-base">— Marcus Chen, CEO</footer>

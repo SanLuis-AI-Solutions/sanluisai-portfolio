@@ -38,29 +38,33 @@ const services = [
     num: '01',
     name: 'AI Consulting — Discovery Session',
     desc: 'You know AI matters but you\u2019re not sure where it applies. We audit your operations and give you a prioritized roadmap.',
-    detail: '$300. We identify the opportunities that actually move the needle \u2014 and tell you which ones to ignore. No jargon. No upsell.',
+    detail: '$300. Includes AI Opportunity Audit\u2122 ($2,500 value) \u2014 we identify the opportunities that actually move the needle and tell you which ones to ignore. No jargon. No upsell.',
     href: '/services/consulting',
+    bonus: 'Risk-Free: Money-back guarantee if we find fewer than 3 high-impact AI opportunities.',
   },
   {
     num: '02',
     name: 'AI Automation',
     desc: 'The busywork your best people shouldn\u2019t touch. Data entry, reconciliation, scheduling, reporting \u2014 automated end to end.',
-    detail: 'From $1,200. Connects to the tools you already use. We measure the hours recovered and show you exactly what you saved.',
+    detail: 'From $1,200. Connects to the tools you already use. Includes 30-day post-launch support ($500 value) + team adoption walkthrough.',
     href: '/services/automation',
+    bonus: 'We measure hours recovered monthly. If it doesn\u2019t pay for itself in 6 months, we\u2019ll fix it free.',
   },
   {
     num: '03',
     name: 'AI Agents',
     desc: 'Not a chatbot. An autonomous system that researches, decides, and acts on multi-step tasks without hand-holding.',
-    detail: 'From $5,000. Built for one specific job. Handles complex, multi-stage workflows start to finish. You approve the output, not every step.',
+    detail: 'From $5,000. Built for one specific job. Includes 14-Day Prototype Promise ($1,000 value) \u2014 see it working before you commit to the full build.',
     href: '/services/agents',
+    bonus: 'You approve the output, not every step. Handles complex, multi-stage workflows start to finish.',
   },
   {
     num: '04',
     name: 'Custom AI Systems',
     desc: 'A purpose-built system for a single, high-impact problem. Designed around your data, your workflow, your outcomes.',
-    detail: 'From $5,000. You own everything. No license fees. No vendor lock-in. Built for the problem that costs you the most right now.',
+    detail: 'From $5,000. Includes Architecture Blueprint ($1,500 value) + deployment + team training ($500 value). You own everything. No license fees. No vendor lock-in.',
     href: '/services/custom-ai',
+    bonus: 'Total Bundle Value: $7,000+ Your investment: Discovery from $300, build from $5,000.',
   },
 ]
 
@@ -109,6 +113,9 @@ export default function Services() {
                       <p className="sl-body-sm mb-3">{s.desc}</p>
                       <p className="text-xs text-fg4 leading-relaxed hidden md:block">
                         {s.detail}
+                      </p>
+                      <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2 hidden md:block">
+                        {s.bonus}
                       </p>
                     </div>
                   </div>
