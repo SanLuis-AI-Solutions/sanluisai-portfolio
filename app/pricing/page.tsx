@@ -35,6 +35,7 @@ function PricingCard({
   ctaHref,
   ctaLabel,
   primary,
+  badge,
 }: {
   price: string
   label: string
@@ -44,9 +45,18 @@ function PricingCard({
   ctaHref: string
   ctaLabel: string
   primary: boolean
+  badge?: string
 }) {
   return (
-    <div className="bg-white border border-navy-200 rounded p-8 md:p-10 flex flex-col h-full">
+    <div className={`relative bg-white border rounded p-8 md:p-10 flex flex-col h-full ${primary ? 'border-gold-500 shadow-goldGlow' : 'border-navy-200'}`}>
+      {/* Badge */}
+      {badge && (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+          <span className="inline-block font-sans text-xs font-semibold tracking-wider uppercase px-4 py-1 bg-gold-600 text-navy-900 rounded-full">
+            {badge}
+          </span>
+        </div>
+      )}
       {/* Price */}
       <p className="font-display text-4xl text-gold-600 mb-1">{price}</p>
       <p className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-fg3 mb-4">{subtitle}</p>
@@ -139,6 +149,7 @@ export default function PricingPage() {
               ctaHref="/booking"
               ctaLabel="Start with a Discovery Session"
               primary={true}
+              badge="Most Popular"
             />
           </div>
 

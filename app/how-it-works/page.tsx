@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import AnimatedCounter from '@/components/AnimatedCounter'
 import GoldThreadTimeline from '@/components/GoldThreadTimeline'
 
 export const metadata: Metadata = {
@@ -96,6 +97,20 @@ export default function HowItWorksPage() {
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl mx-auto">
           <GoldThreadTimeline steps={steps} />
+        </div>
+      </section>
+
+      {/* Results at a Glance */}
+      <section className="bg-navy-900 px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="font-sans text-xs font-semibold tracking-[0.16em] uppercase text-gold-600 mb-4">Results at a Glance</p>
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-10">Real impact. Measured in weeks, not years.</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+            <AnimatedCounter value={85} label="Time saved on manual work" suffix="%" />
+            <AnimatedCounter value={40} label="Cost reduction vs. hiring" suffix="%" />
+            <AnimatedCounter value={14} label="Average days to first working prototype" suffix="d" />
+            <AnimatedCounter value={98} label="Client satisfaction rating" suffix="%" />
+          </div>
         </div>
       </section>
 
