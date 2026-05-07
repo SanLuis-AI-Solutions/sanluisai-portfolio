@@ -1,44 +1,49 @@
 ---
 name: SanLuis AI Solutions Design System
-description: Premium dark theme design system for AI consulting brand
+description: Premium light-theme design system for AI consulting brand — Claude canonical
 colors:
   brand:
-    gold:
-      primary: "#D49E2C"
-      dim: "rgba(212,158,44,0.15)"
-      glow: "rgba(212,158,44,0.08)"
     navy:
-      primary: "#2D527E"
-      brand: "#1B3C72"
+      primary: "#1A3160"
+      dark: "#0F1F3D"
+    gold:
+      primary: "#D9A434"
+      dim: "rgba(217,164,52,0.15)"
+      glow: "rgba(217,164,52,0.08)"
   background:
-    dark: "#0A0A0A"
-    surface: "#141414"
+    bone: "#FAF7F1"
+    white: "#FFFFFF"
   text:
-    primary: "#FFFFFF"
-    muted: "#888888"
+    primary: "#1A3160"
+    body: "#333333"
+    muted: "#6B7280"
   utility:
-    red: "#f87171"
+    red: "#EF4444"
+    green: "#10B981"
 typography:
   fonts:
-    headings: "Space Grotesk"
+    display: "Cormorant Garamond"
     body: "Inter"
+    code: "JetBrains Mono"
   scales:
     hero: "clamp(2.8rem, 6.5vw, 5.25rem)"
-    section: "clamp(1.9rem, 3.5vw, 2.75rem)"
-    stat: "clamp(5rem, 14vw, 10rem)"
-    metric: "clamp(2.5rem, 5vw, 3.5rem)"
+    h2: "clamp(1.9rem, 3.5vw, 2.75rem)"
+    h3: "clamp(1.4rem, 2.5vw, 1.75rem)"
 components:
   buttons:
     primary:
-      background: "{colors.brand.gold.primary}"
-      hoverGlow: "0 0 28px rgba(212, 158, 44, 0.35)"
-    secondary:
       background: "{colors.brand.navy.primary}"
-      hoverGlow: "0 0 24px rgba(45, 82, 126, 0.4)"
-  utilities:
-    grainOverlay:
-      backgroundUrl: "data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E"
-      opacity: "0.025"
+      text: "{colors.background.white}"
+      hoverGlow: "0 0 28px rgba(26, 49, 96, 0.35)"
+    secondary:
+      background: "transparent"
+      border: "{colors.brand.gold.primary}"
+      text: "{colors.brand.gold.primary}"
+      hoverGlow: "0 0 24px rgba(217, 164, 52, 0.4)"
+    cta:
+      background: "{colors.brand.gold.primary}"
+      text: "{colors.brand.navy.primary}"
+      hoverGlow: "0 0 24px rgba(217, 164, 52, 0.5)"
 rounded:
   buttonRadius: "4px"
 spacing:
@@ -47,66 +52,79 @@ spacing:
 
 ## Overview
 
-Premium dark theme design system for SanLuis AI Solutions, a Houston-based AI consulting firm. The aesthetic embodies sophistication and technical excellence with a refined dark palette accented by metallic gold and deep navy blue. The design system prioritizes readability, visual hierarchy, and subtle animations to create a premium experience that reflects our high-end positioning.
+Premium light-theme design system for SanLuis AI Solutions, a Houston-based AI consulting firm. The aesthetic embodies trust, precision, and Texas heritage — Atlantic Navy for stability, Heritage Gold for excellence, Bone for warmth. Sharp 4px edges. Cormorant Garamond for display authority, Inter for body readability, JetBrains Mono for data precision.
+
+**This is the CANONICAL design system.** The old "Surgical Noir" dark theme (Space Grotesk, #0A0A0A, #D49E2C) is dead.
 
 ## Colors
 
-- **Gold Primary (#D49E2C):** Our signature gold accent used for primary actions, highlights, and brand recognition
-- **Gold Dim (rgba(212,158,44,0.15)):** Muted gold for subtle backgrounds and dividers
-- **Gold Glow (rgba(212,158,44,0.08)):** Very soft gold for gentle overlay effects
-- **Navy Brand (#1B3C72):** Deep naval blue representing stability and trust
-- **Navy Primary (#2D527E):** Secondary brand color for alternative styling
-- **Background Dark (#0A0A0A):** Primary dark background color
-- **Surface (#141414):** Slightly lighter surface for cards and containers
-- **Text Primary (#FFFFFF):** Pure white for optimal readability
-- **Text Muted (#888888):** Gray for secondary content and captions
-- **Red (#f87171):** Error and attention states
+- **Atlantic Navy (#1A3160):** Primary brand color — headers, buttons, dark sections
+- **Navy Dark (#0F1F3D):** Deeper navy for hero backgrounds, footer
+- **Heritage Gold (#D9A434):** Accent only — CTAs, highlights, gold thread signature gesture
+- **Gold Dim (rgba(217,164,52,0.15)):** Muted gold for subtle backgrounds and dividers
+- **Gold Glow (rgba(217,164,52,0.08)):** Very soft gold for gentle overlay effects
+- **Bone (#FAF7F1):** Primary light background — warm, not sterile white
+- **Text Primary (#1A3160):** Navy for headings in light sections
+- **Text Body (#333333):** Near-black for body copy
+- **Text Muted (#6B7280):** Gray for secondary content and captions
+- **Red (#EF4444):** Error and attention states
+- **Green (#10B981):** Success states
 
 ## Typography
 
-Using a dual-font system:
-- **Space Grotesk:** For all headings, creating strong visual hierarchy
-- **Inter:** For body text, ensuring optimal readability
+Three-font system:
+- **Cormorant Garamond:** Display, H1-H4. Elegant serif for authority.
+- **Inter:** Body, UI, H5-H6. Clean sans-serif for readability.
+- **JetBrains Mono:** Data, code, metrics. Monospace for precision.
 
 ### Heading Sizes
-- Hero H1: clamp(2.8rem, 6.5vw, 5.25rem) with -0.03em letter spacing
-- Section H2: clamp(1.9rem, 3.5vw, 2.75rem) with -0.025em letter spacing
-- Stat Display: clamp(5rem, 14vw, 10rem) with -0.04em letter spacing
-- Metric Display: clamp(2.5rem, 5vw, 3.5rem) with -0.03em letter spacing
+- Hero H1: clamp(2.8rem, 6.5vw, 5.25rem) — Cormorant Garamond
+- Section H2: clamp(1.9rem, 3.5vw, 2.75rem) — Cormorant Garamond
+- H3: clamp(1.4rem, 2.5vw, 1.75rem) — Cormorant Garamond
+- H4-H6: Inter, scaled proportionally
 
 ## Components
 
 ### Buttons
-Primary buttons use gold backgrounds with glow effects on hover:
-- Background: {colors.brand.gold.primary}
-- Hover Effect: 0 0 28px rgba(212, 158, 44, 0.35)
-- Transform: translateY(-1px) on hover
+Primary: Navy background, white text. Gold glow on hover.
+Secondary: Transparent, gold border, gold text.
+CTA: Gold background, navy text. Boldest hover glow.
 
-Secondary buttons use navy:
-- Background: {colors.brand.navy.primary}
-- Hover Effect: 0 0 24px rgba(45, 82, 126, 0.4)
-- Transform: translateY(-1px) on hover
-
-### Visual Effects
-Grain Overlay provides subtle texture:
-- Background Pattern: SVG noise filter with 0.025 opacity
-- Applied to backgrounds for premium tactile feel
+### Visual Elements
+- **Gold Thread:** Single signature gesture per page — subtle gold horizontal rule or accent
+- **Diamond Bullets:** CSS `::before` pseudo-elements with inline SVG diamond
+- **Ornament Divider:** SVG ornament between major sections
+- **Navy Shadows:** Tonal navy shadows (not pure black) — `box-shadow: 0 4px 20px rgba(26, 49, 96, 0.08)`
 
 ## Spacing
 
 Consistent padding system using viewport-relative units:
 - Section Padding: clamp(2rem, 5vw, 4rem)
+- 4pt/8dp base scale
 
 ## Rounded Corners
 
-Standardized corner radius for UI elements:
-- Buttons: 4px
+Standardized corner radius: 4px only. No rounded-xl, no rounded-lg.
 
 ## Do's and Don'ts
 
-- Do use gold only for primary actions and highlights
-- Don't use more than two font families on a single page
+- Do use gold only for accent — CTAs, highlights, gold thread
+- Do use three fonts only — Cormorant Garamond, Inter, JetBrains Mono
 - Do maintain WCAG AA contrast ratios (4.5:1 for normal text)
-- Don't use pure black (#000000) - always use our dark background (#0A0A0A)
-- Do apply the grain overlay for premium质感 effect on dark surfaces
-- Don't use both gold and navy as primary actions on the same screen
+- Do use tonal navy shadows, never pure black
+- Don't use glassmorphism — not our aesthetic
+- Don't center heroes (anti-slop rule) — asymmetric layouts preferred
+- Don't use emojis in professional copy
+- Don't use rounded-xl/lg — sharp 4px only
+- Don't use the old Surgical Noir system — Space Grotesk, #0A0A0A, #D49E2C are dead
+
+## Brand Assets
+
+- `flame-mark.svg` — SanLuis flame mark
+- `diamond.svg` — Diamond bullet
+- `ornament-divider.svg` — Section ornament divider
+- `logo-primary.jpg` — Primary logo
+
+## Reference
+
+This system is validated against 139 design systems in the vault at `04_Knowledge_Base/design-systems/open-design/`. Top-tier references: Linear, Stripe, Vercel, Anthropic, Supabase.
