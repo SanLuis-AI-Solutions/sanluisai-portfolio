@@ -65,7 +65,7 @@ export default function Nav() {
         <div className={`md:hidden border-t ${scrolled ? 'border-navy-200 bg-bone-50' : 'border-bone-300/20 bg-navy-800'}`}>
           <div className="flex flex-col gap-4 px-6 py-6">
             {links.map(l => (
-              <a key={l.label} href={l.href} className={`font-sans text-base transition-colors duration-200 py-1 ${scrolled ? 'text-fg2 hover:text-navy-800' : 'text-bone-300/80 hover:text-bone-50'}`} onClick={() => setOpen(false)}>{l.label}</a>
+              <a key={l.label} href={l.href} className={`font-sans text-base transition-colors duration-200 py-3 min-h-[44px] flex items-center ${scrolled ? 'text-fg2 hover:text-navy-800' : 'text-bone-300/80 hover:text-bone-50'}`} onClick={() => setOpen(false)}>{l.label}</a>
             ))}
             <a href="/booking" className={`font-sans text-sm font-semibold text-center tracking-[0.04em] px-6 py-3 transition-all duration-220 rounded mt-2 ${
               scrolled ? 'bg-navy-900 text-white hover:bg-navy-800' : 'bg-bone-50 text-navy-800 hover:bg-gold-500'

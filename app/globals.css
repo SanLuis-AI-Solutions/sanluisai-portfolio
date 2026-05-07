@@ -146,3 +146,18 @@
     flex-shrink: 0;
   }
 }
+
+/* ── Motion reduction toggle ── */
+html.reduce-motion *,
+html.reduce-motion *::before,
+html.reduce-motion *::after {
+  animation-duration: 0ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0ms !important;
+  scroll-behavior: auto !important;
+}
+html.reduce-motion .animate-spin,
+html.reduce-motion .animate-pulse,
+html.reduce-motion .animate-bounce {
+  animation: none !important;
+}

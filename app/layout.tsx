@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import ClientLayout from './ClientLayout'
 import './globals.css'
 import './print.css'
 
@@ -93,8 +94,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Nav />
-        {children}
-        <Footer />
+        <ClientLayout>
+          {children}
+          <Footer />
+        </ClientLayout>
 
         {/* Sticky mobile CTA */}
         <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">

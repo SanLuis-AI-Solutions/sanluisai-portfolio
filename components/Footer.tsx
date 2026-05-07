@@ -1,4 +1,7 @@
+'use client'
+
 import FlameMark from '@/components/FlameMark'
+import { useMotionPreference } from '@/components/MotionPreferenceProvider'
 
 const links = [
   { label: 'Custom AI Systems', href: '/services/custom-ai' },
@@ -58,6 +61,7 @@ function LocationIcon() {
 }
 
 export default function Footer() {
+  const { reduceMotion, toggleReduceMotion } = useMotionPreference()
   return (
     <footer className="bg-navy-950 py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -91,13 +95,13 @@ export default function Footer() {
               </a>
             </div>
             <div className="space-y-1.5">
-              <a href="tel:+18327790033" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200">
+              <a href="tel:+18327790033" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200 min-h-[44px]">
                 <PhoneIcon /><span>+1 (832) 779-0033</span>
               </a>
               <div className="flex items-center gap-2 font-sans text-xs text-navy-400">
                 <LocationIcon /><span>Houston, Texas</span>
               </div>
-              <a href="mailto:contact@sanluisai.com" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200 mt-1">
+              <a href="mailto:contact@sanluisai.com" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200 mt-1 min-h-[44px]">
                 contact@sanluisai.com
               </a>
             </div>
@@ -105,7 +109,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-navy-800 pt-8 text-center">
           <p className="text-xs text-navy-500 mb-2">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
-          <p className="text-xs text-navy-500"><a href="/privacy" className="hover:text-navy-300 transition-colors">Privacy Policy</a><span className="mx-2">&middot;</span><a href="/terms" className="hover:text-navy-300 transition-colors">Terms of Service</a></p>
+          <p className="text-xs text-navy-500"><a href="/privacy" className="hover:text-navy-300 transition-colors">Privacy Policy</a><span className="mx-2">&middot;</span><a href="/terms" className="hover:text-navy-300 transition-colors">Terms of Service</a><span className="mx-2">&middot;</span><button onClick={toggleReduceMotion} className="hover:text-navy-300 transition-colors" aria-pressed={reduceMotion}>{reduceMotion ? 'Enable Motion' : 'Reduce Motion'}</button></p>
         </div>
       </div>
     </footer>
