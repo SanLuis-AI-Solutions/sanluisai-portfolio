@@ -63,7 +63,7 @@ export default function Hero() {
               <div className="h-px w-12 bg-gold-600/60 mb-6" />
               <div className="flex flex-wrap items-center gap-x-10 gap-y-2">
                 <div><span className="font-display text-2xl text-gold-500 font-semibold">3 wk</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Avg Delivery</span></div>
-                <div><span className="font-display text-2xl text-gold-500 font-semibold">60%</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Faster Processes</span></div>
+                <div><span className="font-display text-2xl text-gold-500 font-semibold">60%</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Faster Quoting</span></div>
                 <div><span className="font-display text-2xl text-gold-500 font-semibold">$300</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Start Here</span></div>
                 <div><span className="font-display text-2xl text-gold-500 font-semibold">100%</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">You Own the Code</span></div>
               </div>

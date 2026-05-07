@@ -61,7 +61,7 @@ export default function Page() {
                 Before starting this practice, I spent years building across the full AI stack — from model routing and multi-agent orchestration to production infrastructure and DevOps. Every system we ship reflects that hands-on experience.
               </p>
               <p className="sl-body">
-                Based in Houston. Bilingual EN/ES. We turn down most projects because we only take the ones where we know we can deliver.
+                Founded 2025. Based in Houston. Bilingual EN/ES. We turn down most projects because we only take the ones where we know we can deliver.
               </p>
             </div>
           </div>
