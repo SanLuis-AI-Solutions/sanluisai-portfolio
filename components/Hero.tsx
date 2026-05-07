@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useInView, useReducedMotion } from 'framer-motion'
+import { useRef, useState, useEffect } from 'react'
+import { motion, useScroll, useTransform, useInView, useReducedMotion } from 'framer-motion'
 import Image from 'next/image'
 import FlameMark from '@/components/FlameMark'
 import GoldThread from '@/components/GoldThread'
@@ -16,8 +16,10 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
 }
 
 export default function Hero() {
+  const { scrollY } = useScroll()
+  const bgColor = useTransform(scrollY, [0, 500], ['#0F1D3D', '#0A1128'])
   return (
-    <section className="relative min-h-[100dvh] flex items-center bg-navy-800 overflow-hidden">
+    <motion.section style={{ backgroundColor: bgColor }} className="relative min-h-[100dvh] flex items-center overflow-hidden">
       <GoldThread />
       {/* Background image — subtle overlay */}
       <div className="absolute inset-0 opacity-[0.04]">
@@ -81,6 +83,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

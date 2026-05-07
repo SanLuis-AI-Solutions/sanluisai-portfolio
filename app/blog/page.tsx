@@ -64,7 +64,7 @@ export default function Page() {
                 {/* Prominent date badge */}
                 <div className="flex items-center gap-3 mb-4">
                   <span className="font-sans text-sm font-semibold text-gold-600 tracking-[0.06em] uppercase">
-                    {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                    {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                   </span>
                   <span className="font-sans text-xs text-navy-400">· 5 min read</span>
                 </div>

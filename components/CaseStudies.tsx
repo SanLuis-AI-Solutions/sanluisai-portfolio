@@ -1,12 +1,47 @@
 'use client'
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useRef, useState, useEffect } from 'react'
+import { motion, useInView, useReducedMotion } from 'framer-motion'
 import Image from 'next/image'
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-40px' })
   return (<motion.div ref={ref} initial={{ opacity: 0, y: 16 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>)
+}
+
+function StatCounter({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  const inView = useInView(ref, { once: true, margin: '-40px' })
+  const shouldReduceMotion = useReducedMotion()
+  const [displayValue, setDisplayValue] = useState(0)
+
+  const numeric = parseFloat(value) // "60%" → 60, "3×" → 3, "40%" → 40
+  const suffix = value.replace(/[0-9.]/g, '').trim() // "%" or "×" or ""
+
+  useEffect(() => {
+    if (!inView || shouldReduceMotion) {
+      setDisplayValue(numeric)
+      return
+    }
+    let frame: number
+    const start = performance.now()
+    const duration = 2000
+    const animate = (now: number) => {
+      const elapsed = now - start
+      const progress = Math.min(elapsed / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3) // easeOutCubic
+      setDisplayValue(Math.round(numeric * eased))
+      if (progress < 1) frame = requestAnimationFrame(animate)
+    }
+    frame = requestAnimationFrame(animate)
+    return () => cancelAnimationFrame(frame)
+  }, [inView, numeric, shouldReduceMotion])
+
+  return (
+    <span ref={ref} className="font-display text-3xl text-gold-500 font-medium">
+      {displayValue}{suffix}
+    </span>
+  )
 }
 
 const cases = [
@@ -52,7 +87,7 @@ export default function CaseStudies() {
                   <div className="pt-6 border-t border-bone-300/10">
                     <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-2">Result</div>
                     <div className="flex items-baseline gap-2">
-                      <span className="font-display text-3xl text-gold-500 font-medium">{c.stat}</span>
+                      <StatCounter value={c.stat} />
                       <span className="font-sans text-sm text-bone-300/70">{c.result}</span>
                     </div>
                   </div>
