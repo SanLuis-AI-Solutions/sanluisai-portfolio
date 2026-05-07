@@ -40,6 +40,8 @@ export default function Nav() {
           <img
             src="/assets/logo-primary.jpg"
             alt="SanLuis AI Solutions"
+            width={572}
+            height={700}
             className="h-10 md:h-12 w-auto"
           />
         </a>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import AnimatedSection from '@/components/AnimatedSection'
 
 const categories = [
   { key: 'clarity', label: 'Clarity', desc: 'Do you know the exact problem to solve?', max: 100 },
@@ -115,24 +116,25 @@ export default function AssessmentPage() {
   if (step === 'intro') {
     return (
       <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
-
-        <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
-          <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-6">AI Readiness Assessment</p>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 leading-[0.95] mb-6">
-            How Ready Is Your<br />Organization for AI?
-          </h1>
-          <p className="font-sans text-base md:text-lg text-fg2 leading-relaxed mb-8 max-w-[50ch]">
-            Assess your readiness across five dimensions — clarity, data, adoption, infrastructure, and leadership.
-            Get a scored breakdown and a clear next step in under two minutes.
-          </p>
-          <button
-            onClick={() => setStep('quiz')}
-            className="font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded"
-          >
-            Start Assessment — 2 min
-          </button>
-          <p className="font-sans text-xs text-fg3 mt-4 italic">No email required. Results shown instantly.</p>
-        </section>
+        <AnimatedSection delay={0}>
+          <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
+            <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-6">AI Readiness Assessment</p>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 leading-[0.95] mb-6">
+              How Ready Is Your<br />Organization for AI?
+            </h1>
+            <p className="font-sans text-base md:text-lg text-fg2 leading-relaxed mb-8 max-w-[50ch]">
+              Assess your readiness across five dimensions — clarity, data, adoption, infrastructure, and leadership.
+              Get a scored breakdown and a clear next step in under two minutes.
+            </p>
+            <button
+              onClick={() => setStep('quiz')}
+              className="font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded"
+            >
+              Start Assessment — 2 min
+            </button>
+            <p className="font-sans text-xs text-fg3 mt-4 italic">No email required. Results shown instantly.</p>
+          </section>
+        </AnimatedSection>
       </main>
     )
   }
@@ -142,8 +144,8 @@ export default function AssessmentPage() {
     const answered = answers[q.category] !== undefined
     return (
       <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
-
-        <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-2xl mx-auto">
+        <AnimatedSection delay={0}>
+          <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-2xl mx-auto">
           {/* Progress bar */}
           <div className="w-full h-1 bg-navy-100 rounded-full mb-10 overflow-hidden">
             <div className="h-full bg-gold-600 transition-all duration-300" style={{ width: `${((current) / questions.length) * 100}%` }} />
@@ -174,14 +176,15 @@ export default function AssessmentPage() {
             </button>
           )}
         </section>
+        </AnimatedSection>
       </main>
     )
   }
 
   return (
     <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
-
-      <section className="pt-28 md:pt-36 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
+      <AnimatedSection delay={0}>
+        <section className="pt-28 md:pt-36 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
         <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-4">Your Results</p>
 
         {/* Score Circle */}
@@ -297,6 +300,7 @@ export default function AssessmentPage() {
           )}
         </div>
       </section>
+        </AnimatedSection>
     </main>
   )
 }
