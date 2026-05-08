@@ -6,6 +6,12 @@ import FlameMark from '@/components/FlameMark'
 
 const posts = [
   {
+    title: 'What AI Actually Costs vs. What It Saves: A Real Breakdown',
+    date: '2026-05-08',
+    slug: 'ai-cost-roi-breakdown',
+    excerpt: 'Most AI pricing pages say contact us. Here are real numbers: Discovery $300, Automation $1,200+, Agents $5,000+. Fixed price, you own the code. Real ROI math from three Houston businesses.',
+  },
+  {
     title: 'What AI Can Actually Do for Real Estate Agents in 2026',
     date: '2026-05-08',
     slug: 'real-estate-ai-guide',
