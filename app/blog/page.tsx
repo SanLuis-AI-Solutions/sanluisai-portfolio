@@ -6,6 +6,12 @@ import FlameMark from '@/components/FlameMark'
 
 const posts = [
   {
+    title: 'From $300 Discovery to Live AI System: What 14 Days Actually Look Like',
+    date: '2026-05-08',
+    slug: 'ai-implementation-timeline',
+    excerpt: 'Day-by-day breakdown: Discovery → Audit → Prototype → Deployment. Real milestones, real timelines from three Houston businesses. Fixed price. You own the code.',
+  },
+  {
     title: 'What AI Actually Costs vs. What It Saves: A Real Breakdown',
     date: '2026-05-08',
     slug: 'ai-cost-roi-breakdown',
