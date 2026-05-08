@@ -6,6 +6,12 @@ import FlameMark from '@/components/FlameMark'
 
 const posts = [
   {
+    title: 'What AI Can Actually Do for Real Estate Agents in 2026',
+    date: '2026-05-08',
+    slug: 'real-estate-ai-guide',
+    excerpt: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up. Real systems, real costs, real results.',
+  },
+  {
     title: '5 Automation Mistakes That Cost Houston Businesses Real Money',
     date: '2026-05-01',
     slug: 'automation-mistakes-guide',
