@@ -26,7 +26,7 @@ export default function Process() {
             <span className="sl-eyebrow">Our Process</span>
           </div>
         </FadeIn>
-        <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Audit. Build. Deploy. Grow.</h2></FadeIn>
+        <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Discover. Build. Ship. Maintain.</h2></FadeIn>
         <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From "what's wasting my money" to "it's running itself" — in weeks, not quarters.</p></FadeIn>
         <div className="grid md:grid-cols-4 gap-4">
           {steps.map((s, i) => (

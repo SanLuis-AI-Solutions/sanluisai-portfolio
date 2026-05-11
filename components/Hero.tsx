@@ -40,7 +40,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(3rem,7vw,5.5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] mb-6">
-                Your business, <span className="text-gold-500 italic">running on AI.</span>
+                Custom AI Solutions.
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
@@ -50,7 +50,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <p className="font-display text-lg md:text-xl text-gold-500 italic font-medium tracking-[-0.01em] mb-10">
-                Custom AI for real problems. Built for Houston. Shipped in weeks, not months.
+                No-code AI for real problems. Built for Houston. Shipped in weeks, not months.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
