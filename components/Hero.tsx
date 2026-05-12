@@ -50,7 +50,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <p className="font-display text-lg md:text-xl text-gold-500 italic font-medium tracking-[-0.01em] mb-10">
-                No-code AI for real problems. Built for Houston. Shipped in weeks, not months.
+                No-code AI for real problems. Built for Houston.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
