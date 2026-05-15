@@ -14,20 +14,20 @@ export default function AutomationPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Automation."
-        description="Your team spends hours every week on work that follows predictable rules. Work that needs to happen — but doesn't need your best people doing it."
+        description="Your team loses 20-40 hours per week to work that follows predictable rules. We eliminate it — so your people focus on decisions, not data entry."
       />
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            Data entry, invoice matching, report generation, email triage. Work that follows predictable rules — and absolutely needs to happen, but absolutely does not need your best people doing it.
+            Your team loses 20-40 hours per week to work that follows predictable rules. Data entry, invoice matching, report generation, email triage. Work that absolutely needs to happen — but absolutely does not need your best people doing it.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
             <strong className="text-navy-800">We automate the repetitive, not the strategic.</strong> We build pipelines that read, write, route, and act across your existing tools. Your people focus on decisions, not data entry. The work gets done faster, with fewer errors, and no one burns out on Friday afternoon.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            <strong className="text-navy-800">The relief of clarity:</strong> Typical projects recover 20 to 40 hours per week per department. Your team gets their time back for the work that actually needs human judgment.
+            <strong className="text-navy-800">The relief of clarity:</strong> Typical projects recover 20 to 40 hours per week per department. Your team gets their time back for the work that actually needs human judgment. Imagine what your best people could do with an extra day every week.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

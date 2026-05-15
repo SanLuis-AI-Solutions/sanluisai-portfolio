@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'AI Consulting — SanLuis AI Solutions',
-  description: "Every vendor promises AI will transform your business. Nobody tells you if it actually applies to YOUR operation. A structured 60-minute audit that tells you where AI creates leverage — and where it's a waste of money.",
+  description: "You know AI matters. You just don't know where it actually applies to YOUR business. That's the problem this $300 session solves. Walk away with clarity — not more questions.",
 }
 
 export default function ConsultingPage() {
@@ -14,20 +14,20 @@ export default function ConsultingPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Consulting."
-        description="Every vendor promises AI will transform your business. Nobody tells you if it actually applies to YOUR operation. You need honest answers before you spend a dollar."
+        description="You know AI matters. You just don't know where it actually applies to YOUR business. That's the problem this $300 session solves. Walk away with clarity — not more questions."
       />
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            A structured 60-minute audit that identifies exactly where AI creates leverage for your business — and where it&rsquo;s a waste of money. We don&rsquo;t pitch you from a script. We walk through your actual operations: the workflows, the bottlenecks, the spreadsheets held together by hope.
+            One focused hour. We walk through your actual operations — the workflows, the bottlenecks, the spreadsheets held together by hope. When the hour is up, you know exactly where AI creates leverage for your business and where it&rsquo;s a waste of money.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
-            <strong className="text-navy-800">What you get:</strong> A written roadmap with cost estimates, timeline projections, and a risk assessment for every initiative. If something doesn&rsquo;t make sense for AI, we will tell you flat out. That is the point of the exercise.
+            <strong className="text-navy-800">What you get:</strong> A written roadmap with cost estimates, timeline projections, and a risk assessment for every initiative. If something doesn&rsquo;t make sense for AI, we tell you flat out. That is the point of the exercise.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            <strong className="text-navy-800">The relief of clarity:</strong> No more &ldquo;we should do something with AI.&rdquo; You leave with a prioritised action plan aligned to your budget, your team, and your actual business goals.
+            <strong className="text-navy-800">The relief of clarity:</strong> No more &ldquo;we should do something with AI.&rdquo; You leave with a prioritized action plan aligned to your budget, your team, and your actual business goals.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

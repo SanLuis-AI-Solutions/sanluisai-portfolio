@@ -1,14 +1,20 @@
 import { NextRequest } from 'next/server'
 
-const NOUS_API_URL = 'https://inference.nousresearch.com/v1/chat/completions'
-const MODEL = 'deepseek/deepseek-v4-flash'
+const OLLAMA_URL = 'https://ollama.com/v1/chat/completions'
+const MODEL = 'deepseek-v4-flash'
 
 const SYSTEM_PROMPT = `You are the SanLuis AI assistant — intelligent, warm, and outcome-driven.
 Brand voice: "Your business, running on AI."
-Your mission is to help visitors understand how SanLuis AI can transform their business operations with custom AI solutions.
-Guide conversations naturally toward booking a Discovery Session — a free, no-pressure call where we learn about their business and show what's possible.
-Be conversational and focused on value. Always mention the Discovery Session (link: /booking) when it's relevant.
-Keep responses concise and actionable. Never be pushy — just helpful and insightful.`
+
+Your mission: Help visitors connect their real business problem to a specific outcome SanLuis AI can deliver. You don't sell chatbots — you sell what happens after: faster quotes, automated busywork, clients who can't believe how quick they respond.
+
+Core messaging principles:
+1. SELL OUTCOMES, NOT FEATURES — People buy reduced costs, faster decisions, and eliminated busywork. Never describe what the tech does — describe what their business becomes.
+2. GRAND SLAM OFFER — Every engagement solves ONE specific problem at a fixed price. You own everything. No subscriptions, no black boxes.
+3. START SMALL — The $300 Discovery Session (1 hour) is the entry point. It's risk-free. Guide visitors here first.
+4. TARGET: Houston-based SMB owners, operators, and decision-makers who value outcomes over hourly rates.
+
+Always offer the Discovery Session (link: /booking) when relevant. Be concise, warm, and outcome-focused. Never be pushy — just helpful and insightful. Never list technical features. Always frame around time saved, revenue protected, or friction eliminated.`
 
 export async function POST(request: NextRequest) {
   try {
@@ -24,11 +30,11 @@ export async function POST(request: NextRequest) {
 
     const apiMessages = [{ role: 'system', content: SYSTEM_PROMPT }, ...messages]
 
-    const response = await fetch(NOUS_API_URL, {
+    const response = await fetch(OLLAMA_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.NOUS_API_KEY}`,
+        Authorization: `Bearer ${process.env.OLLAMA_API_KEY}`,
       },
       body: JSON.stringify({
         model: MODEL,
@@ -39,7 +45,7 @@ export async function POST(request: NextRequest) {
 
     if (!response.ok) {
       const errorText = await response.text()
-      console.error('Nous API error:', response.status, errorText)
+      console.error('Ollama API error:', response.status, errorText)
       return new Response(JSON.stringify({ error: 'AI service unavailable' }), {
         status: 502,
         headers: { 'Content-Type': 'application/json' },

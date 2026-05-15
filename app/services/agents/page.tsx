@@ -14,14 +14,14 @@ export default function AgentsPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Agents."
-        description="Customer inquiries pile up overnight. Lead qualification happens during business hours — or not at all. You're losing opportunities because there aren't enough hours in the day."
+        description="Customer inquiries pile up overnight. Lead qualification happens during business hours or not at all. An AI agent never sleeps — it qualifies, triages, and triggers workflows 24/7, every step logged."
       />
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            An AI agent that operates within the rules <em>you</em> set. It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows — all without waking anyone up.
+            Customer inquiries pile up overnight. Lead qualification happens during business hours — or not at all. An AI agent never sleeps. It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows — all without waking anyone up. You wake up to qualified leads, resolved tickets, and a clean dashboard.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
             Every agent is trained on your data and bound by your policies. Every step is logged. You approve outcomes, not every decision. Set the boundaries, define the rules, and the agent operates inside them without someone watching every move.

@@ -37,14 +37,14 @@ export default function CTA() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-8">
-                You know your business has a process that wastes time.
+                What if your team could reclaim 20 hours every week?
                 <br />
-                <span className="text-gold-600">$300 gets you the proof and the plan.</span>
+                <span className="text-gold-600">$300. 60 minutes. The exact roadmap to get there.</span>
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-12">
-                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers. Whether you move forward with us or not.
+                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers. Whether you move forward with us or not. You&apos;ll also receive our exclusive AI Opportunity Audit — a $2,500 value included at no extra cost.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>
@@ -52,7 +52,7 @@ export default function CTA() {
                 href="/booking"
                 className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow transition-all duration-220 rounded"
               >
-                Book Your Discovery Session.
+                Reserve Your Discovery Session.
               </a>
             </AnimatedSection>
           </div>
@@ -63,12 +63,12 @@ export default function CTA() {
                 <div>
                   <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Engagements / Quarter</div>
                   <div className="font-display text-5xl text-white font-medium">3</div>
-                  <div className="font-sans text-sm text-navy-400 mt-1">We turn down nine.</div>
+                  <div className="font-sans text-sm text-navy-400 mt-1">Limited engagements per quarter.</div>
                 </div>
                 <div>
                   <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Discovery Session</div>
                   <div className="font-display text-5xl text-white font-medium">$300</div>
-                  <div className="font-sans text-sm text-navy-400 mt-1">Refunded if no problem found.</div>
+                  <div className="font-sans text-sm text-navy-400 mt-1">Money-back guarantee if we find fewer than 3 high-impact opportunities.</div>
                 </div>
                 <div>
                   <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Delivery Window</div>

@@ -7,11 +7,11 @@ import FlameMark from '@/components/FlameMark'
 export const metadata: Metadata = {
   title: 'Pricing — SanLuis AI Solutions',
   description:
-    'Fixed-price engagements for every type of AI project. Discovery Session ($300) or Custom Build (from $5,000). You know the cost before we write a single line of code.',
+    'Get started with a $300 Discovery Session — 60-min audit with written roadmap. Custom AI builds from $5,000, fixed price, you own the code. No license fees.',
   openGraph: {
     title: 'Pricing — SanLuis AI Solutions',
     description:
-      'Simple, transparent pricing for custom AI systems. $300 Discovery Session or Custom Build from $5,000. No hidden fees.',
+      'Simple, transparent pricing. $300 Discovery Session with money-back guarantee if we find fewer than 3 opportunities. Custom builds from $5,000 with full source ownership.',
     url: 'https://sanluisai-portfolio.vercel.app/pricing',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -123,10 +123,10 @@ export default function PricingPage() {
               subtitle="One-time"
               description="A focused 60-minute working session to identify your highest-impact AI opportunities and deliver a clear, actionable plan."
               items={[
-                '60-min working session',
-                'Written action plan within 24 hours',
+                '60-min working session with written roadmap',
+                'AI Opportunity Audit — $2,500 value included',
                 'Pricing estimate for any recommended builds',
-                'Risk-free: money-back guarantee if you don\'t walk away with clarity',
+                "Money-back guarantee if we don't find 3+ opportunities",
               ]}
               ctaHref="/booking"
               ctaLabel="Book a Session"
@@ -140,11 +140,12 @@ export default function PricingPage() {
               subtitle="Fixed-price per project"
               description="A fully custom AI system or agent built to your exact specifications, deployed and documented with full source ownership."
               items={[
-                'Custom AI system or agent',
-                'Full source ownership — your IP stays yours',
-                'Deployment, training, and documentation included',
-                '30 days post-launch support',
-                'No recurring license fees',
+                'Custom AI system or agent built to your specs',
+                'Architecture Blueprint — $1,500 value included',
+                'Deployment, training, and documentation',
+                '30-day post-launch support',
+                'Team training walkthrough — $500 value',
+                'Full source ownership. No license fees. Ever.',
               ]}
               ctaHref="/booking"
               ctaLabel="Start with a Discovery Session"
@@ -158,7 +159,7 @@ export default function PricingPage() {
             <div className="bg-bone-100 border border-navy-100 rounded px-6 py-5">
               <p className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-fg3 mb-2">What&apos;s Not Included</p>
               <p className="sl-body-sm text-fg3/80">
-                Monthly maintenance retainers available after launch. Complex integrations with legacy systems may require additional scoping. Enterprise-scale deployments billed at $15K–$50K+ depending on scope.
+                Every project includes 30 days of post-launch support. Larger engagements (enterprise-scale, $15K-$50K+) may require additional scoping. Monthly maintenance retainers available if you want ongoing optimization.
               </p>
             </div>
           </div>
@@ -169,7 +170,7 @@ export default function PricingPage() {
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Not sure which option is right for you?</h2>
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Not sure where to start? Begin with a $300 Discovery Session.</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">
             Start with a $300 Discovery Session. If we find a clear opportunity, we&apos;ll build a detailed proposal — no pressure, no commitment.
           </p>
