@@ -30,18 +30,14 @@ export default function AnimatedCounter({
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
   const shouldReduceMotion = useReducedMotion()
-  const [displayValue, setDisplayValue] = useState(0)
+  // Start at the ACTUAL value, not 0 — so it doesn't show "0" before animating
+  const [displayValue, setDisplayValue] = useState(value)
 
-  const motionValue = useMotionValue(0)
-  const springValue = useSpring(motionValue, {
-    stiffness: 60,
-    damping: 14,
-    duration: duration * 1000,
-  })
+  const motionValue = useMotionValue(shouldReduceMotion ? value : 0)
 
-  // Subscribe to spring changes
+  // Subscribe to spring changes — only animate if the element is scrolled into view
   useEffect(() => {
-    const unsub = springValue.on('change', (latest) => {
+    const unsub = motionValue.on('change', (latest) => {
       setDisplayValue(Math.round(latest))
     })
     return unsub
@@ -57,14 +53,14 @@ export default function AnimatedCounter({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView, shouldReduceMotion, value, duration])
 
-  const renderValue = shouldReduceMotion ? value.toLocaleString() : displayValue.toLocaleString()
+  const renderValue = (shouldReduceMotion ? value : displayValue).toLocaleString()
 
   return (
     <div ref={ref} className={className}>
       <motion.div
         className="font-display text-2xl md:text-3xl text-gold-600"
         initial={shouldReduceMotion ? {} : { opacity: 0 }}
-        animate={inView || shouldReduceMotion ? { opacity: 1 } : { opacity: 0 }}
+        animate={inView || shouldReduceMotion ? { opacity: 1 } : {}}
         transition={{ duration: 0.4 }}
       >
         <span>

@@ -67,22 +67,11 @@ export default function Hero() {
             </AnimatedSection>
           </div>
 
-          {/* Right side: founder headshot + brand visuals */}
+          {/* Right side: brand environment */}
           <div className="hidden lg:flex flex-col items-center gap-8">
             <AnimatedSection delay={0.4}>
-              <div className="flex flex-col items-center gap-4">
-                {/* Founder headshot */}
-                <div className="relative w-44 h-44 rounded-full overflow-hidden border-2 border-gold-500/40 shadow-goldGlow">
-                  <Image src="/daniel-headshot.jpg" alt="Daniel San Luis, Founder" fill className="object-cover" sizes="176px" priority />
-                </div>
-                <div className="text-center">
-                  <div className="font-display text-lg text-bone-50 font-medium">Daniel San Luis</div>
-                  <div className="font-sans text-xs text-gold-500/80 tracking-[0.08em] uppercase">Founder & CEO</div>
-                </div>
-                {/* Brand environment photo — smaller, behind */}
-                <div className="relative w-64 h-36 rounded overflow-hidden border border-bone-300/10 opacity-60 -mt-2">
-                  <Image src="/brand-lobby.png" alt="SanLuis AI brand environment" fill className="object-contain" sizes="256px" />
-                </div>
+              <div className="relative w-80 h-56 rounded overflow-hidden shadow-3 border border-bone-300/10">
+                <Image src="/brand-lobby.png" alt="SanLuis AI Solutions workspace" fill className="object-contain" sizes="320px" />
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.5}>
