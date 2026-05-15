@@ -32,8 +32,7 @@ export default function Hero() {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center_right,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
 
       <div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-32 z-10">
-        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
-          <div className="max-w-[62ch]">
+        <div className="max-w-[74ch]">
             <AnimatedSection delay={0}>
               <div className="flex items-center gap-3 mb-8">
                 <FlameMark size="sm" className="opacity-80" />
@@ -66,20 +65,7 @@ export default function Hero() {
               <HeroStats />
             </AnimatedSection>
           </div>
-
-          {/* Right side: brand environment */}
-          <div className="hidden lg:flex flex-col items-center gap-8">
-            <AnimatedSection delay={0.4}>
-              <div className="relative w-80 h-56 rounded overflow-hidden shadow-3 border border-bone-300/10">
-                <Image src="/brand-lobby.png" alt="SanLuis AI Solutions workspace" fill className="object-contain" sizes="320px" />
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.5}>
-              <div className="font-mono text-xs text-bone-300/40 tracking-[0.15em] uppercase text-center">Founded 2025 - Houston - Bilingual EN/ES</div>
-            </AnimatedSection>
-          </div>
         </div>
-      </div>
     </motion.section>
   )
 }

@@ -144,9 +144,9 @@ export default function CaseStudies() {
               <FadeIn key={c.slug} delay={0.2 + i * 0.1}>
                 <a
                   href={`/case-studies/${c.slug}`}
-                  className="block bg-navy-800 border border-bone-300/10 hover:border-gold-600/40 rounded overflow-hidden transition-all duration-220 hover:shadow-3 hover:scale-[1.01] group cursor-pointer h-full flex flex-col min-w-[340px] md:min-w-[400px] lg:min-w-[420px] snap-start"
+                  className="block bg-bone-50 border border-bone-200 hover:border-gold-500 rounded overflow-hidden transition-all duration-220 hover:shadow-3 hover:scale-[1.01] group cursor-pointer h-full flex flex-col min-w-[340px] md:min-w-[400px] lg:min-w-[420px] snap-start"
                 >
-                  <div className="relative w-full h-48 bg-navy-700 overflow-hidden border-b border-bone-300/10">
+                  <div className="relative w-full h-48 bg-navy-100 overflow-hidden border-b border-navy-100">
                     <Image
                       src={c.img}
                       alt={`${c.company} dashboard: AI implementation result`}
@@ -156,17 +156,17 @@ export default function CaseStudies() {
                     />
                   </div>
                   <div className="p-8 flex flex-col flex-1">
-                    <div className="font-sans text-xs font-semibold text-gold-500 tracking-[0.12em] uppercase mb-4">{c.industry}</div>
-                    <h3 className="font-display text-2xl text-bone-50 mb-6 group-hover:text-gold-500 transition-colors duration-200">{c.company}</h3>
+                    <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-4">{c.industry}</div>
+                    <h3 className="font-display text-2xl text-navy-800 mb-6 group-hover:text-gold-600 transition-colors duration-200">{c.company}</h3>
                     <div className="flex-1">
-                      <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-2">Problem</div>
-                      <p className="font-sans text-sm text-bone-300/70 leading-relaxed mb-6">{c.problem}</p>
+                      <div className="font-sans text-xs text-navy-400 tracking-[0.08em] uppercase mb-2">Problem</div>
+                      <p className="font-sans text-sm text-fg2 leading-relaxed mb-6">{c.problem}</p>
                     </div>
-                    <div className="pt-6 border-t border-bone-300/10">
-                      <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-2">Result</div>
+                    <div className="pt-6 border-t border-navy-100">
+                      <div className="font-sans text-xs text-navy-400 tracking-[0.08em] uppercase mb-2">Result</div>
                       <div className="flex items-baseline gap-2">
                         <StatCounter value={c.stat} />
-                        <span className="font-sans text-sm text-bone-300/70">{c.result}</span>
+                        <span className="font-sans text-sm text-fg2">{c.result}</span>
                       </div>
                     </div>
                   </div>
