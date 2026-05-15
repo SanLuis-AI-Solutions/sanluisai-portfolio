@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: 'Real results from real AI deployments: Garza International (60% faster quoting), Susie\'s Jewelry Repair (3x leads), LoveFlow (40% better matches).',
     url: 'https://sanluisai-portfolio.vercel.app/case-studies',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },
@@ -38,19 +38,21 @@ export default function Page() {
           <AnimatedSection delay={0}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {cases.map((c) => (
-              <Link key={c.slug} href={`/case-studies/${c.slug}`} className="block bg-white border border-navy-900 rounded p-6 hover:shadow-2 transition-shadow group">
-                <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">{c.industry}</div>
+              <Link key={c.slug} href={`/case-studies/${c.slug}`} className="block bg-white border border-navy-200 rounded p-6 hover:border-navy-900 hover:shadow-2 transition-all duration-220 group">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600">{c.industry}</div>
+                  <div className="font-display text-lg font-bold text-gold-600">{c.result}</div>
+                </div>
                 <div className="font-display text-xl text-navy-800 mb-4 group-hover:text-navy-600 transition-colors">{c.company}</div>
                 <div className="mb-4">
                   <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Problem</div>
                   <div className="font-sans text-sm text-fg2">{c.problem}</div>
                 </div>
-                <div>
-                  <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Result</div>
-                  <div className="font-display text-2xl text-gold-600">{c.result}</div>
-                </div>
                 <div className="mt-4 pt-4 border-t border-navy-100">
                   <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-gold-200/40">
+                  <span className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 group-hover:text-gold-700 transition-colors">Read full case study &rarr;</span>
                 </div>
               </Link>
             ))}

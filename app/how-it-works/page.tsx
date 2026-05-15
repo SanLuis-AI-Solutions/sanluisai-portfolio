@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Discovery ($300) → Build (from $1,200) → Ship (deploy + train) → Maintain (monthly retainer). Transparent pricing, full source ownership, no lock-in.',
     url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

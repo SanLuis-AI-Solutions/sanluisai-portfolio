@@ -41,6 +41,25 @@ export default function CustomAIPage() {
         <Link href="/case-studies/loveflow" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the case study →</Link>
       </div>
 
+      {/* Explore other services */}
+      <section className="max-w-prose mx-auto mt-12">
+        <h3 className="font-display text-xl text-navy-800 mb-4 text-center">Explore other services</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <Link href="/services/automation" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
+            <div className="font-display text-navy-800">Workflow Automation</div>
+            <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $1,200</div>
+          </Link>
+          <Link href="/services/agents" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
+            <div className="font-display text-navy-800">AI Agent Systems</div>
+            <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $5,000</div>
+          </Link>
+          <Link href="/services/consulting" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
+            <div className="font-display text-navy-800">Discovery Session</div>
+            <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">$300</div>
+          </Link>
+        </div>
+      </section>
+
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

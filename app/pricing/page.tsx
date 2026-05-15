@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       'Simple, transparent pricing for custom AI systems. $300 Discovery Session or Custom Build from $5,000. No hidden fees.',
     url: 'https://sanluisai-portfolio.vercel.app/pricing',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

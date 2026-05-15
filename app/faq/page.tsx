@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about working with SanLuis AI: pricing, process, technical requirements, and whether your business is ready for AI.',
     url: 'https://sanluisai-portfolio.vercel.app/faq',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

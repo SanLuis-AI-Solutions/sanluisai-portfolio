@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'SanLuis AI Solutions terms of service — engagement model, IP ownership, payment terms, and liability.',
     url: 'https://sanluisai-portfolio.vercel.app/terms',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Custom AI systems from $5,000, workflow automation from $1,200, AI agents, and $300 consulting sessions. No-code development for small and mid-size businesses.',
     url: 'https://sanluisai-portfolio.vercel.app/services',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },
@@ -23,6 +23,8 @@ const servicesList = [
   {
     num: '01',
     name: 'Custom AI Systems',
+    tag: 'Deep Build',
+    bestFor: 'Growing teams scaling core operations',
     desc: 'Built from scratch for your exact problem. No templates, no compromises, no feature bloat.',
     items: ['Architecture from first principles tailored to your stack', 'Full source ownership — your IP stays yours', 'Deployed in weeks, not months', 'Authentication, roles, permissions, and AI features where they create leverage'],
     pricing: 'From $5,000',
@@ -32,6 +34,8 @@ const servicesList = [
   {
     num: '02',
     name: 'Workflow Automation',
+    tag: 'Quick Win',
+    bestFor: 'Teams losing hours to manual busywork',
     desc: "Eliminate the manual busywork consuming your team's highest-value hours.",
     items: ['Map your process once, then let automation run it', 'Integrates with your existing tools (CRM, email, Slack, etc.)', '30-day post-launch support included', 'Examples: lead intake, invoice generation, report delivery'],
     pricing: 'From $1,200',
@@ -41,6 +45,8 @@ const servicesList = [
   {
     num: '03',
     name: 'AI Agent Systems',
+    tag: 'Force Multiplier',
+    bestFor: 'Operations needing 24/7 intelligent coverage',
     desc: 'Autonomous agents that intake, qualify, research, and route — while your team focuses on decisions.',
     items: ['Multi-agent orchestration with human review gates', 'Integrates with your data sources and existing tools', 'Monitoring, logging, and escalation rules built in', 'Examples: intake agent, research agent, customer triage'],
     pricing: 'From $5,000',
@@ -50,6 +56,8 @@ const servicesList = [
   {
     num: '04',
     name: 'AI Consulting — Discovery Session',
+    tag: 'Start Here',
+    bestFor: 'Anyone who wants a plan before spending',
     desc: 'Know exactly where to start. One session. A clear roadmap.',
     items: ['60-minute focused working session (video call)', 'Identify your top 3 highest-leverage AI opportunities', 'Written roadmap delivered after the session', 'Pricing estimate for any recommended builds'],
     pricing: '$300',
@@ -79,9 +87,13 @@ export default function ServicesPage() {
               {servicesList.map((s) => (
                 <div key={s.num} className="bg-white border border-navy-200 rounded p-8 md:p-10 hover:border-navy-900 transition-all duration-220">
                   <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start">
-                    <div className="font-display text-3xl text-gold-600 leading-none">{s.num}</div>
+                    <div className="flex flex-col items-start">
+                      <div className="font-display text-3xl text-gold-600 leading-none">{s.num}</div>
+                      <span className="mt-3 font-mono text-[10px] tracking-[0.12em] uppercase bg-gold-100 text-gold-700 px-2 py-0.5 rounded">{s.tag}</span>
+                    </div>
                     <div>
-                      <h2 className="font-display text-2xl text-navy-800 mb-2">{s.name}</h2>
+                      <h2 className="font-display text-2xl text-navy-800 mb-1">{s.name}</h2>
+                      <p className="font-sans text-xs text-gold-700/70 mb-3 italic">Best for: {s.bestFor}</p>
                       <p className="sl-body-sm mb-4">{s.desc}</p>
                       <ul className="space-y-2">
                         {s.items.map((item, i) => (
@@ -93,7 +105,7 @@ export default function ServicesPage() {
                       </ul>
                     </div>
                     <div className="flex flex-col items-start md:items-end gap-2 md:min-w-[140px]">
-                      <span className="inline-block font-sans text-xs font-semibold tracking-[0.08em] uppercase px-3 py-1 bg-gold-100 text-gold-700 rounded-full mb-1">{s.pricing}</span>
+                      <span className="inline-block font-sans text-sm font-bold tracking-[0.04em] px-4 py-1.5 bg-gold-500 text-navy-900 rounded-full shadow-sm">{s.pricing}</span>
                       <div className="font-mono text-xs text-fg4 tracking-[0.08em] uppercase">{s.timeline}</div>
                       <Link href={s.href} className="mt-3 font-sans text-sm font-semibold px-5 py-2 border border-navy-800 text-navy-800 rounded hover:bg-navy-800 hover:text-white transition-all duration-220">
                         Learn more &rarr;
@@ -102,6 +114,19 @@ export default function ServicesPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </AnimatedSection>
+
+          {/* Not sure which service? */}
+          <AnimatedSection delay={0.1}>
+            <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-20 text-center">
+              <h2 className="font-display text-2xl text-bone-50 mb-3">Not sure which service fits?</h2>
+              <p className="font-sans text-base text-bone-300/70 max-w-xl mx-auto mb-6">
+                Every business is different. Book a $300 Discovery Session and we will map your specific needs to the right solution — or tell you if AI is not the answer.
+              </p>
+              <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-3 bg-gold-500 text-navy-900 hover:bg-gold-400 transition-all duration-220 rounded">
+                Book a Discovery Session.
+              </Link>
             </div>
           </AnimatedSection>
 

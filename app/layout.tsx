@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Custom AI Solutions | SanLuis AI Solutions',
     description: 'No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps.',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     type: 'website',
     locale: 'en_US',
   },

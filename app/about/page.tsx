@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'Founded by Daniel San Luis. We are builders, operators, and AI engineers based in Houston. Every system we ship is designed and deployed by a team with deep expertise across the AI stack — from frontier model routing to production infrastructure.',
     url: 'https://sanluisai-portfolio.vercel.app/about',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },
