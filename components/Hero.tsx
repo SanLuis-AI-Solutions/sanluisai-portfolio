@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
-import { motion, useScroll, useTransform, useInView, useReducedMotion } from 'framer-motion'
+import { useRef, useState, useEffect, useCallback } from 'react'
+import { motion, useScroll, useTransform, useInView, useReducedMotion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import FlameMark from '@/components/FlameMark'
 import GoldThread from '@/components/GoldThread'
@@ -15,13 +15,110 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
   )
 }
 
+const testimonials = [
+  {
+    quote: 'The system replaced what used to take my team three hours every morning. Now it runs before I pour my coffee.',
+    client: 'Real estate investor, Garza International',
+    result: '60% faster quoting',
+    metric: '60%',
+  },
+  {
+    quote: 'I had a website up and booking clients in two weeks. The AI follow-up alone recovered three leads my old system had lost.',
+    client: 'Small business owner, Susie\u2019s Jewelry Repair',
+    result: '3x inbound leads',
+    metric: '3\u00d7',
+  },
+  {
+    quote: 'The matching engine was the piece we couldn\u2019t build ourselves. Six weeks later, engagement was up 40%.',
+    client: 'Founder, LoveFlow',
+    result: '40% better matches',
+    metric: '40%',
+  },
+]
+
+function TestimonialCarousel() {
+  const [current, setCurrent] = useState(0)
+  const [paused, setPaused] = useState(false)
+  const shouldReduceMotion = useReducedMotion()
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % testimonials.length)
+  }, [])
+
+  useEffect(() => {
+    if (shouldReduceMotion || paused) {
+      if (intervalRef.current) clearInterval(intervalRef.current)
+      return
+    }
+    intervalRef.current = setInterval(next, 5000)
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current)
+    }
+  }, [next, paused, shouldReduceMotion])
+
+  const t = testimonials[current]
+
+  return (
+    <div
+      className="w-full"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div className="relative min-h-[140px]">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={shouldReduceMotion ? {} : { opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={shouldReduceMotion ? {} : { opacity: 0 }}
+            transition={{ duration: 0.6, ease: 'easeInOut' }}
+            className="absolute inset-0"
+          >
+            <div className="border-l-2 border-gold-500/60 pl-4 mb-4">
+              <p className="font-display text-base md:text-lg text-bone-200/90 italic leading-relaxed">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 rounded-full bg-gold-600/20 border border-gold-600/30 flex items-center justify-center font-display text-xs text-gold-400 font-medium">
+                {t.client.charAt(0)}
+              </div>
+              <div>
+                <p className="font-sans text-xs text-bone-300/60">{t.client}</p>
+                <p className="font-sans text-xs font-semibold text-gold-500">{t.result}</p>
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* Dots */}
+      {!shouldReduceMotion && (
+        <div className="flex gap-2 mt-6" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+          {testimonials.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                i === current ? 'bg-gold-500 w-5' : 'bg-bone-300/30 hover:bg-bone-300/50'
+              }`}
+              aria-label={`Testimonial ${i + 1}`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function Hero() {
   const { scrollY } = useScroll()
   const bgColor = useTransform(scrollY, [0, 500], ['#0F1D3D', '#0A1128'])
   return (
     <motion.section style={{ backgroundColor: bgColor }} className="relative min-h-[100dvh] flex items-center overflow-hidden">
       <GoldThread />
-      {/* Background image — subtle overlay */}
+      {/* Background image - subtle overlay */}
       <div className="absolute inset-0 opacity-[0.04]">
         <Image src="/generated/sanluis_hero_00001_.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
       </div>
@@ -34,7 +131,7 @@ export default function Hero() {
             <AnimatedSection delay={0}>
               <div className="flex items-center gap-3 mb-8">
                 <FlameMark size="sm" className="opacity-80" />
-                <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500">SanLuis AI Solutions — Houston</span>
+                <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500">SanLuis AI Solutions, Houston</span>
                 <div className="h-px w-8 bg-gold-600/60" />
               </div>
             </AnimatedSection>
@@ -61,12 +158,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.6}>
               <div className="h-px w-12 bg-gold-600/60 mb-6" />
-              <div className="flex flex-wrap items-center gap-x-10 gap-y-2">
-                <div><span className="font-display text-2xl text-gold-500 font-semibold">3 wk</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Avg Delivery</span></div>
-                <div><span className="font-display text-2xl text-gold-500 font-semibold">60%</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Faster Quoting</span></div>
-                <div><span className="font-display text-2xl text-gold-500 font-semibold">$300</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">Start Here</span></div>
-                <div><span className="font-display text-2xl text-gold-500 font-semibold">100%</span><span className="font-sans text-xs text-bone-300/50 ml-2 uppercase tracking-[0.08em]">You Own the Code</span></div>
-              </div>
+              <TestimonialCarousel />
             </AnimatedSection>
           </div>
 
@@ -78,7 +170,7 @@ export default function Hero() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.5}>
-              <div className="font-mono text-xs text-bone-300/40 tracking-[0.15em] uppercase text-center">Founded 2025 · Houston · Bilingual EN/ES</div>
+              <div className="font-mono text-xs text-bone-300/40 tracking-[0.15em] uppercase text-center">Founded 2025 - Houston - Bilingual EN/ES</div>
             </AnimatedSection>
           </div>
         </div>

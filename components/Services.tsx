@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import ServiceIcon from '@/components/ServiceIcon'
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -36,6 +37,7 @@ function GoldThread({ delay = 0 }: { delay?: number }) {
 const services = [
   {
     num: '01',
+    icon: 'consulting' as const,
    name: 'AI Consulting — Discovery Session',
    desc: 'Walk away with crystal-clear clarity and a roadmap you can execute tomorrow.',
    detail: '$300. Includes AI Opportunity Audit \u2014 we identify 3+ high-impact opportunities or your money back. Written roadmap with cost estimates.',
@@ -44,6 +46,7 @@ const services = [
  },
   {
     num: '02',
+    icon: 'automation' as const,
     name: 'AI Automation',
     desc: 'Recover 20+ hours a week. Your team stops doing the work machines should do.',
     detail: 'From $1,200. Includes 30-day post-launch support ($500 value). We measure hours recovered monthly.',
@@ -52,6 +55,7 @@ const services = [
   },
   {
     num: '03',
+    icon: 'agents' as const,
     name: 'AI Agents',
     desc: 'Wake up to completed work. Your agent runs 24/7 \u2014 researching, deciding, acting without you.',
     detail: 'From $5,000. Includes 14-Day Prototype ($1,000 value) \u2014 see it working before full build.',
@@ -60,6 +64,7 @@ const services = [
   },
   {
     num: '04',
+    icon: 'custom-ai' as const,
     name: 'Custom AI Systems',
     desc: 'One problem. One system. One complete solution \u2014 built around your data, your workflow, your outcomes.',
     detail: 'From $5,000. Includes Architecture Blueprint ($1,500 value) + deployment + team training ($500 value). Full source ownership.',
@@ -67,6 +72,68 @@ const services = [
     bonus: 'Total bundle value: $7,000+. You own everything. No license fees. Ever.',
   },
 ]
+
+function ServiceCardLeftHeavy({ s, i }: { s: typeof services[0]; i: number }) {
+  return (
+    <AnimatedSection delay={0.15 + i * 0.12}>
+      <a href={s.href} className="block group cursor-pointer">
+        <div className="grid grid-cols-[auto_1fr] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2 hover:scale-[1.01]">
+          {/* Left: big gold number with accent bar */}
+          <div className="flex items-start gap-3">
+            <div className="font-display text-2xl md:text-3xl text-gold-600 leading-none pt-1">
+              {s.num}
+            </div>
+            <div className="hidden md:block w-px h-12 bg-gold-600/30 mt-1" />
+          </div>
+          {/* Right: content */}
+          <div className="min-w-0">
+            <h3 className="font-display text-xl md:text-2xl text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">
+              {s.name}
+            </h3>
+            <p className="sl-body-sm mb-3">{s.desc}</p>
+            <p className="text-xs text-fg4 leading-relaxed hidden md:block">
+              {s.detail}
+            </p>
+            <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2 hidden md:block">
+              {s.bonus}
+            </p>
+          </div>
+        </div>
+      </a>
+    </AnimatedSection>
+  )
+}
+
+function ServiceCardRightHeavy({ s, i }: { s: typeof services[0]; i: number }) {
+  return (
+    <AnimatedSection delay={0.15 + i * 0.12}>
+      <a href={s.href} className="block group cursor-pointer">
+        <div className="grid grid-cols-[1fr_auto] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2 hover:scale-[1.01]">
+          {/* Left: content */}
+          <div className="min-w-0 order-1">
+            <h3 className="font-display text-xl md:text-2xl text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">
+              {s.name}
+            </h3>
+            <p className="sl-body-sm mb-3">{s.desc}</p>
+            <p className="text-xs text-fg4 leading-relaxed hidden md:block">
+              {s.detail}
+            </p>
+            <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2 hidden md:block">
+              {s.bonus}
+            </p>
+          </div>
+          {/* Right: big gold number with accent bar */}
+          <div className="flex items-start gap-3 order-2">
+            <div className="hidden md:block w-px h-12 bg-gold-600/30 mt-1" />
+            <div className="font-display text-2xl md:text-3xl text-gold-600 leading-none pt-1">
+              {s.num}
+            </div>
+          </div>
+        </div>
+      </a>
+    </AnimatedSection>
+  )
+}
 
 export default function Services() {
   return (
@@ -96,32 +163,13 @@ export default function Services() {
           </div>
 
           <div className="space-y-6">
-            {services.map((s, i) => (
-              <AnimatedSection key={s.num} delay={0.15 + i * 0.12}>
-                <a
-                  href={s.href}
-                  className="block group cursor-pointer"
-                >
-                  <div className="grid grid-cols-[auto_1fr] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2 hover:scale-[1.01]">
-                    <div className="font-display text-2xl text-gold-600 leading-none pt-1">
-                      {s.num}
-                    </div>
-                    <div>
-                      <h3 className="font-display text-xl md:text-2xl text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">
-                        {s.name}
-                      </h3>
-                      <p className="sl-body-sm mb-3">{s.desc}</p>
-                      <p className="text-xs text-fg4 leading-relaxed hidden md:block">
-                        {s.detail}
-                      </p>
-                      <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2 hidden md:block">
-                        {s.bonus}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </AnimatedSection>
-            ))}
+            {services.map((s, i) =>
+              i % 2 === 0 ? (
+                <ServiceCardLeftHeavy key={s.num} s={s} i={i} />
+              ) : (
+                <ServiceCardRightHeavy key={s.num} s={s} i={i} />
+              )
+            )}
             {/* We build more than what's listed here */}
             <AnimatedSection delay={0.15 + services.length * 0.12}>
               <p className="font-sans text-xs text-navy-400 text-center pt-2">
