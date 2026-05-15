@@ -25,10 +25,10 @@ const faqSchemaQuestions = [
 ]
 
 export const metadata: Metadata = {
-  title: 'FAQ — Frequently Asked Questions | SanLuis AI Solutions',
+  title: 'FAQ: Frequently Asked Questions | SanLuis AI Solutions',
   description: 'Answers to common questions about pricing, process, technical requirements, and business readiness for custom AI systems, workflow automation, and AI agents. $300 Discovery Session. No long-term contracts.',
   openGraph: {
-    title: 'FAQ — Frequently Asked Questions | SanLuis AI Solutions',
+    title: 'FAQ: Frequently Asked Questions | SanLuis AI Solutions',
     description: 'Everything you need to know about working with SanLuis AI: pricing, process, technical requirements, and whether your business is ready for AI.',
     url: 'https://sanluisai-portfolio.vercel.app/faq',
     siteName: 'SanLuis AI Solutions',
@@ -150,7 +150,7 @@ export default function FaqPage() {
       <PageHeader
         eyebrow="FAQ"
         title="Frequently Asked Questions."
-        description="Everything you need to know about working with us — pricing, process, technical requirements, and whether your business is ready for AI. If you don't see your question here, reach out."
+        description="Everything you need to know about working with us: pricing, process, technical requirements, and whether your business is ready for AI. If you don't see your question here, reach out."
       />
 
       <AnimatedSection delay={0}>

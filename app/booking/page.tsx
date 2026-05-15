@@ -4,8 +4,8 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Book a $300 Discovery Session — SanLuis AI Solutions',
-  description: 'Book a $300 Discovery Session with SanLuis AI — 60 minutes, written action plan, money-back guarantee.',
+  title: 'Book a $300 Discovery Session | SanLuis AI Solutions',
+  description: 'Book a $300 Discovery Session with SanLuis AI: 60 minutes, written action plan, money-back guarantee.',
 }
 
 export const viewport: Viewport = {

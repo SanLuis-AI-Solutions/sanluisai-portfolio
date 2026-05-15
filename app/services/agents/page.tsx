@@ -21,13 +21,13 @@ export default function AgentsPage() {
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="sl-body-lg max-w-prose mb-6">
-            Customer inquiries pile up overnight. Lead qualification happens during business hours — or not at all. An AI agent never sleeps. It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows — all without waking anyone up. You wake up to qualified leads, resolved tickets, and a clean dashboard.
+            Customer inquiries pile up overnight. Lead qualification happens during business hours, or not at all. An AI agent never sleeps. It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows: all without waking anyone up. You wake up to qualified leads, resolved tickets, and a clean dashboard.
           </p>
           <p className="sl-body-lg max-w-prose mb-6">
             Every agent is trained on your data and bound by your policies. Every step is logged. You approve outcomes, not every decision. Set the boundaries, define the rules, and the agent operates inside them without someone watching every move.
           </p>
           <p className="sl-body-lg max-w-prose mb-8">
-            <strong className="text-navy-800">The relief of clarity:</strong> Available 24/7. Scales with demand. Never drops a task. You wake up to qualified leads, resolved tickets, and a clean dashboard — not an overflowing inbox.
+            <strong className="text-navy-800">The relief of clarity:</strong> Available 24/7. Scales with demand. Never drops a task. You wake up to qualified leads, resolved tickets, and a clean dashboard, not an overflowing inbox.
           </p>
           <Link href="/booking" className="inline-block font-sans text-sm font-semibold px-6 py-3 bg-navy-900 text-white rounded shadow-2 hover:bg-navy-800 transition-colors">
             Book a Discovery Session.

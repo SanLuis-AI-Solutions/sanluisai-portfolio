@@ -6,10 +6,10 @@ import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | SanLuis AI Solutions',
-  description: 'SanLuis AI Solutions terms of service — engagement model, IP ownership, payment terms, and liability.',
+  description: 'SanLuis AI Solutions terms of service: engagement model, IP ownership, payment terms, and liability.',
   openGraph: {
     title: 'Terms of Service | SanLuis AI Solutions',
-    description: 'SanLuis AI Solutions terms of service — engagement model, IP ownership, payment terms, and liability.',
+    description: 'SanLuis AI Solutions terms of service: engagement model, IP ownership, payment terms, and liability.',
     url: 'https://sanluisai-portfolio.vercel.app/terms',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],

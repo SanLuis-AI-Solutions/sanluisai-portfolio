@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'How It Works | 4-Step AI Development Process | SanLuis AI Solutions',
     description: 'From first conversation to working system in four clear stages. Discovery Session ($300), fixed-price Build (from $1,200), Ship (deploy + train), Maintain (monthly retainer). You always know what comes next.',
   openGraph: {
-    title: 'How It Works — 4-Step Process | SanLuis AI Solutions',
+    title: 'How It Works | 4-Step Process | SanLuis AI Solutions',
     description: 'Discovery ($300) → Build (from $1,200) → Ship (deploy + train) → Maintain (monthly retainer). Transparent pricing, full source ownership, no lock-in.',
     url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
     siteName: 'SanLuis AI Solutions',
@@ -35,7 +35,7 @@ const steps = [
     title: 'Build',
     tagline: 'From plan to production.',
     duration: 'Custom scope and timeline',
-    what: "We design and build your system using the frontier AI models that fit your problem — Gemini, Claude, Codex, Grok. No templates, no feature bloat, no scope creep.",
+    what: "We design and build your system using the frontier AI models that fit your problem: Gemini, Claude, Codex, Grok. No templates, no feature bloat, no scope creep.",
     deliverable: 'Working system integrated with your existing tools. Full source code ownership. Transparent milestone tracking throughout.',
     cost: '$1,200 – $50,000',
     costNote: 'fixed price agreed before work begins',

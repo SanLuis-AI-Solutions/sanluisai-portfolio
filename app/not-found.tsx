@@ -2,11 +2,11 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '404 — Page Not Found | SanLuis AI Solutions',
+  title: '404: Page Not Found | SanLuis AI Solutions',
   description: 'The page you\'re looking for doesn\'t exist. Return to the SanLuis AI Solutions homepage.',
   robots: { index: false, follow: false },
   openGraph: {
-    title: '404 — Page Not Found | SanLuis AI Solutions',
+    title: '404: Page Not Found | SanLuis AI Solutions',
     description: 'The page you\'re looking for doesn\'t exist.',
     images: [{ url: '/generated/sanluis_og_00001_.png', width: 1200, height: 630 }],
   },

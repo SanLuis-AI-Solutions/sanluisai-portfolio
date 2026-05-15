@@ -5,7 +5,7 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'AI for Retail. — SanLuis AI Solutions',
+  title: 'AI for Retail | SanLuis AI Solutions',
   description: 'Inventory waste, inconsistent customer service, and demand forecasting errors cost retailers margin. We build AI to eliminate the guesswork.',
 }
 

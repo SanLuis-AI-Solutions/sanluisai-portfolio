@@ -15,9 +15,9 @@ function GoldThread({ delay = 0 }: { delay?: number }) {
 }
 
 const steps = [
-  { num: '01', title: 'We Find Your Leverage Point', stat: '60 min', desc: 'A paid working session. Not a pitch. We map your operations, identify the single process costing you the most, and show you exactly what AI would do to fix it — in writing, within 24 hours.' },
+  { num: '01', title: 'We Find Your Leverage Point', stat: '60 min', desc: 'A paid working session. Not a pitch. We map your operations, identify the single process costing you the most, and show you exactly what AI would do to fix it: in writing, within 24 hours.' },
   { num: '02', title: 'We Build What You Actually Need', stat: '2-4 wk', desc: 'Your process becomes a custom AI system. No off-the-shelf. No ongoing license fees. You own every line of code. We handle deployment, training, and documentation.' },
-  { num: '03', title: 'You See The Number That Matters', stat: 'Verified', desc: 'We measure against your baseline — hours saved, margin recovered, throughput improved. 91% of AI-using SMBs report revenue increases. We prove yours is one of them.' },
+  { num: '03', title: 'You See The Number That Matters', stat: 'Verified', desc: 'We measure against your baseline: hours saved, margin recovered, throughput improved. 91% of AI-using SMBs report revenue increases. We prove yours is one of them.' },
 ]
 
 export default function Solution() {

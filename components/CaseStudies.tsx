@@ -149,7 +149,7 @@ export default function CaseStudies() {
                   <div className="relative w-full h-48 bg-navy-700 overflow-hidden border-b border-bone-300/10">
                     <Image
                       src={c.img}
-                      alt={`${c.company} dashboard — AI implementation result`}
+                      alt={`${c.company} dashboard: AI implementation result`}
                       fill
                       className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 420px"
