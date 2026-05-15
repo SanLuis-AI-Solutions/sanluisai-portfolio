@@ -33,7 +33,7 @@ export default function Problem() {
 
         {/* Bento grid — hero card + 3 secondary */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-navy-200 rounded overflow-hidden">
-          {/* Hero card: Manufacturing */}
+          {/* Hero card: Manufacturing — spans 2 cols */}
           <FadeIn delay={0.2}>
             <div className="md:col-span-2 bg-bone-100 p-10 md:p-14 h-full flex flex-col">
               <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-3">Manufacturing</div>
@@ -65,7 +65,7 @@ export default function Problem() {
 
           {/* Secondary card: Professional Services */}
           <FadeIn delay={0.44}>
-            <div className="bg-bone-100 p-8 md:p-10 h-full flex flex-col">
+            <div className="bg-bone-100 p-8 md:p-10 h-full flex flex-col md:col-span-2">
               <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-5">{problems[3].name}</div>
               <p className="font-sans text-sm text-fg2 leading-relaxed">{problems[3].desc}</p>
             </div>
