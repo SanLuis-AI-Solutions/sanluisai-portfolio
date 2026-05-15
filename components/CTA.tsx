@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
+import Image from 'next/image'
 import FlameMark from '@/components/FlameMark'
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -23,6 +24,9 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
 export default function CTA() {
   return (
     <section className="relative py-40 md:py-48 bg-navy-900 overflow-hidden">
+      <div className="absolute inset-0 opacity-[0.04]">
+        <Image src="/brand-conference.png" alt="" fill className="object-cover" sizes="100vw" priority={false} />
+      </div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(217,164,52,0.06),transparent_60%)]" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gold-600/20" />
 

@@ -25,8 +25,8 @@ export default function Hero() {
     <motion.section style={{ backgroundColor: bgColor }} className="relative min-h-[100dvh] flex items-center overflow-hidden">
       <GoldThread />
       {/* Background image — parallax */}
-      <motion.div className="absolute inset-0 opacity-[0.06]" style={{ y: bgY, scale: imageScale }}>
-        <Image src="/generated/sanluis_hero_00001_.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
+      <motion.div className="absolute inset-0 opacity-[0.07]" style={{ y: bgY, scale: imageScale }}>
+        <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
       </motion.div>
       {/* Radial gold glow accent */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center_right,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
@@ -67,11 +67,22 @@ export default function Hero() {
             </AnimatedSection>
           </div>
 
-          {/* Right side: brand environment image — scaled up for visual impact */}
+          {/* Right side: founder headshot + brand visuals */}
           <div className="hidden lg:flex flex-col items-center gap-8">
             <AnimatedSection delay={0.4}>
-              <div className="relative w-80 h-56 rounded overflow-hidden shadow-3 border border-bone-300/10">
-                <Image src="/brand-lobby.png" alt="SanLuis AI brand environment" fill className="object-contain" sizes="320px" />
+              <div className="flex flex-col items-center gap-4">
+                {/* Founder headshot */}
+                <div className="relative w-44 h-44 rounded-full overflow-hidden border-2 border-gold-500/40 shadow-goldGlow">
+                  <Image src="/daniel-headshot.jpg" alt="Daniel San Luis, Founder" fill className="object-cover" sizes="176px" priority />
+                </div>
+                <div className="text-center">
+                  <div className="font-display text-lg text-bone-50 font-medium">Daniel San Luis</div>
+                  <div className="font-sans text-xs text-gold-500/80 tracking-[0.08em] uppercase">Founder & CEO</div>
+                </div>
+                {/* Brand environment photo — smaller, behind */}
+                <div className="relative w-64 h-36 rounded overflow-hidden border border-bone-300/10 opacity-60 -mt-2">
+                  <Image src="/brand-lobby.png" alt="SanLuis AI brand environment" fill className="object-contain" sizes="256px" />
+                </div>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.5}>
