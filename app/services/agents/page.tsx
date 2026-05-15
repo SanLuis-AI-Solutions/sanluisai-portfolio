@@ -4,8 +4,8 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'AI Agents — SanLuis AI Solutions',
-  description: "Customer inquiries pile up overnight. Lead qualification happens during business hours or not at all. Deploy an AI agent that operates within the rules you set — 24/7, every step logged.",
+  title: 'AI Agents | SanLuis AI Solutions',
+  description: "Customer inquiries pile up overnight. Lead qualification happens during business hours or not at all. Deploy an AI agent that operates within the rules you set: 24/7, every step logged.",
 }
 
 export default function AgentsPage() {
@@ -14,7 +14,7 @@ export default function AgentsPage() {
       <PageHeader
         eyebrow="Service"
         title="AI Agents."
-        description="Customer inquiries pile up overnight. Lead qualification happens during business hours or not at all. An AI agent never sleeps — it qualifies, triages, and triggers workflows 24/7, every step logged."
+        description="Customer inquiries pile up overnight. Lead qualification happens during business hours or not at all. An AI agent never sleeps: it qualifies, triages, and triggers workflows 24/7, every step logged."
       />
 
       <AnimatedSection delay={0}>
