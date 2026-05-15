@@ -38,9 +38,9 @@ const services = [
   {
     num: '01',
     icon: 'consulting' as const,
-   name: 'AI Consulting — Discovery Session',
+   name: 'AI Consulting: Discovery Session',
    desc: 'Walk away with crystal-clear clarity and a roadmap you can execute tomorrow.',
-   detail: '$300. Includes AI Opportunity Audit \u2014 we identify 3+ high-impact opportunities or your money back. Written roadmap with cost estimates.',
+   detail: '$300. Includes AI Opportunity Audit - we identify 3+ high-impact opportunities or your money back. Written roadmap with cost estimates.',
    href: '/services/consulting',
    bonus: 'Money-back guarantee. If we don\u2019t find 3+ opportunities, you don\u2019t pay.',
  },
@@ -57,8 +57,8 @@ const services = [
     num: '03',
     icon: 'agents' as const,
     name: 'AI Agents',
-    desc: 'Wake up to completed work. Your agent runs 24/7 \u2014 researching, deciding, acting without you.',
-    detail: 'From $5,000. Includes 14-Day Prototype ($1,000 value) \u2014 see it working before full build.',
+    desc: 'Wake up to completed work. Your agent runs 24/7: researching, deciding, acting without you.',
+    detail: 'From $5,000. Includes 14-Day Prototype ($1,000 value): see it working before full build.',
     href: '/services/agents',
     bonus: 'You approve outcomes, not every step. Handles multi-stage workflows autonomously.',
   },
@@ -66,7 +66,7 @@ const services = [
     num: '04',
     icon: 'custom-ai' as const,
     name: 'Custom AI Systems',
-    desc: 'One problem. One system. One complete solution \u2014 built around your data, your workflow, your outcomes.',
+    desc: 'One problem. One system. One complete solution: built around your data, your workflow, your outcomes.',
     detail: 'From $5,000. Includes Architecture Blueprint ($1,500 value) + deployment + team training ($500 value). Full source ownership.',
     href: '/services/custom-ai',
     bonus: 'Total bundle value: $7,000+. You own everything. No license fees. Ever.',
@@ -78,10 +78,11 @@ function ServiceCardLeftHeavy({ s, i }: { s: typeof services[0]; i: number }) {
     <AnimatedSection delay={0.15 + i * 0.12}>
       <a href={s.href} className="block group cursor-pointer">
         <div className="grid grid-cols-[auto_1fr] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2 hover:scale-[1.01]">
-          {/* Left: big gold number with accent bar */}
+          {/* Left: icon + gold accent */}
           <div className="flex items-start gap-3">
-            <div className="font-display text-2xl md:text-3xl text-gold-600 leading-none pt-1">
-              {s.num}
+            <div className="flex flex-col items-center gap-1 pt-1">
+              <ServiceIcon name={s.icon} size={28} className="text-gold-600" />
+              <span className="font-mono text-[9px] text-navy-400 tracking-[0.12em]">{s.num}</span>
             </div>
             <div className="hidden md:block w-px h-12 bg-gold-600/30 mt-1" />
           </div>
@@ -122,11 +123,12 @@ function ServiceCardRightHeavy({ s, i }: { s: typeof services[0]; i: number }) {
               {s.bonus}
             </p>
           </div>
-          {/* Right: big gold number with accent bar */}
+          {/* Right: icon + gold accent */}
           <div className="flex items-start gap-3 order-2">
             <div className="hidden md:block w-px h-12 bg-gold-600/30 mt-1" />
-            <div className="font-display text-2xl md:text-3xl text-gold-600 leading-none pt-1">
-              {s.num}
+            <div className="flex flex-col items-center gap-1 pt-1">
+              <ServiceIcon name={s.icon} size={28} className="text-gold-600" />
+              <span className="font-mono text-[9px] text-navy-400 tracking-[0.12em]">{s.num}</span>
             </div>
           </div>
         </div>
@@ -173,7 +175,7 @@ export default function Services() {
             {/* We build more than what's listed here */}
             <AnimatedSection delay={0.15 + services.length * 0.12}>
               <p className="font-sans text-xs text-navy-400 text-center pt-2">
-                These are examples, not a catalog. We build whatever moves your business forward &mdash; big or small.
+                These are examples, not a catalog. We build whatever moves your business forward: big or small.
               </p>
             </AnimatedSection>
           </div>

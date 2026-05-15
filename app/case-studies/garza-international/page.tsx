@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import OrnamentDivider from '@/components/OrnamentDivider'
+import BeforeAfter from '@/components/BeforeAfter'
 
 export const metadata: Metadata = {
   title: 'Garza International — Case Study | SanLuis AI Solutions',
@@ -37,6 +38,32 @@ export default function Page() {
           <OrnamentDivider className="!py-8" />
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>
           <p className="sl-body mb-6">Garza International's estimators spent hours manually pulling material costs, labor rates, and historical bid data for each new construction quote. The process was error-prone, slow, and couldn't scale as the business grew.</p>
+
+          <BeforeAfter
+            title="The Difference"
+            before={{
+              label: 'Manual Process',
+              metric: 'Time Per Quote',
+              value: '6+ hours',
+              details: [
+                'Estimator manually pulls material costs from 3 supplier catalogs',
+                'Historical bid data scattered across spreadsheets',
+                'Proposal formatting takes 45 minutes per bid',
+                'Maximum 8 bids per week before burnout',
+              ],
+            }}
+            after={{
+              label: 'AI-Powered',
+              metric: 'Time Per Quote',
+              value: '2.5 hours',
+              details: [
+                'Real-time material pricing from supplier API integration',
+                'Win/loss analysis auto-applied to every quote',
+                'Formatted proposal generated in under 2 minutes',
+                'Capacity increased to 16+ bids per week',
+              ],
+            }}
+          />
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
           <p className="sl-body mb-4">A custom AI quoting engine that:</p>
           <ul className="list-diamond mb-6 space-y-2 sl-body">

@@ -4,10 +4,10 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Case Studies — SanLuis AI Solutions',
+  title: 'Case Studies | SanLuis AI Solutions',
   description: 'Real results from real deployments. Garza International, Susie\'s Jewelry Repair, and LoveFlow.',
   openGraph: {
-    title: 'Case Studies — SanLuis AI Solutions',
+    title: 'Case Studies | SanLuis AI Solutions',
     description: 'Real results from real AI deployments: Garza International (60% faster quoting), Susie\'s Jewelry Repair (3x leads), LoveFlow (40% better matches).',
     url: 'https://sanluisai-portfolio.vercel.app/case-studies',
     siteName: 'SanLuis AI Solutions',
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
 const cases = [
   { industry: 'Construction', company: 'Garza International', problem: 'Manual quoting process taking 6+ hours per bid', result: '60% faster quoting', quote: '"SanLuis AI solved the single biggest problem in our sales process. We\'re bidding faster and winning more."', slug: 'garza-international' },
   { industry: 'Retail', company: "Susie's Jewelry Repair", problem: 'Inconsistent lead capture and follow-up', result: '3x leads', quote: '"I went from losing leads to having a system that works even when I\'m not in the shop."', slug: 'susies-jewelry-repair' },
-  { industry: 'Tech', company: 'LoveFlow', problem: 'Matching algorithm underperforming on retention', result: '40% better matches', quote: '"SanLuis AI didn\'t just fix our algorithm — they gave us a competitive moat."', slug: 'loveflow' },
+{ industry: 'Tech', company: 'LoveFlow', problem: 'Matching algorithm underperforming on retention', result: '40% better matches', quote: '"SanLuis AI didn&apos;t just fix our algorithm: they gave us a competitive moat."', slug: 'loveflow' },
 ]
 
 export default function Page() {
   return (
     <>
       <PageHeader
-        eyebrow="No. 03 — The Evidence"
+        eyebrow="No. 03: The Evidence"
         title="Case Studies."
         description="Measurable outcomes from real deployments. Every engagement is time-bounded, custom-built, and results-guaranteed."
       />
@@ -61,7 +61,7 @@ export default function Page() {
 
           <AnimatedSection delay={0.2}>
           <div className="bg-bone-100 border border-navy-200 rounded p-6">
-            <p className="sl-body-sm italic">Not sure which solution fits your problem? Start with a $300 Discovery Session. We will audit your operations, identify the highest-impact opportunity, and give you a written roadmap — whether you hire us or not.</p>
+            <p className="sl-body-sm italic">Not sure which solution fits your problem? Start with a $300 Discovery Session. We will audit your operations, identify the highest-impact opportunity, and give you a written roadmap whether you hire us or not.</p>
           </div>
           </AnimatedSection>
         </div>

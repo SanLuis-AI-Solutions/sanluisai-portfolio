@@ -147,6 +147,15 @@
   }
 }
 
+/* ── Scrollbar hide (horizontal scroll sections) ── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* ── Motion reduction toggle ── */
 html.reduce-motion *,
 html.reduce-motion *::before,

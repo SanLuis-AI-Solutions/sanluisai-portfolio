@@ -44,7 +44,7 @@ export default function CTA() {
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-12">
-                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers. Whether you move forward with us or not. You&apos;ll also receive our exclusive AI Opportunity Audit — a $2,500 value included at no extra cost.
+                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers. Whether you move forward with us or not. You&apos;ll also receive our exclusive AI Opportunity Audit: a $2,500 value included at no extra cost.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>

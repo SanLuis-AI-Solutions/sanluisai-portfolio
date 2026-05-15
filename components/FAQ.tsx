@@ -9,10 +9,10 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const faqs = [
-  { q: 'What is a Discovery Session?', a: 'A 60-minute working session. We map your current operations, identify your best AI opportunity, and give you a written action plan — whether you hire us or not. $300.' },
+  { q: 'What is a Discovery Session?', a: 'A 60-minute working session. We map your current operations, identify your best AI opportunity, and give you a written action plan whether you hire us or not. $300.' },
   { q: 'How long does it take?', a: 'Most projects ship in 2-6 weeks. A workflow automation: 1-2 weeks. An AI agent system: 3-6 weeks. We set the timeline clearly during the Discovery Session before any work starts.' },
-  { q: 'What does it cost?', a: 'Discovery Session: $300. Automation starts at $1,200. AI agents start at $5,000. Full apps are scoped individually. Every project is fixed-price — you know the cost before we start.' },
-  { q: 'Will AI replace my team?', a: 'No — and that is the whole point. Every system we build handles the repetitive work so your people can focus on judgment, relationships, and strategy. AI processes the inputs. Your team owns the outcomes.' },
+  { q: 'What does it cost?', a: 'Discovery Session: $300. Automation starts at $1,200. AI agents start at $5,000. Full apps are scoped individually. Every project is fixed-price; you know the cost before we start.' },
+  { q: 'Will AI replace my team?', a: 'No. And that is the whole point. Every system we build handles the repetitive work so your people can focus on judgment, relationships, and strategy. AI processes the inputs. Your team owns the outcomes.' },
   { q: 'Who owns the code and data?', a: 'You do. Full ownership on final payment. No licensing fees. No vendor lock-in. No platform tax. Your data stays yours.' },
 ]
 

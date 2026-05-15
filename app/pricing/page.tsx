@@ -5,13 +5,13 @@ import AnimatedSection from '@/components/AnimatedSection'
 import FlameMark from '@/components/FlameMark'
 
 export const metadata: Metadata = {
-  title: 'Pricing — SanLuis AI Solutions',
+  title: 'Pricing | SanLuis AI Solutions',
   description:
-    'Get started with a $300 Discovery Session — 60-min audit with written roadmap. Custom AI builds from $5,000, fixed price, you own the code. No license fees.',
+    'Stack up to $4,000 in included value with every custom build. Start risk-free with a $300 Discovery Session backed by our money-back guarantee.',
   openGraph: {
-    title: 'Pricing — SanLuis AI Solutions',
+    title: 'Pricing | SanLuis AI Solutions',
     description:
-      'Simple, transparent pricing. $300 Discovery Session with money-back guarantee if we find fewer than 3 opportunities. Custom builds from $5,000 with full source ownership.',
+      'Every build stacks $2,000+ in bonus value and comes with a 6-month performance guarantee. Risk-free $300 Discovery Session with written roadmap.',
     url: 'https://sanluisai-portfolio.vercel.app/pricing',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -102,8 +102,8 @@ export default function PricingPage() {
     <>
       <PageHeader
         eyebrow="Pricing"
-        title="Simple pricing. No surprises."
-        description="Fixed-price engagements for every type of AI project. You know the cost before we write a single line of code."
+        title="Simple pricing, bigger outcomes."
+        description="Wake up to completed work, lower costs, and faster decisions. Fixed-price engagements you can trust, with $2,000+ in value stacked into every build."
       />
 
       <AnimatedSection delay={0}>
@@ -121,10 +121,10 @@ export default function PricingPage() {
               price="$300"
               label="Discovery Session"
               subtitle="One-time"
-              description="A focused 60-minute working session to identify your highest-impact AI opportunities and deliver a clear, actionable plan."
+              description="Know your next move with certainty. A 60-minute working session that delivers your roadmap and confirms if AI makes sense for your business. If we do not find 3 or more opportunities, you get a full refund."
               items={[
                 '60-min working session with written roadmap',
-                'AI Opportunity Audit — $2,500 value included',
+                'AI Opportunity Audit, $2,500 value included',
                 'Pricing estimate for any recommended builds',
                 "Money-back guarantee if we don't find 3+ opportunities",
               ]}
@@ -138,13 +138,13 @@ export default function PricingPage() {
               price="From $5,000"
               label="Custom Build"
               subtitle="Fixed-price per project"
-              description="A fully custom AI system or agent built to your exact specifications, deployed and documented with full source ownership."
+              description="Your business runs faster and smarter with a system built specifically for you. Full source ownership, no license fees, and $2,000 in bonuses included. If it does not pay for itself in 6 months, we fix it free."
               items={[
                 'Custom AI system or agent built to your specs',
-                'Architecture Blueprint — $1,500 value included',
+                'Architecture Blueprint, $1,500 value included',
                 'Deployment, training, and documentation',
                 '30-day post-launch support',
-                'Team training walkthrough — $500 value',
+                'Team training walkthrough, $500 value included',
                 'Full source ownership. No license fees. Ever.',
               ]}
               ctaHref="/booking"
@@ -172,7 +172,7 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Not sure where to start? Begin with a $300 Discovery Session.</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">
-            Start with a $300 Discovery Session. If we find a clear opportunity, we&apos;ll build a detailed proposal — no pressure, no commitment.
+            Start with a $300 Discovery Session. If we find a clear opportunity, we&apos;ll build a detailed proposal: no pressure, no commitment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

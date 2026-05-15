@@ -45,6 +45,34 @@ export default function ClientLogos() {
             ))}
           </div>
         </FadeIn>
+
+        {/* Additional logo placeholders */}
+        <FadeIn delay={0.25}>
+          <div className="mt-14 pt-10 border-t border-navy-200/50">
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div
+                  key={i}
+                  className="flex items-center justify-center h-10 px-6 border border-dashed border-navy-200/40 rounded opacity-40 hover:opacity-60 transition-opacity duration-300"
+                >
+                  <svg width="80" height="20" viewBox="0 0 80 20" fill="none" className="text-navy-300" aria-hidden="true">
+                    <rect x="0" y="0" width="80" height="20" rx="2" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3 2" fill="none"/>
+                    <text x="40" y="13" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Inter, sans-serif" opacity="0.5">
+                      LOGO {i}
+                    </text>
+                  </svg>
+                </div>
+              ))}
+              {/* More coming badge */}
+              <div className="flex items-center gap-2 font-sans text-[10px] text-navy-400 tracking-[0.08em] uppercase">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-gold-500" aria-hidden="true">
+                  <circle cx="6" cy="6" r="5" stroke="currentColor" strokeWidth="1" strokeDasharray="2 1" fill="none"/>
+                </svg>
+                More coming soon
+              </div>
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )

@@ -42,6 +42,31 @@ export default function SocialProof() {
           </div>
         </FadeIn>
 
+        {/* By the Numbers - moved from Hero */}
+        <FadeIn delay={0.1}>
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 mb-20 pb-12 border-b border-navy-300">
+            <div className="text-center">
+              <div className="font-display text-3xl md:text-4xl text-gold-500 font-semibold">3 wk</div>
+              <div className="font-sans text-xs text-navy-600 uppercase tracking-[0.08em] mt-1">Avg Delivery</div>
+            </div>
+            <div className="w-px h-12 bg-navy-300 hidden sm:block" />
+            <div className="text-center">
+              <div className="font-display text-3xl md:text-4xl text-gold-500 font-semibold">60%</div>
+              <div className="font-sans text-xs text-navy-600 uppercase tracking-[0.08em] mt-1">Faster Quoting</div>
+            </div>
+            <div className="w-px h-12 bg-navy-300 hidden sm:block" />
+            <div className="text-center">
+              <div className="font-display text-3xl md:text-4xl text-gold-500 font-semibold">$300</div>
+              <div className="font-sans text-xs text-navy-600 uppercase tracking-[0.08em] mt-1">Start Here</div>
+            </div>
+            <div className="w-px h-12 bg-navy-300 hidden sm:block" />
+            <div className="text-center">
+              <div className="font-display text-3xl md:text-4xl text-gold-500 font-semibold">100%</div>
+              <div className="font-sans text-xs text-navy-600 uppercase tracking-[0.08em] mt-1">You Own the Code</div>
+            </div>
+          </div>
+        </FadeIn>
+
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <FadeIn key={i} delay={0.15 + i * 0.1}>
@@ -54,7 +79,7 @@ export default function SocialProof() {
                   <div className="relative pl-6 border-l-2 border-gold-500/40 mb-4">
                     <p className="font-display text-base md:text-lg text-navy-700 italic leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
                   </div>
-                  <p className="font-sans text-xs text-navy-500">&mdash; {t.attribution}</p>
+                    <p className="font-sans text-xs text-navy-500">- {t.attribution}</p>
                 </div>
               </div>
             </FadeIn>

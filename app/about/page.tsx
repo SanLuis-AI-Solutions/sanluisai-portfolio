@@ -68,6 +68,49 @@ export default function Page() {
 
           <OrnamentDivider className="!py-8" />
 
+          {/* Team section — placeholder for future team members */}
+          <div className="mb-16">
+            <h2 className="font-display text-2xl text-navy-800 mb-8 text-center">Our Team</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {[
+                { name: 'Daniel San Luis', role: 'Founder & CEO', placeholder: true },
+                { name: null, role: null, placeholder: true },
+                { name: null, role: null, placeholder: true },
+              ].map((member, i) => (
+                <div key={i} className="flex flex-col items-center text-center bg-white border border-navy-200 rounded p-8 transition-all duration-220 hover:border-gold-600/40 hover:shadow-2">
+                  <div className="relative w-24 h-24 rounded-full overflow-hidden bg-navy-50 border-2 border-navy-100 mb-4 flex items-center justify-center">
+                    {member.name ? (
+                      <Image
+                        src="/daniel-headshot.jpg"
+                        alt="Daniel San Luis"
+                        fill
+                        className="object-cover"
+                        sizes="96px"
+                      />
+                    ) : (
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-navy-300" aria-hidden="true">
+                        <circle cx="20" cy="14" r="8" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                        <path d="M4 38c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                      </svg>
+                    )}
+                  </div>
+                  {member.name ? (
+                    <>
+                      <h3 className="font-display text-base text-navy-800 mb-1">{member.name}</h3>
+                      <p className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600">{member.role}</p>
+                    </>
+                  ) : (
+                    <>
+                      <div className="h-4 w-24 bg-navy-100 rounded mb-2" />
+                      <div className="h-3 w-16 bg-navy-50 rounded" />
+                      <p className="font-sans text-[10px] text-navy-300 mt-4 tracking-[0.08em] uppercase">Photo coming soon</p>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Our Approach section */}
           <h2 className="font-display text-2xl text-navy-800 mb-6">Our Approach</h2>
           <div className="space-y-6 mb-12">
