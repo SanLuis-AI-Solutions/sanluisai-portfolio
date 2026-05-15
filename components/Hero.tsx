@@ -40,7 +40,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(3rem,7vw,5.5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] mb-6">
-                Custom AI Solutions.
+                Your business, running on AI.
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
