@@ -83,9 +83,11 @@ export default function CaseStudies() {
   }
 
   return (
-    <section id="case-studies" className="py-32 md:py-40 bg-navy-900 relative overflow-hidden">
+    <section id="case-studies" className="py-32 md:py-40 bg-navy-800 relative overflow-hidden">
       {/* Subtle gold glow — top-right */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-[radial-gradient(ellipse_at_top_right,rgba(217,164,52,0.04),transparent_60%)] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-[radial-gradient(ellipse_at_top_right,rgba(217,164,52,0.06),transparent_60%)] pointer-events-none" />
+      {/* Deep navy-to-current gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 via-transparent to-navy-900/20 pointer-events-none" />
       <div className="relative">
         {/* Header — full-width constrained */}
         <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24 mb-16">
@@ -129,7 +131,7 @@ export default function CaseStudies() {
         {/* Horizontal scroll container with peek */}
         <div className="relative">
           {/* Gradient fade on right edge — peek indicator */}
-          <div className="hidden lg:block absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-navy-900 to-transparent z-10 pointer-events-none" />
+          <div className="hidden lg:block absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-navy-800 to-transparent z-10 pointer-events-none" />
 
           <div
             ref={scrollRef}
@@ -144,14 +146,16 @@ export default function CaseStudies() {
               <FadeIn key={c.slug} delay={0.2 + i * 0.1}>
                 <a
                   href={`/case-studies/${c.slug}`}
-                  className="block bg-bone-50 border border-bone-200 hover:border-gold-500 rounded overflow-hidden transition-all duration-220 hover:shadow-3 hover:scale-[1.01] group cursor-pointer h-full flex flex-col min-w-[340px] md:min-w-[400px] lg:min-w-[420px] snap-start"
+                  className="block bg-bone-50 border border-bone-200/60 hover:border-gold-500/50 rounded overflow-hidden transition-all duration-300 hover:shadow-4 hover:scale-[1.02] group cursor-pointer h-full flex flex-col min-w-[340px] md:min-w-[400px] lg:min-w-[420px] snap-start relative"
                 >
-                  <div className="relative w-full h-48 bg-navy-100 overflow-hidden border-b border-navy-100">
+                  {/* Gold accent bar — permanent subtle line, warms on hover */}
+                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-gold-700/50 via-gold-500 to-gold-700/50 group-hover:from-gold-600 group-hover:via-gold-400 group-hover:to-gold-600 transition-all duration-300 z-10" />
+                  <div className="relative w-full h-48 bg-navy-100 overflow-hidden border-b border-navy-100/80">
                     <Image
                       src={c.img}
                       alt={`${c.company} dashboard: AI implementation result`}
                       fill
-                      className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                      className="object-cover object-center group-hover:scale-[1.05] transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 420px"
                     />
                   </div>
@@ -162,8 +166,8 @@ export default function CaseStudies() {
                       <div className="font-sans text-xs text-navy-400 tracking-[0.08em] uppercase mb-2">Problem</div>
                       <p className="font-sans text-sm text-fg2 leading-relaxed mb-6">{c.problem}</p>
                     </div>
-                    <div className="pt-6 border-t border-navy-100">
-                      <div className="font-sans text-xs text-navy-400 tracking-[0.08em] uppercase mb-2">Result</div>
+                    <div className="pt-6 border-t border-gold-600/10">
+                      <div className="font-sans text-xs text-gold-600 tracking-[0.08em] uppercase mb-2">Result</div>
                       <div className="flex items-baseline gap-2">
                         <StatCounter value={c.stat} />
                         <span className="font-sans text-sm text-fg2">{c.result}</span>
