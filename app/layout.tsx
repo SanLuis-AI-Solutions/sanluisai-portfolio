@@ -62,6 +62,52 @@ const ldJson = {
       serviceType: 'AI Development',
       offers: { '@type': 'Offer', price: '15000', priceCurrency: 'USD', priceRange: '15000-50000' },
     },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://sanluisai.com/#faq',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is a Discovery Session?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A 60-minute working session. We map your current operations, identify your best AI opportunity, and give you a written action plan whether you hire us or not. $300.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does it take?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Most projects ship in 2-6 weeks. A workflow automation: 1-2 weeks. An AI agent system: 3-6 weeks. We set the timeline clearly during the Discovery Session before any work starts.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What does it cost?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Discovery Session: $300. Automation starts at $1,200. AI agents start at $5,000. Full apps are scoped individually. Every project is fixed-price; you know the cost before we start.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Will AI replace my team?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'No. Every system we build handles the repetitive work so your people can focus on judgment, relationships, and strategy. AI processes the inputs. Your team owns the outcomes.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Who owns the code and data?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'You do. Full ownership on final payment. No licensing fees. No vendor lock-in. Your data stays yours.',
+          },
+        },
+      ],
+    },
   ],
 }
 
