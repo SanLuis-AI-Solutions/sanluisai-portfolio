@@ -36,21 +36,22 @@ export default function CTA() {
             <AnimatedSection delay={0}>
               <div className="flex items-center gap-2 mb-8">
                 <FlameMark size="sm" className="opacity-80" />
-                <span className="sl-eyebrow text-bone-300">Start Here</span>
+                <span className="sl-eyebrow text-bone-300">Ready?</span>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
-              <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-8">
-                What if your team could reclaim 20 hours every week?
-                <br />
-                <span className="text-gold-600">$300. 60 minutes. The exact roadmap to get there.</span>
+              <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-4">
+                Book your Discovery Session.
               </h2>
+              <p className="font-display text-[clamp(1.4rem,3vw,2rem)] text-gold-600 font-medium leading-[1.15] tracking-[-0.015em]">
+                $300. 60 minutes. The exact roadmap to get there.
+              </p>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
-              <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-12">
-                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers.
+              <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-10">
+                60-minute working session. Written roadmap with specific numbers. $300, refundable if we don&apos;t find 3 opportunities.
               </p>
-              <div className="mb-12 space-y-2">
+              <div className="border border-gold-600/25 rounded p-5 mb-10">
                 <p className="font-sans text-sm text-gold-500">
                   <span className="text-bone-50 font-semibold">+ Free:</span> AI Automation Audit. 5-question self-assessment. We identify your top 3 AI opportunities and what each one is worth to your team. Delivered as a personalized PDF.
                 </p>
@@ -64,7 +65,7 @@ export default function CTA() {
                 Book a Discovery Session. $300. 60 min.
               </a>
               <p className="font-sans text-xs text-gold-600/60 mt-4 tracking-[0.06em] uppercase">
-                2 slots remaining this quarter
+                Booking through Q3 &middot; 3 of 4 build slots taken
               </p>
             </AnimatedSection>
           </div>

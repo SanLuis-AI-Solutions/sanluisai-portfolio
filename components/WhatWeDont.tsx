@@ -30,7 +30,7 @@ const donts = [
 export default function WhatWeDont() {
   return (
     <section id="what-we-dont" className="relative overflow-hidden bg-navy-900 py-32 md:py-40">
-      <div className="absolute bottom-0 left-0 w-1/2 h-1/3 bg-[radial-gradient(ellipse_at_bottom_left,rgba(217,164,52,0.03),transparent_60%)] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-1/2 h-1/3 bg-[radial-gradient(ellipse_at_bottom_left,rgba(217,164,52,0.05),transparent_60%)] pointer-events-none" />
       <div className="relative max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <div className="max-w-3xl mx-auto text-center mb-20">
           <FadeIn delay={0}>
@@ -45,14 +45,14 @@ export default function WhatWeDont() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="font-sans text-base md:text-lg text-bone-300/65 leading-relaxed max-w-[52ch] mx-auto">
-              Four things we will never do. If you find an agency that agrees to all four, work with them too.
+              If another agency commits to all four, we'll happily refer you to them.
             </p>
           </FadeIn>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-gold-600/15 rounded overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold-600/30 rounded overflow-hidden">
           {donts.map((item, i) => (
             <FadeIn key={i} delay={0.25 + i * 0.1}>
-              <div className="bg-navy-950/60 p-10 md:p-12 h-full flex flex-col">
+              <div className="bg-navy-800 p-10 md:p-12 h-full flex flex-col">
                 <h3 className="font-display text-xl md:text-2xl text-gold-500 mb-4">{item.title}</h3>
                 <p className="font-sans text-sm text-bone-300/60 leading-relaxed">{item.desc}</p>
               </div>

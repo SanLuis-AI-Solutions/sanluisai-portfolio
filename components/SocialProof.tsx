@@ -21,13 +21,7 @@ const testimonials = [
     company: 'Susie\u2019s Jewelry Repair',
     role: 'Retail',
     quote: 'I had a website up and booking clients in two weeks. The AI follow-up alone recovered three leads my old system had lost.',
-    attribution: 'Susie Castellano, Owner, Susie&rsquo;s Jewelry Repair',
-  },
-  {
-    company: 'LoveFlow',
-    role: 'Consumer App',
-    quote: 'The matching engine was the piece we couldn\u2019t build ourselves. Six weeks later, engagement was up 40%.',
-    attribution: 'Founder, LoveFlow',
+    attribution: 'Susie Castellano, Owner, Susie\u2019s Jewelry Repair',
   },
 ]
 

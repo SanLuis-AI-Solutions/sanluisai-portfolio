@@ -13,9 +13,10 @@ import CTA from '@/components/CTA'
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="pb-[72px] md:pb-0">
       <Hero />
       <Problem />
+      <ROICalculator />
       <CaseStudies />
       <SceneDivider />
       <WhatWeDont />
@@ -23,7 +24,6 @@ export default function HomePage() {
       <OrnamentDivider />
       <SocialProof />
       <Process />
-      <ROICalculator />
       <SceneDivider />
       <FAQ />
       <CTA />

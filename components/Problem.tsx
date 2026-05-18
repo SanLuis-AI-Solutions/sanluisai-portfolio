@@ -102,8 +102,8 @@ export default function Problem() {
           <FadeIn delay={0.28}>
             <div className="relative max-w-2xl bg-white border border-navy-200 rounded p-8 md:p-10 mt-12 mb-16">
               <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/40" />
-              <div className="flex gap-5">
-                <div className="flex flex-col items-center gap-2 pt-1 flex-shrink-0">
+              <div className="flex flex-col md:flex-row gap-5">
+                <div className="flex flex-row md:flex-col items-center gap-3 md:gap-2 flex-shrink-0">
                   <Image
                     src="/daniel-headshot.jpg"
                     alt="Daniel San Luis"

@@ -69,7 +69,7 @@ export default function ROICalculator() {
   const monthlyHours = Math.round(hoursPerWeek * 4.33 * numEmployees)
   const monthlyCost = monthlyHours * hourlyRate
   const annualSavings = monthlyCost * 12
-  const breakEvenWeeks = hoursPerWeek > 0 ? Math.round(300 / (hoursPerWeek * numEmployees * hourlyRate) * 4.33) : 0
+  const breakEvenWeeks = hoursPerWeek > 0 ? Math.round(300 / (hoursPerWeek * numEmployees * hourlyRate) * 10) / 10 : 0
 
   return (
     <section id="roi-calculator" className="py-32 md:py-40 bg-bgCanvas">
@@ -131,11 +131,11 @@ export default function ROICalculator() {
 
                 {hoursPerWeek > 0 && (
                   <div className="mb-10">
-                    <div className="font-sans text-xs text-fg3 mb-2">Break-even on a $300 Discovery Session</div>
+                    <div className="font-sans text-xs text-fg3 mb-2">Break-even on the Discovery Session</div>
                     <div className="font-mono text-lg text-navy-800 font-medium">
-                      {breakEvenWeeks <= 1 ? 'Less than a week' : `~${breakEvenWeeks} weeks`}
+                      {breakEvenWeeks < 1 ? 'Less than a week' : breakEvenWeeks <= 1 ? '1 week' : `${Math.round(breakEvenWeeks)} weeks`}
                     </div>
-                    <div className="font-sans text-xs text-fg3 mt-1">The $300 session pays for itself before the first month ends.</div>
+                    <div className="font-sans text-xs text-fg3 mt-1">Pays for itself before the first month ends.</div>
                   </div>
                 )}
 
@@ -143,7 +143,7 @@ export default function ROICalculator() {
                   href="/booking"
                   className="inline-flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-navy-800 text-bone-50 hover:bg-navy-700 transition-all duration-220 rounded"
                 >
-                  Book a Discovery Session. $300.
+                  Book a Discovery Session.
                 </a>
                 <div className="flex items-center justify-center gap-4 mt-4">
                   <p className="font-sans text-[10px] text-fg4">Money-back guarantee: if we find fewer than 3 opportunities, you don't pay.</p>

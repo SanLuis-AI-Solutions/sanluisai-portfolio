@@ -71,7 +71,7 @@ export default function Footer() {
               <FlameMark size="sm" />
               <span className="font-display text-2xl font-bold text-white">SanLuis AI</span>
             </div>
-            <p className="font-sans text-sm text-navy-300 leading-relaxed">Custom AI solutions for small and mid-size businesses. No-code development. Bilingual EN/ES. Houston.</p>
+            <p className="font-sans text-sm text-navy-300 leading-relaxed">Custom AI for small and mid-size businesses. Built in Houston. Bilingual EN/ES.</p>
           </div>
           <div>
             <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Services</h4>

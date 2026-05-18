@@ -37,15 +37,6 @@ function GoldThread({ delay = 0 }: { delay?: number }) {
 const services = [
   {
     num: '01',
-    icon: 'consulting' as const,
-   name: 'AI Consulting: Discovery Session',
-   desc: 'Know exactly where to start. One focused session. We map your operations, identify your highest-leverage AI opportunity, and give you a clear path forward.',
-   detail: '$300. Includes written roadmap with cost estimates. Money-back guarantee: if we find fewer than 3 opportunities, you don\'t pay.',
-   href: '/services/consulting',
-   bonus: 'No jargon. No upsell. Just a clear path forward and your money back if we don\'t deliver.',
- },
-  {
-    num: '02',
     icon: 'automation' as const,
     name: 'AI Automation',
     desc: 'Stop doing it manually. Map your process once. We build the automation that runs it every time, without fail.',
@@ -54,16 +45,16 @@ const services = [
     bonus: 'If it doesn\'t pay for itself in 6 months, we fix it free.',
   },
   {
-    num: '03',
+    num: '02',
     icon: 'agents' as const,
     name: 'AI Agents',
     desc: 'Your 24/7 AI team. Agents that intake, qualify, research, and route while your team focuses on decisions, not data entry.',
     detail: 'From $5,000. Includes 14-Day Prototype: see it working with your data before we build the full system.',
     href: '/services/agents',
-    bonus: 'You approve outcomes, not every step. No license fees. Ever.',
+    bonus: 'You approve outcomes, not every step. Full ownership. No license fees.',
   },
   {
-    num: '04',
+    num: '03',
     icon: 'custom-ai' as const,
     name: 'Custom AI Systems',
     desc: 'An app built around how your business actually works. Designed, built, and deployed in weeks. No agency markup. No unnecessary complexity.',
@@ -92,10 +83,10 @@ function ServiceCardLeftHeavy({ s, i }: { s: typeof services[0]; i: number }) {
               {s.name}
             </h3>
             <p className="sl-body-sm mb-3">{s.desc}</p>
-            <p className="text-xs text-fg4 leading-relaxed hidden md:block">
+            <p className="text-xs text-fg4 leading-relaxed">
               {s.detail}
             </p>
-            <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2 hidden md:block">
+            <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2">
               {s.bonus}
             </p>
           </div>
@@ -116,10 +107,10 @@ function ServiceCardRightHeavy({ s, i }: { s: typeof services[0]; i: number }) {
               {s.name}
             </h3>
             <p className="sl-body-sm mb-3">{s.desc}</p>
-            <p className="text-xs text-fg4 leading-relaxed hidden md:block">
+            <p className="text-xs text-fg4 leading-relaxed">
               {s.detail}
             </p>
-            <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2 hidden md:block">
+            <p className="text-xs text-gold-600 font-medium leading-relaxed mt-2">
               {s.bonus}
             </p>
           </div>
@@ -174,15 +165,8 @@ export default function Services() {
             )}
             {/* We build more than what's listed here */}
             <AnimatedSection delay={0.15 + services.length * 0.12}>
-              <p className="font-sans text-xs text-navy-400 text-center pt-2">
-                These are examples, not a catalog. We build whatever moves your business forward: big or small.
-              </p>
-            </AnimatedSection>
-            <AnimatedSection delay={0.15 + (services.length + 1) * 0.12}>
-              <p className="text-center pt-2">
-                <a href="/booking" className="font-sans text-xs font-medium text-gold-600 hover:text-gold-700 transition-colors duration-200">
-                  Not sure which one fits? Start with a Discovery Session. $300. &rarr;
-                </a>
+              <p className="font-sans text-xs text-navy-400 text-center pt-4">
+                Not ready to scope a full build? <a href="/booking" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">Start with a $300 Discovery Session</a>.
               </p>
             </AnimatedSection>
           </div>

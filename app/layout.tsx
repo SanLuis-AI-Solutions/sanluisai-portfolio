@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import StickyCTA from '@/components/StickyCTA'
 import ClientLayout from './ClientLayout'
 import './globals.css'
 import './print.css'
@@ -57,7 +58,7 @@ const ldJson = {
       '@type': 'Service',
       '@id': 'https://sanluisai.com/#build',
       name: 'Custom AI Build',
-      description: 'End-to-end development of custom AI systems — agents, automations, and applications tailored to your business.',
+      description: 'End-to-end development of custom AI systems: agents, automations, and applications tailored to your business.',
       provider: { '@id': 'https://sanluisai.com/#organization' },
       serviceType: 'AI Development',
       offers: { '@type': 'Offer', price: '15000', priceCurrency: 'USD', priceRange: '15000-50000' },
@@ -154,7 +155,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" type="image/svg+xml" href="/assets/flame-mark.svg" />
         <link rel="alternate icon" href="/favicon.ico" />
-        <meta name="build-version" content="v1.0.0-20260506-1" />
+        <meta name="build-version" content="v1.0.0-20260518-1" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7FHSSCP8" />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BE7FHSSCP8');` }} />
         <script
@@ -169,15 +170,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </ClientLayout>
 
-        {/* Sticky mobile CTA */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-          <a
-            href="/booking"
-            className="flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-gold-500 text-navy-900 hover:bg-gold-400 transition-colors duration-200"
-          >
-            Book a Discovery Session → $300
-          </a>
-        </div>
+        <StickyCTA />
       </body>
     </html>
   )

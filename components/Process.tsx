@@ -10,7 +10,7 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const steps = [
-  { num: '1', title: 'Discover', desc: 'We pick the one process eating the most time or money. Map it completely. Find exactly where AI changes the math.', time: '60 min' },
+  { num: '1', title: 'Discover', desc: 'We pick the one process eating the most time or money. Map it completely. Find exactly which hours we can give back to your team.', time: '60 min' },
   { num: '2', title: 'Build', desc: 'We design a custom AI system for that specific process. No templates. No bloat. You own the code, not a subscription.', time: '2-4 weeks' },
   { num: '3', title: 'Ship', desc: 'Installed into your real workflow. Your team trained. Your baseline measured. You see the difference immediately.', time: 'Shipped' },
   { num: '4', title: 'Maintain', desc: 'Monthly check-ins. Priority support. We evolve the system as your business does. Built to grow with you, not sit on the shelf.', time: 'Ongoing' },
@@ -44,7 +44,7 @@ export default function Process() {
           </div>
         </FadeIn>
         <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Discover. Build. Ship. Maintain.</h2></FadeIn>
-        <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From &quot;what&apos;s wasting my money&quot; to &quot;it&apos;s running itself&quot;: in weeks, not quarters.</p></FadeIn>
+        <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From &quot;what&apos;s wasting my money&quot; to &quot;my team&apos;s running it cleanly&quot;: in weeks, not quarters.</p></FadeIn>
 
         {/* Mobile: stacked cards */}
         <div className="flex md:hidden flex-col gap-3">
