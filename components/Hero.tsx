@@ -42,7 +42,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(3rem,7vw,5.5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] mb-6">
-                Your business, running on AI.
+                Reclaim 20 hours a week with custom AI.
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
@@ -56,9 +56,9 @@ export default function Hero() {
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
-              <div className="flex flex-col sm:flex-row gap-4 mb-16">
+              <div className="flex flex-col gap-4 mb-16">
                 <a href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">Book a Discovery Session. $300.</a>
-                <a href="/assessment" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">AI Readiness Assessment.</a>
+                <a href="/assessment" className="font-sans text-sm text-bone-300/50 hover:text-gold-500 transition-colors duration-200">Not sure where to start? Take the free 5-question AI Automation Assessment.</a>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.6}>

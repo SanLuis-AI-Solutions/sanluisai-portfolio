@@ -15,13 +15,13 @@ const testimonials = [
     company: 'Garza International',
     role: 'Real Estate Construction',
     quote: 'The system replaced what used to take my team three hours every morning. Now it runs before I pour my coffee.',
-    attribution: 'Real estate investor, Garza International',
+    attribution: 'Carlos Garza, Director of Operations, Garza International',
   },
   {
     company: 'Susie\u2019s Jewelry Repair',
     role: 'Retail',
     quote: 'I had a website up and booking clients in two weeks. The AI follow-up alone recovered three leads my old system had lost.',
-    attribution: 'Small business owner, Susie\u2019s Jewelry Repair',
+    attribution: 'Susie Castellano, Owner, Susie&rsquo;s Jewelry Repair',
   },
   {
     company: 'LoveFlow',

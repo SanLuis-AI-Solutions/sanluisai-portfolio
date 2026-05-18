@@ -29,8 +29,8 @@ const problemSectors = [
   },
   {
     name: 'Professional Services',
-    desc: '60–80% of your onboarding overhead is manual. Two-thirds of corporate clients already expect you to use AI.',
-    stat: '60–80%',
+    desc: '60-80% of your onboarding overhead is manual. Two-thirds of corporate clients already expect you to use AI.',
+    stat: '60-80%',
     statLabel: 'manual overhead',
     hero: true,
   },
