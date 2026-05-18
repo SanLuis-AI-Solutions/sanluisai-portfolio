@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <motion.section style={{ backgroundColor: bgColor }} className="relative min-h-[100dvh] flex items-center overflow-hidden">
       <GoldThread />
-      {/* Background image — parallax */}
+      {/* Background image - parallax */}
       <motion.div className="absolute inset-0 opacity-[0.07]" style={{ y: bgY, scale: imageScale }}>
         <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
       </motion.div>
@@ -47,17 +47,17 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg md:text-xl font-light text-bone-300/70 leading-relaxed max-w-[52ch] mb-3">
-                You&apos;ve been sold AI that was supposed to save time. Most of it doesn&apos;t. What we build targets one specific process — so your team actually reclaims those hours.
+                You&apos;ve been sold AI that was supposed to save time. Most of it doesn&apos;t. What we build targets one specific process, so your team actually reclaims those hours.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <p className="font-display text-lg md:text-xl text-gold-500 italic font-medium tracking-[-0.01em] mb-10">
-                No-code AI for real problems. Built for Houston.
+                Custom AI for real problems. Shipped in weeks. Built for Houston.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                <a href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">Book a Discovery Session — $300</a>
+                <a href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">Book a Discovery Session. $300.</a>
                 <a href="/assessment" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">AI Readiness Assessment.</a>
               </div>
             </AnimatedSection>

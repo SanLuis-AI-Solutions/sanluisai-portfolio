@@ -52,12 +52,8 @@ export default function CTA() {
               </p>
               <div className="mb-12 space-y-2">
                 <p className="font-sans text-sm text-gold-500">
-                  <span className="text-bone-50 font-semibold">+ Free:</span> AI Opportunity Audit ($2,500 value) &mdash; we identify 3+ high-impact opportunities or you don&apos;t pay.
+                  <span className="text-bone-50 font-semibold">+ Free:</span> AI Automation Audit. 5-question self-assessment. We identify your top 3 AI opportunities and what each one is worth to your team. Delivered as a personalized PDF.
                 </p>
-                <p className="font-sans text-sm text-gold-500">
-                  <span className="text-bone-50 font-semibold">+ Free:</span> Prompt Engineering Playbook ($1,000 value) &mdash; your team can start using AI effectively tomorrow.
-                </p>
-                <p className="font-sans text-xs text-navy-500 mt-2">Total package value: $3,800. Your cost: $300.</p>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>
@@ -65,7 +61,7 @@ export default function CTA() {
                 href="/booking"
                 className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow transition-all duration-220 rounded"
               >
-                Reserve Your Discovery Session.
+                Book a Discovery Session. $300. 60 min.
               </a>
             </AnimatedSection>
           </div>
