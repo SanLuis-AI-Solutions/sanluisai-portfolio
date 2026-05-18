@@ -24,7 +24,7 @@ const problemSectors = [
   },
   {
     name: 'Real Estate',
-    desc: 'Every hour you wait to respond, your conversion odds drop 60×. AI users respond in 28 seconds; you\'re averaging 42 minutes.',
+    desc: 'Every hour you wait to respond, your conversion odds drop 60x. AI users respond in 28 seconds; you\'re averaging 42 minutes.',
     hero: false,
   },
   {
@@ -95,20 +95,44 @@ export default function Problem() {
             </div>
           </FadeIn>
           <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Your team is burning hours on work AI could do in seconds.</h2></FadeIn>
-          <FadeIn delay={0.2}><p className="sl-lede mb-16 max-w-[56ch]">You don&apos;t need to understand how AI works. You need to know what it can actually save you: in dollars, hours, and missed opportunities.</p></FadeIn>
+          <FadeIn delay={0.2}><p className="sl-lede max-w-[56ch]">You don&apos;t need to understand how AI works. You need to know what it can actually save you: in dollars, hours, and missed opportunities.</p></FadeIn>
+
+          {/* Founder POV block — humanizes the problem before industry specifics */}
+          <FadeIn delay={0.28}>
+            <div className="relative max-w-2xl bg-white border border-navy-200 rounded p-8 md:p-10 mt-12 mb-16">
+              <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/40" />
+              <div className="flex gap-5">
+                <div className="hidden sm:flex flex-col items-center gap-2 pt-1">
+                  <div className="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-bone-50 font-display text-lg font-semibold">D</div>
+                </div>
+                <div>
+                  <p className="font-display text-base md:text-lg text-navy-800 leading-relaxed mb-4">
+                    I built SanLuis AI because I watched good operators lose hours to work a machine could finish in minutes. Not because they didn&apos;t try. Because the solutions they found were built for enterprise teams and six-figure budgets.
+                  </p>
+                  <p className="font-display text-base md:text-lg text-navy-800 leading-relaxed mb-4">
+                    We build for the people who actually run the business. One problem. One fixed price. You own everything. No subscriptions, no sales team, no jargon.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase">Daniel San Luis</span>
+                    <span className="font-sans text-[10px] text-navy-400">Founder, SanLuis AI Solutions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
         </div>
 
         {/* Industry grid — hero cards in column 1, compact cards fill columns 2-3 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-navy-200 rounded overflow-hidden">
           {/* Row 1: Manufacturing (hero) | Healthcare (compact) | Real Estate (compact) */}
-          <HeroCard item={problemSectors[0]} delay={0.2} />
-          <CompactCard item={problemSectors[1]} delay={0.28} index={1} />
-          <CompactCard item={problemSectors[2]} delay={0.36} index={2} />
+          <HeroCard item={problemSectors[0]} delay={0.35} />
+          <CompactCard item={problemSectors[1]} delay={0.43} index={1} />
+          <CompactCard item={problemSectors[2]} delay={0.51} index={2} />
 
           {/* Row 2: Professional Services (hero) | Logistics (compact) | Retail (compact) */}
-          <HeroCard item={problemSectors[3]} delay={0.44} />
-          <CompactCard item={problemSectors[4]} delay={0.52} index={4} />
-          <CompactCard item={problemSectors[5]} delay={0.6} index={5} />
+          <HeroCard item={problemSectors[3]} delay={0.59} />
+          <CompactCard item={problemSectors[4]} delay={0.67} index={4} />
+          <CompactCard item={problemSectors[5]} delay={0.75} index={5} />
         </div>
       </div>
     </section>
