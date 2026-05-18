@@ -145,7 +145,10 @@ export default function ROICalculator() {
                 >
                   Book a Discovery Session. $300.
                 </a>
-                <p className="font-sans text-[10px] text-fg4 text-center mt-4">Money-back guarantee: if we find fewer than 3 opportunities, you don't pay.</p>
+                <div className="flex items-center justify-center gap-4 mt-4">
+                  <p className="font-sans text-[10px] text-fg4">Money-back guarantee: if we find fewer than 3 opportunities, you don't pay.</p>
+                  <span className="font-sans text-[10px] text-gold-600 font-semibold uppercase tracking-[0.06em]">2 slots left</span>
+                </div>
               </div>
             </FadeIn>
           </div>

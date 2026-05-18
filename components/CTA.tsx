@@ -63,6 +63,9 @@ export default function CTA() {
               >
                 Book a Discovery Session. $300. 60 min.
               </a>
+              <p className="font-sans text-xs text-gold-600/60 mt-4 tracking-[0.06em] uppercase">
+                2 slots remaining this quarter
+              </p>
             </AnimatedSection>
           </div>
 
