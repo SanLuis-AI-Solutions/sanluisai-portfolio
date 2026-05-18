@@ -4,13 +4,10 @@ import { useState, useEffect } from 'react'
 
 const links = [
   { label: 'Services', href: '/services' },
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'Case Studies', href: '/case-studies' },
+  { label: 'Pricing', href: '/pricing' },
   { label: 'FAQ', href: '/faq' },
-  { label: 'Assessment', href: '/assessment' },
   { label: 'About', href: '/about' },
-  { label: 'Blog', href: '/blog' },
 ]
 
 export default function Nav() {
@@ -45,7 +42,7 @@ export default function Nav() {
             className="h-10 md:h-12 w-auto"
           />
         </a>
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-8">
           {links.map(l => (
             <a key={l.label} href={l.href} className={`font-sans text-sm py-4 transition-colors duration-300 ${scrolled ? 'text-fg2 hover:text-navy-800' : 'text-bone-300/80 hover:text-bone-50'}`}>{l.label}</a>
           ))}

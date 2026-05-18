@@ -1,6 +1,7 @@
 'use client'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import Image from 'next/image'
 import FlameMark from '@/components/FlameMark'
 
 function FadeIn({ children, delay = 0, className }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -103,7 +104,13 @@ export default function Problem() {
               <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/40" />
               <div className="flex gap-5">
                 <div className="hidden sm:flex flex-col items-center gap-2 pt-1">
-                  <div className="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-bone-50 font-display text-lg font-semibold">D</div>
+                  <Image
+                    src="/daniel-headshot.jpg"
+                    alt="Daniel San Luis"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-display text-base md:text-lg text-navy-800 leading-relaxed mb-4">

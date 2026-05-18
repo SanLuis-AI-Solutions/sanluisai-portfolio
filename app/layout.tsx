@@ -106,6 +106,30 @@ const ldJson = {
             text: 'You do. Full ownership on final payment. No licensing fees. No vendor lock-in. Your data stays yours.',
           },
         },
+        {
+          '@type': 'Question',
+          name: 'What if my team won\'t use the system?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We design systems around how your team already works, not the other way around. No new login to learn. No new process to memorize. If it creates more work instead of less, we fix it.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What tools do you integrate with?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'CRM, email, calendars, spreadsheets, databases, Slack, QuickBooks, property management software, inventory systems. If it has an API or exports data, we can connect to it.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What\'s required from me during the build?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'One hour for the Discovery Session to map your process. One hour to review and approve the prototype. After that, your job is to use the system and tell us what to improve.',
+          },
+        },
       ],
     },
   ],

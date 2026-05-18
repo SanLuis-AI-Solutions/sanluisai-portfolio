@@ -178,6 +178,13 @@ export default function Services() {
                 These are examples, not a catalog. We build whatever moves your business forward: big or small.
               </p>
             </AnimatedSection>
+            <AnimatedSection delay={0.15 + (services.length + 1) * 0.12}>
+              <p className="text-center pt-2">
+                <a href="/booking" className="font-sans text-xs font-medium text-gold-600 hover:text-gold-700 transition-colors duration-200">
+                  Not sure which one fits? Start with a Discovery Session. $300. &rarr;
+                </a>
+              </p>
+            </AnimatedSection>
           </div>
         </div>
       </div>

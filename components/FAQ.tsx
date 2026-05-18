@@ -14,6 +14,9 @@ const faqs = [
   { q: 'What does it cost?', a: 'Discovery Session: $300. Automation starts at $1,200. AI agents start at $5,000. Full apps are scoped individually. Every project is fixed-price; you know the cost before we start.' },
   { q: 'Will AI replace my team?', a: 'No. And that is the whole point. Every system we build handles the repetitive work so your people can focus on judgment, relationships, and strategy. AI processes the inputs. Your team owns the outcomes.' },
   { q: 'Who owns the code and data?', a: 'You do. Full ownership on final payment. No licensing fees. No vendor lock-in. No platform tax. Your data stays yours.' },
+  { q: 'What if my team won\'t use it?', a: 'We design systems around how your team already works, not the other way around. No new login to learn. No new process to memorize. If it creates more work instead of less, we fix it.' },
+  { q: 'What tools do you integrate with?', a: 'CRM, email, calendars, spreadsheets, databases, Slack, QuickBooks, property management software, inventory systems. If it has an API or exports data, we can connect to it.' },
+  { q: 'What\'s required from me during the build?', a: 'One hour for the Discovery Session to map your process. One hour to review and approve the prototype. After that, your job is to use the system and tell us what to improve.' },
 ]
 
 export default function FAQ() {
