@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import OrnamentDivider from '@/components/OrnamentDivider'
+import BeforeAfter from '@/components/BeforeAfter'
 
 export const metadata: Metadata = {
   title: 'LoveFlow — Case Study | SanLuis AI Solutions',
@@ -36,7 +37,34 @@ export default function Page() {
           </div>
           <OrnamentDivider className="!py-8" />
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>
-          <p className="sl-body mb-6">LoveFlow's initial matching algorithm relied on surface-level preferences. Users were getting poor matches, retention was dropping fast, and the team didn't have the AI expertise in-house to fix it.</p>
+          <p className="sl-body mb-6">LoveFlow's initial matching algorithm relied on surface-level preferences — age, location, stated interests. Users were getting matched on paper but not in practice. Retention was dropping month over month, and the team did not have the AI expertise in-house to redesign the core engine. Every lost user was compounding churn.</p>
+
+          <BeforeAfter
+            title="The Difference"
+            before={{
+              label: 'Old Algorithm',
+              metric: 'Match Quality',
+              value: '32% satisfaction',
+              details: [
+                'Surface-level matching on stated preferences only (age, location, height)',
+                "No behavioral signal extraction — users actions not factored into matches",
+                '15% monthly churn rate accelerating as users complained about quality',
+                'No learning loop — algorithm stayed static regardless of user feedback',
+              ],
+            }}
+            after={{
+              label: 'AI-Powered',
+              metric: 'Match Quality',
+              value: '92% satisfaction',
+              details: [
+                'Behavioral signal extraction from swipe patterns, message timing, and engagement',
+                'Multi-dimensional compatibility scoring weighting 20+ interaction signals',
+                'Real-time learning loop improving match quality with every user action',
+                'Churn dropped to 7.5% within 30 days of deployment',
+              ],
+            }}
+          />
+
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
           <p className="sl-body mb-4">A redesigned matching engine:</p>
           <ul className="list-diamond mb-6 space-y-2 sl-body">

@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import OrnamentDivider from '@/components/OrnamentDivider'
+import BeforeAfter from '@/components/BeforeAfter'
 
 export const metadata: Metadata = {
   title: "Susie's Jewelry Repair — Case Study | SanLuis AI Solutions",
@@ -36,7 +37,34 @@ export default function Page() {
           </div>
           <OrnamentDivider className="!py-8" />
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>
-          <p className="sl-body mb-6">Leads came in through website forms, phone calls, and walk-ins — but with no system to track, prioritize, or follow up, over half fell through the cracks. The owner was doing everything manually.</p>
+          <p className="sl-body mb-6">Leads came in through website forms, phone calls, and walk-ins — but with no system to track, prioritize, or follow up, over half fell through the cracks. The owner was doing everything manually, often responding to website inquiries days after they came in — by which point the customer had already moved on.</p>
+
+          <BeforeAfter
+            title="The Difference"
+            before={{
+              label: 'Manual Process',
+              metric: 'Lead Follow-up Time',
+              value: '2–5 days',
+              details: [
+                'Leads scattered across voicemail, text messages, and paper notes',
+                'No systematic follow-up — responses were "whenever I get to it"',
+                'Walk-in customers with repair quotes never contacted again',
+                'Estimated 55% lead loss rate from inconsistent response',
+              ],
+            }}
+            after={{
+              label: 'AI-Powered',
+              metric: 'Lead Follow-up Time',
+              value: '< 30 sec',
+              details: [
+                'All channels funnel into one unified lead dashboard in real time',
+                'Auto-follow-up via SMS at 1hr, 24hr, and 72hr intervals',
+                'Walk-in leads get texted their repair quote within minutes',
+                '94% follow-up rate — 3x conversion from pre-system baseline',
+              ],
+            }}
+          />
+
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
           <p className="sl-body mb-4">A complete lead management system:</p>
           <ul className="list-diamond mb-6 space-y-2 sl-body">

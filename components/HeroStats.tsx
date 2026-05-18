@@ -2,13 +2,14 @@
 
 import { useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
-import AnimatedCounter from './AnimatedCounter'
 
-const stats = [
-  { value: 3, label: 'Avg Delivery', suffix: ' wk' },
-  { value: 60, label: 'Faster Quoting', suffix: '%' },
-  { value: 300, label: 'Start Here', prefix: '$' },
-  { value: 100, label: 'You Own the Code', suffix: '%' },
+const industries = [
+  'Manufacturing',
+  'Healthcare',
+  'Real Estate',
+  'Professional Services',
+  'Logistics',
+  'Retail',
 ]
 
 export default function HeroStats() {
@@ -24,18 +25,20 @@ export default function HeroStats() {
       transition={{ duration: 0.7, delay: 0.6, ease: [0.2, 0.7, 0.2, 1] }}
     >
       <div className="h-px w-12 bg-gold-600/60 mb-6" />
-      <div className="flex flex-wrap items-center gap-x-10 gap-y-4">
-        {stats.map((stat, i) => (
-          <AnimatedCounter
-            key={stat.label}
-            value={stat.value}
-            label={stat.label}
-            suffix={stat.suffix}
-            prefix={stat.prefix}
-            duration={2.0}
-            className="flex flex-col"
-          />
-        ))}
+      <div className="max-w-[52ch]">
+        <p className="font-display text-xl md:text-2xl text-gold-500 font-medium tracking-[-0.01em] mb-2">
+          5,400+ hours recovered for Houston businesses in 2025.
+        </p>
+        <p className="font-sans text-sm text-bone-300/60 leading-relaxed">
+          Trusted by operators across{' '}
+          {industries.map((ind, i) => (
+            <span key={ind}>
+              <span className="text-bone-200">{ind}</span>
+              {i < industries.length - 1 && <span className="text-bone-400/40">{' · '}</span>}
+            </span>
+          ))}
+          .
+        </p>
       </div>
     </motion.div>
   )

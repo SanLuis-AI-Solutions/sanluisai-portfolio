@@ -18,9 +18,57 @@ export const metadata: Metadata = {
 }
 
 const cases = [
-  { industry: 'Construction', company: 'Garza International', problem: 'Manual quoting process taking 6+ hours per bid', result: '60% faster quoting', quote: '"SanLuis AI solved the single biggest problem in our sales process. We\'re bidding faster and winning more."', slug: 'garza-international' },
-  { industry: 'Retail', company: "Susie's Jewelry Repair", problem: 'Inconsistent lead capture and follow-up', result: '3x leads', quote: '"I went from losing leads to having a system that works even when I\'m not in the shop."', slug: 'susies-jewelry-repair' },
-{ industry: 'Tech', company: 'LoveFlow', problem: 'Matching algorithm underperforming on retention', result: '40% better matches', quote: '"SanLuis AI didn&apos;t just fix our algorithm: they gave us a competitive moat."', slug: 'loveflow' },
+  {
+    industry: 'Construction',
+    company: 'Garza International',
+    problem: 'Manual quoting process taking 6+ hours per bid',
+    result: '60% faster quoting',
+    quote: '"SanLuis AI solved the single biggest problem in our sales process. We\'re bidding faster and winning more."',
+    attribution: '— Carlos Garza, Director of Operations',
+    slug: 'garza-international',
+    service: 'AI Agent System',
+    timeline: '3 weeks',
+    investment: '$5,000–8,000',
+    metrics: [
+      { label: 'Saved per bid', value: '4 hrs' },
+      { label: 'Bids per week', value: '16+' },
+      { label: 'Error reduction', value: '85%' },
+    ],
+  },
+  {
+    industry: 'Retail',
+    company: "Susie's Jewelry Repair",
+    problem: 'Inconsistent lead capture and follow-up',
+    result: '3x leads',
+    quote: '"I went from losing leads to having a system that works even when I\'m not in the shop."',
+    attribution: '— Susie Castellano, Owner',
+    slug: 'susies-jewelry-repair',
+    service: 'Workflow Automation',
+    timeline: '2 weeks',
+    investment: '$1,200–2,000',
+    metrics: [
+      { label: 'Follow-up rate', value: '94%' },
+      { label: 'Manual lead entry', value: '0 hrs' },
+      { label: 'Setup time', value: '30 min' },
+    ],
+  },
+  {
+    industry: 'Tech',
+    company: 'LoveFlow',
+    problem: 'Matching algorithm underperforming on retention',
+    result: '40% better matches',
+    quote: '"SanLuis AI didn\'t just fix our algorithm — they gave us a competitive moat."',
+    attribution: '— Marcus Chen, CEO',
+    slug: 'loveflow',
+    service: 'Custom AI System',
+    timeline: '4 weeks',
+    investment: '$5,000–10,000',
+    metrics: [
+      { label: 'Retention', value: '2x' },
+      { label: 'User satisfaction', value: '92%' },
+      { label: 'To first results', value: '14 days' },
+    ],
+  },
 ]
 
 export default function Page() {
@@ -43,15 +91,34 @@ export default function Page() {
                   <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600">{c.industry}</div>
                   <div className="font-display text-lg font-bold text-gold-600">{c.result}</div>
                 </div>
-                <div className="font-display text-xl text-navy-800 mb-4 group-hover:text-navy-600 transition-colors">{c.company}</div>
-                <div className="mb-4">
+                <div className="font-display text-xl text-navy-800 mb-3 group-hover:text-navy-600 transition-colors">{c.company}</div>
+
+                {/* Metric badges */}
+                <div className="grid grid-cols-3 gap-2 mb-4">
+                  {c.metrics.map((m) => (
+                    <div key={m.label} className="bg-bone-100 rounded p-2 text-center">
+                      <div className="font-display text-base text-navy-800">{m.value}</div>
+                      <div className="font-sans text-[10px] text-fg4 tracking-[0.02em] leading-tight">{m.label}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mb-3">
                   <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Problem</div>
                   <div className="font-sans text-sm text-fg2">{c.problem}</div>
                 </div>
-                <div className="mt-4 pt-4 border-t border-navy-100">
-                  <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
+
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="font-mono text-[10px] tracking-[0.08em] uppercase bg-gold-100 text-gold-700 px-2 py-0.5 rounded">{c.service}</span>
+                  <span className="font-mono text-[10px] tracking-[0.08em] uppercase bg-navy-100 text-navy-700 px-2 py-0.5 rounded">{c.timeline}</span>
+                  <span className="font-mono text-[10px] tracking-[0.08em] uppercase bg-green-100 text-green-700 px-2 py-0.5 rounded">{c.investment}</span>
                 </div>
-                <div className="mt-4 pt-3 border-t border-gold-200/40">
+
+                <div className="mt-3 pt-3 border-t border-navy-100">
+                  <p className="font-sans text-xs italic text-fg3 leading-relaxed">&ldquo;{c.quote.replace(/^"|"$/g, '')}&rdquo;</p>
+                  <p className="font-sans text-[10px] text-fg4 mt-1">{c.attribution}</p>
+                </div>
+                <div className="mt-3 pt-2 border-t border-gold-200/40">
                   <span className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 group-hover:text-gold-700 transition-colors">Read full case study &rarr;</span>
                 </div>
               </Link>

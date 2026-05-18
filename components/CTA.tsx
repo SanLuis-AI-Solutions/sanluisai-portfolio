@@ -63,21 +63,29 @@ export default function CTA() {
 
           <div className="hidden lg:block">
             <AnimatedSection delay={0.5}>
-              <div className="space-y-8 border-l border-gold-600/20 pl-8 py-4">
+              <div className="border-l border-gold-600/20 pl-8 py-4 space-y-6">
+                {/* Quote block — real client result */}
                 <div>
-                  <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Engagements / Quarter</div>
-                  <div className="font-display text-5xl text-white font-medium">3</div>
-                  <div className="font-sans text-sm text-navy-400 mt-1">Limited engagements per quarter.</div>
-                </div>
-                <div>
-                  <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Discovery Session</div>
-                  <div className="font-display text-5xl text-white font-medium">$300</div>
-                  <div className="font-sans text-sm text-navy-400 mt-1">Money-back guarantee if we find fewer than 3 high-impact opportunities.</div>
-                </div>
-                <div>
-                  <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-2">Delivery Window</div>
-                  <div className="font-display text-5xl text-white font-medium">2-4 wk</div>
-                  <div className="font-sans text-sm text-navy-400 mt-1">From contract to deploy.</div>
+                  <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-3">Garza International</div>
+                  <div className="relative pl-5 border-l-2 border-gold-500/50 mb-4">
+                    <p className="font-display text-base text-white italic leading-relaxed">
+                      &ldquo;The system replaced what used to take my team three hours every morning. Now it runs before I pour my coffee.&rdquo;
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4 text-sm">
+                    <div>
+                      <span className="text-gold-500 font-semibold">60%</span>
+                      <span className="text-navy-400 ml-1">faster quoting</span>
+                    </div>
+                    <span className="text-navy-600">|</span>
+                    <div>
+                      <span className="text-gold-500 font-semibold">3 weeks</span>
+                      <span className="text-navy-400 ml-1">to deploy</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 font-sans text-xs text-navy-500">
+                    Real Estate Construction &middot; Houston, TX
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
