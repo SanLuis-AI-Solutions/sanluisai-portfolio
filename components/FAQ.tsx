@@ -26,12 +26,12 @@ export default function FAQ() {
       <div className="relative max-w-4xl mx-auto px-8 md:px-16 lg:px-24">
         <FadeIn delay={0}>
           <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500 mb-6 flex items-center gap-4">
-            Common Questions <span className="h-px w-8 bg-gold-600/40" />
+            We've Heard These Before <span className="h-px w-8 bg-gold-600/40" />
           </span>
         </FadeIn>
         <FadeIn delay={0.12}>
           <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-bone-50 font-medium leading-[1.08] tracking-[-0.025em] mb-24">
-            Frequently asked questions.
+            Your honest questions. Straight answers.
           </h2>
         </FadeIn>
         <div className="space-y-0">

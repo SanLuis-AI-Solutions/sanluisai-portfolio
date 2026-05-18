@@ -46,7 +46,7 @@ export default function Hero() {
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
-              <p className="font-sans text-lg md:text-xl font-light text-bone-300/70 leading-relaxed max-w-[52ch] mb-3">
+              <p className="font-sans text-lg md:text-xl font-light text-bone-100/85 leading-relaxed max-w-[52ch] mb-3">
                 You&apos;ve been sold AI that was supposed to save time. Most of it doesn&apos;t. What we build targets one specific process, so your team actually reclaims those hours.
               </p>
             </AnimatedSection>
