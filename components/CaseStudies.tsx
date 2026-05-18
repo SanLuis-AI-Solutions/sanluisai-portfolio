@@ -54,6 +54,7 @@ export default function CaseStudies() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
+  const [activeIndex, setActiveIndex] = useState(0)
   const shouldReduceMotion = useReducedMotion()
 
   const checkScroll = useCallback(() => {
@@ -61,6 +62,10 @@ export default function CaseStudies() {
     if (!el) return
     setCanScrollLeft(el.scrollLeft > 20)
     setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 20)
+    // Determine active card index based on scroll position
+    const cardWidth = el.children[0] ? (el.children[0] as HTMLElement).offsetWidth + 20 : 420 // card + gap
+    const idx = Math.round(el.scrollLeft / cardWidth)
+    setActiveIndex(Math.min(idx, cases.length - 1))
   }, [])
 
   useEffect(() => {
@@ -80,6 +85,13 @@ export default function CaseStudies() {
     if (!el) return
     const scrollAmount = direction === 'left' ? -400 : 400
     el.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+  }
+
+  const scrollToIndex = (index: number) => {
+    const el = scrollRef.current
+    if (!el || !el.children[0]) return
+    const cardWidth = (el.children[0] as HTMLElement).offsetWidth + 20
+    el.scrollTo({ left: index * cardWidth, behavior: 'smooth' })
   }
 
   return (
@@ -184,7 +196,16 @@ export default function CaseStudies() {
             <FadeIn delay={0.5}>
               <div className="flex justify-center gap-2">
                 {cases.map((_, i) => (
-                  <div key={i} className="w-2 h-2 rounded-[2px] bg-navy-600" />
+                  <button
+                    key={i}
+                    onClick={() => scrollToIndex(i)}
+                    className={`w-2.5 h-2.5 rounded-[2px] transition-all duration-300 ${
+                      i === activeIndex
+                        ? 'bg-gold-500 w-6'
+                        : 'bg-navy-600 hover:bg-navy-500'
+                    }`}
+                    aria-label={`View ${cases[i].company} case study`}
+                  />
                 ))}
               </div>
             </FadeIn>

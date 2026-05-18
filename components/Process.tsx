@@ -1,5 +1,5 @@
 'use client'
-import { useRef } from 'react'
+import { useRef, Fragment } from 'react'
 import { motion, useInView } from 'framer-motion'
 import FlameMark from '@/components/FlameMark'
 
@@ -67,33 +67,42 @@ export default function Process() {
           ))}
         </div>
 
-        {/* Desktop: horizontal flow with arrows */}
-        <div className="hidden md:flex items-start justify-between gap-8">
-          {steps.map((s, i) => (
-            <FadeIn key={s.num} delay={0.2 + i * 0.12}>
-              <div className="flex-1 group">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="relative flex-shrink-0">
-                    <svg width="44" height="44" viewBox="0 0 44 44" className="text-gold-500" aria-hidden="true">
-                      <circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                      <text x="22" y="26" textAnchor="middle" fill="currentColor" fontSize="18" fontFamily="serif" fontWeight="600">{s.num}</text>
-                    </svg>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-display text-lg text-navy-800 group-hover:text-navy-600 transition-colors duration-200">{s.title}</h3>
-                    <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase">{s.time}</div>
+        {/* Desktop: horizontal flow with arrows between circles */}
+        <div className="hidden md:flex flex-col gap-0">
+          {/* Title row with circles + arrows */}
+          <div className="flex items-start justify-between gap-0">
+            {steps.map((s, i) => (
+              <Fragment key={s.num}>
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="relative flex-shrink-0">
+                      <svg width="44" height="44" viewBox="0 0 44 44" className="text-gold-500" aria-hidden="true">
+                        <circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                        <text x="22" y="26" textAnchor="middle" fill="currentColor" fontSize="18" fontFamily="serif" fontWeight="600">{s.num}</text>
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-display text-lg text-navy-800">{s.title}</h3>
+                      <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase">{s.time}</div>
+                    </div>
                   </div>
                 </div>
-                <p className="font-sans text-sm text-fg2 leading-relaxed pl-[56px]">{s.desc}</p>
-                {/* Arrow connector to the next step */}
                 {i < steps.length - 1 && (
-                  <div className="flex justify-center mt-2 pl-[56px]">
+                  <div className="flex items-center justify-center flex-shrink-0 pt-[11px]" style={{ width: '2rem' }}>
                     <ArrowConnector />
                   </div>
                 )}
+              </Fragment>
+            ))}
+          </div>
+          {/* Description row */}
+          <div className="flex justify-between gap-8">
+            {steps.map((s, i) => (
+              <div key={s.num} className="flex-1">
+                <p className="font-sans text-sm text-fg2 leading-relaxed">{s.desc}</p>
               </div>
-            </FadeIn>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Visual flow bar — signature connecting line */}
