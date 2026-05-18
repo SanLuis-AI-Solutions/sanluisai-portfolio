@@ -16,7 +16,7 @@ export default function StickyCTA() {
         href="/booking"
         className="flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-gold-500 text-navy-900 hover:bg-gold-400 transition-colors duration-200 pointer-events-auto"
       >
-        Book a Discovery Session. $300.
+        Book a Discovery Session.
       </a>
     </motion.div>
   )

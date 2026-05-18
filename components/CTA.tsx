@@ -49,7 +49,7 @@ export default function CTA() {
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-10">
-                60-minute working session. Written roadmap with specific numbers. $300, refundable if we don&apos;t find 3 opportunities.
+                60-minute working session. Written roadmap with specific numbers. Refundable if we don&apos;t find 3 opportunities.
               </p>
               <div className="border border-gold-600/25 rounded p-5 mb-10">
                 <p className="font-sans text-sm text-gold-500">

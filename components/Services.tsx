@@ -166,7 +166,7 @@ export default function Services() {
             {/* We build more than what's listed here */}
             <AnimatedSection delay={0.15 + services.length * 0.12}>
               <p className="font-sans text-xs text-navy-400 text-center pt-4">
-                Not ready to scope a full build? <a href="/booking" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">Start with a $300 Discovery Session</a>.
+                Not ready to scope a full build? <a href="/booking" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">Start with a Discovery Session</a>.
               </p>
             </AnimatedSection>
           </div>

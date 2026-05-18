@@ -19,7 +19,7 @@ const donts = [
   },
   {
     title: "We don't pitch you.",
-    desc: "The Discovery Session is $300. One working session. You get a written roadmap whether you buy or not. No demo theater. No high-pressure close.",
+    desc: "The Discovery Session is one working session. You get a written roadmap whether you buy or not. No demo theater. No high-pressure close.",
   },
   {
     title: "We don't build black boxes.",
