@@ -103,13 +103,13 @@ export default function Problem() {
             <div className="relative max-w-2xl bg-white border border-navy-200 rounded p-8 md:p-10 mt-12 mb-16">
               <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/40" />
               <div className="flex gap-5">
-                <div className="hidden sm:flex flex-col items-center gap-2 pt-1">
+                <div className="flex flex-col items-center gap-2 pt-1 flex-shrink-0">
                   <Image
                     src="/daniel-headshot.jpg"
                     alt="Daniel San Luis"
-                    width={48}
-                    height={48}
-                    className="w-12 h-12 rounded-full object-cover"
+                    width={80}
+                    height={80}
+                    className="w-14 h-14 md:w-20 md:h-20 rounded-full object-cover ring-2 ring-gold-600/30"
                   />
                 </div>
                 <div>
