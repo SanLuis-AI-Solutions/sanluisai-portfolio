@@ -25,7 +25,7 @@ export default function Hero() {
     <motion.section style={{ backgroundColor: bgColor }} className="relative min-h-[100dvh] flex items-center overflow-hidden">
       <GoldThread />
       {/* Background image - parallax */}
-      <motion.div className="absolute inset-0 opacity-[0.07]" style={{ y: bgY, scale: imageScale }}>
+      <motion.div className="absolute inset-0 opacity-[0.18]" style={{ y: bgY, scale: imageScale }}>
         <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
       </motion.div>
       {/* Radial gold glow accent */}
