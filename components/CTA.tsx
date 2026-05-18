@@ -48,8 +48,17 @@ export default function CTA() {
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-12">
-                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers. Whether you move forward with us or not. You&apos;ll also receive our exclusive AI Opportunity Audit: a $2,500 value included at no extra cost.
+                The Discovery Session is a 60-minute working meeting where we audit one area of your operations, identify the single highest-ROI AI opportunity, and hand you a written roadmap with specific numbers.
               </p>
+              <div className="mb-12 space-y-2">
+                <p className="font-sans text-sm text-gold-500">
+                  <span className="text-bone-50 font-semibold">+ Free:</span> AI Opportunity Audit ($2,500 value) &mdash; we identify 3+ high-impact opportunities or you don&apos;t pay.
+                </p>
+                <p className="font-sans text-sm text-gold-500">
+                  <span className="text-bone-50 font-semibold">+ Free:</span> Prompt Engineering Playbook ($1,000 value) &mdash; your team can start using AI effectively tomorrow.
+                </p>
+                <p className="font-sans text-xs text-navy-500 mt-2">Total package value: $3,800. Your cost: $300.</p>
+              </div>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>
               <a

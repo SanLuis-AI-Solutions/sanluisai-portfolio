@@ -13,7 +13,7 @@ const steps = [
   { num: '1', title: 'Discover', desc: 'We pick the one process eating the most time or money. Map it completely. Find exactly where AI changes the math.', time: '60 min' },
   { num: '2', title: 'Build', desc: 'We design a custom AI system for that specific process. No templates. No bloat. You own the code, not a subscription.', time: '2-4 weeks' },
   { num: '3', title: 'Ship', desc: 'Installed into your real workflow. Your team trained. Your baseline measured. You see the difference immediately.', time: 'Shipped' },
-  { num: '4', title: 'Maintain', desc: 'Monthly check-ins. Priority support. We evolve the system as your business does. 91% of AI adopters report revenue growth: we make sure you\'re in that 91%.', time: 'Ongoing' },
+  { num: '4', title: 'Maintain', desc: 'Monthly check-ins. Priority support. We evolve the system as your business does. Built to grow with you, not sit on the shelf.', time: 'Ongoing' },
 ]
 
 /* Arrow connector SVG — single horizontal arrow between two steps */
