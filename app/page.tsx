@@ -19,9 +19,9 @@ export default function HomePage() {
       <ROICalculator />
       <CaseStudies />
       <SceneDivider />
-      <WhatWeDont />
       <Services />
       <OrnamentDivider />
+      <WhatWeDont />
       <SocialProof />
       <Process />
       <SceneDivider />

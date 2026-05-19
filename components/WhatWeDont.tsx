@@ -49,10 +49,10 @@ export default function WhatWeDont() {
             </p>
           </FadeIn>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold-600/30 rounded overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {donts.map((item, i) => (
             <FadeIn key={i} delay={0.25 + i * 0.1}>
-              <div className="bg-navy-800 p-10 md:p-12 h-full flex flex-col">
+              <div className="bg-navy-950 border border-gold-600/20 hover:border-gold-500/50 rounded p-10 md:p-12 h-full flex flex-col transition-all duration-300">
                 <h3 className="font-display text-xl md:text-2xl text-gold-500 mb-4">{item.title}</h3>
                 <p className="font-sans text-sm text-bone-300/60 leading-relaxed">{item.desc}</p>
               </div>
@@ -62,7 +62,7 @@ export default function WhatWeDont() {
 
         <FadeIn delay={0.65}>
           <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-2 bg-navy-800 rounded px-5 py-3">
+            <div className="inline-flex items-center gap-2 bg-navy-950 border border-gold-600/20 rounded px-5 py-3">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-gold-500 flex-shrink-0">
                 <path d="M8 3v5l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
                 <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
