@@ -59,6 +59,20 @@ export default function WhatWeDont() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.65}>
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-2 bg-navy-800 rounded px-5 py-3">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-gold-500 flex-shrink-0">
+                <path d="M8 3v5l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              <span className="font-sans text-xs text-bone-300 leading-relaxed">
+                <strong className="text-bone-50">Online only.</strong> No office lease. No overhead. No travel time billing. Every saving passes to your price.
+              </span>
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )
