@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "sanluisai.com"
+        }
+      ],
+      "destination": "/coming-soon"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.sanluisai.com"
+        }
+      ],
+      "destination": "/coming-soon"
+    }
+  ]
+}
