@@ -37,7 +37,7 @@ const ldJson = {
       '@id': 'https://sanluisai.com/#organization',
       name: 'SanLuis AI Solutions',
       url: 'https://sanluisai.com',
-      description: 'Custom AI solutions for small and mid-size businesses. Online only — we save you time and pass the savings to your price. Bilingual EN/ES.',
+      description: 'Custom AI solutions for small and mid-size businesses. Online only. We save you time and pass the savings to your price. Bilingual EN/ES.',
       foundingDate: '2025',
       address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
       areaServed: [{ '@type': 'City', name: 'Houston' }, { '@type': 'State', name: 'Texas' }, { '@type': 'Country', name: 'US' }],
@@ -139,11 +139,11 @@ const ldJson = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sanluisai.com'),
-  title: 'Custom AI Solutions | SanLuis AI Solutions — Houston',
-  description: 'No-code AI systems, automations, and applications for small and mid-size businesses. Built for Houston. Bilingual EN/ES.',
+  title: 'Custom AI Solutions | SanLuis AI Solutions, Houston',
+  description: 'Custom AI systems, automations, and apps for small and mid-size businesses. Online only. Built for real operations, not demos. Bilingual EN/ES.',
   openGraph: {
     title: 'Custom AI Solutions | SanLuis AI Solutions',
-    description: 'No-code AI for real problems. Built for Houston. Custom systems, automations, and AI apps.',
+    description: 'Custom AI for real problems. Built for Houston. Systems, automations, and AI apps for mid-size businesses.',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     type: 'website',
     locale: 'en_US',

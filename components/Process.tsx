@@ -68,13 +68,13 @@ export default function Process() {
         </div>
 
         {/* Desktop: horizontal flow with arrows between circles */}
-        <div className="hidden md:flex flex-col gap-0">
+        <div className="hidden md:block">
           {/* Title row with circles + arrows */}
           <div className="flex items-start justify-between gap-0">
             {steps.map((s, i) => (
               <Fragment key={s.num}>
                 <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-3">
+                  <div className="flex items-center gap-3">
                     <div className="relative flex-shrink-0">
                       <svg width="44" height="44" viewBox="0 0 44 44" className="text-gold-500" aria-hidden="true">
                         <circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" strokeWidth="1.5" />
@@ -95,12 +95,15 @@ export default function Process() {
               </Fragment>
             ))}
           </div>
-          {/* Description row */}
-          <div className="flex justify-between gap-8">
+          {/* Description row — same column widths as title row */}
+          <div className="flex items-start justify-between gap-0 mt-6">
             {steps.map((s, i) => (
-              <div key={s.num} className="flex-1">
-                <p className="font-sans text-sm text-fg2 leading-relaxed">{s.desc}</p>
-              </div>
+              <Fragment key={s.num}>
+                <div className="flex-1">
+                  <p className="font-sans text-sm text-fg2 leading-relaxed pr-2">{s.desc}</p>
+                </div>
+                {i < steps.length - 1 && <div style={{ width: '2rem' }} className="flex-shrink-0" />}
+              </Fragment>
             ))}
           </div>
         </div>

@@ -133,9 +133,9 @@ export default function ROICalculator() {
                   <div className="mb-10">
                     <div className="font-sans text-xs text-fg3 mb-2">Break-even on the Discovery Session</div>
                     <div className="font-mono text-lg text-navy-800 font-medium">
-                      {breakEvenWeeks < 1 ? 'Less than a week' : breakEvenWeeks <= 1 ? '1 week' : `${Math.round(breakEvenWeeks)} weeks`}
+                      {breakEvenWeeks < 1 ? 'Less than a week' : breakEvenWeeks <= 1.5 ? '1 week' : `${Math.round(breakEvenWeeks)} weeks`}
                     </div>
-                    <div className="font-sans text-xs text-fg3 mt-1">Pays for itself before the first month ends.</div>
+                    <div className="font-sans text-xs text-fg3 mt-1">{breakEvenWeeks >= 4 ? 'Pays for itself before the first month ends.' : `Breakeven in ${Math.round(breakEvenWeeks)} weeks.`}</div>
                   </div>
                 )}
 
@@ -145,9 +145,8 @@ export default function ROICalculator() {
                 >
                   Book a Discovery Session.
                 </a>
-                <div className="flex items-center justify-center gap-4 mt-4">
-                  <p className="font-sans text-[10px] text-fg4">Money-back guarantee: if we find fewer than 3 opportunities, you don't pay.</p>
-                  <span className="font-sans text-[10px] text-gold-600 font-semibold uppercase tracking-[0.06em]">2 slots left</span>
+                <div className="mt-4">
+                  <p className="font-sans text-xs text-fg4">Money-back guarantee: if we find fewer than 3 opportunities, you don't pay.</p>
                 </div>
               </div>
             </FadeIn>

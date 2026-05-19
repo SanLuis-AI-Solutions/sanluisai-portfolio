@@ -36,7 +36,7 @@ export default function SocialProof() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <FadeIn key={i} delay={0.15 + i * 0.1}>
               <div className="bg-white border border-navy-200 rounded p-8 md:p-10 h-full flex flex-col hover:border-navy-900 transition-all duration-220">

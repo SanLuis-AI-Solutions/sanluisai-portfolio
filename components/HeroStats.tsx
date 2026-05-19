@@ -30,14 +30,7 @@ export default function HeroStats() {
           5,400+ hours recovered.
         </p>
         <p className="font-sans text-sm text-bone-300/60 leading-relaxed">
-          3 Houston operators. 3 industries. Hours recovered tracked monthly. Trusted by{' '}
-          {industries.map((ind, i) => (
-            <span key={ind}>
-              <span className="text-bone-200">{ind}</span>
-              {i < industries.length - 1 && <span className="text-bone-400/40">{' · '}</span>}
-            </span>
-          ))}
-          .
+          3 Houston operators. 3 industries. Hours recovered tracked monthly.
         </p>
       </div>
     </motion.div>
