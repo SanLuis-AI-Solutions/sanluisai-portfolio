@@ -2,52 +2,51 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
-import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
-  title: 'Custom AI Systems. SanLuis AI Solutions',
-  description: "Stop working around software built for someone else. We solve your single biggest operational problem: custom, on your data, and you own the code.",
+  title: 'Custom AI Systems | SanLuis AI Solutions',
+  description: "Everyone has access to the same AI. We build the one system that solves your single biggest operational problem and gives you back a day a week. Custom, on your data, with full code ownership.",
 }
 
 const buildAreas = [
   {
     title: 'Custom Web Applications',
-    desc: 'Full-stack applications built around your specific workflow. Authentication, permissions, data models, integrations: everything tailored to how your business actually runs.',
-    when: 'Your off-the-shelf software requires more workarounds than actual use. Your team spends more time managing the tool than doing the work.',
+    desc: 'We build full-stack applications around your exact workflow, not a template. Authentication, permissions, data models, and integrations are shaped to how your business actually operates. The result is software your team uses instead of fights.',
+    when: 'Your off-the-shelf tool requires more workarounds than actual use. Your team spends more time managing the software than doing the work.',
   },
   {
     title: 'AI-Powered Platforms',
-    desc: 'Systems where AI is the core engine, not an add-on. Matching algorithms, predictive models, classification pipelines, recommendation engines that learn and improve with use.',
-    when: 'Your core product or operations depend on complex decisions that rules-based systems cannot handle. Every incorrect decision costs money or customers.',
+    desc: 'We build systems where AI is the core engine, not an add-on. That means matching algorithms, predictive models, classification pipelines, and recommendation engines trained on your data. The system improves with use and makes decisions rules-based code cannot.',
+    when: 'Your core product or operations depend on complex decisions that static rules cannot handle. Every incorrect decision costs money or customers.',
   },
   {
     title: 'Data Intelligence Systems',
-    desc: 'Pipelines that ingest, analyze, and surface actionable intelligence from your data. Automated reporting, anomaly detection, pattern recognition across structured and unstructured sources.',
-    when: 'You have data you know is valuable but no way to extract insights at scale. Your team spends more time preparing reports than acting on them.',
+    desc: 'We build pipelines that ingest, analyze, and surface actionable intelligence from your data. Automated reporting, anomaly detection, and pattern recognition across structured and unstructured sources replace manual preparation. Your team acts on insights instead of building spreadsheets.',
+    when: 'You have data you know is valuable but no way to extract insight at scale. Your team spends more time preparing reports than acting on them.',
   },
   {
     title: 'Integration & Migration',
-    desc: 'Connecting systems that were never designed to talk to each other. Data migration, API bridges, webhook infrastructure, legacy system wrappers that extend the life of existing investments.',
-    when: 'Your critical workflow is held together by manual exports, CSV uploads, and someone who knows the secret sequence of steps.',
+    desc: 'We connect systems that were never designed to talk to each other. Data migration, API bridges, webhook infrastructure, and legacy wrappers extend the life of your existing investments. The workflow runs without someone memorizing a secret sequence of manual steps.',
+    when: 'Your critical workflow is held together by manual exports, CSV uploads, and one person who knows the exact order of operations.',
   },
 ]
 
 const faqItems = [
   {
     q: "What does 'custom' mean exactly?",
-    a: "It means we build for your specific problem, not a generalized template. Your data model, your terminology, your workflow, your integration landscape. No features you do not need. No workarounds for assumptions that do not fit. You get exactly what solves your problem: nothing more, nothing less.",
+    a: "It means we build for your specific problem, not a generalized template. Your data model, your terminology, your workflow, your integration landscape. You receive exactly what solves your problem and nothing you do not need. There are no unused features and no workarounds for assumptions that do not fit.",
   },
   {
     q: "Who owns the code and data?",
-    a: "You do. Full source ownership. Your IP stays yours. No license fees, no recurring charges, no vendor lock-in. If you want to take the system elsewhere, modify it, or have another team maintain it: that is your right. We help with the transition at no extra cost.",
+    a: "You do. Full source ownership. Your IP stays yours. There are no license fees, no recurring charges, and no vendor lock-in. If you want to take the system elsewhere, modify it, or have another team maintain it, that is your right. We help with the transition at no extra cost.",
   },
   {
     q: "How do you scope something custom without scope creep?",
-    a: "We target your single biggest operational problem and solve it completely: end to end: before we touch anything else. One problem at a time. Each phase is fixed-price, fixed-scope, with clear acceptance criteria. If scope expands, it becomes the next phase, not a change order on the current one.",
+    a: "We target your single biggest operational problem and solve it completely, end to end, before we touch anything else. One problem at a time. Each phase is fixed-price and fixed-scope, with clear acceptance criteria. If scope expands, it becomes the next phase, not a change order on the current one.",
   },
   {
     q: "How is this different from hiring a development agency?",
-    a: "We build with AI, not more people. A traditional agency writes thousands of lines of code over months. We prototype and iterate at AI speed: weeks instead of quarters. The result is the same quality: production-grade, deployed, and fully functional. But you get there faster, for less, with full ownership.",
+    a: "We build with AI, not more people. A traditional agency writes thousands of lines of code over months. We prototype and iterate at AI speed, delivering in weeks instead of quarters. The result is the same quality: production-grade, deployed, and fully functional. You get there faster, for less, with full ownership.",
   },
 ]
 
@@ -57,7 +56,7 @@ export default function CustomAIPage() {
       <PageHeader
         eyebrow="Service 01"
         title="Custom AI Systems."
-        description="You have one operational problem costing you more than you realize. We solve it completely: in weeks. You own the code. No license fees. No vendor lock-in."
+        description="Everyone has access to the same AI. We build the one system that removes your largest operational cost and gives you back a day a week. Custom, on your data, with full code ownership."
       />
 
       <AnimatedSection delay={0}>
@@ -67,13 +66,13 @@ export default function CustomAIPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The problem with off-the-shelf.</h2>
             <p className="sl-body-lg mb-4">
-              Off-the-shelf software is built for someone else's business. You adapt your workflows to fit the tool. You pay for features you never use. You work around limitations that were designed for a different industry, a different scale, a different problem entirely.
+              Off-the-shelf software is built for someone else's business. You adapt your workflows to fit the tool. You pay for features you never use. You work around limitations designed for a different industry, a different scale, and a different problem entirely. The cost is not just the subscription. It is the time your team loses managing the tool instead of doing the work.
             </p>
             <p className="sl-body-lg mb-4">
-              <strong className="text-navy-800">We build what you actually need.</strong> One system, built from scratch for your exact problem. Your data model. Your terminology. Your workflow. No bloat. No workarounds. No subscription stack anxiety.
+              You have one operational cost bigger than any other. We solve that one problem, completely, before we touch anything else. Not a catch-all. Not a platform you grow into. One precise system built to remove the specific process that is costing you the most.
             </p>
             <p className="sl-body-lg">
-              We target your single biggest operational problem and solve it end to end: then we move to the next. One at a time. No scope creep. No &ldquo;let us put everything in an MVP.&rdquo; Each phase is fixed-price, fixed-scope, and you own the result.
+              <strong className="text-navy-800">We do not sell chatbots. We do not sell strategy decks. We sell working systems.</strong> Your data model. Your terminology. Your workflow. Fixed price. Fixed scope. You own the code, and we deploy it. Then we move to the next problem.
             </p>
           </div>
 
@@ -98,10 +97,10 @@ export default function CustomAIPage() {
             <h2 className="font-display text-2xl text-bone-50 mb-6">One problem at a time.</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { step: '01', title: 'Identify', desc: 'We find your single highest-cost operational problem. Not the most visible one: the one that actually hurts.' },
-                { step: '02', title: 'Design', desc: 'Architecture blueprint scoped to exactly that problem. Fixed price. Fixed timeline. No ambiguity.' },
-                { step: '03', title: 'Build & Deploy', desc: 'Built on your data, tested against your real workflows, deployed into production. In weeks, not months.' },
-                { step: '04', title: 'Next', desc: 'You see results immediately. When you are ready, we identify the next problem and repeat the cycle.' },
+                { step: '01', title: 'Identify', desc: 'We find your single highest-cost operational problem. Not the loudest one. Not the easiest one. The one that actually drains time or money every week.' },
+                { step: '02', title: 'Design', desc: 'We scope an architecture blueprint for exactly that problem. Fixed price. Fixed timeline. Clear acceptance criteria. No ambiguity before we build.' },
+                { step: '03', title: 'Build & Deploy', desc: 'We build on your data, test against your real workflows, and deploy into production. In weeks, not quarters. You see the result, not a presentation.' },
+                { step: '04', title: 'Next', desc: 'You measure the result. When you are ready, we identify the next highest-cost problem and repeat the cycle. Each system compounds the last.' },
               ].map((s) => (
                 <div key={s.step}>
                   <div className="font-display text-3xl text-gold-500 mb-2">{s.step}</div>
@@ -128,7 +127,7 @@ export default function CustomAIPage() {
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
-            <p className="sl-body-sm mb-1">LoveFlow's matching algorithm was built on surface-level preferences. Users were bouncing because the matches didn't work. We built a custom behavioral matching engine from scratch: <strong className="text-navy-800">40% better match quality, 2x retention improvement in 6 weeks.</strong></p>
+            <p className="sl-body-sm mb-1">LoveFlow's matching algorithm relied on surface-level preferences. Users left because the matches did not work. We built a custom behavioral matching engine from scratch: <strong className="text-navy-800">40% better match quality, 2x retention improvement in 6 weeks.</strong></p>
             <p className="sl-body-sm mb-3 text-fg2">Investment: $5,000–10,000. Annual retention value: ~$81,000 in saved churn.</p>
             <Link href="/case-studies/loveflow" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the full case study &rarr;</Link>
           </div>

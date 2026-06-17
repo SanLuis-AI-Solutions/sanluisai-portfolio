@@ -5,49 +5,49 @@ import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
-  title: 'AI Agents | SanLuis AI Solutions',
-  description: "Customer inquiries pile up overnight. Lead qualification happens during business hours or not at all. Deploy an AI agent that operates within the rules you set: 24/7, every step logged.",
+  title: 'AI Agent Systems | SanLuis AI Solutions',
+  description: "Automation handles the predictable. Agents handle the ambiguous. We build working systems that decide, act, and improve while your team focuses on judgment.",
 }
 
 const agentCapabilities = [
   {
     title: 'Lead Qualification Agent',
-    desc: 'Screens inbound leads 24/7 against your scoring criteria. Routes hot leads to sales, nurtures warm leads with follow-up sequences, archives cold leads. All without human intervention.',
-    example: 'A construction contractor wakes up to 8 qualified leads sorted by project size, budget range, and timeline urgency. Ready to call, not sort.',
+    desc: 'Inbound leads do not arrive on a schedule. This agent evaluates every inquiry against your scoring criteria in real time, regardless of hour. It identifies buying signals, enriches contact records, and routes qualified opportunities to the right salesperson with context attached. Warm prospects enter a nurture sequence. Cold prospects are archived for later review. The result is a sales pipeline that is already sorted before your team opens their laptops.',
+    example: 'A construction contractor wakes up to eight qualified leads sorted by project size, budget range, and timeline urgency. Ready to call, not sort.',
   },
   {
     title: 'Customer Triage Agent',
-    desc: 'Resolves common support inquiries autonomously, escalates complex issues with full context attached. Learns from every interaction to reduce escalation rates over time.',
-    example: 'A property management firm handles 90% of tenant maintenance requests without a human touching them. The 10% that need human attention arrive with diagnosis already complete.',
+    desc: 'Support volume grows faster than headcount. This agent reads incoming requests, classifies intent, and resolves the issues that have clear answers. When a request is ambiguous, sensitive, or outside its authority, it escalates with a full summary and recommended next step. Every interaction feeds back into the model, so the agent expands what it can handle and narrows what reaches humans. Your support team spends less time repeating answers and more time solving the problems that matter.',
+    example: 'A property management firm resolves 90% of tenant maintenance requests without a human touching them. The 10% that need attention arrive with diagnosis already complete.',
   },
   {
     title: 'Research & Intelligence Agent',
-    desc: 'Monitors competitors, industry news, and market signals. Synthesizes findings into briefings, alerts on changes that matter, and surfaces opportunities your team would miss at human reading speed.',
-    example: 'A logistics company gets a daily briefing on regulatory changes, fuel price shifts, and competitor route expansions. Distilled to a 3-minute read.',
+    desc: 'Market intelligence is valuable when it is current and useless when it is late. This agent monitors competitors, regulatory filings, pricing changes, news sources, and industry signals across the channels you care about. It synthesizes raw information into concise briefings, flags material shifts, and surfaces opportunities your team would miss at human reading speed. You stop reacting to information you found yesterday. You start deciding based on what the market did overnight.',
+    example: 'A logistics company starts each day with a three-minute briefing on regulatory changes, fuel price shifts, and competitor route expansions. No manual research required.',
   },
   {
     title: 'Workflow Orchestrator',
-    desc: 'Coordinates multi-step processes across your tools. Reads incoming data, decides the path, executes actions, logs results. Handles the handoffs between systems that currently require a person to watch.',
-    example: 'A healthcare billing pipeline that extracts patient data from intake forms, checks insurance eligibility, generates claims, and routes exceptions. All in under 60 seconds.',
+    desc: 'Complex processes break at the handoffs between tools. This agent receives incoming data, interprets what it means, chooses the correct path, and executes actions across disconnected systems. It handles exceptions by checking alternatives, logging the decision, and escalating when no valid path exists. Whether the workflow spans intake forms, billing, scheduling, or compliance checks, the agent keeps the process moving without a person sitting between systems.',
+    example: 'A healthcare billing pipeline extracts patient data from intake forms, checks insurance eligibility, generates claims, and routes exceptions. All in under 60 seconds.',
   },
 ]
 
 const faqItems = [
   {
     q: "How is an AI agent different from an automation?",
-    a: "Automation follows fixed rules (when X, do Y). An AI agent makes decisions: it evaluates context, chooses a path, and learns from outcomes. Agents are right when the process requires judgment: triaging a vague customer request, researching a market signal, deciding when to escalate. Most deployments combine both: automation handles the predictable, agents handle the ambiguous.",
+    a: "Automation follows fixed rules. When X happens, it does Y. An agent evaluates context and chooses a path based on judgment. It can handle vague requests, compare options, and learn from outcomes. Most deployments use both: automation for the predictable steps, agents for the steps that require interpretation.",
   },
   {
     q: "How do I trust it to make decisions?",
-    a: "You set the boundaries. Every agent comes with human review gates at critical decision points, full audit logging, and configurable escalation rules. You approve outcomes, not every step. We start with tight guardrails and loosen them as trust builds. Never the other way around.",
+    a: "You define the boundaries before anything runs. We set approval gates for high-stakes decisions, maintain full audit logs, and configure escalation triggers at the start. You review outcomes, not every micro-decision. Guardrails begin tight and expand only as the agent proves reliability.",
   },
   {
     q: "Can it work with my existing systems?",
-    a: "Yes. Agents connect to your CRM, email, Slack, databases, APIs, and any tool with an integration surface. If a tool does not have an API, we build a connector. Your existing workflow stays intact. The agent plugs into the gaps, without replacing infrastructure.",
+    a: "Yes. Agents connect to your CRM, help desk, email, Slack, databases, and any API you already use. If a system lacks an integration surface, we build a connector. Your existing infrastructure stays in place. The agent fills the gaps without forcing a platform migration.",
   },
   {
     q: "How do I know it's working?",
-    a: "Every action is logged. You get a dashboard showing tasks completed, decisions made, escalations triggered, and time saved. We set baseline metrics before deployment and measure against them at 14, 30, and 60 days.",
+    a: "Every action is logged and visible in a dashboard. We measure tasks completed, decisions made, escalations triggered, and hours saved against baseline metrics set before deployment. Reviews happen at 14, 30, and 60 days. You see the return in weeks, not quarters.",
   },
 ]
 
@@ -57,7 +57,7 @@ export default function AgentsPage() {
       <PageHeader
         eyebrow="Service 03"
         title="AI Agent Systems."
-        description="Customer inquiries pile up overnight. Lead qualification happens during business hours, or not at all. An AI agent never sleeps. It qualifies, triages, and triggers workflows 24/7, every step logged."
+        description="Automation handles the predictable. Agents handle the ambiguous. We deploy working systems that qualify leads, triage customers, and monitor markets around the clock so your team gets a day back every week."
       />
 
       <AnimatedSection delay={0}>
@@ -65,12 +65,15 @@ export default function AgentsPage() {
         <div className="max-w-7xl mx-auto">
           {/* Problem section */}
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-2xl text-navy-800 mb-4">The problem of 24/7 operations.</h2>
+            <h2 className="font-display text-2xl text-navy-800 mb-4">The difference between rules and judgment.</h2>
             <p className="sl-body-lg mb-4">
-              Customer inquiries pile up overnight. Lead qualification happens during business hours, or not at all. Someone needs to watch the research briefings, monitor the support queue, catch the anomaly before it becomes a crisis. That someone is usually your most expensive person, doing work that follows a pattern, but requires judgment.
+              The difference between automation and an agent is the difference between a rule and a judgment. Automation follows instructions: when this happens, do that. It is excellent for repetitive work with clear inputs and fixed outputs. An agent evaluates context, chooses between options, and adapts when the situation changes. It can read a vague customer email, compare it against previous cases, decide whether to resolve it or escalate it, and learn from the result. Where automation executes, agents decide.
+            </p>
+            <p className="sl-body-lg mb-4">
+              Most businesses need both. The predictable parts of your process should be automated without thought. The ambiguous parts should be handled by agents that reason within boundaries you set. A lead qualification agent screens inbound inquiries at 2 a.m., scores them against your criteria, and routes only the ready ones to sales. A customer triage agent resolves common requests on its own and passes complex issues to humans with full context attached. A research agent monitors competitors, regulation, and pricing signals so your team starts the day informed instead of digging. A workflow orchestrator coordinates handoffs across CRM, email, billing, and operations systems that currently require someone to watch.
             </p>
             <p className="sl-body-lg">
-              <strong className="text-navy-800">An AI agent never sleeps.</strong> It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows. All without waking anyone up. You set the boundaries. You get the results. Your team focuses on the work that needs human attention.
+              <strong className="text-navy-800">Everyone has access to the same AI. We build the one thing that saves you a day a week.</strong> Working systems that operate 24/7, log every action, and escalate only when necessary. Your best people stop sorting, routing, and watching inboxes. They start closing, advising, and building.
             </p>
           </div>
 
@@ -80,7 +83,10 @@ export default function AgentsPage() {
           <div className="grid md:grid-cols-2 gap-5 mb-16">
             {agentCapabilities.map((cap) => (
               <div key={cap.title} className="bg-white border border-navy-200 rounded p-6 hover:border-navy-900 transition-all duration-220">
-                <h3 className="font-display text-xl text-navy-800 mb-2">{cap.title}</h3>
+                <h3 className="font-display text-xl text-navy-800 mb-2 flex items-center gap-2">
+                  <Diamond className="text-gold-600" />
+                  {cap.title}
+                </h3>
                 <p className="sl-body-sm mb-4">{cap.desc}</p>
                 <div className="bg-bone-100 border border-navy-100 rounded p-4">
                   <p className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 mb-1">In practice</p>
@@ -95,10 +101,10 @@ export default function AgentsPage() {
             <h2 className="font-display text-2xl text-bone-50 mb-6">Built-in safety, by design.</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: 'Guardrails', desc: 'Every agent starts with tight boundaries. We define what it can decide autonomously, what needs approval, and what triggers a human escalation.' },
-                { title: 'Audit Log', desc: 'Every action is recorded with timestamp, input, decision rationale, and outcome. Trace any result back to the exact context that produced it.' },
-                { title: 'Escalation Rules', desc: 'Configurable paths for uncertainty: when confidence drops below a threshold, the agent flags the item with full context for human review.' },
-                { title: 'Learning Loop', desc: 'Feedback from escalations and outcomes trains the agent to make better decisions over time. Monthly tune-ups included in every deployment.' },
+                { title: 'Guardrails', desc: 'Every agent ships with explicit boundaries. We define what it can decide alone, what requires approval, and what is strictly out of scope. Authority is granted in increments, never assumed.' },
+                { title: 'Audit Log', desc: 'Every action is recorded with timestamp, input, decision rationale, and outcome. Trace any result back to the exact context that produced it. Accountability is built in, not added later.' },
+                { title: 'Escalation Rules', desc: 'When confidence drops or a case falls outside policy, the agent stops and routes the item to a human with full context. No decision is made in the dark.' },
+                { title: 'Learning Loop', desc: 'Outcomes and escalations feed back into the agent. We tune models monthly so performance improves and drift is caught early.' },
               ].map((s) => (
                 <div key={s.title}>
                   <h3 className="font-display text-lg text-bone-50 mb-2">{s.title}</h3>
@@ -124,7 +130,7 @@ export default function AgentsPage() {
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Studies</p>
-            <p className="sl-body-sm mb-1"><strong className="text-navy-800">Garza International:</strong> AI-powered quoting engine that evaluates win/loss data and generates proposals autonomously. 60% faster turnaround, 85% fewer errors.</p>
+            <p className="sl-body-sm mb-1"><strong className="text-navy-800">Garza International:</strong> AI-powered quoting engine that evaluates win/loss history and generates proposals autonomously. 60% faster turnaround, 85% fewer errors.</p>
             <p className="sl-body-sm mb-3"><strong className="text-navy-800">LoveFlow:</strong> Behavioral matching agent that learns from user interaction patterns. 40% better matches, 2x retention improvement.</p>
             <Link href="/case-studies" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">View all case studies &rarr;</Link>
           </div>

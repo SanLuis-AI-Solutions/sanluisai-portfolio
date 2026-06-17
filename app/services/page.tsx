@@ -6,11 +6,11 @@ import FlameMark from '@/components/FlameMark'
 import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
-  title: 'AI Development Services | Custom AI, Automation, Agents & Consulting | SanLuis AI Solutions',
-  description: 'Eliminate manual busywork, cut costs by 40%, and make faster decisions. Workflow automation from $1,200, AI agent systems from $5,000. Risk-free $300 Discovery Session with money-back guarantee. Houston TX. Bilingual EN/ES.',
+  title: 'Services | SanLuis AI Solutions',
+  description: 'We build the one thing that saves you a day a week. Not chatbots. Not strategy decks. Working systems that do the work so your people can focus on decisions, relationships, and results.',
   openGraph: {
-    title: 'AI Services | Custom AI, Automation, Agents & Consulting | SanLuis AI Solutions',
-    description: 'Stop losing hours to busywork. Custom AI systems from $5,000 with $2,000+ in bonus value. Workflow automation from $1,200. Every project backed by a 6-month performance guarantee.',
+    title: 'Services | SanLuis AI Solutions',
+    description: 'We build the one thing that saves you a day a week. From $300 Discovery Session to custom AI systems at $5,000+. Discover, build, ship, maintain.',
     url: 'https://sanluisai-portfolio.vercel.app/services',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -24,9 +24,13 @@ const servicesList = [
     num: '01',
     name: 'Custom AI Systems',
     tag: 'Deep Build',
-    bestFor: 'Growing teams scaling core operations',
-    desc: 'Your team moves faster, your decisions get sharper, and your operations scale without adding headcount. Built from scratch for your exact problem. No templates, no compromises. Includes $1,500 Architecture Blueprint bonus. If your system does not deliver measurable savings in 6 months, we fix it free.',
-    items: ['Architecture from first principles tailored to your stack', 'Full source ownership, your IP stays yours', 'Deployed in weeks, not months', 'Authentication, roles, permissions, and AI features where they create leverage'],
+    bestFor: 'Companies with a specific operational problem that off-the-shelf software cannot solve',
+    desc: 'Your company has one operational process that costs more time, money, or frustration than any other. Maybe it is a quoting engine that takes six hours per bid. Maybe it is a matching algorithm that does not actually match. Maybe it is a data pipeline held together by spreadsheets and patience. We build the system that solves that specific problem, end to end. You own the code. You control the roadmap. No license fees. No vendor lock-in.',
+    items: [
+      'Single-problem focus: one problem, solved completely, before we touch anything else',
+      'Built on your data, your terminology, your workflow, your integration landscape',
+      'Fixed-price, fixed-scope phases. Scope expansion becomes the next phase, not a change order',
+    ],
     pricing: 'From $5,000',
     timeline: '3-6 weeks',
     href: '/services/custom-ai',
@@ -35,9 +39,13 @@ const servicesList = [
     num: '02',
     name: 'Workflow Automation',
     tag: 'Quick Win',
-    bestFor: 'Teams losing hours to manual busywork',
-    desc: 'Recover 20+ hours a week. Your team stops doing the work machines should do. Includes 30-day post-launch support ($500 value). If it does not pay for itself in 6 months, we fix it free.',
-    items: ['Map your process once, then let automation run it', 'Integrates with your existing tools (CRM, email, Slack, etc.)', '30-day post-launch support included', 'Examples: lead intake, invoice generation, report delivery'],
+    bestFor: 'Teams losing 20+ hours a week to work that follows predictable rules',
+    desc: 'Every business has processes that absolutely need to happen but absolutely do not need a person doing them. Lead intake, invoice generation, email triage, report delivery, data entry. These tasks follow rules. They are deterministic. A machine can run them faster, with fewer errors, and without burning out your most expensive people. We map your process, build the automation in 1-2 weeks, and ship it into your existing tools. You own the code. Your team gets their time back.',
+    items: [
+      'Integrates with your existing tools. We do not replace your stack. We connect the pieces.',
+      '30-day post-launch support period to catch edge cases and optimize performance',
+      'Measurable time savings within the first week. If it does not pay for itself in 6 months, we fix it free.',
+    ],
     pricing: 'From $1,200',
     timeline: '1-2 weeks',
     href: '/services/automation',
@@ -46,20 +54,28 @@ const servicesList = [
     num: '03',
     name: 'AI Agent Systems',
     tag: 'Force Multiplier',
-    bestFor: 'Operations needing 24/7 intelligent coverage',
-    desc: 'Wake up to completed work. Your agent runs 24/7 researching, deciding, and acting without you. Includes 14-Day Prototype ($1,000 value) so you see it working before full build.',
-    items: ['Multi-agent orchestration with human review gates', 'Integrates with your data sources and existing tools', 'Monitoring, logging, and escalation rules built in', 'Examples: intake agent, research agent, customer triage'],
+    bestFor: 'Operations that need 24/7 intelligent coverage without adding headcount',
+    desc: 'Some work does not follow fixed rules. It requires judgment: triaging a vague customer request, qualifying a lead at 2 a.m., monitoring market signals, deciding when to escalate. An automation cannot do that. An AI agent can. We deploy agents that operate within the boundaries you set, making decisions while logged every step of the way. Your team wakes up to completed work, not a queue of decisions waiting for them.',
+    items: [
+      'Human review gates at critical decision points. You approve outcomes, not every step.',
+      'Full audit logging with timestamp, input, decision rationale, and outcome for every action',
+      'We start with tight guardrails and loosen them as trust builds. Never the other way around.',
+    ],
     pricing: 'From $5,000',
     timeline: '3-6 weeks',
     href: '/services/agents',
   },
   {
     num: '04',
-    name: 'AI Consulting, Discovery Session',
+    name: 'Discovery Session',
     tag: 'Start Here',
-    bestFor: 'Anyone who wants a plan before spending',
-    desc: 'Walk away with crystal-clear clarity and a roadmap you can execute tomorrow. Includes AI Opportunity Audit. If we do not find 3+ high-impact opportunities, you do not pay.',
-    items: ['60-minute focused working session (video call)', 'Identify your top 3 highest-leverage AI opportunities', 'Written roadmap delivered after the session', 'Pricing estimate for any recommended builds'],
+    bestFor: 'Anyone who knows AI matters but does not know where to start',
+    desc: 'You know AI is relevant to your business. Your competitors are talking about it. Your clients are asking about it. But when you sit down to figure out what it actually means for your operation, the options are overwhelming and the advice is generic. That is what this $300 session solves. One focused hour. We walk through your actual workflows, identify your three highest-impact AI opportunities, and hand you a written roadmap. If we do not find three opportunities, you do not pay.',
+    items: [
+      '60-minute working session. No slide decks. No theory. We map your actual operation.',
+      'Written roadmap delivered within 48 hours with prioritized opportunities and cost estimates',
+      'Money-back guarantee: if we do not find 3+ high-impact opportunities, the session is free.',
+    ],
     pricing: '$300',
     timeline: '60 min',
     href: '/services/consulting',
@@ -71,8 +87,8 @@ export default function ServicesPage() {
     <>
       <PageHeader
         eyebrow="What We Build"
-        title="Custom AI solutions for real business problems."
-        description="Most businesses are losing hours every week to processes that AI could run automatically. The problem isn&rsquo;t the technology. It&rsquo;s knowing what to build, in what order, and whether it will actually work for your specific operation. That&rsquo;s what we do. We start by understanding your business, then build exactly what it needs."
+        title="The one thing that saves you a day a week."
+        description="Everyone has access to the same AI. We build the one system that saves your team a full day every week. Not a chatbot. Not a strategy deck. A working system that does the work so your people can focus on decisions, relationships, and results. Here is how we do it."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
@@ -82,7 +98,26 @@ export default function ServicesPage() {
             <FlameMark size="md" />
           </div>
 
+          {/* Framework intro */}
           <AnimatedSection delay={0}>
+            <div className="max-w-3xl mx-auto mb-20 text-center">
+              <p className="sl-body-lg text-navy-800 mb-6">
+                We do not sell chatbots. We do not sell strategy decks. We sell one thing: a working system
+                that saves your team a full day every week. That system might be an automation that runs your
+                lead intake, an agent that qualifies prospects at 2 a.m., or a custom application built around
+                your single biggest operational problem. The shape depends on the problem. The guarantee is
+                always the same: you get a day back.
+              </p>
+              <p className="sl-body-lg text-navy-800">
+                Every project follows the same four steps. Discover what matters. Build what works. Ship it
+                into your workflow. Maintain it so it keeps delivering. We do not disappear after deployment.
+                We stay with you.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          {/* Service Cards */}
+          <AnimatedSection delay={0.05}>
             <div className="space-y-8 mb-20">
               {servicesList.map((s) => (
                 <div key={s.num} className="bg-white border border-navy-200 rounded p-8 md:p-10 hover:border-navy-900 transition-all duration-220">
@@ -117,6 +152,27 @@ export default function ServicesPage() {
             </div>
           </AnimatedSection>
 
+          {/* How it works: the process frame */}
+          <AnimatedSection delay={0.08}>
+            <div className="max-w-4xl mx-auto mb-20">
+              <h2 className="font-display text-2xl text-navy-800 text-center mb-10">How every project works.</h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { step: '01', title: 'Discover', desc: 'We start with your operation, not a template. One Discovery Session maps your process, identifies the highest-impact opportunity, and produces a written plan before any work begins.' },
+                  { step: '02', title: 'Build', desc: 'Fixed price. Fixed scope. We build the system, test it against your real workflows, and deploy it into production. In weeks, not months.' },
+                  { step: '03', title: 'Ship', desc: 'Installed into your workflow. Your team trained. Baseline metrics set against the old process. You own the code and the data from day one.' },
+                  { step: '04', title: 'Maintain', desc: 'We do not disappear. Post-launch support, monthly tune-ups, and ongoing optimization keep the system delivering as your business evolves.' },
+                ].map((s) => (
+                  <div key={s.step} className="text-center">
+                    <div className="font-display text-3xl text-gold-500 mb-3">{s.step}</div>
+                    <h3 className="font-display text-lg text-navy-800 mb-2">{s.title}</h3>
+                    <p className="font-sans text-sm text-fg3 leading-relaxed">{s.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
           {/* Not sure which service? */}
           <AnimatedSection delay={0.1}>
             <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-20 text-center">
@@ -136,16 +192,38 @@ export default function ServicesPage() {
               <h2 className="font-display text-2xl text-navy-800 mb-8">Common questions about our services.</h2>
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-display text-lg text-navy-800 mb-2">What does a no-code AI developer do?</h3>
-                  <p className="sl-body-sm">We use frontier AI models like Gemini, Claude, Codex, Grok to design and build production-grade web applications and automation systems. The result is indistinguishable from developer-built software: live, deployed, and fully functional.</p>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">What do you actually build?</h3>
+                  <p className="sl-body-sm">
+                    Working systems. Not demos, not slide decks, not proof-of-concepts that never ship. An automation
+                    that routes your leads, an agent that qualifies prospects overnight, a custom application that
+                    solves your single biggest operational problem. You can use it, touch it, and see the results
+                    in your daily operations by the end of the first week.
+                  </p>
                 </div>
                 <div>
-                  <h3 className="font-display text-lg text-navy-800 mb-2">How long does a project take?</h3>
-                  <p className="sl-body-sm">Workflow automations typically take 1-2 weeks. AI agent systems take 3-6 weeks. Full applications take 4-10 weeks. Every project starts with a Discovery Session where we set the timeline before any work begins.</p>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">How long does it take to see results?</h3>
+                  <p className="sl-body-sm">
+                    Automations ship in 1-2 weeks. Most clients see measurable time savings within the first week
+                    of deployment. Agent systems take 3-6 weeks. Custom applications take 4-10 weeks depending on
+                    scope. Every project starts with a Discovery Session where we set the timeline before any work begins.
+                  </p>
                 </div>
                 <div>
-                  <h3 className="font-display text-lg text-navy-800 mb-2">Can you build for Spanish-speaking businesses?</h3>
-                  <p className="sl-body-sm">Yes. All services are available in English and Spanish. Our team is fully bilingual.</p>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">What if it does not save us enough time?</h3>
+                  <p className="sl-body-sm">
+                    If the system does not deliver measurable savings within 6 months, we fix it free. We measure
+                    hours recovered at 30, 60, and 90 days against your baseline. If the numbers are not there,
+                    we adjust the scope at no cost until they are. That is our guarantee.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">Do you work with non-technical teams?</h3>
+                  <p className="sl-body-sm">
+                    Yes. Most of our clients do not have an internal technical team. We design systems around how
+                    your team already works, not the other way around. No new login to learn. No new process to
+                    memorize. If the system creates more work instead of less, we fix it. All services are available
+                    in English and Spanish.
+                  </p>
                 </div>
                 <div className="pt-4 border-t border-navy-200">
                   <Link href="/faq" className="inline-flex items-center font-sans text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors duration-220">
@@ -161,7 +239,7 @@ export default function ServicesPage() {
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build something that actually works?</h2>
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to get a day back every week?</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
