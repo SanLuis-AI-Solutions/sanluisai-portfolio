@@ -5,15 +5,15 @@ import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: '5 Signs Your Business Has An AI-Ready Problem — SanLuis AI Solutions',
-  description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution — and when a spreadsheet or checklist is the better answer.',
+  title: 'SanLuis AI Solutions: 5 Signs Your Business Has An AI-Ready Problem',
+  description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution, plus when a spreadsheet or checklist is the better answer.',
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: '5 Signs Your Business Has An AI-Ready Problem',
-  description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution — and when a spreadsheet or checklist is the better answer.',
+  description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution, plus when a spreadsheet or checklist is the better answer.',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',
@@ -56,23 +56,23 @@ export default function Page() {
           </div>
 
           <div className="prose prose-navy max-w-none">
-            <p className="lead text-lg text-navy-700 mb-8">AI solves specific types of problems. The trick is knowing which ones — and which ones will only get more expensive with AI bolted on.</p>
+            <p className="lead text-lg text-navy-700 mb-8">AI solves specific types of problems. The trick is knowing which ones to solve with AI, and which ones will only cost more once AI is bolted on.</p>
 
             <h2>Sign #1: You Have Data But No Decisions</h2>
-            <p>You collect customer data, sales data, or operational data — but you don't have the time to analyze it. Your spreadsheet has 10,000 rows and you're still making decisions based on intuition.</p>
-            <p><strong>AI-ready if:</strong> The data exists in a structured format (CSV, database, or CRM) and the decision pattern is repeatable. AI can analyze your data and give you answers in seconds.</p>
+            <p>You collect customer data, sales data, or operational data, but you never find time to analyze it. Your spreadsheet has 10,000 rows and you still make decisions based on intuition.</p>
+            <p><strong>AI-ready if:</strong> You have the data in a structured format (CSV, database, or CRM) and the decision follows a repeatable pattern. AI can analyze your data and give you answers in seconds.</p>
 
             <h2>Sign #2: Someone Is Copy-Pasting for Hours</h2>
             <p>An employee spends 10+ hours per week moving data from one system to another. Emails to spreadsheets. PDFs to CRMs. Website forms to follow-up sequences.</p>
             <p><strong>AI-ready if:</strong> The process has clear rules and doesn't require creative judgment. Workflow automation can handle this in minutes, not hours.</p>
 
             <h2>Sign #3: Your Response Time Is Losing You Business</h2>
-            <p>A lead comes in at 8 PM. You respond at 10 AM the next day. By then, they've booked with a competitor. This is the most expensive delay in small business — and the most preventable.</p>
+            <p>A lead comes in at 8 PM. You respond at 10 AM the next day. By then, they've booked with a competitor. No other delay in small business costs this much, and none is this easy to prevent.</p>
             <p><strong>AI-ready if:</strong> You can define what a "qualified lead" looks like. An AI intake system can respond instantly, ask qualifying questions, and book a meeting without human involvement.</p>
 
             <h2>Sign #4: You Have Experts Doing Admin Work</h2>
-            <p>Your best people — the ones whose time is most valuable — are spending it on scheduling, reporting, data entry, and follow-up emails. Their expertise is wasted on tasks that don't require it.</p>
-            <p><strong>AI-ready if:</strong> The admin work follows a pattern. AI agent systems can handle intake, routing, research, and reporting — freeing your experts for actual decisions.</p>
+            <p>Your best people waste their expertise on scheduling, reporting, data entry, and follow-up emails. That work does not need their judgment.</p>
+            <p><strong>AI-ready if:</strong> The admin work follows a pattern. AI agents can handle intake, routing, research, and reporting so your experts can focus on actual decisions.</p>
 
             <h2>Sign #5: You Can Describe the Problem in One Sentence</h2>
             <p>"I need to qualify leads faster." "I need to automate invoice follow-ups." "I need to analyze project bids consistently." If you can state the problem clearly, AI can probably solve it clearly.</p>

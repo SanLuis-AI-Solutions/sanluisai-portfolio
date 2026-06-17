@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'How Garza International Cut Bid Turnaround by 60% With Custom AI — SanLuis AI Solutions',
+  title: 'How Garza International Cut Bid Turnaround by 60% With Custom AI | SanLuis AI Solutions',
   description: 'A Houston construction firm was losing bids because manual quoting took 6+ hours per response. Here is the exact ROI breakdown of a 3-week custom AI build.',
 }
 
@@ -70,8 +70,8 @@ export default function Page() {
             <p>Total time per bid: 6–8 hours. Total bids per week: at most 3–4. The team was working at capacity and still losing work to competitors who responded faster.</p>
 
             <h2>The Build: 3 Weeks, Fixed Price</h2>
-            <p>We started with a $300 Discovery Session. One hour to identify the bottleneck, map the current cost, and outline the build. The math was clear: a 60% reduction in quoting time would let Garza bid on 2x the projects without hiring more estimators.</p>
-            <p>The system we built connects supplier pricing APIs, historical bid data, and labor rate tables into a single interface. An estimator enters project specs — square footage, material type, location, timeline — and the engine returns a fully formatted proposal in under 30 minutes.</p>
+            <p>We started with a $300 Discovery Session. One hour to find the slowest step in the quoting process, map the current cost, and outline the build. The math was clear: a 60% reduction in quoting time would let Garza bid on 2x the projects without hiring more estimators.</p>
+            <p>The system we built connects supplier pricing APIs, historical bid data, and labor rate tables into a single interface. An estimator enters project specs, including square footage, material type, location, and timeline. The engine returns a fully formatted proposal in under 30 minutes.</p>
 
             <h2>ROI by the Numbers</h2>
             <p><strong>Before:</strong> 6–8 hours per bid, 3–4 bids per week, estimators overloaded, inconsistent pricing across bids.</p>
@@ -79,11 +79,11 @@ export default function Page() {
             <p><strong>Investment:</strong> $300 discovery + fixed-price build. Recovered in a single large bid win.</p>
 
             <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">
-              "SanLuis AI didn't just build software — they solved the single biggest problem in our sales process. We're bidding faster and winning more." — Director of Operations, Garza International
+              "SanLuis AI didn't just build software. They solved the single biggest problem in our sales process. We're bidding faster and winning more." | Director of Operations, Garza International
             </blockquote>
 
             <h2>Why Fixed-Price AI Works Here</h2>
-            <p>Garza's quoting problem was well-defined. The data existed. The rules were clear. The output was predictable. That's the sweet spot for fixed-price AI builds — where the problem is clear enough that a Discovery Session can scope it completely, and the solution doesn't need months of iteration.</p>
+            <p>Garza's quoting problem was well-defined. The data existed. The rules were clear. The output was predictable. That's the sweet spot for fixed-price AI builds: the problem is clear enough that a Discovery Session can scope it completely, and the solution doesn't need months of iteration.</p>
             <p>Not every AI project fits this model. But most workflow automation problems do. If you can explain the problem in one sentence and the data is already structured, a fixed-price build is probably the right answer.</p>
           </div>
 

@@ -5,15 +5,15 @@ import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'The $300 Discovery Session: What Happens in That Hour — SanLuis AI Solutions',
-  description: 'You pay $300 for a 60-minute audit. What do you actually get? A breakdown of the diagnostic process — from problem identification to a written action plan you can execute.',
+  title: 'The $300 Discovery Session: What Happens in That Hour. SanLuis AI Solutions',
+  description: 'You pay $300 for a 60-minute audit. What do you actually get? We break down the diagnostic process: from problem identification to a written action plan you can execute.',
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'The $300 Discovery Session: What Happens in That Hour',
-  description: 'You pay $300 for a 60-minute audit. What do you actually get? A breakdown of the diagnostic process — from problem identification to a written action plan you can execute.',
+  description: 'You pay $300 for a 60-minute audit. What do you actually get? We break down the diagnostic process: from problem identification to a written action plan you can execute.',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',
@@ -65,10 +65,10 @@ export default function Page() {
 
             <h2>Minute 15–30: Cost Analysis</h2>
             <p>We calculate what the problem is costing you. Hours per week multiplied by hourly value, plus lost opportunities, plus frustration tax. This number is almost always higher than you think.</p>
-            <p>If the problem costs less than the solution, we stop there. We'll tell you honestly: this one isn't worth building. The $300 was well spent because it saved you $5,000.</p>
+            <p>If the problem costs less than the solution, we stop there. We'll tell you honestly: this one isn't worth building. You spent the $300 well: it saved you $5,000.</p>
 
             <h2>Minute 30–45: Solution Architecture</h2>
-            <p>If the math works, we sketch the solution. Not wireframes. Not PRDs. A clear description of what the system will do, how it fits into your existing workflow, and what you'll see when it's running.</p>
+            <p>If the math works, we sketch the solution. Not wireframes. Not PRDs. We describe what the system will do, how it fits into your workflow, and what you'll see when it runs.</p>
 
             <h2>Minute 45–60: Roadmap + Pricing</h2>
             <p>You receive:</p>
@@ -80,7 +80,7 @@ export default function Page() {
             </ul>
 
             <h2>What Happens Next</h2>
-            <p>You walk away with a document. Not a proposal for more consulting. A concrete answer: build this, don't build that. If the answer is "build," you have a price and a timeline before you've paid a retainer.</p>
+            <p>You leave the session with a document. Not a proposal for more consulting. A concrete answer: build this, don't build that. If the answer is "build," you have a price and a timeline before you've paid a retainer.</p>
             <p>If the answer is "don't build," you saved thousands. Either way, the $300 was the cheapest diagnostic you'll ever run on your business.</p>
 
             <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">
