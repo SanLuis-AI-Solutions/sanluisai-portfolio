@@ -5,8 +5,8 @@ import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
-  title: 'AI Consulting — SanLuis AI Solutions',
-  description: "You know AI matters. You just don't know where it actually applies to YOUR business. That's the problem this $300 session solves. Walk away with clarity — not more questions.",
+  title: 'AI Consulting. SanLuis AI Solutions',
+  description: "You know AI matters. You just don't know where it actually applies to YOUR business. That's the problem this $300 session solves. Walk away with clarity. Not more questions.",
 }
 
 const sessionSteps = [
@@ -21,7 +21,7 @@ const sessionSteps = [
   {
     phase: 'The Session (60 min)',
     items: [
-      'Walk through your actual workflows — the bottlenecks, the kludges, the spreadsheets held together by hope',
+      'Walk through your actual workflows. The processes, the kludges, the spreadsheets held together by hope',
       'Identify 3+ specific AI opportunities ranked by impact and effort',
       'Discuss realistic timelines, costs, and expected outcomes for each',
       'We tell you flat out if something does not make sense for AI',
@@ -40,11 +40,11 @@ const sessionSteps = [
 const faqItems = [
   {
     q: "Who is this session for?",
-    a: "Anyone who knows AI matters for their business but does not know where to start. Business owners, operations leads, and decision-makers who want a concrete plan — not theory. If you already know exactly what you need built, skip the session and go straight to a service page. If you are unsure, this is where you should begin.",
+    a: "Anyone who knows AI matters for their business but does not know where to start. Business owners, operations leads, and decision-makers who want a concrete plan. Not theory. If you already know exactly what you need built, skip the session and go straight to a service page. If you are unsure, this is where you should begin.",
   },
   {
     q: "What if you don't find 3+ opportunities?",
-    a: "Then you do not pay. The money-back guarantee is not a gimmick — if we cannot identify at least three high-impact AI opportunities in your operations, the session is free. It has never happened, but the guarantee exists so you know we are not going to waste your time.",
+    a: "Then you do not pay. The money-back guarantee is not a gimmick. If we cannot identify at least three high-impact AI opportunities in your operations, the session is free. It has never happened, but the guarantee exists so you know we are not going to waste your time.",
   },
   {
     q: "Do I need technical knowledge to participate?",
@@ -52,7 +52,7 @@ const faqItems = [
   },
   {
     q: "What happens after the session?",
-    a: "You get a written roadmap within 48 hours. If you decide to move forward, the roadmap becomes the scope of work — we know exactly what to build, for how much, and in what timeframe. If you decide not to proceed, you have a clear action plan you can execute with anyone — or no one.",
+    a: "You get a written roadmap within 48 hours. If you decide to move forward, the roadmap becomes the scope of work. We know exactly what to build, for how much, and in what timeframe. If you decide not to proceed, you have a clear action plan you can execute with anyone. Or no one.",
   },
 ]
 
@@ -62,7 +62,7 @@ export default function ConsultingPage() {
       <PageHeader
         eyebrow="Service 04"
         title="AI Consulting."
-        description="You know AI matters. You just don't know where it actually applies to YOUR business. That's the problem this $300 session solves. Walk away with clarity — not more questions."
+        description="You know AI matters. You just don't know where it actually applies to YOUR business. That's the problem this $300 session solves. Walk away with clarity. Not more questions."
       />
 
       <AnimatedSection delay={0}>
@@ -75,7 +75,7 @@ export default function ConsultingPage() {
               You know AI matters. Your competitors are talking about it. Your clients are asking about it. But when you sit down to figure out what it actually means for your business, the options are overwhelming and the advice is generic. Vendor demos. Industry hype. None of it tells you what <em>your</em> business should do.
             </p>
             <p className="sl-body-lg mb-4">
-              <strong className="text-navy-800">That is the problem this $300 session solves.</strong> One focused hour. We walk through your actual operations — the workflows, the bottlenecks, the spreadsheets held together by hope. When the hour is up, you know exactly where AI creates leverage for your business and where it is a waste of money.
+              <strong className="text-navy-800">That is the problem this $300 session solves.</strong> One focused hour. We walk through your actual operations. The workflows, the processes, the spreadsheets held together by hope. When the hour is up, you know exactly where AI creates leverage for your business and where it is a waste of money.
             </p>
             <p className="sl-body-lg">
               <strong className="text-navy-800">Money-back guarantee:</strong> If we do not find 3+ high-impact opportunities for AI in your business, you do not pay. Not a penny. That is how confident we are that every business has untapped leverage.
@@ -107,7 +107,7 @@ export default function ConsultingPage() {
               {[
                 { title: 'Clarity', desc: 'No more "we should do something with AI." You leave with a prioritized action plan aligned to your budget, your team, and your actual business goals.' },
                 { title: '3+ Opportunities', desc: 'At least three specific AI applications ranked by impact and feasibility. Each one tied to a measurable outcome in your business.' },
-                { title: 'Cost Estimates', desc: 'Realistic pricing for each recommended initiative. No hidden fees, no "it depends" — actual numbers based on similar deployments.' },
+                { title: 'Cost Estimates', desc: 'Realistic pricing for each recommended initiative. No hidden fees, no "it depends." Actual numbers based on similar deployments.' },
                 { title: 'Written Roadmap', desc: 'Delivered within 48 hours. You can execute it with us, with another team, or on your own. The value is in the plan, not the provider.' },
               ].map((s) => (
                 <div key={s.title}>
@@ -134,7 +134,7 @@ export default function ConsultingPage() {
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Real Example</p>
-            <p className="sl-body-sm mb-1">Garza International started with a Discovery Session. We identified their manual quoting process as the highest-impact opportunity — 6+ hours per bid, losing to faster competitors. Three weeks later, they had a custom AI quoting engine delivering <strong className="text-navy-800">60% faster turnaround, 85% fewer errors.</strong></p>
+            <p className="sl-body-sm mb-1">Garza International started with a Discovery Session. We identified their manual quoting process as the highest-impact opportunity. 6+ hours per bid, losing to faster competitors. Three weeks later, they had a custom AI quoting engine delivering <strong className="text-navy-800">60% faster turnaround, 85% fewer errors.</strong></p>
             <p className="sl-body-sm mb-3 text-fg2">Investment: $5,000–8,000. Net Year 1 gain: ~$66,880.</p>
             <Link href="/case-studies/garza-international" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the full case study &rarr;</Link>
           </div>

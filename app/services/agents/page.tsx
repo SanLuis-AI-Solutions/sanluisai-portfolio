@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const agentCapabilities = [
   {
     title: 'Lead Qualification Agent',
-    desc: 'Screens inbound leads 24/7 against your scoring criteria. Routes hot leads to sales, nurtures warm leads with follow-up sequences, archives cold leads — all without human intervention.',
+    desc: 'Screens inbound leads 24/7 against your scoring criteria. Routes hot leads to sales, nurtures warm leads with follow-up sequences, archives cold leads. All without human intervention.',
     example: 'A construction contractor wakes up to 8 qualified leads sorted by project size, budget range, and timeline urgency. Ready to call, not sort.',
   },
   {
@@ -23,27 +23,27 @@ const agentCapabilities = [
   {
     title: 'Research & Intelligence Agent',
     desc: 'Monitors competitors, industry news, and market signals. Synthesizes findings into briefings, alerts on changes that matter, and surfaces opportunities your team would miss at human reading speed.',
-    example: 'A logistics company gets a daily briefing on regulatory changes, fuel price shifts, and competitor route expansions — distilled to 3-minute read.',
+    example: 'A logistics company gets a daily briefing on regulatory changes, fuel price shifts, and competitor route expansions. Distilled to a 3-minute read.',
   },
   {
     title: 'Workflow Orchestrator',
     desc: 'Coordinates multi-step processes across your tools. Reads incoming data, decides the path, executes actions, logs results. Handles the handoffs between systems that currently require a person to watch.',
-    example: 'A healthcare billing pipeline that extracts patient data from intake forms, checks insurance eligibility, generates claims, and routes exceptions — all in under 60 seconds.',
+    example: 'A healthcare billing pipeline that extracts patient data from intake forms, checks insurance eligibility, generates claims, and routes exceptions. All in under 60 seconds.',
   },
 ]
 
 const faqItems = [
   {
     q: "How is an AI agent different from an automation?",
-    a: "Automation follows fixed rules (when X, do Y). An AI agent makes decisions: it evaluates context, chooses a path, and learns from outcomes. Agents are right when the process requires judgment — triaging a vague customer request, researching a market signal, deciding when to escalate. Most deployments combine both: automation handles the predictable, agents handle the ambiguous.",
+    a: "Automation follows fixed rules (when X, do Y). An AI agent makes decisions: it evaluates context, chooses a path, and learns from outcomes. Agents are right when the process requires judgment: triaging a vague customer request, researching a market signal, deciding when to escalate. Most deployments combine both: automation handles the predictable, agents handle the ambiguous.",
   },
   {
     q: "How do I trust it to make decisions?",
-    a: "You set the boundaries. Every agent comes with human review gates at critical decision points, full audit logging, and configurable escalation rules. You approve outcomes, not every step. We start with tight guardrails and loosen them as trust builds — never the other way around.",
+    a: "You set the boundaries. Every agent comes with human review gates at critical decision points, full audit logging, and configurable escalation rules. You approve outcomes, not every step. We start with tight guardrails and loosen them as trust builds. Never the other way around.",
   },
   {
     q: "Can it work with my existing systems?",
-    a: "Yes. Agents connect to your CRM, email, Slack, databases, APIs, and any tool with an integration surface. If a tool does not have an API, we build a connector. Your existing workflow stays intact — the agent plugs into the gaps, not replaces infrastructure.",
+    a: "Yes. Agents connect to your CRM, email, Slack, databases, APIs, and any tool with an integration surface. If a tool does not have an API, we build a connector. Your existing workflow stays intact. The agent plugs into the gaps, without replacing infrastructure.",
   },
   {
     q: "How do I know it's working?",
@@ -57,7 +57,7 @@ export default function AgentsPage() {
       <PageHeader
         eyebrow="Service 03"
         title="AI Agent Systems."
-        description="Customer inquiries pile up overnight. Lead qualification happens during business hours, or not at all. An AI agent never sleeps — it qualifies, triages, and triggers workflows 24/7, every step logged."
+        description="Customer inquiries pile up overnight. Lead qualification happens during business hours, or not at all. An AI agent never sleeps. It qualifies, triages, and triggers workflows 24/7, every step logged."
       />
 
       <AnimatedSection delay={0}>
@@ -67,14 +67,14 @@ export default function AgentsPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The problem of 24/7 operations.</h2>
             <p className="sl-body-lg mb-4">
-              Customer inquiries pile up overnight. Lead qualification happens during business hours, or not at all. Someone needs to watch the research briefings, monitor the support queue, catch the anomaly before it becomes a crisis. That someone is usually your most expensive person — doing work that follows a pattern, but requires judgment.
+              Customer inquiries pile up overnight. Lead qualification happens during business hours, or not at all. Someone needs to watch the research briefings, monitor the support queue, catch the anomaly before it becomes a crisis. That someone is usually your most expensive person, doing work that follows a pattern, but requires judgment.
             </p>
             <p className="sl-body-lg">
-              <strong className="text-navy-800">An AI agent never sleeps.</strong> It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows — all without waking anyone up. You set the boundaries. You get the results. Your team focuses on the work that needs human attention.
+              <strong className="text-navy-800">An AI agent never sleeps.</strong> It qualifies leads at 2 a.m., triages support tickets in real time, monitors systems for anomalies, and triggers escalation workflows. All without waking anyone up. You set the boundaries. You get the results. Your team focuses on the work that needs human attention.
             </p>
           </div>
 
-          {/* What agents do — capability cards */}
+          {/* What agents do: capability cards */}
           <h2 className="font-display text-2xl text-navy-800 mb-6">What an AI agent does for you.</h2>
           <p className="sl-body-sm mb-8 max-w-2xl text-fg2">Each agent is trained on your data and bound by your policies. Every action is logged. You approve outcomes, not every decision.</p>
           <div className="grid md:grid-cols-2 gap-5 mb-16">
@@ -124,8 +124,8 @@ export default function AgentsPage() {
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Studies</p>
-            <p className="sl-body-sm mb-1"><strong className="text-navy-800">Garza International:</strong> AI-powered quoting engine that evaluates win/loss data and generates proposals autonomously — 60% faster turnaround, 85% fewer errors.</p>
-            <p className="sl-body-sm mb-3"><strong className="text-navy-800">LoveFlow:</strong> Behavioral matching agent that learns from user interaction patterns — 40% better matches, 2x retention improvement.</p>
+            <p className="sl-body-sm mb-1"><strong className="text-navy-800">Garza International:</strong> AI-powered quoting engine that evaluates win/loss data and generates proposals autonomously. 60% faster turnaround, 85% fewer errors.</p>
+            <p className="sl-body-sm mb-3"><strong className="text-navy-800">LoveFlow:</strong> Behavioral matching agent that learns from user interaction patterns. 40% better matches, 2x retention improvement.</p>
             <Link href="/case-studies" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">View all case studies &rarr;</Link>
           </div>
         </div>

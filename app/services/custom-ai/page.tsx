@@ -5,14 +5,14 @@ import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
-  title: 'Custom AI Systems — SanLuis AI Solutions',
-  description: "Stop working around software built for someone else. We solve your single biggest operational bottleneck — custom, on your data, and you own the code.",
+  title: 'Custom AI Systems. SanLuis AI Solutions',
+  description: "Stop working around software built for someone else. We solve your single biggest operational problem: custom, on your data, and you own the code.",
 }
 
 const buildAreas = [
   {
     title: 'Custom Web Applications',
-    desc: 'Full-stack applications built around your specific workflow. Authentication, permissions, data models, integrations — everything tailored to how your business actually runs.',
+    desc: 'Full-stack applications built around your specific workflow. Authentication, permissions, data models, integrations: everything tailored to how your business actually runs.',
     when: 'Your off-the-shelf software requires more workarounds than actual use. Your team spends more time managing the tool than doing the work.',
   },
   {
@@ -35,19 +35,19 @@ const buildAreas = [
 const faqItems = [
   {
     q: "What does 'custom' mean exactly?",
-    a: "It means we build for your specific problem, not a generalized template. Your data model, your terminology, your workflow, your integration landscape. No features you do not need. No workarounds for assumptions that do not fit. You get exactly what solves your bottleneck — nothing more, nothing less.",
+    a: "It means we build for your specific problem, not a generalized template. Your data model, your terminology, your workflow, your integration landscape. No features you do not need. No workarounds for assumptions that do not fit. You get exactly what solves your problem: nothing more, nothing less.",
   },
   {
     q: "Who owns the code and data?",
-    a: "You do. Full source ownership. Your IP stays yours. No license fees, no recurring charges, no vendor lock-in. If you want to take the system elsewhere, modify it, or have another team maintain it — that is your right. We help with the transition at no extra cost.",
+    a: "You do. Full source ownership. Your IP stays yours. No license fees, no recurring charges, no vendor lock-in. If you want to take the system elsewhere, modify it, or have another team maintain it: that is your right. We help with the transition at no extra cost.",
   },
   {
     q: "How do you scope something custom without scope creep?",
-    a: "We target your single biggest operational problem and solve it completely — end to end — before we touch anything else. One bottleneck at a time. Each phase is fixed-price, fixed-scope, with clear acceptance criteria. If scope expands, it becomes the next phase, not a change order on the current one.",
+    a: "We target your single biggest operational problem and solve it completely: end to end: before we touch anything else. One problem at a time. Each phase is fixed-price, fixed-scope, with clear acceptance criteria. If scope expands, it becomes the next phase, not a change order on the current one.",
   },
   {
     q: "How is this different from hiring a development agency?",
-    a: "We build with AI, not more people. A traditional agency writes thousands of lines of code over months. We prototype and iterate at AI speed — weeks instead of quarters. The result is the same quality: production-grade, deployed, and fully functional. But you get there faster, for less, with full ownership.",
+    a: "We build with AI, not more people. A traditional agency writes thousands of lines of code over months. We prototype and iterate at AI speed: weeks instead of quarters. The result is the same quality: production-grade, deployed, and fully functional. But you get there faster, for less, with full ownership.",
   },
 ]
 
@@ -57,7 +57,7 @@ export default function CustomAIPage() {
       <PageHeader
         eyebrow="Service 01"
         title="Custom AI Systems."
-        description="You have one operational bottleneck costing you more than you realize. We solve it completely — in weeks. You own the code. No license fees. No vendor lock-in."
+        description="You have one operational problem costing you more than you realize. We solve it completely: in weeks. You own the code. No license fees. No vendor lock-in."
       />
 
       <AnimatedSection delay={0}>
@@ -73,13 +73,13 @@ export default function CustomAIPage() {
               <strong className="text-navy-800">We build what you actually need.</strong> One system, built from scratch for your exact problem. Your data model. Your terminology. Your workflow. No bloat. No workarounds. No subscription stack anxiety.
             </p>
             <p className="sl-body-lg">
-              We target your single biggest operational bottleneck and solve it end to end — then we move to the next. One at a time. No scope creep. No &ldquo;let us put everything in an MVP.&rdquo; Each phase is fixed-price, fixed-scope, and you own the result.
+              We target your single biggest operational problem and solve it end to end: then we move to the next. One at a time. No scope creep. No &ldquo;let us put everything in an MVP.&rdquo; Each phase is fixed-price, fixed-scope, and you own the result.
             </p>
           </div>
 
           {/* Build areas */}
           <h2 className="font-display text-2xl text-navy-800 mb-6">What we build.</h2>
-          <p className="sl-body-sm mb-8 max-w-2xl text-fg2">Every system is designed from first principles. Here are the patterns we see most often — your problem may not fit neatly into one, and that is fine. We build whatever moves your business forward.</p>
+          <p className="sl-body-sm mb-8 max-w-2xl text-fg2">Every system is designed from first principles. Here are the patterns we see most often. Your problem may not fit neatly into one, and that is fine. We build whatever moves your business forward.</p>
           <div className="grid md:grid-cols-2 gap-5 mb-16">
             {buildAreas.map((area) => (
               <div key={area.title} className="bg-white border border-navy-200 rounded p-6 hover:border-navy-900 transition-all duration-220">
@@ -95,13 +95,13 @@ export default function CustomAIPage() {
 
           {/* How we scope */}
           <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-16">
-            <h2 className="font-display text-2xl text-bone-50 mb-6">One bottleneck at a time.</h2>
+            <h2 className="font-display text-2xl text-bone-50 mb-6">One problem at a time.</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { step: '01', title: 'Identify', desc: 'We find your single highest-cost operational bottleneck. Not the most visible one — the one that actually hurts.' },
+                { step: '01', title: 'Identify', desc: 'We find your single highest-cost operational problem. Not the most visible one: the one that actually hurts.' },
                 { step: '02', title: 'Design', desc: 'Architecture blueprint scoped to exactly that problem. Fixed price. Fixed timeline. No ambiguity.' },
                 { step: '03', title: 'Build & Deploy', desc: 'Built on your data, tested against your real workflows, deployed into production. In weeks, not months.' },
-                { step: '04', title: 'Next', desc: 'You see results immediately. When you are ready, we identify the next bottleneck and repeat the cycle.' },
+                { step: '04', title: 'Next', desc: 'You see results immediately. When you are ready, we identify the next problem and repeat the cycle.' },
               ].map((s) => (
                 <div key={s.step}>
                   <div className="font-display text-3xl text-gold-500 mb-2">{s.step}</div>
@@ -128,7 +128,7 @@ export default function CustomAIPage() {
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
-            <p className="sl-body-sm mb-1">LoveFlow's matching algorithm was built on surface-level preferences — users were bouncing because the matches didn't work. We built a custom behavioral matching engine from scratch: <strong className="text-navy-800">40% better match quality, 2x retention improvement in 6 weeks.</strong></p>
+            <p className="sl-body-sm mb-1">LoveFlow's matching algorithm was built on surface-level preferences. Users were bouncing because the matches didn't work. We built a custom behavioral matching engine from scratch: <strong className="text-navy-800">40% better match quality, 2x retention improvement in 6 weeks.</strong></p>
             <p className="sl-body-sm mb-3 text-fg2">Investment: $5,000–10,000. Annual retention value: ~$81,000 in saved churn.</p>
             <Link href="/case-studies/loveflow" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the full case study &rarr;</Link>
           </div>

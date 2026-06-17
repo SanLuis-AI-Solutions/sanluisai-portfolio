@@ -72,7 +72,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="What We Build"
         title="Custom AI solutions for real business problems."
-        description="Most businesses are losing hours every week to processes that AI could run automatically. The problem isn't the technology — it's knowing what to build, in what order, and whether it will actually work for your specific operation. That's what we do. We start by understanding your business, then build exactly what it needs."
+        description="Most businesses are losing hours every week to processes that AI could run automatically. The problem isn&rsquo;t the technology. It&rsquo;s knowing what to build, in what order, and whether it will actually work for your specific operation. That&rsquo;s what we do. We start by understanding your business, then build exactly what it needs."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
@@ -122,7 +122,7 @@ export default function ServicesPage() {
             <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-20 text-center">
               <h2 className="font-display text-2xl text-bone-50 mb-3">Not sure which service fits?</h2>
               <p className="font-sans text-base text-bone-300/70 max-w-xl mx-auto mb-6">
-                Every business is different. Book a $300 Discovery Session and we will map your specific needs to the right solution — or tell you if AI is not the answer.
+                Every business is different. Book a $300 Discovery Session and we will map your specific needs to the right solution. Or tell you if AI is not the answer.
               </p>
               <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-3 bg-gold-500 text-navy-900 hover:bg-gold-400 transition-all duration-220 rounded">
                 Book a Discovery Session.
@@ -137,7 +137,7 @@ export default function ServicesPage() {
               <div className="space-y-8">
                 <div>
                   <h3 className="font-display text-lg text-navy-800 mb-2">What does a no-code AI developer do?</h3>
-                  <p className="sl-body-sm">We use frontier AI models like Gemini, Claude, Codex, Grok to design and build production-grade web applications and automation systems — without writing traditional code. The result is indistinguishable from developer-built software: live, deployed, and fully functional.</p>
+                  <p className="sl-body-sm">We use frontier AI models like Gemini, Claude, Codex, Grok to design and build production-grade web applications and automation systems. The result is indistinguishable from developer-built software: live, deployed, and fully functional.</p>
                 </div>
                 <div>
                   <h3 className="font-display text-lg text-navy-800 mb-2">How long does a project take?</h3>
