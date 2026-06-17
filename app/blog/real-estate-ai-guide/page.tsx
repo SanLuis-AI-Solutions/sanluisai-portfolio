@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'What AI Can Actually Do for Real Estate Agents in 2026 — SanLuis AI Solutions',
+  title: 'What AI Can Actually Do for Real Estate Agents in 2026: SanLuis AI Solutions',
   description: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up.',
 }
 
@@ -90,7 +90,7 @@ export default function Page() {
             <h2>What AI Actually Costs for Real Estate Agents</h2>
             <p>Most AI pricing pages say &ldquo;contact us.&rdquo; Here are real numbers:</p>
             <ul>
-              <li><strong>Discovery Session:</strong> $300. We audit your current lead flow and identify the biggest bottleneck. You get a written roadmap. Money-back guarantee if we don&rsquo;t find at least three opportunities.</li>
+              <li><strong>Discovery Session:</strong> $300. We audit your current lead flow and identify where leads slow down or drop off. You get a written roadmap. Money-back guarantee if we don&rsquo;t find at least three opportunities.</li>
               <li><strong>Automation (lead intake, follow-up):</strong> From $1,200. Fixed price. You own the code.</li>
               <li><strong>AI Agent (end-to-end system):</strong> From $5,000. Includes a working prototype in 14 days. You see it work before committing to the full build.</li>
             </ul>
@@ -98,7 +98,7 @@ export default function Page() {
 
             <h2>How a Houston Agency Built This</h2>
             <p>Garza International, a Houston construction firm, had the same problem: manual quoting took six-plus hours per bid. By the time they responded, faster competitors had already won.</p>
-            <p>We built a custom AI system that automated the quoting process. Result: 60% faster bid turnaround. More bids submitted. More bids won.</p>
+            <p>We built a custom AI system that automated the quoting process. Result: 60% faster bid turnaround. They submit more bids and win more of them.</p>
             <p>The pattern is the same whether you&rsquo;re quoting construction projects or responding to real estate leads. Speed wins. AI gives you speed.</p>
 
             <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">

@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'From Discovery to Live AI System: The 14-Day Roadmap — SanLuis AI Solutions',
+  title: 'From Discovery to Live AI System: The 14-Day Roadmap. SanLuis AI Solutions',
   description: 'What actually happens in the first 14 days of an AI build? From discovery to prototype to live system. Transparent, fixed-price, you-own-the-code.',
 }
 
@@ -64,19 +64,19 @@ export default function Page() {
             <p>You book a $300 Discovery Session. What you&rsquo;ll need: 30 minutes, an open mind, and a real, painful problem. What you won&rsquo;t need: technical knowledge, a big budget, or a development team. We handle all of that.</p>
 
             <h2>Day 1: The Discovery Session</h2>
-            <p>We map your operations. We don&rsquo;t talk &ldquo;AI strategy&rdquo; — we talk &ldquo;bottlenecks.&rdquo; We identify the specific task that&rsquo;s costing you the most in time, money, and missed opportunities. You get a clear answer about whether AI is worth it for your business. If the answer is no, you walk away with a roadmap and we saved you from an expensive mistake.</p>
+            <p>We map your operations. We skip the abstract &ldquo;AI strategy&rdquo; talk and go straight to the slow, expensive, or repetitive task that is costing you the most in time, money, and missed opportunities. You get a clear answer about whether AI is worth it for your business. If the answer is no, you walk away with a roadmap and we saved you from an expensive mistake.</p>
 
             <h2>Day 3: AI Opportunity Audit&trade; Delivered</h2>
-            <p>You receive a written roadmap. It&rsquo;s ranked: &ldquo;Here are five things AI could do for you. #1 will save you the most money. #3 is a shiny object — ignore it.&rdquo; It&rsquo;s honest, ranked, and jargon-free. If we don&rsquo;t find at least three high-impact AI opportunities, you get your $300 back. No strings.</p>
+            <p>You receive a written roadmap. It&rsquo;s ranked: &ldquo;Here are five things AI could do for you. #1 will save you the most money. #3 is a shiny object. Ignore it.&rdquo; It&rsquo;s honest, ranked, and jargon-free. If we don&rsquo;t find at least three high-impact AI opportunities, you get your $300 back. No strings.</p>
 
             <h2>Day 7: Prototype Ready (14-Day Promise)</h2>
-            <p>For Agent/System engagements, we build a working prototype in the first week. You see it work before you commit to the full build. You approve the output, not every step. This isn&rsquo;t a slide deck — it&rsquo;s the actual system running on your data.</p>
+            <p>For Agent/System engagements, we build a working prototype in the first week. You see it work before you commit to the full build. You approve the output, not every step. This is not a slide deck. It is the actual system running on your data.</p>
 
             <h2>Day 14: System Live</h2>
             <p>The system is deployed. Your team is trained. The automation is running in your actual environment. We don&rsquo;t just ship code; we ship a working workflow that your team uses the next morning.</p>
 
             <h2>The 6-Month Guarantee</h2>
-            <p>The 14-day timeline isn&rsquo;t just about speed — it&rsquo;s about measuring results immediately. We track hours recovered, revenue gained, and errors eliminated. If the system doesn&rsquo;t pay for itself in 6 months, we fix it free. If the ROI isn&rsquo;t there, we take the hit, not you.</p>
+            <p>The 14-day timeline is about speed and immediate measurement. We track hours recovered, revenue gained, and errors eliminated. If the system doesn&rsquo;t pay for itself in 6 months, we fix it free. If the ROI isn&rsquo;t there, we take the hit, not you.</p>
 
             <h2>Why Fixed Price + You Own The Code Matters</h2>
             <p>Most AI consultancies bill hourly. The incentive is to go slow. Most AI platforms charge monthly SaaS fees. The incentive is to make switching painful.</p>
