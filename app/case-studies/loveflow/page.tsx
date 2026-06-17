@@ -7,7 +7,7 @@ import OrnamentDivider from '@/components/OrnamentDivider'
 import BeforeAfter from '@/components/BeforeAfter'
 
 export const metadata: Metadata = {
-  title: 'LoveFlow — Case Study | SanLuis AI Solutions',
+  title: 'LoveFlow: Case Study | SanLuis AI Solutions',
   description: 'How SanLuis AI redesigned the LoveFlow matching algorithm, improving match quality by 40% and boosting user retention.',
 }
 
@@ -36,8 +36,21 @@ export default function Page() {
             <AnimatedCounter value={14} suffix=" days" label="To first results" />
           </div>
           <OrnamentDivider className="!py-8" />
-          <h2 className="font-display text-2xl text-navy-800 mb-4">The Problem</h2>
-          <p className="sl-body mb-6">LoveFlow's initial matching algorithm relied on surface-level preferences — age, location, stated interests. Users were getting matched on paper but not in practice. Retention was dropping month over month, and the team did not have the AI expertise in-house to redesign the core engine. Every lost user was compounding churn.</p>
+
+          <h2 className="font-display text-2xl text-navy-800 mb-4">The Situation</h2>
+          <p className="sl-body mb-6">LoveFlow's original matching algorithm matched users on surface-level preferences: age, location, stated interests. Users were compatible on paper but disconnected in practice. Retention was dropping month over month. Every lost user meant not just a churned subscriber but compounding negative word of mouth.</p>
+
+          <h2 className="font-display text-2xl text-navy-800 mb-4">The Constraint</h2>
+          <p className="sl-body mb-6">LoveFlow had a strong product vision but no AI expertise in-house. Hiring a full-time ML engineer would take months and cost six figures before delivering any results. The team needed the algorithm redesigned without pausing the product or rebuilding their entire data infrastructure.</p>
+
+          <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
+          <p className="sl-body mb-6">A completely redesigned matching engine that extracts behavioral signals from user interaction patterns: swipe direction, message timing, response rates, and conversation length. The system scores compatibility across 20-plus interaction signals rather than the original four stated preferences. A real-time learning loop improves match quality with every user action, and an A/B testing framework lets LoveFlow continuously optimize without needing an in-house AI team.</p>
+
+          <h2 className="font-display text-2xl text-navy-800 mb-4">The Outcome</h2>
+          <p className="sl-body mb-6">Match quality jumped from 32% to 92% satisfaction. Monthly churn cut in half from 15% to 7.5%. Retention doubled within 30 days.</p>
+
+          <h2 className="font-display text-2xl text-navy-800 mb-4">What They Do Now</h2>
+          <p className="sl-body mb-10">LoveFlow's product team focuses on user experience and growth features while the matching engine optimizes itself. Marcus and his team no longer worry about the algorithm falling behind user expectations.</p>
 
           <BeforeAfter
             title="The Difference"
@@ -47,9 +60,9 @@ export default function Page() {
               value: '32% satisfaction',
               details: [
                 'Surface-level matching on stated preferences only (age, location, height)',
-                "No behavioral signal extraction — users actions not factored into matches",
+                "No behavioral signal extraction: users actions not factored into matches",
                 '15% monthly churn rate accelerating as users complained about quality',
-                'No learning loop — algorithm stayed static regardless of user feedback',
+                'No learning loop: algorithm stayed static regardless of user feedback',
               ],
             }}
             after={{
@@ -65,27 +78,18 @@ export default function Page() {
             }}
           />
 
-          <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
-          <p className="sl-body mb-4">A redesigned matching engine:</p>
-          <ul className="list-diamond mb-6 space-y-2 sl-body">
-            <li>Behavioral signal extraction from user interaction patterns</li>
-            <li>Multi-dimensional compatibility scoring beyond stated preferences</li>
-            <li>Real-time learning loop that improved with every swipe</li>
-            <li>A/B testing framework for continuous match quality optimization</li>
-          </ul>
-
-          {/* ROI Snapshot — Billable Bleed */}
+          {/* ROI Snapshot: Billable Bleed */}
           <div className="bg-navy-900 text-bone-50 border border-gold-600/40 rounded p-6 mb-8">
-            <h3 className="font-display text-xl text-gold-500 mb-4">ROI Snapshot — The Billable Bleed</h3>
+            <h3 className="font-display text-xl text-gold-500 mb-4">ROI Snapshot: The Billable Bleed</h3>
             <div className="grid sm:grid-cols-2 gap-4 mb-4">
               <div>
-                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">Before — Churn Cost</div>
+                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">Before: Churn Cost</div>
                 <div className="font-mono text-sm text-bone-300/80">15% monthly churn · 10K users</div>
                 <div className="font-display text-2xl text-red-400 mt-1">1,500 users/mo</div>
                 <div className="font-sans text-xs text-bone-300/40 mt-1">Lost to poor matching</div>
               </div>
               <div>
-                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">After — Retention Gain</div>
+                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">After: Retention Gain</div>
                 <div className="font-mono text-sm text-bone-300/80">40% better matches · 2x retention</div>
                 <div className="font-display text-2xl text-green-400 mt-1">+750 users/mo</div>
                 <div className="font-sans text-xs text-bone-300/40 mt-1">Retained at ~$9/user LTV</div>
@@ -99,9 +103,11 @@ export default function Page() {
           </div>
 
           <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
-  <p className="italic mb-2">&ldquo;Our retention numbers turned around within a month. SanLuis AI didn&apos;t just fix our algorithm — they gave us a competitive moat.&rdquo;</p>
-  <footer className="text-gold-600/80 not-italic text-base">— Marcus Chen, CEO</footer>
-</blockquote>
+            <p className="italic mb-2">"Our retention numbers turned around within a month. SanLuis AI didn't just fix our algorithm; they gave us a competitive moat."</p>
+            <footer className="text-gold-600/80 not-italic text-base">Marcus Chen, CEO</footer>
+          </blockquote>
+
+          <p className="sl-body mb-6">Your metrics could improve 40% or more. Start with a $300 Discovery Session.</p>
         </div>
       </section>
       </AnimatedSection>
