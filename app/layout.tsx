@@ -37,7 +37,7 @@ const ldJson = {
       '@id': 'https://sanluisai.com/#organization',
       name: 'SanLuis AI Solutions',
       url: 'https://sanluisai.com',
-      description: 'Custom AI solutions for small and mid-size businesses. Online only. We save you time and pass the savings to your price. Bilingual EN/ES.',
+      description: 'Custom AI systems, automations, and agents for small and mid-size businesses. No-code AI development and workflow automation.',
       foundingDate: '2025',
       address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
       areaServed: [{ '@type': 'City', name: 'Houston' }, { '@type': 'State', name: 'Texas' }, { '@type': 'Country', name: 'US' }],
@@ -110,7 +110,7 @@ const ldJson = {
         },
         {
           '@type': 'Question',
-          name: 'What if my team won\'t use the system?',
+          name: "What if my team won't use the system?",
           acceptedAnswer: {
             '@type': 'Answer',
             text: 'We design systems around how your team already works, not the other way around. No new login to learn. No new process to memorize. If it creates more work instead of less, we fix it.',
@@ -126,7 +126,7 @@ const ldJson = {
         },
         {
           '@type': 'Question',
-          name: 'What\'s required from me during the build?',
+          name: "What's required from me during the build?",
           acceptedAnswer: {
             '@type': 'Answer',
             text: 'One hour for the Discovery Session to map your process. One hour to review and approve the prototype. After that, your job is to use the system and tell us what to improve.',
@@ -139,11 +139,11 @@ const ldJson = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sanluisai.com'),
-  title: 'Custom AI Solutions | SanLuis AI Solutions, Houston',
-  description: 'Custom AI systems, automations, and apps for small and mid-size businesses. Online only. Built for real operations, not demos. Bilingual EN/ES.',
+  title: 'SanLuis AI Solutions | Custom AI Systems, Automations, and Agents — Houston',
+  description: 'Custom AI systems that save you a day a week. No-code AI development, workflow automation, and AI agents for small and mid-size businesses in Houston.',
   openGraph: {
-    title: 'Custom AI Solutions | SanLuis AI Solutions',
-    description: 'Custom AI for real problems. Built for Houston. Systems, automations, and AI apps for mid-size businesses.',
+    title: 'SanLuis AI Solutions | Custom AI Systems, Automations, and Agents',
+    description: 'We build the one thing that saves you a day a week. Custom AI systems, automations, and agents. Built for Houston.',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     type: 'website',
     locale: 'en_US',
@@ -170,7 +170,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Footer />
         </ClientLayout>
-
         <StickyCTA />
       </body>
     </html>

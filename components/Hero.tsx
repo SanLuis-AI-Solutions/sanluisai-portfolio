@@ -24,35 +24,32 @@ export default function Hero() {
   return (
     <motion.section style={{ backgroundColor: bgColor }} className="relative min-h-[100dvh] flex items-center overflow-hidden">
       <GoldThread />
-      {/* Background image - parallax */}
       <motion.div className="absolute inset-0 opacity-[0.18]" style={{ y: bgY, scale: imageScale }}>
         <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
       </motion.div>
-      {/* Radial gold glow accent */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center_right,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
-
       <div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-32 z-10">
         <div className="max-w-[74ch]">
             <AnimatedSection delay={0}>
               <div className="flex items-center gap-3 mb-8">
                 <FlameMark size="sm" className="opacity-80" />
-                <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500">SanLuis AI Solutions, Houston</span>
+                <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500">SanLuis AI Solutions. Houston.</span>
                 <div className="h-px w-8 bg-gold-600/60" />
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(3rem,7vw,5.5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] mb-6">
-                Reclaim 20 hours a week with custom AI.
+                Everyone has access to the same AI. We build the one thing that saves you a day a week.
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg md:text-xl font-light text-bone-50/90 leading-relaxed max-w-[52ch] mb-3">
-                You&apos;ve been sold AI that was supposed to save time. Most of it doesn&apos;t. What we build targets one specific process, so your team actually reclaims those hours.
+                We don't sell chatbots or strategy decks. We sell working systems: quoting in seconds, automated busywork, and clients who can't believe how fast you respond.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <p className="font-display text-lg md:text-xl text-gold-500 italic font-medium tracking-[-0.01em] mb-10">
-                Custom AI for real problems. Shipped in weeks. Built for Houston.
+                Discover. Build. Ship. Maintain. Built for Houston.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
