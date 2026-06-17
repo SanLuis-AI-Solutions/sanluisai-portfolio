@@ -41,7 +41,7 @@ export default function CTA() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-4">
-                Book your Discovery Session.
+                Find out what to automate. Start with a Discovery Session.
               </h2>
               <p className="font-display text-[clamp(1.4rem,3vw,2rem)] text-gold-600 font-medium leading-[1.15] tracking-[-0.015em]">
                 $300. 60 minutes. The exact roadmap to get there.
@@ -49,7 +49,7 @@ export default function CTA() {
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
               <p className="font-sans text-lg text-navy-300 leading-relaxed max-w-[58ch] mb-10">
-                60-minute working session. Written roadmap with specific numbers. Refundable if we don&apos;t find 3 opportunities.
+                60 to 90 minutes. Written action plan within 24 hours. Refundable if we do not find three clear opportunities.
               </p>
               <div className="border border-gold-600/25 rounded p-5 mb-10">
                 <p className="font-sans text-sm text-gold-500">
@@ -62,7 +62,7 @@ export default function CTA() {
                 href="/booking"
                 className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow transition-all duration-220 rounded"
               >
-                Book a Discovery Session. $300. 60 min.
+                Book a Discovery Session
               </a>
               <p className="font-sans text-xs text-gold-600/60 mt-4 tracking-[0.06em] uppercase">
                 Booking through Q3 &middot; 3 of 4 build slots taken
@@ -73,7 +73,7 @@ export default function CTA() {
           <div className="hidden lg:block">
             <AnimatedSection delay={0.5}>
               <div className="border-l border-gold-600/20 pl-8 py-4 space-y-6">
-                {/* Quote block — real client result */}
+                {/* Quote block: real client result */}
                 <div>
                   <div className="font-mono text-xs text-gold-600 tracking-[0.15em] uppercase mb-3">Garza International</div>
                   <div className="relative pl-5 border-l-2 border-gold-500/50 mb-4">
