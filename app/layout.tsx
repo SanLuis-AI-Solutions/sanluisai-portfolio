@@ -37,7 +37,7 @@ const ldJson = {
       '@id': 'https://sanluisai-portfolio.vercel.app/#organization',
       name: 'SanLuis AI Solutions',
       url: 'https://sanluisai-portfolio.vercel.app',
-      description: 'Custom AI systems, automations, and agents for small and mid-size businesses. No-code AI development and workflow automation.',
+      description: 'Custom AI systems, AI Automation, AI Agent Systems, and Discovery Sessions for small and mid-size businesses. Built in Houston by SanLuis AI Solutions.',
       foundingDate: '2025',
       address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
       areaServed: [{ '@type': 'City', name: 'Houston' }, { '@type': 'State', name: 'Texas' }, { '@type': 'Country', name: 'US' }],
@@ -73,7 +73,7 @@ const ldJson = {
           name: 'How much does a custom AI system cost?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Custom AI systems start at $5,000 and workflow automations start at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.',
+            text: 'Custom AI systems start at $5,000 and AI Automation starts at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.',
           },
         },
         {
@@ -105,7 +105,7 @@ const ldJson = {
           name: 'How long does it take from start to deployment?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Workflow automations deploy in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.',
+            text: 'AI Automation deploys in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.',
           },
         },
         {
@@ -209,7 +209,7 @@ const ldJson = {
           name: 'Is there a minimum project size?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build a workflow automation for as little as $1,200. No minimum commitment is required upfront.',
+            text: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build AI Automation for as little as $1,200. No minimum commitment is required upfront.',
           },
         },
         {
@@ -236,9 +236,9 @@ const ldJson = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://sanluisai-portfolio.vercel.app'),
   title: 'SanLuis AI Solutions | Custom AI Systems, Automations, and Agents — Houston',
-  description: 'Custom AI systems that save you a day a week. No-code AI development, workflow automation, and AI agents for small and mid-size businesses in Houston.',
+  description: 'Custom AI Systems, AI Automation, AI Agent Systems, and $300 Discovery Sessions that save small and mid-size Houston businesses a day a week.',
   openGraph: {
-    title: 'SanLuis AI Solutions | Custom AI Systems, Automations, and Agents',
+    title: 'SanLuis AI Solutions | Custom AI Systems, AI Automation, and AI Agents',
     description: 'We build the one thing that saves you a day a week. Custom AI systems, automations, and agents. Built for Houston.',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
     type: 'website',

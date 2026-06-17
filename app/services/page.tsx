@@ -37,7 +37,7 @@ const servicesList = [
   },
   {
     num: '02',
-    name: 'Workflow Automation',
+    name: 'AI Automation',
     tag: 'Quick Win',
     bestFor: 'Teams losing 20+ hours a week to work that follows predictable rules',
     desc: 'Every business has processes that absolutely need to happen but absolutely do not need a person doing them. Lead intake, invoice generation, email triage, report delivery, data entry. These tasks follow rules. They are deterministic. A machine can run them faster, with fewer errors, and without burning out your most expensive people. We map your process, build the automation in 1-2 weeks, and ship it into your existing tools. You own the code. Your team gets their time back.',
@@ -102,6 +102,9 @@ export default function ServicesPage() {
           <AnimatedSection delay={0}>
             <div className="max-w-3xl mx-auto mb-20 text-center">
               <p className="sl-body-lg text-navy-800 mb-6">
+                SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses through fixed-price engagements: a $300 Discovery Session, AI Automation from $1,200, AI Agent Systems from $5,000, and Custom AI Systems from $5,000.
+              </p>
+              <p className="sl-body-lg text-navy-800 mb-6">
                 We do not sell chatbots. We do not sell strategy decks. We sell one thing: a working system
                 that saves your team a full day every week. That system might be an automation that runs your
                 lead intake, an agent that qualifies prospects at 2 a.m., or a custom application built around
@@ -111,7 +114,7 @@ export default function ServicesPage() {
               <p className="sl-body-lg text-navy-800">
                 Every project follows the same four steps. Discover what matters. Build what works. Ship it
                 into your workflow. Maintain it so it keeps delivering. We do not disappear after deployment.
-                We stay with you.
+                We stay with you. Proven results include 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
               </p>
             </div>
           </AnimatedSection>

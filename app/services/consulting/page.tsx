@@ -93,7 +93,10 @@ export default function ConsultingPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The problem with "we should do something with AI."</h2>
             <p className="sl-body-lg mb-4">
-              Everyone has access to the same AI. The advantage is not in owning the tool. It is in knowing exactly where to apply it inside your business. Right now, most owners are stuck between vendor noise and generic advice. They know AI matters, but they cannot translate it into a specific system that runs their operation better.
+              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. Our $300 Discovery Session is the starting point for every engagement, including Custom AI Systems from $5,000, AI Agent Systems from $5,000, and AI Automation from $1,200.
+            </p>
+            <p className="sl-body-lg mb-4">
+              Everyone has access to the same AI. The advantage is not in owning the tool.
             </p>
             <p className="sl-body-lg mb-4">
               The real problem is the phrase itself: "we should do something with AI," with no clear answer to what, where, or how much. That uncertainty costs more than any software license. It delays decisions, burns budget on misplaced experiments, and leaves teams doing work that should have been automated months ago.
@@ -168,7 +171,7 @@ export default function ConsultingPage() {
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $5,000</div>
           </Link>
           <Link href="/services/automation" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
-            <div className="font-display text-navy-800">Workflow Automation</div>
+            <div className="font-display text-navy-800">AI Automation</div>
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $1,200</div>
           </Link>
           <Link href="/services/agents" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">

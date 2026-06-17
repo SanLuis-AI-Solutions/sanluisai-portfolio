@@ -5,11 +5,11 @@ import AnimatedSection from '@/components/AnimatedSection'
 import FaqEntry from '@/components/FaqEntry'
 
 const faqSchemaQuestions = [
-  { question: 'How much does a custom AI system cost?', answer: 'Custom AI systems start at $5,000 and workflow automations start at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.' },
+  { question: 'How much does a custom AI system cost?', answer: 'Custom AI systems start at $5,000 and AI Automation starts at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.' },
   { question: 'What is included in the $300 Discovery Session?', answer: 'The Discovery Session is a focused 60-minute working session where we map your top 3 highest-leverage AI opportunities, identify what data and tools are needed, and deliver a written roadmap with pricing estimates. You will not receive a generic slide deck. You walk away knowing exactly what to build, in what order, and what each phase costs.' },
   { question: 'Do you require long-term contracts?', answer: 'All our projects are scoped, quoted, and billed per project. There are no monthly retainers and no annual commitments required to start. If you need ongoing support after launch, we offer simple month-to-month maintenance at a flat rate.' },
   { question: 'What if the project does not work?', answer: 'We work in iterative milestones so you see, test, and approve each stage before we move to the next. If at any point the solution is not meeting expectations, we stop, reassess, and adjust. You should never pay for a system that does not deliver real results.' },
-  { question: 'How long does it take from start to deployment?', answer: 'Workflow automations deploy in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.' },
+  { question: 'How long does it take from start to deployment?', answer: 'AI Automation deploys in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.' },
   { question: 'What happens during the Discovery Session?', answer: 'In our 60-minute session, we walk through your actual operations and identify the three highest-impact opportunities. We look at the slow spots, repetitive tasks, and data you already have. You leave with a written roadmap, a prioritized build order, and a pricing estimate.' },
   { question: 'How do you decide what to build first?', answer: 'We prioritize based on three factors: speed of implementation, business value, and data readiness. Quick wins build momentum. The highest-value feature saves the most time or money. Data readiness determines what your existing systems already support. The roadmap you receive is already prioritized this way.' },
   { question: 'What if I do not know exactly what I need?', answer: 'You do not need to know. That is our job. Most clients come to us with a vague sense that something could be faster or easier. We start by understanding your business, not by asking for a requirements document. The Discovery Session is designed exactly for this scenario.' },
@@ -22,14 +22,14 @@ const faqSchemaQuestions = [
   { question: 'Will AI replace my employees?', answer: 'We build systems that handle the repetitive, time-consuming tasks your team does not enjoy. Your team focuses on higher-value work such as client relationships, creative problem-solving, and strategic decisions. Every client we have worked with has kept their team intact.' },
   { question: 'What industries do you work with?', answer: 'We work across retail, healthcare, professional services, logistics, manufacturing, and real estate. Past projects include jewelry repair intake systems, logistics quoting tools, customer management platforms, and automated proposal generation. If your business has processes, AI can improve them.' },
   { question: 'Do you work with Spanish-speaking businesses?', answer: 'All our services, interfaces, and systems are available fully in English and Spanish. Our team is bilingual, and we regularly build systems that operate seamlessly in both languages. This includes businesses that serve Spanish-speaking customers exclusively.' },
-  { question: 'Is there a minimum project size?', answer: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build a workflow automation for as little as $1,200. No minimum commitment is required upfront.' },
+  { question: 'Is there a minimum project size?', answer: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build AI Automation for as little as $1,200. No minimum commitment is required upfront.' },
   { question: 'Do I need a technical team to work with you?', answer: 'You do not need any technical staff. We have worked with business owners, office managers, and operators who never touched code. We handle all the technical work. Your job is to tell us what your process looks like and confirm the system works the way you expect.' },
   { question: 'We already tried AI and it did not work. Why would this be different?', answer: 'That is a fair question. Most AI disappointments come from one of three sources: the solution was a chatbot that did not do real work, the vendor did not understand the business process, or the system was never properly deployed. We focus on process automation first, build working systems not demos, and stay until deployment is complete and the system is stable.' },
 ]
 
 export const metadata: Metadata = {
   title: 'FAQ: Frequently Asked Questions | SanLuis AI Solutions',
-  description: 'Answers to common and skeptical questions about pricing, process, technical support, and business readiness for custom AI systems, workflow automation, and AI agents. Includes what happens if AI breaks or past AI projects failed. $300 Discovery Session. No long-term contracts.',
+  description: 'Answers to common and skeptical questions about pricing, process, technical support, and business readiness for Custom AI Systems, AI Automation, AI Agent Systems, and Discovery Sessions. Includes what happens if AI breaks or past AI projects failed. $300 Discovery Session. No long-term contracts.',
   openGraph: {
     title: 'FAQ: Frequently Asked Questions | SanLuis AI Solutions',
     description: 'Everything you need to know about working with SanLuis AI: pricing, process, technical support, and whether your business is ready for AI.',
@@ -59,7 +59,7 @@ const faqCategories = [
     questions: [
       {
         q: 'How much does a custom AI system cost?',
-        a: 'Custom AI systems start at $5,000 and workflow automations start at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.',
+        a: 'Custom AI systems start at $5,000 and AI Automation starts at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.',
       },
       {
         q: "What's included in the $300 Discovery Session?",
@@ -81,7 +81,7 @@ const faqCategories = [
     questions: [
       {
         q: 'How long does it take from start to deployment?',
-        a: 'Workflow automations deploy in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.',
+        a: 'AI Automation deploys in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.',
       },
       {
         q: 'What happens during the Discovery Session?',
@@ -145,7 +145,7 @@ const faqCategories = [
       },
       {
         q: 'Is there a minimum project size?',
-        a: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build a workflow automation for as little as $1,200. No minimum commitment is required upfront.',
+        a: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build AI Automation for as little as $1,200. No minimum commitment is required upfront.',
       },
       {
         q: 'Do I need a technical team to work with you?',

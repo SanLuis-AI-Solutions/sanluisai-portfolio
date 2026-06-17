@@ -76,7 +76,10 @@ export default function AgentsPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The difference between rules and judgment.</h2>
             <p className="sl-body-lg mb-4">
-              The difference between automation and an agent is the difference between a rule and a judgment. Automation follows instructions: when this happens, do that. It is excellent for repetitive work with clear inputs and fixed outputs. An agent evaluates context, chooses between options, and adapts when the situation changes. It can read a vague customer email, compare it against previous cases, decide whether to resolve it or escalate it, and learn from the result. Where automation executes, agents decide.
+              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses, including AI Agent Systems from $5,000, AI Automation from $1,200, Custom AI Systems from $5,000, and a $300 Discovery Session to map the right starting point.
+            </p>
+            <p className="sl-body-lg mb-4">
+              The difference between automation and an agent is the difference between a rule and a judgment. Automation follows instructions: when this happens, do that. It is excellent for repetitive work with clear inputs and fixed outputs. An agent evaluates context, chooses between options, and adapts when the situation changes.
             </p>
             <p className="sl-body-lg mb-4">
               Most businesses need both. The predictable parts of your process should be automated without thought. The ambiguous parts should be handled by agents that reason within boundaries you set. A lead qualification agent screens inbound inquiries at 2 a.m., scores them against your criteria, and routes only the ready ones to sales. A customer triage agent resolves common requests on its own and passes complex issues to humans with full context attached. A research agent monitors competitors, regulation, and pricing signals so your team starts the day informed instead of digging. A workflow orchestrator coordinates handoffs across CRM, email, billing, and operations systems that currently require someone to watch.
@@ -157,7 +160,7 @@ export default function AgentsPage() {
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $5,000</div>
           </Link>
           <Link href="/services/automation" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
-            <div className="font-display text-navy-800">Workflow Automation</div>
+            <div className="font-display text-navy-800">AI Automation</div>
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $1,200</div>
           </Link>
           <Link href="/services/consulting" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">

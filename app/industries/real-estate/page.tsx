@@ -37,6 +37,8 @@ export default function Page() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
+          <p className="sl-body max-w-prose mb-4">SanLuis AI Solutions is a Houston-based AI automation company that builds working systems for small and mid-size real estate firms. Founded by Daniel San Luis, we speed up investment analysis, lead qualification, and portfolio intelligence through fixed-price AI automation.</p>
+
           <p className="sl-body max-w-prose mb-4">Real estate runs on analysis and speed. Every deal evaluation, every investor presentation, and every lead follow-up is a race against time. Yet most firms still rely on manual spreadsheets for deal analysis, fragmented communication for investor updates, and gut instinct for market timing. A single underwriting mistake or missed lead can cost far more than the price of a better system.</p>
           <p className="sl-body max-w-prose mb-4">We build AI systems that analyze deals in seconds instead of hours, qualify leads automatically against your investment criteria, and deliver portfolio intelligence that would otherwise require a full-time analyst. Everyone has access to the same AI. We build the one system that saves your real estate operation a day a week.</p>
           <p className="sl-body max-w-prose mb-4">Manual deal analysis in spreadsheets is slow, error-prone, and impossible to scale. Analysts copy numbers between models, recreate formulas for every property, and debate assumptions while better-capitalized competitors move first. By the time a spreadsheet is polished, the opportunity has often changed or disappeared.</p>
@@ -47,7 +49,7 @@ export default function Page() {
           <AnimatedSection delay={0.2}>
           <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
-            <p className="sl-body-sm mb-3">We build AI systems purpose-built for real estate professionals. Our deal analysis engines underwrite properties in real time using LTC, ROI, profit margin, and risk scoring. Our lead qualification pipelines score and route prospects against your exact acquisition criteria. Our portfolio intelligence dashboards surface occupancy, refinance windows, market movements, and lease exposure in a single view.</p>
+            <p className="sl-body-sm mb-3">Founded by Daniel San Luis and based in Houston, Texas, SanLuis AI Solutions builds AI systems purpose-built for real estate professionals. Our deal analysis engines underwrite properties in real time using LTC, ROI, profit margin, and risk scoring. Our lead qualification pipelines score and route prospects against your exact acquisition criteria. Our portfolio intelligence dashboards surface occupancy, refinance windows, market movements, and lease exposure in a single view.</p>
             <p className="sl-body-sm mb-3">Real outcomes from these systems include deals evaluated in seconds instead of hours, automated lead scoring against investment criteria, and a unified portfolio view that removes the need to chase data across disconnected tools. We integrate with your existing CRM, property management software, and financial models. No rip-and-replace is required.</p>
             <p className="sl-body-sm">See how we built a similar AI-powered solution for <Link href="/case-studies/garza-international" className="text-gold-600 underline hover:text-gold-700">Garza International</Link>, a real estate construction firm, to automate project scheduling, resource tracking, and operational reporting.</p>
           </div>
@@ -127,6 +129,7 @@ export default function Page() {
           <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
             <p className="sl-body-sm italic mb-3">Not sure if AI makes sense for your portfolio? Start with a $300 Discovery Session. We will map your current deal flow, identify the highest-impact automation opportunity, and give you a written roadmap whether you hire us or not.</p>
             <p className="sl-body-sm">Automation projects start at $1,200. Custom AI systems start at $5,000. Every engagement is scoped to the specific work that saves your real estate operation a day a week.</p>
+            <p className="sl-body-sm italic mt-3">SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.</p>
           </div>
         </AnimatedSection>
         </div>

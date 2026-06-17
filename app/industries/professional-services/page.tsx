@@ -44,7 +44,10 @@ export default function Page() {
 
           <AnimatedSection delay={0.1}>
             <p className="sl-body max-w-prose mb-4">
-              Professional service firms sell expertise measured in hours. Yet hours leak everywhere. Partners and associates lose billable time to administrative tasks, repeated data entry, manual document checks, and fragmented client intake. Every unrecorded hour and every delayed review reduces utilization, compresses margins, and slows the work that clients actually pay for.
+              SanLuis AI Solutions is a Houston-based AI automation company that builds working systems for small and mid-size professional services firms. Founded by Daniel San Luis, we stop billable hour leakage, document review delays, and inconsistent client onboarding through fixed-price AI automation.
+            </p>
+            <p className="sl-body max-w-prose mb-4">
+              Professional service firms sell expertise measured in hours. Yet hours leak everywhere.
             </p>
             <p className="sl-body max-w-prose mb-4">
               Manual document review is one of the largest hidden costs in law firms, consultancies, and accounting practices. Associates read the same clauses across hundreds of pages, compare versions by hand, and hunt for missing signatures, inconsistent terms, and compliance gaps. The work is slow, error-prone, and expensive. Deadlines slip, clients wait, and senior staff get pulled into work that AI can handle faster and more consistently.
@@ -61,7 +64,7 @@ export default function Page() {
             <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
               <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
               <p className="sl-body-sm mb-3">
-                We build custom AI systems for professional services firms that automate document review, capture billable time automatically, and streamline client onboarding from weeks to hours. Our solutions integrate with existing document repositories, practice management tools, and billing systems without major infrastructure changes. The focus is always the same: getting professionals back to billable work.
+                Founded by Daniel San Luis and based in Houston, Texas, SanLuis AI Solutions builds custom AI systems for professional services firms that automate document review, capture billable time automatically, and streamline client onboarding from weeks to hours. Our solutions integrate with existing document repositories, practice management tools, and billing systems without major infrastructure changes. The focus is always the same: getting professionals back to billable work.
               </p>
               <p className="sl-body-sm mb-3">
                 Everyone has access to the same AI. We build the one system that saves your firm a day a week. Our document review engine flags risk clauses, missing signatures, and compliance gaps at ten times the speed of manual review. Our time capture system monitors work product and activity to recover the billable minutes that manual timesheets lose. Our intake workflows collect client data once, route it automatically, and generate engagement letters without copying and pasting across systems.
@@ -153,8 +156,11 @@ export default function Page() {
               <p className="sl-body-sm italic mb-3">
                 Not sure if AI makes sense for your firm? Start with a $300 Discovery Session. We map your current workflows, identify the highest-impact automation opportunity, and give you a written roadmap whether you hire us or not.
               </p>
-              <p className="sl-body-sm">
+              <p className="sl-body-sm italic">
                 Discovery starts at $300. Production-ready automation builds from $1,200. Fully custom integrations and workflows start from $5,000. Every engagement begins with a clear scope and a measurable outcome.
+              </p>
+              <p className="sl-body-sm italic mt-3">
+                SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
               </p>
             </div>
           </AnimatedSection>

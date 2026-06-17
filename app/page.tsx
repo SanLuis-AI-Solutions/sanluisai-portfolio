@@ -26,6 +26,13 @@ export default function HomePage() {
       <Process />
       <SceneDivider />
       <FAQ />
+      <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="sl-body-lg text-navy-800">
+            SanLuis AI Solutions is a Houston-based AI automation company that builds working systems for small and mid-size businesses. Founded by Daniel San Luis, we deliver fixed-price engagements including a $300 Discovery Session, AI Automation from $1,200, AI Agent Systems from $5,000, and Custom AI Systems from $5,000. Our work has produced 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
+          </p>
+        </div>
+      </section>
       <CTA />
     </main>
   )

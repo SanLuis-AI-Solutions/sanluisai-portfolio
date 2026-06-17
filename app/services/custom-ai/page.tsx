@@ -75,7 +75,10 @@ export default function CustomAIPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The problem with off-the-shelf.</h2>
             <p className="sl-body-lg mb-4">
-              Off-the-shelf software is built for someone else's business. You adapt your workflows to fit the tool. You pay for features you never use. You work around limitations designed for a different industry, a different scale, and a different problem entirely. The cost is not just the subscription. It is the time your team loses managing the tool instead of doing the work.
+              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses, including Custom AI Systems from $5,000, AI Agent Systems from $5,000, AI Automation from $1,200, and a $300 Discovery Session to identify the right problem first.
+            </p>
+            <p className="sl-body-lg mb-4">
+              Off-the-shelf software is built for someone else's business. You adapt your workflows to fit the tool.
             </p>
             <p className="sl-body-lg mb-4">
               You have one operational cost bigger than any other. We solve that one problem, completely, before we touch anything else. Not a catch-all. Not a platform you grow into. One precise system built to remove the specific process that is costing you the most.
@@ -150,7 +153,7 @@ export default function CustomAIPage() {
         <h3 className="font-display text-xl text-navy-800 mb-4 text-center">Explore other services</h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
           <Link href="/services/automation" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
-            <div className="font-display text-navy-800">Workflow Automation</div>
+            <div className="font-display text-navy-800">AI Automation</div>
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $1,200</div>
           </Link>
           <Link href="/services/agents" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">

@@ -5,11 +5,11 @@ import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
-  title: 'Workflow Automation | SanLuis AI Solutions',
-  description: "We build the workflow automations that give your team a full day back every week. Discovery is $300. Automations ship from $1,200.",
+  title: 'AI Automation | SanLuis AI Solutions',
+  description: "We build AI Automation that gives your team a full day back every week. Discovery is $300. Automations ship from $1,200.",
   openGraph: {
-    title: 'Workflow Automation | SanLuis AI Solutions',
-    description: 'Give your team a full day back every week with workflow automation. Discovery from $300.',
+    title: 'AI Automation | SanLuis AI Solutions',
+    description: 'Give your team a full day back every week with AI Automation. Discovery from $300.',
     url: 'https://sanluisai-portfolio.vercel.app/services/automation',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -65,7 +65,7 @@ export default function AutomationPage() {
     <>
       <PageHeader
         eyebrow="Service 02"
-        title="Workflow Automation."
+        title="AI Automation."
         description="Your team loses a full day every week to work that follows predictable rules. We eliminate it. Our automations run inside your existing tools, ship in one to two weeks, and start at $1,200."
       />
 

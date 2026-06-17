@@ -37,6 +37,8 @@ export default function Page() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
+            <p className="sl-body max-w-prose mb-4">SanLuis AI Solutions is a Houston-based AI automation company that builds working systems for small and mid-size healthcare practices. Founded by Daniel San Luis, we focus on eliminating the administrative overhead that drains resources from patient care.</p>
+
             <p className="sl-body max-w-prose mb-4">Healthcare providers spend roughly 30% of revenue on administrative overhead. Prior authorization alone costs the industry an estimated $350B annually in wasted labor. These are not technology problems. They are process problems with AI-ready solutions.</p>
 
             <p className="sl-body max-w-prose mb-4">Prior authorization is the most common friction point. A single request can require phone calls, faxed forms, medical record retrieval, and follow-up across multiple payers. Staff repeat the same data entry across systems, and approvals that should take hours stretch into days. We build systems that read clinical notes, extract required criteria, and submit structured requests directly to payer portals. Approval cycles compress from days to hours, and staff no longer chase status updates manually.</p>
@@ -51,7 +53,7 @@ export default function Page() {
           <AnimatedSection delay={0.2}>
             <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
               <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
-              <p className="sl-body-sm mb-3">Everyone has access to the same AI. We build the one system that saves your practice a day a week. Our healthcare work is HIPAA-compliant by design: end-to-end encryption, fully audited access, and models that never train on patient data. We automate prior authorization workflows, streamline patient intake with conversational AI, and generate clinical documentation in real time within your existing EHR ecosystem.</p>
+              <p className="sl-body-sm mb-3">Founded by Daniel San Luis and based in Houston, Texas, SanLuis AI Solutions designs every healthcare system with HIPAA-compliant practices: end-to-end encryption, fully audited access, and models that never train on patient data. Everyone has access to the same AI. We build the one system that saves your practice a day a week. We automate prior authorization workflows, streamline patient intake with conversational AI, and generate clinical documentation in real time within your existing EHR ecosystem.</p>
               <p className="sl-body-sm">Pricing is straightforward. Discovery Sessions start at $300. Production automation deployments start at $1,200. Custom integrations and multi-location rollouts start at $5,000.</p>
             </div>
           </AnimatedSection>
@@ -107,6 +109,7 @@ export default function Page() {
           <AnimatedSection delay={0.5}>
             <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
               <p className="sl-body-sm italic">Not sure if AI makes sense for your practice? Start with a $300 Discovery Session. We will map your current operations, identify the highest-impact automation opportunity, and give you a written roadmap. Automation deployments start at $1,200. Custom multi-location or EHR-integrated systems start at $5,000.</p>
+              <p className="sl-body-sm italic mt-3">Real client results from SanLuis AI Solutions include 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.</p>
             </div>
           </AnimatedSection>
         </div>

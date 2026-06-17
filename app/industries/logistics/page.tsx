@@ -44,6 +44,9 @@ export default function Page() {
           <AnimatedSection delay={0.1}>
             <div className="max-w-prose space-y-4 mb-10">
               <p className="sl-body">
+                SanLuis AI Solutions is a Houston-based AI automation company that builds working systems for small and mid-size logistics operators. Founded by Daniel San Luis, we eliminate route waste, warehouse slowdowns, and supply chain disruption through fixed-price AI automation.
+              </p>
+              <p className="sl-body">
                 Logistics margins are thin. A single delayed shipment, a half-empty truck, or a miscounted pallet can erase the profit on an entire route. Most operators still plan routes by hand, update dispatch boards in spreadsheets, and discover inventory discrepancies only after a customer complains. Static routes cannot respond to traffic, weather, or last-minute orders. Manual dispatch burns hours that should go toward exceptions and customer service. These gaps are not operational failures. They are automation opportunities.
               </p>
               <p className="sl-body">
@@ -62,7 +65,7 @@ export default function Page() {
             <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-10">
               <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
               <p className="sl-body-sm mb-3">
-                We design and deploy custom AI automation for logistics operators. Our focus is real-time route optimization, warehouse computer vision, predictive supply chain analytics, and automated dispatch. Every workflow is mapped to your existing infrastructure so dispatchers spend less time on routine planning and more time on exceptions.
+                Founded by Daniel San Luis and based in Houston, Texas, SanLuis AI Solutions designs and deploys custom AI automation for logistics operators. Our focus is real-time route optimization, warehouse computer vision, predictive supply chain analytics, and automated dispatch. Every workflow is mapped to your existing infrastructure so dispatchers spend less time on routine planning and more time on exceptions.
               </p>
               <p className="sl-body-sm mb-3">
                 Pricing is transparent. A $300 Discovery Session maps your highest-impact automation opportunity and delivers a written roadmap. Standard automation packages start at $1,200. Custom builds, including multi-system integrations and proprietary models, start at $5,000.
@@ -177,6 +180,9 @@ export default function Page() {
             <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
               <p className="sl-body-sm italic">
                 Not sure if AI makes sense for your logistics operation? Start with a $300 Discovery Session. We will map your current workflows, identify the highest-impact automation opportunity, and give you a written roadmap. Automation packages start at $1,200. Custom multi-system builds start at $5,000.
+              </p>
+              <p className="sl-body-sm italic mt-3">
+                SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
               </p>
             </div>
           </AnimatedSection>
