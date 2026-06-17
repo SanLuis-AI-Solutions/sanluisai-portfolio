@@ -5,15 +5,15 @@ import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'AI Agents vs. Chatbots: What\'s the Difference (And When You Need Each) — SanLuis AI Solutions',
-  description: 'Chatbots answer questions. AI agents take action. Here is the difference explained in plain language — plus a real-world example of when an agent delivered a 60% faster quoting process.',
+  title: 'AI Agents vs. Chatbots: What\'s the Difference (And When You Need Each) - SanLuis AI Solutions',
+  description: 'Chatbots answer questions. AI agents take action. Here is the difference explained in plain language, plus a real-world example of when an agent delivered a 60% faster quoting process.',
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: "AI Agents vs. Chatbots: What's the Difference (And When You Need Each)",
-  description: 'Chatbots answer questions. AI agents take action. Here is the difference explained in plain language — plus a real-world example of when an agent delivered a 60% faster quoting process.',
+  description: 'Chatbots answer questions. AI agents take action. Here is the difference explained in plain language, plus a real-world example of when an agent delivered a 60% faster quoting process.',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',
@@ -65,10 +65,10 @@ export default function Page() {
 
             <h2>The Chatbot You Know</h2>
             <p>
-              A chatbot is a conversational interface. You type a question, it returns an answer. Most chatbots today are powered by large language models — they sound natural, can handle basic conversation, and provide reasonable responses to common questions.
+              A chatbot is a conversational interface. You type a question, it returns an answer. Most chatbots today run on large language models. They sound natural, can handle basic conversation, and provide reasonable responses to common questions.
             </p>
             <p>
-              But a chatbot has clear limits. It does not have memory of conversations from yesterday. It cannot access your CRM, your database, or your email system. It cannot take action on your behalf. It can tell a lead what your hours are. It cannot book an appointment and send a confirmation email.
+              But a chatbot has clear limits. It does not remember yesterday's conversations. It cannot access your CRM, your database, or your email system. It cannot take action on your behalf. It can tell a lead what your hours are. It cannot book an appointment and send a confirmation email.
             </p>
             <p>
               <strong>Good for:</strong> FAQ, basic customer service, simple lead triage, collecting form data.
@@ -85,7 +85,7 @@ export default function Page() {
               Where a chatbot handles the question "What time do you close?" an AI agent handles the instruction "We have a lead from the website. She matches our ideal client profile. Book her for a showing, pull the property details, and send a confirmation email." The agent reads your CRM, checks your calendar, writes to your database, and triggers your email sequence without someone watching every step.
             </p>
             <p>
-              An agent operates on schedules you set — running at midnight, triaging tickets on weekends, scanning for anomalies while your team sleeps. Every action is logged. You approve outcomes, not every decision.
+              An agent operates on schedules you set: running at midnight, triaging tickets on weekends, scanning for anomalies while your team sleeps. It logs every action. You approve outcomes, not every decision.
             </p>
             <p>
               <strong>Good for:</strong> Multi-step workflows, cross-system data operations, autonomous execution against business rules.
@@ -123,22 +123,22 @@ export default function Page() {
                   <tr>
                     <td className="py-3 pr-4 text-navy-700 font-medium">Multi-step workflows</td>
                     <td className="py-3 pr-4 text-fg2">No</td>
-                    <td className="py-3 text-fg2">Yes — end to end</td>
+                    <td className="py-3 text-fg2">Yes, end to end</td>
                   </tr>
                   <tr>
                     <td className="py-3 pr-4 text-navy-700 font-medium">Cross-session memory</td>
                     <td className="py-3 pr-4 text-fg2">No</td>
-                    <td className="py-3 text-fg2">Yes — persistent state</td>
+                    <td className="py-3 text-fg2">Yes, persistent state</td>
                   </tr>
                   <tr>
                     <td className="py-3 pr-4 text-navy-700 font-medium">Autonomous execution</td>
                     <td className="py-3 pr-4 text-fg2">No (requires a human to act)</td>
-                    <td className="py-3 text-fg2">Yes — within rules you set</td>
+                    <td className="py-3 text-fg2">Yes, within rules you set</td>
                   </tr>
                   <tr>
                     <td className="py-3 pr-4 text-navy-700 font-medium">Logging and audit</td>
                     <td className="py-3 pr-4 text-fg2">Conversation transcript</td>
-                    <td className="py-3 text-fg2">Every action logged, every decision traceable</td>
+                    <td className="py-3 text-fg2">Logs every action; traces every decision</td>
                   </tr>
                   <tr>
                     <td className="py-3 pr-4 text-navy-700 font-medium">Starting price</td>
@@ -151,7 +151,7 @@ export default function Page() {
 
             <h2>The Difference in One Sentence</h2>
             <p>
-              A chatbot handles the question "What time do you close?" An AI agent handles the instruction "We have a lead, she matches our profile, book the showing and send a confirmation" — start to finish, without human supervision.
+              A chatbot handles the question "What time do you close?" An AI agent handles the instruction "We have a lead, she matches our profile, book the showing and send a confirmation." Start to finish, without human supervision.
             </p>
 
             <h2>When a Chatbot Is Enough</h2>
@@ -162,7 +162,7 @@ export default function Page() {
               <li><strong>FAQ-first support.</strong> Your customers mostly ask about hours, pricing, and policies. A chatbot answers those instantly and escalates the rest.</li>
               <li><strong>Simple lead triage.</strong> Collect name, phone, email, interest. Route to the right person in your CRM. No follow-through needed beyond the handoff.</li>
               <li><strong>One-channel interaction.</strong> You only need help on your website. No email, SMS, or back-office integration required.</li>
-              <li><strong>You already have someone handling outcomes.</strong> The human is the agent — they get the triaged information and take it from there.</li>
+              <li><strong>You already have someone handling outcomes.</strong> The human is the agent: they get the triaged information and take it from there.</li>
             </ul>
             <p>
               Honest anti-sell: not every problem needs an agent. If a chatbot solves your problem, a chatbot is what you should buy.
@@ -181,7 +181,7 @@ export default function Page() {
 
             <h2>Real Example: Agent in Action</h2>
             <p>
-              Garza International, a Houston construction firm, was losing bids because each proposal took six-plus hours to prepare. An estimator manually pulled material costs from four spreadsheets, cross-referenced labor rates, searched email archives for historical bid data, and formatted the proposal by hand. The bottleneck was not skill — it was time. The team could only bid on a fraction of available projects.
+              Garza International, a Houston construction firm, was losing bids because each proposal took six-plus hours to prepare. An estimator manually pulled material costs from four spreadsheets, cross-referenced labor rates, searched email archives for historical bid data, and formatted the proposal by hand. The limiting factor was not skill. It was time. The team could only bid on a fraction of available projects.
             </p>
             <p>
               This is a classic agent problem. It requires access to multiple data sources (supplier pricing, labor rates, historical bids), rules-based decision-making (optimal margin calculation, risk flagging), and autonomous execution (generating a complete formatted proposal without step-by-step supervision).
@@ -198,10 +198,10 @@ export default function Page() {
               The price gap between a chatbot ($1,200) and an agent ($5,000+) raises an obvious question: why? The answer is scope and surface area.
             </p>
             <p>
-              A chatbot replaces one interaction channel — the conversation box on your website. An agent replaces hours of manual work across multiple systems. A chatbot has one input (user question) and one output (text response). An agent reads from APIs, writes to databases, triggers email sequences, checks calendars, and logs every decision to an audit trail.
+              A chatbot replaces one interaction channel: the conversation box on your website. An agent replaces hours of manual work across multiple systems. A chatbot has one input (user question) and one output (text response). An agent reads from APIs, writes to databases, triggers email sequences, checks calendars, and logs every decision to an audit trail.
             </p>
             <p>
-              The economics reflect that difference. A $1,200 chatbot that answers 50 questions a day saves a few hours of staff time. A $5,000 agent that automates bid quoting for a construction firm can recover $74,000 in estimator time in the first year — the math is documented in the Garza case study.
+              The economics reflect that difference. A $1,200 chatbot that answers 50 questions a day saves a few hours of staff time. A $5,000 agent that automates bid quoting for a construction firm can recover $74,000 in estimator time in the first year. The math is documented in the Garza case study.
             </p>
 
             <h2>How to Decide</h2>
@@ -214,11 +214,11 @@ export default function Page() {
               <li><strong>Agent territory.</strong> You have a multi-step, multi-system workflow that a human currently runs step by step. An agent can own the process end to end.</li>
             </ul>
             <p>
-              The fastest way to find out which category you are in is a Discovery Session. One hour. We audit your operations, find the biggest bottleneck, and tell you exactly what you need — chatbot, agent, or neither.
+              The fastest way to find out which category you are in is a Discovery Session. One hour. We audit your operations, find the biggest limiting factor, and tell you exactly what you need: chatbot, agent, or neither.
             </p>
 
             <blockquote className="border-l-4 border-gold-600 pl-4 my-8 italic text-fg2 font-display text-lg">
-              "SanLuis AI didn't just build software — they solved the single biggest problem in our sales process. We're bidding faster and winning more."
+              "SanLuis AI didn't just build software: they solved the single biggest problem in our sales process. We're bidding faster and winning more."
               <br /><span className="font-sans text-sm not-italic text-navy-500">Director of Operations, Garza International</span>
             </blockquote>
 

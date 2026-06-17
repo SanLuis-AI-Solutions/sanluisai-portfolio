@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'What AI Actually Costs vs. What It Saves: A Real Breakdown — SanLuis AI Solutions',
+  title: 'What AI Actually Costs vs. What It Saves: A Real Breakdown - SanLuis AI Solutions',
   description: 'Most AI pricing pages say contact us. Here are real numbers: Discovery $300, Automation $1,200+, Agents $5,000+. Fixed price. You own the code. Breakeven in months.',
 }
 
@@ -56,29 +56,27 @@ export default function Page() {
           </div>
 
           <div className="prose prose-navy max-w-none">
-            <p className="lead text-lg text-navy-700 mb-8">
-              Most AI pricing pages are designed to hide the number. Ours isn&rsquo;t. Here&rsquo;s exactly what AI costs, exactly what it saves, and how to tell the difference between a good investment and a money pit.
-            </p>
+            <p className="lead text-lg text-navy-700 mb-8">Most AI pricing pages hide the number. Ours doesn&rsquo;t. Here&rsquo;s exactly what AI costs, exactly what it saves, and how to tell a good investment from a money pit.</p>
 
             <h2>The Numbers Nobody Shows You</h2>
             <p>There&rsquo;s a reason AI pricing pages say &ldquo;contact us.&rdquo; They want to size you up before they name a price. That approach tells you more about the vendor than about the cost. If the price depends on your budget rather than the problem, you&rsquo;re not buying a solution. You&rsquo;re being sold a package.</p>
-            <p>We post our prices because the cost is tied to the work, not to your wallet. Here&rsquo;s the full breakdown.</p>
+            <p>We post prices, not estimates. The cost depends on the work, not your wallet. Here&rsquo;s the full breakdown.</p>
 
             <h2>The SanLuis Pricing Model</h2>
 
-            <h3>$300 — Discovery Session</h3>
-            <p>One hour. We audit your operations and find the biggest bottleneck. You get a written roadmap with ranked opportunities. Includes AI Opportunity Audit&trade; ($2,500 value) at no extra charge. Money-back guarantee if we find fewer than three high-impact AI opportunities.</p>
+            <h3>$300. Discovery Session</h3>
+            <p>One hour. We audit your operations and find the manual task that eats the most time and causes the most delays. You get a written roadmap with ranked opportunities. Includes AI Opportunity Audit&trade; ($2,500 value) at no extra charge. Money-back guarantee if we find fewer than three high-impact AI opportunities.</p>
             <p>This isn&rsquo;t a sales call disguised as a consultation. We tell you what&rsquo;s worth building and what isn&rsquo;t. If the answer is &ldquo;nothing,&rdquo; you pay $300 for honesty instead of $5,000 for a system you didn&rsquo;t need.</p>
 
-            <h3>$1,200+ — AI Automation</h3>
+            <h3>$1,200+. AI Automation</h3>
             <p>Data entry, reconciliation, scheduling, reporting. The busywork your best people shouldn&rsquo;t touch. Fixed price. You own the code. Connects to your existing tools. Includes 30-day post-launch support ($500 value) and team adoption walkthrough.</p>
             <p>Most automation projects fail because they&rsquo;re over-engineered. We build the 80% solution first. It ships in weeks, not months. Edge cases come later.</p>
 
-            <h3>$5,000+ — AI Agents</h3>
+            <h3>$5,000+. AI Agents</h3>
             <p>Not a chatbot. An autonomous system that researches, decides, and acts on multi-step tasks without hand-holding. Built for one specific job. Includes 14-Day Prototype Promise ($1,000 value) where you see it working before committing to the full build.</p>
             <p>You approve the output, not every step. The system handles complex, multi-stage workflows start to finish.</p>
 
-            <h3>$5,000+ — Custom AI Systems</h3>
+            <h3>$5,000+. Custom AI Systems</h3>
             <p>A purpose-built system for a single, high-impact problem. Designed around your data, your workflow, your outcomes. Includes Architecture Blueprint ($1,500 value), deployment, and team training ($500 value). You own everything. No license fees. No vendor lock-in.</p>
             <p>Total bundle value: $7,000+. Your investment: Discovery from $300, build from $5,000.</p>
 
@@ -91,29 +89,29 @@ export default function Page() {
             <h2>What&rsquo;s Included (All At No Extra Charge)</h2>
 
             <ul>
-              <li><strong>AI Opportunity Audit&trade;</strong> ($2,500 value) — We find the opportunities that move the needle and tell you which ones to ignore. Included with Discovery.</li>
-              <li><strong>Architecture Blueprint</strong> ($1,500 value) — Full system design before any code is written. You see the plan before you commit. Included with Custom AI Systems.</li>
-              <li><strong>14-Day Prototype Promise</strong> ($1,000 value) — A working prototype you can test. See it work before the full build. Included with AI Agents.</li>
-              <li><strong>30-Day Post-Launch Support</strong> ($500 value) — We handle bugs, questions, and training. Included with Automation.</li>
-              <li><strong>Team Adoption Walkthrough</strong> — We train your people so the system actually gets used. Included with Automation and Custom Systems.</li>
+              <li><strong>AI Opportunity Audit&trade;</strong> ($2,500 value). We find the opportunities that move the needle and tell you which ones to ignore. Included with Discovery.</li>
+              <li><strong>Architecture Blueprint</strong> ($1,500 value). You see the full system design before we write any code. Commit only after you review the plan. Included with Custom AI Systems.</li>
+              <li><strong>14-Day Prototype Promise</strong> ($1,000 value). A working prototype you can test. See it work before the full build. Included with AI Agents.</li>
+              <li><strong>30-Day Post-Launch Support</strong> ($500 value). We handle bugs, questions, and training. Included with Automation.</li>
+              <li><strong>Team Adoption Walkthrough</strong>. We train your people so the system actually gets used. Included with Automation and Custom Systems.</li>
             </ul>
 
             <p>If you went to a traditional consultancy, these line items would be billed separately. We bundle them because the system only works if you use it.</p>
 
             <h2>Real ROI: What Our Clients Actually Saved</h2>
 
-            <h3>Garza International — Construction</h3>
-            <p>A Houston construction firm was losing bids because manual quoting took six-plus hours per response. Faster competitors were winning by default.</p>
+            <h3>Garza International. Construction</h3>
+            <p>A Houston construction firm lost bids because manual quoting took six-plus hours per response. Faster competitors won by default.</p>
             <p>We built a custom AI system that automated the quoting process. Result: 60% faster bid turnaround. More bids submitted. More bids won.</p>
             <p>The math: each additional bid won at an average contract value of $50,000 with a 15% margin is $7,500 in profit. Win one extra bid per month and the system pays for itself in the first month.</p>
 
-            <h3>Susie&rsquo;s Jewelry Repair — Retail</h3>
-            <p>Leads were coming in through the website, phone, and walk-ins with no systematic follow-up. Prospects were falling through the cracks daily.</p>
+            <h3>Susie&rsquo;s Jewelry Repair. Retail</h3>
+            <p>Leads came in through the website, phone, and walk-ins with no systematic follow-up. Prospects fell through the cracks daily.</p>
             <p>An AI lead management system captured and qualified every lead automatically. Result: 3x inbound leads.</p>
             <p>The math: if a single customer is worth $500 in lifetime revenue and you&rsquo;re losing 10 leads per month to poor follow-up, that&rsquo;s $5,000 per month walking out the door. A $1,200 system that catches those leads pays for itself in under a week.</p>
 
-            <h3>LoveFlow — Technology</h3>
-            <p>A matching algorithm was driving user churn through surface-level preference matching. Users were leaving because the matches didn&rsquo;t feel right.</p>
+            <h3>LoveFlow. Technology</h3>
+            <p>A matching algorithm drove user churn through surface-level preference matching. Users left because the matches didn&rsquo;t feel right.</p>
             <p>We improved the matching algorithm. Result: 40% better matches, reduced churn, competitive advantage.</p>
             <p>The math: if churn drops from 10% monthly to 6%, and each retained user is worth $20/month, 100 retained users is $24,000 per year in prevented revenue loss.</p>
 
