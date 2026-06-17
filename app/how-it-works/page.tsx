@@ -7,10 +7,10 @@ import GoldThreadTimeline from '@/components/GoldThreadTimeline'
 
 export const metadata: Metadata = {
   title: 'How It Works | 4-Step AI Development Process | SanLuis AI Solutions',
-    description: 'From first conversation to working system in four clear stages. Discovery Session ($300), fixed-price Build (from $1,200), Ship (deploy + train), Maintain (monthly retainer). You always know what comes next.',
+  description: 'Working with SanLuis AI feels clear and predictable. Four stages from conversation to working system: Discover, Build, Ship, and Maintain. You always know what comes next.',
   openGraph: {
     title: 'How It Works | 4-Step Process | SanLuis AI Solutions',
-    description: 'Discovery ($300) → Build (from $1,200) → Ship (deploy + train) → Maintain (monthly retainer). Transparent pricing, full source ownership, no lock-in.',
+    description: 'Discovery → Build → Ship → Maintain. A clear, predictable process from first conversation to working AI system.',
     url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -22,40 +22,40 @@ export const metadata: Metadata = {
 const steps = [
   {
     num: '01',
-    title: 'Discovery Session',
-    tagline: 'Start with clarity.',
-    duration: '60 minutes',
-    what: "We map your current operations, find the friction points, and pinpoint the single highest-impact AI opportunity for your business.",
+    title: 'DISCOVER',
+    tagline: 'One session, find the highest-leverage process to automate.',
+    duration: '60-90 minutes',
+    what: "We start with a single working session where we map your operations, identify the friction points, and pinpoint the single highest-impact opportunity. You do not need a polished spec or a technical background. We ask the right questions, review your current tools and workflows, and translate what we learn into a clear path forward. Within 24 hours, you receive a written action plan with cost estimates, timeline, and expected ROI.",
     deliverable: 'Written action plan within 24 hours with cost estimates, timeline, and expected ROI.',
     cost: '$300',
     costNote: 'credited toward build if you proceed',
   },
   {
     num: '02',
-    title: 'Build',
-    tagline: 'From plan to production.',
-    duration: 'Custom scope and timeline',
-    what: "We design and build your system using the frontier AI models that fit your problem: Gemini, Claude, Codex, Grok. No templates, no feature bloat, no scope creep.",
+    title: 'BUILD',
+    tagline: 'We build the system, you review it.',
+    duration: '2-4 weeks for a single process automation',
+    what: "From plan to production, we design and build your system using the frontier AI models that fit your problem: Gemini, Claude, Codex, Grok. No templates. No feature bloat. No scope creep. Each build is scoped in advance, broken into milestones, and reviewed with you before it moves forward. You see progress at every stage, and nothing ships without your sign-off. Builds typically take two to four weeks for a single process automation.",
     deliverable: 'Working system integrated with your existing tools. Full source code ownership. Transparent milestone tracking throughout.',
     cost: '$1,200 – $50,000',
     costNote: 'fixed price agreed before work begins',
   },
   {
     num: '03',
-    title: 'Ship',
-    tagline: 'Deployed, documented, trained.',
+    title: 'SHIP',
+    tagline: 'Deployed to your environment, tested with you.',
     duration: '1-2 weeks for deployment',
-    what: "Deployment isn't the finish line. We configure your environment, migrate data, run production testing, and train your team until the system is stable and your people are confident.",
+    what: "Deployment is not the finish line. We configure your environment, migrate any required data, run production testing alongside your team, and train your people until they are confident with the system. You get full runbooks and documentation. We do not hand the system off and disappear. We stay until it is stable, your team knows how to use it, and the business outcome you paid for is real. Deployment takes one to two weeks.",
     deliverable: 'Live production deployment. Team training session. Runbooks and documentation. 30-day post-launch support included.',
     cost: 'Included in Build',
     costNote: 'no additional cost',
   },
   {
     num: '04',
-    title: 'Maintain',
-    tagline: 'Built to last, built to scale.',
+    title: 'MAINTAIN',
+    tagline: 'We own it after go-live. It does not become your problem.',
     duration: 'Ongoing',
-    what: "Systems need to evolve as your business does. We offer monthly maintenance retainers that include monitoring, performance reporting, and a prioritized enhancement roadmap.",
+    what: "Systems need to evolve as your business does. We offer monthly maintenance retainers that include monitoring, uptime tracking, performance reporting, priority access for new features, and quarterly optimization reviews. If something breaks, we fix it. If the model drifts or the workflow changes, we adjust it. You never wonder if it is still working. You never need to hire an internal engineer just to keep it alive.",
     deliverable: 'System monitoring and uptime tracking. Quarterly optimization reviews. Priority access for new features.',
     cost: 'Monthly retainer',
     costNote: 'scoped to your needs',
@@ -89,13 +89,16 @@ export default function HowItWorksPage() {
       <PageHeader
         eyebrow="The Process"
         title="How It Works."
-        description="Four clear stages from first conversation to working system. You always know what comes next."
+        description="A clear, predictable process from first conversation to working AI system. You always know what comes next."
       />
 
       {/* Timeline Steps */}
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl mx-auto">
+          <p className="font-sans text-sm md:text-base text-navy-600 mb-10 max-w-2xl">
+            Working with SanLuis AI should feel clear from the first call. We do not bury the process under jargon or hand you a black box. Each stage has one job, one outcome, and one moment where you decide whether to move forward. Here is exactly how we take an idea and turn it into a system your team actually uses.
+          </p>
           <GoldThreadTimeline steps={steps} />
         </div>
       </section>
@@ -138,7 +141,15 @@ export default function HowItWorksPage() {
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to start your project?</h2>
-          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Book a $300 Discovery Session. 60 minutes. Clear roadmap. 24-hour action plan.</p>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-4">
+            Book a $300 Discovery Session. 60 minutes. Clear roadmap. 24-hour action plan.
+          </p>
+          <p className="font-sans text-sm font-light text-bone-300/60 mb-8">
+            Here is what this costs.{' '}
+            <Link href="/pricing" className="text-gold-500 hover:text-gold-400 underline underline-offset-4">
+              See our pricing.
+            </Link>
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
               Book a Discovery Session.
