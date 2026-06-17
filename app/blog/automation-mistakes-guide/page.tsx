@@ -68,6 +68,11 @@ export default function Page() {
 
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">Over the past year, we've seen dozens of automation projects: some that succeeded brilliantly and some that failed expensively. The failures share the same five patterns every time. Here is how to spot them before you write a check.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> Most automation projects fail because they automate broken processes, start with a platform instead of a problem, over-engineer the first build, lack an internal owner, or measure hours saved instead of business outcomes. Fix the workflow first, then automate the simplest version.
+              </p>
+            </div>
 
             <h2>Mistake #1: Automating a Process That Shouldn't Exist</h2>
             <p>This is the most expensive mistake. A business has a broken workflow: too many approvals, unnecessary steps, redundant data entry. Then it decides to automate it instead of fixing it. The result is a fast, reliable version of a broken process.</p>

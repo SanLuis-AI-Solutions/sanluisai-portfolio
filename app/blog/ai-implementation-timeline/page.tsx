@@ -42,6 +42,11 @@ export default function Page() {
           <div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-6 flex items-center gap-2">May 8, 2026<span className="inline-block w-3 h-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" className="w-full h-full"><path d="M16 6 L24 16 L16 26 L8 16 Z" fill="#D9A434"/></svg></span>6 min read</div>
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">Most people picture an AI project as a six-month slog through discovery phases, pilot programs, and endless stakeholder meetings. It doesn&rsquo;t have to be that way. Here&rsquo;s what a real build looks like when you skip the theater.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> From a $300 Discovery Session to a live AI system takes about 14 days: Day 1 maps your problem, Day 3 delivers the ranked audit, Day 7 shows a working prototype, and Day 14 deploys the finished system.
+              </p>
+            </div>
 
             <h2>Day 0: You Book The Call</h2>
             <p>What you&rsquo;ll need: 30 minutes, one real problem, and the willingness to hear &ldquo;AI isn&rsquo;t the answer for this&rdquo; if that&rsquo;s the truth. What you won&rsquo;t need: technical knowledge, a big team, a big budget, or a prepared presentation.</p>

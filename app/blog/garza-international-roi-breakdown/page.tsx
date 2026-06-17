@@ -68,6 +68,11 @@ export default function Page() {
 
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">Garza International's estimating team was spending 6+ hours per bid response. The math was simple: they could only bid on a fraction of available projects, and the ones they did bid on were priced based on stale data.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> Garza International, a Houston construction firm, cut bid turnaround by 60% with a custom AI quoting system built in three weeks for a fixed price. The system pays for itself with a single additional won bid.
+              </p>
+            </div>
 
             <h2>The Cost of Manual Quoting</h2>
             <p>Before the AI system, each construction quote required an estimator to:</p>

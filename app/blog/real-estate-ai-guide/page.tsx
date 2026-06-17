@@ -70,6 +70,11 @@ export default function Page() {
             <p className="lead text-lg text-navy-700 mb-8">
               Most &ldquo;AI for real estate&rdquo; content is about generating listing descriptions. That&rsquo;s the wrong problem. The real money is in what happens between the lead and the close.
             </p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> The best real estate AI handles lead response, follow-up, and CMA drafts, not listing descriptions. A $1,200 lead intake automation can respond in under 30 seconds and book showings while you sleep.
+              </p>
+            </div>
 
             <h2>The Real Estate Problem AI Actually Solves</h2>
             <p>Real estate agents lose deals to time, not to competitors. A lead comes in at 8 PM. You respond at 10 AM. By then, the prospect has already booked a showing with someone else.</p>

@@ -70,6 +70,11 @@ export default function Page() {
             <p className="lead text-lg text-navy-700 mb-8">
               Most &ldquo;AI development&rdquo; projects are black boxes. You pay hourly, you hope for progress, and you pray the timeline doesn&rsquo;t slip. We replace the black box with a 14-day roadmap. Here&rsquo;s how it works.
             </p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> A working AI system can be live in 14 days: $300 Discovery Session on Day 1, ranked audit by Day 3, working prototype by Day 7, deployed system by Day 14. Fixed price, you own the code, 6-month ROI guarantee.
+              </p>
+            </div>
 
             <h2>Day 0: You Book the Call</h2>
             <p>You book a $300 Discovery Session. What you&rsquo;ll need: 30 minutes, an open mind, and a real, painful problem. What you won&rsquo;t need: technical knowledge, a big budget, or a development team. We handle all of that.</p>

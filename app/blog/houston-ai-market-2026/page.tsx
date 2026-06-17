@@ -68,6 +68,11 @@ export default function Page() {
 
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">The share of Texas businesses using AI jumped from 20% in April 2024 to 36% in May 2025, nearly doubling in a single year. But the real story isn't the adoption rate. It's what happens to the businesses that don't adopt.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> AI adoption among Texas businesses nearly doubled in a year, and Houston's industries are ideal for it. Most small businesses should start with a simple $1,200 workflow automation rather than a large custom agent project.
+              </p>
+            </div>
 
             <h2>The Houston Advantage</h2>
             <p>Houston's economy runs on industries with high automation potential: construction, energy, manufacturing, logistics, healthcare, and professional services. These sectors share a common pattern: repeatable workflows, structured data, and high-volume decisions where speed matters.</p>

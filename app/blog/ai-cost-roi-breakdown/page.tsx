@@ -68,6 +68,11 @@ export default function Page() {
 
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">Most AI pricing pages hide the number. Ours doesn&rsquo;t. Here&rsquo;s exactly what AI costs, exactly what it saves, and how to tell a good investment from a money pit.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> AI costs less than most businesses expect: $300 for a Discovery Session, $1,200+ for automations, $5,000+ for agents or custom systems. Most workflow automations pay for themselves in 1-4 months because they replace hours of manual work forever.
+              </p>
+            </div>
 
             <h2>The Numbers Nobody Shows You</h2>
             <p>There&rsquo;s a reason AI pricing pages say &ldquo;contact us.&rdquo; They want to size you up before they name a price. That approach tells you more about the vendor than about the cost. If the price depends on your budget rather than the problem, you&rsquo;re not buying a solution. You&rsquo;re being sold a package.</p>

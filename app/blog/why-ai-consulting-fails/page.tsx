@@ -66,6 +66,11 @@ export default function Page() {
 
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">The AI consulting industry has a dirty secret: most firms bill by the month, deliver slide decks, and leave you exactly where you started.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> Traditional AI consulting fails because it rewards long discovery phases, slide decks, and narrow pilots instead of shipped software. We replace that with a $300 Discovery Session, fixed-price builds, and working systems deployed in 1-6 weeks.
+              </p>
+            </div>
 
             <h2>The Three Failure Modes</h2>
 

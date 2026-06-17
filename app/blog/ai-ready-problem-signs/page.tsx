@@ -68,6 +68,11 @@ export default function Page() {
 
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">AI solves specific types of problems. The trick is knowing which ones to solve with AI, and which ones will only cost more once AI is bolted on.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> Your business is AI-ready if you have repetitive, rules-based work, slow response times that cost deals, unused data, or clear one-sentence problems. If the issue is rare, low-cost, or needs human judgment, use a checklist instead.
+              </p>
+            </div>
 
             <h2>Sign #1: You Have Data But No Decisions</h2>
             <p>You collect customer data, sales data, or operational data, but you never find time to analyze it. Your spreadsheet has 10,000 rows and you still make decisions based on intuition.</p>

@@ -73,6 +73,11 @@ export default function Page() {
             <p>
               Here is the difference in plain language, a side-by-side comparison, and the exact scenarios where each one makes sense for a Houston business.
             </p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> AI agents take action across your systems. Chatbots answer questions. A $1,200 chatbot handles FAQs and lead capture. A $5,000+ agent runs multi-step workflows like quoting, booking, and CRM updates while you sleep.
+              </p>
+            </div>
 
             <h2>The Chatbot You Know</h2>
             <p>

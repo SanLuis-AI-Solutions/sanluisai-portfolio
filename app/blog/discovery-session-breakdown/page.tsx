@@ -66,6 +66,11 @@ export default function Page() {
 
           <div className="prose prose-navy max-w-none">
             <p className="lead text-lg text-navy-700 mb-8">$300 for a one-hour meeting sounds expensive until you realize it replaces four weeks of discovery-phase billing.</p>
+            <div className="bg-bone-100 border border-navy-200 rounded p-5 mb-8">
+              <p className="font-sans text-sm text-navy-800 leading-relaxed m-0">
+                <strong>TL;DR:</strong> In the $300 Discovery Session you get a 60-minute business audit that identifies your most expensive problem, calculates its cost, sketches a fix, and delivers a written roadmap with fixed-price quote and timeline. No retainer required.
+              </p>
+            </div>
 
             <h2>Before the Session</h2>
             <p>You fill out a brief form: company website, biggest pain point, current tools, budget range. This lets us skip the "tell us about your business" portion and get straight to the problem. No sales pitch. No discovery deck. Just context.</p>
