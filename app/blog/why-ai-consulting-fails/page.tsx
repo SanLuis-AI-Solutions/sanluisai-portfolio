@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Why Most AI Consulting Fails (And How We Avoid It). SanLuis AI Solutions',
   description: 'Six-month discovery phases. Slide decks with no code. Pilot purgatory. Here is how the traditional AI consulting model wastes your time. Targeted, time-bounded builds produce real results in weeks.',
+  openGraph: {
+    title: 'Why Most AI Consulting Fails (And How We Avoid It)',
+    description: 'Six-month discovery phases, slide decks with no code, pilot purgatory. Here is how the traditional AI consulting model wastes your time.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/why-ai-consulting-fails',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-04-28',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'What AI Can Actually Do for Real Estate Agents in 2026: SanLuis AI Solutions',
   description: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up.',
+  openGraph: {
+    title: 'What AI Can Actually Do for Real Estate Agents in 2026',
+    description: 'AI for real estate is not listing descriptions. It is responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/real-estate-ai-guide',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-05-08',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

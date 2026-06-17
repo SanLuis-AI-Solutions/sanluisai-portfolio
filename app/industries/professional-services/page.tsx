@@ -8,6 +8,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'AI for Professional Services. SanLuis AI Solutions',
   description: 'Billable hours leakage, document review delays, and inconsistent client onboarding erode margins. We build AI to eliminate the waste.',
+  openGraph: {
+    title: 'AI for Professional Services. SanLuis AI Solutions',
+    description: 'Stop billable hour leakage and speed up client onboarding with AI for professional services.',
+    url: 'https://sanluisai-portfolio.vercel.app/industries/professional-services',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

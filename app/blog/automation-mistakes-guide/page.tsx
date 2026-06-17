@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: '5 Automation Mistakes That Cost Houston Businesses Real Money | SanLuis AI Solutions',
   description: 'Most automation projects fail. Not because the technology doesn\'t work. Because of these five specific mistakes. Here is how to avoid them and get real ROI from your first build.',
+  openGraph: {
+    title: '5 Automation Mistakes That Cost Houston Businesses Real Money',
+    description: 'Most automation projects fail because of five specific mistakes. Here is how to avoid them and get real ROI from your first build.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/automation-mistakes-guide',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-05-01',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

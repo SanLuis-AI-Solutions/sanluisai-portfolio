@@ -9,6 +9,15 @@ import BeforeAfter from '@/components/BeforeAfter'
 export const metadata: Metadata = {
   title: 'Garza International - Case Study | SanLuis AI Solutions',
   description: 'How SanLuis AI automated manual quoting at Garza International, reducing bid turnaround by 60%.',
+  openGraph: {
+    title: 'Garza International - Case Study | SanLuis AI Solutions',
+    description: 'How SanLuis AI automated manual quoting at Garza International, reducing bid turnaround by 60%.',
+    url: 'https://sanluisai-portfolio.vercel.app/case-studies/garza-international',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+  },
 }
 
 export default function Page() {

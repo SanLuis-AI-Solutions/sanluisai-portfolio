@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'AI Agents vs. Chatbots: What\'s the Difference (And When You Need Each) - SanLuis AI Solutions',
   description: 'Chatbots answer questions. AI agents take action. Here is the difference explained in plain language, plus a real-world example of when an agent delivered a 60% faster quoting process.',
+  openGraph: {
+    title: "AI Agents vs. Chatbots: What's the Difference (And When You Need Each)",
+    description: 'Chatbots answer questions. AI agents take action. Here is the difference explained in plain language, plus a real example of a 60% faster quoting process.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/ai-agents-vs-chatbots',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-05-18',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

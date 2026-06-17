@@ -6,6 +6,15 @@ import AnimatedSection from '@/components/AnimatedSection'
 export const metadata: Metadata = {
   title: 'Custom AI Systems | SanLuis AI Solutions',
   description: "Everyone has access to the same AI. We build the one system that solves your single biggest operational problem and gives you back a day a week. Custom, on your data, with full code ownership.",
+  openGraph: {
+    title: 'Custom AI Systems | SanLuis AI Solutions',
+    description: 'We build the one custom AI system that solves your biggest operational problem and gives you back a day a week.',
+    url: 'https://sanluisai-portfolio.vercel.app/services/custom-ai',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 const buildAreas = [

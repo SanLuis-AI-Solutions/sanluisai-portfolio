@@ -9,6 +9,15 @@ import BeforeAfter from '@/components/BeforeAfter'
 export const metadata: Metadata = {
   title: "Susie's Jewelry Repair: Case Study | SanLuis AI Solutions",
   description: "How SanLuis AI built automated lead capture and follow-up for Susie's Jewelry Repair, tripling inbound leads.",
+  openGraph: {
+    title: "Susie's Jewelry Repair: Case Study | SanLuis AI Solutions",
+    description: "How SanLuis AI built automated lead capture and follow-up for Susie's Jewelry Repair, tripling inbound leads.",
+    url: 'https://sanluisai-portfolio.vercel.app/case-studies/susies-jewelry-repair',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+  },
 }
 
 export default function Page() {

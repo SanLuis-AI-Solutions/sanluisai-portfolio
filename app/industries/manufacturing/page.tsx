@@ -8,6 +8,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'AI for Manufacturing. SanLuis AI Solutions',
   description: 'Production issues, unplanned downtime, and quality control gaps cost manufacturers millions. We build custom AI to eliminate them.',
+  openGraph: {
+    title: 'AI for Manufacturing. SanLuis AI Solutions',
+    description: 'Eliminate unplanned downtime and quality gaps with custom AI built for manufacturing.',
+    url: 'https://sanluisai-portfolio.vercel.app/industries/manufacturing',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

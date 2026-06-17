@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'The $300 Discovery Session: What Happens in That Hour. SanLuis AI Solutions',
   description: 'You pay $300 for a 60-minute audit. What do you actually get? We break down the diagnostic process: from problem identification to a written action plan you can execute.',
+  openGraph: {
+    title: 'The $300 Discovery Session: What Happens in That Hour',
+    description: 'What you actually get in a $300, 60-minute AI audit: from problem identification to a written action plan you can execute.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/discovery-session-breakdown',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-04-28',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

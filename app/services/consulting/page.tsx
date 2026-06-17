@@ -7,6 +7,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'AI Discovery Session | SanLuis AI Solutions',
   description: "A 60-minute working session that turns 'we should do something with AI' into a prioritized roadmap with cost estimates. $300. Walk away with clarity.",
+  openGraph: {
+    title: 'AI Discovery Session | SanLuis AI Solutions',
+    description: "A 60-minute session that turns AI uncertainty into a prioritized roadmap. $300. Walk away with clarity.",
+    url: 'https://sanluisai-portfolio.vercel.app/services/consulting',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 const sessionSteps = [

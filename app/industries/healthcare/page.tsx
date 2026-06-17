@@ -8,6 +8,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'AI for Healthcare. SanLuis AI Solutions',
   description: 'Administrative burden, prior authorization delays, and patient intake friction drain resources from care. We build AI to eliminate the overhead.',
+  openGraph: {
+    title: 'AI for Healthcare. SanLuis AI Solutions',
+    description: 'Cut administrative overhead and accelerate patient intake with AI built for healthcare.',
+    url: 'https://sanluisai-portfolio.vercel.app/industries/healthcare',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

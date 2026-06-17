@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Houston AI Market in 2026: What Small Businesses Need to Know | SanLuis AI Solutions',
   description: 'AI adoption in Texas doubled in the last year, but most Houston small businesses are stuck between free tools and enterprise systems. Here is the practical market landscape for 2026.',
+  openGraph: {
+    title: 'Houston AI Market in 2026: What Small Businesses Need to Know',
+    description: 'AI adoption in Texas doubled, but most Houston small businesses are stuck between free tools and enterprise systems. Here is the 2026 landscape.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/houston-ai-market-2026',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-04-22',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

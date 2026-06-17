@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'What AI Actually Costs vs. What It Saves: A Real Breakdown - SanLuis AI Solutions',
   description: 'Most AI pricing pages say contact us. Here are real numbers: Discovery $300, Automation $1,200+, Agents $5,000+. Fixed price. You own the code. Breakeven in months.',
+  openGraph: {
+    title: 'What AI Actually Costs vs. What It Saves: A Real Breakdown',
+    description: 'Real AI pricing and savings: Discovery $300, Automation $1,200+, Agents $5,000+. Fixed price, you own the code, breakeven in months.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/ai-cost-roi-breakdown',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-05-08',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

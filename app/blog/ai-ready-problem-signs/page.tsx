@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'SanLuis AI Solutions: 5 Signs Your Business Has An AI-Ready Problem',
   description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution, plus when a spreadsheet or checklist is the better answer.',
+  openGraph: {
+    title: '5 Signs Your Business Has An AI-Ready Problem',
+    description: 'Five signals your business problem is ready for custom AI, plus when a spreadsheet or checklist is the better answer.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/ai-ready-problem-signs',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-04-28',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

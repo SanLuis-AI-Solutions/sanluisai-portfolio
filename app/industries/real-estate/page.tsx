@@ -8,6 +8,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'AI for Real Estate. SanLuis AI Solutions',
   description: 'Investment analysis, lead qualification, and portfolio intelligence. AI systems purpose-built for real estate professionals.',
+  openGraph: {
+    title: 'AI for Real Estate. SanLuis AI Solutions',
+    description: 'Faster deal analysis, smarter lead qualification, and real-time portfolio intelligence for real estate.',
+    url: 'https://sanluisai-portfolio.vercel.app/industries/real-estate',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

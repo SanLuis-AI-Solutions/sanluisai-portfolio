@@ -7,6 +7,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'AI Agent Systems | SanLuis AI Solutions',
   description: "Automation handles the predictable. Agents handle the ambiguous. We build working systems that decide, act, and improve while your team focuses on judgment.",
+  openGraph: {
+    title: 'AI Agent Systems | SanLuis AI Solutions',
+    description: 'We build AI agents that decide, act, and improve—so your team stays focused on judgment.',
+    url: 'https://sanluisai-portfolio.vercel.app/services/agents',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 const agentCapabilities = [

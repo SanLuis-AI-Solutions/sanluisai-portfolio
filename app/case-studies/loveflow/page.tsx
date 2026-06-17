@@ -9,6 +9,15 @@ import BeforeAfter from '@/components/BeforeAfter'
 export const metadata: Metadata = {
   title: 'LoveFlow: Case Study | SanLuis AI Solutions',
   description: 'How SanLuis AI redesigned the LoveFlow matching algorithm, improving match quality by 40% and boosting user retention.',
+  openGraph: {
+    title: 'LoveFlow: Case Study | SanLuis AI Solutions',
+    description: 'How SanLuis AI redesigned the LoveFlow matching algorithm, improving match quality by 40% and boosting user retention.',
+    url: 'https://sanluisai-portfolio.vercel.app/case-studies/loveflow',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+  },
 }
 
 export default function Page() {

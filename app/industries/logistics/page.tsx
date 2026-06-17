@@ -7,6 +7,15 @@ import AnimatedSection from '@/components/AnimatedSection'
 export const metadata: Metadata = {
   title: 'AI for Logistics | SanLuis AI Solutions',
   description: 'Route inefficiency, warehouse slowdowns, and supply chain disruptions cost logistics operators daily. We build AI to eliminate the waste.',
+  openGraph: {
+    title: 'AI for Logistics | SanLuis AI Solutions',
+    description: 'Cut route waste, warehouse slowdowns, and supply chain disruption with AI built for logistics.',
+    url: 'https://sanluisai-portfolio.vercel.app/industries/logistics',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

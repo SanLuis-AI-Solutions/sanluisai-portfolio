@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'From Discovery to Live AI System: The 14-Day Roadmap. SanLuis AI Solutions',
   description: 'What actually happens in the first 14 days of an AI build? From discovery to prototype to live system. Transparent, fixed-price, you-own-the-code.',
+  openGraph: {
+    title: 'From Discovery to Live AI System: The 14-Day Roadmap',
+    description: 'What actually happens in the first 14 days of an AI build: discovery, prototype, live system. Transparent, fixed-price, you own the code.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/implementation-timeline',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-05-08',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

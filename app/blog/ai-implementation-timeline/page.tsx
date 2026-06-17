@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'From $300 Discovery to Live AI System: What 14 Days Actually Look Like | SanLuis AI Solutions',
   description: 'Day-by-day breakdown of a custom AI build. Discovery, audit, prototype, deployment. Fixed price. You own the code. No surprises.',
+  openGraph: {
+    title: 'From $300 Discovery to Live AI System: What 14 Days Actually Look Like',
+    description: 'Day-by-day breakdown of a custom AI build: discovery, audit, prototype, deployment. Fixed price, you own the code.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/ai-implementation-timeline',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-05-08',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

@@ -8,6 +8,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'AI for Retail | SanLuis AI Solutions',
   description: 'Inventory waste, inconsistent customer service, and demand forecasting errors cost retailers margin. We build AI to eliminate the guesswork.',
+  openGraph: {
+    title: 'AI for Retail | SanLuis AI Solutions',
+    description: 'Cut inventory waste and demand guesswork with AI built for retail.',
+    url: 'https://sanluisai-portfolio.vercel.app/industries/retail',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function Page() {

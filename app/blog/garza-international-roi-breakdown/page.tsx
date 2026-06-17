@@ -7,6 +7,17 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'How Garza International Cut Bid Turnaround by 60% With Custom AI | SanLuis AI Solutions',
   description: 'A Houston construction firm was losing bids because manual quoting took 6+ hours per response. Here is the exact ROI breakdown of a 3-week custom AI build.',
+  openGraph: {
+    title: 'How Garza International Cut Bid Turnaround by 60% With Custom AI',
+    description: 'A Houston construction firm cut bid turnaround by 60% with custom AI. Here is the exact ROI breakdown of a 3-week build.',
+    url: 'https://sanluisai-portfolio.vercel.app/blog/garza-international-roi-breakdown',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2026-04-15',
+    authors: ['Daniel San Luis'],
+  },
 }
 
 const jsonLd = {

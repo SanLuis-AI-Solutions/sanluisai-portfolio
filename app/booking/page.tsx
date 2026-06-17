@@ -6,6 +6,15 @@ import AnimatedSection from '@/components/AnimatedSection'
 export const metadata: Metadata = {
   title: 'Book a $300 Discovery Session | SanLuis AI Solutions',
   description: 'Book a $300 Discovery Session with SanLuis AI: 60 minutes, written action plan, money-back guarantee.',
+  openGraph: {
+    title: 'Book a $300 Discovery Session | SanLuis AI Solutions',
+    description: 'Book a $300 Discovery Session with SanLuis AI: 60 minutes, written action plan, money-back guarantee.',
+    url: 'https://sanluisai-portfolio.vercel.app/booking',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export const viewport: Viewport = {

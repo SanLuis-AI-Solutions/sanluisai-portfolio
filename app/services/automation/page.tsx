@@ -7,6 +7,15 @@ import Diamond from '@/components/Diamond'
 export const metadata: Metadata = {
   title: 'Workflow Automation | SanLuis AI Solutions',
   description: "We build the workflow automations that give your team a full day back every week. Discovery is $300. Automations ship from $1,200.",
+  openGraph: {
+    title: 'Workflow Automation | SanLuis AI Solutions',
+    description: 'Give your team a full day back every week with workflow automation. Discovery from $300.',
+    url: 'https://sanluisai-portfolio.vercel.app/services/automation',
+    siteName: 'SanLuis AI Solutions',
+    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 const useCases = [
