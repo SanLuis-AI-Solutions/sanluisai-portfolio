@@ -87,29 +87,7 @@ export default function Page() {
           <h2 className="font-display text-2xl text-navy-800 mb-4">What They Do Now</h2>
           <p className="sl-body mb-6">Susie checks her dashboard once a day instead of juggling three channels by memory. She focuses on the bench: repairs, custom work, and client relationships. The system handles follow-up, reminders, and booking confirmations.</p>
 
-          {/* ROI Snapshot: Billable Bleed */}
-          <div className="bg-navy-900 text-bone-50 border border-gold-600/40 rounded p-6 mb-8">
-            <h3 className="font-display text-xl text-gold-500 mb-4">ROI Snapshot: The Billable Bleed</h3>
-            <div className="grid sm:grid-cols-2 gap-4 mb-4">
-              <div>
-                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">Before: Annual Bleed</div>
-                <div className="font-mono text-sm text-bone-300/80">40 hrs/mo manual follow-up · $35/hr</div>
-                <div className="font-display text-2xl text-red-400 mt-1">$16,800</div>
-                <div className="font-sans text-xs text-bone-300/40 mt-1">Lost leads + owner's time</div>
-              </div>
-              <div>
-                <div className="font-sans text-xs text-bone-300/40 tracking-[0.08em] uppercase mb-1">After: Annual Gain</div>
-                <div className="font-mono text-sm text-bone-300/80">3x leads · 94% follow-up rate</div>
-                <div className="font-display text-2xl text-green-400 mt-1">+$16,800</div>
-                <div className="font-sans text-xs text-bone-300/40 mt-1">Owner time fully recovered</div>
-              </div>
-            </div>
-            <div className="border-t border-bone-300/10 pt-4 flex items-baseline justify-between">
-              <span className="font-sans text-xs text-bone-300/50">AI System Investment</span>
-              <span className="font-display text-lg text-gold-500">$1,200–2,000</span>
-            </div>
-            <div className="font-sans text-xs text-gold-500/80 mt-3 font-medium">Net Year 1 Gain: ~$14,800–15,600 (7x payback)</div>
-          </div>
+
 
           <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
             <p className="italic mb-2">"I went from losing leads to having a system that works even when I am not in the shop. SanLuis AI transformed how we run our business."</p>

@@ -135,7 +135,7 @@ export default function ROICalculator() {
                     <div className="font-mono text-lg text-navy-800 font-medium">
                       {breakEvenWeeks < 1 ? 'Less than a week' : breakEvenWeeks <= 1.5 ? '1 week' : `${Math.round(breakEvenWeeks)} weeks`}
                     </div>
-                    <div className="font-sans text-xs text-fg3 mt-1">{breakEvenWeeks >= 4 ? 'Pays for itself before the first month ends.' : `Breakeven in ${Math.round(breakEvenWeeks)} weeks.`}</div>
+                    <div className="font-sans text-xs text-fg3 mt-1">{breakEvenWeeks < 1 ? 'Pays for itself in less than a week.' : breakEvenWeeks >= 4 ? 'Pays for itself before the first month ends.' : `Breakeven in ${Math.round(breakEvenWeeks)} weeks.`}</div>
                   </div>
                 )}
 

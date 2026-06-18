@@ -47,7 +47,7 @@ export default function Page() {
 
             <p className="sl-body max-w-prose mb-4">Documentation burden is the third. Providers spend up to two hours on the EHR for every hour of direct patient care. Ambient listening systems can draft the note in real time, populate diagnosis fields, and queue orders for review. The clinician still signs every entry. The AI simply removes the typing.</p>
 
-            <p className="sl-body max-w-prose mb-4">Our approach is compliance-first. Systems are designed with HIPAA considerations built in from day one. Data stays encrypted, access is logged, and we never train models on patient data.</p>
+            <p className="sl-body max-w-prose mb-4">On HIPAA compliance: the systems we build operate on data that stays within the client's existing infrastructure. We do not directly handle, store, or transmit protected health information (PHI). Our systems connect to the client's own environment, their EHR, their secure storage, their compliance boundary. Data is encrypted in transit and at rest. Access is logged. We do not train models on patient data. If a deployment requires a BA agreement, we execute it. The client's compliance posture is preserved because the data never leaves their control.</p>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>

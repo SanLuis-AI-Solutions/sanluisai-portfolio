@@ -217,7 +217,7 @@ export default function Page() {
               A chatbot replaces one interaction channel: the conversation box on your website. An agent replaces hours of manual work across multiple systems. A chatbot has one input (user question) and one output (text response). An agent reads from APIs, writes to databases, triggers email sequences, checks calendars, and logs every decision to an audit trail.
             </p>
             <p>
-              The economics reflect that difference. A $1,200 chatbot that answers 50 questions a day saves a few hours of staff time. A $5,000 agent that automates bid quoting for a construction firm can recover $74,000 in estimator time in the first year. The math is documented in the Garza case study.
+              The economics reflect that difference. A $1,200 chatbot that answers 50 questions a day saves a few hours of staff time. A $5,000 agent that automates bid quoting for a construction firm can cut turnaround by 60% and double bid capacity. The results are documented in the Garza case study.
             </p>
 
             <h2>How to Decide</h2>

@@ -5,11 +5,11 @@ import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
-  title: 'AI Discovery Session | SanLuis AI Solutions',
-  description: "A 60-minute working session that turns 'we should do something with AI' into a prioritized roadmap with cost estimates. $300. Walk away with clarity.",
+  title: 'AI Consulting | SanLuis AI Solutions',
+  description: "Ongoing strategic AI advisory for businesses that need expert guidance on technology evaluation, vendor assessment, architecture review, and implementation oversight.",
   openGraph: {
-    title: 'AI Discovery Session | SanLuis AI Solutions',
-    description: "A 60-minute session that turns AI uncertainty into a prioritized roadmap. $300. Walk away with clarity.",
+    title: 'AI Consulting | SanLuis AI Solutions',
+    description: "Strategic AI advisory for businesses that need expert guidance on technology evaluation, vendor assessment, architecture review, and implementation oversight.",
     url: 'https://sanluisai-portfolio.vercel.app/services/consulting',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -18,62 +18,49 @@ export const metadata: Metadata = {
   },
 }
 
-const sessionSteps = [
+const consultingAreas = [
   {
-    phase: 'Prep (Before the call)',
-    paragraphs: [
-      "Before we meet, you share a short operations overview and any workflow documentation you already have. We review your tools, your inputs and outputs, and where time is being lost. By the time the call starts, we already understand the shape of your business and the questions that matter. No generic templates. No wasted minutes.",
-    ],
+    title: 'Strategic Guidance',
+    desc: 'We help you build a coherent AI strategy aligned with your business goals. Not a generic roadmap. A specific plan that accounts for your industry, your team size, your data maturity, and your budget. We evaluate where AI creates leverage and where it creates distraction, and we tell you the difference.',
   },
   {
-    phase: 'The Session (60 min)',
-    paragraphs: [
-      "The session is a working conversation. We walk through the tasks your team repeats each week, the handoffs that slow you down, and the data that lives in spreadsheets or email threads. We identify at least three concrete AI opportunities ranked by impact and effort, and we tell you directly when something does not need AI at all.",
-    ],
+    title: 'Technology Evaluation',
+    desc: 'The AI vendor landscape changes weekly. We evaluate models, platforms, and tools against your specific use cases. We run benchmarks on your data, not marketing claims. You get a clear recommendation on what to use, what to avoid, and what to wait for.',
   },
   {
-    phase: 'After (Delivered in 48 hours)',
-    paragraphs: [
-      "Within 48 hours, you receive a written roadmap with prioritized opportunities, realistic cost estimates, and a dependency map for each initiative. It is specific enough to hand to any builder and clear enough to act on internally. If you choose to move forward with us, the roadmap becomes the scope of work. If not, it is still yours.",
-    ],
-  },
-]
-
-const deliverables = [
-  {
-    title: 'Clarity',
-    desc: 'You stop asking what AI can do for your business and start knowing exactly which system to build first. The session replaces noise with a single, actionable focus.',
+    title: 'Vendor Assessment',
+    desc: 'Before you sign a contract with an AI vendor, we review the terms, the architecture, the integration requirements, and the hidden costs. We identify lock-in risks, data privacy concerns, and scalability limitations. You negotiate from knowledge, not hope.',
   },
   {
-    title: '3+ Opportunities',
-    desc: 'We find at least three specific places where AI removes real work from your operations. Each opportunity is ranked by business impact, technical feasibility, and how quickly it can ship.',
+    title: 'Architecture Review',
+    desc: 'If you have an existing AI system or are planning one, we review the architecture for scalability, maintainability, security, and cost efficiency. We identify bottlenecks, single points of failure, and design decisions that will cost you later. You get a prioritized list of improvements.',
   },
   {
-    title: 'Cost Estimates',
-    desc: 'Every recommended initiative includes a realistic price range based on similar deployments. You know the investment before you commit to anything beyond the session.',
-  },
-  {
-    title: 'Written Roadmap',
-    desc: 'You get a prioritized, written roadmap within 48 hours. It is detailed enough to execute with us, with another team, or on your own.',
+    title: 'Implementation Oversight',
+    desc: 'If your team is building AI systems internally or with another vendor, we provide ongoing oversight. We review progress against milestones, validate technical decisions, and ensure the system stays aligned with business outcomes. You get the confidence that comes from experienced technical leadership.',
   },
 ]
 
 const faqItems = [
   {
-    q: "Who is this session for?",
-    a: "This is for business owners, operations leads, and decision-makers who know AI matters but do not have a clear plan. You run real workflows, serve real customers, and want a concrete path forward. If you are looking for a generic strategy deck or a chatbot to impress investors, this is not the right fit. If you want a working system that saves your team time, start here.",
+    q: "How is AI Consulting different from the Discovery Session?",
+    a: "The Discovery Session is a one-time, 60-minute working session that produces a written roadmap. AI Consulting is an ongoing advisory relationship. You engage us for a defined period or retainer to provide strategic guidance, evaluate technology, review architecture, and oversee implementation. The Discovery Session is the starting point. Consulting is the sustained partnership.",
   },
   {
-    q: "What if you don't find 3+ opportunities?",
-    a: "Then the session is free. The guarantee is simple. If we cannot identify at least three high-impact AI opportunities in your operations, you do not pay. We have never had to refund a session, because most businesses are sitting on more untapped leverage than they realize.",
+    q: "Who needs AI Consulting?",
+    a: "Businesses that are actively building or investing in AI and need expert guidance to make the right decisions. You might be evaluating vendors, planning an architecture, or overseeing an implementation. You have a team and a budget, and you need someone who has done this before to help you avoid costly mistakes.",
   },
   {
-    q: "Do I need technical knowledge to participate?",
-    a: "No technical background is required. We ask about your business operations, not your codebase. You describe the work that slows your team down, and we translate that into technical options in plain language. You leave with understanding, not jargon.",
+    q: "Do I need a Discovery Session first?",
+    a: "Not necessarily. If you already have a clear understanding of your AI goals and need strategic guidance to execute, you can start with a consulting engagement directly. If you are still exploring what is possible, the Discovery Session is the better starting point. We can help you decide which path fits during an initial conversation.",
   },
   {
-    q: "What happens after the session?",
-    a: "You receive a written roadmap within 48 hours. If you decide to move forward, the roadmap becomes the scope of work for a custom build. If you decide not to proceed, you still have a clear plan you can execute with anyone. The value is in the clarity, not the provider.",
+    q: "How is consulting priced?",
+    a: "Consulting engagements are custom priced based on scope, duration, and level of involvement. We offer hourly advisory, monthly retainers, and project-based consulting. We discuss your needs and provide a fixed price before any work begins. No surprises, no hidden fees.",
+  },
+  {
+    q: "Do you work with teams that already have technical staff?",
+    a: "Yes. Many of our consulting clients have internal engineering teams. We act as a strategic layer above the implementation, providing guidance, validation, and oversight. Your team builds. We help them build the right thing, the right way.",
   },
 ]
 
@@ -81,9 +68,9 @@ export default function ConsultingPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Service 04"
-        title="Discovery Session."
-        description="This is a 60-minute working session, not a pitch. We map your operations, identify where AI removes real work, and leave you with a written plan you can act on. $300 buys clarity, not more questions."
+        eyebrow="Service 05"
+        title="AI Consulting."
+        description="Ongoing strategic advisory for businesses that are building with AI. Technology evaluation, vendor assessment, architecture review, and implementation oversight. Custom pricing. Book a call to discuss."
       />
 
       <AnimatedSection delay={0}>
@@ -91,45 +78,50 @@ export default function ConsultingPage() {
         <div className="max-w-7xl mx-auto">
           {/* Problem section */}
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-2xl text-navy-800 mb-4">The problem with "we should do something with AI."</h2>
+            <h2 className="font-display text-2xl text-navy-800 mb-4">The problem with going it alone.</h2>
             <p className="sl-body-lg mb-4">
-              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. Our $300 Discovery Session is the starting point for every engagement, including Custom AI Systems from $5,000, AI Agent Systems from $5,000, and AI Automation from $1,200.
+              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We provide AI Consulting alongside Custom AI Systems from $5,000, AI Agent Systems from $5,000, AI Automation from $1,200, and a $300 Discovery Session to identify the right starting point.
             </p>
             <p className="sl-body-lg mb-4">
-              Everyone has access to the same AI. The advantage is not in owning the tool.
+              Everyone has access to the same AI. The difference is knowing what to build, what to buy, and what to skip.
             </p>
             <p className="sl-body-lg mb-4">
-              The real problem is the phrase itself: "we should do something with AI," with no clear answer to what, where, or how much. That uncertainty costs more than any software license. It delays decisions, burns budget on misplaced experiments, and leaves teams doing work that should have been automated months ago.
+              Building with AI is not just about writing code. It is about choosing the right model, the right architecture, the right vendor, and the right timeline. One wrong decision at the start can multiply costs, delay delivery, and lock you into a system that does not solve the real problem. Most teams make these decisions in isolation, without the benefit of experience.
             </p>
             <p className="sl-body-lg mb-4">
-              This session is for owners and operators with real workflows, real customers, and real constraints. You do not need a technical background. You need a clear plan that fits your budget and your team, and a partner who will tell you the truth about what is worth building.
+              AI Consulting fills that gap. We provide the strategic layer that sits above the implementation. We evaluate your options, review your architecture, assess your vendors, and oversee your build. You get the confidence of experienced technical leadership without hiring a full-time executive.
             </p>
             <p className="sl-body-lg">
-              It is not for companies looking for a chatbot to bolt onto their website or a strategy deck to show investors. We do not sell chatbots. We do not sell strategy decks. We sell working systems that remove work from your week.
+              This is for businesses that are serious about AI. You have a team, a budget, and a timeline. You need someone who has done this before to help you make the right calls. We do not sell chatbots. We do not sell strategy decks. We sell the judgment that turns AI investment into business results.
             </p>
           </div>
 
-          {/* Session breakdown */}
-          <h2 className="font-display text-2xl text-navy-800 mb-6">What happens in the session.</h2>
-          <div className="grid md:grid-cols-3 gap-5 mb-16">
-            {sessionSteps.map((s) => (
-              <div key={s.phase} className="bg-white border border-navy-200 rounded p-6 hover:border-navy-900 transition-all duration-220">
-                <p className="font-mono text-[10px] tracking-[0.08em] uppercase text-gold-600 mb-3">{s.phase}</p>
-                <div className="space-y-3">
-                  {s.paragraphs.map((paragraph, idx) => (
-                    <p key={idx} className="sl-body-sm">{paragraph}</p>
-                  ))}
-                </div>
+          {/* What consulting covers */}
+          <h2 className="font-display text-2xl text-navy-800 mb-6">What AI Consulting covers.</h2>
+          <div className="grid md:grid-cols-2 gap-5 mb-16">
+            {consultingAreas.map((area) => (
+              <div key={area.title} className="bg-white border border-navy-200 rounded p-6 hover:border-navy-900 transition-all duration-220">
+                <h3 className="font-display text-xl text-navy-800 mb-2 flex items-center gap-2">
+                  <Diamond className="text-gold-600" />
+                  {area.title}
+                </h3>
+                <p className="sl-body-sm">{area.desc}</p>
               </div>
             ))}
           </div>
 
-          {/* What you get */}
+          {/* How it works */}
           <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-16">
-            <h2 className="font-display text-2xl text-bone-50 mb-6">What you walk away with.</h2>
+            <h2 className="font-display text-2xl text-bone-50 mb-6">How consulting works.</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {deliverables.map((s) => (
-                <div key={s.title}>
+              {[
+                { step: '01', title: 'Discuss', desc: 'We start with a conversation about your goals, your current state, and the decisions you need help with. We scope the engagement, set expectations, and agree on a fixed price before any work begins.' },
+                { step: '02', title: 'Assess', desc: 'We review your technology stack, vendor options, architecture plans, or implementation progress. We identify risks, gaps, and opportunities. You get a clear picture of where you stand and what to do next.' },
+                { step: '03', title: 'Advise', desc: 'We deliver actionable recommendations in plain language. Technology choices, vendor evaluations, architecture improvements, and implementation priorities. You decide what to act on and when.' },
+                { step: '04', title: 'Support', desc: 'We stay engaged through the execution phase. Regular check-ins, milestone reviews, and on-demand guidance ensure your team stays on track and your investment delivers.' },
+              ].map((s) => (
+                <div key={s.step}>
+                  <div className="font-display text-3xl text-gold-500 mb-2">{s.step}</div>
                   <h3 className="font-display text-lg text-bone-50 mb-2">{s.title}</h3>
                   <p className="font-sans text-sm text-bone-300/70 leading-relaxed">{s.desc}</p>
                 </div>
@@ -139,7 +131,7 @@ export default function ConsultingPage() {
 
           {/* FAQ */}
           <div className="max-w-3xl border-t border-navy-200 pt-12 mb-16">
-            <h2 className="font-display text-2xl text-navy-800 mb-6">Common questions about the Discovery Session.</h2>
+            <h2 className="font-display text-2xl text-navy-800 mb-6">Common questions about AI Consulting.</h2>
             <div className="space-y-6">
               {faqItems.map((faq) => (
                 <div key={faq.q}>
@@ -152,9 +144,9 @@ export default function ConsultingPage() {
 
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
-            <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Real Example</p>
-            <p className="sl-body-sm mb-1">Garza International started here. Their manual quoting process took 6+ hours per bid and they were losing to faster competitors. We built a custom AI quoting engine that delivered <strong className="text-navy-800">60% faster turnaround, 85% fewer errors.</strong></p>
-            <p className="sl-body-sm mb-3 text-fg2">Investment: $5,000 to $8,000. Net Year 1 gain: ~$66,880.</p>
+            <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
+            <p className="sl-body-sm mb-1"><strong className="text-navy-800">Garza International:</strong> We provided architecture review and implementation oversight for their custom AI quoting engine. The result was a system that delivered <strong className="text-navy-800">60% faster turnaround, 85% fewer errors.</strong></p>
+            <p className="sl-body-sm mb-3 text-fg2">Investment: $5,000 to $8,000.</p>
             <Link href="/case-studies/garza-international" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the full case study &rarr;</Link>
           </div>
         </div>
@@ -165,7 +157,7 @@ export default function ConsultingPage() {
       <AnimatedSection delay={0.1}>
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <h3 className="font-display text-xl text-navy-800 mb-4 text-center">Explore other services</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
           <Link href="/services/custom-ai" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
             <div className="font-display text-navy-800">Custom AI Systems</div>
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $5,000</div>
@@ -178,6 +170,10 @@ export default function ConsultingPage() {
             <div className="font-display text-navy-800">AI Agent Systems</div>
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $5,000</div>
           </Link>
+          <Link href="/services/discovery-session" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
+            <div className="font-display text-navy-800">Discovery Session</div>
+            <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">$300</div>
+          </Link>
         </div>
       </section>
       </AnimatedSection>
@@ -185,11 +181,11 @@ export default function ConsultingPage() {
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to get started?</h2>
-          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Book a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to get expert AI guidance?</h2>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Book a call to discuss your AI strategy, technology evaluation, or implementation oversight needs.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
-              Book a Discovery Session.
+              Book a call.
             </Link>
             <a href="mailto:contact@sanluisai.com" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">
               contact@sanluisai.com

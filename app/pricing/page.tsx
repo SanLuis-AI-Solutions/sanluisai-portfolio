@@ -170,6 +170,23 @@ export default function PricingPage() {
               primary={false}
             />
 
+            {/* AI Consulting */}
+            <PricingCard
+              price="Custom pricing"
+              label="AI Consulting"
+              subtitle="Book a call to discuss"
+              description="Ongoing strategic advisory for businesses that are building with AI. Technology evaluation, vendor assessment, architecture review, and implementation oversight. You get experienced technical leadership without hiring a full-time executive."
+              items={[
+                'Strategic guidance aligned with your business goals and industry',
+                'Technology evaluation with benchmarks on your data',
+                'Vendor assessment covering lock-in risk, data privacy, and scalability',
+                'Architecture review and implementation oversight throughout the build',
+              ]}
+              ctaHref="/booking"
+              ctaLabel="Book a call"
+              primary={false}
+            />
+
             {/* Custom AI */}
             <PricingCard
               price="$5,000+"
@@ -184,6 +201,23 @@ export default function PricingPage() {
               ]}
               ctaHref="/booking"
               ctaLabel="Build Custom AI"
+              primary={false}
+            />
+
+            {/* Maintenance Retainer */}
+            <PricingCard
+              price="10%"
+              label="Maintenance Retainer"
+              subtitle="Of original build cost, billed monthly"
+              description="Your system stays reliable, up to date, and optimized as your business evolves. Includes monitoring, uptime tracking, performance reporting, priority access for new features, and quarterly optimization reviews. If something breaks, we fix it."
+              items={[
+                'System monitoring and uptime tracking with proactive alerts',
+                'Quarterly optimization reviews to catch drift and improve performance',
+                'Priority access for new features and adjustments',
+                'No long-term commitment. Month-to-month. Cancel anytime.',
+              ]}
+              ctaHref="/booking"
+              ctaLabel="Set Up a Retainer"
               primary={false}
             />
           </div>

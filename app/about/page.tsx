@@ -42,7 +42,7 @@ export default function Page() {
           <div className="mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-6">The problem we saw</h2>
             <p className="sl-body mb-4">
-              Everyone has access to the same AI. Gemini, Claude, Grok, Codex. The same frontier models that power the most advanced labs on the planet. Any company can use them today.
+              Everyone has access to the same AI. Claude, GPT, Gemini. The same frontier models that power the most advanced labs on the planet. Any company can use them today.
             </p>
             <p className="sl-body mb-4">
               So why are most businesses still doing the same manual work they were doing two years ago? Approving invoices by hand. Answering the same customer questions. Copying data from one system to another. Running reports that could generate themselves.
@@ -146,7 +146,7 @@ export default function Page() {
             </div>
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We build with frontier AI, not templates.</h3>
-              <p className="sl-body">Gemini, Claude, Codex, Grok. We route every problem to the model that solves it best. No cookie-cutter solutions. Every system is built from first principles for your specific operation, not adapted from something we built before.</p>
+              <p className="sl-body">Claude, GPT, Gemini. We route every problem to the model that solves it best. No cookie-cutter solutions. Every system is built from first principles for your specific operation, not adapted from something we built before.</p>
             </div>
             <div>
               <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, train, and hand you the keys.</h3>
@@ -159,7 +159,7 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="bg-white border border-navy-200 rounded p-6">
               <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Models</div>
-              <div className="sl-body-sm">Gemini, Claude, Codex, Grok</div>
+              <div className="sl-body-sm">Claude, GPT, Gemini</div>
             </div>
             <div className="bg-white border border-navy-200 rounded p-6">
               <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Tooling</div>

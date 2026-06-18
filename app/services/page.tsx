@@ -67,6 +67,22 @@ const servicesList = [
   },
   {
     num: '04',
+    name: 'AI Consulting',
+    tag: 'Advisory',
+    bestFor: 'Businesses that need strategic AI guidance without committing to a build',
+    desc: 'You have a team, a budget, and a timeline. You know AI matters, but the decisions are multiplying faster than your confidence. Which model should you use? Which vendor can you trust? Is your architecture going to scale? Should you build or buy? These are not questions a one-time session can answer. They require ongoing strategic guidance from someone who has done this before. AI Consulting is that sustained partnership. We evaluate technology, assess vendors, review architecture, and oversee implementation. You get experienced technical leadership without hiring a full-time executive. Custom pricing. Book a call to discuss.',
+    items: [
+      'Strategic guidance aligned with your business goals, industry, and team size',
+      'Technology evaluation with benchmarks on your data, not marketing claims',
+      'Vendor assessment covering lock-in risk, data privacy, and scalability',
+      'Architecture review and implementation oversight throughout the build',
+    ],
+    pricing: 'Custom pricing',
+    timeline: 'Ongoing',
+    href: '/services/consulting',
+  },
+  {
+    num: '05',
     name: 'Discovery Session',
     tag: 'Start Here',
     bestFor: 'Anyone who knows AI matters but does not know where to start',
@@ -78,7 +94,7 @@ const servicesList = [
     ],
     pricing: '$300',
     timeline: '60 min',
-    href: '/services/consulting',
+    href: '/services/discovery-session',
   },
 ]
 
@@ -102,10 +118,10 @@ export default function ServicesPage() {
           <AnimatedSection delay={0}>
             <div className="max-w-3xl mx-auto mb-20 text-center">
               <p className="sl-body-lg text-navy-800 mb-6">
-                SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses through fixed-price engagements: a $300 Discovery Session, AI Automation from $1,200, AI Agent Systems from $5,000, and Custom AI Systems from $5,000.
+                SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses through fixed-price engagements: a $300 Discovery Session, AI Automation from $1,200, AI Agent Systems from $5,000, Custom AI Systems from $5,000, and AI Consulting with custom pricing.
               </p>
               <p className="sl-body-lg text-navy-800 mb-6">
-                We do not sell chatbots. We do not sell strategy decks. We sell one thing: a working system
+                We do not sell strategy decks. We sell one thing: a working system
                 that saves your team a full day every week. That system might be an automation that runs your
                 lead intake, an agent that qualifies prospects at 2 a.m., or a custom application built around
                 your single biggest operational problem. The shape depends on the problem. The guarantee is

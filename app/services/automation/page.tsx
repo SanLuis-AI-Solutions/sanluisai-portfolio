@@ -169,7 +169,7 @@ export default function AutomationPage() {
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
-            <p className="sl-body-sm mb-3">Susie's Jewelry Repair lost half their leads to slow, inconsistent follow-up. We automated capture and nurture across website, phone, and walk-in, and inbound leads tripled in two weeks. Investment: $1,200 to $2,000. Year 1 gain: ~$14,800, a 7x payback.</p>
+            <p className="sl-body-sm mb-3">Susie's Jewelry Repair lost half their leads to slow, inconsistent follow-up. We automated capture and nurture across website, phone, and walk-in, and inbound leads tripled in two weeks. Investment: $1,200 to $2,000.</p>
             <Link href="/case-studies/susies-jewelry-repair" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the full case study &rarr;</Link>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function AutomationPage() {
       <AnimatedSection delay={0.1}>
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <h3 className="font-display text-xl text-navy-800 mb-4 text-center">Explore other services</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
           <Link href="/services/custom-ai" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
             <div className="font-display text-navy-800">Custom AI Systems</div>
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $5,000</div>
@@ -190,6 +190,10 @@ export default function AutomationPage() {
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">From $5,000</div>
           </Link>
           <Link href="/services/consulting" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
+            <div className="font-display text-navy-800">AI Consulting</div>
+            <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">Custom pricing</div>
+          </Link>
+          <Link href="/services/discovery-session" className="block bg-white border border-navy-200 rounded p-4 text-center hover:border-navy-900 transition-all duration-220">
             <div className="font-display text-navy-800">Discovery Session</div>
             <div className="font-mono text-[10px] text-fg4 tracking-[0.08em] uppercase mt-1">$300</div>
           </Link>
