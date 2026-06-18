@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 
 const links = [
   { label: 'Services', href: '/services' },
@@ -13,9 +13,9 @@ const links = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const navRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // On sub-pages, start in scrolled (light) state immediately
     if (window.location.pathname !== '/') {
       setScrolled(true)
     }
@@ -24,8 +24,18 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', h)
   }, [])
 
+  const close = useCallback(() => setOpen(false), [])
+
+  useEffect(() => {
+    if (!open) return
+    const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') close() }
+    document.addEventListener('keydown', handleKey)
+    return () => document.removeEventListener('keydown', handleKey)
+  }, [open, close])
+
   return (
     <nav
+      ref={navRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-bone-50/85 backdrop-blur-md border-b border-navy-200/60 shadow-1'
@@ -53,21 +63,59 @@ export default function Nav() {
           }`}>Book a Discovery Session.</a>
           <a href="tel:+18327790033" className={`font-sans text-xs tracking-wider whitespace-nowrap transition-colors duration-300 ${scrolled ? 'text-fg3 hover:text-navy-800' : 'text-bone-400/60 hover:text-bone-200'}`}>(832) 779-0033</a>
         </div>
-        <button onClick={() => setOpen(!open)} className="md:hidden p-2" aria-label="Toggle menu">
-          <svg className={`w-6 h-6 transition-colors duration-300 ${scrolled ? 'text-navy-800' : 'text-bone-50'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {open ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /> : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
+        <button onClick={() => setOpen(!open)} className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label={open ? 'Close menu' : 'Open menu'}>
+          <svg className={`w-6 h-6 transition-all duration-200 ${scrolled ? 'text-navy-800' : 'text-bone-50'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {open ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
           </svg>
         </button>
       </div>
       {open && (
-        <div className={`md:hidden border-t ${scrolled ? 'border-navy-200 bg-bone-50' : 'border-bone-300/20 bg-navy-800'}`}>
-          <div className="flex flex-col gap-4 px-6 py-6">
-            {links.map(l => (
-              <a key={l.label} href={l.href} className={`font-sans text-base transition-colors duration-200 py-3 min-h-[44px] flex items-center ${scrolled ? 'text-fg2 hover:text-navy-800' : 'text-bone-300/80 hover:text-bone-50'}`} onClick={() => setOpen(false)}>{l.label}</a>
-            ))}
-            <a href="/booking" className={`font-sans text-sm font-semibold text-center tracking-[0.04em] px-6 py-3 transition-all duration-220 rounded mt-2 ${
-              scrolled ? 'bg-navy-900 text-white hover:bg-navy-800' : 'bg-bone-50 text-navy-800 hover:bg-gold-500'
-            }`}>Book a Discovery Session.</a>
+        <div
+          className="md:hidden fixed inset-0 top-16 z-40"
+          onClick={close}
+          style={{ backgroundColor: 'rgba(11, 26, 51, 0.6)' }}
+        >
+          <div
+            className={`border-t ${scrolled ? 'border-navy-200 bg-bone-50' : 'border-bone-300/20 bg-navy-800'} shadow-2`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex flex-col gap-2 px-6 py-6">
+              {links.map(l => (
+                <a
+                  key={l.label}
+                  href={l.href}
+                  className={`font-sans text-base transition-colors duration-200 min-h-[48px] flex items-center px-3 rounded hover:bg-white/10 ${
+                    scrolled ? 'text-fg2 hover:text-navy-800 hover:bg-navy-100/50' : 'text-bone-300/80 hover:text-bone-50'
+                  }`}
+                  onClick={close}
+                >
+                  {l.label}
+                </a>
+              ))}
+              <div className="h-px bg-current opacity-10 my-2" />
+              <a
+                href="tel:+18327790033"
+                className={`font-sans text-sm transition-colors duration-200 min-h-[48px] flex items-center px-3 rounded hover:bg-white/10 ${
+                  scrolled ? 'text-fg3 hover:text-navy-800 hover:bg-navy-100/50' : 'text-bone-400/70 hover:text-bone-200'
+                }`}
+                onClick={close}
+              >
+                (832) 779-0033
+              </a>
+              <a
+                href="/booking"
+                className={`font-sans text-sm font-semibold text-center tracking-[0.04em] px-6 py-3 transition-all duration-220 rounded mt-2 min-h-[48px] flex items-center justify-center ${
+                  scrolled ? 'bg-navy-900 text-white hover:bg-navy-800' : 'bg-bone-50 text-navy-800 hover:bg-gold-500'
+                }`}
+                onClick={close}
+              >
+                Book a Discovery Session.
+              </a>
+            </div>
           </div>
         </div>
       )}
