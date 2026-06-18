@@ -6,6 +6,18 @@ import FlameMark from '@/components/FlameMark'
 
 const posts = [
   {
+    title: 'From Discovery Session to Live System: A Client Onboarding Story',
+    date: '2026-06-18',
+    slug: 'client-onboarding-story',
+    excerpt: 'A Houston business owner walked into a Discovery Session skeptical. Thirty days later, the system was live and the metric that mattered most had already moved. Here is the exact timeline, the decisions made, and the edge cases caught along the way.',
+  },
+  {
+    title: 'AI for Healthcare: Three Administrative Processes That Should Run Themselves',
+    date: '2026-06-18',
+    slug: 'ai-for-healthcare',
+    excerpt: 'Prior authorization, patient intake, and clinical documentation consume the most staff hours in any small-to-mid-size practice. Each one can be automated with AI that stays inside your existing infrastructure.',
+  },
+  {
     title: 'From $300 Discovery to Live AI System: What 14 Days Actually Look Like',
     date: '2026-05-08',
     slug: 'ai-implementation-timeline',

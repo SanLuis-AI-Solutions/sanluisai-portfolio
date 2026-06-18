@@ -35,7 +35,7 @@ const steps = [
     title: 'BUILD',
     tagline: 'We build the system, you review it.',
     duration: '2-4 weeks for a single process automation',
-    what: "From plan to production, we design and build your system using the frontier AI models that fit your problem: Gemini, Claude, Codex, Grok. No templates. No feature bloat. No scope creep. Each build is scoped in advance, broken into milestones, and reviewed with you before it moves forward. You see progress at every stage, and nothing ships without your sign-off. Builds typically take two to four weeks for a single process automation.",
+    what: "From plan to production, we design and build your system using the frontier AI models that fit your problem: Claude, GPT, Gemini. No templates. No feature bloat. No scope creep. Each build is scoped in advance, broken into milestones, and reviewed with you before it moves forward. You see progress at every stage, and nothing ships without your sign-off. Builds typically take two to four weeks for a single process automation.",
     deliverable: 'Working system integrated with your existing tools. Full source code ownership. Transparent milestone tracking throughout.',
     cost: '$1,200 – $50,000',
     costNote: 'fixed price agreed before work begins',
@@ -100,6 +100,85 @@ export default function HowItWorksPage() {
             Working with SanLuis AI should feel clear from the first call. We do not bury the process under jargon or hand you a black box. Each stage has one job, one outcome, and one moment where you decide whether to move forward. Here is exactly how we take an idea and turn it into a system your team actually uses.
           </p>
           <GoldThreadTimeline steps={steps} />
+        </div>
+      </section>
+
+      {/* What a real timeline looks like */}
+      <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-2xl text-navy-800 mb-6">What a real timeline looks like.</h2>
+          <p className="sl-body-sm text-fg2 mb-8 max-w-2xl">
+            Every project follows the same four stages, but the calendar varies by scope. Here is what a typical automation project looks like from booking to deployment.
+          </p>
+          <div className="bg-white border border-navy-200 rounded p-8">
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-20 font-mono text-xs text-gold-600 font-semibold">Day 1</div>
+                <div>
+                  <div className="font-display text-navy-800 mb-1">Discovery Session</div>
+                  <p className="font-sans text-sm text-fg3">60-minute working session. We map your operation, identify the highest-impact process, and confirm the scope. You leave with a written action plan within 24 hours.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-20 font-mono text-xs text-gold-600 font-semibold">Day 3</div>
+                <div>
+                  <div className="font-display text-navy-800 mb-1">Roadmap Delivered</div>
+                  <p className="font-sans text-sm text-fg3">Ranked opportunities with cost estimates, timeline, and expected ROI. You decide which process to automate first. Fixed price agreed before any build work begins.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-20 font-mono text-xs text-gold-600 font-semibold">Day 7</div>
+                <div>
+                  <div className="font-display text-navy-800 mb-1">Working Prototype</div>
+                  <p className="font-sans text-sm text-fg3">You see the system running on your data. This is where edge cases surface and get fixed before deployment. You approve the prototype before we move to production.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-20 font-mono text-xs text-gold-600 font-semibold">Day 14</div>
+                <div>
+                  <div className="font-display text-navy-800 mb-1">Live Deployment</div>
+                  <p className="font-sans text-sm text-fg3">System deployed to your environment. Team trained. Baseline metrics set against the old process. You see the result, not a presentation.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-20 font-mono text-xs text-gold-600 font-semibold">Day 30</div>
+                <div>
+                  <div className="font-display text-navy-800 mb-1">Optimization Review</div>
+                  <p className="font-sans text-sm text-fg3">We measure actual time saved against the baseline. If the numbers are not there, we adjust the scope at no cost. The system keeps delivering as your business evolves.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Which path is right for you */}
+      <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-2xl text-navy-800 mb-6">Which path is right for you.</h2>
+          <p className="sl-body-sm text-fg2 mb-8 max-w-2xl">
+            Not every business needs the same starting point. Here is how to decide which engagement fits your situation.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-mono text-[10px] tracking-[0.08em] uppercase bg-gold-100 text-gold-700 px-2 py-0.5 rounded inline-block mb-3">Start Here</div>
+              <h3 className="font-display text-lg text-navy-800 mb-2">Not sure what you need</h3>
+              <p className="font-sans text-sm text-fg3 mb-4">You know AI matters but do not have a clear plan. Start with a $300 Discovery Session. We map your operation, identify the highest-impact opportunity, and give you a written roadmap.</p>
+              <Link href="/services/discovery-session" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Learn about Discovery Session &rarr;</Link>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-mono text-[10px] tracking-[0.08em] uppercase bg-green-100 text-green-700 px-2 py-0.5 rounded inline-block mb-3">Know the Problem</div>
+              <h3 className="font-display text-lg text-navy-800 mb-2">You know which process to fix</h3>
+              <p className="font-sans text-sm text-fg3 mb-4">You can point to the task that eats a day every week. Start with a Discovery Session to confirm the scope, then move directly to a fixed-price build.</p>
+              <Link href="/services/automation" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">See automation pricing &rarr;</Link>
+            </div>
+            <div className="bg-white border border-navy-200 rounded p-6">
+              <div className="font-mono text-[10px] tracking-[0.08em] uppercase bg-navy-100 text-navy-700 px-2 py-0.5 rounded inline-block mb-3">Need Guidance</div>
+              <h3 className="font-display text-lg text-navy-800 mb-2">You need strategic advice</h3>
+              <p className="font-sans text-sm text-fg3 mb-4">You have a team or a clear direction but need expert guidance on architecture, vendor selection, or implementation oversight. Start with AI Consulting.</p>
+              <Link href="/services/consulting" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Learn about AI Consulting &rarr;</Link>
+            </div>
+          </div>
         </div>
       </section>
 
