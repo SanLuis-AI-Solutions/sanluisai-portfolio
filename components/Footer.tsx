@@ -74,15 +74,15 @@ export default function Footer() {
             <p className="font-sans text-sm text-navy-300 leading-relaxed">Custom AI for small and mid-size businesses. Online only. We save you time and money. Bilingual EN/ES.</p>
           </div>
           <div>
-            <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Services</h4>
+            <h3 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Services</h3>
             <ul className="space-y-1">{links.map(l => (<li key={l.label}><a href={l.href} className="font-sans text-sm text-navy-300 hover:text-white transition-colors duration-200 min-h-[44px] flex items-center">{l.label}</a></li>))}</ul>
           </div>
           <div>
-            <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Industries</h4>
+            <h3 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Industries</h3>
             <ul className="space-y-1">{industries.map(l => (<li key={l.label}><a href={l.href} className="font-sans text-sm text-navy-300 hover:text-white transition-colors duration-200 min-h-[44px] flex items-center">{l.label}</a></li>))}</ul>
           </div>
           <div>
-            <h4 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Connect</h4>
+            <h3 className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">Connect</h3>
             <div className="flex items-center gap-4 mb-4">
               <a href="mailto:contact@sanluisai.com" className="w-10 h-10 flex items-center justify-center rounded-full bg-navy-800 text-navy-300 hover:bg-gold-600 hover:text-navy-900 transition-all duration-220" aria-label="Email SanLuis AI">
                 <EmailIcon />
@@ -95,7 +95,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="space-y-1.5">
-              <a href="tel:+18327790033" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200 min-h-[44px]">
+              <a href="tel:+18327990033" className="flex items-center gap-2 font-sans text-xs text-navy-300 hover:text-white transition-colors duration-200 min-h-[44px]">
                 <PhoneIcon /><span>+1 (832) 779-0033</span>
               </a>
               <div className="flex items-center gap-2 font-sans text-xs text-navy-400">
@@ -108,9 +108,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-navy-800 pt-8 text-center">
-                  <p className="text-xs text-navy-400 mb-2">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
-                  <p className="text-xs text-navy-400"><a href="/privacy" className="hover:text-navy-300 transition-colors">Privacy Policy</a><span className="mx-2">&middot;</span><a href="/terms" className="hover:text-navy-300 transition-colors">Terms of Service</a><span className="mx-2">&middot;</span><button onClick={toggleReduceMotion} className="hover:text-navy-300 transition-colors" aria-pressed={reduceMotion}>{reduceMotion ? 'Enable Motion' : 'Reduce Motion'}</button></p>
-                </div>
+          <p className="text-xs text-navy-400 mb-2">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
+          <p className="text-xs text-navy-400"><a href="/privacy" className="hover:text-navy-300 transition-colors">Privacy Policy</a><span className="mx-2">&middot;</span><a href="/terms" className="hover:text-navy-300 transition-colors">Terms of Service</a><span className="mx-2">&middot;</span><button onClick={toggleReduceMotion} className="hover:text-navy-300 transition-colors" aria-pressed={reduceMotion}>{reduceMotion ? 'Enable Motion' : 'Reduce Motion'}</button></p>
+        </div>
       </div>
     </footer>
   )
