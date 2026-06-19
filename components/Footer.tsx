@@ -108,9 +108,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-navy-800 pt-8 text-center">
-          <p className="text-xs text-navy-500 mb-2">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
-          <p className="text-xs text-navy-500"><a href="/privacy" className="hover:text-navy-300 transition-colors">Privacy Policy</a><span className="mx-2">&middot;</span><a href="/terms" className="hover:text-navy-300 transition-colors">Terms of Service</a><span className="mx-2">&middot;</span><button onClick={toggleReduceMotion} className="hover:text-navy-300 transition-colors" aria-pressed={reduceMotion}>{reduceMotion ? 'Enable Motion' : 'Reduce Motion'}</button></p>
-        </div>
+                  <p className="text-xs text-navy-400 mb-2">&copy; {new Date().getFullYear()} SanLuis AI Solutions. All rights reserved.</p>
+                  <p className="text-xs text-navy-400"><a href="/privacy" className="hover:text-navy-300 transition-colors">Privacy Policy</a><span className="mx-2">&middot;</span><a href="/terms" className="hover:text-navy-300 transition-colors">Terms of Service</a><span className="mx-2">&middot;</span><button onClick={toggleReduceMotion} className="hover:text-navy-300 transition-colors" aria-pressed={reduceMotion}>{reduceMotion ? 'Enable Motion' : 'Reduce Motion'}</button></p>
+                </div>
       </div>
     </footer>
   )

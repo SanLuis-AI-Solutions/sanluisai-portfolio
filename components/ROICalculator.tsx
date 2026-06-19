@@ -17,6 +17,7 @@ function SliderInput({
   step = 1,
   suffix = '',
   delay,
+  inputId,
 }: {
   label: string
   value: number
@@ -26,13 +27,14 @@ function SliderInput({
   step?: number
   suffix?: string
   delay: number
+  inputId: string
 }) {
   const fillPct = ((value - min) / (max - min)) * 100
   return (
     <FadeIn delay={delay}>
       <div className="mb-10">
         <div className="flex items-center justify-between mb-3">
-          <label className="font-sans text-xs font-semibold text-navy-400 tracking-[0.08em] uppercase">{label}</label>
+          <label htmlFor={inputId} className="font-sans text-xs font-semibold text-navy-400 tracking-[0.08em] uppercase">{label}</label>
           <span className="font-mono text-lg text-navy-800 font-medium">
             {value}{suffix}
           </span>
@@ -43,6 +45,7 @@ function SliderInput({
             style={{ width: `${fillPct}%` }}
           />
           <input
+            id={inputId}
             type="range"
             min={min}
             max={max}
@@ -91,9 +94,9 @@ export default function ROICalculator() {
               </p>
             </FadeIn>
 
-            <SliderInput label="Hours per week on this task" value={hoursPerWeek} setValue={setHoursPerWeek} min={1} max={40} step={1} suffix="h" delay={0.28} />
-            <SliderInput label="Average hourly cost" value={hourlyRate} setValue={setHourlyRate} min={20} max={250} step={5} suffix="$" delay={0.36} />
-            <SliderInput label="People doing this task" value={numEmployees} setValue={setNumEmployees} min={1} max={20} step={1} delay={0.44} suffix="x" />
+            <SliderInput label="Hours per week on this task" value={hoursPerWeek} setValue={setHoursPerWeek} min={1} max={40} step={1} suffix="h" delay={0.28} inputId="roi-hours" />
+            <SliderInput label="Average hourly cost" value={hourlyRate} setValue={setHourlyRate} min={20} max={250} step={5} suffix="$" delay={0.36} inputId="roi-rate" />
+            <SliderInput label="People doing this task" value={numEmployees} setValue={setNumEmployees} min={1} max={20} step={1} delay={0.44} suffix="x" inputId="roi-people" />
           </div>
 
           {/* Right: results */}

@@ -261,8 +261,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <Nav />
-        <ClientLayout>
+              <header><Nav /></header>
+              <ClientLayout>
           {children}
           <Footer />
         </ClientLayout>
