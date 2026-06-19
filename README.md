@@ -212,6 +212,95 @@ Optimized for:
 4. Push to branch
 5. Open pull request
 
+## Troubleshooting
+
+### Build Fails (`npm run build`)
+
+**Symptom:** Build exits with errors during compilation.
+
+| Error Pattern | Likely Cause | Fix |
+|---|---|---|
+| `Module not found: Can't resolve '...'` | Missing dependency | `npm install` then rebuild |
+| `Type error: Type 'X' is not assignable to type 'Y'` | TypeScript mismatch after dep update | Check `@types/` packages match the runtime versions |
+| `Error: Image Optimization requires Next.js >= 12.3` | Next.js config issue | Ensure `next.config.js` has proper `images` config (remote domains whitelisted) |
+| `Build failed with 1 error: pages/api/...` | API route import error | Check relative imports in API routes — inside `app/` they need `@/` prefix or relative `../` path |
+
+### Turbopack Issues
+
+**Symptom:** Dev server fails to start or hot reload breaks.
+
+```bash
+# Restart with clean cache
+rm -rf .next
+npm run dev
+```
+
+If errors persist, disable Turbopack for one run:
+```bash
+npx next dev --no-turbopack
+```
+Report the error — if it's a Turbopack-specific regression, the no-turbopack workaround holds until Next.js patches it.
+
+### Tailwind Styles Not Applying
+
+**Symptom:** Classes like `bg-gold-600` or `font-display` don't render.
+
+1. Verify the class is in `tailwind.config.js` `theme.extend` — custom colors like `gold`, `navy`, `bone`, `ink` are defined there
+2. Check `content` paths in tailwind.config.js — Tailwind only scans files in those globs
+3. Restart dev server — Tailwind scans on startup
+4. If using `@apply` in CSS files, ensure the file is imported in a component that gets scanned
+
+### Framer Motion Animation Glitches
+
+**Symptom:** Animations stutter, skip, or behave unexpectedly.
+
+- **Layout shift:** Wrap animated elements in a container with explicit dimensions
+- **AnimatePresence not working:** Ensure `mode="wait"` is set and each child has a unique `key`
+- **Performance:** Reduce `transition.duration` on mobile or disable animations for `prefers-reduced-motion` (MotionPreferenceProvider is already set up for this)
+
+### API Routes Returning 500 (Intake/Assessment/Cal-Webhook)
+
+**Symptom:** Lead capture, assessment, or Stripe webhook endpoints return errors.
+
+```bash
+# Check server-side errors
+npm run build  # Will catch TypeScript errors in API routes
+```
+
+Common causes:
+- **Environment variables missing** — `SUPABASE_URL`, `SUPABASE_KEY`, `STRIPE_SECRET_KEY`, `RESEND_API_KEY` or `nodemailer` SMTP credentials must be set in `.env.local` (local) or Vercel env vars (production)
+- **Webhook signature verification failed** — Stripe webhooks need `STRIPE_WEBHOOK_SECRET` matching the endpoint in Stripe dashboard
+- **CORS errors** — Ensure API routes don't depend on client-side only APIs (`window`, `document`) — Next.js API routes run server-side
+- **Nodemailer config** — If using Gmail SMTP, enable "Less secure apps" or use App Password; for production, prefer Resend/SendGrid
+
+### Vercel Deployment
+
+**Symptom:** Build passes locally but fails on Vercel.
+
+- **Environment variables not set** — Go to Vercel dashboard → Project → Settings → Environment Variables and add all keys from `.env.local`
+- **Node version mismatch** — Set Node.js version in `package.json` (`"engines": { "node": ">=18" }`) or in Vercel project settings
+- **Output file size limit** — Vercel has a 250MB serverless function limit; check if `node_modules` is bloated
+- **Image domain not whitelisted** — If using external images, add the domain to `next.config.js` `images.domains`
+
+### Design System Validation
+
+To validate DESIGN.md tokens against the live CSS:
+
+```bash
+./scripts/validate-design.sh
+```
+
+Common mismatches:
+- Gold accent `#D49E2C` vs `#D9A434` — check DESIGN.md matches `tailwind.config.js` values
+- Border radius `rounded-*` classes overriding the 4px default — only use `rounded` (4px) or `rounded-pill`, never `rounded-lg`/`rounded-xl`
+- Font family fallback — `font-display` should always include serif fallback; `font-sans` should include system-ui
+
+### Getting Help
+
+If none of these resolve the issue, check the Obsidian vault for project documentation:
+- `SanLuis_Knowledge_Vault/Surgical-Projects/SanLuis-Website-Consolidated-Plan.md`
+- Or contact the project maintainer with the full error output.
+
 ## License
 
 This project is proprietary to SanLuis AI Solutions and not available for public use without explicit permission.
