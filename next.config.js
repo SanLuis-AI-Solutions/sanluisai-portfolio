@@ -4,13 +4,18 @@ const nextConfig = {
     domains: [],
   },
   async redirects() {
-    return [
-      {
-        source: '/work',
-        destination: '/case-studies',
-        permanent: true,
-      },
-    ]
-  },
+      return [
+        {
+          source: '/work',
+          destination: '/case-studies',
+          permanent: true,
+        },
+        {
+          source: '/blog/implementation-timeline',
+          destination: '/blog/ai-implementation-timeline',
+          permanent: true,
+        },
+      ]
+    },
 }
 module.exports = nextConfig

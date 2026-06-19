@@ -74,6 +74,7 @@ export default function AssessmentPage() {
   const [submitted, setSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState('')
   const [name, setName] = useState('')
+  const [industry, setIndustry] = useState('')
   const router = useRouter()
 
   const handleAnswer = (score: number) => {
@@ -231,7 +232,7 @@ export default function AssessmentPage() {
           </a>
         </div>
 
-        {/* Email Capture — Now sends to backend API */}
+        {/* Email Capture */}
         <div className="border border-navy-200 bg-white rounded p-6 md:p-8 shadow-2">
           <h3 className="font-display text-lg font-bold text-navy-900 mb-2">Save Your Results</h3>
           <p className="font-sans text-sm text-fg2 mb-4">Get your AI Readiness Report sent to your inbox, plus our guide to the 5 most common AI implementation failures.</p>
@@ -252,6 +253,7 @@ export default function AssessmentPage() {
                     body: JSON.stringify({
                       name: name || email.split('@')[0] || '',
                       email,
+                      industry,
                       scores: answers,
                     }),
                   })
@@ -276,6 +278,19 @@ export default function AssessmentPage() {
                 onChange={e => setName(e.target.value)}
                 className="font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
               />
+              <select
+                value={industry}
+                onChange={e => setIndustry(e.target.value)}
+                className="font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors bg-white"
+              >
+                <option value="">What industry are you in? (optional)</option>
+                <option value="Construction">Construction</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Logistics">Logistics</option>
+                <option value="Professional Services">Professional Services</option>
+                <option value="Other">Other</option>
+              </select>
               <div className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="email"
