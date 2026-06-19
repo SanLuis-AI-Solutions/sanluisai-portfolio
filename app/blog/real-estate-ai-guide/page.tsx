@@ -6,10 +6,10 @@ import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'What AI Can Actually Do for Real Estate Agents in 2026: SanLuis AI Solutions',
-  description: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up.',
+  description: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads instantly, automating CMAs, and never losing a deal to slow follow-up.',
   openGraph: {
     title: 'What AI Can Actually Do for Real Estate Agents in 2026',
-    description: 'AI for real estate is not listing descriptions. It is responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up.',
+    description: 'AI for real estate is not listing descriptions. It is responding to leads instantly, automating CMAs, and never losing a deal to slow follow-up.',
     url: 'https://sanluisai-portfolio.vercel.app/blog/real-estate-ai-guide',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -24,7 +24,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'What AI Can Actually Do for Real Estate Agents in 2026',
-  description: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up.',
+  description: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads instantly, automating CMAs, and never losing a deal to slow follow-up.',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',
@@ -78,10 +78,9 @@ export default function Page() {
 
             <h2>The Real Estate Problem AI Actually Solves</h2>
             <p>Real estate agents lose deals to time, not to competitors. A lead comes in at 8 PM. You respond at 10 AM. By then, the prospect has already booked a showing with someone else.</p>
-            <p>The data backs this up: every hour you wait to respond, your conversion odds drop 60 times. Agents who respond in under 30 seconds convert at rates that make the rest of the industry look broken.</p>
-            <p>AI doesn&rsquo;t write your listings. AI answers your leads at 11 PM while you sleep, qualifies them based on your criteria, and books the showing before the prospect ever Googles another agent.</p>
-
-            <h2>What a 28-Second Response Time Looks Like</h2>
+            <p>The data backs this up: every hour you wait to respond, your conversion odds drop significantly. Agents who respond quickly convert at rates that make the rest of the industry look broken.</p>
+                        <p>AI doesn&rsquo;t write your listings. AI answers your leads at 11 PM while you sleep, qualifies them based on your criteria, and books the showing before the prospect ever Googles another agent.</p>
+            <h2>What Instant Response Looks Like</h2>
             <p>Here&rsquo;s the conversion math: a lead fills out a form on your site. Instead of sitting in your inbox until morning, an AI intake system responds instantly. It asks three qualifying questions: budget range, timeline, property type. If the answers match your criteria, it offers a calendar link.</p>
             <p>Total elapsed time: under 30 seconds. The prospect doesn&rsquo;t know they&rsquo;re talking to AI. They just know you&rsquo;re incredibly responsive.</p>
             <p>This isn&rsquo;t theory. We&rsquo;ve built lead intake systems for Houston businesses. The pattern works across real estate, construction, and professional services. Fast response equals more booked meetings. It&rsquo;s that simple.</p>

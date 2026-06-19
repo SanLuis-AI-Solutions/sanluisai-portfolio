@@ -26,7 +26,7 @@ const useCases = [
   },
   {
     industry: 'Real Estate',
-    examples: ['Lead response automation (60x odds per hour)', 'Property listing syndication', 'Showing confirmation and follow-up', 'Document package assembly'],
+    examples: ['Lead response automation (instant follow-up)', 'Property listing syndication', 'Showing confirmation and follow-up', 'Document package assembly'],
     recovery: '20–30 hrs/wk',
   },
   {

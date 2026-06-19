@@ -33,7 +33,7 @@ const posts = [
     title: 'What AI Can Actually Do for Real Estate Agents in 2026',
     date: '2026-05-08',
     slug: 'real-estate-ai-guide',
-    excerpt: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads in 28 seconds, automating CMAs, and never losing a deal to slow follow-up. Real systems, real costs, real results.',
+    excerpt: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads instantly, automating CMAs, and never losing a deal to slow follow-up. Real systems, real costs, real results.',
   },
   {
     title: '5 Automation Mistakes That Cost Houston Businesses Real Money',
@@ -79,7 +79,7 @@ export default function Page() {
       <PageHeader
         eyebrow="Insights"
         title="Blog."
-        description="We write when we have something to say. No content calendars. No filler. Just real insights from real builds."
+        description="We write when we have something to say. No content calendars. No filler. Just real stories from real builds."
       />
 
       <AnimatedSection delay={0}>
@@ -117,7 +117,7 @@ export default function Page() {
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Get notified when we publish.</h2>
-          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">No spam. No content calendar filler. Just real insights from real AI builds — when we have something worth saying.</p>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">No spam. No content calendar filler. Just real stories from real AI builds — when we have something worth saying.</p>
           <SubscribeForm />
         </div>
       </section>

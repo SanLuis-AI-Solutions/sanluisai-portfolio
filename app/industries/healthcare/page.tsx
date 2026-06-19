@@ -39,11 +39,11 @@ export default function Page() {
           <AnimatedSection delay={0.1}>
             <p className="sl-body max-w-prose mb-4">SanLuis AI Solutions is a Houston-based, AI-augmented team that builds automation and AI systems for small and mid-size healthcare practices. We focus on eliminating the administrative overhead that drains resources from patient care.</p>
 
-            <p className="sl-body max-w-prose mb-4">Healthcare providers spend roughly 30% of revenue on administrative overhead. Prior authorization alone costs the industry an estimated $350B annually in wasted labor. These are not technology problems. They are process problems with AI-ready solutions.</p>
+            <p className="sl-body max-w-prose mb-4">Healthcare providers spend a significant portion of revenue on administrative overhead. Administrative complexity alone accounts for an estimated $350 billion annually in the US healthcare system — roughly 10% of total national health expenditures (CAQH 2023 Index). Prior authorization is one of the largest contributors to that burden.</p>
 
-            <p className="sl-body max-w-prose mb-4">Prior authorization is the most common friction point. A single request can require phone calls, faxed forms, medical record retrieval, and follow-up across multiple payers. Staff repeat the same data entry across systems, and approvals that should take hours stretch into days. We build systems that read clinical notes, extract required criteria, and submit structured requests directly to payer portals. Approval cycles compress from days to hours, and staff no longer chase status updates manually.</p>
+            <p className="sl-body max-w-prose mb-4">Prior authorization is the most common friction point. A single request can require phone calls, faxed forms, medical record retrieval, and follow-up across multiple payers. Staff repeat the same data entry across tools, and approvals that should take hours stretch into days. We build tools that read clinical notes, extract required criteria, and submit structured requests directly to payer portals. Approval cycles compress from days to hours, and staff no longer chase status updates manually.</p>
 
-            <p className="sl-body max-w-prose mb-4">Patient intake is the second leak in the revenue cycle. Incomplete insurance information, missing referral data, and unclear visit reasons create downstream denials and rescheduling. We deploy conversational intake that patients complete on their phone before arrival. The system verifies insurance eligibility, captures chief complaint and medication history, and writes structured data to the EHR. Practices see cleaner schedules, fewer denials, and shorter check-in lines.</p>
+            <p className="sl-body max-w-prose mb-4">Patient intake is the second leak in the revenue cycle. Incomplete insurance information, missing referral data, and unclear visit reasons create downstream denials and rescheduling. We set up conversational intake that patients complete on their phone before arrival. The tool verifies insurance eligibility, captures chief complaint and medication history, and writes structured data to the EHR. Practices see cleaner schedules, fewer denials, and shorter check-in lines.</p>
 
             <p className="sl-body max-w-prose mb-4">Documentation burden is the third. Providers spend up to two hours on the EHR for every hour of direct patient care. Ambient listening systems can draft the note in real time, populate diagnosis fields, and queue orders for review. The clinician still signs every entry. The AI simply removes the typing.</p>
 
@@ -94,13 +94,13 @@ export default function Page() {
               <div className="bg-white border border-navy-900 rounded p-6">
                 <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Patient Intake</div>
                 <div className="font-display text-lg text-navy-800 mb-3">Hours-to-minutes intake</div>
-                <p className="font-sans text-sm text-fg2 mb-3">Patients complete intake on their own device through a guided, conversational flow. The system verifies insurance, confirms referral status, collects medication lists, and captures the reason for the visit in structured format.</p>
+                <p className="font-sans text-sm text-fg2 mb-3">Patients complete intake on their own device through a guided, conversational flow. The tool verifies insurance, confirms referral status, collects medication lists, and captures the reason for the visit in structured format.</p>
                 <p className="font-sans text-sm text-fg2">Check-in becomes a confirmation rather than an interrogation. Front-desk staff handle exceptions, not paperwork, and the EHR is populated before the provider enters the room.</p>
               </div>
               <div className="bg-white border border-navy-900 rounded p-6">
                 <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Clinical Documentation</div>
                 <div className="font-display text-lg text-navy-800 mb-3">40% reduction in documentation time</div>
-                <p className="font-sans text-sm text-fg2 mb-3">Ambient listening captures the encounter and drafts the note inside the EHR in real time. The system suggests diagnoses, populates assessment fields, and queues orders for clinician review and signature.</p>
+                <p className="font-sans text-sm text-fg2 mb-3">Ambient listening captures the encounter and drafts the note inside the EHR in real time. The tool suggests diagnoses, populates assessment fields, and queues orders for clinician review and signature.</p>
                 <p className="font-sans text-sm text-fg2">Providers still control every clinical decision. The AI removes the typing, the after-hours charting, and the repetitive data entry that currently consumes a day a week.</p>
               </div>
             </div>

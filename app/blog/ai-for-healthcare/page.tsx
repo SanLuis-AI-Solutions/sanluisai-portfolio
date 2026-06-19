@@ -60,16 +60,16 @@ export default function Page() {
           <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-12">
             <p className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-700 mb-2">TL;DR</p>
             <p className="sl-body-sm">
-              Three administrative processes cost Houston healthcare practices the most time. Prior authorization compresses from days to hours. Patient intake drops from hours to minutes. Clinical documentation time is cut by 40%. Each system starts with a $300 Discovery Session. Most automations ship in 14 days. Data never leaves your infrastructure. BA agreements available.
+              Three administrative tasks cost Houston healthcare practices the most time. Prior authorization compresses from days to hours. Patient intake drops from hours to minutes. Clinical documentation aligns with the patient encounter instead of stretching into after-hours. Each system starts with a $300 Discovery Session. Most automations ship in 14 days. Data never leaves your infrastructure. BA agreements available.
             </p>
           </div>
 
-          <h2 className="font-display text-2xl text-navy-800 mb-4">The Three Processes</h2>
+          <h2 className="font-display text-2xl text-navy-800 mb-4">The Three Tasks</h2>
           <p className="sl-body mb-6">
             Houston healthcare practices face the same administrative burden as clinics everywhere, but the pressure is sharper. The Texas Medical Center ecosystem means competition for patients is high, and every hour spent on paperwork is an hour not spent on care.
           </p>
           <p className="sl-body mb-6">
-            Three processes account for the bulk of that administrative time. Each one follows the same pattern: repetitive, rules-based, high-volume. Each one is a candidate for automation.
+            Three tasks account for the bulk of that administrative time. Each one follows the same pattern: repetitive, rules-based, high-volume. Each one is a candidate for automation.
           </p>
 
           <h3 className="font-display text-xl text-navy-800 mb-3">1. Prior Authorization</h3>
@@ -77,13 +77,13 @@ export default function Page() {
             Prior authorization is the most expensive administrative process in American healthcare. Staff spend hours on the phone with payers, faxing forms, retrieving medical records, and following up across multiple insurance portals. A single approval can take days.
           </p>
           <p className="sl-body mb-6">
-            A working system reads clinical notes, extracts the criteria each payer requires, and submits structured requests to payer portals. The system tracks status automatically. Staff review and approve before submission. The result is approval cycles that compress from days to hours.
+            A working tool reads clinical notes, extracts the criteria each payer requires, and submits structured requests to payer portals. The tool tracks status automatically. Staff review and approve before submission. The result is approval cycles that compress from days to hours.
           </p>
           <p className="sl-body mb-6">
-            What this looks like in practice: a Houston family medicine practice with three providers was averaging 12 prior authorization requests per week. Each request required 45 minutes of staff time spread across multiple follow-ups. The automated system reduced that to 10 minutes per request. The practice recovered roughly 7 staff hours per week.
+            What this looks like in practice: according to the American Medical Association 2024 Prior Authorization Survey, physicians and their staff spend roughly 12 hours per week on prior authorization tasks. Practices complete an average of 43 prior authorizations per physician per week, and 95% of physicians describe the burden as high or extremely high. Automating the submission and tracking process cuts the time spent on each request dramatically.
           </p>
           <p className="sl-body mb-8">
-            <strong className="text-navy-800">Operational metric:</strong> Approval cycles from days to hours. Submission time reduced by 80%.
+            <strong className="text-navy-800">Operational metric:</strong> Approval cycles compress from days to hours. Staff hours spent on prior auth drop significantly.
           </p>
 
           <h3 className="font-display text-xl text-navy-800 mb-3">2. Patient Intake</h3>
@@ -91,13 +91,13 @@ export default function Page() {
             Incomplete intake data causes downstream denials, rescheduled appointments, and front desk congestion. Patients arrive with missing insurance information, unclear visit reasons, or outdated medication lists. Staff spend the first 10 minutes of every appointment fixing what should have been collected beforehand.
           </p>
           <p className="sl-body mb-6">
-            A conversational intake system contacts patients by text before their appointment. It verifies insurance eligibility, captures the chief complaint, and records current medications. The structured data writes directly into the EHR. The patient completes the process on their phone in under 5 minutes.
+            A conversational intake tool contacts patients by text before their appointment. It verifies insurance eligibility, captures the chief complaint, and records current medications. The structured data writes directly into the EHR. The patient completes the process on their phone in under 5 minutes.
           </p>
           <p className="sl-body mb-6">
-            What this looks like in practice: a Houston pediatric clinic with two locations was seeing 15% of appointments start late due to intake issues. After implementing pre-visit conversational intake, late starts dropped to 3%. Front desk staff shifted from data entry to patient check-in and rooming.
+            What this looks like in practice: the 2024 Optum Revenue Cycle Denials Index reports that registration and eligibility denials account for roughly 24% of all denials, making them the single largest source of avoidable revenue loss. When combined with missing or invalid claim data (another 16%), front-end data quality issues drive approximately 40% of all denials. Automating pre-visit intake collection and eligibility verification addresses this at the source.
           </p>
           <p className="sl-body mb-8">
-            <strong className="text-navy-800">Operational metric:</strong> Intake from hours to minutes. Denial rate reduction of 60% or more on claims tied to missing intake data.
+            <strong className="text-navy-800">Operational metric:</strong> Intake drops from hours to minutes. Denials tied to missing or incorrect patient data are largely eliminated.
           </p>
 
           <h3 className="font-display text-xl text-navy-800 mb-3">3. Clinical Documentation</h3>
@@ -108,10 +108,10 @@ export default function Page() {
             Ambient listening systems draft the clinical note in real time during the patient encounter. The system populates diagnosis fields, queues orders for review, and structures the note according to the practice template. The clinician still signs every entry. The AI removes the typing and the after-hours charting.
           </p>
           <p className="sl-body mb-6">
-            What this looks like in practice: a Houston internal medicine practice with five providers was averaging 90 minutes of after-hours documentation per provider per day. The ambient listening system cut that to 30 minutes. Providers reported leaving the office at the same time as their last patient for the first time in years.
+            What this looks like in practice: a landmark study published in the Annals of Internal Medicine found that for every hour physicians spend providing direct clinical face time to patients, they spend nearly 2 additional hours on EHR and desk work. This finding was independently confirmed by researchers at the University of Wisconsin and the American Medical Association. Ambient listening systems that draft the note in real time during the encounter directly address that imbalance.
           </p>
           <p className="sl-body mb-8">
-            <strong className="text-navy-800">Operational metric:</strong> Documentation time reduced by 40%. After-hours charting cut by 60 minutes per provider per day.
+            <strong className="text-navy-800">Operational metric:</strong> Documentation time aligns with the patient encounter. After-hours charting is substantially reduced.
           </p>
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">HIPAA Compliance: What We Actually Do</h2>
@@ -160,12 +160,12 @@ export default function Page() {
             </table>
           </div>
           <p className="sl-body-sm mb-8">
-            All systems are fixed price. You own the code. No per-seat fees, no monthly license, no vendor lock-in.
+            All systems are fixed price. The code is yours to keep. No per-seat fees, no monthly license, you are not stuck.
           </p>
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">How Fast It Ships</h2>
           <p className="sl-body mb-6">
-            Most healthcare automations follow the same timeline. Day 1: Discovery Session. Day 3: audit delivered with ranked opportunities. Day 7: working prototype on your data. Day 14: system deployed live with team trained. Day 30: optimization review with actual time saved measured against baseline.
+            Most healthcare automations follow the same timeline. Day 1: Discovery Session. Day 3: audit delivered with ranked opportunities. Day 7: working prototype on your data. Day 14: system goes live with team trained. Day 30: tuning review with actual time saved measured against baseline.
           </p>
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Do Not Build</h2>

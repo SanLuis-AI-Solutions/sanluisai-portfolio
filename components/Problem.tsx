@@ -13,36 +13,36 @@ function FadeIn({ children, delay = 0, className }: { children: React.ReactNode;
 const problemSectors = [
   {
     name: 'Manufacturing',
-    desc: '$50B lost to unplanned downtime every year. At $260K per hour of outage, you can\'t afford to wait until something breaks.',
-    stat: '$50B',
-    statLabel: 'lost annually',
+    desc: 'Unplanned downtime costs manufacturers millions every year. A single hour of critical line stoppage can erase thousands in margin.',
+    stat: '',
+        statLabel: '',
     hero: true,
   },
   {
     name: 'Healthcare',
-    desc: '$21B in administrative waste still on the table. Your staff spends days on what AI can finish in hours.',
+    desc: 'Administrative waste accounts for an estimated $350 billion annually in the US healthcare system (CAQH 2023 Index). Your staff spends days on what AI can finish in hours.',
     hero: false,
   },
   {
     name: 'Real Estate',
-    desc: 'Every hour you wait to respond, your conversion odds drop 60x. AI users respond in 28 seconds; you\'re averaging 42 minutes.',
+    desc: 'Every hour you wait to respond, your conversion odds drop significantly. AI users respond in seconds while most businesses take hours.',
     hero: false,
   },
   {
     name: 'Professional Services',
-    desc: '60-80% of your onboarding overhead is manual. Two-thirds of corporate clients already expect you to use AI.',
+    desc: '60-80% of your onboarding overhead is manual. Many corporate clients already expect you to use AI.',
     stat: '60-80%',
     statLabel: 'manual overhead',
     hero: true,
   },
   {
     name: 'Logistics',
-    desc: 'Supply chain inefficiencies drain $1.2T globally. Route optimization, demand forecasting, and carrier coordination still run on spreadsheets and phone calls.',
+    desc: 'Supply chain inefficiencies drain significant value globally. Route optimization, demand forecasting, and carrier coordination still run on spreadsheets and phone calls.',
     hero: false,
   },
   {
     name: 'Retail',
-    desc: '75% of shoppers expect personalized experiences, but 80% of retailers still rely on static rules and batch campaigns that miss the moment.',
+    desc: 'Most shoppers expect personalized experiences, but many retailers still rely on static rules and batch campaigns that miss the moment.',
     hero: false,
   },
 ]
@@ -56,12 +56,14 @@ function HeroCard({ item, delay }: { item: typeof problemSectors[0]; delay: numb
         <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-3">
           {item.name}
         </div>
-        <div className="flex items-baseline gap-3 mb-5">
-          <span className="font-display text-[clamp(2rem,4vw,3.2rem)] text-gold-600 font-medium leading-none tracking-[-0.02em]">
-            {item.stat}
-          </span>
-          <span className="font-sans text-xs text-navy-400 uppercase tracking-[0.08em]">{item.statLabel}</span>
-        </div>
+        {(item.stat || item.statLabel) && (
+                <div className="flex items-baseline gap-3 mb-5">
+                  <span className="font-display text-[clamp(2rem,4vw,3.2rem)] text-gold-600 font-medium leading-none tracking-[-0.02em]">
+                    {item.stat}
+                  </span>
+                  <span className="font-sans text-xs text-navy-400 uppercase tracking-[0.08em]">{item.statLabel}</span>
+                </div>
+                )}
         <p className="font-sans text-sm text-fg2 leading-relaxed">{item.desc}</p>
       </div>
     </FadeIn>

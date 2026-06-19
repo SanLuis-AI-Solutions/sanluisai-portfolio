@@ -154,7 +154,7 @@ export default function DiscoverySessionPage() {
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Real Example</p>
             <p className="sl-body-sm mb-1">Garza International started here. Their manual quoting process took 6+ hours per bid and they were losing to faster competitors. We built a custom AI quoting engine that delivered <strong className="text-navy-800">60% faster turnaround, 85% fewer errors.</strong></p>
-            <p className="sl-body-sm mb-3 text-fg2">Investment: $5,000 to $8,000.</p>
+            <p className="sl-body-sm mb-3 text-fg2">Fixed price, scoped during the Discovery Session.</p>
             <Link href="/case-studies/garza-international" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the full case study &rarr;</Link>
           </div>
         </div>

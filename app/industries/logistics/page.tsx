@@ -50,13 +50,13 @@ export default function Page() {
                 Logistics margins are thin. A single delayed shipment, a half-empty truck, or a miscounted pallet can erase the profit on an entire route. Most operators still plan routes by hand, update dispatch boards in spreadsheets, and discover inventory discrepancies only after a customer complains. Static routes cannot respond to traffic, weather, or last-minute orders. Manual dispatch burns hours that should go toward exceptions and customer service. These gaps are not operational failures. They are automation opportunities.
               </p>
               <p className="sl-body">
-                We build AI systems that turn fragmented logistics data into coordinated decisions. Our route optimization engine ingests live traffic, weather forecasts, delivery windows, vehicle capacity, and order priority to produce dynamic dispatch schedules that adapt throughout the day. Warehouse automation uses computer vision to track every pallet, case, and SKU from receiving to shipping, replacing cycle counts with continuous accuracy. Supply chain models run predictive simulations across supplier performance, carrier reliability, port congestion, and geopolitical signals, flagging disruption risk while you still have time to reroute.
+                We build AI tools that turn fragmented logistics data into coordinated decisions. Our route optimization engine ingests live traffic, weather forecasts, delivery windows, vehicle capacity, and order priority to produce dynamic dispatch schedules that adapt throughout the day. Warehouse automation uses computer vision to track every pallet, case, and SKU from receiving to shipping, replacing cycle counts with continuous accuracy. Supply chain models run predictive simulations across supplier performance, carrier reliability, port congestion, and geopolitical signals, flagging disruption risk while you still have time to reroute.
               </p>
               <p className="sl-body">
-                The result is a logistics operation that runs closer to plan, even when the plan changes. Fuel consumption typically falls 12-18% as trucks take fuller, shorter, better-timed paths. Inventory accuracy moves to real time, eliminating the root cause of most stockouts and overages. Disruption warnings arrive up to 2 weeks in advance, giving procurement and dispatch teams room to negotiate alternatives instead of absorbing penalties. Every solution is built around your existing TMS, WMS, and ERP systems. We integrate, not replace.
+                The result is a logistics operation that runs closer to plan, even when the plan changes. Fuel consumption typically falls as trucks take fuller, shorter, better-timed paths. Inventory accuracy moves to real time, eliminating the root cause of most stockouts and overages. Disruption warnings arrive up to 2 weeks in advance, giving procurement and dispatch teams room to negotiate alternatives instead of absorbing penalties. Every solution is built around your existing TMS, WMS, and ERP tools. We connect, not replace.
               </p>
               <p className="sl-body">
-                This is v2.0 of logistics AI: software that recommends, systems that execute, and data that keeps every next decision sharper than the last.
+                This is v2.0 of logistics AI: software that recommends, tools that execute, and data that keeps every next decision sharper than the last.
               </p>
             </div>
           </AnimatedSection>
@@ -133,7 +133,7 @@ export default function Page() {
                     Dispatchers review exceptions instead of rebuilding schedules. Trucks run fuller, shorter, and better-timed paths.
                   </p>
                   <p>
-                    Typical outcomes include a 12-18% reduction in fuel consumption, fewer missed windows, and higher daily stops per route.
+                    Typical outcomes include a measurable reduction in fuel consumption, fewer missed windows, and higher daily stops per route.
                   </p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ export default function Page() {
                 <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">
                   Supply Chain Risk
                 </div>
-                <div className="font-display text-lg text-navy-800 mb-2">2 weeks advance notice</div>
+                <div className="font-display text-lg text-navy-800 mb-2">Advance disruption warnings</div>
                 <div className="font-sans text-sm text-fg2 space-y-3">
                   <p>
                     Most disruption warnings arrive as alerts after the problem has already formed. Our predictive models combine supplier performance, carrier reliability, port congestion, weather, and geopolitical signals into forward risk scores.

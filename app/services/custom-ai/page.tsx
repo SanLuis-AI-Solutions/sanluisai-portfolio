@@ -139,8 +139,8 @@ export default function CustomAIPage() {
           {/* Case study reference */}
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Study</p>
-            <p className="sl-body-sm mb-1">LoveFlow's matching algorithm relied on surface-level preferences. Users left because the matches did not work. We built a custom behavioral matching engine from scratch: <strong className="text-navy-800">40% better match quality, 2x retention improvement in 6 weeks.</strong></p>
-            <p className="sl-body-sm mb-3 text-fg2">Investment: $5,000–10,000.</p>
+            <p className="sl-body-sm mb-1">LoveFlow's matching algorithm relied on surface-level preferences. Users left because the matches did not work. We built a custom behavioral matching engine from scratch: <strong className="text-navy-800">40% better match quality, 2x retention improvement within 30 days.</strong></p>
+            <p className="sl-body-sm mb-3 text-fg2">Fixed price, scoped during the Discovery Session.</p>
             <Link href="/case-studies/loveflow" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">Read the full case study &rarr;</Link>
           </div>
         </div>

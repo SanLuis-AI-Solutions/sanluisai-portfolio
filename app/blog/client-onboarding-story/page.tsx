@@ -81,7 +81,7 @@ export default function Page() {
             We spent the next 30 minutes calculating the cost. At the firm average deal size, 30% of 40 weekly leads meant roughly 12 lost opportunities per week. Even at a conservative close rate, that was significant revenue walking out the door every month.
           </p>
           <p className="sl-body mb-6">
-            The solution was not a chatbot. It was a lead intake and qualification system that would capture every inbound lead, respond instantly, qualify the prospect, and route hot leads to the right person.
+            The solution was not a chatbot. It was a lead intake and qualification tool that would capture every inbound lead, respond instantly, qualify the prospect, and route hot leads to the right person.
           </p>
           <p className="sl-body mb-8">
             The owner left the session with a written document: the problem, its cost, the proposed solution, and a fixed-price quote. The quote was $1,200. The timeline was 14 days.
@@ -106,61 +106,61 @@ export default function Page() {
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">Day 7: The Prototype</h2>
           <p className="sl-body mb-6">
-            By day 7, the lead intake system was running in a test environment. The client could see it working: a test lead submitted through the website, the system responded in under 30 seconds, asked three qualifying questions, and routed a notification to the owner phone.
+            By day 7, the lead intake tool was running in a test environment. The client could see it working: a test lead submitted through the website, the tool responded in under 30 seconds, asked three qualifying questions, and routed a notification to the owner phone.
           </p>
           <p className="sl-body mb-6">
             This is where the unexpected edge cases surfaced.
           </p>
           <p className="sl-body mb-2">
-            <strong className="text-navy-800">Edge case 1: The weekend lead.</strong> The system was configured to route hot leads immediately. But the client discovered that a lead who submitted at 9 PM on a Saturday was not ready to talk. They wanted information. The system needed a send info and schedule for Monday path, not an immediate alert.
+            <strong className="text-navy-800">Edge case 1: The weekend lead.</strong> The tool was configured to route hot leads immediately. But the client discovered that a lead who submitted at 9 PM on a Saturday was not ready to talk. They wanted information. The tool needed a send info and schedule for Monday path, not an immediate alert.
           </p>
           <p className="sl-body mb-2">
-            <strong className="text-navy-800">Edge case 2: The repeat caller.</strong> A prospect called three times in one week. Each time, the system treated them as a new lead. The client needed the system to recognize returning prospects and pick up the conversation where it left off.
+            <strong className="text-navy-800">Edge case 2: The repeat caller.</strong> A prospect called three times in one week. Each time, the tool treated them as a new lead. The client needed the tool to recognize returning prospects and pick up the conversation where it left off.
           </p>
           <p className="sl-body mb-6">
-            <strong className="text-navy-800">Edge case 3: The referral.</strong> Some leads came in with a specific employee name. The system needed to route those directly to that person, not through the general qualification flow.
+            <strong className="text-navy-800">Edge case 3: The referral.</strong> Some leads came in with a specific employee name. The tool needed to route those directly to that person, not through the general qualification flow.
           </p>
           <p className="sl-body mb-8">
             Each edge case took a day to fix. The prototype phase stretched from day 7 to day 10. The client was involved in every decision. The fixes were made before the system went live, not after.
           </p>
 
-          <h2 className="font-display text-2xl text-navy-800 mb-4">Day 14: Deployment</h2>
+          <h2 className="font-display text-2xl text-navy-800 mb-4">Day 14: Goes Live</h2>
           <p className="sl-body mb-6">
-            The system went live on day 14 as scheduled. The deployment included integration with the firm website contact form, connection to the shared phone line with calls transcribed and treated as leads, email capture from the general inbox, routing rules for hot, warm, and cold leads, and a dashboard showing every lead, its status, and the response time.
+            The tool went live on day 14 as scheduled. The launch included integration with the firm website contact form, connection to the shared phone line with calls transcribed and treated as leads, email capture from the general inbox, routing rules for hot, warm, and cold leads, and a dashboard showing every lead, its status, and the response time.
           </p>
           <p className="sl-body mb-6">
             The team received a 45-minute walkthrough. Each person knew how to check their queue, how to mark a lead as contacted, and what to do if a lead came in outside business hours.
           </p>
           <p className="sl-body mb-8">
-            The owner question on deployment day: how do we know if this is working? The answer: we measure response time and capture rate. If both go up, revenue follows.
+            The owner question on launch day: how do we know if this is working? The answer: we measure response time and capture rate. If both go up, revenue follows.
           </p>
 
-          <h2 className="font-display text-2xl text-navy-800 mb-4">Day 30: Optimization</h2>
+          <h2 className="font-display text-2xl text-navy-800 mb-4">Day 30: Tuning It Up</h2>
           <p className="sl-body mb-6">
-            Thirty days after deployment, we reviewed the numbers.
+            Thirty days after launch, we reviewed the numbers.
           </p>
           <p className="sl-body mb-6">
-            Before the system: estimated 40 to 50 leads per week. Estimated 30% loss rate. No reliable measurement of response time.
+            Before the tool: estimated 40 to 50 leads per week. Estimated 30% loss rate. No reliable measurement of response time.
           </p>
           <p className="sl-body mb-6">
-            After 30 days: 47 leads captured in week one. 52 in week two. 48 in week three. 51 in week four. The system was capturing every lead that came through any channel. The loss rate dropped from an estimated 30% to under 5%.
+            After 30 days: 47 leads captured in week one. 52 in week two. 48 in week three. 51 in week four. The tool was capturing every lead that came through any channel. The loss rate dropped from an estimated 30% to under 5%.
           </p>
           <p className="sl-body mb-6">
-            Response time went from hours (or never) to under 60 seconds for every lead. The owner received a notification on his phone within 30 seconds of a hot lead submitting the form. He started responding to leads during dinner, during his commute, and on weekends. Not because he had to. Because the system made it easy.
+            Response time went from hours (or never) to under 60 seconds for every lead. The owner received a notification on his phone within 30 seconds of a hot lead submitting the form. He started responding to leads during dinner, during his commute, and on weekends. Not because he had to. Because the tool made it easy.
           </p>
           <p className="sl-body mb-6">
-            The metric that mattered most to this client was lead capture rate. Before the system, he could not measure it. After the system, it was 95%. That number alone justified the investment.
+            The metric that mattered most to this client was lead capture rate. Before the tool, he could not measure it. After the tool, it was 95%. That number alone justified the investment.
           </p>
           <p className="sl-body mb-8">
-            The owner comment during the optimization review: I did not realize how many leads we were losing until we stopped losing them.
+            The owner comment during the tuning review: I did not realize how many leads we were losing until we stopped losing them.
           </p>
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">What This Pattern Looks Like Across Clients</h2>
           <p className="sl-body mb-6">
-            This timeline is not unique to one firm. It follows the same pattern we have seen with Garza International (60% faster quoting in 3 weeks), Susie Jewelry Repair (3x inbound leads in 2 weeks), and LoveFlow (40% better matches in 3 weeks).
+            This timeline is not unique to one firm. It follows the same pattern we have seen with Garza International (60% faster quoting in 3 weeks), Susie&apos;s Jewelry Repair (3x inbound leads in 2 weeks), and LoveFlow (40% better matches in 4 weeks).
           </p>
           <p className="sl-body mb-8">
-            The Discovery Session identifies the real problem. The roadmap prioritizes it. The prototype catches the edge cases. The deployment puts the system to work. The 30-day review confirms the metric moved. Every client starts skeptical. Every client ends with a number they can point to.
+            The Discovery Session identifies the real problem. The roadmap prioritizes it. The prototype catches the edge cases. The launch puts the tool to work. The 30-day review confirms the metric moved. Every client starts skeptical. Every client ends with a number they can point to.
           </p>
 
           <div className="bg-navy-900 border border-gold-600/30 rounded p-8 text-center">
