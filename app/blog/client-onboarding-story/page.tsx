@@ -157,7 +157,7 @@ export default function Page() {
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">What This Pattern Looks Like Across Clients</h2>
           <p className="sl-body mb-6">
-            This timeline is not unique to one firm. It follows the same pattern we have seen with Garza International (60% faster quoting in 3 weeks), Susie&apos;s Jewelry Repair (3x inbound leads in 2 weeks), and LoveFlow (40% better matches in 4 weeks).
+            This timeline is not unique to one firm. It follows the same pattern we have seen with Garza International (60% faster quoting in 3 weeks), Susie&apos;s Jewelry Repair (3x inbound leads in 2 weeks), and LoveFlow (AI-assisted app design in 3 days).
           </p>
           <p className="sl-body mb-8">
             The Discovery Session identifies the real problem. The roadmap prioritizes it. The prototype catches the edge cases. The launch puts the tool to work. The 30-day review confirms the metric moved. Every client starts skeptical. Every client ends with a number they can point to.

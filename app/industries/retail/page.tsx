@@ -119,7 +119,7 @@ export default function Page() {
             <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
               <p className="sl-body-sm mb-3">Not sure if AI makes sense for your retail business? Start with a $300 Discovery Session. We will map your current operations, identify the highest-impact automation opportunity, and give you a written roadmap whether you hire us or not.</p>
               <p className="sl-body-sm">Ongoing automation starts at $1,200 per month. Custom forecasting, pricing, and multi-location systems start at $5,000. Every engagement is scoped to the operational hours it returns, not to buzzword features. You know exactly what you are buying, what it connects to, and what it is expected to save before we write any code.</p>
-              <p className="sl-body-sm italic mt-3">SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.</p>
+              <p className="sl-body-sm italic mt-3">SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and AI-assisted app design for LoveFlow.</p>
             </div>
           </AnimatedSection>
         </div>

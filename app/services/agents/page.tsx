@@ -143,7 +143,7 @@ export default function AgentsPage() {
           <div className="border border-navy-200 rounded p-6 md:p-8 max-w-prose bg-white">
             <p className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">Related Case Studies</p>
             <p className="sl-body-sm mb-1"><strong className="text-navy-800">Garza International:</strong> AI-powered quoting engine that evaluates win/loss history and generates proposals autonomously. 60% faster turnaround, 85% fewer errors.</p>
-            <p className="sl-body-sm mb-3"><strong className="text-navy-800">LoveFlow:</strong> Behavioral matching agent that learns from user interaction patterns. 40% better matches, 2x retention improvement.</p>
+            <p className="sl-body-sm mb-3"><strong className="text-navy-800">LoveFlow:</strong> Christian faith-based relationship app designed with AI tools in three days. AI-assisted app design, no coding background required.</p>
             <Link href="/case-studies" className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 hover:text-gold-700 transition-colors">View all case studies &rarr;</Link>
           </div>
         </div>

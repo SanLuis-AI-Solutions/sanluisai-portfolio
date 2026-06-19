@@ -160,7 +160,7 @@ export default function Page() {
                 Discovery starts at $300. Production-ready automation builds from $1,200. Fully custom integrations and workflows start from $5,000. Every engagement begins with a clear scope and a measurable outcome.
               </p>
               <p className="sl-body-sm italic mt-3">
-                SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
+                SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and AI-assisted app design for LoveFlow.
               </p>
             </div>
           </AnimatedSection>

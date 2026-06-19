@@ -99,7 +99,7 @@ export default function Page() {
                 Before starting this practice, I spent years building across the full AI stack. Every system we ship reflects that work. I still write code. I still review every architecture decision. That is not going to change.
               </p>
               <p className="sl-body">
-                Founded 2025. Based in Houston. Bilingual EN and ES. We turn down most projects because we only take the ones where we know we can deliver measurable outcomes. Past results include 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
+                Founded 2025. Based in Houston. Bilingual EN and ES. We turn down most projects because we only take the ones where we know we can deliver measurable outcomes. Past results include 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and AI-assisted app design for LoveFlow, a Christian faith-based relationship app.
               </p>
             </div>
           </div>

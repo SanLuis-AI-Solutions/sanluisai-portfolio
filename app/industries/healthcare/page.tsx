@@ -109,7 +109,7 @@ export default function Page() {
           <AnimatedSection delay={0.5}>
             <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
               <p className="sl-body-sm italic">Not sure if AI makes sense for your practice? Start with a $300 Discovery Session. We will map your current operations, identify the highest-impact automation opportunity, and give you a written roadmap. Automation deployments start at $1,200. Custom multi-location or EHR-integrated systems start at $5,000.</p>
-              <p className="sl-body-sm italic mt-3">Real client results from SanLuis AI Solutions include 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.</p>
+              <p className="sl-body-sm italic mt-3">Real client results from SanLuis AI Solutions include 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and AI-assisted app design for LoveFlow.</p>
             </div>
           </AnimatedSection>
         </div>

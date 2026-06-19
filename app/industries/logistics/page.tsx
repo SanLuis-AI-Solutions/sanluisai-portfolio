@@ -182,7 +182,7 @@ export default function Page() {
                 Not sure if AI makes sense for your logistics operation? Start with a $300 Discovery Session. We will map your current workflows, identify the highest-impact automation opportunity, and give you a written roadmap. Automation packages start at $1,200. Custom multi-system builds start at $5,000.
               </p>
               <p className="sl-body-sm italic mt-3">
-                SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
+                SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and AI-assisted app design for LoveFlow.
               </p>
             </div>
           </AnimatedSection>

@@ -79,7 +79,7 @@ export default function Page() {
             <h2>Real Timelines, Real Results</h2>
             <p><strong>Garza International:</strong> 3 weeks from Discovery to live quoting system. 60% faster bid turnaround. First additional bid won covered the cost.</p>
             <p><strong>Susie&rsquo;s Jewelry Repair:</strong> 2 weeks from Discovery to live lead management system. 3x inbound leads within the first month.</p>
-            <p><strong>LoveFlow:</strong> 3 weeks from Discovery to improved matching algorithm. 40% better matches, churn reduction, competitive moat.</p>
+            <p><strong>LoveFlow:</strong> 3 days from Discovery to full app design. AI-assisted design system, completed using Google AI Studio and Codex.</p>
 
             <h2>Why Fixed Price + Ownership Matters</h2>
             <p>Hourly billing incentives going slow. SaaS subscriptions incentive making switching painful. We charge a fixed price because the incentive should be to finish. You own the code because the incentive should be to build something that works without us.</p>

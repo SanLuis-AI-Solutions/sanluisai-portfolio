@@ -124,7 +124,7 @@ export default function ServicesPage() {
                 We do not sell strategy decks. We build one tool that saves your team a full day every week. It might be an automation that handles your lead intake, an agent that qualifies prospects overnight, or a custom tool built around your biggest time drain. The shape depends on the problem. The guarantee is always the same: you get a day back.
               </p>
               <p className="sl-body-lg text-navy-800">
-                Every project follows the same four steps. Discover what matters. Build what works. Get it running. Keep it working. We do not disappear after it goes live. We stay with you. Proven results include 60% faster quoting, 3x more leads, and 40% better matches.
+                Every project follows the same four steps. Discover what matters. Build what works. Get it running. Keep it working. We do not disappear after it goes live. We stay with you. Proven results include 60% faster quoting, 3x more leads, and AI-assisted app design.
               </p>
             </div>
           </AnimatedSection>

@@ -129,7 +129,7 @@ export default function Page() {
           <div className="bg-bone-100 border border-navy-200 rounded p-6 mt-8">
             <p className="sl-body-sm italic mb-3">Not sure if AI makes sense for your portfolio? Start with a $300 Discovery Session. We will map your current deal flow, identify the highest-impact automation opportunity, and give you a written roadmap whether you hire us or not.</p>
             <p className="sl-body-sm">Automation projects start at $1,200. Custom AI systems start at $5,000. Every engagement is scoped to the specific work that saves your real estate operation a day a week.</p>
-            <p className="sl-body-sm italic mt-3">SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.</p>
+            <p className="sl-body-sm italic mt-3">SanLuis AI Solutions has delivered 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and AI-assisted app design for LoveFlow.</p>
           </div>
         </AnimatedSection>
         </div>

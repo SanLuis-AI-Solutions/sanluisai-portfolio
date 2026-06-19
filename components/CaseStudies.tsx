@@ -47,7 +47,7 @@ function StatCounter({ value }: { value: string }) {
 const cases = [
   { industry: 'Construction', company: 'Garza International', problem: 'Manual quoting process taking six-plus hours per bid, losing deals to faster competitors.', result: '60% faster quoting.', stat: '60%', slug: 'garza-international', img: '/garza-dashboard.jpeg' },
   { industry: 'Retail', company: "Susie's Jewelry Repair", problem: 'Fragmented lead capture across website, phone, and walk-ins with no systematic follow-up.', result: '3x inbound leads.', stat: '3×', slug: 'susies-jewelry-repair', img: '/sjr-dashboard.jpeg' },
-  { industry: 'Technology', company: 'LoveFlow', problem: 'Matching algorithm driving user churn through surface-level preference matching.', result: '40% better matches.', stat: '40%', slug: 'loveflow', img: '/loveflow-dashboard.png' },
+  { industry: 'Consumer App', company: 'LoveFlow', problem: 'Founder had a clear idea for a Christian faith-based relationship app but no technical background to build it.', result: 'AI app design in 3 days.', stat: '3 days', slug: 'loveflow', img: '/loveflow-dashboard.png' },
 ]
 
 export default function CaseStudies() {

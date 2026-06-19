@@ -126,10 +126,8 @@ export default function Page() {
             <p>An AI lead management system captured and qualified every lead automatically. Result: 3x inbound leads.</p>
             <p>The math: if a single customer is worth $500 in lifetime revenue and you&rsquo;re losing 10 leads per month to poor follow-up, that&rsquo;s $5,000 per month walking out the door. A $1,200 system that catches those leads pays for itself in under a week.</p>
 
-            <h3>LoveFlow. Technology</h3>
-            <p>A matching algorithm drove user churn through surface-level preference matching. Users left because the matches didn&rsquo;t feel right.</p>
-            <p>We improved the matching algorithm. Result: 40% better matches, reduced churn, competitive advantage.</p>
-            <p>The math: if churn drops from 10% monthly to 6%, and each retained user is worth $20/month, 100 retained users is $24,000 per year in prevented revenue loss.</p>
+            <h3>LoveFlow. Consumer App</h3>
+            <p>A founder had a clear vision for a Christian faith-based relationship app but no technical background. We designed the full app using AI tools. Result: full design system completed in three days.</p>
 
             <h2>The 6-Month Guarantee</h2>
             <p>If your AI system doesn&rsquo;t pay for itself within 6 months, we fix it free. No loopholes. No proration. If the ROI isn&rsquo;t there, the cost isn&rsquo;t either.</p>

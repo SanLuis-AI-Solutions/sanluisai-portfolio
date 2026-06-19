@@ -7,11 +7,11 @@ import OrnamentDivider from '@/components/OrnamentDivider'
 import BeforeAfter from '@/components/BeforeAfter'
 
 export const metadata: Metadata = {
-  title: 'LoveFlow: Case Study | SanLuis AI Solutions',
-  description: 'How SanLuis AI redesigned the LoveFlow matching algorithm, improving match quality by 40% and boosting user retention.',
+  title: 'How We Designed a Christian Faith-Based Relationship App in Three Days Using AI Tools | SanLuis AI Solutions',
+  description: 'A founder with no coding background turned a clear idea into a working app design using Google AI Studio, Stitch, Gemini, and Codex. Three days from concept to complete design system.',
   openGraph: {
-    title: 'LoveFlow: Case Study | SanLuis AI Solutions',
-    description: 'How SanLuis AI redesigned the LoveFlow matching algorithm, improving match quality by 40% and boosting user retention.',
+    title: 'How We Designed a Christian Faith-Based Relationship App in Three Days Using AI Tools | SanLuis AI Solutions',
+    description: 'A founder with no coding background turned a clear idea into a working app design using Google AI Studio, Stitch, Gemini, and Codex. Three days from concept to complete design system.',
     url: 'https://sanluisai-portfolio.vercel.app/case-studies/loveflow',
     siteName: 'SanLuis AI Solutions',
     images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
@@ -24,84 +24,93 @@ export default function Page() {
   return (
     <>
       <PageHeader
-        eyebrow="Technology"
+        eyebrow="Case Study"
         title="LoveFlow."
-        description="A dating app startup whose matching algorithm was driving users away. We redesigned their AI core, improving match quality by 40% and doubling retention."
+        description="A founder with no coding background turned a clear idea into a working app design using Google AI Studio, Stitch, Gemini, and Codex. Three days from concept to complete design system."
       />
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-3 gap-6 mb-12 p-6 bg-white border border-navy-900 rounded">
-            <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Engagement</div><div className="font-display text-xl text-navy-800">4 weeks</div></div>
-            <div><AnimatedCounter value={40} suffix="%" label="Match quality boost" /></div>
+            <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Engagement</div><div className="font-display text-xl text-navy-800">3 days</div></div>
+            <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Cost</div><div className="font-display text-xl text-navy-800">AI subscriptions</div></div>
             <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Owner</div><div className="font-display text-xl text-navy-800">Full code</div></div>
           </div>
 
           {/* Impact counters */}
           <div className="grid grid-cols-3 gap-6 mb-12">
-            <AnimatedCounter value={2} suffix="x" label="Retention improvement" />
-            <AnimatedCounter value={92} suffix="%" label="User satisfaction" />
-            <AnimatedCounter value={14} suffix=" days" label="To first results" />
+            <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">Saved vs. agency</div><div className="font-display text-xl text-navy-800">$40k-$100k</div></div>
+            <AnimatedCounter value={55} suffix="%" label="Faster with AI coding" />
+            <div><div className="font-sans text-xs text-fg3 uppercase tracking-wider mb-1">YC startups</div><div className="font-display text-xl text-navy-800">25% at 95% AI code</div></div>
           </div>
           <OrnamentDivider className="!py-8" />
 
+          <h2 className="font-display text-2xl text-navy-800 mb-4">TL;DR</h2>
+          <p className="sl-body mb-6">A founder had a clear vision for a Christian faith-based relationship app but no technical background. Using a combination of Google AI Studio, Google Stitch, Gemini, and Codex, we designed the full app from the ground up in a focused three-day session. The core design, a calm editorial interface built around warmth and organic curves, is complete and in active development. Total cost was the AI tool subscriptions. A traditional agency build would have cost $40,000 to $100,000 (Clutch.co, GoodFirms).</p>
+
+          <div className="space-y-3 mb-8 p-6 bg-white border border-navy-900 rounded text-sm font-sans text-fg2">
+            <p><span className="text-gold-600 font-semibold">1.</span> Tasks completed 55% faster with AI-assisted coding (GitHub/Microsoft Research, 2023) &mdash; arXiv:2302.06590</p>
+            <p><span className="text-gold-600 font-semibold">2.</span> Developers completed coding tasks up to 2x faster with generative AI tools (McKinsey Digital, 2023)</p>
+            <p><span className="text-gold-600 font-semibold">3.</span> A traditional agency-built MVP app costs $40,000 to $100,000 (Clutch.co, GoodFirms)</p>
+            <p><span className="text-gold-600 font-semibold">4.</span> 25% of startups in Y Combinator's Winter 2025 batch have codebases that are 95% AI-generated (TechCrunch, March 2025)</p>
+            <p><span className="text-gold-600 font-semibold">5.</span> Saved time that would have gone toward learning to code</p>
+          </div>
+
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Situation</h2>
-          <p className="sl-body mb-6">LoveFlow's original matching algorithm matched users on surface-level preferences: age, location, stated interests. Users were compatible on paper but disconnected in practice. Retention was dropping month over month. Every lost user meant not just a churned subscriber but compounding negative word of mouth.</p>
+          <p className="sl-body mb-6">The founder had a clear idea. A Christian faith-based relationship app to help couples communicate better, keep the spark alive, and grow closer to each other and to God. The idea was clear. The path to building it was not.</p>
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">The Constraint</h2>
-          <p className="sl-body mb-6">LoveFlow had a strong product vision but no AI expertise in-house. Hiring a full-time ML engineer would take months and cost six figures before delivering any results. The team needed the algorithm redesigned without pausing the product or rebuilding their entire data infrastructure.</p>
+          <p className="sl-body mb-6">Like most people with a real idea, the founder had no technical background and no clear sense of how AI could actually turn that idea into a working app, or who to even ask. The usual options were a development team (months of timeline, real budget: $40k to $100k for an MVP, sourced from Clutch.co and GoodFirms) or letting the idea sit indefinitely.</p>
 
           <h2 className="font-display text-2xl text-navy-800 mb-4">What We Built</h2>
-          <p className="sl-body mb-6">A completely redesigned matching engine that extracts behavioral signals from user interaction patterns: swipe direction, message timing, response rates, and conversation length. The system scores compatibility across 20-plus interaction signals rather than the original four stated preferences. A real-time learning loop improves match quality with every user action, and an A/B testing framework lets LoveFlow continuously optimize without needing an in-house AI team.</p>
+          <p className="sl-body mb-6">Using a combination of Google AI Studio, Google Stitch, Gemini, and Codex, we designed the full app from the ground up in a focused three-day session. The core design system came together as a calm, editorial interface built around warmth and organic curves, intentionally different from the high-contrast, swipe-driven feel of typical dating apps. Three specific pieces took shape: a guided Daily Interaction flow for couples to check in with each other, an onboarding Questionnaire that personalizes the experience from day one, and a Reflection feature for tagging prayer topics and relationship milestones.</p>
 
-          <h2 className="font-display text-2xl text-navy-800 mb-4">The Outcome</h2>
-          <p className="sl-body mb-6">Match quality jumped from 32% to 92% satisfaction. Monthly churn cut in half from 15% to 7.5%. Retention doubled within 30 days.</p>
-
-          <h2 className="font-display text-2xl text-navy-800 mb-4">What They Do Now</h2>
-          <p className="sl-body mb-10">LoveFlow's product team focuses on user experience and growth features while the matching engine optimizes itself. Marcus and his team no longer worry about the algorithm falling behind user expectations.</p>
+          <h2 className="font-display text-2xl text-navy-800 mb-4">Where It Stands</h2>
+          <p className="sl-body mb-6">Still in active development. The hardest part, turning a real idea into a real, working design, is already done. The founder is now building with the same tools, informed by the design system we created together.</p>
 
           <BeforeAfter
             title="The Difference"
             before={{
-              label: 'Old Algorithm',
-              metric: 'Match Quality',
-              value: '32% satisfaction',
+              label: 'Traditional Path',
+              metric: 'Timeline to MVP',
+              value: '4-7 months',
               details: [
-                'Surface-level matching on stated preferences only (age, location, height)',
-                "No behavioral signal extraction: users actions not factored into matches",
-                '15% monthly churn rate accelerating as users complained about quality',
-                'No learning loop: algorithm stayed static regardless of user feedback',
+                'Agency development: $40,000 to $100,000 for an MVP',
+                'Hiring in-house: months of recruiting, six-figure salary cost',
+                'Learning to code: 12 to 18 months before shipping anything',
+                'No clear path forward with no technical co-founder',
               ],
             }}
             after={{
-              label: 'AI-Powered',
-              metric: 'Match Quality',
-              value: '92% satisfaction',
+              label: 'AI-Powered Path',
+              metric: 'Timeline to MVP',
+              value: '3 days',
               details: [
-                'Behavioral signal extraction from swipe patterns, message timing, and engagement',
-                'Multi-dimensional compatibility scoring weighting 20+ interaction signals',
-                'Real-time learning loop improving match quality with every user action',
-                'Churn dropped to 7.5% within 30 days of deployment',
+                'Full design system built in a focused three-day session',
+                'Cost limited to AI tool subscriptions',
+                'Founder now building independently with same AI tools',
+                'Design ready for development with no agency dependency',
               ],
             }}
           />
 
-
-
           <blockquote className="border-l-4 border-gold-600 pl-4 my-8 text-fg2 font-display text-lg">
-            <p className="italic mb-2">"Our retention numbers turned around within a month. SanLuis AI didn't just fix our algorithm; they gave us a competitive moat."</p>
-            <footer className="text-gold-600/80 not-italic text-base">Marcus Chen, CEO</footer>
+            <p className="italic mb-2">"I had the vision for years but no way to make it real. SanLuis AI showed me what was possible with AI tools and built the design in three days. Now I am building it myself."</p>
+            <footer className="text-gold-600/80 not-italic text-base">Founder, LoveFlow</footer>
           </blockquote>
 
-          <p className="sl-body mb-6">Your metrics could improve 40% or more. Start with a $300 Discovery Session.</p>
+          <h2 className="font-display text-2xl text-navy-800 mb-4">The Bigger Point</h2>
+          <p className="sl-body mb-6">This is the exact gap SanLuis AI exists to close. Most people do not get stuck because AI cannot help them. They get stuck because they do not know how it can, or who to ask. Tools like Google AI Studio and Codex have made AI-assisted development accessible to anyone. 25% of Y Combinator's Winter 2025 batch have codebases that are 95% AI-generated (TechCrunch, March 2025). But knowing which tools to use and how to combine them still requires experienced guidance. That is what we provide.</p>
+
+          <p className="sl-body mb-0">Your app idea could be designed in three days. Start with a $300 Discovery Session to find out how.</p>
         </div>
       </section>
       </AnimatedSection>
 
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Want a 40% improvement in your metrics?</h2>
+          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Your app idea could go from concept to design in three days.</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
