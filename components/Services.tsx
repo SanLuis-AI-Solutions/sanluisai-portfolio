@@ -62,6 +62,15 @@ const services = [
     href: '/services/custom-ai',
     bonus: 'You own everything. No license fees. Ever.',
   },
+  {
+    num: '04',
+    icon: 'consulting' as const,
+    name: 'AI Consulting',
+    desc: 'Strategic guidance without a full build. Technology evaluation, vendor assessment, architecture review, and implementation oversight.',
+    detail: 'Custom pricing. Hourly, project-based, or monthly retainer.',
+    href: '/services/consulting',
+    bonus: 'You get expert direction without hiring a full-time executive.',
+  },
 ]
 
 function ServiceCardLeftHeavy({ s, i }: { s: typeof services[0]; i: number }) {
