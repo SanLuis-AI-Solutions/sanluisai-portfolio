@@ -9,22 +9,21 @@ import './print.css'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
+  weight: ['400', '600'],
   variable: '--font-cormorant',
   display: 'swap',
 })
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
   variable: '--font-inter',
   display: 'swap',
 })
 
 const jetbrains = JetBrains_Mono({
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: ['400'],
   variable: '--font-jetbrains',
   display: 'swap',
 })
@@ -253,7 +252,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" type="image/svg+xml" href="/assets/flame-mark.svg" />
         <link rel="alternate icon" href="/favicon.ico" />
         <meta name="build-version" content="v1.0.0-20260518-1" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7FHSSCP8" />
+                <link rel="preload" href="/hero-hands.png" as="image" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7FHSSCP8" />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BE7FHSSCP8');` }} />
         <script
           type="application/ld+json"

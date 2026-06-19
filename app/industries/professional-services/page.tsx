@@ -37,10 +37,11 @@ export default function Page() {
                 alt="Modern professional services office"
                 fill
                 className="object-cover"
-                sizes="100vw"
-              />
-            </div>
-          </AnimatedSection>
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+                              />
+                            </div>
+                          </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
             <p className="sl-body max-w-prose mb-4">

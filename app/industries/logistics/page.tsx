@@ -36,8 +36,9 @@ export default function Page() {
                 alt="Automated logistics warehouse"
                 fill
                 className="object-cover"
-                sizes="100vw"
-              />
+                sizes="(max-width: 768px) 100vw, 50vw"
+                                priority
+                              />
             </div>
           </AnimatedSection>
 

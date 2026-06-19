@@ -25,7 +25,7 @@ export default function Hero() {
     <motion.section style={{ backgroundColor: bgColor }} className="relative min-h-[100dvh] flex items-center overflow-hidden">
       <GoldThread />
       <motion.div className="absolute inset-0 opacity-[0.18]" style={{ y: bgY, scale: imageScale }}>
-        <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="100vw" />
+        <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="(max-width: 768px) 100vw, 50vw" />
       </motion.div>
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center_right,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
       <div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-20 md:py-32 z-10">

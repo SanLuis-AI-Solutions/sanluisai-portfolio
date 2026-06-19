@@ -32,7 +32,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0}>
             <div className="relative w-full h-48 md:h-72 rounded overflow-hidden mb-8 bg-navy-100">
-              <Image src="/generated/ind_retail_00001_.png" alt="Modern retail storefront" fill className="object-cover" sizes="100vw" />
+              <Image src="/generated/ind_retail_00001_.png" alt="Modern retail storefront" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
             </div>
           </AnimatedSection>
 
