@@ -78,7 +78,7 @@ export default function Page() {
 
             <h2>The Real Estate Problem AI Actually Solves</h2>
             <p>Real estate agents lose deals to time, not to competitors. A lead comes in at 8 PM. You respond at 10 AM. By then, the prospect has already booked a showing with someone else.</p>
-            <p>The data backs this up: every hour you wait to respond, your conversion odds drop significantly. Agents who respond quickly convert at rates that make the rest of the industry look broken.</p>
+            <p>The data backs this up: companies that wait 24 hours to respond are 60 times less likely to qualify a lead compared to companies that respond within the first hour (Harvard Business Review 2011). Agents who respond quickly convert at rates that make the rest of the industry look broken.</p>
                         <p>AI doesn&rsquo;t write your listings. AI answers your leads at 11 PM while you sleep, qualifies them based on your criteria, and books the showing before the prospect ever Googles another agent.</p>
             <h2>What Instant Response Looks Like</h2>
             <p>Here&rsquo;s the conversion math: a lead fills out a form on your site. Instead of sitting in your inbox until morning, an AI intake system responds instantly. It asks three qualifying questions: budget range, timeline, property type. If the answers match your criteria, it offers a calendar link.</p>

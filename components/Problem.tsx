@@ -13,10 +13,10 @@ function FadeIn({ children, delay = 0, className }: { children: React.ReactNode;
 const problemSectors = [
   {
     name: 'Manufacturing',
-    desc: 'Unplanned downtime costs manufacturers millions every year. A single hour of critical line stoppage can erase thousands in margin.',
-    stat: '',
-        statLabel: '',
-    hero: true,
+        desc: 'Unplanned downtime costs US manufacturers an estimated $50 billion annually (Deloitte 2017). At $260,000 per hour of outage, you cannot afford to wait until something breaks.',
+        stat: '$50B',
+        statLabel: 'lost annually',
+        hero: true,
   },
   {
     name: 'Healthcare',
@@ -25,24 +25,24 @@ const problemSectors = [
   },
   {
     name: 'Real Estate',
-    desc: 'Every hour you wait to respond, your conversion odds drop significantly. AI users respond in seconds while most businesses take hours.',
+        desc: 'Every hour you wait to respond, your conversion odds drop 60x (Harvard Business Review 2011). AI users respond in seconds while most businesses take hours.',
     hero: false,
   },
   {
     name: 'Professional Services',
-    desc: '60-80% of your onboarding overhead is manual. Many corporate clients already expect you to use AI.',
+        desc: '60-80% of your onboarding overhead is manual. More than two-thirds of corporate clients expect digital service (McKinsey 2021).',
     stat: '60-80%',
     statLabel: 'manual overhead',
     hero: true,
   },
   {
     name: 'Logistics',
-    desc: 'Supply chain inefficiencies drain significant value globally. Route optimization, demand forecasting, and carrier coordination still run on spreadsheets and phone calls.',
+        desc: 'Retail out-of-stocks and supply chain waste cost $1.2 trillion globally (IHL Group 2024). Route optimization, demand forecasting, and carrier coordination still run on spreadsheets and phone calls.',
     hero: false,
   },
   {
     name: 'Retail',
-    desc: 'Most shoppers expect personalized experiences, but many retailers still rely on static rules and batch campaigns that miss the moment.',
+        desc: '71% of shoppers expect personalized experiences (McKinsey 2021), but many retailers still rely on static rules and batch campaigns that miss the moment.',
     hero: false,
   },
 ]
