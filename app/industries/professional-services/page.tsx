@@ -44,7 +44,7 @@ export default function Page() {
 
           <AnimatedSection delay={0.1}>
             <p className="sl-body max-w-prose mb-4">
-              SanLuis AI Solutions is a Houston-based AI automation company that builds working systems for small and mid-size professional services firms. Founded by Daniel San Luis, we stop billable hour leakage, document review delays, and inconsistent client onboarding through fixed-price AI automation.
+              SanLuis AI Solutions is a Houston-based, AI-augmented team that builds automation and AI systems for small and mid-size professional services firms. We stop billable hour leakage, document review delays, and inconsistent client onboarding through fixed-price AI automation.
             </p>
             <p className="sl-body max-w-prose mb-4">
               Professional service firms sell expertise measured in hours. Yet hours leak everywhere.
@@ -64,7 +64,7 @@ export default function Page() {
             <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
               <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
               <p className="sl-body-sm mb-3">
-                Founded by Daniel San Luis and based in Houston, Texas, SanLuis AI Solutions builds custom AI systems for professional services firms that automate document review, capture billable time automatically, and streamline client onboarding from weeks to hours. Our solutions integrate with existing document repositories, practice management tools, and billing systems without major infrastructure changes. The focus is always the same: getting professionals back to billable work.
+                Based in Houston, Texas, SanLuis AI Solutions is an AI-augmented team that builds custom AI systems for professional services firms that automate document review, capture billable time automatically, and streamline client onboarding from weeks to hours. Our solutions integrate with existing document repositories, practice management tools, and billing systems without major infrastructure changes. The focus is always the same: getting professionals back to billable work.
               </p>
               <p className="sl-body-sm mb-3">
                 Everyone has access to the same AI. We build the one system that saves your firm a day a week. Our document review engine flags risk clauses, missing signatures, and compliance gaps at ten times the speed of manual review. Our time capture system monitors work product and activity to recover the billable minutes that manual timesheets lose. Our intake workflows collect client data once, route it automatically, and generate engagement letters without copying and pasting across systems.

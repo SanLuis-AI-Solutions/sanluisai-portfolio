@@ -76,7 +76,7 @@ export default function AgentsPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The difference between rules and judgment.</h2>
             <p className="sl-body-lg mb-4">
-              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses, including AI Agent Systems from $5,000, AI Automation from $1,200, Custom AI Systems from $5,000, and a $300 Discovery Session to map the right starting point.
+              SanLuis AI Solutions is a Houston-based, AI-augmented team that builds automation and AI systems for small and mid-size businesses, including AI Agent Systems from $5,000, AI Automation from $1,200, Custom AI Systems from $5,000, and a $300 Discovery Session to map the right starting point.
             </p>
             <p className="sl-body-lg mb-4">
               The difference between automation and an agent is the difference between a rule and a judgment. Automation follows instructions: when this happens, do that. It is excellent for repetitive work with clear inputs and fixed outputs. An agent evaluates context, chooses between options, and adapts when the situation changes.

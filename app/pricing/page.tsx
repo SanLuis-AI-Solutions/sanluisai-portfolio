@@ -103,7 +103,7 @@ export default function PricingPage() {
       <PageHeader
         eyebrow="Pricing"
         title="Simple pricing, bigger outcomes."
-        description="Fixed-price engagements you can trust. Clear scope, clear cost, full source ownership."
+        description="Clear prices. No surprise costs. You know what you pay before any work begins."
       />
 
       <AnimatedSection delay={0}>
@@ -121,13 +121,13 @@ export default function PricingPage() {
               price="$300"
               label="Discovery"
               subtitle="One-time"
-              description="Know your next move with certainty. A 60-90 minute working session that delivers your roadmap and confirms if AI makes sense for your business. This is the natural first step for every engagement."
+              description="Know your next move. A 60-minute working session that delivers your roadmap and confirms if AI makes sense for your business. Money-back if we do not find 3 ways to save you time."
               items={[
                 '60-90 minute working session',
                 'We map your current operations and find the highest-leverage process to automate',
                 'Written action plan with cost estimates, timeline, and ROI delivered within 24 hours',
                 'This is the natural first step. Low risk. High clarity.',
-                'If we cannot identify 3 or more clear opportunities, you get a full refund',
+                'Money-back guarantee: if we do not find 3 ways to save you time, the session is free',
               ]}
               ctaHref="/booking"
               ctaLabel="Book a Discovery Session"
@@ -139,9 +139,9 @@ export default function PricingPage() {
               price="$1,200+"
               label="Automation"
               subtitle="Fixed price"
-              description="One process, fully automated. You tell us which manual task consumes the most time each week. We build a system that handles it from start to finish. The work still gets done. Your team just does not have to do it anymore."
+              description="One task, fully automated. You tell us which manual job eats the most time each week. We build a tool that handles it from start to finish. The work still gets done. Your team just does not have to do it anymore."
               items={[
-                'One process automated end-to-end',
+                'One task automated end-to-end',
                 'You pick the process that eats the most time. We build a system that handles it completely',
                 'Full source code ownership. No lock-in. No license fees.',
                 'Deployment, team training, and documentation included',
@@ -158,7 +158,7 @@ export default function PricingPage() {
               price="$5,000+"
               label="Agent Systems"
               subtitle="Fixed price"
-              description="An autonomous system that monitors, decides, and acts. Not a chatbot that waits for instructions. An agent that watches your data, makes decisions within its boundaries, and executes without waiting for manual approval. It escalates only what it cannot handle on its own."
+              description="An agent that monitors, decides, and acts. Not a chatbot that waits for instructions. It watches your data, makes decisions within its boundaries, and takes action without waiting for approval. It escalates only what it cannot handle on its own."
               items={[
                 'An autonomous system that makes decisions and takes action',
                 'Not a chatbot. Not a passive tool. An agent that monitors, decides, and executes',
@@ -192,9 +192,9 @@ export default function PricingPage() {
               price="$5,000+"
               label="Custom AI"
               subtitle="Fixed price"
-              description="Built from the ground up for your specific operation. Your data. Your workflows. Your tools. We design an architecture that fits your business exactly, build it with the frontier models that solve your problem, and deliver a system that your team can use from day one."
+              description="Built from the ground up for your specific business. Your data. Your tools. We design it to fit your operation exactly, build it with the best AI for your problem, and deliver a tool your team can use from day one."
               items={[
-                'Built for your specific data, workflow, or product',
+                'Built for your specific data, tools, or product',
                 'Trained on your proprietary data. Integrated with your existing tools.',
                 'Architecture blueprint, deployment, training, documentation',
                 'Full source ownership. No recurring license fees.',
@@ -226,7 +226,7 @@ export default function PricingPage() {
           <div className="mt-16 max-w-2xl mx-auto text-center">
             <div className="bg-bone-100 border border-navy-100 rounded px-6 py-5">
               <p className="sl-body-sm text-fg3/80">
-                All prices are fixed and agreed before work begins. Every project includes deployment, team training, documentation, and 30 days of post-launch support.
+                All prices are fixed and agreed before work begins. Every project includes setup, team training, documentation, and 30 days of post-launch support.
               </p>
             </div>
           </div>
@@ -239,7 +239,7 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Not sure where to start? Begin with a $300 Discovery Session.</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">
-            Start with a $300 Discovery Session. If we find a clear opportunity, we&apos;ll build a detailed proposal: no pressure, no commitment.
+            Start with a $300 Discovery Session. If we find a clear opportunity, we will build a detailed proposal: no pressure, no commitment. Money-back if we do not find 3 ways to save you time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

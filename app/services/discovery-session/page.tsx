@@ -93,7 +93,7 @@ export default function DiscoverySessionPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The problem with &ldquo;we should do something with AI.&rdquo;</h2>
             <p className="sl-body-lg mb-4">
-              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. Our $300 Discovery Session is the starting point for every engagement, including Custom AI Systems from $5,000, AI Agent Systems from $5,000, and AI Automation from $1,200.
+              SanLuis AI Solutions is a Houston-based, AI-augmented team that builds automation and AI systems for small and mid-size businesses. Our $300 Discovery Session is the starting point for every engagement, including Custom AI Systems from $5,000, AI Agent Systems from $5,000, and AI Automation from $1,200.
             </p>
             <p className="sl-body-lg mb-4">
               Everyone has access to the same AI. The advantage is not in owning the tool.

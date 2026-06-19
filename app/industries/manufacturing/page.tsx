@@ -37,7 +37,7 @@ export default function Page() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-          <p className="sl-body max-w-prose mb-4">SanLuis AI Solutions is a Houston-based AI automation company that builds working systems for small and mid-size manufacturers. Founded by Daniel San Luis, we solve production issues, unplanned downtime, and quality control gaps with fixed-price AI automation.</p>
+          <p className="sl-body max-w-prose mb-4">SanLuis AI Solutions is a Houston-based, AI-augmented team that builds automation and AI systems for small and mid-size manufacturers. We solve production issues, unplanned downtime, and quality control gaps with fixed-price AI automation.</p>
 
           <p className="sl-body max-w-prose mb-4">Unplanned downtime is one of the largest hidden costs in manufacturing. A single hour of stopped production on a critical line can erase thousands of dollars in margin, push delivery dates, and trigger expedited shipping penalties. Most facilities still discover failures after they happen, relying on maintenance rounds and operator intuition rather than continuous signal analysis.</p>
           <p className="sl-body max-w-prose mb-4">Manual scheduling compounds the problem. Production planners spend hours reconciling orders, machine availability, labor shifts, and material constraints inside spreadsheets and ERP modules that lag behind the shop floor. The schedule that looked optimal at 8:00 a.m. is often outdated by noon, leaving lines idle while rush orders wait and changeovers multiply.</p>
@@ -48,7 +48,7 @@ export default function Page() {
           <AnimatedSection delay={0.2}>
           <div className="bg-gold-50 border border-gold-300 rounded p-6 mb-8">
             <h3 className="font-display text-xl text-navy-800 mb-3">A SanLuis AI Solution</h3>
-            <p className="sl-body-sm mb-3">Founded by Daniel San Luis and based in Houston, Texas, SanLuis AI Solutions builds predictive maintenance systems that analyze sensor data to flag equipment failure 72 hours before it happens, computer vision pipelines that catch quality defects at line speed, and AI-driven demand forecasting that optimizes inventory levels across your supply chain. Each solution is custom-built around your existing PLCs, sensors, and ERP systems. No rip-and-replace required.</p>
+            <p className="sl-body-sm mb-3">Based in Houston, Texas, SanLuis AI Solutions is an AI-augmented team that builds predictive maintenance systems that analyze sensor data to flag equipment failure 72 hours before it happens, computer vision pipelines that catch quality defects at line speed, and AI-driven demand forecasting that optimizes inventory levels across your supply chain. Each solution is custom-built around your existing PLCs, sensors, and ERP systems. No rip-and-replace required.</p>
             <p className="sl-body-sm">See how our approach to AI-powered scheduling and resource tracking helped <Link href="/case-studies/garza-international" className="text-gold-600 underline hover:text-gold-700">Garza International</Link> reduce downtime and optimize resource allocation on a major construction project.</p>
           </div>
           </AnimatedSection>

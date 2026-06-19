@@ -59,19 +59,19 @@ const faqCategories = [
     questions: [
       {
         q: 'How much does a custom AI system cost?',
-        a: 'Custom AI systems start at $5,000 and AI Automation starts at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.',
+        a: 'Custom AI tools start at $5,000 and AI Automation starts at $1,200. Pricing depends on scope, what it connects to, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of what traditional agencies charge because we build with modern AI tooling.',
       },
       {
         q: "What's included in the $300 Discovery Session?",
-        a: 'The Discovery Session is a focused 60-minute working session where we map your top 3 highest-leverage AI opportunities, identify what data and tools are needed, and deliver a written roadmap with pricing estimates. You will not receive a generic slide deck. You walk away knowing exactly what to build, in what order, and what each phase costs.',
+        a: 'The Discovery Session is a focused 60-minute working session where we map your top 3 highest-impact opportunities, identify what data and tools are needed, and deliver a written roadmap with pricing estimates. You will not receive a generic slide deck. You walk away knowing exactly what to build, in what order, and what each phase costs. Money-back if we do not find 3 ways to save you time.',
       },
       {
         q: 'Do you require long-term contracts?',
-        a: 'All our projects are scoped, quoted, and billed per project. There are no monthly retainers and no annual commitments required to start. If you need ongoing support after launch, we offer simple month-to-month maintenance at a flat rate.',
+        a: 'All our projects are scoped, quoted, and billed per project. There are no monthly fees and no annual commitments required to start. If you need ongoing support after it goes live, we offer simple month-to-month maintenance at a flat rate.',
       },
       {
         q: "What if the project doesn't work?",
-        a: 'We work in iterative milestones so you see, test, and approve each stage before we move to the next. If at any point the solution is not meeting expectations, we stop, reassess, and adjust. You should never pay for a system that does not deliver real results.',
+        a: 'We work in stages so you see, test, and approve each step before we move to the next. If at any point the tool is not meeting expectations, we stop, reassess, and adjust. You should never pay for something that does not deliver real results.',
       },
     ],
   },
@@ -81,19 +81,19 @@ const faqCategories = [
     questions: [
       {
         q: 'How long does it take from start to deployment?',
-        a: 'AI Automation deploys in 1-2 weeks. AI agent systems and custom apps deploy in 3-6 weeks. Full applications with complex integrations may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.',
+        a: 'AI Automation goes live in 1-2 weeks. AI agents and custom tools go live in 3-6 weeks. Full applications with complex connections may take 4-10 weeks. Every project starts with a firm timeline set during the Discovery Session.',
       },
       {
         q: 'What happens during the Discovery Session?',
-        a: 'In our 60-minute session, we walk through your actual operations and identify the three highest-impact opportunities. We look at the slow spots, repetitive tasks, and data you already have. You leave with a written roadmap, a prioritized build order, and a pricing estimate.',
+        a: 'In our 60-minute session, we walk through your actual operations and identify the three highest-impact opportunities. We look at the slow spots, repetitive tasks, and data you already have. You leave with a written roadmap, a prioritized build order, and a pricing estimate. Money-back if we do not find 3 ways to save you time.',
       },
       {
         q: 'How do you decide what to build first?',
-        a: 'We prioritize based on three factors: speed of implementation, business value, and data readiness. Quick wins build momentum. The highest-value feature saves the most time or money. Data readiness determines what your existing systems already support. The roadmap you receive is already prioritized this way.',
+        a: 'We prioritize based on three factors: how fast it can ship, how much time or money it saves, and whether your data is ready. Quick wins build momentum. The highest-value feature saves the most time or money. The roadmap you receive is already prioritized this way.',
       },
       {
         q: "What if I don't know exactly what I need?",
-        a: 'You do not need to know. That is our job. Most clients come to us with a vague sense that something could be faster or easier. We start by understanding your business, not by asking for a requirements document. The Discovery Session is designed exactly for this scenario.',
+        a: 'You do not need to know. That is our job. Most clients come to us with a vague sense that something could be faster or easier. We start by understanding your business, not by asking for a requirements document. The Discovery Session is designed exactly for this.',
       },
     ],
   },
@@ -103,23 +103,23 @@ const faqCategories = [
     questions: [
       {
         q: 'How do AI agents differ from chatbots?',
-        a: 'A chatbot simply answers questions. An AI agent takes action. It can intake a lead, check inventory, research a prospect, draft a proposal, update a CRM, and escalate to a human when needed. Agents are autonomous workers, not conversation tools.',
+        a: 'A chatbot simply answers questions. An AI agent takes action. It can intake a lead, check inventory, research a prospect, draft a proposal, update your CRM, and escalate to a human when needed. Agents are workers, not conversation tools.',
       },
       {
         q: 'What data do you need from me?',
-        a: 'We can work with whatever data you have. Spreadsheets, emails, PDFs, CRM exports, and even handwritten notes are all usable. We handle the cleaning, structuring, and integration. The more data you have, the better the results, but we can start with surprisingly little.',
+        a: 'We can work with whatever data you have. Spreadsheets, emails, PDFs, CRM exports, and even handwritten notes are all usable. We handle the cleaning, organizing, and connecting. The more data you have, the better the results, but we can start with surprisingly little.',
       },
       {
         q: 'Can AI integrate with my existing tools (CRM, email, Slack)?',
-        a: 'Every system we build integrates with your existing stack. We connect with CRMs such as HubSpot, Salesforce, and Pipedrive, communication tools such as Slack, email, and WhatsApp, and databases such as Google Sheets, Airtable, and SQL. We work with your tools, not against them. You will not need to replace software your team already knows.',
+        a: 'Every tool we build connects to your existing stack. We connect with CRMs such as HubSpot, Salesforce, and Pipedrive, communication tools such as Slack, email, and WhatsApp, and databases such as Google Sheets, Airtable, and SQL. We work with your tools, not against them. You will not need to replace software your team already knows.',
       },
       {
         q: 'Who owns the code and data?',
-        a: 'You own 100% of the code, data, and intellectual property we build for you. There are no platform fees, no licensing costs, and no ongoing dependency on us to keep your system running. We deploy to your accounts and hand over full access at launch. Vendor lock-in is not part of our model.',
+        a: 'You own 100% of everything we build for you. There are no platform fees, no licensing costs, and no ongoing dependency on us to keep your tool running. We set it up on your accounts and hand over full access at launch. You are not stuck with us.',
       },
       {
         q: 'What if it breaks?',
-        a: 'Systems can fail, and we plan for that. Every production system includes monitoring that alerts us before you notice an issue. If something does break, we fix it. Maintenance retainers cover this. If you do not have a retainer, we quote the fix and do not make you wait weeks. Nothing we ship ever becomes a system you cannot get help with.',
+        a: 'Tools can fail, and we plan for that. Every tool we build includes monitoring that alerts us before you notice an issue. If something does break, we fix it. Maintenance retainers cover this. If you do not have a retainer, we quote the fix and do not make you wait weeks. Nothing we build ever becomes something you cannot get help with.',
       },
     ],
   },
@@ -129,31 +129,31 @@ const faqCategories = [
     questions: [
       {
         q: 'How do I know my business is ready for AI?',
-        a: 'Your business is ready if you have repetitive tasks that consume your team\'s time, data that could inform better decisions, or customer-facing processes that could be faster. You do not need a tech team, a data warehouse, or a six-figure budget to benefit. If you are not sure, the Discovery Session will tell you with zero pressure to proceed.',
+        a: 'Your business is ready if you have repetitive tasks that eat your team\'s time, data that could inform better decisions, or customer-facing work that could be faster. You do not need a tech team, a data warehouse, or a six-figure budget to benefit. If you are not sure, the Discovery Session will tell you with zero pressure to proceed.',
       },
       {
         q: 'Will AI replace my employees?',
-        a: 'We build systems that handle the repetitive, time-consuming tasks your team does not enjoy. Your team focuses on higher-value work such as client relationships, creative problem-solving, and strategic decisions. Every client we have worked with has kept their team intact.',
+        a: 'We build tools that handle the repetitive, time-consuming tasks your team does not enjoy. Your team focuses on higher-value work such as client relationships, creative problem-solving, and strategic decisions. Every client we have worked with has kept their team intact.',
       },
       {
         q: 'What industries do you work with?',
-        a: 'We work across retail, healthcare, professional services, logistics, manufacturing, and real estate. Past projects include jewelry repair intake systems, logistics quoting tools, customer management platforms, and automated proposal generation. If your business has processes, AI can improve them.',
+        a: 'We work across retail, healthcare, professional services, logistics, manufacturing, and real estate. Past projects include jewelry repair intake tools, logistics quoting tools, customer management platforms, and automated proposal generation. If your business has work that repeats, AI can help.',
       },
       {
         q: 'Do you work with Spanish-speaking businesses?',
-        a: 'All our services, interfaces, and systems are available fully in English and Spanish. Our team is bilingual, and we regularly build systems that operate seamlessly in both languages. This includes businesses that serve Spanish-speaking customers exclusively.',
+        a: 'All our services and tools are available fully in English and Spanish. Our team is bilingual, and we regularly build tools that operate seamlessly in both languages. This includes businesses that serve Spanish-speaking customers exclusively.',
       },
       {
         q: 'Is there a minimum project size?',
-        a: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build AI Automation for as little as $1,200. No minimum commitment is required upfront.',
+        a: 'Our minimum project is the $300 Discovery Session. After that, if there is a clear opportunity, we can build AI Automation for as little as $1,200. No minimum commitment is required upfront. Money-back if we do not find 3 ways to save you time.',
       },
       {
         q: 'Do I need a technical team to work with you?',
-        a: 'You do not need any technical staff. We have worked with business owners, office managers, and operators who never touched code. We handle all the technical work. Your job is to tell us what your process looks like and confirm the system works the way you expect.',
+        a: 'You do not need any technical staff. We have worked with business owners, office managers, and operators who never touched code. We handle all the technical work. Your job is to tell us what your work looks like and confirm the tool works the way you expect.',
       },
       {
         q: 'We already tried AI and it did not work. Why would this be different?',
-        a: 'That is a fair question. Most AI disappointments come from one of three sources: the solution was a chatbot that did not do real work, the vendor did not understand the business process, or the system was never properly deployed. We focus on process automation first, build working systems not demos, and stay until deployment is complete and the system is stable.',
+        a: 'That is a fair question. Most AI disappointments come from one of three sources: the solution was a chatbot that did not do real work, the vendor did not understand the business, or the tool was never properly set up. We focus on automating real work first, build working tools not demos, and stay until it is running and stable.',
       },
     ],
   },
@@ -165,7 +165,7 @@ export default function FaqPage() {
       <PageHeader
         eyebrow="FAQ"
         title="Frequently Asked Questions."
-        description="Everything you need to know about working with us: pricing, process, technical requirements, and whether your business is ready for AI. If you don't see your question here, reach out."
+        description="Everything you need to know about working with us: pricing, what to expect, technical questions, and whether your business is ready for AI. If you don't see your question here, reach out."
       />
 
       <AnimatedSection delay={0}>
@@ -224,7 +224,7 @@ export default function FaqPage() {
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build something that actually works?</h2>
-          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap. Money-back if we do not find 3 ways to save you time.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
               Book a Discovery Session.

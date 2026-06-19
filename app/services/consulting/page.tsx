@@ -80,7 +80,7 @@ export default function ConsultingPage() {
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-4">The problem with going it alone.</h2>
             <p className="sl-body-lg mb-4">
-              SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We provide AI Consulting alongside Custom AI Systems from $5,000, AI Agent Systems from $5,000, AI Automation from $1,200, and a $300 Discovery Session to identify the right starting point.
+              SanLuis AI Solutions is a Houston-based, AI-augmented team that builds automation and AI systems for small and mid-size businesses. We provide AI Consulting alongside Custom AI Systems from $5,000, AI Agent Systems from $5,000, AI Automation from $1,200, and a $300 Discovery Session to identify the right starting point.
             </p>
             <p className="sl-body-lg mb-4">
               Everyone has access to the same AI. The difference is knowing what to build, what to buy, and what to skip.

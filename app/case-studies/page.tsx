@@ -128,7 +128,7 @@ export default function Page() {
 
           <AnimatedSection delay={0.2}>
           <div className="bg-bone-100 border border-navy-200 rounded p-6">
-            <p className="sl-body-sm italic mb-3">SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses through fixed-price engagements: a $300 Discovery Session, AI Automation from $1,200, AI Agent Systems from $5,000, and Custom AI Systems from $5,000.</p>
+            <p className="sl-body-sm italic mb-3">SanLuis AI Solutions is a Houston-based, AI-augmented team that builds automation and AI systems for small and mid-size businesses through fixed-price engagements: a $300 Discovery Session, AI Automation from $1,200, AI Agent Systems from $5,000, and Custom AI Systems from $5,000.</p>
             <p className="sl-body-sm italic">Not sure which solution fits your problem? Start with a $300 Discovery Session. We will audit your operations, identify the highest-impact opportunity, and give you a written roadmap whether you hire us or not.</p>
           </div>
           </AnimatedSection>

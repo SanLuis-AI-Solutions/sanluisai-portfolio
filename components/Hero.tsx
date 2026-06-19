@@ -52,7 +52,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.35}>
               <p className="font-sans text-sm md:text-base text-gold-500/80 font-medium tracking-[0.02em] mb-8">
-                60% faster quoting. 3x more leads. 40% better matches.
+                85% fewer errors. 2x capacity. 92% client satisfaction.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.45}>

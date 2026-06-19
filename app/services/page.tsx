@@ -104,7 +104,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="What We Build"
         title="The one thing that saves you a day a week."
-        description="Everyone has access to the same AI. We build the one system that saves your team a full day every week. Not a chatbot. Not a strategy deck. A working system that does the work so your people can focus on decisions, relationships, and results. Here is how we do it."
+        description="We build one tool that takes over whatever&apos;s eating the most of your team&apos;s time. No tech team needed. No surprise subscriptions. Here is how it works."
       />
 
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
@@ -118,19 +118,13 @@ export default function ServicesPage() {
           <AnimatedSection delay={0}>
             <div className="max-w-3xl mx-auto mb-20 text-center">
               <p className="sl-body-lg text-navy-800 mb-6">
-                SanLuis AI Solutions is a Houston-based AI automation company founded by Daniel San Luis. We build working systems for small and mid-size businesses through fixed-price engagements: a $300 Discovery Session, AI Automation from $1,200, AI Agent Systems from $5,000, Custom AI Systems from $5,000, and AI Consulting with custom pricing.
+                We work with small and mid-size businesses in Houston. Every engagement starts with a $300 Discovery Session. From there, we build what you need: AI Automation from $1,200, AI Agent Systems from $5,000, Custom AI Systems from $5,000, or AI Consulting with custom pricing.
               </p>
               <p className="sl-body-lg text-navy-800 mb-6">
-                We do not sell strategy decks. We sell one thing: a working system
-                that saves your team a full day every week. That system might be an automation that runs your
-                lead intake, an agent that qualifies prospects at 2 a.m., or a custom application built around
-                your single biggest operational problem. The shape depends on the problem. The guarantee is
-                always the same: you get a day back.
+                We do not sell strategy decks. We build one tool that saves your team a full day every week. It might be an automation that handles your lead intake, an agent that qualifies prospects overnight, or a custom tool built around your biggest time drain. The shape depends on the problem. The guarantee is always the same: you get a day back.
               </p>
               <p className="sl-body-lg text-navy-800">
-                Every project follows the same four steps. Discover what matters. Build what works. Ship it
-                into your workflow. Maintain it so it keeps delivering. We do not disappear after deployment.
-                We stay with you. Proven results include 60% faster quoting for Garza International, 3x inbound leads for Susie&apos;s Jewelry Repair, and 40% better matches for LoveFlow.
+                Every project follows the same four steps. Discover what matters. Build what works. Get it running. Keep it working. We do not disappear after it goes live. We stay with you. Proven results include 60% faster quoting, 3x more leads, and 40% better matches.
               </p>
             </div>
           </AnimatedSection>
@@ -177,10 +171,10 @@ export default function ServicesPage() {
               <h2 className="font-display text-2xl text-navy-800 text-center mb-10">How every project works.</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
-                  { step: '01', title: 'Discover', desc: 'We start with your operation, not a template. One Discovery Session maps your process, identifies the highest-impact opportunity, and produces a written plan before any work begins.' },
-                  { step: '02', title: 'Build', desc: 'Fixed price. Fixed scope. We build the system, test it against your real workflows, and deploy it into production. In weeks, not months.' },
-                  { step: '03', title: 'Ship', desc: 'Installed into your workflow. Your team trained. Baseline metrics set against the old process. You own the code and the data from day one.' },
-                  { step: '04', title: 'Maintain', desc: 'We do not disappear. Post-launch support, monthly tune-ups, and ongoing optimization keep the system delivering as your business evolves.' },
+                  { step: '01', title: 'Discover', desc: 'We start with your operation, not a template. One Discovery Session maps your work, finds the highest-impact opportunity, and produces a written plan before any build begins.' },
+                  { step: '02', title: 'Build', desc: 'Fixed price. Fixed scope. We build the tool, test it against your real work, and get it running. In weeks, not months.' },
+                  { step: '03', title: 'Ship', desc: 'Installed into your workflow. Your team trained. Baseline set against the old way. You own everything from day one.' },
+                  { step: '04', title: 'Maintain', desc: 'We do not disappear. Post-launch support, monthly tune-ups, and ongoing improvements keep the tool delivering as your business grows.' },
                 ].map((s) => (
                   <div key={s.step} className="text-center">
                     <div className="font-display text-3xl text-gold-500 mb-3">{s.step}</div>
@@ -197,7 +191,7 @@ export default function ServicesPage() {
             <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-20 text-center">
               <h2 className="font-display text-2xl text-bone-50 mb-3">Not sure which service fits?</h2>
               <p className="font-sans text-base text-bone-300/70 max-w-xl mx-auto mb-6">
-                Every business is different. Book a $300 Discovery Session and we will map your specific needs to the right solution. Or tell you if AI is not the answer.
+                Every business is different. Book a $300 Discovery Session and we will map your specific needs to the right solution. Or tell you if AI is not the answer. Money-back if we do not find 3 ways to save you time.
               </p>
               <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-3 bg-gold-500 text-navy-900 hover:bg-gold-400 transition-all duration-220 rounded">
                 Book a Discovery Session.
@@ -213,24 +207,22 @@ export default function ServicesPage() {
                 <div>
                   <h3 className="font-display text-lg text-navy-800 mb-2">What do you actually build?</h3>
                   <p className="sl-body-sm">
-                    Working systems. Not demos, not slide decks, not proof-of-concepts that never ship. An automation
-                    that routes your leads, an agent that qualifies prospects overnight, a custom application that
-                    solves your single biggest operational problem. You can use it, touch it, and see the results
+                    Working tools. Not demos, not slide decks, not proof-of-concepts that never ship. An automation
+                    that routes your leads, an agent that qualifies prospects overnight, or a custom tool that
+                    solves your single biggest time drain. You can use it, touch it, and see the results
                     in your daily operations by the end of the first week.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-display text-lg text-navy-800 mb-2">How long does it take to see results?</h3>
                   <p className="sl-body-sm">
-                    Automations ship in 1-2 weeks. Most clients see measurable time savings within the first week
-                    of deployment. Agent systems take 3-6 weeks. Custom applications take 4-10 weeks depending on
-                    scope. Every project starts with a Discovery Session where we set the timeline before any work begins.
+                    Automations go live in 1-2 weeks. Most clients see measurable time savings within the first week. Agent systems take 3-6 weeks. Custom tools take 4-10 weeks depending on scope. Every project starts with a Discovery Session where we set the timeline before any work begins.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-display text-lg text-navy-800 mb-2">What if it does not save us enough time?</h3>
                   <p className="sl-body-sm">
-                    If the system does not deliver measurable savings within 6 months, we fix it free. We measure
+                    If the tool does not deliver measurable savings within 6 months, we fix it free. We measure
                     hours recovered at 30, 60, and 90 days against your baseline. If the numbers are not there,
                     we adjust the scope at no cost until they are. That is our guarantee.
                   </p>
@@ -238,10 +230,7 @@ export default function ServicesPage() {
                 <div>
                   <h3 className="font-display text-lg text-navy-800 mb-2">Do you work with non-technical teams?</h3>
                   <p className="sl-body-sm">
-                    Yes. Most of our clients do not have an internal technical team. We design systems around how
-                    your team already works, not the other way around. No new login to learn. No new process to
-                    memorize. If the system creates more work instead of less, we fix it. All services are available
-                    in English and Spanish.
+                    Yes. Most of our clients do not have a technical team. We design tools around how your team already works, not the other way around. No new login to learn. No new steps to memorize. If the tool creates more work instead of less, we fix it. All services are available in English and Spanish.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-navy-200">
@@ -259,7 +248,7 @@ export default function ServicesPage() {
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to get a day back every week?</h2>
-          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
+          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap. Money-back if we do not find 3 ways to save you time.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
               Book a Discovery Session.
