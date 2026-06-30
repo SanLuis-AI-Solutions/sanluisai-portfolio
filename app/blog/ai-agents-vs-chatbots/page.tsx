@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
-import CTA from '@/components/CTA'
+import CtaBar from '@/components/CtaBar'
 
 export const metadata: Metadata = {
   title: 'AI Agents vs. Chatbots: What\'s the Difference (And When You Need Each) - SanLuis AI Solutions',
@@ -246,7 +246,7 @@ export default function Page() {
         </div>
       </article>
       </AnimatedSection>
-      <CTA />
+      <CtaBar variant="primary" href="/booking" text="Book a Discovery Session" />
     </>
   )
 }

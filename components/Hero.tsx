@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
-import { motion, useInView, useReducedMotion } from 'framer-motion'
+import { motion, useInView, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import FlameMark from '@/components/FlameMark'
 import GoldThread from '@/components/GoldThread'
@@ -17,12 +17,20 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
 }
 
 export default function Hero() {
+  const heroRef = useRef<HTMLElement | null>(null)
+  const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
+  const imageY = useTransform(scrollYProgress, [0, 1], [0, 90])
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1.08])
+
   return (
-    <section className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#0F1D3D]">
+    <section ref={heroRef} className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#0F1D3D]">
+      <div id="cta-sentinel" className="absolute top-0 left-0 w-px h-px" />
       <GoldThread />
-      <div className="absolute inset-0 opacity-[0.18]">
+      <motion.div className="absolute inset-0 opacity-[0.18]" style={{ y: imageY, scale: imageScale }}>
         <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="(max-width: 768px) 100vw, 50vw" />
-      </div>
+      </motion.div>
+      {/* Animated gradient mesh */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_40%,rgba(212,158,44,0.12),transparent_50%),radial-gradient(ellipse_at_70%_60%,rgba(45,82,126,0.10),transparent_50%)] animate-gradient-mesh pointer-events-none" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center_right,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
       <div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-20 md:py-32 z-10">
         <div className="max-w-[74ch]">
@@ -35,7 +43,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <h1 className="font-display text-[clamp(2.2rem,6vw,5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] mb-6">
-                Get a full day of your week back. Live in 14 days.
+                Get a full day of your week back. <span className="gradient-gold">Live in 14 days.</span>
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
@@ -53,7 +61,7 @@ export default function Hero() {
             </AnimatedSection>
             <AnimatedSection delay={0.45}>
               <div className="flex flex-col gap-4 mb-6">
-                <a href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
+                <a href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500 transition-all duration-220 rounded">
                   Book a Discovery Session &mdash; $300. Money-back if we don&apos;t find 3 ways to save you time.
                 </a>
                 <p className="font-sans text-xs text-bone-300/50 text-center">

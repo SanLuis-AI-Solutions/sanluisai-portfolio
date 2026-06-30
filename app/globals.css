@@ -170,3 +170,22 @@ html.reduce-motion .animate-pulse,
 html.reduce-motion .animate-bounce {
   animation: none !important;
 }
+
+/* ── Gradient text utility ── */
+.gradient-gold {
+  background: linear-gradient(135deg, var(--sl-gold-600), var(--sl-navy-700));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Animated gradient mesh for hero ── */
+@keyframes gradient-mesh {
+  0%, 100% { opacity: 0.06; transform: scale(1) rotate(0deg); }
+  25% { opacity: 0.10; transform: scale(1.05) rotate(1deg); }
+  50% { opacity: 0.06; transform: scale(1) rotate(0deg); }
+  75% { opacity: 0.10; transform: scale(1.05) rotate(-1deg); }
+}
+.animate-gradient-mesh {
+  animation: gradient-mesh 15s ease-in-out infinite;
+}

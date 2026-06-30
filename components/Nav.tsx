@@ -54,7 +54,7 @@ export default function Nav() {
         </a>
         <div className="hidden md:flex items-center gap-8">
           {links.map(l => (
-            <a key={l.label} href={l.href} className={`font-sans text-sm py-4 transition-colors duration-300 ${scrolled ? 'text-fg2 hover:text-navy-800' : 'text-bone-300/80 hover:text-bone-50'}`}>{l.label}</a>
+            <a key={l.label} href={l.href} className={`font-sans text-sm py-4 transition-colors duration-300 relative after:absolute after:bottom-3 after:left-0 after:right-0 after:h-px after:bg-current after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-200 ${scrolled ? 'text-fg2 hover:text-navy-800' : 'text-bone-300/80 hover:text-bone-50'}`}>{l.label}</a>
           ))}
           <a href="/booking" className={`font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 transition-all duration-220 rounded ${
             scrolled

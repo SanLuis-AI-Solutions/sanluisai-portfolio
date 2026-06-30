@@ -9,7 +9,7 @@ import SocialProof from '@/components/SocialProof'
 import Process from '@/components/Process'
 import ROICalculator from '@/components/ROICalculator'
 import FAQ from '@/components/FAQ'
-import CTA from '@/components/CTA'
+import CtaBar from '@/components/CtaBar'
 
 export default function HomePage() {
   return (
@@ -33,7 +33,7 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-      <CTA />
+      <CtaBar variant="primary" href="/booking" text="Book a Discovery Session" subtitle="Booking through Q3 · 3 of 4 build slots taken" />
     </main>
   )
 }

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
+import KeyTakeaway from '@/components/KeyTakeaway'
 
 export const metadata: Metadata = {
   title: 'Discovery Session | SanLuis AI Solutions',
@@ -85,6 +86,14 @@ export default function DiscoverySessionPage() {
         title="Discovery Session."
         description="This is a 60-minute working session, not a pitch. We map your operations, identify where AI removes real work, and leave you with a written plan you can act on. $300 buys clarity, not more questions."
       />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <KeyTakeaway
+          summary="A 60-minute working session that turns 'we should do something with AI' into a prioritized roadmap with cost estimates. You get a written action plan within 24 hours. $300, refundable if we don't find 3 opportunities."
+          timeline="60-minute session"
+          startingAt="$300"
+        />
+      </div>
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-24">

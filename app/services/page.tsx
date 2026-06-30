@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import StaggeredReveal from '@/components/StaggeredReveal'
 import FlameMark from '@/components/FlameMark'
 import Diamond from '@/components/Diamond'
 
@@ -129,40 +130,47 @@ export default function ServicesPage() {
             </div>
           </AnimatedSection>
 
-          {/* Service Cards */}
+          {/* Service Bento Grid */}
           <AnimatedSection delay={0.05}>
-            <div className="space-y-8 mb-20">
-              {servicesList.map((s) => (
-                <div key={s.num} className="bg-white border border-navy-200 rounded p-8 md:p-10 hover:border-navy-900 transition-all duration-220">
-                  <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start">
-                    <div className="flex flex-col items-start">
-                      <div className="font-display text-3xl text-gold-600 leading-none">{s.num}</div>
-                      <span className="mt-3 font-mono text-[10px] tracking-[0.12em] uppercase bg-gold-100 text-gold-700 px-2 py-0.5 rounded">{s.tag}</span>
-                    </div>
-                    <div>
-                      <h2 className="font-display text-2xl text-navy-800 mb-1">{s.name}</h2>
-                      <p className="font-sans text-xs text-gold-700/70 mb-3 italic">Best for: {s.bestFor}</p>
-                      <p className="sl-body-sm mb-4">{s.desc}</p>
-                      <ul className="space-y-2">
-                        {s.items.map((item, i) => (
-                          <li key={i} className="sl-body-sm flex items-start gap-2">
-                            <Diamond className="text-gold-600 mt-1 w-3 h-3" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="flex flex-col items-start md:items-end gap-2 md:min-w-[140px]">
-                      <span className="inline-block font-sans text-sm font-bold tracking-[0.04em] px-4 py-1.5 bg-gold-500 text-navy-900 rounded-full shadow-sm">{s.pricing}</span>
-                      <div className="font-mono text-xs text-fg4 tracking-[0.08em] uppercase">{s.timeline}</div>
-                      <Link href={s.href} className="mt-3 font-sans text-sm font-semibold px-5 py-2 border border-navy-800 text-navy-800 rounded hover:bg-navy-800 hover:text-white transition-all duration-220">
-                        Learn more &rarr;
-                      </Link>
+            <StaggeredReveal className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-20" stagger={0.07}>
+              {servicesList.map((s, index) => {
+                const featured = index === 0
+                return (
+                  <div
+                    key={s.num}
+                    className={`group relative h-full bg-white border border-navy-200 rounded p-7 md:p-9 hover:-translate-y-1 hover:border-gold-600/70 hover:shadow-[0_18px_50px_-28px_rgba(26,49,96,0.55)] transition-all duration-300 ${featured ? 'lg:col-span-2 lg:row-span-2' : ''}`}
+                  >
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-600/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className={`${featured ? 'grid md:grid-cols-[1fr_auto] gap-8' : 'space-y-5'}`}>
+                      <div>
+                        <div className="flex items-center gap-3 mb-5">
+                          <div className="font-display text-3xl text-gold-600 leading-none">{s.num}</div>
+                          <span className="font-mono text-[10px] tracking-[0.12em] uppercase bg-gold-100 text-gold-700 px-2 py-0.5 rounded">{s.tag}</span>
+                        </div>
+                        <h2 className={`font-display text-navy-800 mb-2 ${featured ? 'text-3xl md:text-4xl tracking-[-0.02em]' : 'text-2xl'}`}>{s.name}</h2>
+                        <p className="font-sans text-xs text-gold-700/70 mb-4 italic">Best for: {s.bestFor}</p>
+                        <p className="sl-body-sm mb-5">{s.desc}</p>
+                        <ul className="space-y-2">
+                          {s.items.slice(0, featured ? s.items.length : 3).map((item, i) => (
+                            <li key={i} className="sl-body-sm flex items-start gap-2">
+                              <Diamond className="text-gold-600 mt-1 w-3 h-3" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="flex flex-col items-start md:items-end gap-2 md:min-w-[150px]">
+                        <span className="inline-block font-sans text-sm font-bold tracking-[0.04em] px-4 py-1.5 bg-gold-500 text-navy-900 rounded shadow-sm">{s.pricing}</span>
+                        <div className="font-mono text-xs text-fg4 tracking-[0.08em] uppercase">{s.timeline}</div>
+                        <Link href={s.href} className="mt-3 font-sans text-sm font-semibold px-5 py-2 border border-navy-800 text-navy-800 rounded hover:bg-navy-800 hover:text-white hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-220">
+                          Learn more &rarr;
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                )
+              })}
+            </StaggeredReveal>
           </AnimatedSection>
 
           {/* How it works: the process frame */}

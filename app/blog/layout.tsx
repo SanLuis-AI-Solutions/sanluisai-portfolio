@@ -14,6 +14,23 @@ export const metadata: Metadata = {
   },
 }
 
+const blogLdJson = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  '@id': 'https://sanluisai-portfolio.vercel.app/blog',
+  name: 'SanLuis AI Solutions Blog',
+  description: 'Insights from real AI builds. No filler, no content calendars — just what we learn shipping custom AI systems for businesses.',
+  publisher: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
+}
+
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
-  return children
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogLdJson) }}
+      />
+      {children}
+    </>
+  )
 }

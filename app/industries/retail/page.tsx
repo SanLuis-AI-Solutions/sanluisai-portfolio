@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Cut inventory waste and demand guesswork with AI built for retail.',
     url: 'https://sanluisai-portfolio.vercel.app/industries/retail',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/ind_retail_00001_.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import KeyTakeaway from '@/components/KeyTakeaway'
 
 export const metadata: Metadata = {
   title: 'Custom AI Systems | SanLuis AI Solutions',
@@ -67,6 +68,14 @@ export default function CustomAIPage() {
         title="Custom AI Systems."
         description="Everyone has access to the same AI. We build the one system that removes your largest operational cost and gives you back a day a week. Custom, on your data, with full code ownership."
       />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <KeyTakeaway
+          summary="Custom AI Systems are built from scratch for your specific business problem. We design, build, and deploy on your data with full code ownership. No templates, no lock-in, no subscriptions."
+          timeline="4-10 weeks to deploy"
+          startingAt="From $5,000"
+        />
+      </div>
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-24">

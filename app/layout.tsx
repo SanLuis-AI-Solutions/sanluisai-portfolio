@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import StickyCTA from '@/components/StickyCTA'
+import CtaBar from '@/components/CtaBar'
+import ScrollProgress from '@/components/ScrollProgress'
+import ExitIntentOverlay from '@/components/ExitIntentOverlay'
 import ClientLayout from './ClientLayout'
 import './globals.css'
 import './print.css'
@@ -29,43 +31,135 @@ const jetbrains = JetBrains_Mono({
 })
 
 const ldJson = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'LocalBusiness',
-      '@id': 'https://sanluisai-portfolio.vercel.app/#organization',
-      name: 'SanLuis AI Solutions',
-      url: 'https://sanluisai-portfolio.vercel.app',
-      description: 'Custom AI systems, AI Automation, AI Agent Systems, and Discovery Sessions for small and mid-size businesses. Built in Houston by SanLuis AI Solutions.',
-      foundingDate: '2025',
-      address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
-      areaServed: [{ '@type': 'City', name: 'Houston' }, { '@type': 'State', name: 'Texas' }, { '@type': 'Country', name: 'US' }],
-      telephone: '+1-832-779-0033',
-      sameAs: ['https://t.me/SanLuisAiClientbot', 'https://www.linkedin.com/in/danielsanluis', 'https://x.com/sanluisai'],
-      knowsLanguage: ['en', 'es'],
-      priceRange: '$$',
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://sanluisai-portfolio.vercel.app/#discovery-session',
-      name: 'AI Discovery Session',
-      description: '60-minute diagnostic audit identifying your highest-value AI automation opportunities. Includes written action plan.',
-      provider: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
-      serviceType: 'AI Consulting',
-      offers: { '@type': 'Offer', price: '300', priceCurrency: 'USD' },
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://sanluisai-portfolio.vercel.app/#build',
-      name: 'Custom AI Build',
-      description: 'End-to-end development of custom AI systems: agents, automations, and applications tailored to your business.',
-      provider: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
-      serviceType: 'AI Development',
-      offers: { '@type': 'Offer', price: '15000', priceCurrency: 'USD', priceRange: '15000-50000' },
-    },
-    {
-      '@type': 'FAQPage',
-      '@id': 'https://sanluisai-portfolio.vercel.app/#faq',
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'LocalBusiness',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#organization',
+        name: 'SanLuis AI Solutions',
+        url: 'https://sanluisai-portfolio.vercel.app',
+        description: 'Custom AI systems, AI Automation, AI Agent Systems, and Discovery Sessions for small and mid-size businesses. Built in Houston by SanLuis AI Solutions.',
+        foundingDate: '2025',
+        address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
+        foundingLocation: { '@id': 'https://sanluisai-portfolio.vercel.app/#houston' },
+        areaServed: [
+          { '@id': 'https://sanluisai-portfolio.vercel.app/#houston' },
+          { '@type': 'State', name: 'Texas' },
+          { '@type': 'Country', name: 'US' },
+          { '@type': 'DefinedTerm', name: 'Healthcare' },
+          { '@type': 'DefinedTerm', name: 'Logistics' },
+          { '@type': 'DefinedTerm', name: 'Manufacturing' },
+          { '@type': 'DefinedTerm', name: 'Professional Services' },
+          { '@type': 'DefinedTerm', name: 'Real Estate' },
+          { '@type': 'DefinedTerm', name: 'Retail' },
+        ],
+        telephone: '+1-832-779-0033',
+        sameAs: ['https://t.me/SanLuisAiClientbot', 'https://www.linkedin.com/in/danielsanluis', 'https://x.com/sanluisai'],
+        founder: { '@id': 'https://sanluisai-portfolio.vercel.app/#daniel-sanluis' },
+        knowsLanguage: ['en', 'es'],
+        availableLanguage: ['English', 'Spanish'],
+        slogan: 'Get a full day of your week back. Live in 14 days.',
+        keywords: 'AI automation Houston, custom AI systems, AI agents, AI consulting, small business automation, AI cost audit',
+        priceRange: '$$',
+        hasCredential: [
+          {
+            '@type': 'EducationalOccupationalCredential',
+            name: 'Applied AI implementation experience',
+            credentialCategory: 'Custom AI systems, automation, and agent deployment',
+          },
+        ],
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'AI Services',
+          itemListElement: [
+            { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#discovery-session' } },
+            { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#automation' } },
+            { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#agents' } },
+            { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#consulting' } },
+          ],
+        },
+        makesOffer: [
+          { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#discovery-session' } },
+          { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#automation' } },
+          { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#agents' } },
+          { '@type': 'Offer', itemOffered: { '@id': 'https://sanluisai-portfolio.vercel.app/#consulting' } },
+        ],
+        knowsAbout: [
+          'AI Automation',
+          'AI Agents',
+          'Custom AI Systems',
+          'AI Consulting',
+          'Business Process Automation',
+          'AI readiness assessment',
+          'AI cost audit',
+          'workflow automation',
+          'lead intake automation',
+          'proposal automation',
+          'Houston small business operations',
+        ],
+      },
+      {
+        '@type': 'Person',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#daniel-sanluis',
+        name: 'Daniel SanLuis',
+        email: 'daniel@sanluis.ai',
+        jobTitle: 'Founder, SanLuis AI Solutions',
+        worksFor: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
+        knowsAbout: ['AI automation', 'custom AI systems', 'AI agents', 'small business operations'],
+      },
+      {
+        '@type': 'Place',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#houston',
+        name: 'Houston, Texas',
+        address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
+      },
+      {
+        '@type': 'Service',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#discovery-session',
+        name: 'AI Discovery Session',
+        description: '60-minute diagnostic audit identifying your highest-value AI automation opportunities. Includes written action plan.',
+        provider: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
+        serviceType: 'AI Consulting',
+        offers: { '@type': 'Offer', price: '300', priceCurrency: 'USD' },
+      },
+      {
+        '@type': 'Service',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#automation',
+        name: 'AI Automation',
+        description: 'Automate repetitive business processes with AI. Fixed-price, deploy in 1-2 weeks. You own the code.',
+        provider: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
+        serviceType: 'AI Automation',
+        offers: { '@type': 'Offer', price: '1200', priceCurrency: 'USD', priceRange: '1200-5000' },
+      },
+      {
+        '@type': 'Service',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#agents',
+        name: 'AI Agent Systems',
+        description: 'Autonomous AI agents that intake leads, research prospects, draft proposals, and update CRMs. Deploy in 3-6 weeks.',
+        provider: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
+        serviceType: 'AI Agent Development',
+        offers: { '@type': 'Offer', price: '5000', priceCurrency: 'USD', priceRange: '5000-50000' },
+      },
+      {
+        '@type': 'Service',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#consulting',
+        name: 'AI Consulting',
+        description: 'Strategic AI guidance for architecture, vendor selection, and implementation oversight. Hourly and project-based.',
+        provider: { '@id': 'https://sanluisai-portfolio.vercel.app/#organization' },
+        serviceType: 'AI Consulting',
+        offers: { '@type': 'Offer', price: '2500', priceCurrency: 'USD', priceRange: '2500-15000' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#breadcrumb',
+        name: 'Breadcrumb',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sanluisai-portfolio.vercel.app/' },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://sanluisai-portfolio.vercel.app/#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -261,12 +355,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+              <ScrollProgress />
               <header><Nav /></header>
               <ClientLayout>
           {children}
           <Footer />
         </ClientLayout>
-        <StickyCTA />
+        <CtaBar variant="sticky" href="/booking" text="Book a Discovery Session: $300" />
+        <ExitIntentOverlay />
       </body>
     </html>
   )

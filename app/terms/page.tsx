@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
-import CTA from '@/components/CTA'
+import CtaBar from '@/components/CtaBar'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | SanLuis AI Solutions',
@@ -41,7 +41,7 @@ export default function Page() {
           <p className="sl-body mb-4">For terms-related questions: contact@sanluisai.com</p>
         </div>
       </section></AnimatedSection>
-      <CTA />
+      <CtaBar variant="primary" href="/booking" text="Book a Discovery Session" />
     </>
   )
 }

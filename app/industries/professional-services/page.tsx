@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Stop billable hour leakage and speed up client onboarding with AI for professional services.',
     url: 'https://sanluisai-portfolio.vercel.app/industries/professional-services',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/ind_proservices_00001_.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

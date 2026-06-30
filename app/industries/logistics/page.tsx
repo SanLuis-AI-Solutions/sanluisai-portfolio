@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Cut route waste, warehouse slowdowns, and supply chain disruption with AI built for logistics.',
     url: 'https://sanluisai-portfolio.vercel.app/industries/logistics',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/ind_logistics_00001_.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

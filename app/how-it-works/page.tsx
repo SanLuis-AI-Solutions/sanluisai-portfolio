@@ -19,6 +19,46 @@ export const metadata: Metadata = {
   },
 }
 
+const howToLdJson = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Get a Custom AI System Built for Your Business',
+  description: 'A clear, predictable process from first conversation to working AI system. Four stages: Discover, Build, Ship, Maintain.',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Discover',
+      url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
+      description: 'Book a $300 Discovery Session. We map your operations, identify the highest-impact process to automate, and deliver a written action plan within 24 hours.',
+      duration: 'PT60M',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Build',
+      url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
+      description: 'We design and build your system using frontier AI models. Scoped in advance, broken into milestones, reviewed with you at every stage. Fixed price agreed before work begins.',
+      duration: 'P2W',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Ship',
+      url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
+      description: 'Deployed to your environment. Production testing with your team. Full runbooks and documentation. 30-day post-launch support included.',
+      duration: 'P2W',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Maintain',
+      url: 'https://sanluisai-portfolio.vercel.app/how-it-works',
+      description: 'Monthly maintenance retainers with monitoring, uptime tracking, performance reporting, and quarterly optimization reviews.',
+    },
+  ],
+}
+
 const steps = [
   {
     num: '01',
@@ -86,6 +126,10 @@ const benefits = [
 export default function HowItWorksPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLdJson) }}
+      />
       <PageHeader
         eyebrow="The Process"
         title="How It Works."

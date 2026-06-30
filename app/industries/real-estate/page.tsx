@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Faster deal analysis, smarter lead qualification, and real-time portfolio intelligence for real estate.',
     url: 'https://sanluisai-portfolio.vercel.app/industries/real-estate',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/ind_realestate_00001_.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

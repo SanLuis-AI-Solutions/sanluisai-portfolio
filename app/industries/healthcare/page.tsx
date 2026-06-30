@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Cut administrative overhead and accelerate patient intake with AI built for healthcare.',
     url: 'https://sanluisai-portfolio.vercel.app/industries/healthcare',
     siteName: 'SanLuis AI Solutions',
-    images: [{ url: '/generated/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: '/generated/ind_healthcare_00001_.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
+import KeyTakeaway from '@/components/KeyTakeaway'
 
 export const metadata: Metadata = {
   title: 'AI Consulting | SanLuis AI Solutions',
@@ -72,6 +73,13 @@ export default function ConsultingPage() {
         title="AI Consulting."
         description="Ongoing strategic advisory for businesses that are building with AI. Technology evaluation, vendor assessment, architecture review, and implementation oversight. Custom pricing. Book a call to discuss."
       />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <KeyTakeaway
+          summary="AI Consulting provides expert guidance on technology evaluation, vendor assessment, architecture review, and implementation oversight. Hourly and project-based pricing. No long-term commitment."
+          startingAt="From $2,500"
+        />
+      </div>
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-24">

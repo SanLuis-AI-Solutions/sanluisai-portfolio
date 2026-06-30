@@ -2,7 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
-import CTA from '@/components/CTA'
+import CtaBar from '@/components/CtaBar'
+import LeadMagnetGate from '@/components/LeadMagnetGate'
 
 export const metadata: Metadata = {
   title: 'SanLuis AI Solutions: 5 Signs Your Business Has An AI-Ready Problem',
@@ -107,7 +108,8 @@ export default function Page() {
         </div>
       </article>
       </AnimatedSection>
-      <CTA />
+      <LeadMagnetGate />
+      <CtaBar variant="primary" href="/booking" text="Book a Discovery Session" />
     </>
   )
 }

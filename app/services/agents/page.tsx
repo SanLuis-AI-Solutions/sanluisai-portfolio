@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
+import KeyTakeaway from '@/components/KeyTakeaway'
 
 export const metadata: Metadata = {
   title: 'AI Agent Systems | SanLuis AI Solutions',
@@ -68,6 +69,14 @@ export default function AgentsPage() {
         title="AI Agent Systems."
         description="Automation handles the predictable. Agents handle the ambiguous. We deploy working systems that qualify leads, triage customers, and monitor markets around the clock so your team gets a day back every week."
       />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <KeyTakeaway
+          summary="AI Agents go beyond automation — they decide, act, and improve. They qualify leads, triage customers, and monitor markets around the clock. Deploy in 3-6 weeks. Full code ownership."
+          timeline="3-6 weeks to deploy"
+          startingAt="From $5,000"
+        />
+      </div>
 
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 px-4 sm:px-6 lg:px-8 py-24">

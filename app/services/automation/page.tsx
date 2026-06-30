@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import Diamond from '@/components/Diamond'
+import KeyTakeaway from '@/components/KeyTakeaway'
 
 export const metadata: Metadata = {
   title: 'AI Automation | SanLuis AI Solutions',
@@ -68,6 +69,14 @@ export default function AutomationPage() {
         title="AI Automation."
         description="Your team loses a full day every week to work that follows predictable rules. We eliminate it. Our automations run inside your existing tools, ship in one to two weeks, and start at $1,200."
       />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <KeyTakeaway
+          summary="AI Automation handles repetitive, rule-based tasks your team does manually. We build it into your existing tools, ship in 1-2 weeks, and you own the code. No subscriptions, no lock-in."
+          timeline="1-2 weeks to deploy"
+          startingAt="From $1,200"
+        />
+      </div>
 
       {/* Problem section */}
       <AnimatedSection delay={0}>
