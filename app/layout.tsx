@@ -361,7 +361,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Footer />
         </ClientLayout>
-        <CtaBar variant="sticky" href="/booking" text="Book a Discovery Session: $300" />
+        <CtaBar variant="sticky" href="/booking" text="Book a Discovery Session" />
         <ExitIntentOverlay />
       </body>
     </html>
