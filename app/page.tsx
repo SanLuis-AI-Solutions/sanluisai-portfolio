@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import HeroStats from '@/components/HeroStats'
 import Problem from '@/components/Problem'
 import CaseStudies from '@/components/CaseStudies'
 import SceneDivider from '@/components/SceneDivider'
@@ -15,6 +16,11 @@ export default function HomePage() {
   return (
     <main className="pb-[72px] md:pb-0">
       <Hero />
+      <section className="bg-[#0F1D3D] border-t border-gold-600/10">
+        <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24 py-16 md:py-20">
+          <HeroStats />
+        </div>
+      </section>
       <Problem />
       <ROICalculator />
       <CaseStudies />
