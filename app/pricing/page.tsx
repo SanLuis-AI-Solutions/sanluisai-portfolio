@@ -20,82 +20,61 @@ export const metadata: Metadata = {
   },
 }
 
-const includedCheck = (
-  <svg className="w-4 h-4 shrink-0 text-gold-600 mt-0.5" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-    <path d="M3.5 8.5L6.5 11.5L12.5 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-)
+const tiers = [
+  {
+    name: 'Discovery',
+    price: '$300',
+    subtitle: 'One-time',
+    description: 'Know your next move. A 60-minute working session that delivers your roadmap and confirms if AI makes sense for your business.',
+    items: [
+      '60-90 minute working session',
+      'Operations map with highest-leverage process identified',
+      'Written action plan with cost estimates, timeline, and ROI',
+      'Money-back guarantee: if we do not find 3 ways to save you time, the session is free',
+    ],
+    cta: 'Book a Discovery Session',
+    ctaHref: '/booking',
+    highlighted: false,
+  },
+  {
+    name: 'Automation',
+    price: 'From $1,200',
+    subtitle: 'Fixed price',
+    description: 'One task, fully automated. You tell us which manual job eats the most time each week. We build a tool that handles it completely.',
+    items: [
+      'One task automated end-to-end',
+      'Full source code ownership. No lock-in. No license fees.',
+      'Deployment, team training, and documentation included',
+      '30-day post-launch support',
+      'If it does not pay for itself in 6 months, we fix it free',
+    ],
+    cta: 'Start with Automation',
+    ctaHref: '/booking',
+    highlighted: true,
+    badge: 'Most Popular',
+  },
+  {
+    name: 'Agent Systems',
+    price: 'From $5,000',
+    subtitle: 'Fixed price',
+    description: 'An agent that monitors, decides, and acts. Not a chatbot. It watches your data, makes decisions within its boundaries, and escalates only what it cannot handle.',
+    items: [
+      'Autonomous system that makes decisions and takes action',
+      'Handles exceptions, escalates when needed, learns from outcomes',
+      'Full audit logging with timestamp, input, decision rationale',
+      'Full source ownership. Deployed to your environment.',
+    ],
+    cta: 'Build an Agent System',
+    ctaHref: '/booking',
+    highlighted: false,
+  },
+]
 
-function PricingCard({
-  price,
-  label,
-  subtitle,
-  description,
-  items,
-  ctaHref,
-  ctaLabel,
-  primary,
-  badge,
-}: {
-  price: string
-  label: string
-  subtitle: string
-  description: string
-  items: string[]
-  ctaHref: string
-  ctaLabel: string
-  primary: boolean
-  badge?: string
-}) {
-  return (
-    <div className={`relative bg-white border rounded p-8 md:p-10 flex flex-col h-full ${primary ? 'border-gold-500 shadow-goldGlow' : 'border-navy-200'}`}>
-      {/* Badge */}
-      {badge && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-          <span className="inline-block font-sans text-xs font-semibold tracking-wider uppercase px-4 py-1 bg-gold-600 text-navy-900 rounded-full">
-            {badge}
-          </span>
-        </div>
-      )}
-      {/* Price */}
-      <p className="font-display text-4xl text-gold-600 mb-1">{price}</p>
-      <p className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-fg3 mb-4">{subtitle}</p>
-
-      {/* Service name */}
-      <h3 className="font-display text-xl text-navy-800 mb-2">{label}</h3>
-      <p className="sl-body-sm text-fg3 mb-6">{description}</p>
-
-      {/* Divider */}
-      <div className="h-px bg-navy-200 mb-6" />
-
-      {/* What's included */}
-      <h4 className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-navy-700 mb-4">What&apos;s Included</h4>
-      <ul className="space-y-3 mb-8 flex-1">
-        {items.map((item, i) => (
-          <li key={i} className="flex items-start gap-3">
-            {includedCheck}
-            <span className="sl-body-sm text-fg2">{item}</span>
-          </li>
-        ))}
-      </ul>
-
-      {/* Divider */}
-      <div className="h-px bg-navy-200 mb-6" />
-
-      {/* CTA */}
-      <Link
-        href={ctaHref}
-        className={
-          primary
-            ? 'inline-flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-navy-800 text-bone-50 hover:bg-gold-600 hover:text-navy-900 transition-all duration-220 rounded'
-            : 'inline-flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 border border-navy-200 text-navy-800 hover:bg-navy-800 hover:text-bone-50 transition-all duration-220 rounded'
-        }
-      >
-        {ctaLabel}
-      </Link>
-    </div>
-  )
-}
+const additional = [
+  { name: 'Custom AI Systems', price: 'From $5,000', href: '/services/custom-ai' },
+  { name: 'AI Consulting', price: 'Custom pricing', href: '/services/consulting' },
+  { name: 'Maintenance Retainer', price: '10% of build cost/mo', href: '/services' },
+]
 
 export default function PricingPage() {
   return (
@@ -109,121 +88,76 @@ export default function PricingPage() {
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-6xl mx-auto">
-          {/* Flame mark */}
           <div className="flex items-center justify-center mb-14">
             <FlameMark size="md" />
           </div>
 
-          {/* Four-tier pricing grid */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Discovery */}
-            <PricingCard
-              price="$300"
-              label="Discovery"
-              subtitle="One-time"
-              description="Know your next move. A 60-minute working session that delivers your roadmap and confirms if AI makes sense for your business. Money-back if we do not find 3 ways to save you time."
-              items={[
-                '60-90 minute working session',
-                'We map your current operations and find the highest-leverage process to automate',
-                'Written action plan with cost estimates, timeline, and ROI delivered within 24 hours',
-                'This is the natural first step. Low risk. High clarity.',
-                'Money-back guarantee: if we do not find 3 ways to save you time, the session is free',
-              ]}
-              ctaHref="/booking"
-              ctaLabel="Book a Discovery Session"
-              primary={false}
-            />
-
-            {/* Automation */}
-            <PricingCard
-              price="$1,200+"
-              label="Automation"
-              subtitle="Fixed price"
-              description="One task, fully automated. You tell us which manual job eats the most time each week. We build a tool that handles it from start to finish. The work still gets done. Your team just does not have to do it anymore."
-              items={[
-                'One task automated end-to-end',
-                'You pick the process that eats the most time. We build a system that handles it completely',
-                'Full source code ownership. No lock-in. No license fees.',
-                'Deployment, team training, and documentation included',
-                '30-day post-launch support',
-              ]}
-              ctaHref="/booking"
-              ctaLabel="Start with Automation"
-              primary={true}
-              badge="Most Popular"
-            />
-
-            {/* Agent Systems */}
-            <PricingCard
-              price="$5,000+"
-              label="Agent Systems"
-              subtitle="Fixed price"
-              description="An agent that monitors, decides, and acts. Not a chatbot that waits for instructions. It watches your data, makes decisions within its boundaries, and takes action without waiting for approval. It escalates only what it cannot handle on its own."
-              items={[
-                'An autonomous system that makes decisions and takes action',
-                'Not a chatbot. Not a passive tool. An agent that monitors, decides, and executes',
-                'Handles exceptions, escalates when needed, learns from outcomes',
-                'Full source ownership. Deployed to your environment.',
-              ]}
-              ctaHref="/booking"
-              ctaLabel="Build an Agent System"
-              primary={false}
-            />
-
-            {/* AI Consulting */}
-            <PricingCard
-              price="Custom pricing"
-              label="AI Consulting"
-              subtitle="Book a call to discuss"
-              description="Ongoing strategic advisory for businesses that are building with AI. Technology evaluation, vendor assessment, architecture review, and implementation oversight. You get experienced technical leadership without hiring a full-time executive."
-              items={[
-                'Strategic guidance aligned with your business goals and industry',
-                'Technology evaluation with benchmarks on your data',
-                'Vendor assessment covering lock-in risk, data privacy, and scalability',
-                'Architecture review and implementation oversight throughout the build',
-              ]}
-              ctaHref="/booking"
-              ctaLabel="Book a call"
-              primary={false}
-            />
-
-            {/* Custom AI */}
-            <PricingCard
-              price="$5,000+"
-              label="Custom AI"
-              subtitle="Fixed price"
-              description="Built from the ground up for your specific business. Your data. Your tools. We design it to fit your operation exactly, build it with the best AI for your problem, and deliver a tool your team can use from day one."
-              items={[
-                'Built for your specific data, tools, or product',
-                'Trained on your proprietary data. Integrated with your existing tools.',
-                'Architecture blueprint, deployment, training, documentation',
-                'Full source ownership. No recurring license fees.',
-              ]}
-              ctaHref="/booking"
-              ctaLabel="Build Custom AI"
-              primary={false}
-            />
-
-            {/* Maintenance Retainer */}
-            <PricingCard
-              price="10%"
-              label="Maintenance Retainer"
-              subtitle="Of original build cost, billed monthly"
-              description="Your system stays reliable, up to date, and optimized as your business evolves. Includes monitoring, uptime tracking, performance reporting, priority access for new features, and quarterly optimization reviews. If something breaks, we fix it."
-              items={[
-                'System monitoring and uptime tracking with proactive alerts',
-                'Quarterly optimization reviews to catch drift and improve performance',
-                'Priority access for new features and adjustments',
-                'No long-term commitment. Month-to-month. Cancel anytime.',
-              ]}
-              ctaHref="/booking"
-              ctaLabel="Set Up a Retainer"
-              primary={false}
-            />
+          {/* 3-tier comparison table — mobile first: single column, desktop: 3 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {tiers.map((tier) => (
+              <div
+                key={tier.name}
+                className={`relative flex flex-col bg-white border rounded p-6 md:p-8 ${
+                  tier.highlighted
+                    ? 'border-gold-500 shadow-[0_0_0_1px_rgba(217,164,52,0.5),0_18px_50px_-28px_rgba(217,164,52,0.25)] ring-1 ring-gold-500/30'
+                    : 'border-navy-200'
+                }`}
+              >
+                {tier.badge && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                    <span className="inline-block font-sans text-xs font-semibold tracking-wider uppercase px-4 py-1 bg-gold-600 text-navy-900 rounded-full whitespace-nowrap">
+                      {tier.badge}
+                    </span>
+                  </div>
+                )}
+                <div className="mb-6">
+                  <p className="font-display text-3xl md:text-4xl text-gold-600 mb-1">{tier.price}</p>
+                  <p className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-fg3">{tier.subtitle}</p>
+                </div>
+                <h3 className="font-display text-xl text-navy-800 mb-2">{tier.name}</h3>
+                <p className="sl-body-sm text-fg3 mb-6">{tier.description}</p>
+                <div className="h-px bg-navy-200 mb-6" />
+                <h4 className="font-sans text-xs font-semibold tracking-[0.06em] uppercase text-navy-700 mb-4">What&apos;s Included</h4>
+                <ul className="space-y-3 mb-8 flex-1">
+                  {tier.items.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <svg className="w-4 h-4 shrink-0 text-gold-600 mt-0.5" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3.5 8.5L6.5 11.5L12.5 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span className="sl-body-sm text-fg2">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="h-px bg-navy-200 mb-6" />
+                <Link
+                  href={tier.ctaHref}
+                  className={
+                    tier.highlighted
+                      ? 'inline-flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 bg-navy-800 text-bone-50 hover:bg-gold-600 hover:text-navy-900 hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-220 rounded'
+                      : 'inline-flex items-center justify-center w-full font-sans text-sm font-semibold tracking-[0.04em] px-6 py-3 border border-navy-200 text-navy-800 hover:bg-navy-800 hover:text-bone-50 hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-220 rounded'
+                  }
+                >
+                  {tier.cta}
+                </Link>
+              </div>
+            ))}
           </div>
 
-          {/* Simple note */}
-          <div className="mt-16 max-w-2xl mx-auto text-center">
+          {/* Additional services row */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+            {additional.map((s) => (
+              <Link
+                key={s.name}
+                href={s.href}
+                className="bg-bone-100 border border-navy-200 rounded p-5 text-center hover:border-gold-500/50 hover:bg-bone-50 transition-all duration-200 group"
+              >
+                <div className="font-display text-lg text-navy-800 mb-1 group-hover:text-gold-700 transition-colors">{s.name}</div>
+                <div className="font-sans text-sm text-gold-600 font-semibold">{s.price}</div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="max-w-2xl mx-auto text-center">
             <div className="bg-bone-100 border border-navy-100 rounded px-6 py-5">
               <p className="sl-body-sm text-fg3/80">
                 All prices are fixed and agreed before work begins. Every project includes setup, team training, documentation, and 30 days of post-launch support.
@@ -234,7 +168,6 @@ export default function PricingPage() {
       </section>
       </AnimatedSection>
 
-      {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Not sure where to start? Begin with a $300 Discovery Session.</h2>

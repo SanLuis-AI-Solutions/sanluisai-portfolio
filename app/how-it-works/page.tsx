@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import GoldThreadTimeline from '@/components/GoldThreadTimeline'
+import ProcessTextReveal from '@/components/ProcessTextReveal'
 
 export const metadata: Metadata = {
   title: 'How It Works | 4-Step AI Development Process | SanLuis AI Solutions',
@@ -135,6 +136,8 @@ export default function HowItWorksPage() {
         title="How It Works."
         description="A clear, predictable process from first conversation to working AI system. You always know what comes next."
       />
+
+      <ProcessTextReveal />
 
       {/* Timeline Steps */}
       <AnimatedSection delay={0}>

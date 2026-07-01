@@ -2,7 +2,6 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
-import Diamond from '@/components/Diamond'
 
 export const metadata: Metadata = {
   title: 'AI Automation by Industry. SanLuis AI Solutions',
@@ -19,36 +18,12 @@ export const metadata: Metadata = {
 }
 
 const industries = [
-  {
-    name: 'Healthcare',
-    href: '/industries/healthcare',
-    problem: 'Prior authorization delays, administrative overhead, and documentation burden drain resources from patient care.',
-  },
-  {
-    name: 'Logistics',
-    href: '/industries/logistics',
-    problem: 'Supply chain inefficiencies, manual routing coordination, and fragmented carrier management cost time and margin.',
-  },
-  {
-    name: 'Manufacturing',
-    href: '/industries/manufacturing',
-    problem: 'Unplanned downtime, quality control gaps, and reactive maintenance that cost millions in lost production.',
-  },
-  {
-    name: 'Professional Services',
-    href: '/industries/professional-services',
-    problem: 'Manual document review, untracked billable time, and slow client onboarding that burn capacity and revenue.',
-  },
-  {
-    name: 'Real Estate',
-    href: '/industries/real-estate',
-    problem: 'Leads that go cold, manual CMA preparation, and follow-up delays that cost deals every day.',
-  },
-  {
-    name: 'Retail',
-    href: '/industries/retail',
-    problem: 'Inconsistent customer service, manual demand planning, and pricing guesswork that erodes margin.',
-  },
+  { name: 'Healthcare', href: '/industries/healthcare', problem: 'Prior authorization delays, administrative overhead, and documentation burden drain resources from patient care.', featured: true },
+  { name: 'Logistics', href: '/industries/logistics', problem: 'Supply chain inefficiencies, manual routing coordination, and fragmented carrier management cost time and margin.', featured: false },
+  { name: 'Manufacturing', href: '/industries/manufacturing', problem: 'Unplanned downtime, quality control gaps, and reactive maintenance that cost millions in lost production.', featured: false },
+  { name: 'Professional Services', href: '/industries/professional-services', problem: 'Manual document review, untracked billable time, and slow client onboarding that burn capacity and revenue.', featured: false },
+  { name: 'Real Estate', href: '/industries/real-estate', problem: 'Leads that go cold, manual CMA preparation, and follow-up delays that cost deals every day.', featured: false },
+  { name: 'Retail', href: '/industries/retail', problem: 'Inconsistent customer service, manual demand planning, and pricing guesswork that erodes margin.', featured: false },
 ]
 
 export default function Page() {
@@ -75,15 +50,23 @@ export default function Page() {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {/* Bento grid: Healthcare featured as 2x1, rest as 1x1 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-16">
             {industries.map((ind, i) => (
               <AnimatedSection key={ind.name} delay={0.1 * (i % 3)}>
                 <Link
                   href={ind.href}
-                  className="block bg-white border border-navy-200 rounded p-6 hover:border-gold-500 hover:shadow-2 transition-all duration-200 group h-full"
+                  className={`block bg-white border border-navy-200 rounded p-6 md:p-8 hover:-translate-y-1 hover:border-gold-600/50 hover:shadow-[0_18px_50px_-28px_rgba(26,49,96,0.55)] transition-all duration-300 group h-full ${
+                    ind.featured ? 'md:col-span-2' : ''
+                  }`}
                 >
-                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-2">
-                    {ind.name}
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600">
+                      {ind.name}
+                    </div>
+                    {ind.featured && (
+                      <span className="font-mono text-[10px] tracking-[0.08em] uppercase bg-gold-100 text-gold-700 px-2 py-0.5 rounded">Featured</span>
+                    )}
                   </div>
                   <p className="sl-body-sm">
                     {ind.problem}
