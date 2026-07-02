@@ -69,7 +69,7 @@ export default function SocialProof() {
         <FadeIn delay={0}>
           <div className="flex items-center justify-center gap-2 mb-16">
             <FlameMark size="sm" />
-            <span className="sl-eyebrow text-center">Trusted by Operators</span>
+            <span className="sl-eyebrow text-center">Real Results, Real Businesses</span>
           </div>
         </FadeIn>
 

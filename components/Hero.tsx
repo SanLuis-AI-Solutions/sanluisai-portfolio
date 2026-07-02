@@ -44,16 +44,15 @@ export default function Hero() {
   return (
     <section ref={heroRef} className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#0F1D3D]">
       <div id="cta-sentinel" className="absolute top-0 left-0 w-px h-px" />
-      {/* Hero image — right 40%, with gradient fade on left edge */}
+      {/* Hero image — right 40% */}
       <div className="absolute inset-0 md:inset-auto md:right-0 md:top-0 md:w-2/5 md:h-full">
         <motion.div className="absolute inset-0 opacity-[0.20]" style={{ y: imageY, scale: imageScale }}>
           <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="(max-width: 768px) 100vw, 50vw" />
         </motion.div>
         <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#0F1D3D] to-transparent pointer-events-none" />
       </div>
-      {/* Single warm gold glow from bottom-right — stationary, museum-spotlight quality */}
+      {/* Single warm gold glow — stationary museum spotlight */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_80%_80%,rgba(217,164,52,0.12),transparent_60%)] pointer-events-none" />
-      {/* Subtle top-right blue glow for depth */}
       <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-[radial-gradient(ellipse_at_top_right,rgba(45,82,126,0.15),transparent_60%)] pointer-events-none" />
 
       <div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-24 md:py-40 z-10">
@@ -90,41 +89,41 @@ export default function Hero() {
             </AnimatedSection>
           </div>
 
-          {/* Right: hero stat callouts — visible on desktop */}
+          {/* Right: meaningful business stats — not "3 Operators" */}
           <div className="hidden md:flex flex-col gap-6 pb-16">
             <AnimatedSection delay={0.5}>
               <div className="border-l-2 border-gold-600/40 pl-5">
-                <div className="font-display text-[clamp(2.5rem,5vw,4rem)] text-gold-500 font-medium leading-[0.9] tracking-[-0.02em]">5,400+</div>
-                <div className="font-sans text-xs text-bone-300/60 tracking-[0.06em] uppercase mt-2">Hours recovered</div>
+                <div className="font-display text-[clamp(2.5rem,5vw,4rem)] text-gold-500 font-medium leading-[0.9] tracking-[-0.02em]">$38,700</div>
+                <div className="font-sans text-xs text-bone-300/60 tracking-[0.06em] uppercase mt-2">Avg. annual savings</div>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.6}>
               <div className="border-l-2 border-gold-600/40 pl-5">
-                <div className="font-display text-[clamp(2rem,3.5vw,2.8rem)] text-bone-50 font-medium leading-[0.9] tracking-[-0.02em]">3</div>
-                <div className="font-sans text-xs text-bone-300/60 tracking-[0.06em] uppercase mt-2">Houston operators</div>
+                <div className="font-display text-[clamp(2rem,3.5vw,2.8rem)] text-bone-50 font-medium leading-[0.9] tracking-[-0.02em]">14 Days</div>
+                <div className="font-sans text-xs text-bone-300/60 tracking-[0.06em] uppercase mt-2">Avg. delivery time</div>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.7}>
               <div className="border-l-2 border-gold-600/40 pl-5">
                 <div className="font-display text-[clamp(2rem,3.5vw,2.8rem)] text-bone-50 font-medium leading-[0.9] tracking-[-0.02em]">60%</div>
-                <div className="font-sans text-xs text-bone-300/60 tracking-[0.06em] uppercase mt-2">Average time savings</div>
+                <div className="font-sans text-xs text-bone-300/60 tracking-[0.06em] uppercase mt-2">Avg. time savings</div>
               </div>
             </AnimatedSection>
           </div>
         </div>
 
-        {/* Mobile stat callouts — horizontal row */}
+        {/* Mobile stats */}
         <div className="flex md:hidden gap-6 mt-10">
           <AnimatedSection delay={0.5}>
             <div>
-              <div className="font-display text-2xl text-gold-500 font-medium">5,400+</div>
-              <div className="font-sans text-[10px] text-bone-300/60 tracking-[0.06em] uppercase mt-1">Hours recovered</div>
+              <div className="font-display text-2xl text-gold-500 font-medium">$38.7K</div>
+              <div className="font-sans text-[10px] text-bone-300/60 tracking-[0.06em] uppercase mt-1">Avg. savings/yr</div>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.6}>
             <div>
-              <div className="font-display text-2xl text-bone-50 font-medium">3</div>
-              <div className="font-sans text-[10px] text-bone-300/60 tracking-[0.06em] uppercase mt-1">Operators</div>
+              <div className="font-display text-2xl text-bone-50 font-medium">14d</div>
+              <div className="font-sans text-[10px] text-bone-300/60 tracking-[0.06em] uppercase mt-1">Delivery</div>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.7}>
