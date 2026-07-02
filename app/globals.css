@@ -191,3 +191,24 @@ html.reduce-motion .animate-bounce {
 .animate-gradient-mesh {
   animation: gradient-mesh 15s ease-in-out infinite;
 }
+
+/* ── Gold pulse for CTA button ── */
+@keyframes gold-pulse {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(217,164,52,0.4), 0 6px 20px -6px rgba(217,164,52,0.45); }
+  50% { box-shadow: 0 0 0 1px rgba(217,164,52,0.6), 0 6px 28px -4px rgba(217,164,52,0.65); }
+}
+.animate-goldPulse {
+  animation: gold-pulse 3s ease-in-out infinite;
+}
+
+/* ── Marquee/ticker animation ── */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

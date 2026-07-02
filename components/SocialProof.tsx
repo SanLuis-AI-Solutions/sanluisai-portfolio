@@ -50,12 +50,21 @@ const reviewLdJson = {
 }
 
 export default function SocialProof() {
+  const marqueeItems = 'Garza International \u00b7 60% faster quoting \u00b7 Susie\'s Jewelry Repair \u00b7 3\u00d7 leads \u00b7 LoveFlow \u00b7 3-day design \u00b7 '
+
   return (
-    <section className="py-32 md:py-40 bg-bone-200">
+    <section className="py-32 md:py-40 bg-bone-200 overflow-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewLdJson) }}
       />
+      {/* Marquee/ticker band */}
+      <div className="w-full overflow-hidden mb-20 border-t border-b border-gold-600/10 py-4">
+        <div className="animate-marquee whitespace-nowrap">
+          <span className="font-mono text-xs text-gold-600/60 tracking-[0.12em] uppercase">{marqueeItems}</span>
+          <span className="font-mono text-xs text-gold-600/60 tracking-[0.12em] uppercase">{marqueeItems}</span>
+        </div>
+      </div>
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
         <FadeIn delay={0}>
           <div className="flex items-center justify-center gap-2 mb-16">
