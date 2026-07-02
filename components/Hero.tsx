@@ -72,7 +72,7 @@ export default function Hero() {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
-            <h1 className="font-display text-[clamp(2.8rem,7vw,5.5rem)] text-bone-50 font-semibold leading-[0.9] tracking-[-0.03em] mb-6">
+            <h1 className="sl-display-lg text-bone-50 mb-6">
               Get 5+ Hours Back Every Week<br />
               <span className="text-gold-500">Without a Tech Team.</span><br />
               Live in 14 Days.
@@ -86,7 +86,7 @@ export default function Hero() {
           <AnimatedSection delay={0.45}>
             <a
               href="/booking"
-              className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-4 border border-gold-500/80 text-gold-500 hover:bg-gold-500 hover:text-navy-900 hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500 transition-all duration-220 rounded-full"
+              className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-4 border border-gold-500/80 text-gold-500 hover:bg-gold-500 hover:text-navy-900 hover:-translate-y-0.5 active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500 transition-all duration-220 rounded-full shadow-goldGlow hover:shadow-goldGlow"
             >
               Book a Discovery Session
             </a>

@@ -40,10 +40,10 @@ export default function CTA() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
-              <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-white font-medium leading-[1.06] tracking-[-0.025em] mb-4">
+              <h2 className="sl-h1 text-white mb-4">
                 Find out what to automate. Start with a Discovery Session.
               </h2>
-              <p className="font-display text-[clamp(1.4rem,3vw,2rem)] text-gold-600 font-medium leading-[1.15] tracking-[-0.015em]">
+              <p className="sl-h3 text-gold-600">
                 $300. 60 minutes. The exact roadmap to get there.
               </p>
             </AnimatedSection>
@@ -60,7 +60,7 @@ export default function CTA() {
             <AnimatedSection delay={0.4}>
               <a
                 href="/booking"
-                className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow transition-all duration-220 rounded"
+                className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-10 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow hover:-translate-y-0.5 active:scale-[0.97] transition-all duration-220 rounded"
               >
                 Book a Discovery Session
               </a>

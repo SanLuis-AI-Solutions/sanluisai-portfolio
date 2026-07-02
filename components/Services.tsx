@@ -77,7 +77,7 @@ function ServiceCardLeftHeavy({ s, i }: { s: typeof services[0]; i: number }) {
   return (
     <AnimatedSection delay={0.15 + i * 0.12}>
       <a href={s.href} className="block group cursor-pointer">
-        <div className="grid grid-cols-[auto_1fr] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2 hover:scale-[1.01]">
+        <div className="grid grid-cols-[auto_1fr] gap-6 items-start bg-white border border-navy-200/80 hover:border-navy-900/30 shadow-1 hover:shadow-3 rounded p-6 md:p-8 transition-all duration-300 hover:-translate-y-0.5">
           {/* Left: icon + gold accent */}
           <div className="flex items-start gap-3">
             <div className="flex flex-col items-center gap-1 pt-1">
@@ -109,7 +109,7 @@ function ServiceCardRightHeavy({ s, i }: { s: typeof services[0]; i: number }) {
   return (
     <AnimatedSection delay={0.15 + i * 0.12}>
       <a href={s.href} className="block group cursor-pointer">
-        <div className="grid grid-cols-[1fr_auto] gap-6 items-start bg-white border border-navy-200 hover:border-navy-900 rounded p-6 md:p-8 transition-all duration-220 hover:shadow-2 hover:scale-[1.01]">
+        <div className="grid grid-cols-[1fr_auto] gap-6 items-start bg-white border border-navy-200/80 hover:border-navy-900/30 shadow-1 hover:shadow-3 rounded p-6 md:p-8 transition-all duration-300 hover:-translate-y-0.5">
           {/* Left: content */}
           <div className="min-w-0 order-1">
             <h3 className="font-display text-xl md:text-2xl text-navy-800 mb-2 group-hover:text-navy-600 transition-colors duration-200">
@@ -147,7 +147,7 @@ export default function Services() {
               <span className="sl-eyebrow mb-8">What We Build</span>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
-              <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">
+              <h2 className="sl-h2 text-navy-800 mb-6">
                 Four ways to solve your most expensive problem.
               </h2>
             </AnimatedSection>

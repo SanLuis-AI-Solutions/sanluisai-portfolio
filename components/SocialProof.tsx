@@ -67,19 +67,19 @@ export default function SocialProof() {
         {/* Results metric cards */}
         <FadeIn delay={0.1}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 max-w-4xl mx-auto">
-            <div className="bg-white/75 backdrop-blur-sm border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_18px_50px_-32px_rgba(26,49,96,0.55)] rounded p-6 text-center hover:-translate-y-0.5 transition-transform duration-300">
+            <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">60%</div>
               <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Faster quoting</div>
             </div>
-            <div className="bg-white/75 backdrop-blur-sm border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_18px_50px_-32px_rgba(26,49,96,0.55)] rounded p-6 text-center hover:-translate-y-0.5 transition-transform duration-300">
+            <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">3x</div>
               <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Inbound leads</div>
             </div>
-            <div className="bg-white/75 backdrop-blur-sm border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_18px_50px_-32px_rgba(26,49,96,0.55)] rounded p-6 text-center hover:-translate-y-0.5 transition-transform duration-300">
+            <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">92%</div>
               <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Client satisfaction</div>
             </div>
-            <div className="bg-white/75 backdrop-blur-sm border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_18px_50px_-32px_rgba(26,49,96,0.55)] rounded p-6 text-center hover:-translate-y-0.5 transition-transform duration-300">
+            <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">14d</div>
               <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Avg. to prototype</div>
             </div>
@@ -89,7 +89,7 @@ export default function SocialProof() {
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <FadeIn key={i} delay={0.15 + i * 0.1}>
-              <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_18px_50px_-32px_rgba(26,49,96,0.55)] rounded p-8 md:p-10 h-full flex flex-col hover:-translate-y-1 hover:border-gold-600/40 transition-all duration-300">
+              <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-8 md:p-10 h-full flex flex-col hover:-translate-y-1 hover:border-gold-600/40 transition-all duration-300">
                 <div className="mb-6">
                   <div className="font-display text-2xl text-navy-800 mb-1">{t.company}</div>
                   <div className="font-sans text-xs font-semibold tracking-[0.12em] uppercase text-gold-600">{t.role}</div>

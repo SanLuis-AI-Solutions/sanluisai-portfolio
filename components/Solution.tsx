@@ -27,7 +27,7 @@ export default function Solution() {
         <FadeIn delay={0}><span className="sl-eyebrow mb-8">How It Works</span></FadeIn>
         <div className="grid lg:grid-cols-[1fr_1.6fr] gap-16 lg:gap-24 mb-20">
           <div>
-            <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">You don't need a team of engineers. You need one clear process.</h2></FadeIn>
+            <FadeIn delay={0.12}><h2 className="sl-h2 text-navy-800 mb-6">You don't need a team of engineers. You need one clear process.</h2></FadeIn>
             <FadeIn delay={0.2}><p className="sl-lede mb-8 max-w-[48ch]">Three steps from discovery to deployment. No jargon. No six-month timelines. Just a system that does the work you're tired of doing.</p></FadeIn>
             <FadeIn delay={0.3}><GoldThread delay={0.3} /></FadeIn>
           </div>

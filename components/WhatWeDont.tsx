@@ -58,7 +58,7 @@ export default function WhatWeDont() {
             </span>
           </FadeIn>
           <FadeIn delay={0.12}>
-            <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-bone-50 font-medium leading-[1.08] tracking-[-0.025em] mb-6">
+            <h2 className="sl-h2 text-bone-50 mb-6">
               We draw lines. That's how trust works.
             </h2>
           </FadeIn>
@@ -73,7 +73,7 @@ export default function WhatWeDont() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {donts.map((item, i) => (
             <FadeIn key={i} delay={0.25 + i * 0.1}>
-              <div className="group bg-bone-100 border border-navy-200/60 hover:border-gold-500/50 rounded p-10 md:p-12 h-full flex flex-col relative transition-all duration-300 hover:shadow-[0_4px_24px_rgba(217,164,52,0.08)] hover:scale-[1.01]">
+              <div className="group bg-bone-100 border border-navy-200/60 hover:border-gold-500/50 shadow-1 hover:shadow-3 rounded p-10 md:p-12 h-full flex flex-col relative transition-all duration-300 hover:-translate-y-0.5">
                 {/* Gold top accent bar — matches Problem HeroCard pattern */}
                 <div className="absolute top-0 left-6 right-6 h-px bg-gold-600/40 group-hover:bg-gold-500/60 transition-colors duration-300" />
                 {/* Numbered marker — matches Services monospace numbering */}

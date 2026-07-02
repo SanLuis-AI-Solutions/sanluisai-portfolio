@@ -106,7 +106,7 @@ export default function CaseStudies() {
           <FadeIn delay={0}><span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-500 mb-8 flex items-center gap-4">The Evidence <span className="h-px w-8 bg-gold-600/40" /></span></FadeIn>
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
             <div>
-              <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-bone-50 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Measurable outcomes.</h2></FadeIn>
+              <FadeIn delay={0.12}><h2 className="sl-h2 text-bone-50 mb-4">Measurable outcomes.</h2></FadeIn>
               <FadeIn delay={0.2}><p className="font-sans text-base md:text-lg text-bone-300/60 max-w-[54ch]">Three engagements. Three industries. Three verified results.</p></FadeIn>
             </div>
             <div className="flex items-center gap-4">
@@ -158,10 +158,10 @@ export default function CaseStudies() {
               <FadeIn key={c.slug} delay={0.2 + i * 0.1}>
                 <a
                   href={`/case-studies/${c.slug}`}
-                  className="block bg-bone-50 border border-bone-200/60 hover:border-gold-500/50 rounded overflow-hidden transition-all duration-300 hover:shadow-4 hover:scale-[1.02] group cursor-pointer h-full flex flex-col min-w-[340px] md:min-w-[400px] lg:min-w-[420px] snap-start relative"
+                  className="block bg-bone-50 border border-bone-200/80 hover:border-gold-500/60 shadow-2 hover:shadow-4 rounded overflow-hidden transition-all duration-300 hover:-translate-y-1 group cursor-pointer h-full flex flex-col min-w-[340px] md:min-w-[400px] lg:min-w-[420px] snap-start relative"
                 >
                   {/* Gold accent bar — permanent subtle line, warms on hover */}
-                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-gold-700/50 via-gold-500 to-gold-700/50 group-hover:from-gold-600 group-hover:via-gold-400 group-hover:to-gold-600 transition-all duration-300 z-10" />
+                  <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold-700/40 via-gold-500/80 to-gold-700/40 group-hover:from-gold-600 group-hover:via-gold-400 group-hover:to-gold-600 transition-all duration-300 z-10" />
                   <div className="relative w-full h-48 bg-navy-100 overflow-hidden border-b border-navy-100/80">
                     <Image
                       src={c.img}

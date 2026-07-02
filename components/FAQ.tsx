@@ -30,7 +30,7 @@ export default function FAQ() {
           </span>
         </FadeIn>
         <FadeIn delay={0.12}>
-          <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-bone-50 font-medium leading-[1.08] tracking-[-0.025em] mb-24">
+          <h2 className="sl-h2 text-bone-50 mb-24">
             Your honest questions. Straight answers.
           </h2>
         </FadeIn>

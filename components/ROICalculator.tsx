@@ -84,9 +84,7 @@ export default function ROICalculator() {
               <span className="sl-eyebrow mb-8">Estimate Your Savings</span>
             </FadeIn>
             <FadeIn delay={0.12}>
-              <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">
-                What's one process costing you?
-              </h2>
+              <h2 className="sl-h2 text-navy-800 mb-6">What&apos;s one process costing you?</h2>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="sl-body-lg max-w-[48ch] mb-12">

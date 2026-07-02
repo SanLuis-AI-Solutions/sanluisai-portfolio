@@ -43,7 +43,7 @@ export default function Process() {
             <span className="sl-eyebrow">Our Process</span>
           </div>
         </FadeIn>
-        <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-4">Discover. Build. Ship. Maintain.</h2></FadeIn>
+        <FadeIn delay={0.12}><h2 className="sl-h2 text-navy-800 mb-4">Discover. Build. Ship. Maintain.</h2></FadeIn>
         <FadeIn delay={0.2}><p className="sl-body-lg max-w-[56ch] mb-16">From &quot;what&apos;s wasting my money&quot; to &quot;my team&apos;s running it cleanly&quot;: in weeks, not quarters.</p></FadeIn>
 
         {/* Mobile: stacked cards */}

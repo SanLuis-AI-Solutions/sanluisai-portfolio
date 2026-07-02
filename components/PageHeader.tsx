@@ -32,7 +32,7 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
           </div>
         </AnimatedSection>
         <AnimatedSection delay={0.15}>
-          <h1 className="font-display text-[clamp(2.2rem,5vw,3.5rem)] text-bone-50 font-semibold leading-[0.92] tracking-[-0.03em] max-w-[16ch]">
+          <h1 className="sl-display-md text-bone-50 max-w-[16ch]">
             {title}
           </h1>
         </AnimatedSection>

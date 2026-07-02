@@ -97,12 +97,12 @@ export default function Problem() {
               <span className="sl-eyebrow">The Problem</span>
             </div>
           </FadeIn>
-          <FadeIn delay={0.12}><h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] text-navy-800 font-medium leading-[1.08] tracking-[-0.025em] mb-6">Your team is burning hours on work AI could do in seconds.</h2></FadeIn>
+          <FadeIn delay={0.12}><h2 className="sl-h2 text-navy-800 mb-6">Your team is burning hours on work AI could do in seconds.</h2></FadeIn>
           <FadeIn delay={0.2}><p className="sl-lede max-w-[56ch]">You don&apos;t need to understand how AI works. You need to know what it can actually save you: in dollars, hours, and missed opportunities.</p></FadeIn>
 
           {/* Founder POV block — humanizes the problem before industry specifics */}
           <FadeIn delay={0.28}>
-            <div className="relative max-w-2xl bg-white border border-navy-200 rounded p-8 md:p-10 mt-12 mb-16">
+            <div className="relative max-w-2xl bg-white border border-navy-200/80 shadow-2 hover:shadow-3 transition-shadow duration-300 rounded p-8 md:p-10 mt-12 mb-16">
               <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/40" />
               <div className="flex flex-col md:flex-row gap-5">
                 <div className="flex flex-row md:flex-col items-center gap-3 md:gap-2 flex-shrink-0">

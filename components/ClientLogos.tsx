@@ -24,7 +24,7 @@ export default function ClientLogos() {
             <span className="font-sans text-xs font-semibold tracking-[0.18em] uppercase text-gold-600 mb-4 block">
               Trusted By
             </span>
-            <h2 className="font-display text-[clamp(1.5rem,3vw,2rem)] text-navy-800 font-medium tracking-[-0.02em]">
+            <h2 className="sl-h3 text-navy-800 font-medium tracking-[-0.02em]">
               Operators who ship.
             </h2>
           </div>
