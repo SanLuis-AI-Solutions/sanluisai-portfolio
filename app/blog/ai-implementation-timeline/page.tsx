@@ -26,6 +26,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'From $300 Discovery to Live AI System: What the First 14 Days Actually Look Like',
   description: 'Day-by-day breakdown of a custom AI build. Discovery, audit, prototype, deployment. Fixed price. You own the code. No surprises.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: { '@type': 'Person', name: 'Daniel San Luis', url: 'https://www.linkedin.com/in/danielsanluis' },
   datePublished: '2026-05-08',
   publisher: { '@type': 'Organization', name: 'SanLuis AI Solutions', url: 'https://sanluisai-portfolio.vercel.app' },

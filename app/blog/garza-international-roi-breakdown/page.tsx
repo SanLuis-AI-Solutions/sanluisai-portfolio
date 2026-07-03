@@ -25,6 +25,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'How Garza International Cut Bid Turnaround by 60% With Custom AI',
   description: 'A Houston construction firm was losing bids because manual quoting took 6+ hours per response. Here is the exact ROI breakdown of a 3-week custom AI build.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

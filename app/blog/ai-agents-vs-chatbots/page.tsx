@@ -25,6 +25,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: "AI Agents vs. Chatbots: What's the Difference (And When You Need Each)",
   description: 'Chatbots answer questions. AI agents take action. Here is the difference explained in plain language, plus a real-world example of when an agent delivered a 60% faster quoting process.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

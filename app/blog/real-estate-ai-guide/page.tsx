@@ -25,6 +25,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'What AI Can Actually Do for Real Estate Agents in 2026',
   description: 'AI for real estate isn\'t about generating listing descriptions. It\'s about responding to leads instantly, automating CMAs, and never losing a deal to slow follow-up.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

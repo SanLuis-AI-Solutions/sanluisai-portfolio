@@ -25,6 +25,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Why Most AI Consulting Fails (And How We Avoid It)',
   description: 'Six-month discovery phases. Slide decks with no code. Pilot purgatory. Here is how the traditional AI consulting model wastes your time. Targeted, time-bounded builds produce real results in weeks.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

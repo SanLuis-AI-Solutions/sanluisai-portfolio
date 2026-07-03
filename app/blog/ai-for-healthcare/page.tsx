@@ -24,6 +24,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'AI for Healthcare: Three Administrative Processes That Should Run Themselves',
   description: 'Prior authorization, patient intake, and clinical documentation can be automated with AI that stays inside your existing infrastructure.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

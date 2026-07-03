@@ -24,6 +24,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'From Discovery Session to Live System: A Client Onboarding Story',
   description: 'A Houston business owner walked into a Discovery Session skeptical. Thirty days later, the system was live and the metric that mattered most had already moved.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

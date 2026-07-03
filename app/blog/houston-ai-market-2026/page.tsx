@@ -25,6 +25,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Houston AI Market in 2026: What Small Businesses Need to Know',
   description: 'AI adoption in Texas doubled in the last year, but most Houston small businesses are stuck between free tools and enterprise systems. Here is the practical market landscape for 2026.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

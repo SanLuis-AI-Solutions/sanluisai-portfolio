@@ -26,6 +26,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'The $300 Discovery Session: What Happens in That Hour',
   description: 'You pay $300 for a 60-minute audit. What do you actually get? We break down the diagnostic process: from problem identification to a written action plan you can execute.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

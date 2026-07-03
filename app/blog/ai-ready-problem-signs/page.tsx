@@ -26,6 +26,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: '5 Signs Your Business Has An AI-Ready Problem',
   description: 'Not every problem needs AI. Here are five signals that your issue is ripe for a custom AI solution, plus when a spreadsheet or checklist is the better answer.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

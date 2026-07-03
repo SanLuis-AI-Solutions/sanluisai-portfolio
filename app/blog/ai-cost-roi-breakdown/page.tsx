@@ -26,6 +26,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'What AI Actually Costs vs. What It Saves: A Real Breakdown for Small Business',
   description: 'Most AI pricing pages say contact us. Here are real numbers: Discovery $300, Automation $1,200+, Agents $5,000+. Fixed price. You own the code. Breakeven in months.',
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',

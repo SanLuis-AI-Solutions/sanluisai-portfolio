@@ -26,6 +26,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: '5 Automation Mistakes That Cost Houston Businesses Real Money',
   description: "Most automation projects fail. Not because the technology doesn't work. Because of these five specific mistakes. Here is how to avoid them and get real ROI from your first build.",
+  image: 'https://sanluisai-portfolio.vercel.app/generated/og-default.png',
   author: {
     '@type': 'Person',
     name: 'Daniel San Luis',
