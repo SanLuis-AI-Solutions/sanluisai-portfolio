@@ -35,10 +35,10 @@ export default function Hero() {
       {/* Warm gold glow — positioned behind the image area */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_70%_60%_at_70%_50%,rgba(217,164,52,0.08),transparent_60%)]" />
 
-      {/* Hero image — right 45%, our original photo as visual anchor */}
-      <div className="absolute right-0 top-0 w-full md:w-[45%] h-full">
+      {/* Hero image — right side, showing both hands meeting */}
+      <div className="absolute right-0 top-0 w-full md:w-[55%] h-full">
         <motion.div className="absolute inset-0 opacity-[0.35]" style={{ y: imgY, scale: imgScale }}>
-          <Image src="/hero-hands.png" alt="" fill className="object-cover object-right" priority sizes="(max-width: 768px) 100vw, 50vw" />
+          <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="(max-width: 768px) 100vw, 55vw" />
         </motion.div>
         <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#080D18] via-[#0C1A30]/80 to-transparent" />
       </div>
