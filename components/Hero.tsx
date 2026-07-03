@@ -19,7 +19,8 @@ export default function Hero() {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
       tl.fromTo('.hero-label', { y: 12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 })
         .fromTo('.hero-headline', { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 }, '-=0.2')
-        .fromTo('.hero-stats', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, '-=0.4')
+        .fromTo('.hero-subhead', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.5')
+        .fromTo('.hero-badges', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, '-=0.3')
         .fromTo('.hero-cta', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.3')
     }, heroRef)
     return () => ctx.revert()
@@ -29,53 +30,55 @@ export default function Hero() {
     <section ref={heroRef} className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#080D18]">
       <div id="cta-sentinel" className="absolute top-0 left-0 w-px h-px" />
 
-      {/* Background gradient — deep and rich */}
+      {/* Deep navy gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#080D18] via-[#0C1A30] to-[#162A4A]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_70%_80%,rgba(217,164,52,0.08),transparent_60%)]" />
+      {/* Warm gold glow — positioned behind the image area */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_70%_60%_at_70%_50%,rgba(217,164,52,0.08),transparent_60%)]" />
 
-      {/* Hero image — right side, prominent, the hero anchor */}
-      <div className="absolute right-0 top-0 w-full md:w-[50%] h-full">
-        <motion.div className="absolute inset-0 opacity-[0.40]" style={{ y: imgY, scale: imgScale }}>
+      {/* Hero image — right 45%, our original photo as visual anchor */}
+      <div className="absolute right-0 top-0 w-full md:w-[45%] h-full">
+        <motion.div className="absolute inset-0 opacity-[0.35]" style={{ y: imgY, scale: imgScale }}>
           <Image src="/hero-hands.png" alt="" fill className="object-cover object-right" priority sizes="(max-width: 768px) 100vw, 50vw" />
         </motion.div>
         <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#080D18] via-[#0C1A30]/80 to-transparent" />
       </div>
 
-      {/* Content */}
+      {/* Content — bold, asymmetric, high-energy */}
       <motion.div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-24 md:py-40 z-10" style={{ opacity }}>
-        <div className="max-w-[860px]">
+        <div className="max-w-[820px]">
           <div className="hero-label mb-6">
             <span className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-gold-500/70">SanLuis AI Solutions</span>
           </div>
 
-          <div className="hero-headline mb-8">
-            <h1 className="font-display text-[clamp(3.5rem,10vw,7rem)] text-bone-50 font-medium leading-[0.88] tracking-[-0.035em] mb-3">
+          <div className="hero-headline mb-3">
+            <h1 className="font-display text-[clamp(3.2rem,9vw,6.5rem)] text-bone-50 font-medium leading-[0.88] tracking-[-0.035em]">
               Get 5+ Hours Back<br />Every Week
             </h1>
-            <p className="font-display text-[clamp(1.2rem,2.5vw,2rem)] text-gold-500/90 font-medium leading-[1.1] tracking-[-0.02em]">
+          </div>
+
+          <div className="hero-subhead mb-10">
+            <p className="font-display text-[clamp(1.2rem,2.5vw,2rem)] text-gold-500 font-medium leading-[1.1] tracking-[-0.02em]">
               Without a Tech Team. <span className="text-bone-50/70">Live in 14 Days.</span>
             </p>
           </div>
 
-          {/* Stats — like More Nutrition's hero numbers */}
-          <div className="hero-stats flex gap-8 md:gap-12 mb-10">
-            <div>
-              <div className="font-display text-[clamp(1.8rem,4vw,3rem)] text-gold-500 font-medium leading-none tracking-[-0.02em]">$38.7K</div>
-              <div className="font-sans text-[10px] text-bone-50/50 tracking-[0.08em] uppercase mt-2">Avg. annual savings</div>
+          {/* Trophy badges — bold stat capsules, More Nutrition inspired */}
+          <div className="hero-badges flex flex-wrap gap-3 mb-10">
+            <div className="inline-flex items-center gap-3 bg-white/5 border border-gold-600/30 rounded-full px-5 py-2.5">
+              <span className="font-display text-xl md:text-2xl text-gold-500 font-medium leading-none">$38.7K</span>
+              <span className="font-sans text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Avg. annual<br />savings</span>
             </div>
-            <div className="w-px bg-gold-600/20" />
-            <div>
-              <div className="font-display text-[clamp(1.8rem,4vw,3rem)] text-bone-50 font-medium leading-none tracking-[-0.02em]">14 Days</div>
-              <div className="font-sans text-[10px] text-bone-50/50 tracking-[0.08em] uppercase mt-2">Average delivery</div>
+            <div className="inline-flex items-center gap-3 bg-white/5 border border-gold-600/30 rounded-full px-5 py-2.5">
+              <span className="font-display text-xl md:text-2xl text-bone-50 font-medium leading-none">14 Days</span>
+              <span className="font-sans text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Average<br />delivery</span>
             </div>
-            <div className="w-px bg-gold-600/20" />
-            <div>
-              <div className="font-display text-[clamp(1.8rem,4vw,3rem)] text-bone-50 font-medium leading-none tracking-[-0.02em]">60%</div>
-              <div className="font-sans text-[10px] text-bone-50/50 tracking-[0.08em] uppercase mt-2">Avg. time savings</div>
+            <div className="inline-flex items-center gap-3 bg-white/5 border border-gold-600/30 rounded-full px-5 py-2.5">
+              <span className="font-display text-xl md:text-2xl text-bone-50 font-medium leading-none">60%</span>
+              <span className="font-sans text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Avg. time<br />savings</span>
             </div>
           </div>
 
-          <div className="hero-cta">
+          <div className="hero-cta flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <a
               href="/booking"
               className="group inline-flex items-center font-sans text-sm font-semibold tracking-[0.06em] px-8 py-4 bg-gold-600 text-navy-950 hover:bg-gold-500 hover:shadow-[0_0_0_1px_rgba(217,164,52,0.5),0_8px_32px_-8px_rgba(217,164,52,0.4)] hover:-translate-y-0.5 active:scale-[0.97] transition-all duration-300 rounded-full"
@@ -85,6 +88,7 @@ export default function Hero() {
                 <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
+            <span className="font-sans text-xs text-bone-50/40 tracking-[0.06em]">Trusted by 50+ Houston SMBs</span>
           </div>
         </div>
       </motion.div>
