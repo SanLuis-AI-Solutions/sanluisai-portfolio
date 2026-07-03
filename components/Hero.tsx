@@ -47,7 +47,7 @@ export default function Hero() {
       </div>
 
       {/* Content — bold, asymmetric, high-energy */}
-      <motion.div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-24 md:py-40 z-10" style={{ opacity }}>
+      <motion.div className="relative max-w-[1440px] w-full mx-auto px-8 md:px-16 lg:px-24 py-16 md:py-40 z-10" style={{ opacity }}>
         <div className="max-w-[820px]">
           <div className="hero-label mb-6">
             <span className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-gold-500/70">SanLuis AI Solutions</span>
@@ -66,18 +66,18 @@ export default function Hero() {
           </div>
 
           {/* Trophy badges — bold stat capsules, More Nutrition inspired */}
-          <div className="hero-badges flex flex-wrap gap-3 mb-10">
-            <div className="inline-flex items-center gap-3 bg-white/5 border border-gold-600/30 rounded-full px-5 py-2.5">
-              <span className="font-display text-xl md:text-2xl text-gold-500 font-medium leading-none">$38.7K</span>
-              <span className="font-sans text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Avg. annual<br />savings</span>
+          <div className="hero-badges grid grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:gap-3 mb-10">
+            <div className="flex flex-col items-center text-center gap-0.5 sm:flex-row sm:items-center sm:text-left sm:gap-3 bg-white/5 border border-gold-600/30 rounded-full px-3 py-2.5 sm:px-5">
+              <span className="font-display text-lg sm:text-xl md:text-2xl text-gold-500 font-medium leading-none">$38.7K</span>
+              <span className="font-sans text-[9px] sm:text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Avg. annual<br />savings</span>
             </div>
-            <div className="inline-flex items-center gap-3 bg-white/5 border border-gold-600/30 rounded-full px-5 py-2.5">
-              <span className="font-display text-xl md:text-2xl text-bone-50 font-medium leading-none">14 Days</span>
-              <span className="font-sans text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Average<br />delivery</span>
+            <div className="flex flex-col items-center text-center gap-0.5 sm:flex-row sm:items-center sm:text-left sm:gap-3 bg-white/5 border border-gold-600/30 rounded-full px-3 py-2.5 sm:px-5">
+              <span className="font-display text-lg sm:text-xl md:text-2xl text-bone-50 font-medium leading-none">14 Days</span>
+              <span className="font-sans text-[9px] sm:text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Average<br />delivery</span>
             </div>
-            <div className="inline-flex items-center gap-3 bg-white/5 border border-gold-600/30 rounded-full px-5 py-2.5">
-              <span className="font-display text-xl md:text-2xl text-bone-50 font-medium leading-none">60%</span>
-              <span className="font-sans text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Avg. time<br />savings</span>
+            <div className="flex flex-col items-center text-center gap-0.5 sm:flex-row sm:items-center sm:text-left sm:gap-3 bg-white/5 border border-gold-600/30 rounded-full px-3 py-2.5 sm:px-5">
+              <span className="font-display text-lg sm:text-xl md:text-2xl text-bone-50 font-medium leading-none">60%</span>
+              <span className="font-sans text-[9px] sm:text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Avg. time<br />savings</span>
             </div>
           </div>
 
