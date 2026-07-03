@@ -35,12 +35,15 @@ export default function Hero() {
       {/* Warm gold glow — positioned behind the image area */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_70%_60%_at_70%_50%,rgba(217,164,52,0.08),transparent_60%)]" />
 
-      {/* Hero image — right side, showing both hands meeting */}
-      <div className="absolute right-0 top-0 w-full md:w-[55%] h-full">
-        <motion.div className="absolute inset-0 opacity-[0.35]" style={{ y: imgY, scale: imgScale }}>
-          <Image src="/hero-hands.png" alt="" fill className="object-cover object-center" priority sizes="(max-width: 768px) 100vw, 55vw" />
+      {/* Hero image — full-height, spans from center-right, showing both hands */}
+      <div className="absolute inset-0 md:inset-auto md:right-0 md:top-0 md:w-[60%] md:h-full">
+        <motion.div className="absolute inset-0 opacity-[0.40]" style={{ y: imgY, scale: imgScale }}>
+          <Image src="/hero-hands.png" alt="" fill className="object-cover md:object-[70%_center]" priority sizes="(max-width: 768px) 100vw, 60vw" />
         </motion.div>
-        <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#080D18] via-[#0C1A30]/80 to-transparent" />
+        {/* Gradient fade on left edge — gentle, doesn't eat the hands */}
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#080D18] via-[#0C1A30]/60 to-transparent" />
+        {/* Gradient fade on right edge — keeps image from clipping harshly */}
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#080D18]/20 to-transparent" />
       </div>
 
       {/* Content — bold, asymmetric, high-energy */}
