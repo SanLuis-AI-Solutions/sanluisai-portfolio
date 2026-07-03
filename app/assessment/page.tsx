@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import AnimatedSection from '@/components/AnimatedSection'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 const categories = [
   { key: 'clarity', label: 'Clarity', desc: 'Do you know the exact problem to solve?', max: 100 },
@@ -116,27 +117,30 @@ export default function AssessmentPage() {
 
   if (step === 'intro') {
     return (
-      <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
-        <AnimatedSection delay={0}>
-          <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
-            <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-6">AI Readiness Assessment</p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 leading-[0.95] mb-6">
-              How Ready Is Your<br />Organization for AI?
-            </h1>
-            <p className="font-sans text-base md:text-lg text-fg2 leading-relaxed mb-8 max-w-[50ch]">
-              Assess your readiness across five dimensions — clarity, data, adoption, infrastructure, and leadership.
-              Get a scored breakdown and a clear next step in under two minutes.
-            </p>
-            <button
-              onClick={() => setStep('quiz')}
-              className="font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded"
-            >
-              Start Assessment — 2 min
-            </button>
-            <p className="font-sans text-xs text-fg3 mt-4 italic">No email required. Results shown instantly.</p>
-          </section>
-        </AnimatedSection>
-      </main>
+      <>
+        <BreadcrumbJsonLd />
+        <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
+          <AnimatedSection delay={0}>
+            <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
+              <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-6">AI Readiness Assessment</p>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 leading-[0.95] mb-6">
+                How Ready Is Your<br />Organization for AI?
+              </h1>
+              <p className="font-sans text-base md:text-lg text-fg2 leading-relaxed mb-8 max-w-[50ch]">
+                Assess your readiness across five dimensions — clarity, data, adoption, infrastructure, and leadership.
+                Get a scored breakdown and a clear next step in under two minutes.
+              </p>
+              <button
+                onClick={() => setStep('quiz')}
+                className="font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded"
+              >
+                Start Assessment — 2 min
+              </button>
+              <p className="font-sans text-xs text-fg3 mt-4 italic">No email required. Results shown instantly.</p>
+            </section>
+          </AnimatedSection>
+        </main>
+      </>
     )
   }
 
@@ -144,178 +148,184 @@ export default function AssessmentPage() {
     const q = questions[current]
     const answered = answers[q.category] !== undefined
     return (
-      <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
-        <AnimatedSection delay={0}>
-          <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-2xl mx-auto">
-          {/* Progress bar */}
-          <div className="w-full h-1 bg-navy-100 rounded-full mb-10 overflow-hidden">
-            <div className="h-full bg-gold-600 transition-all duration-300" style={{ width: `${((current) / questions.length) * 100}%` }} />
-          </div>
+      <>
+        <BreadcrumbJsonLd />
+        <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
+          <AnimatedSection delay={0}>
+            <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-2xl mx-auto">
+              {/* Progress bar */}
+              <div className="w-full h-1 bg-navy-100 rounded-full mb-10 overflow-hidden">
+                <div className="h-full bg-gold-600 transition-all duration-300" style={{ width: `${((current) / questions.length) * 100}%` }} />
+              </div>
 
-          <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-3">{categories.find(c => c.key === q.category)?.label}</p>
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-900 leading-[1.1] mb-10">{q.question}</h2>
+              <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-3">{categories.find(c => c.key === q.category)?.label}</p>
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-900 leading-[1.1] mb-10">{q.question}</h2>
 
-          <div className="flex flex-col gap-3 mb-8">
-            {q.options.map((opt, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleAnswer(opt.score)}
-                className={`text-left font-sans text-sm md:text-base px-6 py-4 border rounded transition-all duration-200 ${
-                  answers[q.category] === opt.score
-                    ? 'border-gold-600 bg-gold-100/40 shadow-1'
-                    : 'border-navy-200 hover:border-gold-400 hover:bg-gold-100/20'
-                }`}
-              >
-                <span className="font-semibold text-navy-900">{opt.label}</span>
-              </button>
-            ))}
-          </div>
+              <div className="flex flex-col gap-3 mb-8">
+                {q.options.map((opt, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => handleAnswer(opt.score)}
+                    className={`text-left font-sans text-sm md:text-base px-6 py-4 border rounded transition-all duration-200 ${
+                      answers[q.category] === opt.score
+                        ? 'border-gold-600 bg-gold-100/40 shadow-1'
+                        : 'border-navy-200 hover:border-gold-400 hover:bg-gold-100/20'
+                    }`}
+                  >
+                    <span className="font-semibold text-navy-900">{opt.label}</span>
+                  </button>
+                ))}
+              </div>
 
-          {current > 0 && (
-            <button onClick={handleBack} className="font-sans text-sm text-fg3 hover:text-navy-800 transition-colors duration-200 underline">
-              ← Back
-            </button>
-          )}
-        </section>
-        </AnimatedSection>
-      </main>
+              {current > 0 && (
+                <button onClick={handleBack} className="font-sans text-sm text-fg3 hover:text-navy-800 transition-colors duration-200 underline">
+                  ← Back
+                </button>
+              )}
+            </section>
+          </AnimatedSection>
+        </main>
+      </>
     )
   }
 
   return (
-    <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
-      <AnimatedSection delay={0}>
-        <section className="pt-28 md:pt-36 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
-        <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-4">Your Results</p>
+    <>
+      <BreadcrumbJsonLd />
+      <main className="min-h-screen bg-bone-50 text-fg1 pt-16">
+        <AnimatedSection delay={0}>
+          <section className="pt-28 md:pt-36 pb-16 px-6 md:px-12 max-w-3xl mx-auto">
+            <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-fg3 mb-4">Your Results</p>
 
-        {/* Score Circle */}
-        <div className="flex flex-col items-center mb-10">
-          <div className="w-40 h-40 md:w-52 md:h-52 rounded-full border-8 border-navy-100 flex flex-col items-center justify-center mb-4">
-            <span className="font-display text-5xl md:text-6xl font-bold text-navy-900">{percentScore}</span>
-            <span className="font-sans text-xs text-fg3 mt-1">out of 100</span>
-          </div>
-          <h2 className={`font-display text-2xl md:text-3xl font-bold ${verdict.color}`}>{verdict.label}</h2>
-        </div>
-
-        <p className="font-sans text-base text-fg2 leading-relaxed mb-10 text-center max-w-[50ch] mx-auto">{verdict.summary}</p>
-
-        {/* Breakdown Bars */}
-        <div className="mb-10">
-          <h3 className="font-display text-lg font-bold text-navy-900 mb-5">Score Breakdown</h3>
-          {categories.map(cat => {
-            const score = answers[cat.key] || 0
-            return (
-              <div key={cat.key} className="mb-4">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="font-sans text-sm font-medium text-fg1">{cat.label}</span>
-                  <span className="font-sans text-xs text-fg3">{score} / 100</span>
-                </div>
-                <div className="w-full h-2 bg-navy-100 rounded-full overflow-hidden">
-                  <div className={`h-full transition-all duration-500 ${getBarColor(score)}`} style={{ width: `${score}%` }} />
-                </div>
-                <p className="font-sans text-xs text-fg3 mt-1">{cat.desc}</p>
+            {/* Score Circle */}
+            <div className="flex flex-col items-center mb-10">
+              <div className="w-40 h-40 md:w-52 md:h-52 rounded-full border-8 border-navy-100 flex flex-col items-center justify-center mb-4">
+                <span className="font-display text-5xl md:text-6xl font-bold text-navy-900">{percentScore}</span>
+                <span className="font-sans text-xs text-fg3 mt-1">out of 100</span>
               </div>
-            )
-          })}
-        </div>
-
-        {/* CTA */}
-        <div className="border border-navy-200 bg-white rounded p-6 md:p-8 mb-10 shadow-2">
-          <h3 className="font-display text-xl font-bold text-navy-900 mb-2">Your Next Step</h3>
-          <p className="font-sans text-sm text-fg2 mb-5">
-            {percentScore >= 80
-              ? 'You are ready to scope and build. Book a Discovery Session to define the engagement.'
-              : 'Book a 60-minute Discovery Session. We will diagnose your exact gaps and produce a prioritized AI Action Plan — delivered as a PDF.'}
-          </p>
-          <a href="/booking" className="inline-block font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded">
-            Book $300 Discovery Session
-          </a>
-        </div>
-
-        {/* Email Capture */}
-        <div className="border border-navy-200 bg-white rounded p-6 md:p-8 shadow-2">
-          <h3 className="font-display text-lg font-bold text-navy-900 mb-2">Save Your Results</h3>
-          <p className="font-sans text-sm text-fg2 mb-4">Get your AI Readiness Report sent to your inbox, plus our guide to the 5 most common AI implementation failures.</p>
-          {submitted ? (
-            <div className="font-sans text-sm text-emerald-600 p-4 bg-emerald-50 rounded border border-emerald-200">
-              ✅ Report sent! Check your inbox.
+              <h2 className={`font-display text-2xl md:text-3xl font-bold ${verdict.color}`}>{verdict.label}</h2>
             </div>
-          ) : (
-            <form
-              onSubmit={async (e) => {
-                e.preventDefault()
-                setSubmitting(true)
-                setSubmitError('')
-                try {
-                  const res = await fetch('/api/assessment', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                      name: name || email.split('@')[0] || '',
-                      email,
-                      industry,
-                      scores: answers,
-                    }),
-                  })
-                  const data = await res.json()
-                  if (data.success) {
-                    setSubmitted(true)
-                  } else {
-                    setSubmitError('Something went wrong. Please try again.')
-                  }
-                } catch {
-                  setSubmitError('Network error. Please try again.')
-                } finally {
-                  setSubmitting(false)
-                }
-              }}
-              className="flex flex-col gap-3"
-            >
-              <input
-                type="text"
-                placeholder="Your name (optional)"
-                value={name}
-                onChange={e => setName(e.target.value)}
-                className="font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
-              />
-              <select
-                value={industry}
-                onChange={e => setIndustry(e.target.value)}
-                className="font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors bg-white"
-              >
-                <option value="">What industry are you in? (optional)</option>
-                <option value="Construction">Construction</option>
-                <option value="Healthcare">Healthcare</option>
-                <option value="Real Estate">Real Estate</option>
-                <option value="Logistics">Logistics</option>
-                <option value="Professional Services">Professional Services</option>
-                <option value="Other">Other</option>
-              </select>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <input
-                  type="email"
-                  required
-                  placeholder="your@email.com"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  className="flex-1 font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
-                />
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="font-sans text-sm font-semibold px-6 py-3 bg-gold-600 text-white hover:bg-gold-700 disabled:bg-gold-400 disabled:cursor-not-allowed transition-all duration-200 rounded whitespace-nowrap"
+
+            <p className="font-sans text-base text-fg2 leading-relaxed mb-10 text-center max-w-[50ch] mx-auto">{verdict.summary}</p>
+
+            {/* Breakdown Bars */}
+            <div className="mb-10">
+              <h3 className="font-display text-lg font-bold text-navy-900 mb-5">Score Breakdown</h3>
+              {categories.map(cat => {
+                const score = answers[cat.key] || 0
+                return (
+                  <div key={cat.key} className="mb-4">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-sans text-sm font-medium text-fg1">{cat.label}</span>
+                      <span className="font-sans text-xs text-fg3">{score} / 100</span>
+                    </div>
+                    <div className="w-full h-2 bg-navy-100 rounded-full overflow-hidden">
+                      <div className={`h-full transition-all duration-500 ${getBarColor(score)}`} style={{ width: `${score}%` }} />
+                    </div>
+                    <p className="font-sans text-xs text-fg3 mt-1">{cat.desc}</p>
+                  </div>
+                )
+              })}
+            </div>
+
+            {/* CTA */}
+            <div className="border border-navy-200 bg-white rounded p-6 md:p-8 mb-10 shadow-2">
+              <h3 className="font-display text-xl font-bold text-navy-900 mb-2">Your Next Step</h3>
+              <p className="font-sans text-sm text-fg2 mb-5">
+                {percentScore >= 80
+                  ? 'You are ready to scope and build. Book a Discovery Session to define the engagement.'
+                  : 'Book a 60-minute Discovery Session. We will diagnose your exact gaps and produce a prioritized AI Action Plan — delivered as a PDF.'}
+              </p>
+              <a href="/booking" className="inline-block font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow transition-all duration-220 rounded">
+                Book $300 Discovery Session
+              </a>
+            </div>
+
+            {/* Email Capture */}
+            <div className="border border-navy-200 bg-white rounded p-6 md:p-8 shadow-2">
+              <h3 className="font-display text-lg font-bold text-navy-900 mb-2">Save Your Results</h3>
+              <p className="font-sans text-sm text-fg2 mb-4">Get your AI Readiness Report sent to your inbox, plus our guide to the 5 most common AI implementation failures.</p>
+              {submitted ? (
+                <div className="font-sans text-sm text-emerald-600 p-4 bg-emerald-50 rounded border border-emerald-200">
+                  ✅ Report sent! Check your inbox.
+                </div>
+              ) : (
+                <form
+                  onSubmit={async (e) => {
+                    e.preventDefault()
+                    setSubmitting(true)
+                    setSubmitError('')
+                    try {
+                      const res = await fetch('/api/assessment', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          name: name || email.split('@')[0] || '',
+                          email,
+                          industry,
+                          scores: answers,
+                        }),
+                      })
+                      const data = await res.json()
+                      if (data.success) {
+                        setSubmitted(true)
+                      } else {
+                        setSubmitError('Something went wrong. Please try again.')
+                      }
+                    } catch {
+                      setSubmitError('Network error. Please try again.')
+                    } finally {
+                      setSubmitting(false)
+                    }
+                  }}
+                  className="flex flex-col gap-3"
                 >
-                  {submitting ? 'Sending...' : 'Send My Report'}
-                </button>
-              </div>
-              {submitError && (
-                <p className="font-sans text-xs text-red-500">{submitError}</p>
+                  <input
+                    type="text"
+                    placeholder="Your name (optional)"
+                    value={name}
+                    onChange={e => setName(e.target.value)}
+                    className="font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
+                  />
+                  <select
+                    value={industry}
+                    onChange={e => setIndustry(e.target.value)}
+                    className="font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors bg-white"
+                  >
+                    <option value="">What industry are you in? (optional)</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Logistics">Logistics</option>
+                    <option value="Professional Services">Professional Services</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      required
+                      placeholder="your@email.com"
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
+                      className="flex-1 font-sans text-sm px-4 py-3 border border-navy-200 rounded focus:border-gold-600 focus:ring-1 focus:ring-gold-600 outline-none transition-colors"
+                    />
+                    <button
+                      type="submit"
+                      disabled={submitting}
+                      className="font-sans text-sm font-semibold px-6 py-3 bg-gold-600 text-white hover:bg-gold-700 disabled:bg-gold-400 disabled:cursor-not-allowed transition-all duration-200 rounded whitespace-nowrap"
+                    >
+                      {submitting ? 'Sending...' : 'Send My Report'}
+                    </button>
+                  </div>
+                  {submitError && (
+                    <p className="font-sans text-xs text-red-500">{submitError}</p>
+                  )}
+                </form>
               )}
-            </form>
-          )}
-        </div>
-      </section>
+            </div>
+          </section>
         </AnimatedSection>
-    </main>
+      </main>
+    </>
   )
 }
