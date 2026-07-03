@@ -1,3 +1,4 @@
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 import Hero from '@/components/Hero'
 import HeroStats from '@/components/HeroStats'
 import Problem from '@/components/Problem'
@@ -12,7 +13,9 @@ import FAQ from '@/components/FAQ'
 
 export default function HomePage() {
   return (
-    <main className="pb-[72px] md:pb-0">
+    <>
+      <BreadcrumbJsonLd />
+      <main className="pb-[72px] md:pb-0">
       <Hero />
       <Problem />
       <HeroStats />

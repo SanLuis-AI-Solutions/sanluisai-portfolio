@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'Case Studies | SanLuis AI Solutions',
@@ -74,6 +75,7 @@ const cases = [
 export default function Page() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="No. 03: The Evidence"
         title="Case Studies."

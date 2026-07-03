@@ -5,6 +5,7 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import OrnamentDivider from '@/components/OrnamentDivider'
 import FlameMark from '@/components/FlameMark'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'About Daniel San Luis and SanLuis AI Solutions | Houston AI',
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="Why We Exist"
         title="We saw a gap in what AI actually delivers."

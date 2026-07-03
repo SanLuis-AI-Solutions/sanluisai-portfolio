@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import CtaBar from '@/components/CtaBar'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | SanLuis AI Solutions',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="Legal"
         title="Privacy Policy."

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import FlameMark from '@/components/FlameMark'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'Pricing | SanLuis AI Solutions',
@@ -79,6 +80,7 @@ const additional = [
 export default function PricingPage() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="Pricing"
         title="Simple pricing, bigger outcomes."

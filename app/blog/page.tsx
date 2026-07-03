@@ -3,6 +3,7 @@ import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import SubscribeForm from '@/components/SubscribeForm'
 import FlameMark from '@/components/FlameMark'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 const posts = [
   {
@@ -76,6 +77,7 @@ const posts = [
 export default function Page() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="Insights"
         title="Blog."

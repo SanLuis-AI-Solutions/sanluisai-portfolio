@@ -5,6 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import GoldThreadTimeline from '@/components/GoldThreadTimeline'
 import ProcessTextReveal from '@/components/ProcessTextReveal'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'How It Works | 4-Step AI Development Process | SanLuis AI Solutions',
@@ -127,6 +128,7 @@ const benefits = [
 export default function HowItWorksPage() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLdJson) }}

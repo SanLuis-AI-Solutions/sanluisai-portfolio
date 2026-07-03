@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import FaqEntry from '@/components/FaqEntry'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 const faqSchemaQuestions = [
   { question: 'How much does a custom AI system cost?', answer: 'Custom AI systems start at $5,000 and AI Automation starts at $1,200. Pricing depends on scope, integrations, and complexity, but we give you a firm quote before any work begins. Most clients find our pricing is a fraction of traditional agency estimates because we build with modern AI tooling and reusable components.' },
@@ -162,6 +163,7 @@ const faqCategories = [
 export default function FaqPage() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="FAQ"
         title="Frequently Asked Questions."

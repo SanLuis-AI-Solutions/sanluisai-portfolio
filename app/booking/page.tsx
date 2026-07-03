@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata, Viewport } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'Book a $300 Discovery Session | SanLuis AI Solutions',
@@ -25,6 +26,7 @@ export const viewport: Viewport = {
 export default function BookingPage() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="Get Started"
         title="Book a Discovery Session."

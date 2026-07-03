@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ServicesContent from '@/components/ServicesContent'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'Services | SanLuis AI Solutions',
@@ -16,5 +17,8 @@ export const metadata: Metadata = {
 }
 
 export default function ServicesPage() {
-  return <ServicesContent />
+  return (
+    <>
+      <BreadcrumbJsonLd />
+      <ServicesContent />
 }

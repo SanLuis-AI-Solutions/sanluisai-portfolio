@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: 'Our Work — AI Projects & Case Studies | SanLuis AI Solutions',
@@ -64,6 +65,7 @@ const earlierWork = [
 export default function WorkPage() {
   return (
     <>
+      <BreadcrumbJsonLd />
       <PageHeader
         eyebrow="The Work"
         title="Six clients. Six projects. Built with AI, shipped to production."
