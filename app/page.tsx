@@ -16,17 +16,18 @@ export default function HomePage() {
     <>
       <BreadcrumbJsonLd />
       <main className="pb-[72px] md:pb-0">
-      <Hero />
-      <Problem />
-      <HeroStats />
-      <Process />
-      <Services />
-      <ROICalculator />
-      <CaseStudies />
-      <SocialProof />
-      <WhatWeDont />
-      <CTA />
-      <FAQ />
-    </main>
+        <Hero />
+        <Problem />
+        <HeroStats />
+        <Process />
+        <Services />
+        <ROICalculator />
+        <CaseStudies />
+        <SocialProof />
+        <WhatWeDont />
+        <CTA />
+        <FAQ />
+      </main>
+    </>
   )
 }
