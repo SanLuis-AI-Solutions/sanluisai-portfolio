@@ -105,8 +105,8 @@ export default function Hero() {
           </div>
 
           {/* Trophy badges — bold stat capsules, More Nutrition inspired */}
-          <div className="hero-badges grid grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:gap-3 mb-10">
-            <div className="flex flex-col items-center text-center gap-0.5 sm:flex-row sm:items-center sm:text-left sm:gap-3 bg-white/5 border border-gold-600/30 rounded-full px-3 py-2.5 sm:px-5">
+          <div className="hero-badges grid grid-cols-2 sm:grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:gap-3 mb-10">
+            <div className="flex flex-row items-center justify-center gap-2 sm:flex-row sm:items-center sm:text-left sm:gap-3 bg-white/5 border border-gold-600/30 rounded-full px-3 py-2 sm:px-5">
               <span className="font-display text-lg sm:text-xl md:text-2xl text-gold-500 font-medium leading-none">$38.7K</span>
               <span className="font-sans text-[9px] sm:text-[10px] text-bone-50/50 tracking-[0.06em] uppercase">Avg. annual<br />savings</span>
             </div>
