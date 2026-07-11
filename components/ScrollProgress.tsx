@@ -67,12 +67,12 @@ export default function ScrollProgress() {
             }}
           >
             <span className={`font-sans text-[10px] tracking-[0.12em] uppercase transition-all duration-300 ${
-              activeSection === s.id ? 'text-gold-500' : 'text-navy-400'
-            }`}>
+              activeSection === s.id ? 'text-gold-500' : 'text-navy-600'
+                          }`}>
               {s.label}
             </span>
             <span className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              activeSection === s.id ? 'bg-gold-500 scale-125' : 'bg-navy-300'
+              activeSection === s.id ? 'bg-gold-500 scale-125' : 'bg-navy-500'
             }`} />
           </a>
         ))}

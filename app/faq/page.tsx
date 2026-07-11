@@ -170,6 +170,7 @@ export default function FaqPage() {
         description="Everything you need to know about working with us: pricing, what to expect, technical questions, and whether your business is ready for AI. If you don't see your question here, reach out."
       />
 
+      <main>
       <AnimatedSection delay={0}>
       <section className="bg-bone-50 min-h-screen px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl mx-auto">
@@ -245,6 +246,7 @@ export default function FaqPage() {
         </div>
       </section>
       </AnimatedSection>
+    </main>
     </>
   )
 }
