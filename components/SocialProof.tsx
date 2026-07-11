@@ -61,8 +61,8 @@ export default function SocialProof() {
       {/* Marquee/ticker band */}
       <div className="w-full overflow-hidden mb-20 border-t border-b border-gold-600/10 py-4">
         <div className="animate-marquee whitespace-nowrap">
-          <span className="font-mono text-xs text-navy-500 tracking-[0.12em] uppercase">{marqueeItems}</span>
-          <span className="font-mono text-xs text-navy-500 tracking-[0.12em] uppercase">{marqueeItems}</span>
+          <span className="font-mono text-xs text-navy-700 tracking-[0.12em] uppercase">{marqueeItems}</span>
+          <span className="font-mono text-xs text-navy-700 tracking-[0.12em] uppercase">{marqueeItems}</span>
         </div>
       </div>
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
@@ -78,19 +78,19 @@ export default function SocialProof() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 max-w-4xl mx-auto">
             <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">60%</div>
-              <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Faster quoting</div>
+              <div className="font-sans text-xs text-navy-700 uppercase tracking-wider">Faster quoting</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">3x</div>
-              <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Inbound leads</div>
+              <div className="font-sans text-xs text-navy-700 uppercase tracking-wider">Inbound leads</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">92%</div>
-              <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Client satisfaction</div>
+              <div className="font-sans text-xs text-navy-700 uppercase tracking-wider">Client satisfaction</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm border border-white/70 shadow-2 hover:shadow-3 rounded p-6 text-center hover:-translate-y-0.5 hover:border-gold-600/30 transition-all duration-300">
               <div className="font-display text-3xl text-gold-600 mb-1">14d</div>
-              <div className="font-sans text-xs text-navy-500 uppercase tracking-wider">Avg. to prototype</div>
+              <div className="font-sans text-xs text-navy-700 uppercase tracking-wider">Avg. to prototype</div>
             </div>
           </div>
         </FadeIn>
@@ -107,7 +107,7 @@ export default function SocialProof() {
                   <div className="relative pl-6 border-l-2 border-gold-500/40 mb-4">
                     <p className="font-display text-base md:text-lg text-navy-700 italic leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
                   </div>
-                    <p className="font-sans text-xs text-navy-500">{t.attribution}</p>
+                    <p className="font-sans text-xs text-navy-700">{t.attribution}</p>
                 </div>
               </div>
             </FadeIn>
