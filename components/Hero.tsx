@@ -26,28 +26,18 @@ export default function Hero() {
         .fromTo('.hero-badges', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, '-=0.3')
         .fromTo('.hero-cta', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.3')
 
-      // Scroll-triggered text reveal — each word fades in as user scrolls
-      // This creates a "reading along with scroll" effect on the headline
+      // Scroll-triggered parallax — headline moves at different speed on scroll
       const headline = textRef.current?.querySelector('h1')
       if (headline) {
-        const words = headline.querySelectorAll('.reveal-word')
         ScrollTrigger.create({
           trigger: heroRef.current,
           start: 'top top',
-          end: 'center center',
-          scrub: 1,
+          end: 'bottom top',
+          scrub: 1.5,
           onUpdate: (self) => {
             const progress = self.progress
-            words.forEach((word, i) => {
-              const wordProgress = (progress - i * 0.08) / 0.15
-              if (wordProgress > 0 && wordProgress < 1) {
-                ;(word as HTMLElement).style.opacity = String(wordProgress)
-                ;(word as HTMLElement).style.transform = `translateY(${(1 - wordProgress) * 20}px)`
-              } else if (wordProgress >= 1) {
-                ;(word as HTMLElement).style.opacity = '1'
-                ;(word as HTMLElement).style.transform = 'translateY(0)'
-              }
-            })
+            // Subtle text parallax — whole headline shifts up
+            ;(headline as HTMLElement).style.transform = `translateY(${progress * -30}px)`
           },
         })
       }
@@ -99,7 +89,7 @@ export default function Hero() {
           <div ref={textRef} className="hero-headline mb-3">
             <h1 className="font-display text-[clamp(3.2rem,9vw,6.5rem)] text-bone-50 font-medium leading-[0.88] tracking-[-0.035em]">
               {'Get 5+ Hours Back Every Week'.split(' ').map((word, i) => (
-                <span key={i} className="reveal-word inline-block mr-[0.3em]" style={{ opacity: 0, transform: 'translateY(20px)' }}>
+                <span key={i} className="reveal-word inline-block mr-[0.3em]">
                   {word}
                 </span>
               ))}
