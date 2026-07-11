@@ -61,8 +61,8 @@ export default function SocialProof() {
       {/* Marquee/ticker band */}
       <div className="w-full overflow-hidden mb-20 border-t border-b border-gold-600/10 py-4">
         <div className="animate-marquee whitespace-nowrap">
-          <span className="font-mono text-xs text-gold-600/60 tracking-[0.12em] uppercase">{marqueeItems}</span>
-          <span className="font-mono text-xs text-gold-600/60 tracking-[0.12em] uppercase">{marqueeItems}</span>
+          <span className="font-mono text-xs text-gold-700 tracking-[0.12em] uppercase">{marqueeItems}</span>
+          <span className="font-mono text-xs text-gold-700 tracking-[0.12em] uppercase">{marqueeItems}</span>
         </div>
       </div>
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24">
