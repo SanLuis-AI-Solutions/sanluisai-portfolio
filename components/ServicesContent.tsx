@@ -228,8 +228,18 @@ export default function ServicesContent() {
             </div>
           </AnimatedSection>
 
-          {/* Section divider */}
-          <div className="h-px bg-gold-600/20 mb-20" />
+          {/* Dashboard mockup — shows what you get */}
+          <AnimatedSection delay={0.1}>
+            <div className="max-w-4xl mx-auto mb-20 text-center">
+              <span className="font-sans text-xs font-semibold tracking-[0.16em] uppercase text-gold-600 mb-6 flex items-center justify-center gap-4">
+                See It In Action <span className="h-px w-8 bg-gold-600/40" />
+              </span>
+              <div className="rounded-lg overflow-hidden shadow-2 border border-navy-200/60">
+                <img src="/assets/dashboard-mockup.svg" alt="SanLuis AI dashboard showing real-time metrics, activity feed, and system status" className="w-full h-auto" />
+              </div>
+              <p className="font-sans text-xs text-fg3 mt-4">What you see when your system is live. Real-time dashboard, activity feed, savings tracking.</p>
+            </div>
+          </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
             <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-20 text-center relative overflow-hidden">

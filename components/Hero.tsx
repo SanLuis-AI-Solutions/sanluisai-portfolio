@@ -121,15 +121,18 @@ export default function Hero() {
           </div>
 
           <div className="hero-cta flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <a
-              href="/booking"
-              className="group inline-flex items-center font-sans text-sm font-semibold tracking-[0.06em] px-8 py-4 bg-gold-600 text-navy-950 hover:bg-gold-500 hover:shadow-[0_0_0_1px_rgba(217,164,52,0.5),0_8px_32px_-8px_rgba(217,164,52,0.4)] hover:-translate-y-0.5 active:scale-[0.97] transition-all duration-300 rounded-full"
-            >
-              Book a Discovery Session
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="ml-3 group-hover:translate-x-1 transition-transform duration-300">
-                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </a>
+            <div className="flex flex-col gap-1">
+              <a
+                href="/booking"
+                className="group inline-flex items-center font-sans text-sm font-semibold tracking-[0.06em] px-8 py-4 bg-gold-600 text-navy-950 hover:bg-gold-500 hover:shadow-[0_0_0_1px_rgba(217,164,52,0.5),0_8px_32px_-8px_rgba(217,164,52,0.4)] hover:-translate-y-0.5 active:scale-[0.97] transition-all duration-300 rounded-full"
+              >
+                Book a Discovery Session
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="ml-3 group-hover:translate-x-1 transition-transform duration-300">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+              <span className="font-sans text-[10px] text-bone-50/40 leading-relaxed max-w-[36ch]">60-min working session. You get a written roadmap. $300 — refundable if we don't find 3 opportunities.</span>
+            </div>
             <span className="font-sans text-xs text-bone-50/40 tracking-[0.06em]">Trusted by 50+ Houston SMBs</span>
           </div>
         </div>
