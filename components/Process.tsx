@@ -22,36 +22,23 @@ const steps = [
 
 export default function Process() {
   const sectionRef = useRef<HTMLElement>(null)
-  const pinRef = useRef<HTMLDivElement>(null)
-  const stepsRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Pin-scroll: the steps container pins while each step reveals
-      const steps = stepsRef.current?.querySelectorAll('.process-step')
+      // Gentle scroll-triggered reveal for each step — no pin-scroll to avoid Lenis conflict
+      const steps = sectionRef.current?.querySelectorAll('.process-step')
       if (!steps || steps.length === 0) return
 
-      // Create a pin-scroll wrapper
-      ScrollTrigger.create({
-        trigger: pinRef.current,
-        start: 'top top',
-        end: `+=${steps.length * 100}%`,
-        pin: true,
-        pinSpacing: true,
-        anticipatePin: 1,
-      })
-
-      // Each step fades in as we scroll through
       steps.forEach((step, i) => {
         ScrollTrigger.create({
           trigger: step,
-          start: 'top center',
-          end: 'center center',
+          start: 'top 85%',
+          end: 'top 40%',
           scrub: 1,
           onUpdate: (self) => {
-            const progress = self.progress
-            ;(step as HTMLElement).style.opacity = String(Math.min(progress * 2, 1))
-            ;(step as HTMLElement).style.transform = `translateY(${(1 - Math.min(progress * 2, 1)) * 30}px)`
+            const progress = Math.min(self.progress * 2, 1)
+            ;(step as HTMLElement).style.opacity = String(progress)
+            ;(step as HTMLElement).style.transform = `translateY(${(1 - progress) * 24}px)`
           },
         })
       })
@@ -62,6 +49,9 @@ export default function Process() {
 
   return (
     <section ref={sectionRef} className="relative py-32 md:py-40 bg-bgCanvas overflow-hidden">
+      {/* Section divider — top */}
+      <div className="absolute top-0 left-8 md:left-16 lg:left-24 right-8 md:right-16 lg:right-24 h-px bg-gold-600/20" />
+
       {/* Background texture */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
         <div className="w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(17,36,71,0.4) 1px, transparent 0)', backgroundSize: '40px 40px' }} />
@@ -74,13 +64,13 @@ export default function Process() {
           </div>
         </FadeIn>
 
-        <div ref={pinRef} className="relative min-h-[80vh]">
+        <div className="relative">
           {/* Vertical gold line */}
           <div className="absolute left-0 md:left-6 top-0 bottom-0 w-px bg-gold-600/20 hidden md:block" />
 
-          <div ref={stepsRef} className="space-y-16 md:space-y-24 pl-0 md:pl-16">
+          <div className="space-y-16 md:space-y-24 pl-0 md:pl-16">
             {steps.map((s, i) => (
-              <div key={s.num} className="process-step" style={{ opacity: i === 0 ? 1 : 0 }}>
+              <div key={s.num} className="process-step" style={{ opacity: i === 0 ? 1 : 0.15 }}>
                 <FadeIn key={s.num} delay={0.15 + i * 0.15}>
                   <div className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-12 items-start">
                     {/* Number + circle */}
@@ -113,6 +103,9 @@ export default function Process() {
           </div>
         </div>
       </div>
+
+      {/* Section divider — bottom */}
+      <div className="absolute bottom-0 left-8 md:left-16 lg:left-24 right-8 md:right-16 lg:right-24 h-px bg-gold-600/20" />
     </section>
   )
 }

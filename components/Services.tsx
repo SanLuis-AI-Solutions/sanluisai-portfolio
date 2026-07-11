@@ -20,7 +20,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 md:py-40 bg-bgCanvas relative overflow-hidden">
+    <section id="services" className="py-32 md:py-40 bg-bone-100 relative overflow-hidden">
       {/* Subtle background texture */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
         <div className="w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(17,36,71,0.3) 1px, transparent 0)', backgroundSize: '40px 40px' }} />
