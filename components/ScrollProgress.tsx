@@ -57,9 +57,7 @@ export default function ScrollProgress() {
           <a
             key={s.id}
             href={`#${s.id}`}
-            className={`group flex items-center gap-3 transition-all duration-300 ${
-              activeSection === s.id ? 'opacity-100' : 'opacity-30 hover:opacity-60'
-            }`}
+            className={`group flex items-center gap-3 transition-all duration-300`}
             onClick={(e) => {
               e.preventDefault()
               const el = document.getElementById(s.id)
