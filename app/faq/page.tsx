@@ -190,7 +190,7 @@ export default function FaqPage() {
           {faqCategories.map((category) => (
             <div key={category.id} id={category.id} className="mb-16 scroll-mt-24">
               <h2 className="font-display text-2xl text-navy-800 mb-8 flex items-center gap-3">
-                <span className="font-sans text-xs font-semibold tracking-[0.08em] uppercase px-3 py-1 bg-gold-100 text-gold-700 rounded-full">
+                <span className="font-sans text-xs font-semibold tracking-[0.08em] uppercase px-3 py-1 bg-gold-100 text-navy-700 rounded-full">
                   {category.label}
                 </span>
               </h2>

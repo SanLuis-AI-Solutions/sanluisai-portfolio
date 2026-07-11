@@ -12,7 +12,7 @@ export default function FaqEntry({ question, answer, index }: { question: string
         className="flex items-start gap-4 w-full text-left cursor-pointer group"
         aria-expanded={open}
       >
-        <span className="font-sans text-xs font-semibold text-gold-600 mt-1 min-w-[2rem] tabular-nums">
+        <span className="font-sans text-xs font-semibold text-navy-500 mt-1 min-w-[2rem] tabular-nums">
           {String(index + 1).padStart(2, '0')}
         </span>
         <div className="flex-1 min-w-0">
