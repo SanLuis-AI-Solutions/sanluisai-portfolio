@@ -68,7 +68,7 @@ export default function CaseStudies() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cases.map((c, i) => (
               <FadeIn key={c.slug} delay={0.2 + i * 0.1}>
-                <a href={`/case-studies/${c.slug}`} className="block bg-bone-50 border border-bone-200/80 hover:border-gold-500/60 shadow-2 hover:shadow-4 rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 group cursor-pointer h-full flex flex-col relative">
+                <a href={`/case-studies/${c.slug}`} className="block bg-bone-50 border border-bone-200/80 hover:border-gold-500/60 shadow-2 hover:shadow-4 rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:-translate-y-1.5 group cursor-pointer active:scale-[0.99] h-full flex flex-col relative">
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold-700/40 via-gold-500/80 to-gold-700/40 group-hover:from-gold-600 group-hover:via-gold-400 group-hover:to-gold-600 transition-all duration-300 z-10" />
                   <div className="relative w-full h-48 bg-navy-100 overflow-hidden border-b border-navy-100/80">
                     <Image src={c.img} alt={`${c.company} dashboard: AI implementation result`} fill className="object-cover object-center group-hover:scale-[1.05] transition-transform duration-700 ease-out" sizes="(max-width: 768px) 100vw, 33vw" />

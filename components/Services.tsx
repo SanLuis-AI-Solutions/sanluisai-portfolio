@@ -46,13 +46,13 @@ export default function Services() {
             {services.map((s, i) => (
               <FadeIn key={s.num} delay={0.2 + i * 0.1}>
                 <a href={s.href} className="block group cursor-pointer">
-                  <div className="flex items-start gap-6 bg-white border border-navy-200/80 hover:border-gold-500/60 shadow-1 hover:shadow-3 rounded-lg p-6 md:p-8 transition-all duration-300 hover:-translate-y-0.5">
+                  <div className="flex items-start gap-6 bg-white border border-navy-200/80 hover:border-gold-500/60 shadow-1 hover:shadow-3 rounded-lg p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-gold-50/30 group-active:scale-[0.99]">
                     {/* Icon container */}
-                    <div className="w-12 h-12 rounded-full bg-navy-50 border border-navy-200/50 flex items-center justify-center flex-shrink-0 group-hover:bg-gold-50 group-hover:border-gold-600/30 transition-all duration-300">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-navy-500 group-hover:text-gold-600 transition-colors duration-300" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d={s.icon} />
-                      </svg>
-                    </div>
+                    <div className="w-12 h-12 rounded-full bg-navy-50 border border-navy-200/50 flex items-center justify-center flex-shrink-0 group-hover:bg-gold-50 group-hover:border-gold-600/30 group-hover:scale-105 transition-all duration-300">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-navy-500 group-hover:text-gold-600 transition-colors duration-300" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                            <path d={s.icon} />
+                          </svg>
+                        </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-3 mb-1">
                         <span className="font-mono text-[10px] text-gold-600/60 tracking-[0.12em]">{s.num}</span>

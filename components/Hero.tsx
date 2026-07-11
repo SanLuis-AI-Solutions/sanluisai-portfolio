@@ -99,8 +99,8 @@ export default function Hero() {
           <div ref={textRef} className="hero-headline mb-3">
             <h1 className="font-display text-[clamp(3.2rem,9vw,6.5rem)] text-bone-50 font-medium leading-[0.88] tracking-[-0.035em]">
               {'Get 5+ Hours Back Every Week'.split(' ').map((word, i) => (
-                <span key={i} className="reveal-word inline-block" style={{ opacity: 0, transform: 'translateY(20px)' }}>
-                  {word}{' '}
+                <span key={i} className="reveal-word inline-block mr-[0.3em]" style={{ opacity: 0, transform: 'translateY(20px)' }}>
+                  {word}
                 </span>
               ))}
               <br />
