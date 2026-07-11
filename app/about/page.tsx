@@ -25,14 +25,18 @@ export default function Page() {
   return (
     <>
       <BreadcrumbJsonLd />
-      <PageHeader
-        eyebrow="Why We Exist"
-        title="We saw a gap in what AI actually delivers."
-        description="Not another chatbot company. Not another consulting firm. We build working systems that save you a day a week. Every single week."
-      />
 
-      {/* Light content section */}
       <AnimatedSection delay={0}>
+        <PageHeader
+          eyebrow="Why We Exist"
+          title="We saw a gap in what AI actually delivers."
+          description="Not another chatbot company. Not another consulting firm. We build working systems that save you a day a week. Every single week."
+        />
+      </AnimatedSection>
+
+      {/* Gold divider between header and content */}
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-gold-600/40 to-transparent" />
+
       <main className="bg-bone-50 min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           {/* Flame mark */}

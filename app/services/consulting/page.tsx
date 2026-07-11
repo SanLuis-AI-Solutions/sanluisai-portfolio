@@ -187,7 +187,9 @@ export default function ConsultingPage() {
       </AnimatedSection>
 
       {/* Dark CTA section */}
-      <section className="bg-navy-900 py-20">
+      <section className="bg-navy-900 py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(217,164,52,0.06),transparent_60%)] pointer-events-none" />
+        <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/10" />
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to get expert AI guidance?</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Book a call to discuss your AI strategy, technology evaluation, or implementation oversight needs.</p>

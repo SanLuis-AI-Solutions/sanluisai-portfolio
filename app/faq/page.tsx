@@ -221,7 +221,14 @@ export default function FaqPage() {
           </div>
         </div>
       </section>
+      </AnimatedSection>
 
+      {/* Gold divider */}
+      <div className="flex justify-center py-16">
+        <img src="/assets/ornament-divider.svg" alt="" className="w-36 h-auto" />
+      </div>
+
+      <AnimatedSection delay={0.2}>
       {/* Dark CTA section */}
       <section className="bg-navy-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

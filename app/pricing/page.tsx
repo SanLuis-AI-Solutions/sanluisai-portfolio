@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import AnimatedSection from '@/components/AnimatedSection'
 import FlameMark from '@/components/FlameMark'
+import OrnamentDivider from '@/components/OrnamentDivider'
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
@@ -170,7 +171,13 @@ export default function PricingPage() {
       </section>
       </AnimatedSection>
 
-      <section className="bg-navy-900 py-20">
+      {/* Gold ornamental divider between sections */}
+      <OrnamentDivider />
+
+      <AnimatedSection delay={0.1}>
+      <section className="bg-navy-900 py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(217,164,52,0.06),transparent_60%)] pointer-events-none" />
+        <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/10" />
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Not sure where to start? Begin with a $300 Discovery Session.</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">

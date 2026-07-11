@@ -1,6 +1,10 @@
 'use client'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -12,10 +16,31 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
 }
 
 export default function CTA() {
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Gold glow intensifies on scroll
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: 'top center',
+        end: 'center center',
+        scrub: 1,
+        onUpdate: (self) => {
+          const glow = sectionRef.current?.querySelector('.cta-glow') as HTMLElement
+          if (glow) {
+            glow.style.opacity = String(0.08 + self.progress * 0.12)
+          }
+        },
+      })
+    }, sectionRef)
+    return () => ctx.revert()
+  }, [])
+
   return (
-    <section className="relative min-h-[70vh] flex items-center bg-navy-900 overflow-hidden">
-      {/* Single warm gold glow from bottom — stage spotlight effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_40%_at_50%_100%,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
+    <section ref={sectionRef} className="relative min-h-[70vh] flex items-center bg-navy-900 overflow-hidden">
+      {/* Single warm gold glow from bottom — stage spotlight effect, reacts on scroll */}
+      <div className="cta-glow absolute inset-0 bg-[radial-gradient(ellipse_70%_40%_at_50%_100%,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
       {/* Subtle top-right blue depth */}
       <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-[radial-gradient(ellipse_at_top_right,rgba(45,82,126,0.10),transparent_60%)] pointer-events-none" />
 
@@ -48,9 +73,12 @@ export default function CTA() {
             <AnimatedSection delay={0.45}>
               <a
                 href="/booking"
-                className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-12 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow hover:-translate-y-0.5 active:scale-[0.97] transition-all duration-220 rounded animate-goldPulse"
+                className="group inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-12 py-5 bg-gold-600 text-navy-900 hover:bg-gold-500 hover:shadow-goldGlow hover:-translate-y-0.5 active:scale-[0.97] transition-all duration-220 rounded animate-goldPulse"
               >
                 Book a Discovery Session
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="ml-3 group-hover:translate-x-1 transition-transform duration-300">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </a>
             </AnimatedSection>
           </div>
@@ -70,7 +98,7 @@ export default function CTA() {
                   <span className="text-navy-600">|</span>
                   <div><span className="text-gold-500 font-semibold">3 weeks</span><span className="text-navy-400 ml-1">to deploy</span></div>
                 </div>
-                <div className="mt-4 font-sans text-xs text-navy-500">Real Estate Construction &middot; Houston, TX</div>
+                <div className="font-sans text-xs text-navy-500 mt-3">Real Estate Construction · Houston, TX</div>
               </div>
             </AnimatedSection>
           </div>
