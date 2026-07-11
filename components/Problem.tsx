@@ -1,13 +1,27 @@
 'use client'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
 import FlameMark from '@/components/FlameMark'
 
-function FadeIn({ children, delay = 0, className }: { children: React.ReactNode; delay?: number; className?: string }) {
+gsap.registerPlugin(ScrollTrigger)
+
+function SlideIn({ children, delay = 0, className }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-40px' })
-  return (<motion.div ref={ref} className={className} initial={{ opacity: 0, y: 16 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>)
+  const inView = useInView(ref, { once: true, margin: '-60px' })
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      initial={{ opacity: 0, x: -20 }}
+      animate={inView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6, delay, ease: [0.2, 0.7, 0.2, 1] }}
+    >
+      {children}
+    </motion.div>
+  )
 }
 
 const problemSectors = [
@@ -20,30 +34,73 @@ const problemSectors = [
 ]
 
 export default function Problem() {
+  const sectionRef = useRef<HTMLElement>(null)
+  const cardsRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Scroll-driven parallax on the section background
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 1,
+        onUpdate: (self) => {
+          const pattern = sectionRef.current?.querySelector('.bg-pattern') as HTMLElement
+          if (pattern) {
+            pattern.style.transform = `translateY(${self.progress * -40}px)`
+          }
+        },
+      })
+
+      // Stagger cards with GSAP for smoother feel
+      const cards = cardsRef.current?.querySelectorAll('.sector-card')
+      if (cards) {
+        ScrollTrigger.create({
+          trigger: cardsRef.current,
+          start: 'top 80%',
+          end: 'bottom 40%',
+          scrub: 0.5,
+          onUpdate: (self) => {
+            cards.forEach((card, i) => {
+              const progress = Math.max(0, Math.min(1, (self.progress - i * 0.08) * 3))
+              ;(card as HTMLElement).style.opacity = String(progress)
+              ;(card as HTMLElement).style.transform = `translateX(${(1 - progress) * 30}px)`
+            })
+          },
+        })
+      }
+    }, sectionRef)
+
+    return () => ctx.revert()
+  }, [])
+
   return (
-    <section id="problem" className="py-32 md:py-40 bg-bone-100 relative overflow-hidden">
-      {/* Subtle background texture */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+    <section id="problem" ref={sectionRef} className="py-32 md:py-40 bg-bone-100 relative overflow-hidden">
+      {/* Subtle background texture with parallax */}
+      <div className="bg-pattern absolute inset-0 opacity-[0.03] pointer-events-none transition-transform duration-100">
         <div className="w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(17,36,71,0.3) 1px, transparent 0)', backgroundSize: '40px 40px' }} />
       </div>
+      {/* Warm ambient glow */}
+      <div className="absolute top-0 left-1/4 w-1/2 h-1/3 bg-[radial-gradient(ellipse_at_center,rgba(217,164,52,0.04),transparent_60%)] pointer-events-none" />
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24 relative">
         <div className="max-w-4xl">
-          <FadeIn delay={0}>
+          <SlideIn delay={0}>
             <div className="flex items-center gap-2 mb-8">
               <FlameMark size="sm" />
               <span className="sl-eyebrow">The Problem</span>
             </div>
-          </FadeIn>
-          <FadeIn delay={0.12}>
+          </SlideIn>
+          <SlideIn delay={0.12}>
             <h2 className="sl-h2 text-navy-800 mb-6">Your team is burning hours on work AI could do in seconds.</h2>
-          </FadeIn>
-          <FadeIn delay={0.2}>
+          </SlideIn>
+          <SlideIn delay={0.2}>
             <p className="sl-lede max-w-[56ch]">You don&apos;t need to understand how AI works. You need to know what it can actually save you: in dollars, hours, and missed opportunities.</p>
-          </FadeIn>
+          </SlideIn>
 
-          {/* Founder POV block */}
-          <FadeIn delay={0.28}>
-            <div className="relative max-w-2xl bg-white border border-navy-200/80 shadow-2 hover:shadow-3 transition-shadow duration-300 rounded p-8 md:p-10 mt-12 mb-16">
+          {/* Founder POV block — subtle lift animation */}
+          <SlideIn delay={0.28}>
+            <div className="relative max-w-2xl bg-white border border-navy-200/80 shadow-2 hover:shadow-3 transition-all duration-500 rounded p-8 md:p-10 mt-12 mb-16 hover:-translate-y-0.5">
               <div className="absolute top-0 left-8 right-8 h-px bg-gold-600/40" />
               <div className="flex flex-col md:flex-row gap-5">
                 <div className="flex flex-row md:flex-col items-center gap-3 md:gap-2 flex-shrink-0">
@@ -59,32 +116,29 @@ export default function Problem() {
                 </div>
               </div>
             </div>
-          </FadeIn>
+          </SlideIn>
         </div>
 
-        {/* Industry grid — redesigned with imagery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {problemSectors.map((item, i) => (
-            <FadeIn key={item.num} delay={0.3 + i * 0.06}>
-              <div className="group bg-white border border-navy-200/60 hover:border-gold-500/50 shadow-1 hover:shadow-3 rounded-lg p-6 md:p-8 h-full flex flex-col relative transition-all duration-300 hover:-translate-y-0.5">
-                {/* Gold top accent */}
-                <div className="absolute top-0 left-6 right-6 h-px bg-gold-600/30 group-hover:bg-gold-500/60 transition-colors duration-300" />
-                <div className="flex items-start justify-between mb-4">
-                  <span className="font-mono text-[10px] text-gold-600/60 tracking-[0.12em]">{item.num}</span>
-                  <div className="w-8 h-8 rounded-full bg-navy-100/50 flex items-center justify-center">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="text-navy-400">
-                      <path d="M7 1V13M1 7H13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    </svg>
-                  </div>
+        {/* Industry problem cards */}
+        <div ref={cardsRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {problemSectors.map((s, i) => (
+            <div
+              key={s.num}
+              className="sector-card group"
+              style={{ opacity: i < 3 ? 1 : 0 }}
+            >
+              <div className="h-full bg-white border border-navy-200/60 hover:border-gold-500/40 shadow-1 hover:shadow-3 rounded-lg p-5 md:p-6 transition-all duration-300 hover:-translate-y-0.5">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="font-mono text-[10px] text-gold-600/60 tracking-[0.12em]">{s.num}</span>
+                  <span className="font-sans text-xs font-semibold text-navy-500 tracking-[0.08em] uppercase">{s.name}</span>
                 </div>
-                <div className="font-sans text-xs font-semibold text-gold-600 tracking-[0.12em] uppercase mb-3">{item.name}</div>
-                <div className="flex items-baseline gap-2 mb-3">
-                  <span className="font-display text-2xl text-navy-800 font-medium leading-none">{item.stat}</span>
-                  <span className="font-sans text-[10px] text-navy-400 uppercase tracking-[0.06em]">{item.statLabel}</span>
+                <div className="mb-2">
+                  <span className="font-display text-2xl text-gold-600">{s.stat}</span>
+                  <span className="font-sans text-[10px] text-navy-400 uppercase tracking-[0.08em] ml-2">{s.statLabel}</span>
                 </div>
-                <p className="font-sans text-sm text-fg2 leading-relaxed flex-1">{item.desc}</p>
+                <p className="font-sans text-sm text-ink-600 leading-relaxed">{s.desc}</p>
               </div>
-            </FadeIn>
+            </div>
           ))}
         </div>
       </div>

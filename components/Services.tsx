@@ -46,7 +46,11 @@ export default function Services() {
             {services.map((s, i) => (
               <FadeIn key={s.num} delay={0.2 + i * 0.1}>
                 <a href={s.href} className="block group cursor-pointer">
-                  <div className="flex items-start gap-6 bg-white border border-navy-200/80 hover:border-gold-500/60 shadow-1 hover:shadow-3 rounded-lg p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-gold-50/30 group-active:scale-[0.99]">
+                  <motion.div
+                    className="flex items-start gap-6 bg-white border border-navy-200/80 hover:border-gold-500/60 shadow-1 hover:shadow-3 rounded-lg p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-gold-50/30 group-active:scale-[0.99]"
+                    whileHover={{ scale: 1.01 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  >
                     {/* Icon container */}
                     <div className="w-12 h-12 rounded-full bg-navy-50 border border-navy-200/50 flex items-center justify-center flex-shrink-0 group-hover:bg-gold-50 group-hover:border-gold-600/30 group-hover:scale-105 transition-all duration-300">
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-navy-500 group-hover:text-gold-600 transition-colors duration-300" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -61,7 +65,7 @@ export default function Services() {
                       <p className="font-sans text-sm text-fg2 leading-relaxed mb-3">{s.desc}</p>
                       <span className="font-mono text-xs text-gold-600 font-medium">{s.price}</span>
                     </div>
-                  </div>
+                  </motion.div>
                 </a>
               </FadeIn>
             ))}
