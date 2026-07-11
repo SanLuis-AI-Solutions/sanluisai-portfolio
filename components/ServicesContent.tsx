@@ -1,12 +1,11 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useInView, useReducedMotion } from 'framer-motion'
 import { Kino, Scene } from 'react-kino'
 import Link from 'next/link'
 import StaggeredReveal from '@/components/StaggeredReveal'
 import FlameMark from '@/components/FlameMark'
 import Diamond from '@/components/Diamond'
+import AnimatedSection from '@/components/AnimatedSection'
 
 const servicesList = [
   {
@@ -92,17 +91,6 @@ const servicesList = [
   },
 ]
 
-function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-60px' })
-  const shouldReduceMotion = useReducedMotion()
-  return (
-    <motion.div ref={ref} initial={shouldReduceMotion ? {} : { opacity: 0, y: 20 }} animate={inView && !shouldReduceMotion ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay, ease: [0.2, 0.7, 0.2, 1] }}>
-      {children}
-    </motion.div>
-  )
-}
-
 export default function ServicesContent() {
   return (
     <>
@@ -112,7 +100,7 @@ export default function ServicesContent() {
             <FlameMark size="md" />
           </div>
 
-          <FadeIn>
+          <AnimatedSection delay={0}>
             <div className="max-w-3xl mx-auto mb-20 text-center">
               <p className="sl-body-lg text-navy-800 mb-6">
                 We work with small and mid-size businesses in Houston. Every engagement starts with a $300 Discovery Session. From there, we build what you need: AI Automation from $1,200, AI Agent Systems from $5,000, Custom AI Systems from $5,000, or AI Consulting with custom pricing.
@@ -124,9 +112,13 @@ export default function ServicesContent() {
                 Every project follows the same four steps. Discover what matters. Build what works. Get it running. Keep it working. We do not disappear after it goes live. We stay with you. Proven results include 60% faster quoting, 3x more leads, and AI-assisted app design.
               </p>
             </div>
-          </FadeIn>
+          </AnimatedSection>
+
+          {/* Section divider */}
+          <div className="h-px bg-gold-600/20 mb-20" />
 
           {/* Desktop: scroll-driven story panels */}
+          <AnimatedSection delay={0}>
           <div className="hidden md:block">
             <Kino>
               {servicesList.map((s) => (
@@ -158,9 +150,11 @@ export default function ServicesContent() {
                             Learn more &rarr;
                           </Link>
                         </div>
-                        <div className="bg-navy-900 rounded p-8 md:p-10 text-center">
-                          <p className="font-sans text-xs font-semibold tracking-[0.16em] uppercase text-gold-500 mb-4">The Outcome</p>
-                          <p className="font-display text-xl md:text-2xl text-bone-50 leading-relaxed">{s.outcome}</p>
+                        <div className="bg-navy-900 rounded p-8 md:p-10 text-center relative overflow-hidden">
+                          {/* Subtle gold ambient glow */}
+                          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_40%_at_50%_100%,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
+                          <p className="font-sans text-xs font-semibold tracking-[0.16em] uppercase text-gold-500 mb-4 relative">The Outcome</p>
+                          <p className="font-display text-xl md:text-2xl text-bone-50 leading-relaxed relative">{s.outcome}</p>
                         </div>
                       </div>
                     </div>
@@ -209,8 +203,12 @@ export default function ServicesContent() {
               })}
             </StaggeredReveal>
           </div>
+          </AnimatedSection>
 
-          <FadeIn delay={0.08}>
+          {/* Section divider */}
+          <div className="h-px bg-gold-600/20 mb-20" />
+
+          <AnimatedSection delay={0.08}>
             <div className="max-w-4xl mx-auto mb-20">
               <h2 className="font-display text-2xl text-navy-800 text-center mb-10">How every project works.</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -228,10 +226,15 @@ export default function ServicesContent() {
                 ))}
               </div>
             </div>
-          </FadeIn>
+          </AnimatedSection>
 
-          <FadeIn delay={0.1}>
-            <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-20 text-center">
+          {/* Section divider */}
+          <div className="h-px bg-gold-600/20 mb-20" />
+
+          <AnimatedSection delay={0.1}>
+            <div className="bg-navy-900 border border-gold-600/30 rounded p-8 md:p-10 mb-20 text-center relative overflow-hidden">
+              {/* Subtle gold ambient glow */}
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_40%_at_50%_100%,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
               <h2 className="font-display text-2xl text-bone-50 mb-3">Not sure which service fits?</h2>
               <p className="font-sans text-base text-bone-300/70 max-w-xl mx-auto mb-6">
                 Every business is different. Book a $300 Discovery Session and we will map your specific needs to the right solution. Or tell you if AI is not the answer. Money-back if we do not find 3 ways to save you time.
@@ -240,9 +243,12 @@ export default function ServicesContent() {
                 Book a Discovery Session.
               </Link>
             </div>
-          </FadeIn>
+          </AnimatedSection>
 
-          <FadeIn delay={0.15}>
+          {/* Section divider */}
+          <div className="h-px bg-gold-600/20 mb-20" />
+
+          <AnimatedSection delay={0.15}>
             <div className="max-w-3xl border-t border-navy-200 pt-16">
               <h2 className="font-display text-2xl text-navy-800 mb-8">Common questions about our services.</h2>
               <div className="space-y-8">
@@ -267,12 +273,18 @@ export default function ServicesContent() {
                 </div>
               </div>
             </div>
-          </FadeIn>
+          </AnimatedSection>
         </div>
       </section>
 
-      <section className="bg-navy-900 py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Section divider */}
+      <div className="h-px bg-gold-600/20" />
+
+      <AnimatedSection delay={0}>
+        <section className="bg-navy-900 py-20 relative overflow-hidden">
+          {/* Subtle gold ambient glow */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_40%_at_50%_100%,rgba(217,164,52,0.08),transparent_60%)] pointer-events-none" />
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to get a day back every week?</h2>
           <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap. Money-back if we do not find 3 ways to save you time.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -285,6 +297,7 @@ export default function ServicesContent() {
           </div>
         </div>
       </section>
+      </AnimatedSection>
     </>
   )
 }

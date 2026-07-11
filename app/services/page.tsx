@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import ServicesContent from '@/components/ServicesContent'
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
+import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Services | SanLuis AI Solutions',
@@ -20,7 +21,11 @@ export default function ServicesPage() {
   return (
     <>
       <BreadcrumbJsonLd />
-      <ServicesContent />
+      {/* Top gold accent divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-gold-600/30 to-transparent" />
+      <AnimatedSection delay={0}>
+        <ServicesContent />
+      </AnimatedSection>
     </>
   )
 }

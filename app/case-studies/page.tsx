@@ -90,14 +90,17 @@ export default function Page() {
             {cases.map((c, i) => {
               const featured = i === 0
               return (
-                <Link
+                <AnimatedSection
                   key={c.slug}
-                  href={`/case-studies/${c.slug}`}
-                  className={`block bg-white border border-navy-200 rounded p-6 md:p-8 hover:-translate-y-1 hover:border-gold-600/50 hover:shadow-[0_18px_50px_-28px_rgba(26,49,96,0.55)] transition-all duration-300 group ${
-                    featured ? 'md:col-span-2 md:row-span-2' : ''
-                  }`}
+                  delay={i * 0.1}
+                  className={featured ? 'md:col-span-2 md:row-span-2' : ''}
                 >
-                  <div className="flex items-center justify-between mb-4">
+                  <Link
+                    href={`/case-studies/${c.slug}`}
+                    className={`block bg-white border border-navy-200 rounded p-6 md:p-8 hover:-translate-y-1 hover:border-gold-600/50 hover:shadow-[0_18px_50px_-28px_rgba(26,49,96,0.55)] transition-all duration-300 group`}
+                  >
+                    <div className="h-px bg-gold-500/60 w-12 mb-4" role="separator" aria-hidden="true"></div>
+                    <div className="flex items-center justify-between mb-4">
                     <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600">{c.industry}</div>
                     <div className="font-display text-lg font-bold text-gold-600">{c.result}</div>
                   </div>
@@ -129,6 +132,7 @@ export default function Page() {
                     <span className="font-sans text-xs font-semibold tracking-[0.08em] uppercase text-gold-600 group-hover:text-gold-700 transition-colors">Read full case study &rarr;</span>
                   </div>
                 </Link>
+                </AnimatedSection>
               )
             })}
           </div>

@@ -40,31 +40,36 @@ export default function Page() {
       <main className="bg-bone-50 min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           {/* Flame mark */}
-          <div className="flex items-center justify-center mb-16">
-            <FlameMark size="md" />
-          </div>
+          <AnimatedSection delay={50}>
+            <div className="flex items-center justify-center mb-16">
+              <FlameMark size="md" />
+            </div>
+          </AnimatedSection>
 
           {/* Narrative: The Problem */}
-          <div className="mb-16">
-            <h2 className="font-display text-2xl text-navy-800 mb-6">The problem we saw</h2>
-            <p className="sl-body mb-4">
-              Everyone has access to the same AI. Claude, GPT, Gemini. The same frontier models that power the most advanced labs on the planet. Any company can use them today.
-            </p>
-            <p className="sl-body mb-4">
-              So why are most businesses still doing the same manual work they were doing two years ago? Approving invoices by hand. Answering the same customer questions. Copying data from one system to another. Running reports that could generate themselves.
-            </p>
-            <p className="sl-body mb-4">
-              The answer is not a technology gap. The answer is a delivery gap. The models exist. The APIs exist. The infrastructure exists. What does not exist enough of is someone who will actually build the working system, put it in your operation, and make sure it stays running.
-            </p>
-            <p className="sl-body">
-              That is the gap we close.
-            </p>
-          </div>
+          <AnimatedSection delay={100}>
+            <div className="mb-16">
+              <h2 className="font-display text-2xl text-navy-800 mb-6">The problem we saw</h2>
+              <p className="sl-body mb-4">
+                Everyone has access to the same AI. Claude, GPT, Gemini. The same frontier models that power the most advanced labs on the planet. Any company can use them today.
+              </p>
+              <p className="sl-body mb-4">
+                So why are most businesses still doing the same manual work they were doing two years ago? Approving invoices by hand. Answering the same customer questions. Copying data from one system to another. Running reports that could generate themselves.
+              </p>
+              <p className="sl-body mb-4">
+                The answer is not a technology gap. The answer is a delivery gap. The models exist. The APIs exist. The infrastructure exists. What does not exist enough of is someone who will actually build the working system, put it in your operation, and make sure it stays running.
+              </p>
+              <p className="sl-body">
+                That is the gap we close.
+              </p>
+            </div>
+          </AnimatedSection>
 
           <OrnamentDivider className="!py-8" />
 
           {/* Narrative: The Decision */}
-          <div className="mb-16">
+          <AnimatedSection delay={200}>
+            <div className="mb-16">
             <h2 className="font-display text-2xl text-navy-800 mb-6">The choice we made</h2>
             <p className="sl-body mb-4">
               We made a decision early. We do not sell chatbots. We do not sell strategy decks. We do not sell monthly retainers for advisory calls that produce nothing but meeting notes.
@@ -79,13 +84,15 @@ export default function Page() {
               We turn down more projects than we take. If we cannot see a clear path to saving your team a day a week, we tell you. No pitch. No proposal. Just the truth.
             </p>
           </div>
+          </AnimatedSection>
 
           <OrnamentDivider className="!py-8" />
 
           {/* Founder section */}
-          <div className="flex flex-col md:flex-row gap-8 mb-16">
-            <div className="flex-shrink-0">
-              <div className="relative w-40 h-40 md:w-48 md:h-48 rounded overflow-hidden bg-navy-100 border border-navy-200">
+          <AnimatedSection delay={300}>
+            <div className="flex flex-col md:flex-row gap-8 mb-16">
+              <div className="flex-shrink-0">
+                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded overflow-hidden bg-navy-100 border border-navy-200">
                 <Image
                   src="/daniel-headshot.jpg"
                   alt="Daniel San Luis, Founder of SanLuis AI Solutions"
@@ -109,104 +116,132 @@ export default function Page() {
               </p>
             </div>
           </div>
+          </AnimatedSection>
 
           <OrnamentDivider className="!py-8" />
 
           {/* Who This Is For */}
-          <div className="mb-16">
-            <h2 className="font-display text-2xl text-navy-800 mb-8 text-center">Who this is for</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white border border-navy-200 rounded p-6">
-                <h3 className="font-display text-lg text-navy-800 mb-2">You have seen the demos</h3>
-                <p className="sl-body-sm">
-                  You sat through the AI presentations. You heard the promises. Nothing changed. You are ready for a system that does the actual work, not a slide deck about one.
-                </p>
-              </div>
-              <div className="bg-white border border-navy-200 rounded p-6">
-                <h3 className="font-display text-lg text-navy-800 mb-2">You know where the time goes</h3>
-                <p className="sl-body-sm">
-                  You can point to the process that eats a day every week. Approvals, data entry, responses, reports. You just need someone to build the solution.
-                </p>
-              </div>
-              <div className="bg-white border border-navy-200 rounded p-6">
-                <h3 className="font-display text-lg text-navy-800 mb-2">You want to own it</h3>
-                <p className="sl-body-sm">
-                  No locked-in contracts. No proprietary platforms. When we build a system, you own the code, the data, and the right to modify it however you need.
-                </p>
-              </div>
-              <div className="bg-white border border-navy-200 rounded p-6">
-                <h3 className="font-display text-lg text-navy-800 mb-2">You want to move</h3>
-                <p className="sl-body-sm">
-                  Discovery in one week. System running in two to three. No six-month roadmaps. No endless discovery phases. A working system, delivered.
-                </p>
+          <AnimatedSection delay={400}>
+            <div className="mb-16">
+              <h2 className="font-display text-2xl text-navy-800 mb-8 text-center">Who this is for</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <h3 className="font-display text-lg text-navy-800 mb-2">You have seen the demos</h3>
+                  <p className="sl-body-sm">
+                    You sat through the AI presentations. You heard the promises. Nothing changed. You are ready for a system that does the actual work, not a slide deck about one.
+                  </p>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <h3 className="font-display text-lg text-navy-800 mb-2">You know where the time goes</h3>
+                  <p className="sl-body-sm">
+                    You can point to the process that eats a day every week. Approvals, data entry, responses, reports. You just need someone to build the solution.
+                  </p>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <h3 className="font-display text-lg text-navy-800 mb-2">You want to own it</h3>
+                  <p className="sl-body-sm">
+                    No locked-in contracts. No proprietary platforms. When we build a system, you own the code, the data, and the right to modify it however you need.
+                  </p>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <h3 className="font-display text-lg text-navy-800 mb-2">You want to move</h3>
+                  <p className="sl-body-sm">
+                    Discovery in one week. System running in two to three. No six-month roadmaps. No endless discovery phases. A working system, delivered.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
+
+          {/* Gold divider between sections */}
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-gold-600/40 to-transparent my-12" />
 
           {/* Our Approach section */}
-          <h2 className="font-display text-2xl text-navy-800 mb-6">Our Approach</h2>
-          <div className="space-y-6 mb-12">
-            <div>
-              <h3 className="font-display text-lg text-navy-800 mb-2">We start with your problem, not a technology.</h3>
-              <p className="sl-body">Before writing a single line of code, we map what your team actually does. Where the time goes. Where mistakes happen. Where the real opportunity is. Then we decide if AI is even the right answer. Sometimes it is not, and we say so.</p>
-            </div>
-            <div>
-              <h3 className="font-display text-lg text-navy-800 mb-2">We build with frontier AI, not templates.</h3>
-              <p className="sl-body">Claude, GPT, Gemini. We route every problem to the model that solves it best. No cookie-cutter solutions. Every system is built from first principles for your specific operation, not adapted from something we built before.</p>
-            </div>
-            <div>
-              <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, train, and hand you the keys.</h3>
-              <p className="sl-body">Deployment is not the finish line. We document, train, and support until your team is confident and the system is stable. Then you own it completely. We are available when you need us, but you are never dependent on us.</p>
-            </div>
-          </div>
+          <AnimatedSection delay={500}>
+            <>
+              <h2 className="font-display text-2xl text-navy-800 mb-6">Our Approach</h2>
+              <div className="space-y-6 mb-12">
+                <div>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">We start with your problem, not a technology.</h3>
+                  <p className="sl-body">Before writing a single line of code, we map what your team actually does. Where the time goes. Where mistakes happen. Where the real opportunity is. Then we decide if AI is even the right answer. Sometimes it is not, and we say so.</p>
+                </div>
+                <div>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">We build with frontier AI, not templates.</h3>
+                  <p className="sl-body">Claude, GPT, Gemini. We route every problem to the model that solves it best. No cookie-cutter solutions. Every system is built from first principles for your specific operation, not adapted from something we built before.</p>
+                </div>
+                <div>
+                  <h3 className="font-display text-lg text-navy-800 mb-2">We deploy, train, and hand you the keys.</h3>
+                  <p className="sl-body">Deployment is not the finish line. We document, train, and support until your team is confident and the system is stable. Then you own it completely. We are available when you need us, but you are never dependent on us.</p>
+                </div>
+              </div>
+            </>
+          </AnimatedSection>
+
+          {/* Gold divider between sections */}
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-gold-600/40 to-transparent my-12" />
 
           {/* The Stack reference */}
-          <h2 className="font-display text-2xl text-navy-800 mb-6">The Stack</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-            <div className="bg-white border border-navy-200 rounded p-6">
-              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Models</div>
-              <div className="sl-body-sm">Claude, GPT, Gemini</div>
-            </div>
-            <div className="bg-white border border-navy-200 rounded p-6">
-              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Tooling</div>
-              <div className="sl-body-sm">Google AI Studio, Anthropic Console, OpenAI Platform</div>
-            </div>
-            <div className="bg-white border border-navy-200 rounded p-6">
-              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Frontend</div>
-              <div className="sl-body-sm">Next.js (App Router), React 19, TypeScript, Tailwind CSS, Framer Motion</div>
-            </div>
-            <div className="bg-white border border-navy-200 rounded p-6">
-              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Backend / Data</div>
-              <div className="sl-body-sm">Supabase (PostgreSQL), Supabase Edge Functions</div>
-            </div>
-            <div className="bg-white border border-navy-200 rounded p-6">
-              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Infrastructure</div>
-              <div className="sl-body-sm">Vercel (frontend + serverless/edge), GitHub</div>
-            </div>
-            <div className="bg-white border border-navy-200 rounded p-6">
-              <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Languages</div>
-              <div className="sl-body-sm">English / Spanish (fully bilingual team)</div>
-            </div>
-          </div>
+          <AnimatedSection delay={600}>
+            <>
+              <h2 className="font-display text-2xl text-navy-800 mb-6">The Stack</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Models</div>
+                  <div className="sl-body-sm">Claude, GPT, Gemini</div>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">AI Tooling</div>
+                  <div className="sl-body-sm">Google AI Studio, Anthropic Console, OpenAI Platform</div>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Frontend</div>
+                  <div className="sl-body-sm">Next.js (App Router), React 19, TypeScript, Tailwind CSS, Framer Motion</div>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Backend / Data</div>
+                  <div className="sl-body-sm">Supabase (PostgreSQL), Supabase Edge Functions</div>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Infrastructure</div>
+                  <div className="sl-body-sm">Vercel (frontend + serverless/edge), GitHub</div>
+                </div>
+                <div className="bg-white border border-navy-200 rounded p-6">
+                  <div className="font-sans text-xs font-semibold uppercase tracking-wider text-gold-600 mb-1">Languages</div>
+                  <div className="sl-body-sm">English / Spanish (fully bilingual team)</div>
+                </div>
+              </div>
+            </>
+          </AnimatedSection>
         </div>
       </main>
-      </AnimatedSection>
 
-      {/* Dark CTA section */}
-      <section className="bg-navy-900 py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build something that actually works?</h2>
-          <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
-              Book a Discovery Session.
-            </Link>
-            <a href="mailto:contact@sanluisai.com" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">
-              contact@sanluisai.com
-            </a>
+      {/* Gold divider between main and dark CTA */}
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-gold-600/40 to-transparent" />
+
+      {/* Dark CTA section with subtle gold glow */}
+      <AnimatedSection delay={700}>
+        <section className="bg-navy-900 py-20 relative overflow-hidden">
+          {/* Subtle gold ambient glow */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: 'radial-gradient(ellipse at 50% 0%, rgba(217,164,52,0.08) 0%, transparent 70%)',
+            }}
+          />
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 className="font-display text-2xl md:text-3xl text-bone-50 mb-4">Ready to build something that actually works?</h2>
+            <p className="font-sans text-base md:text-lg font-light text-bone-300/70 mb-8">Start with a $300 Discovery Session. 60 minutes. Clear roadmap.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/booking" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900 transition-all duration-220 rounded">
+                Book a Discovery Session.
+              </Link>
+              <a href="mailto:contact@sanluisai.com" className="inline-flex items-center justify-center font-sans text-sm font-semibold tracking-[0.04em] px-8 py-4 border border-bone-300/30 text-bone-50 hover:border-gold-500 hover:text-gold-500 transition-all duration-220 rounded">
+                contact@sanluisai.com
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </AnimatedSection>
     </>
   )
 }
