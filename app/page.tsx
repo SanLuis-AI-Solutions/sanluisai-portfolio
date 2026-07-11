@@ -16,17 +16,17 @@ export default function HomePage() {
     <>
       <BreadcrumbJsonLd />
       <main className="pb-[72px] md:pb-0">
-        <Hero />
-        <Problem />
-        <HeroStats />
-        <Process />
-        <Services />
-        <ROICalculator />
-        <CaseStudies />
-        <SocialProof />
-        <WhatWeDont />
-        <CTA />
-        <FAQ />
+        <section id="hero"><Hero /></section>
+        <section id="problem"><Problem /></section>
+        <section id="stats"><HeroStats /></section>
+        <section id="process"><Process /></section>
+        <section id="services"><Services /></section>
+        <section id="roi"><ROICalculator /></section>
+        <section id="case-studies"><CaseStudies /></section>
+        <section id="social-proof"><SocialProof /></section>
+        <section id="what-we-dont"><WhatWeDont /></section>
+        <section id="cta"><CTA /></section>
+        <section id="faq"><FAQ /></section>
       </main>
     </>
   )

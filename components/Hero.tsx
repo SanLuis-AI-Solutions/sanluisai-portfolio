@@ -3,25 +3,68 @@
 import { useRef, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
 
-gsap.registerPlugin()
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement | null>(null)
+  const textRef = useRef<HTMLDivElement | null>(null)
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
-  const imgY = useTransform(scrollYProgress, [0, 1], [0, -80])
-  const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.1])
+  const imgY = useTransform(scrollYProgress, [0, 1], [0, -120])
+  const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.15])
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0])
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // Entrance sequence — staggered, with power3 easing
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
       tl.fromTo('.hero-label', { y: 12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 })
         .fromTo('.hero-headline', { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 }, '-=0.2')
         .fromTo('.hero-subhead', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.5')
         .fromTo('.hero-badges', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, '-=0.3')
         .fromTo('.hero-cta', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.3')
+
+      // Scroll-triggered text reveal — each word fades in as user scrolls
+      // This creates a "reading along with scroll" effect on the headline
+      const headline = textRef.current?.querySelector('h1')
+      if (headline) {
+        const words = headline.querySelectorAll('.reveal-word')
+        ScrollTrigger.create({
+          trigger: heroRef.current,
+          start: 'top top',
+          end: 'center center',
+          scrub: 1,
+          onUpdate: (self) => {
+            const progress = self.progress
+            words.forEach((word, i) => {
+              const wordProgress = (progress - i * 0.08) / 0.15
+              if (wordProgress > 0 && wordProgress < 1) {
+                ;(word as HTMLElement).style.opacity = String(wordProgress)
+                ;(word as HTMLElement).style.transform = `translateY(${(1 - wordProgress) * 20}px)`
+              } else if (wordProgress >= 1) {
+                ;(word as HTMLElement).style.opacity = '1'
+                ;(word as HTMLElement).style.transform = 'translateY(0)'
+              }
+            })
+          },
+        })
+      }
+
+      // Parallax glow — gold radial glow shifts on scroll
+      ScrollTrigger.create({
+        trigger: heroRef.current,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1.5,
+        onUpdate: (self) => {
+          const glow = heroRef.current?.querySelector('.hero-glow') as HTMLElement
+          if (glow) {
+            glow.style.opacity = String(1 - self.progress * 0.6)
+          }
+        },
+      })
     }, heroRef)
     return () => ctx.revert()
   }, [])
@@ -32,8 +75,8 @@ export default function Hero() {
 
       {/* Deep navy gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#080D18] via-[#0C1A30] to-[#162A4A]" />
-      {/* Warm gold glow — positioned behind the image area */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_70%_60%_at_70%_50%,rgba(217,164,52,0.08),transparent_60%)]" />
+      {/* Warm gold glow — positioned behind the image area, scroll-responsive */}
+      <div className="hero-glow absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_70%_60%_at_70%_50%,rgba(217,164,52,0.08),transparent_60%)]" />
 
       {/* Hero image — full-height, focus on center-left to show both hands */}
       <div className="absolute inset-0 md:inset-auto md:right-0 md:top-0 md:w-[60%] md:h-full">
@@ -53,15 +96,21 @@ export default function Hero() {
             <span className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-gold-500/70">SanLuis AI Solutions</span>
           </div>
 
-          <div className="hero-headline mb-3">
+          <div ref={textRef} className="hero-headline mb-3">
             <h1 className="font-display text-[clamp(3.2rem,9vw,6.5rem)] text-bone-50 font-medium leading-[0.88] tracking-[-0.035em]">
-              Get 5+ Hours Back<br />Every Week
+              {'Get 5+ Hours Back Every Week'.split(' ').map((word, i) => (
+                <span key={i} className="reveal-word inline-block" style={{ opacity: 0, transform: 'translateY(20px)' }}>
+                  {word}{' '}
+                </span>
+              ))}
+              <br />
+              <span className="text-gold-500">Without a Tech Team.</span>
             </h1>
           </div>
 
           <div className="hero-subhead mb-10">
             <p className="font-display text-[clamp(1.2rem,2.5vw,2rem)] text-gold-500 font-medium leading-[1.1] tracking-[-0.02em]">
-              Without a Tech Team. <span className="text-bone-50/70">Live in 14 Days.</span>
+              Live in <span className="text-bone-50/70">14 Days.</span>
             </p>
           </div>
 

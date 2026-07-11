@@ -40,7 +40,6 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
     requestAnimationFrame(raf)
 
     // ScrollTrigger's scroller proxy — tell it to use Lenis's scroll position
-    // This is the documented integration pattern from GSAP + Lenis docs
     ScrollTrigger.scrollerProxy(document.body, {
       scrollTop(value) {
         if (value !== undefined) {
@@ -59,15 +58,16 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
           height: window.innerHeight,
         }
       },
-      pinType: document.body.style.transform ? 'transform' : 'fixed',
     })
 
-    // Refresh ScrollTrigger after Lenis is fully initialized
-    ScrollTrigger.refresh()
+    // Refresh ScrollTrigger on resize
+    const resize = () => ScrollTrigger.refresh()
+    window.addEventListener('resize', resize)
 
     return () => {
       lenis.destroy()
-      ScrollTrigger.getAll().forEach(t => t.kill())
+      gsap.ticker.remove((time: number) => lenis.raf(time * 1000))
+      window.removeEventListener('resize', resize)
     }
   }, [])
 
