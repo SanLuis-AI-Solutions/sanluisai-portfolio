@@ -23,9 +23,11 @@ export default function ServicesPage() {
       <BreadcrumbJsonLd />
       {/* Top gold accent divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-gold-600/30 to-transparent" />
+      <main>
       <AnimatedSection delay={0}>
         <ServicesContent />
       </AnimatedSection>
+      </main>
     </>
   )
 }

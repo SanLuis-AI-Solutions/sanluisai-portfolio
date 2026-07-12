@@ -52,7 +52,7 @@ export default function ScrollProgress() {
       />
 
       {/* Chapter markers — side rail */}
-      <nav className="fixed right-6 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col items-end gap-3">
+      <nav className="fixed right-6 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col items-end gap-3 py-3 px-3 bg-navy-950/60 backdrop-blur-sm rounded-lg">
         {sections.map((s) => (
           <a
             key={s.id}
