@@ -61,7 +61,7 @@ export default function Nav() {
               ? 'bg-navy-900 text-white hover:bg-navy-800 hover:shadow-goldGlow'
               : 'bg-bone-50 text-navy-800 hover:bg-gold-500 hover:text-navy-900'
           }`}>Book a Discovery Session.</a>
-          <a href="tel:+18327790033" className={`font-sans text-xs tracking-wider whitespace-nowrap transition-colors duration-300 ${scrolled ? 'text-fg3 hover:text-navy-800' : 'text-bone-400/60 hover:text-bone-200'}`}>(832) 779-0033</a>
+          <a href="tel:+18327790033" className={`font-sans text-xs tracking-wider whitespace-nowrap transition-colors duration-300 ${scrolled ? 'text-navy-600 hover:text-navy-800' : 'text-bone-400/60 hover:text-bone-200'}`}>(832) 779-0033</a>
         </div>
         <button onClick={() => setOpen(!open)} className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label={open ? 'Close menu' : 'Open menu'}>
           <svg className={`w-6 h-6 transition-all duration-200 ${scrolled ? 'text-navy-800' : 'text-bone-50'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
