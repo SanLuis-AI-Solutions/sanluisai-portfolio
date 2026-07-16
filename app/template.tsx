@@ -1,8 +1,14 @@
 'use client'
 
 import { motion, useReducedMotion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 export default function Template({ children }: { children: React.ReactNode }) {
+  const privateScorecard = usePathname().startsWith('/internal/ai-opportunity-scorecard')
+  return privateScorecard ? <div>{children}</div> : <AnimatedTemplate>{children}</AnimatedTemplate>
+}
+
+function AnimatedTemplate({ children }: { children: React.ReactNode }) {
   const shouldReduceMotion = useReducedMotion()
 
   return (
