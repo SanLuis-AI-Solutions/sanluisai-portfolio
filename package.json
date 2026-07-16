@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --ext .js,.mjs,.ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test:scorecard": "node --no-warnings --test tests/scorecard.test.ts",
+    "review:scorecard": "node scripts/scorecard-review.mjs",
     "visual-diff": "node scripts/visual-diff.mjs --url https://sanluisai-portfolio.vercel.app --name homepage-hero --selector \"main\"",
     "visual-diff:fullpage": "node scripts/visual-diff.mjs --url https://sanluisai-portfolio.vercel.app --name homepage --fullPage",
     "visual-diff:help": "node scripts/visual-diff.mjs --help"

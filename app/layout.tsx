@@ -1,10 +1,5 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
-import CtaBar from '@/components/CtaBar'
-import ScrollProgress from '@/components/ScrollProgress'
-import ExitIntentOverlay from '@/components/ExitIntentOverlay'
 import ClientLayout from './ClientLayout'
 import './globals.css'
 import './print.css'
@@ -347,22 +342,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="alternate icon" href="/favicon.ico" />
         <meta name="build-version" content="v1.0.0-20260518-1" />
                 <link rel="preload" href="/hero-hands.png" as="image" />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7FHSSCP8" />
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BE7FHSSCP8');` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
         />
       </head>
       <body>
-              <ScrollProgress />
-              <header><Nav /></header>
-              <ClientLayout>
-          {children}
-          <Footer />
-        </ClientLayout>
-        <CtaBar variant="sticky" href="/booking" text="Book a Discovery Session" />
-        <ExitIntentOverlay />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   )
